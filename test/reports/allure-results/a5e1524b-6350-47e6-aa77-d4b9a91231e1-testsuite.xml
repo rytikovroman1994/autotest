@@ -1,0 +1,124 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1535045555778' stop='1535045564122'>
+    <name>smoke screenshot test</name>
+    <title>smoke screenshot test</title>
+    <test-cases>
+        <test-case start='1535045555806' status='passed' stop='1535045563625'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1535045555813' status='passed' stop='1535045556974'>
+                    <name>POST /wd/hub/session/882e394418323b061bde2c915ed649b2/window/current/maximize</name>
+                    <title>POST /wd/hub/session/882e394418323b061bde2c915ed649b2/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='d759c6aa-3f32-458a-ab00-212d49a01fea-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535045556978' status='passed' stop='1535045563324'>
+                    <name>POST /wd/hub/session/882e394418323b061bde2c915ed649b2/url</name>
+                    <title>POST /wd/hub/session/882e394418323b061bde2c915ed649b2/url</title>
+                    <attachments>
+                        <attachment title='Request' source='c5aac110-e3a6-4640-b25e-44cdfd59c5c5-attachment.json' type='application/json' size='44'/>
+                        <attachment title='Response' source='f63dea13-3c1c-416b-bb83-0d22eb84b6be-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535045563344' status='passed' stop='1535045563487'>
+                    <name>POST /wd/hub/session/882e394418323b061bde2c915ed649b2/elements</name>
+                    <title>POST /wd/hub/session/882e394418323b061bde2c915ed649b2/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='ab7346be-4a07-404f-ae5c-ceec8d2360e6-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='0b7cd3f5-0080-400e-9b06-512b2aeeab86-attachment.json' type='application/json' size='162'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535045563488' status='passed' stop='1535045563622'>
+                    <name>GET /wd/hub/session/882e394418323b061bde2c915ed649b2/element/0.028917023310348844-1/displayed</name>
+                    <title>GET /wd/hub/session/882e394418323b061bde2c915ed649b2/element/0.028917023310348844-1/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='b9e86eb2-4d53-4c73-906b-1bdcefdee590-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1535045563626' status='broken' stop='1535045563637'>
+            <name>take screenshot</name>
+            <title>take screenshot</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\scrin\\screentest-pagefilter.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>data is not defined</message>
+                <stack-trace>ReferenceError: data is not defined
+                    at Context.it (C:/webdriverIO-with-mochaBDD-master/test/specs/scrin/screentest-pagefilter.js:20:9)
+                    at C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (C:\webdriverIO-with-mochaBDD-master\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:588:12)
+                    at C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1535045563637' status='passed' stop='1535045564118'>
+            <name>take second screenshot</name>
+            <title>take second screenshot</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\scrin\\screentest-pagefilter.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1535045563639' status='undefined'>
+                    <name>GET /wd/hub/session/882e394418323b061bde2c915ed649b2/screenshot</name>
+                    <title>GET /wd/hub/session/882e394418323b061bde2c915ed649b2/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='3fdfbc64-363c-401e-9201-b24ca27ddeeb-attachment.png' type='image/png' size='125915'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1535045564118' status='failed' stop='1535045564121'>
+            <name>compare screenshots</name>
+            <title>compare screenshots</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\scrin\\screentest-pagefilter.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>expected null to not equal null</message>
+                <stack-trace>AssertionError: expected null to not equal null
+                    at Context.it (C:/webdriverIO-with-mochaBDD-master/test/specs/scrin/screentest-pagefilter.js:30:44)
+                    at C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (C:\webdriverIO-with-mochaBDD-master\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:588:12)
+                    at C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

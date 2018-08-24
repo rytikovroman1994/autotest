@@ -1,0 +1,399 @@
+{
+  "uid" : "a269112373cd3f2b",
+  "name" : "compare screenshots",
+  "fullName" : "smoke screenshot test.compare screenshots",
+  "historyId" : "a7e103a9ec265a7d1b3538b8886da095",
+  "time" : {
+    "start" : 1535100674716,
+    "stop" : 1535100674862,
+    "duration" : 146
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "img.clone is not a function",
+  "statusTrace" : "TypeError: img.clone is not a function\n                    at ImagePHash.getHash (C:\\webdriverIO-with-mochaBDD-master\\node_modules\\jimp\\phash.js:60:15)\n                    at Function.Jimp.distance (C:\\webdriverIO-with-mochaBDD-master\\node_modules\\jimp\\index.js:501:23)\n                    at Object.compareScreenshots (C:/webdriverIO-with-mochaBDD-master/helpers/screenshot-compare.js:15:31)\n                    at <anonymous>\n                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3642a0f2eaf08604",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535046366989,
+        "stop" : 1535046367400,
+        "duration" : 411
+      }
+    }, {
+      "uid" : "4e5ae572a9528f90",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535046317314,
+        "stop" : 1535046317328,
+        "duration" : 14
+      }
+    }, {
+      "uid" : "bcdbc2dbaa8dbb7f",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535046265368,
+        "stop" : 1535046265403,
+        "duration" : 35
+      }
+    }, {
+      "uid" : "676d7ced99502697",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535046223460,
+        "stop" : 1535046223477,
+        "duration" : 17
+      }
+    }, {
+      "uid" : "79fa4059b8c7af76",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535046170914,
+        "stop" : 1535046170929,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "f3b0c6feba754d98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535045986942,
+        "stop" : 1535045986943,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "295f5b669412a7e8",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535045941043,
+        "stop" : 1535045941336,
+        "duration" : 293
+      }
+    }, {
+      "uid" : "183cac342769b514",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535045891447,
+        "stop" : 1535045891735,
+        "duration" : 288
+      }
+    }, {
+      "uid" : "78b67fcf1d0b6027",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535045855567,
+        "stop" : 1535045855906,
+        "duration" : 339
+      }
+    }, {
+      "uid" : "296854f17da029b4",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535045728099,
+        "stop" : 1535045728330,
+        "duration" : 231
+      }
+    }, {
+      "uid" : "3b67d8594be1b1a3",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535045641090,
+        "stop" : 1535045641430,
+        "duration" : 340
+      }
+    }, {
+      "uid" : "a86153eba85b6449",
+      "status" : "failed",
+      "statusDetails" : "expected null to not equal null",
+      "time" : {
+        "start" : 1535045564118,
+        "stop" : 1535045564121,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "3f3126b28171fc54",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535045363387,
+        "stop" : 1535045363648,
+        "duration" : 261
+      }
+    }, {
+      "uid" : "a3a22037145a38de",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535045251377,
+        "stop" : 1535045251608,
+        "duration" : 231
+      }
+    }, {
+      "uid" : "1c7508e1371b6a18",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535045115212,
+        "stop" : 1535045115221,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "9480d5b3bf287c36",
+      "status" : "failed",
+      "statusDetails" : "expected null to not equal null",
+      "time" : {
+        "start" : 1535044948857,
+        "stop" : 1535044948860,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "ba9c0f0af3344fc0",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535044871030,
+        "stop" : 1535044871316,
+        "duration" : 286
+      }
+    }, {
+      "uid" : "d4980facbe128b13",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535044757176,
+        "stop" : 1535044757372,
+        "duration" : 196
+      }
+    }, {
+      "uid" : "2f24ff60cdd6ca27",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535044676741,
+        "stop" : 1535044676756,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "e27ab93bffd88acd",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535044503366,
+        "stop" : 1535044503651,
+        "duration" : 285
+      }
+    }, {
+      "uid" : "324c92f5f75873d5",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535044452056,
+        "stop" : 1535044452064,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "37b58f4397094220",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535044391144,
+        "stop" : 1535044391410,
+        "duration" : 266
+      }
+    }, {
+      "uid" : "98c1a6f831fe0bb7",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535044308801,
+        "stop" : 1535044309060,
+        "duration" : 259
+      }
+    }, {
+      "uid" : "156497bf15548188",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535044231150,
+        "stop" : 1535044231484,
+        "duration" : 334
+      }
+    }, {
+      "uid" : "4d1cb91426d11e0a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535044176990,
+        "stop" : 1535044176991,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8e29b5dcf4c9f131",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535044043653,
+        "stop" : 1535044043653,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "332dc4aff022f16e",
+      "status" : "broken",
+      "statusDetails" : "distance is not defined",
+      "time" : {
+        "start" : 1535044003852,
+        "stop" : 1535044003861,
+        "duration" : 9
+      }
+    }, {
+      "uid" : "747b8dfc293e338a",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535043940104,
+        "stop" : 1535043940355,
+        "duration" : 251
+      }
+    }, {
+      "uid" : "122892dbacc2539e",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535043721057,
+        "stop" : 1535043721482,
+        "duration" : 425
+      }
+    }, {
+      "uid" : "2ee2d5fddf6e96fa",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535043643204,
+        "stop" : 1535043643522,
+        "duration" : 318
+      }
+    }, {
+      "uid" : "898e1d25c8c86b6d",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535043583847,
+        "stop" : 1535043584157,
+        "duration" : 310
+      }
+    }, {
+      "uid" : "d99aaeda0163254",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535043528530,
+        "stop" : 1535043528532,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a58eb42f020b852",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535043451394,
+        "stop" : 1535043451709,
+        "duration" : 315
+      }
+    }, {
+      "uid" : "c42d173ea259bd0d",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535043377264,
+        "stop" : 1535043377272,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "31499a6c06398e1",
+      "status" : "failed",
+      "statusDetails" : "expected null to not equal null",
+      "time" : {
+        "start" : 1535043314135,
+        "stop" : 1535043314146,
+        "duration" : 11
+      }
+    }, {
+      "uid" : "7471dfd00cd0379c",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535043163003,
+        "stop" : 1535043163018,
+        "duration" : 15
+      }
+    }, {
+      "uid" : "f943fc448da1329f",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535042992599,
+        "stop" : 1535042992622,
+        "duration" : 23
+      }
+    }, {
+      "uid" : "4f190b562b076c34",
+      "status" : "broken",
+      "statusDetails" : "First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.",
+      "time" : {
+        "start" : 1535042841152,
+        "stop" : 1535042841172,
+        "duration" : 20
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a269112373cd3f2b.json",
+  "parameterValues" : [ "chrome" ]
+}

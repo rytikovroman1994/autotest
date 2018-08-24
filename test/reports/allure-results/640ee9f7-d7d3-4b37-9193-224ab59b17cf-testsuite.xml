@@ -1,0 +1,65 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1535044588423' stop='1535044597165'>
+    <name>smoke screenshot test</name>
+    <title>smoke screenshot test</title>
+    <test-cases>
+        <test-case start='1535044588454' status='passed' stop='1535044597155'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1535044588460' status='passed' stop='1535044589600'>
+                    <name>POST /wd/hub/session/88696a3ee03638234925d5fce38ab01f/window/current/maximize</name>
+                    <title>POST /wd/hub/session/88696a3ee03638234925d5fce38ab01f/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='9c0de61e-ac0f-4618-8694-348cb2135848-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535044589603' status='passed' stop='1535044596978'>
+                    <name>POST /wd/hub/session/88696a3ee03638234925d5fce38ab01f/url</name>
+                    <title>POST /wd/hub/session/88696a3ee03638234925d5fce38ab01f/url</title>
+                    <attachments>
+                        <attachment title='Request' source='3064017f-54a2-444a-a240-86bf284b8a6c-attachment.json' type='application/json' size='44'/>
+                        <attachment title='Response' source='d14fe21d-1301-4478-b593-11c98af2d383-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535044596992' status='passed' stop='1535044597067'>
+                    <name>POST /wd/hub/session/88696a3ee03638234925d5fce38ab01f/elements</name>
+                    <title>POST /wd/hub/session/88696a3ee03638234925d5fce38ab01f/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='38c78f8e-01c8-4101-ae5e-3e68931880c0-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='5b20c8be-91de-40d1-9284-04b23f63391b-attachment.json' type='application/json' size='159'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535044597068' status='passed' stop='1535044597151'>
+                    <name>GET /wd/hub/session/88696a3ee03638234925d5fce38ab01f/element/0.886086536261028-1/displayed</name>
+                    <title>GET /wd/hub/session/88696a3ee03638234925d5fce38ab01f/element/0.886086536261028-1/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='b775de5d-b557-4e5a-8051-bcdac705b487-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1535044597156' status='passed' stop='1535044597163'>
+            <name>take screenshot</name>
+            <title>take screenshot</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\scrin\\screentest-pagefilter.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,0 +1,40 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1535104147358' stop='1535104184338'>
+    <name>status server</name>
+    <title>status server</title>
+    <test-cases>
+        <test-case start='1535104147394' status='passed' stop='1535104181793'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1535104147398' status='passed' stop='1535104181791'>
+                    <name>POST /wd/hub/session/93337b29dddcf790611d0f91c89a5485/url</name>
+                    <title>POST /wd/hub/session/93337b29dddcf790611d0f91c89a5485/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e76f3b39-390d-440b-8cd7-99270ba1f72f-attachment.json' type='application/json' size='37'/>
+                        <attachment title='Response' source='5d7a8fc0-e14d-46d7-be7c-be1281fecc20-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1535104181793' status='passed' stop='1535104184336'>
+            <name>check status server</name>
+            <title>check status server</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\accessServer\\status.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

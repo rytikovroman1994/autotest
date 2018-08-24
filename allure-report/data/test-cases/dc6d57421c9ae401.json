@@ -1,0 +1,89 @@
+{
+  "uid" : "dc6d57421c9ae401",
+  "name" : "take screenshot",
+  "fullName" : "smoke screenshot test.take screenshot",
+  "historyId" : "38edd2b9e38126e095fd407f8e2eb244",
+  "time" : {
+    "start" : 1535044502819,
+    "stop" : 1535044502957,
+    "duration" : 138
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/a84d2339b960e120d3126a75f711d2a6/file",
+      "time" : {
+        "start" : 1535044502883,
+        "stop" : 1535044502954,
+        "duration" : 71
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3fd5f866890b9800",
+        "name" : "Request",
+        "source" : "3fd5f866890b9800.json",
+        "type" : "application/json",
+        "size" : 163366
+      }, {
+        "uid" : "dd7f035078876ccd",
+        "name" : "Response",
+        "source" : "dd7f035078876ccd.json",
+        "type" : "application/json",
+        "size" : 310
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testMethod",
+    "value" : "take screenshot"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dc6d57421c9ae401.json",
+  "parameterValues" : [ "chrome" ]
+}

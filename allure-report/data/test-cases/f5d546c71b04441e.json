@@ -1,0 +1,83 @@
+{
+  "uid" : "f5d546c71b04441e",
+  "name" : "take second screenshot",
+  "fullName" : "smoke screenshot test.take second screenshot",
+  "historyId" : "538339fa31fcc25f71c19f3f8a47c0a6",
+  "time" : {
+    "start" : 1535045362942,
+    "stop" : 1535045363387,
+    "duration" : 445
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET /wd/hub/session/f45ff61c75045fc0bfb067a7d21eebe7/screenshot",
+      "time" : {
+        "start" : 1535045362947,
+        "stop" : 0,
+        "duration" : -1535045362947
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ba701e97838c78cf",
+        "name" : "Screenshot",
+        "source" : "ba701e97838c78cf.png",
+        "type" : "image/png",
+        "size" : 125835
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testMethod",
+    "value" : "take second screenshot"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f5d546c71b04441e.json",
+  "parameterValues" : [ "chrome" ]
+}

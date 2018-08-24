@@ -1,0 +1,113 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1535045719171' stop='1535045728371'>
+    <name>smoke screenshot test</name>
+    <title>smoke screenshot test</title>
+    <test-cases>
+        <test-case start='1535045719199' status='passed' stop='1535045727492'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1535045719205' status='passed' stop='1535045720373'>
+                    <name>POST /wd/hub/session/c461647af4708c5563904ff5dfc1bb87/window/current/maximize</name>
+                    <title>POST /wd/hub/session/c461647af4708c5563904ff5dfc1bb87/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='93f2435a-e386-4c97-b8f8-099f312c8d72-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535045720375' status='passed' stop='1535045727313'>
+                    <name>POST /wd/hub/session/c461647af4708c5563904ff5dfc1bb87/url</name>
+                    <title>POST /wd/hub/session/c461647af4708c5563904ff5dfc1bb87/url</title>
+                    <attachments>
+                        <attachment title='Request' source='52d8cd31-cf7e-495c-8b05-462f572a1856-attachment.json' type='application/json' size='44'/>
+                        <attachment title='Response' source='2897595a-3d26-45c7-8547-25d39e55a1ba-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535045727330' status='passed' stop='1535045727414'>
+                    <name>POST /wd/hub/session/c461647af4708c5563904ff5dfc1bb87/elements</name>
+                    <title>POST /wd/hub/session/c461647af4708c5563904ff5dfc1bb87/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='33ec4be3-fc6a-4dcf-a8b3-9bac2371d025-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='d751c227-9d7a-4179-bd4c-baad6a8647c5-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535045727414' status='passed' stop='1535045727485'>
+                    <name>GET /wd/hub/session/c461647af4708c5563904ff5dfc1bb87/element/0.7140906885876139-1/displayed</name>
+                    <title>GET /wd/hub/session/c461647af4708c5563904ff5dfc1bb87/element/0.7140906885876139-1/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='db343d6f-6ca5-48fc-9b61-07fb17e493ff-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1535045727493' status='passed' stop='1535045727496'>
+            <name>take screenshot</name>
+            <title>take screenshot</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\scrin\\screentest-pagefilter.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1535045727497' status='passed' stop='1535045728099'>
+            <name>take second screenshot</name>
+            <title>take second screenshot</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\scrin\\screentest-pagefilter.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1535045727499' status='undefined'>
+                    <name>GET /wd/hub/session/c461647af4708c5563904ff5dfc1bb87/screenshot</name>
+                    <title>GET /wd/hub/session/c461647af4708c5563904ff5dfc1bb87/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='517c7361-f4de-4f0d-a32c-43f1bc4c4bd8-attachment.png' type='image/png' size='125915'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1535045728099' status='broken' stop='1535045728330'>
+            <name>compare screenshots</name>
+            <title>compare screenshots</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\scrin\\screentest-pagefilter.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'clone' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'clone' of undefined
+                    at ImagePHash.getHash (C:\webdriverIO-with-mochaBDD-master\node_modules\jimp\phash.js:60:15)
+                    at Function.Jimp.distance (C:\webdriverIO-with-mochaBDD-master\node_modules\jimp\index.js:501:23)
+                    at Object.compareScreenshots (C:/webdriverIO-with-mochaBDD-master/helpers/screenshot-compare.js:15:31)
+                    at &lt;anonymous>
+                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

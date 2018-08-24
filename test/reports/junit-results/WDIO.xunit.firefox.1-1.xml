@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="before_all_hook0" timestamp="2018-08-21T16:36:05" time="18.397" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="06164b57e30b49d69bb6417b536aff7d"/>
+      <property name="suiteName" value="&quot;before all&quot; hook0"/>
+      <property name="capabilities" value="firefox"/>
+    </properties>
+  </testsuite>
+  <testsuite name="signup2" timestamp="2018-08-21T16:36:05" time="16.806" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="06164b57e30b49d69bb6417b536aff7d"/>
+      <property name="suiteName" value="signUp2"/>
+      <property name="capabilities" value="firefox"/>
+    </properties>
+    <testcase classname="firefox.signUp2" name="check status server4" time="0.164">
+      <system-out>
+        <![CDATA[
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/14e90a40-38a9-46f7-9852-4da7a7debbd1 - {}
+RESULT: {"state":"success","sessionId":null,"hCode":-1866246268,"value":{},"class":"org.openqa.selenium.remote.Response","status":0}
+]]>
+      </system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

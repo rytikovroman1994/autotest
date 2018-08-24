@@ -1,0 +1,130 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1535043364906' stop='1535043377279'>
+    <name>smoke screenshot test</name>
+    <title>smoke screenshot test</title>
+    <test-cases>
+        <test-case start='1535043364940' status='passed' stop='1535043376805'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1535043364944' status='passed' stop='1535043366120'>
+                    <name>POST /wd/hub/session/7d0c0f14f40c8397b621de43fe91c7ca/window/current/maximize</name>
+                    <title>POST /wd/hub/session/7d0c0f14f40c8397b621de43fe91c7ca/window/current/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='30994980-426c-45fa-8e48-49e5a3989616-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535043366121' status='passed' stop='1535043376648'>
+                    <name>POST /wd/hub/session/7d0c0f14f40c8397b621de43fe91c7ca/url</name>
+                    <title>POST /wd/hub/session/7d0c0f14f40c8397b621de43fe91c7ca/url</title>
+                    <attachments>
+                        <attachment title='Request' source='dc322e56-f4be-41a8-a517-dc976df34b8e-attachment.json' type='application/json' size='44'/>
+                        <attachment title='Response' source='016685d0-806e-42a6-b66d-c59b5775f967-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535043376665' status='passed' stop='1535043376739'>
+                    <name>POST /wd/hub/session/7d0c0f14f40c8397b621de43fe91c7ca/elements</name>
+                    <title>POST /wd/hub/session/7d0c0f14f40c8397b621de43fe91c7ca/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='cfd0bf12-2597-4dec-8b2d-10d36858e2d3-attachment.json' type='application/json' size='63'/>
+                        <attachment title='Response' source='8c08abac-a679-467e-a80a-560baf6d6a23-attachment.json' type='application/json' size='160'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1535043376740' status='passed' stop='1535043376802'>
+                    <name>GET /wd/hub/session/7d0c0f14f40c8397b621de43fe91c7ca/element/0.9045840129762721-1/displayed</name>
+                    <title>GET /wd/hub/session/7d0c0f14f40c8397b621de43fe91c7ca/element/0.9045840129762721-1/displayed</title>
+                    <attachments>
+                        <attachment title='Response' source='0618568c-8dee-4a67-a53c-91ab4838d3ae-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1535043376806' status='broken' stop='1535043376852'>
+            <name>take screenshot</name>
+            <title>take screenshot</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\scrin\\screentest-pagefilter.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: ENOENT: no such file or directory, open 'C:\webdriverIO-with-mochaBDD-master\fixtures\dashboard\feedback\sova.jpg'</message>
+                <stack-trace>Error: Error: ENOENT: no such file or directory, open 'C:\webdriverIO-with-mochaBDD-master\fixtures\dashboard\feedback\sova.jpg'
+                    at Archiver.&lt;anonymous> (C:\webdriverIO-with-mochaBDD-master\node_modules\webdriverio\build\lib\commands\uploadFile.js:54:19)
+                    at emitOne (events.js:121:20)
+                    at Archiver.emit (events.js:211:7)
+                    at Archiver.&lt;anonymous> (C:\webdriverIO-with-mochaBDD-master\node_modules\archiver\lib\core.js:188:12)
+                    at module.exports.handleStuff (C:\webdriverIO-with-mochaBDD-master\node_modules\compress-commons\lib\archivers\zip\zip-archive-output-stream.js:176:5)
+                    at Object.onceWrapper (events.js:313:30)
+                    at emitNone (events.js:111:20)
+                    at module.exports.emit (events.js:208:7)
+                    at endReadableNT (_stream_readable.js:1064:12)
+                    at _combinedTickCallback (internal/process/next_tick.js:138:11)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1535043376853' status='passed' stop='1535043377264'>
+            <name>take second screenshot</name>
+            <title>take second screenshot</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\scrin\\screentest-pagefilter.js"]'/>
+            </parameters>
+            <steps>
+                <step start='1535043376855' status='undefined'>
+                    <name>GET /wd/hub/session/7d0c0f14f40c8397b621de43fe91c7ca/screenshot</name>
+                    <title>GET /wd/hub/session/7d0c0f14f40c8397b621de43fe91c7ca/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='da07b2d2-c694-4b87-9d37-0fe3ac6b7600-attachment.png' type='image/png' size='125915'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1535043377264' status='broken' stop='1535043377272'>
+            <name>compare screenshots</name>
+            <title>compare screenshots</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\scrin\\screentest-pagefilter.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.</message>
+                <stack-trace>TypeError: First argument must be a string, Buffer, ArrayBuffer, Array, or array-like object.
+                    at Function.Buffer.from (buffer.js:183:11)
+                    at Object.compareScreenshots (C:/webdriverIO-with-mochaBDD-master/helpers/screenshot-compare.js:12:43)
+                    at Context.it (C:/webdriverIO-with-mochaBDD-master/test/specs/scrin/screentest-pagefilter.js:33:48)
+                    at C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (C:\webdriverIO-with-mochaBDD-master\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:588:12)
+                    at C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

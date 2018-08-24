@@ -1,0 +1,50 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1535102624380' stop='1535102630737'>
+    <name>status server</name>
+    <title>status server</title>
+    <test-cases>
+        <test-case start='1535102624413' status='passed' stop='1535102630729'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1535102624420' status='passed' stop='1535102630725'>
+                    <name>POST /wd/hub/session/fca60252424535323ee5d91d95814a32/url</name>
+                    <title>POST /wd/hub/session/fca60252424535323ee5d91d95814a32/url</title>
+                    <attachments>
+                        <attachment title='Request' source='13445232-b8e8-4a6e-9cb2-a36d59e41ce9-attachment.json' type='application/json' size='37'/>
+                        <attachment title='Response' source='3ed9600a-47db-4c57-9877-bf788cb3b109-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1535102630729' status='broken' stop='1535102630736'>
+            <name>check status server</name>
+            <title>check status server</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","platform":"","version":"","maxInstances":"1"}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\webdriverIO-with-mochaBDD-master\\test\\specs\\accessServer\\status.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>$q is not defined</message>
+                <stack-trace>ReferenceError: $q is not defined
+                    at Context.it (C:/webdriverIO-with-mochaBDD-master/test/specs/accessServer/status.js:18:24)
+                    at C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (C:\webdriverIO-with-mochaBDD-master\node_modules\core-js\library\modules\_export.js:36:28)
+                    at Context.executeSync (C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:588:12)
+                    at C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

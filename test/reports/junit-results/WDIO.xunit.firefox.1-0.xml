@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="before_all_hook0" timestamp="2018-08-21T16:35:30" time="53.173" tests="0" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="9dbc2777cbe95c075204875eca7ee48c"/>
+      <property name="suiteName" value="&quot;before all&quot; hook0"/>
+      <property name="capabilities" value="firefox"/>
+    </properties>
+  </testsuite>
+  <testsuite name="constructor_smoke_screenshot_test_colorschemes2" timestamp="2018-08-21T16:35:30" time="27.655" tests="1" failures="0" errors="1" skipped="0">
+    <properties>
+      <property name="specId" value="9dbc2777cbe95c075204875eca7ee48c"/>
+      <property name="suiteName" value="Constructor - smoke screenshot test colorSchemes2"/>
+      <property name="capabilities" value="firefox"/>
+    </properties>
+    <testcase classname="firefox.Constructor - smoke screenshot test colorSchemes2" name="&quot;before all&quot; hook4" time="25.518">
+      <error message="&#xA;element (&quot;.avn008_overlay&quot;) still not visible after 10000ms&#xA;"/>
+      <system-err>
+        <![CDATA[
+Error: element (".avn008_overlay") still not visible after 10000ms
+    at elements(".avn008_overlay") - C:\webdriverIO-with-mochaBDD-master\node_modules\webdriverio\build\lib\commands\isVisible.js:54:17
+    at isVisible(".avn008_overlay") - C:\webdriverIO-with-mochaBDD-master\node_modules\webdriverio\build\lib\commands\waitForVisible.js:73:22
+]]>
+      </system-err>
+    </testcase>
+  </testsuite>
+</testsuites>

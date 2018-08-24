@@ -1,0 +1,77 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "\"before all\" hook",
+    "uid" : "251d79a697e54347",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1535100663546,
+      "stop" : 1535100674106,
+      "duration" : 10560
+    },
+    "flaky" : true,
+    "parameters" : [ ]
+  }, {
+    "name" : "take screenshot",
+    "uid" : "8b210be3795db8e4",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1535100674107,
+      "stop" : 1535100674223,
+      "duration" : 116
+    },
+    "flaky" : true,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "take second screenshot",
+    "uid" : "cc70531c1186f27e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1535100674224,
+      "stop" : 1535100674716,
+      "duration" : 492
+    },
+    "flaky" : false,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "compare screenshots",
+    "uid" : "a269112373cd3f2b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1535100674716,
+      "stop" : 1535100674862,
+      "duration" : 146
+    },
+    "flaky" : true,
+    "parameters" : [ "chrome" ]
+  }, {
+    "name" : "\"before all\" hook",
+    "uid" : "df75e79e9bbf5076",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1535104835183,
+      "stop" : 1535104842911,
+      "duration" : 7728
+    },
+    "flaky" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "check status server",
+    "uid" : "b7763cb0b81dcf89",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1535104842911,
+      "stop" : 1535104845042,
+      "duration" : 2131
+    },
+    "flaky" : true,
+    "parameters" : [ "chrome" ]
+  } ]
+}
