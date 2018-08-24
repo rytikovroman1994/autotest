@@ -5,7 +5,7 @@
     "name" : "smoke screenshot test",
     "children" : [ {
       "name" : "\"before all\" hook",
-      "uid" : "251d79a697e54347",
+      "uid" : "37fd3291f659d35d",
       "parentUid" : "bb8da1efb6836660ca029545d9668b97",
       "status" : "passed",
       "time" : {
@@ -17,7 +17,7 @@
       "parameters" : [ ]
     }, {
       "name" : "take screenshot",
-      "uid" : "8b210be3795db8e4",
+      "uid" : "1cf58577c22cd77",
       "parentUid" : "bb8da1efb6836660ca029545d9668b97",
       "status" : "passed",
       "time" : {
@@ -29,7 +29,7 @@
       "parameters" : [ "chrome" ]
     }, {
       "name" : "take second screenshot",
-      "uid" : "cc70531c1186f27e",
+      "uid" : "c1e10f5d4e8dca9c",
       "parentUid" : "bb8da1efb6836660ca029545d9668b97",
       "status" : "passed",
       "time" : {
@@ -41,7 +41,7 @@
       "parameters" : [ "chrome" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "a269112373cd3f2b",
+      "uid" : "94db631fd3d1efad",
       "parentUid" : "bb8da1efb6836660ca029545d9668b97",
       "status" : "broken",
       "time" : {
@@ -57,29 +57,45 @@
     "name" : "status server",
     "children" : [ {
       "name" : "\"before all\" hook",
-      "uid" : "df75e79e9bbf5076",
+      "uid" : "5b3cf43ad17ff715",
       "parentUid" : "7fee4f26e6eecb9d9e34138534661e0f",
       "status" : "passed",
       "time" : {
-        "start" : 1535104835183,
-        "stop" : 1535104842911,
-        "duration" : 7728
+        "start" : 1535117118135,
+        "stop" : 1535117121401,
+        "duration" : 3266
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "check status server",
-      "uid" : "b7763cb0b81dcf89",
+      "uid" : "51a6b51a1f6b4f0f",
       "parentUid" : "7fee4f26e6eecb9d9e34138534661e0f",
       "status" : "passed",
       "time" : {
-        "start" : 1535104842911,
-        "stop" : 1535104845042,
-        "duration" : 2131
+        "start" : 1535117121402,
+        "stop" : 1535117122379,
+        "duration" : 977
       },
       "flaky" : true,
       "parameters" : [ "chrome" ]
     } ],
     "uid" : "7fee4f26e6eecb9d9e34138534661e0f"
+  }, {
+    "name" : "checking-cards",
+    "children" : [ {
+      "name" : "\"before all\" hook",
+      "uid" : "2e96624b146ebc35",
+      "parentUid" : "e56ef48cac1d5f3c42511a668d10823b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1535117127078,
+        "stop" : 1535117149885,
+        "duration" : 22807
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e56ef48cac1d5f3c42511a668d10823b"
   } ]
 }
