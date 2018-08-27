@@ -1,28 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="before_all_hook0" timestamp="2018-08-23T12:09:19" time="94.35" tests="0" failures="0" errors="0" skipped="0">
+  <testsuite name="before_all_hook0" timestamp="2018-08-27T16:34:24" time="64.497" tests="0" failures="0" errors="0" skipped="0">
     <properties>
-      <property name="specId" value="8249fffdde6033d97d59c47f27f3ddd9"/>
+      <property name="specId" value="42187d2878a09c84ecccf0ee8ae301b3"/>
       <property name="suiteName" value="&quot;before all&quot; hook0"/>
       <property name="capabilities" value="internetexplorer"/>
     </properties>
   </testsuite>
-  <testsuite name="signup2" timestamp="2018-08-23T12:09:19" time="90.093" tests="1" failures="0" errors="1" skipped="0">
+  <testsuite name="test_of_the_price_slider2" timestamp="2018-08-27T16:34:24" time="60.366" tests="1" failures="0" errors="1" skipped="0">
     <properties>
-      <property name="specId" value="8249fffdde6033d97d59c47f27f3ddd9"/>
-      <property name="suiteName" value="signUp2"/>
+      <property name="specId" value="42187d2878a09c84ecccf0ee8ae301b3"/>
+      <property name="suiteName" value="test of the price slider2"/>
       <property name="capabilities" value="internetexplorer"/>
     </properties>
-    <testcase classname="internetexplorer.signUp2" name="&quot;before all&quot; hook4" time="4.256">
-      <error message="&#xA;Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\webdriverIO-with-mochaBDD-master\test\specs\sign-up.js)&#xA;"/>
+    <testcase classname="internetexplorer.test of the price slider2" name="&quot;before all&quot; hook4" time="4.13">
+      <error message="&#xA;Promise was rejected with the following reason: connect ECONNREFUSED 127.0.0.1:4444&#xA;"/>
       <system-err>
         <![CDATA[
-Error: Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\webdriverIO-with-mochaBDD-master\test\specs\sign-up.js)
-    at Hook.Runnable._timeoutError (C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-mocha-framework\node_modules\mocha\lib\runnable.js:440:10)
-    at Timeout.<anonymous> (C:\webdriverIO-with-mochaBDD-master\node_modules\wdio-mocha-framework\node_modules\mocha\lib\runnable.js:251:24)
-    at ontimeout (timers.js:498:11)
-    at tryOnTimeout (timers.js:323:5)
-    at Timer.listOnTimeout (timers.js:290:5)
+Error: Promise was rejected with the following reason: connect ECONNREFUSED 127.0.0.1:4444
+    at new WaitUntilTimeoutError (C:\autotest\node_modules\webdriverio\build\lib\utils\ErrorHandler.js:149:12)
+    at C:\autotest\node_modules\webdriverio\build\lib\commands\waitUntil.js:36:15
+    at <anonymous>
 ]]>
       </system-err>
     </testcase>

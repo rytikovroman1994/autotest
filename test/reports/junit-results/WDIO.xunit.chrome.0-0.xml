@@ -1,23 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="before_all_hook0" timestamp="2018-08-24T16:25:18" time="35.921" tests="0" failures="0" errors="0" skipped="0">
+  <testsuite name="before_all_hook0" timestamp="2018-08-27T16:48:27" time="9.434" tests="0" failures="0" errors="0" skipped="0">
     <properties>
-      <property name="specId" value="a0cafe6f2c8a5481a4ec7327828a1502"/>
+      <property name="specId" value="42187d2878a09c84ecccf0ee8ae301b3"/>
       <property name="suiteName" value="&quot;before all&quot; hook0"/>
       <property name="capabilities" value="chrome"/>
     </properties>
   </testsuite>
-  <testsuite name="status_server2" timestamp="2018-08-24T16:25:18" time="4.27" tests="1" failures="0" errors="0" skipped="0">
+  <testsuite name="test_of_the_price_slider2" timestamp="2018-08-27T16:48:27" time="9.009" tests="5" failures="0" errors="0" skipped="0">
     <properties>
-      <property name="specId" value="a0cafe6f2c8a5481a4ec7327828a1502"/>
-      <property name="suiteName" value="status server2"/>
+      <property name="specId" value="42187d2878a09c84ecccf0ee8ae301b3"/>
+      <property name="suiteName" value="test of the price slider2"/>
       <property name="capabilities" value="chrome"/>
     </properties>
-    <testcase classname="chrome.status server2" name="check status server4" time="0.978">
+    <testcase classname="chrome.test of the price slider2" name="page budget4" time="0.453">
       <system-out>
         <![CDATA[
-COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/bebebbf3ed24946046f573bd5d2d613e - {}
-RESULT: {"sessionId":"bebebbf3ed24946046f573bd5d2d613e","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element - {"using":"id","value":"react-tabs-2"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":{"ELEMENT":"0.8764324075830221-2"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element/0.8764324075830221-2/click - {}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":".gridcontainer.avn008_filter__grid-align"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-3"}]}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.test of the price slider2" name="move the left slider7" time="0.617">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":".avn008_overlay_submit-block_price-display span.price-text"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-4"}]}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element/0.8764324075830221-4/text - {}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":"599 900"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":".rc-slider-handle-1"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-5"}]}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element/0.8764324075830221-5/displayed - {}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":true}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element - {"using":"css selector","value":".rc-slider-handle-1"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":{"ELEMENT":"0.8764324075830221-5"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/moveto - {"element":"0.8764324075830221-5","xoffset":20,"yoffset":20}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/buttondown - {"button":0}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element - {"using":"css selector","value":".avn008_budget__slider-self"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":{"ELEMENT":"0.8764324075830221-6"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/moveto - {"element":"0.8764324075830221-6","xoffset":200,"yoffset":0}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/buttonup - {"button":0}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":".avn008_overlay_submit-block_price-display span.price-text"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-4"}]}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element/0.8764324075830221-4/text - {}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":"1 432 240"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.test of the price slider2" name="minimum budget10" time="0.032">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":" div:nth-child(1) > div.avn008_filter-value-item__inner.avn008_filter-value-item__with-price"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-7"}]}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.test of the price slider2" name="right slider motion13" time="1.055">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":".rc-slider-handle-2"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-8"}]}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element/0.8764324075830221-8/displayed - {}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":true}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":".rc-slider-handle-2"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-8"}]}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element/0.8764324075830221-8/displayed - {}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":true}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element - {"using":"css selector","value":".rc-slider-handle-2"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":{"ELEMENT":"0.8764324075830221-8"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/moveto - {"element":"0.8764324075830221-8","xoffset":20,"yoffset":20}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/buttondown - {"button":0}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element - {"using":"css selector","value":".avn008_budget__slider-self"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":{"ELEMENT":"0.8764324075830221-6"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/moveto - {"element":"0.8764324075830221-6","xoffset":100,"yoffset":0}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/buttonup - {"button":0}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-9"}]}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element/0.8764324075830221-9/text - {}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":"1 430 909"}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":".rc-slider-handle-2"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-8"}]}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element/0.8764324075830221-8/displayed - {}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":true}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element - {"using":"css selector","value":".rc-slider-handle-2"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":{"ELEMENT":"0.8764324075830221-8"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/moveto - {"element":"0.8764324075830221-8","xoffset":20,"yoffset":20}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/buttondown - {"button":0}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element - {"using":"css selector","value":".avn008_budget__slider-self"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":{"ELEMENT":"0.8764324075830221-6"}}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/moveto - {"element":"0.8764324075830221-6","xoffset":300,"yoffset":0}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/buttonup - {"button":0}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-9"}]}
+COMMAND: GET http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/element/0.8764324075830221-9/text - {}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":"1 884 525"}
+]]>
+      </system-out>
+    </testcase>
+    <testcase classname="chrome.test of the price slider2" name="minimum budget16" time="0.056">
+      <system-out>
+        <![CDATA[
+COMMAND: POST http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154/elements - {"using":"css selector","value":" div:nth-child(2) > div.avn008_filter-value-item__inner.avn008_filter-value-item__with-price"}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":[{"ELEMENT":"0.8764324075830221-10"}]}
+COMMAND: DELETE http://127.0.0.1:4444/wd/hub/session/c4d18eb6e6d75962ce9ce4b3b679c154 - {}
+RESULT: {"sessionId":"c4d18eb6e6d75962ce9ce4b3b679c154","status":0,"value":null}
 ]]>
       </system-out>
     </testcase>
