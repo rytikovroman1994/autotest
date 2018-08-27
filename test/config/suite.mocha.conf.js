@@ -80,7 +80,7 @@ exports.config = {
           //     ignoreProtectedModeSettings: true,    //only applicable to IE browser
           //     ignoreZoomSetting: true,              //only applicable to IE browser
           //     ensureCleanSession: true,
-          //     maxInstances: '5',
+          //     maxInstances: '1',
           //     // specs: [
           //     //     './test/specs/*.js'
           //     // ],
@@ -140,15 +140,15 @@ exports.config = {
     // e.g. using promises you can set the sync option to false.
     sync: true,
     reporters: ['spec'],
-    logLevel: 'silent',               // Level of logging verbosity: silent | verbose | command | data | result | error 'dot', 'junit'
+    logLevel: 'command',               // Level of logging verbosity: silent | verbose | command | data | result | error 'dot', 'junit'
     coloredLogs: true,                // Enables colors for log output.
     screenshotPath: './test/reports/errorShots/', // Saves a screenshot to a given path if a command fails.
     //
     // Set a base URL in order to shorten url command calls. If your url parameter starts
     // with "/", then the base url gets prepended.
     baseUrl: 'https://vw.kodix.ru/',
-    waitforTimeout: 20000,            // Default timeout for all waitFor* commands.
-    connectionRetryTimeout: 20000,    // Default timeout in milliseconds for request if Selenium Grid doesn't send response
+    waitforTimeout: 40000,            // Default timeout for all waitFor* commands.
+    connectionRetryTimeout: 40000,    // Default timeout in milliseconds for request if Selenium Grid doesn't send response
     connectionRetryCount: 1,          // Default request retries count
     
     services: ['selenium-standalone'],
@@ -282,7 +282,7 @@ exports.config = {
     beforeSuite() {
       // эта дичь позволяет в repl'е перезагружать все хелперы без перезапуска wdio
       browser.reloadHelpers = function reloadHelpers(bustCache = true) {
-        const helpersOriginal = requireGlob.sync(['C:/webdriverIO-with-mochaBDD-master/helpers/**/*.js', '!./helpers/utils/*'], { bustCache });
+        const helpersOriginal = requireGlob.sync(['C:/autotest/helpers/**/*.js', 'C:/autotest/!./helpers/utils/*'], { bustCache });
         browser.helpers = {};
   
         (function fn(helpers) {
