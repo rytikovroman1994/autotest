@@ -1,0 +1,251 @@
+{
+  "uid" : "c51d23105574d497",
+  "name" : "\"before all\" hook",
+  "fullName" : "smoke screenshot test.\"before all\" hook",
+  "historyId" : "afcbc2a76a1b9711fa728a4ef7611c03",
+  "time" : {
+    "start" : 1535642724666,
+    "stop" : 1535642731587,
+    "duration" : 6921
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/494cd660bdcdfdc78274209dd65b7ab3/window/current/maximize",
+      "time" : {
+        "start" : 1535642724670,
+        "stop" : 1535642725837,
+        "duration" : 1167
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2a9bcde16db5b4d6",
+        "name" : "Response",
+        "source" : "2a9bcde16db5b4d6.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/494cd660bdcdfdc78274209dd65b7ab3/url",
+      "time" : {
+        "start" : 1535642725842,
+        "stop" : 1535642731486,
+        "duration" : 5644
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "62b77a25888c8eb",
+        "name" : "Request",
+        "source" : "62b77a25888c8eb.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "a84c4f7f5ed73023",
+        "name" : "Response",
+        "source" : "a84c4f7f5ed73023.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/494cd660bdcdfdc78274209dd65b7ab3/elements",
+      "time" : {
+        "start" : 1535642731503,
+        "stop" : 1535642731542,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a0782ef98e0952f4",
+        "name" : "Request",
+        "source" : "a0782ef98e0952f4.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "a7c7fe8f06a72bf5",
+        "name" : "Response",
+        "source" : "a7c7fe8f06a72bf5.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/494cd660bdcdfdc78274209dd65b7ab3/element/0.9691742343610705-1/displayed",
+      "time" : {
+        "start" : 1535642731543,
+        "stop" : 1535642731585,
+        "duration" : 42
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "59405992f8fa793d",
+        "name" : "Response",
+        "source" : "59405992f8fa793d.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3a51b36ba61ac14a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535619838066,
+        "stop" : 1535619854494,
+        "duration" : 16428
+      }
+    }, {
+      "uid" : "2a31252b34724621",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535361944531,
+        "stop" : 1535361952138,
+        "duration" : 7607
+      }
+    }, {
+      "uid" : "4822695093e335e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535361884469,
+        "stop" : 1535361891342,
+        "duration" : 6873
+      }
+    }, {
+      "uid" : "5f08c3fdb2b68a85",
+      "status" : "broken",
+      "statusDetails" : "browser.helpers.openSite is not a function",
+      "time" : {
+        "start" : 1535361780349,
+        "stop" : 1535361780367,
+        "duration" : 18
+      }
+    }, {
+      "uid" : "a5eccc711a5995d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535126713325,
+        "stop" : 1535126723427,
+        "duration" : 10102
+      }
+    }, {
+      "uid" : "3fb8b25e8ad69d3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535125756469,
+        "stop" : 1535125765996,
+        "duration" : 9527
+      }
+    }, {
+      "uid" : "ad033fbe91809be6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535125705134,
+        "stop" : 1535125717051,
+        "duration" : 11917
+      }
+    }, {
+      "uid" : "ae2e5ec4b95793af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535125642951,
+        "stop" : 1535125651612,
+        "duration" : 8661
+      }
+    }, {
+      "uid" : "cff17ec4ffe0d967",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535125222753,
+        "stop" : 1535125233394,
+        "duration" : 10641
+      }
+    }, {
+      "uid" : "d85109377dbce3d8",
+      "status" : "broken",
+      "statusDetails" : "browser.helpers.openSite is not a function",
+      "time" : {
+        "start" : 1535125150341,
+        "stop" : 1535125150345,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "8c9e78a6e2653613",
+      "status" : "broken",
+      "statusDetails" : "browser.helpers.openSite is not a function",
+      "time" : {
+        "start" : 1535125112739,
+        "stop" : 1535125112745,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "2892084a057a2821",
+      "status" : "broken",
+      "statusDetails" : "browser.helpers.openSite is not a function",
+      "time" : {
+        "start" : 1535123793715,
+        "stop" : 1535123793745,
+        "duration" : 30
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c51d23105574d497.json",
+  "parameterValues" : [ ]
+}

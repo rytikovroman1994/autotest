@@ -1,0 +1,45 @@
+{
+  "uid" : "8c9e78a6e2653613",
+  "name" : "\"before all\" hook",
+  "fullName" : "smoke screenshot test.\"before all\" hook",
+  "historyId" : "afcbc2a76a1b9711fa728a4ef7611c03",
+  "time" : {
+    "start" : 1535125112739,
+    "stop" : 1535125112745,
+    "duration" : 6
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "browser.helpers.openSite is not a function",
+  "statusTrace" : "TypeError: browser.helpers.openSite is not a function\n                    at Context.before (C:/autotest/test/specs/scrin/screentest-pagefilter.js:9:25)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8c9e78a6e2653613.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,158 @@
+{
+  "uid" : "3868c4be01173634",
+  "name" : "check position button",
+  "fullName" : "online-payments.check position button",
+  "historyId" : "af7f066b11be01ebf88da95e782ed8d4",
+  "time" : {
+    "start" : 1535447077569,
+    "stop" : 1535447077729,
+    "duration" : 160
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/83f60719f12c2f5428f3e1ad9b7e1fff/elements",
+      "time" : {
+        "start" : 1535447077585,
+        "stop" : 1535447077620,
+        "duration" : 35
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "234e64f7305b767f",
+        "name" : "Request",
+        "source" : "234e64f7305b767f.json",
+        "type" : "application/json",
+        "size" : 67
+      }, {
+        "uid" : "6b4118cbe5f47582",
+        "name" : "Response",
+        "source" : "6b4118cbe5f47582.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/83f60719f12c2f5428f3e1ad9b7e1fff/element/0.07375226003497048-4/location",
+      "time" : {
+        "start" : 1535447077622,
+        "stop" : 1535447077644,
+        "duration" : 22
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f390d7992033809b",
+        "name" : "Response",
+        "source" : "f390d7992033809b.json",
+        "type" : "application/json",
+        "size" : 291
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/83f60719f12c2f5428f3e1ad9b7e1fff/elements",
+      "time" : {
+        "start" : 1535447077659,
+        "stop" : 1535447077696,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "69e45052fd07b407",
+        "name" : "Request",
+        "source" : "69e45052fd07b407.json",
+        "type" : "application/json",
+        "size" : 67
+      }, {
+        "uid" : "c4a3fe823e0ede6b",
+        "name" : "Response",
+        "source" : "c4a3fe823e0ede6b.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/83f60719f12c2f5428f3e1ad9b7e1fff/element/0.07375226003497048-5/location",
+      "time" : {
+        "start" : 1535447077704,
+        "stop" : 1535447077728,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dc83f33da30ee2dc",
+        "name" : "Response",
+        "source" : "dc83f33da30ee2dc.json",
+        "type" : "application/json",
+        "size" : 291
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "online-payments"
+  }, {
+    "name" : "testClass",
+    "value" : "online-payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "check position button"
+  }, {
+    "name" : "package",
+    "value" : "online-payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3868c4be01173634.json",
+  "parameterValues" : [ "chrome" ]
+}

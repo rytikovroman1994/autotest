@@ -1,0 +1,106 @@
+{
+  "uid" : "5d94940c8143a89",
+  "name" : "\"before all\" hook",
+  "fullName" : "status server.\"before all\" hook",
+  "historyId" : "b035ab0f839be589c0080cf22ab006fb",
+  "time" : {
+    "start" : 1535642570250,
+    "stop" : 1535642574771,
+    "duration" : 4521
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/ee2534e6434e3ef5e283cd690c4fa6c4/url",
+      "time" : {
+        "start" : 1535642570255,
+        "stop" : 1535642574771,
+        "duration" : 4516
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7e56292b4ceaf0c7",
+        "name" : "Request",
+        "source" : "7e56292b4ceaf0c7.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "8f2286a48e9e7d50",
+        "name" : "Response",
+        "source" : "8f2286a48e9e7d50.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "status server"
+  }, {
+    "name" : "testClass",
+    "value" : "status server"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "status server"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e046024479a6cb9c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535477566648,
+        "stop" : 1535477572036,
+        "duration" : 5388
+      }
+    }, {
+      "uid" : "dead515cfc242c27",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535374092640,
+        "stop" : 1535374102496,
+        "duration" : 9856
+      }
+    }, {
+      "uid" : "fb5ca02151d20990",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535123727757,
+        "stop" : 1535123734639,
+        "duration" : 6882
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5d94940c8143a89.json",
+  "parameterValues" : [ ]
+}

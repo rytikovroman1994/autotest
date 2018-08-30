@@ -1,0 +1,189 @@
+{
+  "uid" : "d509925fb53aab7e",
+  "name" : "off online payment",
+  "fullName" : "online-payments.off online payment",
+  "historyId" : "c17baee81518a7e2cae4c43cb2245fcc",
+  "time" : {
+    "start" : 1535386410342,
+    "stop" : 1535386500350,
+    "duration" : 90008
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\filter\\budget\\online-payment.js)",
+  "statusTrace" : "Error: Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\filter\\budget\\online-payment.js)\n                    at Test.Runnable._timeoutError (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:440:10)\n                    at Timeout.<anonymous> (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:251:24)\n                    at ontimeout (timers.js:498:11)\n                    at tryOnTimeout (timers.js:323:5)\n                    at Timer.listOnTimeout (timers.js:290:5)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\filter\\budget\\online-payment.js)",
+    "statusTrace" : "Error: Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\filter\\budget\\online-payment.js)\n                    at Test.Runnable._timeoutError (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:440:10)\n                    at Timeout.<anonymous> (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:251:24)\n                    at ontimeout (timers.js:498:11)\n                    at tryOnTimeout (timers.js:323:5)\n                    at Timer.listOnTimeout (timers.js:290:5)",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/10e151688d21c60328b2e1a18e4cbb36/element",
+      "time" : {
+        "start" : 1535386410345,
+        "stop" : 1535386410407,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "49e8192170854158",
+        "name" : "Request",
+        "source" : "49e8192170854158.json",
+        "type" : "application/json",
+        "size" : 72
+      }, {
+        "uid" : "475ad425562e7dc5",
+        "name" : "Response",
+        "source" : "475ad425562e7dc5.json",
+        "type" : "application/json",
+        "size" : 136
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/10e151688d21c60328b2e1a18e4cbb36/element/0.2089862942866585-5/click",
+      "time" : {
+        "start" : 1535386410409,
+        "stop" : 1535386410836,
+        "duration" : 427
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4795be83a639d7c6",
+        "name" : "Response",
+        "source" : "4795be83a639d7c6.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/10e151688d21c60328b2e1a18e4cbb36/elements",
+      "time" : {
+        "start" : 1535386410850,
+        "stop" : 1535386410962,
+        "duration" : 112
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "55d596876e6d1861",
+        "name" : "Request",
+        "source" : "55d596876e6d1861.json",
+        "type" : "application/json",
+        "size" : 66
+      }, {
+        "uid" : "867bc313e92de59c",
+        "name" : "Response",
+        "source" : "867bc313e92de59c.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/10e151688d21c60328b2e1a18e4cbb36/element/0.2089862942866585-6/attribute/value",
+      "time" : {
+        "start" : 1535386410965,
+        "stop" : 1535386411061,
+        "duration" : 96
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1a60cec1cde43122",
+        "name" : "Response",
+        "source" : "1a60cec1cde43122.json",
+        "type" : "application/json",
+        "size" : 94
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/10e151688d21c60328b2e1a18e4cbb36/element",
+      "time" : {
+        "start" : 1535386411064,
+        "stop" : 1535386411237,
+        "duration" : 173
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6bb15fefc7d2be87",
+        "name" : "Request",
+        "source" : "6bb15fefc7d2be87.json",
+        "type" : "application/json",
+        "size" : 83
+      }, {
+        "uid" : "363ada84e4ee7652",
+        "name" : "Response",
+        "source" : "363ada84e4ee7652.json",
+        "type" : "application/json",
+        "size" : 660
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "online-payments"
+  }, {
+    "name" : "testClass",
+    "value" : "online-payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "off online payment"
+  }, {
+    "name" : "package",
+    "value" : "online-payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d509925fb53aab7e.json",
+  "parameterValues" : [ "chrome" ]
+}

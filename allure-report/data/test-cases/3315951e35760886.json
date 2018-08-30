@@ -1,0 +1,121 @@
+{
+  "uid" : "3315951e35760886",
+  "name" : "verification of email input",
+  "fullName" : "signUp.verification of email input",
+  "historyId" : "30c3a00668b516281c78d7675d64f7d4",
+  "time" : {
+    "start" : 1535642771851,
+    "stop" : 1535642772145,
+    "duration" : 294
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "An element could not be located on the page using the given search parameters (\"#email\").",
+  "statusTrace" : "Error: An element could not be located on the page using the given search parameters (\"#email\").\n                    at setValue(\"#email\", \"19@hotmail.com\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"#email\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\setValue.js:29:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "An element could not be located on the page using the given search parameters (\"#email\").",
+    "statusTrace" : "Error: An element could not be located on the page using the given search parameters (\"#email\").\n                    at setValue(\"#email\", \"19@hotmail.com\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"#email\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\setValue.js:29:17",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/0028d9e77863d43c246dc177a0f44bee/elements",
+      "time" : {
+        "start" : 1535642771854,
+        "stop" : 1535642771881,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cf9157cef489f086",
+        "name" : "Request",
+        "source" : "cf9157cef489f086.json",
+        "type" : "application/json",
+        "size" : 43
+      }, {
+        "uid" : "83542484ee6b2b11",
+        "name" : "Response",
+        "source" : "83542484ee6b2b11.json",
+        "type" : "application/json",
+        "size" : 89
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/0028d9e77863d43c246dc177a0f44bee/screenshot",
+      "time" : {
+        "start" : 1535642771881,
+        "stop" : 1535642772145,
+        "duration" : 264
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element could not be located on the page using the given search parameters (\"#email\").\n                    at setValue(\"#email\", \"19@hotmail.com\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"#email\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\setValue.js:29:17",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "12b8561338304d32",
+        "name" : "Screenshot",
+        "source" : "12b8561338304d32.png",
+        "type" : "image/png",
+        "size" : 41755
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "signUp"
+  }, {
+    "name" : "testClass",
+    "value" : "signUp"
+  }, {
+    "name" : "testMethod",
+    "value" : "verification of email input"
+  }, {
+    "name" : "package",
+    "value" : "signUp"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3315951e35760886.json",
+  "parameterValues" : [ "chrome" ]
+}

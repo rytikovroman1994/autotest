@@ -1,0 +1,1085 @@
+{
+  "uid" : "96af0dce1fcce638",
+  "name" : "\"before all\" hook",
+  "fullName" : "test of the price slider.\"before all\" hook",
+  "historyId" : "4fca2d9cad0c811219e6a00bbba58c0",
+  "time" : {
+    "start" : 1535642604471,
+    "stop" : 1535642610987,
+    "duration" : 6516
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/5304845ee335eac2cf018d8a3331da7d/window/current/maximize",
+      "time" : {
+        "start" : 1535642604477,
+        "stop" : 1535642605643,
+        "duration" : 1166
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "210fda3d587029c4",
+        "name" : "Response",
+        "source" : "210fda3d587029c4.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/5304845ee335eac2cf018d8a3331da7d/url",
+      "time" : {
+        "start" : 1535642605651,
+        "stop" : 1535642610819,
+        "duration" : 5168
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "52895d36d38e8e63",
+        "name" : "Request",
+        "source" : "52895d36d38e8e63.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "842234827fbf3515",
+        "name" : "Response",
+        "source" : "842234827fbf3515.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/5304845ee335eac2cf018d8a3331da7d/elements",
+      "time" : {
+        "start" : 1535642610838,
+        "stop" : 1535642610882,
+        "duration" : 44
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bba448fb270af95b",
+        "name" : "Request",
+        "source" : "bba448fb270af95b.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "6043b275c6807d25",
+        "name" : "Response",
+        "source" : "6043b275c6807d25.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/5304845ee335eac2cf018d8a3331da7d/element/0.1085482099459163-1/displayed",
+      "time" : {
+        "start" : 1535642610884,
+        "stop" : 1535642610987,
+        "duration" : 103
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4b18601d1a690864",
+        "name" : "Response",
+        "source" : "4b18601d1a690864.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testClass",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8523a48467101836",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535377707848,
+        "stop" : 1535377714603,
+        "duration" : 6755
+      }
+    }, {
+      "uid" : "96604597e6fab52f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535377664987,
+        "stop" : 1535377674530,
+        "duration" : 9543
+      }
+    }, {
+      "uid" : "d8b8276536c9e07d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376866457,
+        "stop" : 1535376880273,
+        "duration" : 13816
+      }
+    }, {
+      "uid" : "798339ff4953fc7",
+      "status" : "broken",
+      "statusDetails" : "Promise was rejected with the following reason: connect ECONNREFUSED 127.0.0.1:4444",
+      "time" : {
+        "start" : 1535376864702,
+        "stop" : 1535376925026,
+        "duration" : 60324
+      }
+    }, {
+      "uid" : "e7ee3fdf370a51b2",
+      "status" : "broken",
+      "statusDetails" : "Promise was rejected with the following reason: Currently focused window has been closed.\n                Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                Driver info: driver.version: unknown",
+      "time" : {
+        "start" : 1535376563407,
+        "stop" : 1535376623701,
+        "duration" : 60294
+      }
+    }, {
+      "uid" : "cc442504de05805c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376480458,
+        "stop" : 1535376516368,
+        "duration" : 35910
+      }
+    }, {
+      "uid" : "4f6c85ded9893234",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376480235,
+        "stop" : 1535376508552,
+        "duration" : 28317
+      }
+    }, {
+      "uid" : "946847d90f623de7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376436378,
+        "stop" : 1535376459748,
+        "duration" : 23370
+      }
+    }, {
+      "uid" : "3c1ec3a74e40b7b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376435790,
+        "stop" : 1535376446828,
+        "duration" : 11038
+      }
+    }, {
+      "uid" : "ece32e8d7ee4932b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376288468,
+        "stop" : 1535376373345,
+        "duration" : 84877
+      }
+    }, {
+      "uid" : "281bb13830cae0f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376287636,
+        "stop" : 1535376311744,
+        "duration" : 24108
+      }
+    }, {
+      "uid" : "ae883ea97aec270c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376171583,
+        "stop" : 1535376212337,
+        "duration" : 40754
+      }
+    }, {
+      "uid" : "a7e502a030762def",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376171219,
+        "stop" : 1535376209696,
+        "duration" : 38477
+      }
+    }, {
+      "uid" : "24ad56f252918467",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376111821,
+        "stop" : 1535376130395,
+        "duration" : 18574
+      }
+    }, {
+      "uid" : "42e8ba899d427a69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535376111119,
+        "stop" : 1535376124211,
+        "duration" : 13092
+      }
+    }, {
+      "uid" : "1fda3bc566708e57",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375968847,
+        "stop" : 1535375992609,
+        "duration" : 23762
+      }
+    }, {
+      "uid" : "a367454a2de5b0ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375968545,
+        "stop" : 1535376000806,
+        "duration" : 32261
+      }
+    }, {
+      "uid" : "c7a0231879a273cd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375898044,
+        "stop" : 1535375934633,
+        "duration" : 36589
+      }
+    }, {
+      "uid" : "753214714ecf7b39",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375897311,
+        "stop" : 1535375908386,
+        "duration" : 11075
+      }
+    }, {
+      "uid" : "7f41eed191bd5fa2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375763316,
+        "stop" : 1535375781622,
+        "duration" : 18306
+      }
+    }, {
+      "uid" : "969c9fb44190e98e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375762762,
+        "stop" : 1535375778490,
+        "duration" : 15728
+      }
+    }, {
+      "uid" : "35d1ded375381254",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375666545,
+        "stop" : 1535375690095,
+        "duration" : 23550
+      }
+    }, {
+      "uid" : "7ce3501df74fac82",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375665823,
+        "stop" : 1535375677641,
+        "duration" : 11818
+      }
+    }, {
+      "uid" : "9a77b4a1d2501186",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375582461,
+        "stop" : 1535375594298,
+        "duration" : 11837
+      }
+    }, {
+      "uid" : "834644473a01cd53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375579989,
+        "stop" : 1535375587887,
+        "duration" : 7898
+      }
+    }, {
+      "uid" : "8297da49f3bcd167",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375447611,
+        "stop" : 1535375473198,
+        "duration" : 25587
+      }
+    }, {
+      "uid" : "e1f69d72d9a55e53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375447010,
+        "stop" : 1535375463160,
+        "duration" : 16150
+      }
+    }, {
+      "uid" : "16189edd3df89173",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375334425,
+        "stop" : 1535375349759,
+        "duration" : 15334
+      }
+    }, {
+      "uid" : "1b906d515558f488",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375205860,
+        "stop" : 1535375231794,
+        "duration" : 25934
+      }
+    }, {
+      "uid" : "949241f16dc4b8cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375205697,
+        "stop" : 1535375226908,
+        "duration" : 21211
+      }
+    }, {
+      "uid" : "57d550ca1aeee827",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375120253,
+        "stop" : 1535375149197,
+        "duration" : 28944
+      }
+    }, {
+      "uid" : "6568e188ae4641a1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535375017043,
+        "stop" : 1535375053137,
+        "duration" : 36094
+      }
+    }, {
+      "uid" : "e3c0abd368d92d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535374973633,
+        "stop" : 1535374994420,
+        "duration" : 20787
+      }
+    }, {
+      "uid" : "9cb7e4239f799749",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535374915724,
+        "stop" : 1535374931710,
+        "duration" : 15986
+      }
+    }, {
+      "uid" : "aa43b867d521a82d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535374864452,
+        "stop" : 1535374883557,
+        "duration" : 19105
+      }
+    }, {
+      "uid" : "f27e8e4f6832a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535374778848,
+        "stop" : 1535374799923,
+        "duration" : 21075
+      }
+    }, {
+      "uid" : "fa10552a8e4dda47",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535374355777,
+        "stop" : 1535374365583,
+        "duration" : 9806
+      }
+    }, {
+      "uid" : "e50eb1893916bf45",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535374250094,
+        "stop" : 1535374258374,
+        "duration" : 8280
+      }
+    }, {
+      "uid" : "21ab1cf5ad55838b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535373918762,
+        "stop" : 1535373927853,
+        "duration" : 9091
+      }
+    }, {
+      "uid" : "ba867e21d3144335",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535373846498,
+        "stop" : 1535373856582,
+        "duration" : 10084
+      }
+    }, {
+      "uid" : "39640a07a31b41f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535373748052,
+        "stop" : 1535373758874,
+        "duration" : 10822
+      }
+    }, {
+      "uid" : "e5f5c810df2d2d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535373205483,
+        "stop" : 1535373222703,
+        "duration" : 17220
+      }
+    }, {
+      "uid" : "e6c1dfdf8ab96e59",
+      "status" : "broken",
+      "statusDetails" : "Promise was rejected with the following reason: Currently focused window has been closed.\n                Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                Driver info: driver.version: unknown",
+      "time" : {
+        "start" : 1535373202471,
+        "stop" : 1535373242723,
+        "duration" : 40252
+      }
+    }, {
+      "uid" : "eacfe5cca53a4197",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535373202442,
+        "stop" : 1535373213455,
+        "duration" : 11013
+      }
+    }, {
+      "uid" : "d7fc9e3f9b17e87a",
+      "status" : "broken",
+      "statusDetails" : "Всплывающее окно фильтра не появилось",
+      "time" : {
+        "start" : 1535371341177,
+        "stop" : 1535371376895,
+        "duration" : 35718
+      }
+    }, {
+      "uid" : "c6dd0dc726d3e6dd",
+      "status" : "broken",
+      "statusDetails" : "Всплывающее окно фильтра не появилось",
+      "time" : {
+        "start" : 1535371339492,
+        "stop" : 1535371369485,
+        "duration" : 29993
+      }
+    }, {
+      "uid" : "7b8b0f1d07f77c22",
+      "status" : "broken",
+      "statusDetails" : "Promise was rejected with the following reason: Currently focused window has been closed.\n                Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                Driver info: driver.version: unknown",
+      "time" : {
+        "start" : 1535371337767,
+        "stop" : 1535371378219,
+        "duration" : 40452
+      }
+    }, {
+      "uid" : "5f90be7661183c50",
+      "status" : "broken",
+      "statusDetails" : "Всплывающее окно фильтра не появилось",
+      "time" : {
+        "start" : 1535371211641,
+        "stop" : 1535371247658,
+        "duration" : 36017
+      }
+    }, {
+      "uid" : "f17a4f3cec05a2af",
+      "status" : "broken",
+      "statusDetails" : "Всплывающее окно фильтра не появилось",
+      "time" : {
+        "start" : 1535371209189,
+        "stop" : 1535371237687,
+        "duration" : 28498
+      }
+    }, {
+      "uid" : "1626918c484f5287",
+      "status" : "broken",
+      "statusDetails" : "Promise was rejected with the following reason: Currently focused window has been closed.\n                Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                Driver info: driver.version: unknown",
+      "time" : {
+        "start" : 1535371207696,
+        "stop" : 1535371248345,
+        "duration" : 40649
+      }
+    }, {
+      "uid" : "7ed66369fa6a1951",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535370822526,
+        "stop" : 1535370860717,
+        "duration" : 38191
+      }
+    }, {
+      "uid" : "b5fcf7974c06d3ae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535370818921,
+        "stop" : 1535370857487,
+        "duration" : 38566
+      }
+    }, {
+      "uid" : "25941124921219df",
+      "status" : "broken",
+      "statusDetails" : "Promise was rejected with the following reason: Currently focused window has been closed.\n                Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                Driver info: driver.version: unknown",
+      "time" : {
+        "start" : 1535370816878,
+        "stop" : 1535370857697,
+        "duration" : 40819
+      }
+    }, {
+      "uid" : "51b7ab77ad31c95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535370719756,
+        "stop" : 1535370748319,
+        "duration" : 28563
+      }
+    }, {
+      "uid" : "586e0206b1fa3bd3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535370717567,
+        "stop" : 1535370742187,
+        "duration" : 24620
+      }
+    }, {
+      "uid" : "257a8a277f3e0ce9",
+      "status" : "broken",
+      "statusDetails" : "Promise was rejected with the following reason: Currently focused window has been closed.\n                Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                Driver info: driver.version: unknown",
+      "time" : {
+        "start" : 1535370715894,
+        "stop" : 1535370756366,
+        "duration" : 40472
+      }
+    }, {
+      "uid" : "ee9ac65525f4410f",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_overlay\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1535370598541,
+        "stop" : 1535370655192,
+        "duration" : 56651
+      }
+    }, {
+      "uid" : "bbe0ea684028800a",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_overlay\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1535370594418,
+        "stop" : 1535370653864,
+        "duration" : 59446
+      }
+    }, {
+      "uid" : "6e5d00af896d4a9c",
+      "status" : "broken",
+      "statusDetails" : "Promise was rejected with the following reason: Currently focused window has been closed.\n                Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                Driver info: driver.version: unknown",
+      "time" : {
+        "start" : 1535370593119,
+        "stop" : 1535370633471,
+        "duration" : 40352
+      }
+    }, {
+      "uid" : "9a7dcb2689f7d061",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535370486995,
+        "stop" : 1535370500299,
+        "duration" : 13304
+      }
+    }, {
+      "uid" : "8c7e8a63c353a6d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535370483810,
+        "stop" : 1535370491042,
+        "duration" : 7232
+      }
+    }, {
+      "uid" : "9e88b041bb5941f2",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_overlay\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1535370483365,
+        "stop" : 1535370509659,
+        "duration" : 26294
+      }
+    }, {
+      "uid" : "702701cc5e1d5e16",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_overlay\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1535370348887,
+        "stop" : 1535370398534,
+        "duration" : 49647
+      }
+    }, {
+      "uid" : "366b9fd946723981",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535370348501,
+        "stop" : 1535370366439,
+        "duration" : 17938
+      }
+    }, {
+      "uid" : "8ad4b6d25a74959f",
+      "status" : "broken",
+      "statusDetails" : "ESOCKETTIMEDOUT",
+      "time" : {
+        "start" : 1535370258146,
+        "stop" : 1535370309904,
+        "duration" : 51758
+      }
+    }, {
+      "uid" : "59b1f11f09837c2b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535370254270,
+        "stop" : 1535370260193,
+        "duration" : 5923
+      }
+    }, {
+      "uid" : "e50db50f03c952dd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535370187990,
+        "stop" : 1535370204060,
+        "duration" : 16070
+      }
+    }, {
+      "uid" : "8eef743658bae05",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535369963882,
+        "stop" : 1535369979053,
+        "duration" : 15171
+      }
+    }, {
+      "uid" : "d1a73e4d56376bf0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535369925620,
+        "stop" : 1535369932064,
+        "duration" : 6444
+      }
+    }, {
+      "uid" : "842614076fc33168",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_overlay\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1535369529673,
+        "stop" : 1535369574366,
+        "duration" : 44693
+      }
+    }, {
+      "uid" : "3ddd08320157017d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535369461508,
+        "stop" : 1535369479050,
+        "duration" : 17542
+      }
+    }, {
+      "uid" : "44496bd8b0a2166b",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_overlay\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1535369328881,
+        "stop" : 1535369380348,
+        "duration" : 51467
+      }
+    }, {
+      "uid" : "f04463fcb0ee231c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535369186576,
+        "stop" : 1535369208556,
+        "duration" : 21980
+      }
+    }, {
+      "uid" : "8d9bb548062c63c7",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_overlay\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1535369091334,
+        "stop" : 1535369139016,
+        "duration" : 47682
+      }
+    }, {
+      "uid" : "c89840cf3a599395",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_overlay\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1535369021587,
+        "stop" : 1535369069882,
+        "duration" : 48295
+      }
+    }, {
+      "uid" : "7d25f463a6ec7e53",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535368760982,
+        "stop" : 1535368773545,
+        "duration" : 12563
+      }
+    }, {
+      "uid" : "32e1efe18da850ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535368636050,
+        "stop" : 1535368650429,
+        "duration" : 14379
+      }
+    }, {
+      "uid" : "dbab0aeb4accf5e3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535368481203,
+        "stop" : 1535368500695,
+        "duration" : 19492
+      }
+    }, {
+      "uid" : "42ebb43e05403ad8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535368405323,
+        "stop" : 1535368419321,
+        "duration" : 13998
+      }
+    }, {
+      "uid" : "654102cffea80e30",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535368249506,
+        "stop" : 1535368261759,
+        "duration" : 12253
+      }
+    }, {
+      "uid" : "d76c362431d0345",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535368140310,
+        "stop" : 1535368147405,
+        "duration" : 7095
+      }
+    }, {
+      "uid" : "f8810e08dbed84f9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535368075213,
+        "stop" : 1535368084174,
+        "duration" : 8961
+      }
+    }, {
+      "uid" : "60cd1b04c1df08e4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535367933917,
+        "stop" : 1535367943491,
+        "duration" : 9574
+      }
+    }, {
+      "uid" : "365c6aa5282acc1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535367844459,
+        "stop" : 1535367852220,
+        "duration" : 7761
+      }
+    }, {
+      "uid" : "32e13b8de915b02f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535367735848,
+        "stop" : 1535367750437,
+        "duration" : 14589
+      }
+    }, {
+      "uid" : "a829d0b6f34d065f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535367548168,
+        "stop" : 1535367568978,
+        "duration" : 20810
+      }
+    }, {
+      "uid" : "d3fd759904de1e5f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535367448206,
+        "stop" : 1535367455484,
+        "duration" : 7278
+      }
+    }, {
+      "uid" : "e2da4eb712581daa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535367405809,
+        "stop" : 1535367416797,
+        "duration" : 10988
+      }
+    }, {
+      "uid" : "48ac1b6952e3d384",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535367380961,
+        "stop" : 1535367390181,
+        "duration" : 9220
+      }
+    }, {
+      "uid" : "56b0889f7a027208",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535367303603,
+        "stop" : 1535367311172,
+        "duration" : 7569
+      }
+    }, {
+      "uid" : "5514a4f6279705c5",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_overlay\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1535367234866,
+        "stop" : 1535367284923,
+        "duration" : 50057
+      }
+    }, {
+      "uid" : "a7bc5472ed7ce362",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535367170750,
+        "stop" : 1535367189168,
+        "duration" : 18418
+      }
+    }, {
+      "uid" : "ba5fc4ff16698d5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535366951900,
+        "stop" : 1535366960649,
+        "duration" : 8749
+      }
+    }, {
+      "uid" : "7efe0644e1cc0485",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535366681142,
+        "stop" : 1535366701476,
+        "duration" : 20334
+      }
+    }, {
+      "uid" : "b5262b8c573eb4f2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535365574626,
+        "stop" : 1535365584163,
+        "duration" : 9537
+      }
+    }, {
+      "uid" : "7b7fc2c9e068e520",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535364859111,
+        "stop" : 1535364869456,
+        "duration" : 10345
+      }
+    }, {
+      "uid" : "19931a5a65be732d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535364726009,
+        "stop" : 1535364735161,
+        "duration" : 9152
+      }
+    }, {
+      "uid" : "841da671f342523d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535364656353,
+        "stop" : 1535364663034,
+        "duration" : 6681
+      }
+    }, {
+      "uid" : "95ae993b4280b0f3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535364566060,
+        "stop" : 1535364581066,
+        "duration" : 15006
+      }
+    }, {
+      "uid" : "7a37fcce4df8d080",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535364500103,
+        "stop" : 1535364509998,
+        "duration" : 9895
+      }
+    }, {
+      "uid" : "33f7d9551db848be",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535364431061,
+        "stop" : 1535364440915,
+        "duration" : 9854
+      }
+    }, {
+      "uid" : "324f6e0d559ce7e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535364047761,
+        "stop" : 1535364061472,
+        "duration" : 13711
+      }
+    }, {
+      "uid" : "91d2f3549c6fb981",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535363913471,
+        "stop" : 1535363920515,
+        "duration" : 7044
+      }
+    }, {
+      "uid" : "4d78a53096612991",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535363859031,
+        "stop" : 1535363865007,
+        "duration" : 5976
+      }
+    }, {
+      "uid" : "83ed36bbf3ab4922",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535363670211,
+        "stop" : 1535363676930,
+        "duration" : 6719
+      }
+    }, {
+      "uid" : "b1fa4367e05219ee",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535363523215,
+        "stop" : 1535363530831,
+        "duration" : 7616
+      }
+    }, {
+      "uid" : "8c5d2c015a241ceb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535363137771,
+        "stop" : 1535363150454,
+        "duration" : 12683
+      }
+    }, {
+      "uid" : "7464cc25727c5fc5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535363008728,
+        "stop" : 1535363017012,
+        "duration" : 8284
+      }
+    }, {
+      "uid" : "6d9f9135fcd3838d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535362919844,
+        "stop" : 1535362926704,
+        "duration" : 6860
+      }
+    }, {
+      "uid" : "e37f363df11074d5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535362795942,
+        "stop" : 1535362802859,
+        "duration" : 6917
+      }
+    }, {
+      "uid" : "2c0ff49f37e276fc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535362756485,
+        "stop" : 1535362763162,
+        "duration" : 6677
+      }
+    }, {
+      "uid" : "89adf9af8e244e52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535362707324,
+        "stop" : 1535362717746,
+        "duration" : 10422
+      }
+    }, {
+      "uid" : "325293695c8b6fc7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535362446739,
+        "stop" : 1535362459832,
+        "duration" : 13093
+      }
+    }, {
+      "uid" : "ac24c3056ece736b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535362076862,
+        "stop" : 1535362082890,
+        "duration" : 6028
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "96af0dce1fcce638.json",
+  "parameterValues" : [ ]
+}

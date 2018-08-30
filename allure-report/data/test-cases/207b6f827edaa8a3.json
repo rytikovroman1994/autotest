@@ -1,0 +1,169 @@
+{
+  "uid" : "207b6f827edaa8a3",
+  "name" : "registration page",
+  "fullName" : "signUp.registration page",
+  "historyId" : "9ffe604eef5aa58fae04da5ed0335397",
+  "time" : {
+    "start" : 1535642769498,
+    "stop" : 1535642771533,
+    "duration" : 2035
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "An element could not be located on the page using the given search parameters.",
+  "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\".avn004_prompt__content  a:nth-child(2)\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\".avn004_prompt__content  a:nth-child(2)\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "An element could not be located on the page using the given search parameters.",
+    "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\".avn004_prompt__content  a:nth-child(2)\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\".avn004_prompt__content  a:nth-child(2)\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/0028d9e77863d43c246dc177a0f44bee/element",
+      "time" : {
+        "start" : 1535642769509,
+        "stop" : 1535642769593,
+        "duration" : 84
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "209d600d4290b12",
+        "name" : "Request",
+        "source" : "209d600d4290b12.json",
+        "type" : "application/json",
+        "size" : 61
+      }, {
+        "uid" : "2c5cd27cfda265d",
+        "name" : "Response",
+        "source" : "2c5cd27cfda265d.json",
+        "type" : "application/json",
+        "size" : 136
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/0028d9e77863d43c246dc177a0f44bee/element/0.4854544697483463-2/click",
+      "time" : {
+        "start" : 1535642769593,
+        "stop" : 1535642770340,
+        "duration" : 747
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d549e0c08492ce52",
+        "name" : "Response",
+        "source" : "d549e0c08492ce52.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/0028d9e77863d43c246dc177a0f44bee/element",
+      "time" : {
+        "start" : 1535642770341,
+        "stop" : 1535642771192,
+        "duration" : 851
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b6229d5bcf2ff060",
+        "name" : "Request",
+        "source" : "b6229d5bcf2ff060.json",
+        "type" : "application/json",
+        "size" : 87
+      }, {
+        "uid" : "746aaa694ccea23d",
+        "name" : "Response",
+        "source" : "746aaa694ccea23d.json",
+        "type" : "application/json",
+        "size" : 668
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/0028d9e77863d43c246dc177a0f44bee/screenshot",
+      "time" : {
+        "start" : 1535642771196,
+        "stop" : 1535642771533,
+        "duration" : 337
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\".avn004_prompt__content  a:nth-child(2)\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\".avn004_prompt__content  a:nth-child(2)\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "20296f0f1d9e84c",
+        "name" : "Screenshot",
+        "source" : "20296f0f1d9e84c.png",
+        "type" : "image/png",
+        "size" : 41777
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "signUp"
+  }, {
+    "name" : "testClass",
+    "value" : "signUp"
+  }, {
+    "name" : "testMethod",
+    "value" : "registration page"
+  }, {
+    "name" : "package",
+    "value" : "signUp"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "207b6f827edaa8a3.json",
+  "parameterValues" : [ "chrome" ]
+}

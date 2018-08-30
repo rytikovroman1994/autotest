@@ -1,0 +1,149 @@
+{
+  "uid" : "38ccea33ae25608e",
+  "name" : "\"before all\" hook",
+  "fullName" : "fuel-type.\"before all\" hook",
+  "historyId" : "a5e91610686cae2c83c7a1f4ff5d79e6",
+  "time" : {
+    "start" : 1535635959880,
+    "stop" : 1535635989746,
+    "duration" : 29866
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/07cd82068e6cb87bf4f28650aefb1f7d/window/current/maximize",
+      "time" : {
+        "start" : 1535635959890,
+        "stop" : 1535635961052,
+        "duration" : 1162
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6734a599004b9048",
+        "name" : "Response",
+        "source" : "6734a599004b9048.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/07cd82068e6cb87bf4f28650aefb1f7d/url",
+      "time" : {
+        "start" : 1535635961059,
+        "stop" : 1535635989505,
+        "duration" : 28446
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e7501970a64e3872",
+        "name" : "Request",
+        "source" : "e7501970a64e3872.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "fe4e63c925116f25",
+        "name" : "Response",
+        "source" : "fe4e63c925116f25.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/07cd82068e6cb87bf4f28650aefb1f7d/elements",
+      "time" : {
+        "start" : 1535635989560,
+        "stop" : 1535635989670,
+        "duration" : 110
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b0ebd24a2db18b46",
+        "name" : "Request",
+        "source" : "b0ebd24a2db18b46.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "3577e3ff0e97ac34",
+        "name" : "Response",
+        "source" : "3577e3ff0e97ac34.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/07cd82068e6cb87bf4f28650aefb1f7d/element/0.2466216478161405-1/displayed",
+      "time" : {
+        "start" : 1535635989672,
+        "stop" : 1535635989744,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "99b5cf4be004179a",
+        "name" : "Response",
+        "source" : "99b5cf4be004179a.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fuel-type"
+  }, {
+    "name" : "testClass",
+    "value" : "fuel-type"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "fuel-type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "38ccea33ae25608e.json",
+  "parameterValues" : [ ]
+}

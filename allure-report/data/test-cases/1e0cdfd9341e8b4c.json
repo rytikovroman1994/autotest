@@ -1,0 +1,151 @@
+{
+  "uid" : "1e0cdfd9341e8b4c",
+  "name" : "consider the number of cards list",
+  "fullName" : "checking-cards.consider the number of cards list",
+  "historyId" : "6c9dfeb1f46b35b900ab6a454bee14ae",
+  "time" : {
+    "start" : 1535642599106,
+    "stop" : 1535642599649,
+    "duration" : 543
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <span class=\"toggle_switch__state\"></span> is not clickable at point (1244, 14). Other element would receive the click: <div class=\"avn003_action-list\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.5768441360514003-66\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <span class=\"toggle_switch__state\"></span> is not clickable at point (1244, 14). Other element would receive the click: <div class=\"avn003_action-list\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.5768441360514003-66\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/2922ed9398b1374cc65209550c9eac15/element",
+      "time" : {
+        "start" : 1535642599114,
+        "stop" : 1535642599150,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6c1cc7df27bdbd71",
+        "name" : "Request",
+        "source" : "6c1cc7df27bdbd71.json",
+        "type" : "application/json",
+        "size" : 69
+      }, {
+        "uid" : "7561cef488b350e8",
+        "name" : "Response",
+        "source" : "7561cef488b350e8.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/2922ed9398b1374cc65209550c9eac15/element/0.5768441360514003-66/click",
+      "time" : {
+        "start" : 1535642599152,
+        "stop" : 1535642599250,
+        "duration" : 98
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "66c6f1c2fcb1fa81",
+        "name" : "Response",
+        "source" : "66c6f1c2fcb1fa81.json",
+        "type" : "application/json",
+        "size" : 774
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/2922ed9398b1374cc65209550c9eac15/screenshot",
+      "time" : {
+        "start" : 1535642599252,
+        "stop" : 1535642599649,
+        "duration" : 397
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.5768441360514003-66\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cbac54e80fe89a4e",
+        "name" : "Screenshot",
+        "source" : "cbac54e80fe89a4e.png",
+        "type" : "image/png",
+        "size" : 83434
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "checking-cards"
+  }, {
+    "name" : "testClass",
+    "value" : "checking-cards"
+  }, {
+    "name" : "testMethod",
+    "value" : "consider the number of cards list"
+  }, {
+    "name" : "package",
+    "value" : "checking-cards"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "375a44db4d8cd9e8",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span class=\"toggle_switch__state\"></span> is not clickable at point (1244, 14). Other element would receive the click: <div class=\"avn003_action-list\">...</div>",
+      "time" : {
+        "start" : 1535123762116,
+        "stop" : 1535123763078,
+        "duration" : 962
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1e0cdfd9341e8b4c.json",
+  "parameterValues" : [ "chrome" ]
+}

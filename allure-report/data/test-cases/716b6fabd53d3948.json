@@ -1,0 +1,211 @@
+{
+  "uid" : "716b6fabd53d3948",
+  "name" : "check checkbox online payments",
+  "fullName" : "online-payments.check checkbox online payments",
+  "historyId" : "f62c9236c27732576377e19b4613655e",
+  "time" : {
+    "start" : 1535383449960,
+    "stop" : 1535383465774,
+    "duration" : 15814
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "An element could not be located on the page using the given search parameters (\"checkbox__control\").",
+  "statusTrace" : "Error: An element could not be located on the page using the given search parameters (\"checkbox__control\").\n                    at getAttribute(\"checkbox__control\", \"value\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"checkbox__control\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\getAttribute.js:25:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "An element could not be located on the page using the given search parameters (\"checkbox__control\").",
+    "statusTrace" : "Error: An element could not be located on the page using the given search parameters (\"checkbox__control\").\n                    at getAttribute(\"checkbox__control\", \"value\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"checkbox__control\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\getAttribute.js:25:17",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/eb07bb6e542e080e20804a8dc96b839b/elements",
+      "time" : {
+        "start" : 1535383449961,
+        "stop" : 1535383451994,
+        "duration" : 2033
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bda1b055d4c34a3",
+        "name" : "Request",
+        "source" : "bda1b055d4c34a3.json",
+        "type" : "application/json",
+        "size" : 72
+      }, {
+        "uid" : "36667c2adb54f628",
+        "name" : "Response",
+        "source" : "36667c2adb54f628.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/eb07bb6e542e080e20804a8dc96b839b/element/0.3566083233545383-4/displayed",
+      "time" : {
+        "start" : 1535383452021,
+        "stop" : 1535383460201,
+        "duration" : 8180
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dc9ded62b7887d7a",
+        "name" : "Response",
+        "source" : "dc9ded62b7887d7a.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/eb07bb6e542e080e20804a8dc96b839b/element",
+      "time" : {
+        "start" : 1535383460247,
+        "stop" : 1535383462777,
+        "duration" : 2530
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ab06c9e49c78aa32",
+        "name" : "Request",
+        "source" : "ab06c9e49c78aa32.json",
+        "type" : "application/json",
+        "size" : 72
+      }, {
+        "uid" : "a8a47f47c8dbf376",
+        "name" : "Response",
+        "source" : "a8a47f47c8dbf376.json",
+        "type" : "application/json",
+        "size" : 136
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/eb07bb6e542e080e20804a8dc96b839b/element/0.3566083233545383-5/click",
+      "time" : {
+        "start" : 1535383462777,
+        "stop" : 1535383463927,
+        "duration" : 1150
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "19c82790df77167c",
+        "name" : "Response",
+        "source" : "19c82790df77167c.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/eb07bb6e542e080e20804a8dc96b839b/elements",
+      "time" : {
+        "start" : 1535383463928,
+        "stop" : 1535383465765,
+        "duration" : 1837
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b559dc3516a499fd",
+        "name" : "Request",
+        "source" : "b559dc3516a499fd.json",
+        "type" : "application/json",
+        "size" : 65
+      }, {
+        "uid" : "dc799bdfb297ce22",
+        "name" : "Response",
+        "source" : "dc799bdfb297ce22.json",
+        "type" : "application/json",
+        "size" : 89
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/eb07bb6e542e080e20804a8dc96b839b/screenshot",
+      "time" : {
+        "start" : 1535383465765,
+        "stop" : 1535383465774,
+        "duration" : 9
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element could not be located on the page using the given search parameters (\"checkbox__control\").\n                    at getAttribute(\"checkbox__control\", \"value\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"checkbox__control\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\getAttribute.js:25:17",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4097539ce7c491bd",
+        "name" : "Screenshot",
+        "source" : "4097539ce7c491bd.png",
+        "type" : "image/png",
+        "size" : 80247
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "online-payments"
+  }, {
+    "name" : "testClass",
+    "value" : "online-payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "check checkbox online payments"
+  }, {
+    "name" : "package",
+    "value" : "online-payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "716b6fabd53d3948.json",
+  "parameterValues" : [ "chrome" ]
+}

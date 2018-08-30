@@ -1,0 +1,136 @@
+{
+  "uid" : "7e706ccd72705a28",
+  "name" : "conclusion of the minimum price",
+  "fullName" : "online-payments.conclusion of the minimum price",
+  "historyId" : "cbf5c996997f1db3fbb19d3b8d5cf6ea",
+  "time" : {
+    "start" : 1535388887170,
+    "stop" : 1535388887610,
+    "duration" : 440
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "invalid element state: Element must be user-editable in order to clear it.",
+  "statusTrace" : "Error: An element command could not be completed because the element is in an invalid state (e.g. attempting to click a disabled element).\n                    at elementIdValue(\"0.39730921023754484-4\", \"860.00\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\setValue.js:46:80",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "invalid element state: Element must be user-editable in order to clear it.",
+    "statusTrace" : "Error: An element command could not be completed because the element is in an invalid state (e.g. attempting to click a disabled element).\n                    at elementIdValue(\"0.39730921023754484-4\", \"860.00\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\setValue.js:46:80",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/d11db64940a1bad6bcf5a25d18810d29/elements",
+      "time" : {
+        "start" : 1535388887178,
+        "stop" : 1535388887228,
+        "duration" : 50
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cac100671cd58c8a",
+        "name" : "Request",
+        "source" : "cac100671cd58c8a.json",
+        "type" : "application/json",
+        "size" : 98
+      }, {
+        "uid" : "4b5147a8f4e1436c",
+        "name" : "Response",
+        "source" : "4b5147a8f4e1436c.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/d11db64940a1bad6bcf5a25d18810d29/element/0.39730921023754484-4/clear",
+      "time" : {
+        "start" : 1535388887229,
+        "stop" : 1535388887302,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "aa0454ef1a76e155",
+        "name" : "Response",
+        "source" : "aa0454ef1a76e155.json",
+        "type" : "application/json",
+        "size" : 617
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/d11db64940a1bad6bcf5a25d18810d29/screenshot",
+      "time" : {
+        "start" : 1535388887305,
+        "stop" : 1535388887610,
+        "duration" : 305
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element command could not be completed because the element is in an invalid state (e.g. attempting to click a disabled element).\n                    at elementIdValue(\"0.39730921023754484-4\", \"860.00\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\setValue.js:46:80",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "93290421bedf459e",
+        "name" : "Screenshot",
+        "source" : "93290421bedf459e.png",
+        "type" : "image/png",
+        "size" : 78573
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "online-payments"
+  }, {
+    "name" : "testClass",
+    "value" : "online-payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "conclusion of the minimum price"
+  }, {
+    "name" : "package",
+    "value" : "online-payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7e706ccd72705a28.json",
+  "parameterValues" : [ "chrome" ]
+}

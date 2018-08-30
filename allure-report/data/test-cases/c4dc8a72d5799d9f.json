@@ -1,0 +1,115 @@
+{
+  "uid" : "c4dc8a72d5799d9f",
+  "name" : "conclusion of the minimum price",
+  "fullName" : "online-payments.conclusion of the minimum price",
+  "historyId" : "cbf5c996997f1db3fbb19d3b8d5cf6ea",
+  "time" : {
+    "start" : 1535389162393,
+    "stop" : 1535389162814,
+    "duration" : 421
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "invalid selector: An invalid or illegal selector was specified",
+  "statusTrace" : "Error: Argument was an invalid selector (e.g. XPath/CSS).\n                    at setValue(\"div:nth-child() > div.h2.avn008_budget__price-item-self > div.avn008_budget__price-item-self-text > input[type=\"text\"]\", \"354.00\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"div:nth-child() > div.h2.avn008_budget__price-item-self > div.avn008_budget__price-item-self-text > input[type=\"text\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\setValue.js:29:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "invalid selector: An invalid or illegal selector was specified",
+    "statusTrace" : "Error: Argument was an invalid selector (e.g. XPath/CSS).\n                    at setValue(\"div:nth-child() > div.h2.avn008_budget__price-item-self > div.avn008_budget__price-item-self-text > input[type=\"text\"]\", \"354.00\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"div:nth-child() > div.h2.avn008_budget__price-item-self > div.avn008_budget__price-item-self-text > input[type=\"text\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\setValue.js:29:17",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/542bba5ee209cc9d399bb48af7d88253/elements",
+      "time" : {
+        "start" : 1535389162394,
+        "stop" : 1535389162455,
+        "duration" : 61
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f31039065accb641",
+        "name" : "Request",
+        "source" : "f31039065accb641.json",
+        "type" : "application/json",
+        "size" : 168
+      }, {
+        "uid" : "1ab8862c79022f21",
+        "name" : "Response",
+        "source" : "1ab8862c79022f21.json",
+        "type" : "application/json",
+        "size" : 508
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/542bba5ee209cc9d399bb48af7d88253/screenshot",
+      "time" : {
+        "start" : 1535389162465,
+        "stop" : 1535389162814,
+        "duration" : 349
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: Argument was an invalid selector (e.g. XPath/CSS).\n                    at setValue(\"div:nth-child() > div.h2.avn008_budget__price-item-self > div.avn008_budget__price-item-self-text > input[type=\"text\"]\", \"354.00\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"div:nth-child() > div.h2.avn008_budget__price-item-self > div.avn008_budget__price-item-self-text > input[type=\"text\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\setValue.js:29:17",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bc7a234a68047d05",
+        "name" : "Screenshot",
+        "source" : "bc7a234a68047d05.png",
+        "type" : "image/png",
+        "size" : 78573
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "online-payments"
+  }, {
+    "name" : "testClass",
+    "value" : "online-payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "conclusion of the minimum price"
+  }, {
+    "name" : "package",
+    "value" : "online-payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c4dc8a72d5799d9f.json",
+  "parameterValues" : [ "chrome" ]
+}

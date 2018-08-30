@@ -1,0 +1,149 @@
+{
+  "uid" : "123a75984075593c",
+  "name" : "\"before all\" hook",
+  "fullName" : "engine-power.\"before all\" hook",
+  "historyId" : "6ce2cea387b6694be7a2247f3aa20fec",
+  "time" : {
+    "start" : 1535624263211,
+    "stop" : 1535624303981,
+    "duration" : 40770
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/d8a75929441b0f9c2ae938e1312a3931/window/current/maximize",
+      "time" : {
+        "start" : 1535624263215,
+        "stop" : 1535624264413,
+        "duration" : 1198
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f78f7eaced282e44",
+        "name" : "Response",
+        "source" : "f78f7eaced282e44.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/d8a75929441b0f9c2ae938e1312a3931/url",
+      "time" : {
+        "start" : 1535624264414,
+        "stop" : 1535624303715,
+        "duration" : 39301
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6d45af2c5436fcb3",
+        "name" : "Request",
+        "source" : "6d45af2c5436fcb3.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "bafc6609ae9b4dfa",
+        "name" : "Response",
+        "source" : "bafc6609ae9b4dfa.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/d8a75929441b0f9c2ae938e1312a3931/elements",
+      "time" : {
+        "start" : 1535624303751,
+        "stop" : 1535624303864,
+        "duration" : 113
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "78ce5876f0c6fa70",
+        "name" : "Request",
+        "source" : "78ce5876f0c6fa70.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "efcc7a116eb44956",
+        "name" : "Response",
+        "source" : "efcc7a116eb44956.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/d8a75929441b0f9c2ae938e1312a3931/element/0.9553584402969226-1/displayed",
+      "time" : {
+        "start" : 1535624303865,
+        "stop" : 1535624303977,
+        "duration" : 112
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f1056fcbcd09d837",
+        "name" : "Response",
+        "source" : "f1056fcbcd09d837.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "engine-power"
+  }, {
+    "name" : "testClass",
+    "value" : "engine-power"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "engine-power"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "123a75984075593c.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,206 @@
+{
+  "uid" : "15824a8b9486c124",
+  "name" : "check checkbox online payments",
+  "fullName" : "online-payments.check checkbox online payments",
+  "historyId" : "f62c9236c27732576377e19b4613655e",
+  "time" : {
+    "start" : 1535383585575,
+    "stop" : 1535383586078,
+    "duration" : 503
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/014314c01fdfa36262fae055ae2676ad/elements",
+      "time" : {
+        "start" : 1535383585578,
+        "stop" : 1535383585668,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c06da64cc2530428",
+        "name" : "Request",
+        "source" : "c06da64cc2530428.json",
+        "type" : "application/json",
+        "size" : 72
+      }, {
+        "uid" : "fc2d1a8b3d71e509",
+        "name" : "Response",
+        "source" : "fc2d1a8b3d71e509.json",
+        "type" : "application/json",
+        "size" : 162
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/014314c01fdfa36262fae055ae2676ad/element/0.004271777897431939-4/displayed",
+      "time" : {
+        "start" : 1535383585675,
+        "stop" : 1535383585738,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6cc9385ff4529f44",
+        "name" : "Response",
+        "source" : "6cc9385ff4529f44.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/014314c01fdfa36262fae055ae2676ad/element",
+      "time" : {
+        "start" : 1535383585742,
+        "stop" : 1535383585787,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5b7a64cb246a2a44",
+        "name" : "Request",
+        "source" : "5b7a64cb246a2a44.json",
+        "type" : "application/json",
+        "size" : 72
+      }, {
+        "uid" : "9e691e5f972f6fd",
+        "name" : "Response",
+        "source" : "9e691e5f972f6fd.json",
+        "type" : "application/json",
+        "size" : 138
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/014314c01fdfa36262fae055ae2676ad/element/0.004271777897431939-5/click",
+      "time" : {
+        "start" : 1535383585790,
+        "stop" : 1535383585996,
+        "duration" : 206
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "eb3b5b4db4e23f0b",
+        "name" : "Response",
+        "source" : "eb3b5b4db4e23f0b.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/014314c01fdfa36262fae055ae2676ad/elements",
+      "time" : {
+        "start" : 1535383586005,
+        "stop" : 1535383586043,
+        "duration" : 38
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2112af38269647c7",
+        "name" : "Request",
+        "source" : "2112af38269647c7.json",
+        "type" : "application/json",
+        "size" : 66
+      }, {
+        "uid" : "fe25f1976c22b1d5",
+        "name" : "Response",
+        "source" : "fe25f1976c22b1d5.json",
+        "type" : "application/json",
+        "size" : 162
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/014314c01fdfa36262fae055ae2676ad/element/0.004271777897431939-6/attribute/value",
+      "time" : {
+        "start" : 1535383586047,
+        "stop" : 1535383586077,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d00b2fcc37d5bd31",
+        "name" : "Response",
+        "source" : "d00b2fcc37d5bd31.json",
+        "type" : "application/json",
+        "size" : 93
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 6,
+    "hasContent" : true,
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "online-payments"
+  }, {
+    "name" : "testClass",
+    "value" : "online-payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "check checkbox online payments"
+  }, {
+    "name" : "package",
+    "value" : "online-payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "15824a8b9486c124.json",
+  "parameterValues" : [ "chrome" ]
+}

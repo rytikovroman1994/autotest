@@ -1,0 +1,115 @@
+{
+  "uid" : "cf2269fe4ea3a368",
+  "name" : "page budget",
+  "fullName" : "smoke screenshot test.page budget",
+  "historyId" : "dc9d8638af8022c4612aa884006aeacb",
+  "time" : {
+    "start" : 1535361891343,
+    "stop" : 1535361891807,
+    "duration" : 464
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "An element could not be located on the page using the given search parameters.",
+  "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"#react-tabs-2\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"#react-tabs-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "An element could not be located on the page using the given search parameters.",
+    "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"#react-tabs-2\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"#react-tabs-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/f92c7b1a10179858fbcf006d4f3c5c8b/element",
+      "time" : {
+        "start" : 1535361891345,
+        "stop" : 1535361891382,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "56ec4d674d15bcf6",
+        "name" : "Request",
+        "source" : "56ec4d674d15bcf6.json",
+        "type" : "application/json",
+        "size" : 50
+      }, {
+        "uid" : "e6f94b493f02f1d0",
+        "name" : "Response",
+        "source" : "e6f94b493f02f1d0.json",
+        "type" : "application/json",
+        "size" : 594
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/f92c7b1a10179858fbcf006d4f3c5c8b/screenshot",
+      "time" : {
+        "start" : 1535361891382,
+        "stop" : 1535361891807,
+        "duration" : 425
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"#react-tabs-2\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"#react-tabs-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c5bf6d8e1c1992a8",
+        "name" : "Screenshot",
+        "source" : "c5bf6d8e1c1992a8.png",
+        "type" : "image/png",
+        "size" : 193066
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testMethod",
+    "value" : "page budget"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cf2269fe4ea3a368.json",
+  "parameterValues" : [ "chrome" ]
+}

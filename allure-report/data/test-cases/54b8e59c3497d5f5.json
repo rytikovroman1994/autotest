@@ -1,0 +1,89 @@
+{
+  "uid" : "54b8e59c3497d5f5",
+  "name" : "consider objects",
+  "fullName" : "transmission.consider objects",
+  "historyId" : "262a76231fc6ab7b98adba3da1298658",
+  "time" : {
+    "start" : 1535641889614,
+    "stop" : 1535641889652,
+    "duration" : 38
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/0c2116c194a9baa62a0532ef1ebe2404/elements",
+      "time" : {
+        "start" : 1535641889617,
+        "stop" : 1535641889648,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "17703f926875e2cc",
+        "name" : "Request",
+        "source" : "17703f926875e2cc.json",
+        "type" : "application/json",
+        "size" : 73
+      }, {
+        "uid" : "a955fde1104f674d",
+        "name" : "Response",
+        "source" : "a955fde1104f674d.json",
+        "type" : "application/json",
+        "size" : 89
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "consider objects"
+  }, {
+    "name" : "package",
+    "value" : "transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "54b8e59c3497d5f5.json",
+  "parameterValues" : [ "chrome" ]
+}

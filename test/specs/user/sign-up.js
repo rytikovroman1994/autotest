@@ -9,14 +9,19 @@ describe('signUp', () => {
     it('registration page', () => {
         // кликаем на иконку профиля
         browser.click('#prompt-toggler_selectLK');
-        // выбираем "Зарегестрироваться"
+        // проверяем страницу, на которой находимся
+        const urlSite = browser.getUrl();
+        if(urlSite != "https://vw.kodix.ru/auth/realms/vwgr/login-actions/registration?client_id=vw-offers&tab_id=agoWZa5pShs") {
+            browser.click('.cblock__overhang.cblock__overhang_short > div > div > div:nth-child(2)');
+        } else {// выбираем "Зарегестрироваться"
         browser.click('.avn004_prompt__content  a:nth-child(2)');
+        }
         // ожидаем загрузки страницы ввода данных
         browser.waitForVisible('.logo__img_desktop');
     })
     it('checking phone input', () => {
         // вводим телефонный номер
-        browser.setValue('#username', faker.phone.phoneNumber(0));
+        browser.setValue('#phone', faker.phone.phoneNumber(0));
     });
     it('verification of email input', () => {
         // вводидим эмеил
@@ -34,7 +39,7 @@ describe('signUp', () => {
     });
     it('entry check patronymic', () => {
         // вводим отчество
-        browser.setValue('#kc-register-form > div:nth-child(6) > input', faker.name.lastName(1));
+        browser.setValue('#patronomic', faker.name.lastName(1));
     });
     it('enter the password', () => {
         const password = faker.internet.password(10);
@@ -46,9 +51,7 @@ describe('signUp', () => {
     it('check that we are back', () => {
         // кликаем по кнопке "Зарегестрироваться"
         browser.click('.btn_cta[type="submit"]');
-        // ожидаем загрузку карточки, чтобы проверить url (вместо пауз)
-        browser.waitForExist('.avn001_container');
-        const url = browser.getUrl();
-        expect(url).to.equal('https://vw.kodix.ru/');
+        // ожидаем загрузку карточки
+        browser.waitForExist('.uac008_show-more-tile_inner');
     });
 });

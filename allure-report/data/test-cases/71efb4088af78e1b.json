@@ -1,0 +1,137 @@
+{
+  "uid" : "71efb4088af78e1b",
+  "name" : "page budget",
+  "fullName" : "test of the price slider.page budget",
+  "historyId" : "2eece9e63fee591db7f3b74cbef0ada6",
+  "time" : {
+    "start" : 1535368419322,
+    "stop" : 1535368419658,
+    "duration" : 336
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/0bbf39322cf5584b35ee78a7c5a5e4e8/element",
+      "time" : {
+        "start" : 1535368419330,
+        "stop" : 1535368419383,
+        "duration" : 53
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e6859768cdae2fbe",
+        "name" : "Request",
+        "source" : "e6859768cdae2fbe.json",
+        "type" : "application/json",
+        "size" : 50
+      }, {
+        "uid" : "78b5915ed9579c18",
+        "name" : "Response",
+        "source" : "78b5915ed9579c18.json",
+        "type" : "application/json",
+        "size" : 136
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/0bbf39322cf5584b35ee78a7c5a5e4e8/element/0.3422574630179709-2/click",
+      "time" : {
+        "start" : 1535368419383,
+        "stop" : 1535368419619,
+        "duration" : 236
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f433db579c998a27",
+        "name" : "Response",
+        "source" : "f433db579c998a27.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/0bbf39322cf5584b35ee78a7c5a5e4e8/elements",
+      "time" : {
+        "start" : 1535368419624,
+        "stop" : 1535368419656,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ecb5f927896c6faf",
+        "name" : "Request",
+        "source" : "ecb5f927896c6faf.json",
+        "type" : "application/json",
+        "size" : 88
+      }, {
+        "uid" : "2070c6aee4ecdaa7",
+        "name" : "Response",
+        "source" : "2070c6aee4ecdaa7.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testClass",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testMethod",
+    "value" : "page budget"
+  }, {
+    "name" : "package",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "71efb4088af78e1b.json",
+  "parameterValues" : [ "chrome" ]
+}

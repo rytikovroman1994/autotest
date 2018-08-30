@@ -1,0 +1,45 @@
+{
+  "uid" : "4124ff80b4b809e",
+  "name" : "\"before all\" hook",
+  "fullName" : "signUp.\"before all\" hook",
+  "historyId" : "91c1014d326720180cea37322d05dec0",
+  "time" : {
+    "start" : 1535123827669,
+    "stop" : 1535123827679,
+    "duration" : 10
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "browser.helpers.openSite is not a function",
+  "statusTrace" : "TypeError: browser.helpers.openSite is not a function\n                    at Context.before (C:/autotest/test/specs/user/sign-up.js:6:25)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "signUp"
+  }, {
+    "name" : "testClass",
+    "value" : "signUp"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "signUp"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4124ff80b4b809e.json",
+  "parameterValues" : [ ]
+}

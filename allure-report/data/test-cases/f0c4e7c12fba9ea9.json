@@ -1,0 +1,159 @@
+{
+  "uid" : "f0c4e7c12fba9ea9",
+  "name" : "\"before all\" hook",
+  "fullName" : "smoke screenshot test save.\"before all\" hook",
+  "historyId" : "eb1b6fc88d11150b76ac20124f06cad8",
+  "time" : {
+    "start" : 1535642737180,
+    "stop" : 1535642743897,
+    "duration" : 6717
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/507aba2020fa4a8d18ccdfa4bdff77fc/window/current/maximize",
+      "time" : {
+        "start" : 1535642737185,
+        "stop" : 1535642738345,
+        "duration" : 1160
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2d48621aa333153e",
+        "name" : "Response",
+        "source" : "2d48621aa333153e.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/507aba2020fa4a8d18ccdfa4bdff77fc/url",
+      "time" : {
+        "start" : 1535642738347,
+        "stop" : 1535642743786,
+        "duration" : 5439
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2056e6e2ac9bd54c",
+        "name" : "Request",
+        "source" : "2056e6e2ac9bd54c.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "fcc2e5afe5561758",
+        "name" : "Response",
+        "source" : "fcc2e5afe5561758.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/507aba2020fa4a8d18ccdfa4bdff77fc/elements",
+      "time" : {
+        "start" : 1535642743796,
+        "stop" : 1535642743855,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7e778fefaca059f",
+        "name" : "Request",
+        "source" : "7e778fefaca059f.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "1b65655dd2f2db4e",
+        "name" : "Response",
+        "source" : "1b65655dd2f2db4e.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/507aba2020fa4a8d18ccdfa4bdff77fc/element/0.14852543480459035-1/displayed",
+      "time" : {
+        "start" : 1535642743859,
+        "stop" : 1535642743895,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fa92f65c21d454e7",
+        "name" : "Response",
+        "source" : "fa92f65c21d454e7.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "87980105df26722d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535123798708,
+        "stop" : 1535123806797,
+        "duration" : 8089
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f0c4e7c12fba9ea9.json",
+  "parameterValues" : [ ]
+}

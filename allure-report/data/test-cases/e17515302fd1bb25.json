@@ -1,0 +1,114 @@
+{
+  "uid" : "e17515302fd1bb25",
+  "name" : "right slider motion",
+  "fullName" : "test of the price slider.right slider motion",
+  "historyId" : "7480e9c1fbc7070396bf24582a8c1d39",
+  "time" : {
+    "start" : 1535368774793,
+    "stop" : 1535368774834,
+    "duration" : 41
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "maximumpPrice is not defined",
+  "statusTrace" : "ReferenceError: maximumpPrice is not defined\n                    at Context.it (C:/autotest/test/specs/filter/filter-budget.js:47:9)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "maximumpPrice is not defined",
+    "statusTrace" : "ReferenceError: maximumpPrice is not defined\n                    at Context.it (C:/autotest/test/specs/filter/filter-budget.js:47:9)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/2210f99f38d186ff8e9ee8e9a4530291/elements",
+      "time" : {
+        "start" : 1535368774795,
+        "stop" : 1535368774809,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6763809b5b82b37f",
+        "name" : "Request",
+        "source" : "6763809b5b82b37f.json",
+        "type" : "application/json",
+        "size" : 106
+      }, {
+        "uid" : "bd45310fbab63c32",
+        "name" : "Response",
+        "source" : "bd45310fbab63c32.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/2210f99f38d186ff8e9ee8e9a4530291/element/0.6641256226628853-4/text",
+      "time" : {
+        "start" : 1535368774810,
+        "stop" : 1535368774827,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2d4b13226ea2e814",
+        "name" : "Response",
+        "source" : "2d4b13226ea2e814.json",
+        "type" : "application/json",
+        "size" : 98
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testClass",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testMethod",
+    "value" : "right slider motion"
+  }, {
+    "name" : "package",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e17515302fd1bb25.json",
+  "parameterValues" : [ "chrome" ]
+}

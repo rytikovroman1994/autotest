@@ -1,0 +1,258 @@
+{
+  "uid" : "146f84cc56c3993b",
+  "name" : "check images transmision",
+  "fullName" : "transmission.check images transmision",
+  "historyId" : "7dae9cb237ead115447e1ca94e7b8585",
+  "time" : {
+    "start" : 1535627134011,
+    "stop" : 1535627135143,
+    "duration" : 1132
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/transmission.png' to equal 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/chassis.png'",
+  "statusTrace" : "AssertionError: expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/transmission.png' to equal 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/chassis.png'\n                    at Context.it (C:/autotest/test/specs/filter/engine/transmission.js:20:29)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/transmission.png' to equal 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/chassis.png'",
+    "statusTrace" : "AssertionError: expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/transmission.png' to equal 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/chassis.png'\n                    at Context.it (C:/autotest/test/specs/filter/engine/transmission.js:20:29)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/3dd77974ea34027bb2ed47340eafd2a1/elements",
+      "time" : {
+        "start" : 1535627134022,
+        "stop" : 1535627134088,
+        "duration" : 66
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9fb85d16305e90b2",
+        "name" : "Request",
+        "source" : "9fb85d16305e90b2.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "1a525205c2408566",
+        "name" : "Response",
+        "source" : "1a525205c2408566.json",
+        "type" : "application/json",
+        "size" : 162
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/3dd77974ea34027bb2ed47340eafd2a1/element/0.042656189803843114-4/displayed",
+      "time" : {
+        "start" : 1535627134091,
+        "stop" : 1535627134117,
+        "duration" : 26
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1d5158fcf5805f7c",
+        "name" : "Response",
+        "source" : "1d5158fcf5805f7c.json",
+        "type" : "application/json",
+        "size" : 92
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/3dd77974ea34027bb2ed47340eafd2a1/elements",
+      "time" : {
+        "start" : 1535627134517,
+        "stop" : 1535627134625,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b8cae37e99d091b9",
+        "name" : "Request",
+        "source" : "b8cae37e99d091b9.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "8c940ce230e03ef8",
+        "name" : "Response",
+        "source" : "8c940ce230e03ef8.json",
+        "type" : "application/json",
+        "size" : 162
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/3dd77974ea34027bb2ed47340eafd2a1/element/0.042656189803843114-4/displayed",
+      "time" : {
+        "start" : 1535627134625,
+        "stop" : 1535627134626,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e4f6c02e96a6a53b",
+        "name" : "Response",
+        "source" : "e4f6c02e96a6a53b.json",
+        "type" : "application/json",
+        "size" : 92
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/3dd77974ea34027bb2ed47340eafd2a1/elements",
+      "time" : {
+        "start" : 1535627135018,
+        "stop" : 1535627135047,
+        "duration" : 29
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "badeaca2e65f176e",
+        "name" : "Request",
+        "source" : "badeaca2e65f176e.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "19cf1039008d481e",
+        "name" : "Response",
+        "source" : "19cf1039008d481e.json",
+        "type" : "application/json",
+        "size" : 162
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/3dd77974ea34027bb2ed47340eafd2a1/element/0.042656189803843114-4/displayed",
+      "time" : {
+        "start" : 1535627135048,
+        "stop" : 1535627135085,
+        "duration" : 37
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "302d76f486e2e344",
+        "name" : "Response",
+        "source" : "302d76f486e2e344.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/3dd77974ea34027bb2ed47340eafd2a1/elements",
+      "time" : {
+        "start" : 1535627135094,
+        "stop" : 1535627135113,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9b071da5c19925cd",
+        "name" : "Request",
+        "source" : "9b071da5c19925cd.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "3af325e419d68075",
+        "name" : "Response",
+        "source" : "3af325e419d68075.json",
+        "type" : "application/json",
+        "size" : 162
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/3dd77974ea34027bb2ed47340eafd2a1/element/0.042656189803843114-4/attribute/src",
+      "time" : {
+        "start" : 1535627135114,
+        "stop" : 1535627135133,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6dece2d3ec7e2f83",
+        "name" : "Response",
+        "source" : "6dece2d3ec7e2f83.json",
+        "type" : "application/json",
+        "size" : 172
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 12,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "check images transmision"
+  }, {
+    "name" : "package",
+    "value" : "transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "146f84cc56c3993b.json",
+  "parameterValues" : [ "chrome" ]
+}

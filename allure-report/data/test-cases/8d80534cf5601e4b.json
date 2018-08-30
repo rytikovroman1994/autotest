@@ -1,0 +1,136 @@
+{
+  "uid" : "8d80534cf5601e4b",
+  "name" : "check checkboxes auto",
+  "fullName" : "transmission.check checkboxes auto",
+  "historyId" : "bf611fca22b2b4ac7d3c62d1e5990c78",
+  "time" : {
+    "start" : 1535628274252,
+    "stop" : 1535628274886,
+    "duration" : 634
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <input class=\"checkbox__control\" type=\"checkbox\" name=\"changed.transmissions['transmissions[0]']\" value=\"changed.transmissions['transmissions[0]']\"> is not clickable at point (559, 393). Other element would receive the click: <div class=\"checkbox__mask hasicon icon-nextstep-checkmark\"></div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.02653490901063793-5\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <input class=\"checkbox__control\" type=\"checkbox\" name=\"changed.transmissions['transmissions[0]']\" value=\"changed.transmissions['transmissions[0]']\"> is not clickable at point (559, 393). Other element would receive the click: <div class=\"checkbox__mask hasicon icon-nextstep-checkmark\"></div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.02653490901063793-5\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/80b61cac38fe0c8a80d4525db1566b3d/element",
+      "time" : {
+        "start" : 1535628274255,
+        "stop" : 1535628274331,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "70318525507af6ce",
+        "name" : "Request",
+        "source" : "70318525507af6ce.json",
+        "type" : "application/json",
+        "size" : 97
+      }, {
+        "uid" : "e2dab9b7d546262c",
+        "name" : "Response",
+        "source" : "e2dab9b7d546262c.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/80b61cac38fe0c8a80d4525db1566b3d/element/0.02653490901063793-5/click",
+      "time" : {
+        "start" : 1535628274339,
+        "stop" : 1535628274484,
+        "duration" : 145
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2151eee14da26396",
+        "name" : "Response",
+        "source" : "2151eee14da26396.json",
+        "type" : "application/json",
+        "size" : 1048
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/80b61cac38fe0c8a80d4525db1566b3d/screenshot",
+      "time" : {
+        "start" : 1535628274488,
+        "stop" : 1535628274886,
+        "duration" : 398
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.02653490901063793-5\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f8d9374116f8f946",
+        "name" : "Screenshot",
+        "source" : "f8d9374116f8f946.png",
+        "type" : "image/png",
+        "size" : 98771
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "check checkboxes auto"
+  }, {
+    "name" : "package",
+    "value" : "transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8d80534cf5601e4b.json",
+  "parameterValues" : [ "chrome" ]
+}

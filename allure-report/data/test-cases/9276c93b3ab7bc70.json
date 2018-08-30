@@ -1,0 +1,163 @@
+{
+  "uid" : "9276c93b3ab7bc70",
+  "name" : "selection of price",
+  "fullName" : "test of the price slider.selection of price",
+  "historyId" : "28e67d2b31eb3078d9a1abfc996c5772",
+  "time" : {
+    "start" : 1535362460190,
+    "stop" : 1535362460634,
+    "duration" : 444
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "stale element reference: element is not attached to the page document",
+  "statusTrace" : "Error: An element command failed because the referenced element is no longer attached to the DOM.\n                    at moveTo(\".rc-slider-handle-1\", 0, 0) -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "stale element reference: element is not attached to the page document",
+    "statusTrace" : "Error: An element command failed because the referenced element is no longer attached to the DOM.\n                    at moveTo(\".rc-slider-handle-1\", 0, 0) -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/45cbc1ca6be172ce3063fe7dcbada59d/elements",
+      "time" : {
+        "start" : 1535362460193,
+        "stop" : 1535362460220,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "736cd8498130193f",
+        "name" : "Request",
+        "source" : "736cd8498130193f.json",
+        "type" : "application/json",
+        "size" : 106
+      }, {
+        "uid" : "40e3159cdfc7083b",
+        "name" : "Response",
+        "source" : "40e3159cdfc7083b.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/45cbc1ca6be172ce3063fe7dcbada59d/element/0.41765599092167793-4/text",
+      "time" : {
+        "start" : 1535362460221,
+        "stop" : 1535362460257,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4a474c8fac22a8a3",
+        "name" : "Response",
+        "source" : "4a474c8fac22a8a3.json",
+        "type" : "application/json",
+        "size" : 96
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/45cbc1ca6be172ce3063fe7dcbada59d/moveto",
+      "time" : {
+        "start" : 1535362460260,
+        "stop" : 1535362460284,
+        "duration" : 24
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8675fcf037c1a245",
+        "name" : "Request",
+        "source" : "8675fcf037c1a245.json",
+        "type" : "application/json",
+        "size" : 76
+      }, {
+        "uid" : "8dc7e3a3061a38a5",
+        "name" : "Response",
+        "source" : "8dc7e3a3061a38a5.json",
+        "type" : "application/json",
+        "size" : 568
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/45cbc1ca6be172ce3063fe7dcbada59d/screenshot",
+      "time" : {
+        "start" : 1535362460286,
+        "stop" : 1535362460634,
+        "duration" : 348
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element command failed because the referenced element is no longer attached to the DOM.\n                    at moveTo(\".rc-slider-handle-1\", 0, 0) -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e2330112272ec560",
+        "name" : "Screenshot",
+        "source" : "e2330112272ec560.png",
+        "type" : "image/png",
+        "size" : 78661
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testClass",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testMethod",
+    "value" : "selection of price"
+  }, {
+    "name" : "package",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9276c93b3ab7bc70.json",
+  "parameterValues" : [ "chrome" ]
+}

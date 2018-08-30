@@ -1,0 +1,114 @@
+{
+  "uid" : "ae0e185fe5f3c300",
+  "name" : "compare screenshots",
+  "fullName" : "smoke screenshot test.compare screenshots",
+  "historyId" : "a7e103a9ec265a7d1b3538b8886da095",
+  "time" : {
+    "start" : 1535642731958,
+    "stop" : 1535642732151,
+    "duration" : 193
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Cannot read property 'clone' of undefined",
+  "statusTrace" : "TypeError: Cannot read property 'clone' of undefined\n                    at ImagePHash.getHash (C:\\autotest\\node_modules\\jimp\\phash.js:60:15)\n                    at Function.Jimp.distance (C:\\autotest\\node_modules\\jimp\\index.js:501:23)\n                    at Object.compareScreenshots (C:/autotest/helpers/screenshot-compare.js:15:31)\n                    at <anonymous>\n                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4156c7dd59695adf",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535619854873,
+        "stop" : 1535619855035,
+        "duration" : 162
+      }
+    }, {
+      "uid" : "965386b1a5bab65e",
+      "status" : "failed",
+      "statusDetails" : "expected null to not equal null",
+      "time" : {
+        "start" : 1535126723860,
+        "stop" : 1535126723866,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "bbfdf9ee3565c89d",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535125766421,
+        "stop" : 1535125766864,
+        "duration" : 443
+      }
+    }, {
+      "uid" : "6f8294daac8496f4",
+      "status" : "failed",
+      "statusDetails" : "expected null to not equal null",
+      "time" : {
+        "start" : 1535125717454,
+        "stop" : 1535125717464,
+        "duration" : 10
+      }
+    }, {
+      "uid" : "a205cb8e066d546d",
+      "status" : "failed",
+      "statusDetails" : "expected null to not equal null",
+      "time" : {
+        "start" : 1535125652429,
+        "stop" : 1535125652437,
+        "duration" : 8
+      }
+    }, {
+      "uid" : "c893d056ad1e2bfe",
+      "status" : "broken",
+      "statusDetails" : "Cannot read property 'clone' of undefined",
+      "time" : {
+        "start" : 1535125233849,
+        "stop" : 1535125234083,
+        "duration" : 234
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ae0e185fe5f3c300.json",
+  "parameterValues" : [ "chrome" ]
+}

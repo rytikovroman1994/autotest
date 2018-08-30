@@ -1,0 +1,149 @@
+{
+  "uid" : "89d8b43e152eda88",
+  "name" : "\"before all\" hook",
+  "fullName" : "transmission.\"before all\" hook",
+  "historyId" : "a7f8101a9331802de1190ab3be3047be",
+  "time" : {
+    "start" : 1535628925454,
+    "stop" : 1535628936305,
+    "duration" : 10851
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/6a3256c59a7805c3b32f9120429d0257/window/current/maximize",
+      "time" : {
+        "start" : 1535628925461,
+        "stop" : 1535628926639,
+        "duration" : 1178
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c2cb6451b4f7dc79",
+        "name" : "Response",
+        "source" : "c2cb6451b4f7dc79.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/6a3256c59a7805c3b32f9120429d0257/url",
+      "time" : {
+        "start" : 1535628926642,
+        "stop" : 1535628936131,
+        "duration" : 9489
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ec52113ba6f1a35a",
+        "name" : "Request",
+        "source" : "ec52113ba6f1a35a.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "b1db5a0b5476de56",
+        "name" : "Response",
+        "source" : "b1db5a0b5476de56.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/6a3256c59a7805c3b32f9120429d0257/elements",
+      "time" : {
+        "start" : 1535628936158,
+        "stop" : 1535628936242,
+        "duration" : 84
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "21b00c09830d0e62",
+        "name" : "Request",
+        "source" : "21b00c09830d0e62.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "e27357b9e6af75eb",
+        "name" : "Response",
+        "source" : "e27357b9e6af75eb.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/6a3256c59a7805c3b32f9120429d0257/element/0.7994655692608215-1/displayed",
+      "time" : {
+        "start" : 1535628936243,
+        "stop" : 1535628936302,
+        "duration" : 59
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "324bc29e254625cd",
+        "name" : "Response",
+        "source" : "324bc29e254625cd.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "89d8b43e152eda88.json",
+  "parameterValues" : [ ]
+}

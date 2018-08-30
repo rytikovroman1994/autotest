@@ -1,0 +1,93 @@
+{
+  "uid" : "4544f101171fed6d",
+  "name" : "take screenshot",
+  "fullName" : "Constructor - smoke screenshot test colorSchemes.take screenshot",
+  "historyId" : "8306f62c12cf21ab646f801dae9d0300",
+  "time" : {
+    "start" : 1535642756499,
+    "stop" : 1535642756994,
+    "duration" : 495
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET /wd/hub/session/a947110f448b008f697c1b33966bc1e4/screenshot",
+      "time" : {
+        "start" : 1535642756506,
+        "stop" : 0,
+        "duration" : -1535642756506
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "339ce7b783f5af1c",
+        "name" : "Screenshot",
+        "source" : "339ce7b783f5af1c.png",
+        "type" : "image/png",
+        "size" : 66176
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "Constructor - smoke screenshot test colorSchemes"
+  }, {
+    "name" : "testClass",
+    "value" : "Constructor - smoke screenshot test colorSchemes"
+  }, {
+    "name" : "testMethod",
+    "value" : "take screenshot"
+  }, {
+    "name" : "package",
+    "value" : "Constructor - smoke screenshot test colorSchemes"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8c50893f4fde12b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535123820133,
+        "stop" : 1535123820681,
+        "duration" : 548
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4544f101171fed6d.json",
+  "parameterValues" : [ "chrome" ]
+}

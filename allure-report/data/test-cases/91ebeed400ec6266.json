@@ -1,0 +1,149 @@
+{
+  "uid" : "91ebeed400ec6266",
+  "name" : "\"before all\" hook",
+  "fullName" : "online-payments.\"before all\" hook",
+  "historyId" : "2b6cfdbabe358921c7a6e3c9de13e7a3",
+  "time" : {
+    "start" : 1535385589514,
+    "stop" : 1535385605873,
+    "duration" : 16359
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/7e26d2e7a8fa9fa6178eb7e0be75bc86/window/current/maximize",
+      "time" : {
+        "start" : 1535385589519,
+        "stop" : 1535385590682,
+        "duration" : 1163
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fc6585cc4d139d5a",
+        "name" : "Response",
+        "source" : "fc6585cc4d139d5a.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/7e26d2e7a8fa9fa6178eb7e0be75bc86/url",
+      "time" : {
+        "start" : 1535385590687,
+        "stop" : 1535385605731,
+        "duration" : 15044
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d35ed3bb3238b861",
+        "name" : "Request",
+        "source" : "d35ed3bb3238b861.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "a4b06aa0e3710202",
+        "name" : "Response",
+        "source" : "a4b06aa0e3710202.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/7e26d2e7a8fa9fa6178eb7e0be75bc86/elements",
+      "time" : {
+        "start" : 1535385605746,
+        "stop" : 1535385605827,
+        "duration" : 81
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d7526ec78c44c15e",
+        "name" : "Request",
+        "source" : "d7526ec78c44c15e.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "4c004a4042ab2151",
+        "name" : "Response",
+        "source" : "4c004a4042ab2151.json",
+        "type" : "application/json",
+        "size" : 159
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/7e26d2e7a8fa9fa6178eb7e0be75bc86/element/0.558316887983997-1/displayed",
+      "time" : {
+        "start" : 1535385605828,
+        "stop" : 1535385605869,
+        "duration" : 41
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "10768b1c3d5f68e2",
+        "name" : "Response",
+        "source" : "10768b1c3d5f68e2.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "online-payments"
+  }, {
+    "name" : "testClass",
+    "value" : "online-payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "online-payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "91ebeed400ec6266.json",
+  "parameterValues" : [ ]
+}

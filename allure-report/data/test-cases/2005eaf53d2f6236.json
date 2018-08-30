@@ -1,0 +1,184 @@
+{
+  "uid" : "2005eaf53d2f6236",
+  "name" : "check images transmision",
+  "fullName" : "transmission.check images transmision",
+  "historyId" : "7dae9cb237ead115447e1ca94e7b8585",
+  "time" : {
+    "start" : 1535627068178,
+    "stop" : 1535627069165,
+    "duration" : 987
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "number or type of arguments don't agree with getAttribute command",
+  "statusTrace" : "Error: number or type of arguments don't agree with getAttribute command\n                    at getAttribute(\".prefix_l_1 img\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "number or type of arguments don't agree with getAttribute command",
+    "statusTrace" : "Error: number or type of arguments don't agree with getAttribute command\n                    at getAttribute(\".prefix_l_1 img\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/5b4232d79aa9e9047697fc463d30ef94/elements",
+      "time" : {
+        "start" : 1535627068188,
+        "stop" : 1535627068228,
+        "duration" : 40
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9e71463a0b645809",
+        "name" : "Request",
+        "source" : "9e71463a0b645809.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "2c49c98c16a4ae0a",
+        "name" : "Response",
+        "source" : "2c49c98c16a4ae0a.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/5b4232d79aa9e9047697fc463d30ef94/element/0.02335402517275975-4/displayed",
+      "time" : {
+        "start" : 1535627068228,
+        "stop" : 1535627068247,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c69f16ea2f2c5cc9",
+        "name" : "Response",
+        "source" : "c69f16ea2f2c5cc9.json",
+        "type" : "application/json",
+        "size" : 92
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/5b4232d79aa9e9047697fc463d30ef94/elements",
+      "time" : {
+        "start" : 1535627068684,
+        "stop" : 1535627068718,
+        "duration" : 34
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e159aaa10212e081",
+        "name" : "Request",
+        "source" : "e159aaa10212e081.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "40eea098a4a89a56",
+        "name" : "Response",
+        "source" : "40eea098a4a89a56.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/5b4232d79aa9e9047697fc463d30ef94/element/0.02335402517275975-4/displayed",
+      "time" : {
+        "start" : 1535627068722,
+        "stop" : 1535627068769,
+        "duration" : 47
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d6890f937a8f16b0",
+        "name" : "Response",
+        "source" : "d6890f937a8f16b0.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/5b4232d79aa9e9047697fc463d30ef94/screenshot",
+      "time" : {
+        "start" : 1535627068770,
+        "stop" : 1535627069165,
+        "duration" : 395
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: number or type of arguments don't agree with getAttribute command\n                    at getAttribute(\".prefix_l_1 img\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6fd77275ff624432",
+        "name" : "Screenshot",
+        "source" : "6fd77275ff624432.png",
+        "type" : "image/png",
+        "size" : 80516
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "check images transmision"
+  }, {
+    "name" : "package",
+    "value" : "transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2005eaf53d2f6236.json",
+  "parameterValues" : [ "chrome" ]
+}
