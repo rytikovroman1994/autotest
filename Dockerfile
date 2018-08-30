@@ -8,7 +8,7 @@ RUN apk add --no-cache --virtual .build-deps curl python make g++
 COPY package*.json /usr/src/app/
 
 # install all dependencies (with devDeps)
-RUN npm ci
+#RUN npm ci
 
 # copy application code into container
 COPY . /usr/src/app
