@@ -1,4 +1,4 @@
-import base64Img from 'base64-img';
+// import base64Img from 'base64-img';
 
 describe('smoke screenshot test', () => {
     const ctx = {
