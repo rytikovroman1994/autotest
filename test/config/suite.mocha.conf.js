@@ -3,6 +3,28 @@ const defaultTimeoutInterval  = process.env.DEBUG ? (60 * 60 * 500) : 90000;
 require('dotenv').config();
 const requireGlob = require('require-glob');
 
+const config = {
+  isDevelopment: process.env.NODE_ENV !== 'production',
+  // URL тестируемого стенда
+  baseUrl: process.env.URL || (() => { throw new Error('Не задан целевой хост для тестирования, см. README.md'); })(),
+};
+
+const browsersListDevelopment = [{ browserName: 'chrome' }];
+const browsersListProduction = [
+  {
+    browserName: 'chrome',
+  },
+];
+config.capabilities = config.isDevelopment ? browsersListDevelopment : browsersListProduction;
+
+if (process.env.SELENIUM_HUB_HOST) {
+  config.host = process.env.SELENIUM_HUB_HOST;
+}
+
+if (process.env.SELENIUM_HUB_PORT) {
+  config.port = process.env.SELENIUM_HUB_PORT;
+}
+
 exports.config = {
 
     // ==================
@@ -202,9 +224,9 @@ exports.config = {
      * @param {Object} config wdio configuration object
      * @param {Array.<Object>} capabilities list of capabilities details
      */
-    onPrepare: function (config, capabilities) {
-      console.log('**** let\'s go ****');
-    },
+    // onPrepare: function (config, capabilities) {
+    //   console.log('**** let\'s go ****');
+    // },
     /**
      * Gets executed just before initialising the webdriver session and test framework. It allows you
      * to manipulate configurations depending on the capability or spec.
