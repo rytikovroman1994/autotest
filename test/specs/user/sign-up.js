@@ -7,29 +7,34 @@ describe('signUp', () => {
     })
     
     it('registration page', () => {
-        // кликаем на иконку профиля
-        browser.click('#prompt-toggler_selectLK');
-        // проверяем страницу, на которой находимся
-        const urlSite = browser.getUrl();
-        if(urlSite != "https://vw.kodix.ru/auth/realms/vwgr/login-actions/registration?client_id=vw-offers&tab_id=agoWZa5pShs") {
-            browser.click('.cblock__overhang.cblock__overhang_short > div > div > div:nth-child(2)');
-        } else {// выбираем "Зарегестрироваться"
-        browser.click('.avn004_prompt__content  a:nth-child(2)');
-        }
+        // // проверяем страницу, на которой находимся
+        // const urlSite = browser.getUrl();
+        // if(urlSite != "https://vw.kodix.ru/auth/realms/vwgr/login-actions/registration?client_id=vw-offers&tab_id=agoWZa5pShs") {
+        //     browser.click('.cblock__overhang.cblock__overhang_short > div > div > div:nth-child(2)');
+        // } else {
+            // кликаем на иконку профиля
+            browser.click('#prompt-toggler_selectLK');
+            // ждём появления
+            browser.waitForVisible('.avn004_prompt__content  a:nth-child(2)');
+            // выбираем "Зарегестрироваться"
+            browser.click('.avn004_prompt__content  a:nth-child(2)');
         // ожидаем загрузки страницы ввода данных
         browser.waitForVisible('.logo__img_desktop');
     })
     it('checking phone input', () => {
         // вводим телефонный номер
+        browser.waitForExist('#phone');
         browser.setValue('#phone', faker.phone.phoneNumber(0));
     });
     it('verification of email input', () => {
+        browser.waitForExist('#email');
         // вводидим эмеил
         browser.setValue('#email', faker.internet.email(1));
     });
     it('checking the last name', () => {
         // выбираем гендер
         browser.click('.form__radio span');
+        browser.waitForExist('#lastName');
         // вводим фамилию
         browser.setValue('#lastName', faker.name.lastName(1));
     });
@@ -52,6 +57,6 @@ describe('signUp', () => {
         // кликаем по кнопке "Зарегестрироваться"
         browser.click('.btn_cta[type="submit"]');
         // ожидаем загрузку карточки
-        browser.waitForExist('.uac008_show-more-tile_inner');
+        browser.waitForExist('.avn001_container');
     });
 });
