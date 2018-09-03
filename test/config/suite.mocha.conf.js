@@ -9,6 +9,8 @@ const config = {
   baseUrl: process.env.URL || (() => { throw new Error('Не задан целевой хост для тестирования, см. README.md'); })(),
 };
 
+config.maxInstances = process.env.CONCURRENCY || config.isDevelopment ? 1 : os.cpus().length;
+
 const browsersListDevelopment = [{ browserName: 'chrome' }];
 const browsersListProduction = [
   {
@@ -42,6 +44,7 @@ exports.config = {
     exclude: [
         // './test/specs/file-to-exclude.js'
     ],
+    
 
     //
     // ============
@@ -173,7 +176,7 @@ exports.config = {
     connectionRetryTimeout: 40000,    // Default timeout in milliseconds for request if Selenium Grid doesn't send response
     connectionRetryCount: 1,          // Default request retries count
     
-    services: ['selenium-standalone'],
+    // services: ['selenium-standalone'],
     // services: ['selenium-standalone', 'phantomjs'],
   //   services: ['docker'],
   //     dockerLogs: './logs',
