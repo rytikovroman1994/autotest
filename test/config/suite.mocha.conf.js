@@ -1,6 +1,7 @@
 //to use debug option run `DEBUG=true followed by your .conf.js`
 const defaultTimeoutInterval  = process.env.DEBUG ? (60 * 60 * 500) : 90000;
 require('dotenv').config();
+const path = require('path');
 const requireGlob = require('require-glob');
 
 const config = {
@@ -10,12 +11,20 @@ const config = {
 };
 
 config.maxInstances = process.env.CONCURRENCY || config.isDevelopment ? 1 : os.cpus().length;
+config.services = config.isDevelopment ? ['selenium-standalone'] : [];
+
 
 const browsersListDevelopment = [{ browserName: 'chrome' }];
 const browsersListProduction = [
   {
     browserName: 'chrome',
+    // host: 'selenium-hub',                
+    // port: 4444,
   },
+  // Пока что выключим, потом надо будет через аргументы пробросить список браузеров
+  // {
+  //   browserName: 'safari',
+  // },
 ];
 config.capabilities = config.isDevelopment ? browsersListDevelopment : browsersListProduction;
 
@@ -44,7 +53,6 @@ exports.config = {
     exclude: [
         // './test/specs/file-to-exclude.js'
     ],
-    
 
     //
     // ============
@@ -76,11 +84,14 @@ exports.config = {
               browserName: 'chrome',
               platform: '',
               version: '',
+              // host: selenium-hub,                
+              // port: 4444, 
               // acceptUntrustedCertificates: true,
               // webdriver_accept_untrusted_certs: true,
               // webdriver_assume_untrusted_issuer: true,
               // cssSelectorsEnabled: true,
               maxInstances: '1',
+              seleniumProtocol: "WebDriver",
               // specs: [
               //     './test/specs/*.js'
               // ],
@@ -157,15 +168,25 @@ exports.config = {
     //
     // ===================
     // Test Configurations
-    // ===================
+    // ==================
+    // maxSession: 25,
+    // port: 8080,
+    // host: hub,
+    // register: true,
+    // registerCycle: 5000,
+    // hubPort: 4444,
+    // hubHost : hub,
+  
     // Define all options that are relevant for the WebdriverIO instance here
     //
     // By default WebdriverIO commands are executed in a synchronous way using
     // the wdio-sync package. If you still want to run your tests in an async way
     // e.g. using promises you can set the sync option to false.
+    host: 'selenium-hub',                
+    port: 4444,
     sync: true,
     reporters: ['spec'],
-    logLevel: 'command',               // Level of logging verbosity: silent | verbose | command | data | result | error 'dot', 'junit'
+    logLevel: 'silent',               // Level of logging verbosity: silent | verbose | command | data | result | error 'dot', 'junit'
     coloredLogs: true,                // Enables colors for log output.
     screenshotPath: './test/reports/errorShots/', // Saves a screenshot to a given path if a command fails.
     //
@@ -176,18 +197,9 @@ exports.config = {
     connectionRetryTimeout: 40000,    // Default timeout in milliseconds for request if Selenium Grid doesn't send response
     connectionRetryCount: 1,          // Default request retries count
     
-    // services: ['selenium-standalone'],
+    services: ['selenium-standalone'],
     // services: ['selenium-standalone', 'phantomjs'],
-  //   services: ['docker'],
-  //     dockerLogs: './logs',
-  //     dockerOptions: { 
-  //     image: 'selenium/standalone-chrome',
-  //     healthCheck: 'http://localhost:4444',
-  //     options: { 
-  //       p: ['4444:4444'],
-  //       shmSize: '2g'
-  //   }    
-  // },
+    // services: ['docker'],  
 
     framework: 'mocha',
     mochaOpts: {
@@ -209,7 +221,7 @@ exports.config = {
         mochawesomeOpts: {
           includeScreenshots: true,
           screenshotUseRelativePath:true
-        },
+        },  
     },
     //
     // =====

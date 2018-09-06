@@ -7,7 +7,7 @@
 /* eslint-disable consistent-return */
 
 /**
- * @author Gleb Azarov <cheerlesscloud at ucoz-team.net>
+
  * @description Модуль для генерации разнообраных рандомных штуковин.
  * Теоритически можно заменить на faker, но мне faker не нравится.
  * После моей смерти можете поменять это на faker, а пока будет так.
@@ -51,8 +51,6 @@ function getRandomInt(max = 1, min = 0) {
  * @todo Внедрить алфавиты в генерацию строки
  */
 function getRandomString(length = 10) {
-  // Глеб вспоминал светлое прошлое, не трогать
-  // И нет, crypto для слабаков
   let str = '';
   while (length--) {
     let r = Math.random() * 62 | 0;
