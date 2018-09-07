@@ -182,7 +182,7 @@ exports.config = {
     // By default WebdriverIO commands are executed in a synchronous way using
     // the wdio-sync package. If you still want to run your tests in an async way
     // e.g. using promises you can set the sync option to false.
-    host: 'selenium-hub',                
+    host: '0.0.0.0',
     port: 4444,
     sync: true,
     reporters: ['spec'],
@@ -196,6 +196,17 @@ exports.config = {
     waitforTimeout: 40000,            // Default timeout for all waitFor* commands.
     connectionRetryTimeout: 40000,    // Default timeout in milliseconds for request if Selenium Grid doesn't send response
     connectionRetryCount: 1,          // Default request retries count
+    
+    // подключил webdrivercss для более сложных скриншотов
+    plugins: {
+      webdrivercss: {
+        screenshotRoot: './snapshot',
+        failedComparisonsRoot: './test/reports/errorShots',
+        misMatchTolerance: '0.05',
+        screenWidth: [640, 1024],
+        updateBaseline: false
+      }
+    },
     
     services: ['selenium-standalone'],
     // services: ['selenium-standalone', 'phantomjs'],
