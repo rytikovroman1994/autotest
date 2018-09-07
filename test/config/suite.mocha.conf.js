@@ -186,7 +186,7 @@ exports.config = {
     port: 4444,
     sync: true,
     reporters: ['spec'],
-    logLevel: 'silent',               // Level of logging verbosity: silent | verbose | command | data | result | error 'dot', 'junit'
+    logLevel: 'verbose',               // Level of logging verbosity: silent | verbose | command | data | result | error 'dot', 'junit'
     coloredLogs: true,                // Enables colors for log output.
     screenshotPath: './test/reports/errorShots/', // Saves a screenshot to a given path if a command fails.
     //
