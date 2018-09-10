@@ -11,10 +11,7 @@ import Jimp from 'jimp';
 export default async function compareScreenshots(screenshotOne, screenshotTwo) {
   // console.log(screenshotOne);
   const imageOne = await Jimp.read(screenshotOne);
-  console.log(imageOne);
   const imageTwo = await Jimp.read(Buffer.from(screenshotTwo, 'base64'));
-  console.log(imageTwo);
   const distance = await Jimp.distance(imageOne, imageTwo);
-  console.log(distance);
   return distance;
 }
