@@ -1,5 +1,5 @@
-// тест скриншотом страницы свет
-describe('screenshot page light', () => {
+// тест скриншотом страницы опции
+describe('screenshot page options', () => {
     const ctx = {
         originalScreenshot: null,
         newScreenshot: null,
@@ -8,15 +8,15 @@ describe('screenshot page light', () => {
         browser.helpers.openSite();
         // переходим на страницу экстерьер
         browser.click('#react-tabs-6');
-        // переходим на вкладку свет
-        browser.click('#react-tabs-16');
+        // переходим на вкладку опции
+        browser.click('#react-tabs-18');
         // ожидаем загрузки картинки лампы
-        browser.waitForVisible('.push_m_3 img');
+        browser.waitForVisible('div:nth-child(5) > div > div > div.avn008_option-check_image > img');
     });
 
-    it('take screenshot page light', () => {
+    it('take screenshot page options', () => {
         // берём скриншот с локала
-        ctx.originalScreenshot = 'snapshot/screenshotExterior/shine.png';
+        ctx.originalScreenshot = 'snapshot/screenshotExterior/option.png';
     });
 
     it('do second screenshot', () => {
