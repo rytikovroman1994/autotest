@@ -20,6 +20,9 @@ describe('test dynamic light', () => {
         browser.click('div:nth-child(1) > div > div > div.avn008_option-check_checkbox-self ');
         // проверяем, что в фильтре появилось условие
         browser.waitForExist('.avn008_filter-value-item_image');
+        // проверяем, что это именно фаркоп
+        const text = browser.getText('.avn008_filter-value-item_text__bottom');
+        expect(text).to.be.equal('СКЛАДНОЙ ФАРКОП');
         // убираем условие
         browser.click('div:nth-child(1) > div > div > div.avn008_option-check_checkbox-self ');
         // проверяем, что условие пропало
