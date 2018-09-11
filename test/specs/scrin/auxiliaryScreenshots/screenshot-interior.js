@@ -4,10 +4,26 @@ describe('screenshots-exterior', () => {
     before(() => {
         browser.helpers.openSite();
     });
-    // скришот фильтр-руль
-    it('filter-helm', () => {
+
+    // скриншот фильтр - сиденья
+    it('filter-seats', () => {
         // переходим на страницу интерьер
         browser.click('#react-tabs-8');
+        // ожидаем загрузки картинки сиденья
+        browser.waitForVisible('.avn008_image-switcher_image');
+        // открываем всплывающее окно подробнее
+        browser.click('.avn008_option-check_more');
+        // ждём загрузки картинки 
+        browser.waitForVisible('div.avn015_image > div > div.LazyLoad.is-visible > div > img')
+        // делаем скриншот
+        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/seats.png');
+        expect(screen).to.not.equal(null);
+
+        // закрываем динамическое окно
+        browser.click('.modal-window_close');
+    });
+    // скришот фильтр-руль
+    it('filter-helm', () => {
         // переходим на страницу руль
         browser.waitForExist('#react-tabs-14');
         browser.click('#react-tabs-14');
@@ -35,6 +51,8 @@ describe('screenshots-exterior', () => {
         browser.click('#react-tabs-18');
         // ожидаем загрузки картинки 
         browser.waitForVisible('div:nth-child(6) > div > div > div.avn008_option-check_image > img');
+        // ожидаем загрузки картинки диагональ экрана
+        browser.waitForVisible('.avn008_option__slider > div > div.avn008_option__slider-card__image.multimedia > div > .LazyLoad.is-visible > div > img');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/dynamic.png');
         expect(screen).to.not.equal(null);
