@@ -3,7 +3,7 @@ describe('test materials', () => {
         originalScreenshot: null,
         newScreenshot: null,
       };
-    before('open page interior', () => {
+    before('open page materials', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьера
         browser.click('#react-tabs-8');

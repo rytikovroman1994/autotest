@@ -1,5 +1,5 @@
-describe('test materials', () => {
-    before('open page interior', () => {
+describe('test options', () => {
+    before('open page options', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьера
         browser.click('#react-tabs-8');

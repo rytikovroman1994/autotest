@@ -1,5 +1,5 @@
 // тест скриншотом страницы сиденья
-describe('screenshot page body disks', () => {
+describe('screenshot page seating', () => {
     const ctx = {
         originalScreenshot: null,
         newScreenshot: null,
