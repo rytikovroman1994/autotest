@@ -10,7 +10,7 @@ describe('screenshot page multimedia', () => {
         browser.click('#react-tabs-8');
         // переходим на страницу мультимедиа 
         browser.click('#react-tabs-18');
-        // ожидаем загрузки картинки руль
+        // ожидаем загрузки картинки диагональ экрана
         browser.waitForVisible('.multimedia img');
     });
 
