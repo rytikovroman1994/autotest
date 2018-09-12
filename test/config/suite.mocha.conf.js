@@ -82,14 +82,6 @@ exports.config = {
 
           {
               browserName: 'chrome',
-              platform: '',
-              version: '',
-              // host: selenium-hub,                
-              // port: 4444, 
-              // acceptUntrustedCertificates: true,
-              // webdriver_accept_untrusted_certs: true,
-              // webdriver_assume_untrusted_issuer: true,
-              // cssSelectorsEnabled: true,
               maxInstances: '1',
               seleniumProtocol: "WebDriver",
               // specs: [
@@ -182,7 +174,8 @@ exports.config = {
     // By default WebdriverIO commands are executed in a synchronous way using
     // the wdio-sync package. If you still want to run your tests in an async way
     // e.g. using promises you can set the sync option to false.
-    host: '0.0.0.0',
+    // path: '/wd/hub',
+    // host: '192.168.99.100',
     port: 4444,
     sync: true,
     reporters: ['spec'],
@@ -219,7 +212,7 @@ exports.config = {
       compilers: ['js:babel-register'],
     },
 
-    reporters: ['spec', 'junit','allure', 'json', 'mochawesome'],
+    reporters: ['spec', 'junit', 'allure', 'json', 'mochawesome'],
     reporterOptions: {
         junit:  {outputDir:   './test/reports/junit-results/'},
         json:   {outputDir:   './test/reports/json-results/'},
