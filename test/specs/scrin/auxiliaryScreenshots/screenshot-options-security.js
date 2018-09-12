@@ -5,7 +5,7 @@ describe('screenshots-exterior', () => {
         browser.helpers.openSite();
     });
     // скришот фильтр-опции
-    it('filter-helm', () => {
+    it('filter-options', () => {
         // переходим на страницу опции
         browser.click('#react-tabs-10');
         // ожидаем загрузки картинки
@@ -120,5 +120,17 @@ describe('screenshots-exterior', () => {
 
         // закрываем закрываем динамическое окно
         browser.click('.modal-window_close');
+    });
+
+    // скриншот страницы безопасность
+    it('filter-pressure meter', () => {
+        // ожидаем закрытия всплывающего окна
+        browser.waitForVisible('#react-tabs-14');
+        // переходим на вкладку безопасность 
+        browser.click('#react-tabs-14');
+        browser.waitForVisible('.avn008_safety-images_main .LazyLoad.is-visible  img');
+        // делаем скриншот
+        var screen = browser.saveScreenshot('./snapshot/screenshotOption/security.png');
+        expect(screen).to.not.equal(null);
     });
 });
