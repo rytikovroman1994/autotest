@@ -1,0 +1,43 @@
+describe('test checkboxs page security', () => {
+    const textList = [
+            'ЗАДНИЕ БОКОВЫЕ П.Б.',
+            'ШТОРКИ Б/П',
+            'ФРОНТАЛЬНЫЕ П.Б.',
+            'ПЕРЕДНИЕ БОКОВЫЕ П.Б.',
+            'Б/П КОЛЕНЕЙ'
+    ]
+
+    before('open page secutity', () => {
+        browser.helpers.openSite();
+        // переходим на страницу опции
+        browser.click('#react-tabs-10');
+        // переходим в вкладку безопастность 
+        browser.click('#react-tabs-14');
+        // ожидаем загрузку картинки
+        browser.waitForVisible('.avn008_safety-images_main .LazyLoad.is-visible  img');
+    });
+
+    // проверяем работу чекбоксов
+    it('check all checkbox in page security', () => {
+        for( let i = 2; i <= 6; i++ ) {
+            // проверяем что фильтр пуст
+            browser.waitUntil(
+                ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
+                5000, "На странице уже есть одно условие фильтра");
+            // включаем чекбокс
+            browser.click(`div:nth-child(${i}) > div > div > label`);
+            // проверяем, что в фильтре появилось условие
+            browser.waitForExist('.avn008_filter-value-item_image');
+            // проверяем, что это именно фаркоп
+            const text = browser.getText('.avn008_filter-value-item_text__bottom');
+            const verifiableText = textList[i - 2];
+            expect(text).to.be.equal(verifiableText);
+            // убираем условие
+            browser.click(`div:nth-child(${i}) > div > div > label`);
+            // проверяем, что условие пропало
+            browser.waitUntil(
+                ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
+                5000, "На странице уже есть одно условие фильтра");
+        }
+    });
+});
