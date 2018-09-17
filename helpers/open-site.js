@@ -1,6 +1,6 @@
 export default function openSite() {
     // делаем размер окна браузера максимальным
-    browser.windowHandleMaximize ();
+    browser.windowHandleSize ({width: 1366, height: 768});
     // переходим на страницу
     browser.url('https://vw.kodix.ru');
     // скрываем раздел Фильтр
