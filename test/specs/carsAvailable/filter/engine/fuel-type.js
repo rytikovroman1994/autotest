@@ -14,16 +14,16 @@ describe('fuel-type', () => {
     // проверяе что картинка на месте
     it('check images fuel-type', () => {
         // проверяем что картинка видна
-        browser.waitForVisible(' .grid_m_2 > div > div > img');
+        browser.waitForVisible('.grid_12.grid_s_4.grid_m_2 img');
         // проверяем что отображается нужная картинка
-        const image = browser.getAttribute(' .grid_m_2 > div > div > img', 'src');
-        expect(image).to.be.equal('https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/gas-type.png');
+        const image = browser.getAttribute('.grid_12.grid_s_4.grid_m_2 img', 'src');
+        expect(image).to.be.include('https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/gas-type.png');
     });
 
     // проверяем работу чекбокса "бензин"
     it('check checkboxes petrol', () => {
         // нажимает на чекбокс 
-        browser.click('.grid_m_2 > div > label:nth-child(3) ');
+        browser.click('.grid_m_2 > div > label:nth-child(3)');
         // проверяем что появился пункт в фильтре
         browser.waitForExist('.avn008_filter-value-item__with-image');
         // проверяем что это именно автоматическая
@@ -47,7 +47,7 @@ describe('fuel-type', () => {
         expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('ДИЗЕЛЬ');
 
         // выключаем чекбокс 
-        browser.click('.grid_m_2 > div > label:nth-child(4) ');
+        browser.click('.grid_m_2 > div > label:nth-child(4)');
         // проверяем что пункт фильтра пропал
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item__with-image') === false,

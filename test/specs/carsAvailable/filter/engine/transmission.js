@@ -17,7 +17,7 @@ describe('transmission', () => {
         browser.waitForVisible('.prefix_l_1 img');
         // проверяем что отображается нужная картинка
         const image = browser.getAttribute('.prefix_l_1 img', 'src');
-        expect(image).to.be.equal('https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/transmission.png');
+        expect(image).to.be.include('https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/transmission.png');
     });
 
     // проверяем работу чекбокса "Автоматическая"

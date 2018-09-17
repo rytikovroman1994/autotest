@@ -9,7 +9,7 @@ describe('screenshot page body colors', () => {
         // переходим на страницу двигатель
         browser.click('#react-tabs-4');
         // ожидаём загрузки последней картинки
-        browser.waitForExist('div.grid_12.grid_s_4.grid_m_2 > div > div > img');
+        browser.waitForExist('.grid_12.grid_s_4.grid_m_2 img');
     });
 
     it('take screenshot page body color', () => {

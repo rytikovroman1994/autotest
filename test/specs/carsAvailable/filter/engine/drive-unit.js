@@ -14,20 +14,17 @@ describe('transmission', () => {
     // проверяе что картинка на месте
     it('check images transmision', () => {
         // проверяем что картинка видна
-        browser.waitForVisible(' div:nth-child(3) > div > div > img');
-        // проверяем что отображается нужная картинка
-        const image = browser.getAttribute(' div:nth-child(3) > div > div > img', 'src');
-        expect(image).to.be.equal('https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/m/chassis.png');
+        browser.waitForVisible('div:nth-child(3) .avn008_engine__card-image img');
     });
 
-    // проверяем работу чекбокса "Полный привод"
+    // проверяем работу чекбокса "Передний привод"
     it('check checkboxes full', () => {
         // нажимает на чекбокс 
         browser.click('div:nth-child(3) > div > label:nth-child(3)');
         // проверяем что появился пункт в фильтре
         browser.waitForExist('.avn008_filter-value-item__with-image');
         // проверяем что это именно автоматическая
-        expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('ПОЛНЫЙ');
+        expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('ПЕРЕДНИЙ');
 
         // выключаем чекбокс 
         browser.click('div:nth-child(3) > div > label:nth-child(3)');
@@ -37,14 +34,14 @@ describe('transmission', () => {
         5000, "Парамент онлайн оплаты не пропал из фильтра");
     });
 
-    // проверяем работу чекбокса "Передний привод"
+    // проверяем работу чекбокса "Полный привод"
     it('check checkboxes front', () => {
         // нажимает на чекбокс 
         browser.click('div:nth-child(3) > div > label:nth-child(4)');
         // проверяем что появился пункт в фильтре
         browser.waitForExist('.avn008_filter-value-item__with-image');
         // проверяем что это именно автоматическая
-        expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('ПЕРЕДНИЙ');
+        expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('ПОЛНЫЙ');
 
         // выключаем чекбокс 
         browser.click('div:nth-child(3) > div > label:nth-child(4)');
@@ -65,9 +62,9 @@ describe('transmission', () => {
         // проверяем что появился пункт mech в фильтре
         browser.waitForExist('div:nth-child(2) > .avn008_filter-value-item__with-image');
         // проверяем что это именно автоматическая
-        expect(browser.getText('div:nth-child(1) > .avn008_filter-value-item__with-image')).to.be.equal('ПОЛНЫЙ');
+        expect(browser.getText('div:nth-child(1) > .avn008_filter-value-item__with-image')).to.be.equal('ПЕРЕДНИЙ');
         // проверяем что это именно автоматическая
-        expect(browser.getText('div:nth-child(2) > .avn008_filter-value-item__with-image')).to.be.equal('ПЕРЕДНИЙ');
+        expect(browser.getText('div:nth-child(2) > .avn008_filter-value-item__with-image')).to.be.equal('ПОЛНЫЙ');
 
         // выключаем чекбокс auto
         browser.click('div:nth-child(3) > div > label:nth-child(3)');
