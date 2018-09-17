@@ -22,3 +22,14 @@ services:
     environment:
       - HUB_HOST=hub
       - HUB_PORT=4444
+
+  tests:
+    build:
+      context: ./
+    depends_on:
+      - hub
+      - chrome
+      - firefox 
+    environment:
+      - HUB_HOST=hub
+      - HUB_PORT=4444
