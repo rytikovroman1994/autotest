@@ -1,0 +1,121 @@
+{
+  "uid" : "e240dc70685f9bc2",
+  "name" : "\"before all\" hook",
+  "fullName" : "test polo busines logic.\"before all\" hook",
+  "historyId" : "3fb1bfd4f3ea6e92218fe0a428b9f9eb",
+  "time" : {
+    "start" : 1537186050274,
+    "stop" : 1537186050705,
+    "duration" : 431
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "java.net.SocketException: Unexpected end of file from server",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleSize(\"[object Object], width: 1366  height:768}\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "java.net.SocketException: Unexpected end of file from server",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleSize(\"[object Object], width: 1366  height:768}\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "GET /wd/hub/session/ae52a35389d7402ef87cf1d61a21226a/window_handles",
+      "time" : {
+        "start" : 1537186050283,
+        "stop" : 1537186050302,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ac0df60f83022901",
+        "name" : "Response",
+        "source" : "ac0df60f83022901.json",
+        "type" : "application/json",
+        "size" : 146
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/ae52a35389d7402ef87cf1d61a21226a/window/[object%20Object],%20width:%201366%20%20height:768%7D/size",
+      "time" : {
+        "start" : 1537186050304,
+        "stop" : 1537186050337,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fb7947832084a9cc",
+        "name" : "Response",
+        "source" : "fb7947832084a9cc.json",
+        "type" : "application/json",
+        "size" : 352
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/ae52a35389d7402ef87cf1d61a21226a/screenshot",
+      "time" : {
+        "start" : 1537186050351,
+        "stop" : 1537186050705,
+        "duration" : 354
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleSize(\"[object Object], width: 1366  height:768}\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8d70aa237df360aa",
+        "name" : "Screenshot",
+        "source" : "8d70aa237df360aa.png",
+        "type" : "image/png",
+        "size" : 3610
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testClass",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e240dc70685f9bc2.json",
+  "parameterValues" : [ ]
+}

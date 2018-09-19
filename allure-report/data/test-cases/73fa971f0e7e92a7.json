@@ -1,0 +1,274 @@
+{
+  "uid" : "73fa971f0e7e92a7",
+  "name" : "test multimedia checkbox wirelessСharger",
+  "fullName" : "check of multimedia checkboxes.test multimedia checkbox wirelessСharger",
+  "historyId" : "52ed26f88f41d31b7370696ecb5b4830",
+  "time" : {
+    "start" : 1537191102584,
+    "stop" : 1537191104094,
+    "duration" : 1510
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (1160, 511). Other element would receive the click: <div class=\"avn015_description_text\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.7875923158222013-14\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (1160, 511). Other element would receive the click: <div class=\"avn015_description_text\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.7875923158222013-14\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/c17083af38e3c44107fb07785e256adc/elements",
+      "time" : {
+        "start" : 1537191102591,
+        "stop" : 1537191102820,
+        "duration" : 229
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "913474074d89bc7f",
+        "name" : "Request",
+        "source" : "913474074d89bc7f.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "6734a4a947781973",
+        "name" : "Response",
+        "source" : "6734a4a947781973.json",
+        "type" : "application/json",
+        "size" : 89
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/c17083af38e3c44107fb07785e256adc/element",
+      "time" : {
+        "start" : 1537191102826,
+        "stop" : 1537191103074,
+        "duration" : 248
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7ebb3efdb70b0d5b",
+        "name" : "Request",
+        "source" : "7ebb3efdb70b0d5b.json",
+        "type" : "application/json",
+        "size" : 124
+      }, {
+        "uid" : "660a372ee2fb1501",
+        "name" : "Response",
+        "source" : "660a372ee2fb1501.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/c17083af38e3c44107fb07785e256adc/element/0.7875923158222013-14/click",
+      "time" : {
+        "start" : 1537191103074,
+        "stop" : 1537191103621,
+        "duration" : 547
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "37621834587e4f1",
+        "name" : "Response",
+        "source" : "37621834587e4f1.json",
+        "type" : "application/json",
+        "size" : 773
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/c17083af38e3c44107fb07785e256adc/screenshot",
+      "time" : {
+        "start" : 1537191103624,
+        "stop" : 1537191104094,
+        "duration" : 470
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.7875923158222013-14\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "26ef4ab1dcc64f81",
+        "name" : "Screenshot",
+        "source" : "26ef4ab1dcc64f81.png",
+        "type" : "image/png",
+        "size" : 122613
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "testClass",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "testMethod",
+    "value" : "test multimedia checkbox wirelessСharger"
+  }, {
+    "name" : "package",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b65c18f3bac80eda",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536683744735,
+        "stop" : 1536683746893,
+        "duration" : 2158
+      }
+    }, {
+      "uid" : "bb5250439a7f2ee1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536683388529,
+        "stop" : 1536683390695,
+        "duration" : 2166
+      }
+    }, {
+      "uid" : "a9ce29767c61139e",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (564, 325). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open ReactModal__Overlay--before-close modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+      "time" : {
+        "start" : 1536683142005,
+        "stop" : 1536683142626,
+        "duration" : 621
+      }
+    }, {
+      "uid" : "8b922e19852a3845",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536682898400,
+        "stop" : 1536682910869,
+        "duration" : 12469
+      }
+    }, {
+      "uid" : "e5bedb61a991897d",
+      "status" : "broken",
+      "statusDetails" : "На странице уже есть одно условие фильтра",
+      "time" : {
+        "start" : 1536682815834,
+        "stop" : 1536682821119,
+        "duration" : 5285
+      }
+    }, {
+      "uid" : "28f782b0b5e126d6",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (564, 336). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+      "time" : {
+        "start" : 1536682457814,
+        "stop" : 1536682458450,
+        "duration" : 636
+      }
+    }, {
+      "uid" : "df301ebaef4f42d8",
+      "status" : "broken",
+      "statusDetails" : "На странице уже есть одно условие фильтра",
+      "time" : {
+        "start" : 1536682386072,
+        "stop" : 1536682391468,
+        "duration" : 5396
+      }
+    }, {
+      "uid" : "b4c8e899434ae2c1",
+      "status" : "broken",
+      "statusDetails" : "На странице уже есть одно условие фильтра",
+      "time" : {
+        "start" : 1536682230680,
+        "stop" : 1536682236171,
+        "duration" : 5491
+      }
+    }, {
+      "uid" : "ce8fb9c289a9aaae",
+      "status" : "broken",
+      "statusDetails" : "На странице уже есть одно условие фильтра",
+      "time" : {
+        "start" : 1536681365549,
+        "stop" : 1536681370913,
+        "duration" : 5364
+      }
+    }, {
+      "uid" : "5d59dfc340ade4e7",
+      "status" : "broken",
+      "statusDetails" : "На странице уже есть одно условие фильтра",
+      "time" : {
+        "start" : 1536681284175,
+        "stop" : 1536681289557,
+        "duration" : 5382
+      }
+    }, {
+      "uid" : "b39e1811b194ebea",
+      "status" : "broken",
+      "statusDetails" : "На странице уже есть одно условие фильтра",
+      "time" : {
+        "start" : 1536681132980,
+        "stop" : 1536681138334,
+        "duration" : 5354
+      }
+    }, {
+      "uid" : "72d28bdd0af7d2a1",
+      "status" : "broken",
+      "statusDetails" : "На странице уже есть одно условие фильтра",
+      "time" : {
+        "start" : 1536680983357,
+        "stop" : 1536680988748,
+        "duration" : 5391
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "73fa971f0e7e92a7.json",
+  "parameterValues" : [ "chrome" ]
+}

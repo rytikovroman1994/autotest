@@ -218,7 +218,7 @@ exports.config = {
         json:   {outputDir:   './test/reports/json-results/'},
         allure: {
           outputDir:   './test/reports/allure-results/',
-          disableWebdriverStepsReporting: false,
+          disableWebdriverStepsReporting: true,
           //useCucumberStepReporter: false,
         },
         mochawesome:  {outputDir:   './test/reports/mocha-results/'},

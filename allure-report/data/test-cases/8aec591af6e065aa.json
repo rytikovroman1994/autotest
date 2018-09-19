@@ -1,0 +1,353 @@
+{
+  "uid" : "8aec591af6e065aa",
+  "name" : "right slider motion",
+  "fullName" : "test of the price slider.right slider motion",
+  "historyId" : "7480e9c1fbc7070396bf24582a8c1d39",
+  "time" : {
+    "start" : 1537189622591,
+    "stop" : 1537189624305,
+    "duration" : 1714
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "An element could not be located on the page using the given search parameters (\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\").",
+  "statusTrace" : "Error: An element could not be located on the page using the given search parameters (\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\").\n                    at getText(\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\getText.js:18:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "An element could not be located on the page using the given search parameters (\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\").",
+    "statusTrace" : "Error: An element could not be located on the page using the given search parameters (\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\").\n                    at getText(\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\getText.js:18:17",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/elements",
+      "time" : {
+        "start" : 1537189622596,
+        "stop" : 1537189622627,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d988ba73c1aed688",
+        "name" : "Request",
+        "source" : "d988ba73c1aed688.json",
+        "type" : "application/json",
+        "size" : 67
+      }, {
+        "uid" : "8594e90aaacdd6dc",
+        "name" : "Response",
+        "source" : "8594e90aaacdd6dc.json",
+        "type" : "application/json",
+        "size" : 89
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/element/0.03930126291573832-6/displayed",
+      "time" : {
+        "start" : 1537189622698,
+        "stop" : 1537189622794,
+        "duration" : 96
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f2dea0776fbffbf",
+        "name" : "Response",
+        "source" : "f2dea0776fbffbf.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/elements",
+      "time" : {
+        "start" : 1537189622803,
+        "stop" : 1537189622909,
+        "duration" : 106
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a2e032ce8d67f5a4",
+        "name" : "Request",
+        "source" : "a2e032ce8d67f5a4.json",
+        "type" : "application/json",
+        "size" : 67
+      }, {
+        "uid" : "663f13f8afa33b04",
+        "name" : "Response",
+        "source" : "663f13f8afa33b04.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/element/0.03930126291573832-6/displayed",
+      "time" : {
+        "start" : 1537189622936,
+        "stop" : 1537189622998,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6e5c4750afbbf9f4",
+        "name" : "Response",
+        "source" : "6e5c4750afbbf9f4.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/element",
+      "time" : {
+        "start" : 1537189623004,
+        "stop" : 1537189623115,
+        "duration" : 111
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1005a4a5572ed733",
+        "name" : "Request",
+        "source" : "1005a4a5572ed733.json",
+        "type" : "application/json",
+        "size" : 67
+      }, {
+        "uid" : "ee6860fa8587b2a2",
+        "name" : "Response",
+        "source" : "ee6860fa8587b2a2.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/moveto",
+      "time" : {
+        "start" : 1537189623116,
+        "stop" : 1537189623300,
+        "duration" : 184
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "54fa6932cf64449e",
+        "name" : "Request",
+        "source" : "54fa6932cf64449e.json",
+        "type" : "application/json",
+        "size" : 80
+      }, {
+        "uid" : "751ca42f8da1771c",
+        "name" : "Response",
+        "source" : "751ca42f8da1771c.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/buttondown",
+      "time" : {
+        "start" : 1537189623305,
+        "stop" : 1537189623451,
+        "duration" : 146
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a803cf8e740f7158",
+        "name" : "Request",
+        "source" : "a803cf8e740f7158.json",
+        "type" : "application/json",
+        "size" : 19
+      }, {
+        "uid" : "fdcfd0f4a0ff6abe",
+        "name" : "Response",
+        "source" : "fdcfd0f4a0ff6abe.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/element",
+      "time" : {
+        "start" : 1537189623460,
+        "stop" : 1537189623567,
+        "duration" : 107
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d58cf82c282d9b92",
+        "name" : "Request",
+        "source" : "d58cf82c282d9b92.json",
+        "type" : "application/json",
+        "size" : 75
+      }, {
+        "uid" : "6f279bc8a67f2d16",
+        "name" : "Response",
+        "source" : "6f279bc8a67f2d16.json",
+        "type" : "application/json",
+        "size" : 645
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/screenshot",
+      "time" : {
+        "start" : 1537189623567,
+        "stop" : 1537189624305,
+        "duration" : 738
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element could not be located on the page using the given search parameters (\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\").\n                    at getText(\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\getText.js:18:17",
+      "steps" : [ {
+        "name" : "POST /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/elements",
+        "time" : {
+          "start" : 1537189623842,
+          "stop" : 1537189623950,
+          "duration" : 108
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "68df610220a10a7b",
+          "name" : "Request",
+          "source" : "68df610220a10a7b.json",
+          "type" : "application/json",
+          "size" : 138
+        }, {
+          "uid" : "6d67f1b3da7ebbc6",
+          "name" : "Response",
+          "source" : "6d67f1b3da7ebbc6.json",
+          "type" : "application/json",
+          "size" : 89
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 2,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "GET /wd/hub/session/1c055e13b5f9b89443a0d6bf96ab08ce/screenshot",
+        "time" : {
+          "start" : 1537189623959,
+          "stop" : 1537189624305,
+          "duration" : 346
+        },
+        "status" : "broken",
+        "statusMessage" : "Error: An element could not be located on the page using the given search parameters (\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\").\n                    at getText(\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\getText.js:18:17",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "25676a8a74c754b",
+          "name" : "Screenshot",
+          "source" : "25676a8a74c754b.png",
+          "type" : "image/png",
+          "size" : 84193
+        } ],
+        "parameters" : [ ],
+        "stepsCount" : 0,
+        "hasContent" : true,
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "aea2e92ff12b0b8e",
+        "name" : "Screenshot",
+        "source" : "aea2e92ff12b0b8e.png",
+        "type" : "image/png",
+        "size" : 84193
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 2,
+      "hasContent" : true,
+      "attachmentsCount" : 4,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "9dea937172121da4",
+      "name" : "Response",
+      "source" : "9dea937172121da4.json",
+      "type" : "application/json",
+      "size" : 161
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 11,
+    "hasContent" : true,
+    "attachmentsCount" : 19,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testClass",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testMethod",
+    "value" : "right slider motion"
+  }, {
+    "name" : "package",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "8aec591af6e065aa.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,136 @@
+{
+  "uid" : "f96130d9ee7d43ef",
+  "name" : "check more in detail light assist",
+  "fullName" : "test light assist.check more in detail light assist",
+  "historyId" : "c13e11827654a82f4d065eca013d59b9",
+  "time" : {
+    "start" : 1536833047433,
+    "stop" : 1536833047845,
+    "duration" : 412
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element not visible",
+  "statusTrace" : "Error: An element command could not be completed because the element is not visible on the page.\n                    at elementIdClick(\"0.20779822700496675-7\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element not visible",
+    "statusTrace" : "Error: An element command could not be completed because the element is not visible on the page.\n                    at elementIdClick(\"0.20779822700496675-7\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/56652df89002bf5cfdd34ea612d49a65/element",
+      "time" : {
+        "start" : 1536833047436,
+        "stop" : 1536833047463,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "31ab618a6113785a",
+        "name" : "Request",
+        "source" : "31ab618a6113785a.json",
+        "type" : "application/json",
+        "size" : 107
+      }, {
+        "uid" : "4c0307b30d4e200b",
+        "name" : "Response",
+        "source" : "4c0307b30d4e200b.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/56652df89002bf5cfdd34ea612d49a65/element/0.20779822700496675-7/click",
+      "time" : {
+        "start" : 1536833047465,
+        "stop" : 1536833047499,
+        "duration" : 34
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dcc8649207f1db1c",
+        "name" : "Response",
+        "source" : "dcc8649207f1db1c.json",
+        "type" : "application/json",
+        "size" : 462
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/56652df89002bf5cfdd34ea612d49a65/screenshot",
+      "time" : {
+        "start" : 1536833047506,
+        "stop" : 1536833047845,
+        "duration" : 339
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element command could not be completed because the element is not visible on the page.\n                    at elementIdClick(\"0.20779822700496675-7\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "84a14936c9980cdc",
+        "name" : "Screenshot",
+        "source" : "84a14936c9980cdc.png",
+        "type" : "image/png",
+        "size" : 113209
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test light assist"
+  }, {
+    "name" : "testClass",
+    "value" : "test light assist"
+  }, {
+    "name" : "testMethod",
+    "value" : "check more in detail light assist"
+  }, {
+    "name" : "package",
+    "value" : "test light assist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f96130d9ee7d43ef.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,109 @@
+{
+  "uid" : "61c566802713021a",
+  "name" : "do second screenshot",
+  "fullName" : "screenshot page body colors.do second screenshot",
+  "historyId" : "df01c96e2b4007bdff74dc074daa1c41",
+  "time" : {
+    "start" : 1537196843368,
+    "stop" : 1537196844018,
+    "duration" : 650
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET /wd/hub/session/17472362de8dd78a1704e3c2f057bdc8/screenshot",
+      "time" : {
+        "start" : 1537196843385,
+        "stop" : 0,
+        "duration" : -1537196843385
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "85bd0e29f0cdddf",
+        "name" : "Screenshot",
+        "source" : "85bd0e29f0cdddf.png",
+        "type" : "image/png",
+        "size" : 131898
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshot page body colors"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshot page body colors"
+  }, {
+    "name" : "testMethod",
+    "value" : "do second screenshot"
+  }, {
+    "name" : "package",
+    "value" : "screenshot page body colors"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ec5ce114cf7ab2ce",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537195775997,
+        "stop" : 1537195776489,
+        "duration" : 492
+      }
+    }, {
+      "uid" : "2e909e094bdcc82e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537195748441,
+        "stop" : 1537195748894,
+        "duration" : 453
+      }
+    }, {
+      "uid" : "d0c02af19e4292d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537190300907,
+        "stop" : 1537190301358,
+        "duration" : 451
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "61c566802713021a.json",
+  "parameterValues" : [ "chrome" ]
+}

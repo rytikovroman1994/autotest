@@ -1,0 +1,183 @@
+{
+  "uid" : "c640e341b45ea7dd",
+  "name" : "\"before all\" hook",
+  "fullName" : "body-color.\"before all\" hook",
+  "historyId" : "f141c904bb9e567afcebb3099e0a239e",
+  "time" : {
+    "start" : 1537196780225,
+    "stop" : 1537196795689,
+    "duration" : 15464
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/c5bc14166a41c8505462aa249ea188de/window/current/size",
+      "time" : {
+        "start" : 1537196780232,
+        "stop" : 1537196781374,
+        "duration" : 1142
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4f3b0d23fe44799e",
+        "name" : "Request",
+        "source" : "4f3b0d23fe44799e.json",
+        "type" : "application/json",
+        "size" : 40
+      }, {
+        "uid" : "1886a9158287522a",
+        "name" : "Response",
+        "source" : "1886a9158287522a.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/c5bc14166a41c8505462aa249ea188de/url",
+      "time" : {
+        "start" : 1537196781380,
+        "stop" : 1537196795441,
+        "duration" : 14061
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5801fdf1f88af3a6",
+        "name" : "Request",
+        "source" : "5801fdf1f88af3a6.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "6a33d642afd2ad1e",
+        "name" : "Response",
+        "source" : "6a33d642afd2ad1e.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/c5bc14166a41c8505462aa249ea188de/elements",
+      "time" : {
+        "start" : 1537196795473,
+        "stop" : 1537196795627,
+        "duration" : 154
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e9c941a394ad25e3",
+        "name" : "Request",
+        "source" : "e9c941a394ad25e3.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "732bfe4cde61a05f",
+        "name" : "Response",
+        "source" : "732bfe4cde61a05f.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/c5bc14166a41c8505462aa249ea188de/element/0.5591013108814753-1/displayed",
+      "time" : {
+        "start" : 1537196795630,
+        "stop" : 1537196795684,
+        "duration" : 54
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "94812f0f82a315ac",
+        "name" : "Response",
+        "source" : "94812f0f82a315ac.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "body-color"
+  }, {
+    "name" : "testClass",
+    "value" : "body-color"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "body-color"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5b25738ce505a921",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537190227214,
+        "stop" : 1537190242136,
+        "duration" : 14922
+      }
+    }, {
+      "uid" : "68bb4edca70166a2",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1537185415243,
+        "stop" : 1537185415548,
+        "duration" : 305
+      }
+    }, {
+      "uid" : "147d7fd21dc4bc35",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1536765404097,
+        "stop" : 1536765404546,
+        "duration" : 449
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c640e341b45ea7dd.json",
+  "parameterValues" : [ ]
+}

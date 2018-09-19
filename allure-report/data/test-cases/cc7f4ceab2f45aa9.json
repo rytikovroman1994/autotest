@@ -1,0 +1,158 @@
+{
+  "uid" : "cc7f4ceab2f45aa9",
+  "name" : "\"before all\" hook",
+  "fullName" : "checking-cards.\"before all\" hook",
+  "historyId" : "4e088ccb5fd25845285a9f0c514ed08a",
+  "time" : {
+    "start" : 1537189533152,
+    "stop" : 1537189533439,
+    "duration" : 287
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/1f06bbe9371133126ffb7cb7d68bf8ec/window/current/maximize",
+      "time" : {
+        "start" : 1537189533159,
+        "stop" : 1537189533286,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e8b814bf52fe00cc",
+        "name" : "Response",
+        "source" : "e8b814bf52fe00cc.json",
+        "type" : "application/json",
+        "size" : 563
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/1f06bbe9371133126ffb7cb7d68bf8ec/screenshot",
+      "time" : {
+        "start" : 1537189533294,
+        "stop" : 1537189533439,
+        "duration" : 145
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a935338c0e4708a1",
+        "name" : "Screenshot",
+        "source" : "a935338c0e4708a1.png",
+        "type" : "image/png",
+        "size" : 5761
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "checking-cards"
+  }, {
+    "name" : "testClass",
+    "value" : "checking-cards"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "checking-cards"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bd437f96b83b56d5",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1537185859493,
+        "stop" : 1537185859822,
+        "duration" : 329
+      }
+    }, {
+      "uid" : "cef560ccd6ab89ef",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1537185338443,
+        "stop" : 1537185339677,
+        "duration" : 1234
+      }
+    }, {
+      "uid" : "717ff650391d250d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536853618910,
+        "stop" : 1536853638228,
+        "duration" : 19318
+      }
+    }, {
+      "uid" : "f54605b12cae5019",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536767880079,
+        "stop" : 1536767887532,
+        "duration" : 7453
+      }
+    }, {
+      "uid" : "5b69636978b9618e",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1536765567533,
+        "stop" : 1536765567861,
+        "duration" : 328
+      }
+    }, {
+      "uid" : "dfc35a578fbdbb40",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1536765354432,
+        "stop" : 1536765354733,
+        "duration" : 301
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "cc7f4ceab2f45aa9.json",
+  "parameterValues" : [ ]
+}

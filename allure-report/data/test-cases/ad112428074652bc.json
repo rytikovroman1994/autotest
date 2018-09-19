@@ -1,0 +1,93 @@
+{
+  "uid" : "ad112428074652bc",
+  "name" : "choose online payment",
+  "fullName" : "test polo busines logic.choose online payment",
+  "historyId" : "9009a418d22d3a58e7241921d3a6ddad",
+  "time" : {
+    "start" : 1536856543515,
+    "stop" : 1536856554081,
+    "duration" : 10566
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "connect ECONNREFUSED 127.0.0.1:4444",
+  "statusTrace" : "Error: Couldn't connect to selenium server\n                    at session(\"delete\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\end.js:31:17\n                    at end() - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\runner.js:352:45",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "connect ECONNREFUSED 127.0.0.1:4444",
+    "statusTrace" : "Error: Couldn't connect to selenium server\n                    at session(\"delete\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\end.js:31:17\n                    at end() - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\runner.js:352:45",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/e08534471b5191fc1f222cef3077edc0/element",
+      "time" : {
+        "start" : 1536856543519,
+        "stop" : 1536856549528,
+        "duration" : 6009
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e2c9858916fd6f8e",
+        "name" : "Request",
+        "source" : "e2c9858916fd6f8e.json",
+        "type" : "application/json",
+        "size" : 50
+      }, {
+        "uid" : "69d3d5796ae0d682",
+        "name" : "Response",
+        "source" : "69d3d5796ae0d682.json",
+        "type" : "application/json",
+        "size" : 442
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testClass",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testMethod",
+    "value" : "choose online payment"
+  }, {
+    "name" : "package",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ad112428074652bc.json",
+  "parameterValues" : [ "chrome" ]
+}

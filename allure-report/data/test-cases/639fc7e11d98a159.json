@@ -1,0 +1,93 @@
+{
+  "uid" : "639fc7e11d98a159",
+  "name" : "do second screenshot",
+  "fullName" : "screenshot page security.do second screenshot",
+  "historyId" : "215dcccef3ebf7be823f8a37fd94dff9",
+  "time" : {
+    "start" : 1536772778319,
+    "stop" : 1536772778729,
+    "duration" : 410
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "GET /wd/hub/session/4a43b79d47e7b62cb8cb542d0eb11601/screenshot",
+      "time" : {
+        "start" : 1536772778325,
+        "stop" : 0,
+        "duration" : -1536772778325
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2fd9f5cab50bf3f8",
+        "name" : "Screenshot",
+        "source" : "2fd9f5cab50bf3f8.png",
+        "type" : "image/png",
+        "size" : 239175
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshot page security"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshot page security"
+  }, {
+    "name" : "testMethod",
+    "value" : "do second screenshot"
+  }, {
+    "name" : "package",
+    "value" : "screenshot page security"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e94f75c7abdee5e0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536772749391,
+        "stop" : 1536772749811,
+        "duration" : 420
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "639fc7e11d98a159.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,93 @@
+{
+  "uid" : "d5f1ce0c7fc03bed",
+  "name" : "get list city",
+  "fullName" : "test get all name city.get list city",
+  "historyId" : "c8ad2698216b00343d9b30a57c2d7a82",
+  "time" : {
+    "start" : 1536940396250,
+    "stop" : 1536940396317,
+    "duration" : 67
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "$(...).each is not a function",
+  "statusTrace" : "TypeError: $(...).each is not a function\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/city-selection.js:17:42)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "$(...).each is not a function",
+    "statusTrace" : "TypeError: $(...).each is not a function\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/city-selection.js:17:42)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/f470e622bf107b23320551eebac48a07/element",
+      "time" : {
+        "start" : 1536940396251,
+        "stop" : 1536940396311,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "24eb56f05a9ce0f1",
+        "name" : "Request",
+        "source" : "24eb56f05a9ce0f1.json",
+        "type" : "application/json",
+        "size" : 75
+      }, {
+        "uid" : "c283db9acfea223a",
+        "name" : "Response",
+        "source" : "c283db9acfea223a.json",
+        "type" : "application/json",
+        "size" : 643
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testClass",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testMethod",
+    "value" : "get list city"
+  }, {
+    "name" : "package",
+    "value" : "test get all name city"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d5f1ce0c7fc03bed.json",
+  "parameterValues" : [ "chrome" ]
+}

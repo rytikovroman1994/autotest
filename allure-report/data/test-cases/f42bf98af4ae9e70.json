@@ -1,0 +1,179 @@
+{
+  "uid" : "f42bf98af4ae9e70",
+  "name" : "filter-options",
+  "fullName" : "screenshots-exterior.filter-options",
+  "historyId" : "82d6dbe8b48c8f64b5ce5e2225743a41",
+  "time" : {
+    "start" : 1536751788123,
+    "stop" : 1536751789141,
+    "duration" : 1018
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/4ce08dd4de26fbcf0ff1cfe96812b19b/element",
+      "time" : {
+        "start" : 1536751788134,
+        "stop" : 1536751788194,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "deb8bbc715e3a7d1",
+        "name" : "Request",
+        "source" : "deb8bbc715e3a7d1.json",
+        "type" : "application/json",
+        "size" : 51
+      }, {
+        "uid" : "bcb38b4d5b0a94af",
+        "name" : "Response",
+        "source" : "bcb38b4d5b0a94af.json",
+        "type" : "application/json",
+        "size" : 136
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/4ce08dd4de26fbcf0ff1cfe96812b19b/element/0.8263456955360275-2/click",
+      "time" : {
+        "start" : 1536751788196,
+        "stop" : 1536751788523,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5b983c6923eadbb0",
+        "name" : "Response",
+        "source" : "5b983c6923eadbb0.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/4ce08dd4de26fbcf0ff1cfe96812b19b/elements",
+      "time" : {
+        "start" : 1536751788596,
+        "stop" : 1536751788723,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e719a1e862705ead",
+        "name" : "Request",
+        "source" : "e719a1e862705ead.json",
+        "type" : "application/json",
+        "size" : 114
+      }, {
+        "uid" : "61d1ae6a3e786640",
+        "name" : "Response",
+        "source" : "61d1ae6a3e786640.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/4ce08dd4de26fbcf0ff1cfe96812b19b/element/0.8263456955360275-3/displayed",
+      "time" : {
+        "start" : 1536751788724,
+        "stop" : 1536751788779,
+        "duration" : 55
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5665beef796b6ac",
+        "name" : "Response",
+        "source" : "5665beef796b6ac.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/4ce08dd4de26fbcf0ff1cfe96812b19b/screenshot",
+      "time" : {
+        "start" : 1536751788781,
+        "stop" : 0,
+        "duration" : -1536751788781
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e437e0e26bda9613",
+        "name" : "Screenshot",
+        "source" : "e437e0e26bda9613.png",
+        "type" : "image/png",
+        "size" : 127721
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "hasContent" : true,
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-options"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f42bf98af4ae9e70.json",
+  "parameterValues" : [ "chrome" ]
+}

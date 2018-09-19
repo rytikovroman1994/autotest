@@ -1,0 +1,79 @@
+{
+  "uid" : "8e5d50279f872198",
+  "name" : "\"before all\" hook",
+  "fullName" : "status server.\"before all\" hook",
+  "historyId" : "b035ab0f839be589c0080cf22ab006fb",
+  "time" : {
+    "start" : 1536765050010,
+    "stop" : 1536765051626,
+    "duration" : 1616
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "connect ECONNREFUSED 127.0.0.1:4444",
+  "statusTrace" : "Error: connect ECONNREFUSED 127.0.0.1:4444\n                    at new RuntimeError (C:\\autotest\\node_modules\\webdriverio\\build\\lib\\utils\\ErrorHandler.js:143:12)\n                    at Request._callback (C:\\autotest\\node_modules\\webdriverio\\build\\lib\\utils\\RequestHandler.js:330:43)\n                    at self.callback (C:\\autotest\\node_modules\\webdriverio\\node_modules\\request\\request.js:185:22)\n                    at emitOne (events.js:116:13)\n                    at Request.emit (events.js:211:7)\n                    at Request.onRequestError (C:\\autotest\\node_modules\\webdriverio\\node_modules\\request\\request.js:881:8)\n                    at emitOne (events.js:121:20)\n                    at ClientRequest.emit (events.js:211:7)\n                    at Socket.socketErrorListener (_http_client.js:387:9)\n                    at emitOne (events.js:116:13)\n                    at Socket.emit (events.js:211:7)\n                    at emitErrorNT (internal/streams/destroy.js:64:8)\n                    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n                    at process._tickDomainCallback (internal/process/next_tick.js:218:9)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "connect ECONNREFUSED 127.0.0.1:4444",
+    "statusTrace" : "Error: connect ECONNREFUSED 127.0.0.1:4444\n                    at new RuntimeError (C:\\autotest\\node_modules\\webdriverio\\build\\lib\\utils\\ErrorHandler.js:143:12)\n                    at Request._callback (C:\\autotest\\node_modules\\webdriverio\\build\\lib\\utils\\RequestHandler.js:330:43)\n                    at self.callback (C:\\autotest\\node_modules\\webdriverio\\node_modules\\request\\request.js:185:22)\n                    at emitOne (events.js:116:13)\n                    at Request.emit (events.js:211:7)\n                    at Request.onRequestError (C:\\autotest\\node_modules\\webdriverio\\node_modules\\request\\request.js:881:8)\n                    at emitOne (events.js:121:20)\n                    at ClientRequest.emit (events.js:211:7)\n                    at Socket.socketErrorListener (_http_client.js:387:9)\n                    at emitOne (events.js:116:13)\n                    at Socket.emit (events.js:211:7)\n                    at emitErrorNT (internal/streams/destroy.js:64:8)\n                    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n                    at process._tickDomainCallback (internal/process/next_tick.js:218:9)",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/6113fdef59e603d69f82575c24d05bc8/url",
+      "time" : {
+        "start" : 1536765050018,
+        "stop" : 1536765051626,
+        "duration" : 1608
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: connect ECONNREFUSED 127.0.0.1:4444\n                    at new RuntimeError (C:\\autotest\\node_modules\\webdriverio\\build\\lib\\utils\\ErrorHandler.js:143:12)\n                    at Request._callback (C:\\autotest\\node_modules\\webdriverio\\build\\lib\\utils\\RequestHandler.js:330:43)\n                    at self.callback (C:\\autotest\\node_modules\\webdriverio\\node_modules\\request\\request.js:185:22)\n                    at emitOne (events.js:116:13)\n                    at Request.emit (events.js:211:7)\n                    at Request.onRequestError (C:\\autotest\\node_modules\\webdriverio\\node_modules\\request\\request.js:881:8)\n                    at emitOne (events.js:121:20)\n                    at ClientRequest.emit (events.js:211:7)\n                    at Socket.socketErrorListener (_http_client.js:387:9)\n                    at emitOne (events.js:116:13)\n                    at Socket.emit (events.js:211:7)\n                    at emitErrorNT (internal/streams/destroy.js:64:8)\n                    at _combinedTickCallback (internal/process/next_tick.js:138:11)\n                    at process._tickDomainCallback (internal/process/next_tick.js:218:9)",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fb44320d9f1fb62c",
+        "name" : "Request",
+        "source" : "fb44320d9f1fb62c.json",
+        "type" : "application/json",
+        "size" : 37
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "status server"
+  }, {
+    "name" : "testClass",
+    "value" : "status server"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "status server"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8e5d50279f872198.json",
+  "parameterValues" : [ ]
+}

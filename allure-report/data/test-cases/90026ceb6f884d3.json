@@ -1,0 +1,136 @@
+{
+  "uid" : "90026ceb6f884d3",
+  "name" : "filter-options",
+  "fullName" : "screenshots-exterior.filter-options",
+  "historyId" : "82d6dbe8b48c8f64b5ce5e2225743a41",
+  "time" : {
+    "start" : 1536759668302,
+    "stop" : 1536759668873,
+    "duration" : 571
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <li class=\"avn008_filter__tab\" role=\"tab\" id=\"react-tabs-10\" aria-selected=\"false\" aria-disabled=\"false\" aria-controls=\"react-tabs-11\">...</li> is not clickable at point (1114, 105). Other element would receive the click: <form>...</form>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.15017863495738282-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <li class=\"avn008_filter__tab\" role=\"tab\" id=\"react-tabs-10\" aria-selected=\"false\" aria-disabled=\"false\" aria-controls=\"react-tabs-11\">...</li> is not clickable at point (1114, 105). Other element would receive the click: <form>...</form>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.15017863495738282-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/f4e43479b96fccd50a9428e33d1dda6c/element",
+      "time" : {
+        "start" : 1536759668312,
+        "stop" : 1536759668386,
+        "duration" : 74
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7c75f2a87cd2551e",
+        "name" : "Request",
+        "source" : "7c75f2a87cd2551e.json",
+        "type" : "application/json",
+        "size" : 51
+      }, {
+        "uid" : "35eb85c99b71ac30",
+        "name" : "Response",
+        "source" : "35eb85c99b71ac30.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/f4e43479b96fccd50a9428e33d1dda6c/element/0.15017863495738282-2/click",
+      "time" : {
+        "start" : 1536759668389,
+        "stop" : 1536759668536,
+        "duration" : 147
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4a9449884a285727",
+        "name" : "Response",
+        "source" : "4a9449884a285727.json",
+        "type" : "application/json",
+        "size" : 943
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/f4e43479b96fccd50a9428e33d1dda6c/screenshot",
+      "time" : {
+        "start" : 1536759668537,
+        "stop" : 1536759668873,
+        "duration" : 336
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.15017863495738282-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b9413ca568e0c150",
+        "name" : "Screenshot",
+        "source" : "b9413ca568e0c150.png",
+        "type" : "image/png",
+        "size" : 120718
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-options"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "90026ceb6f884d3.json",
+  "parameterValues" : [ "chrome" ]
+}

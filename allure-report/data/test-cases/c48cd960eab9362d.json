@@ -1,0 +1,192 @@
+{
+  "uid" : "c48cd960eab9362d",
+  "name" : "\"before all\" hook",
+  "fullName" : "online-payments.\"before all\" hook",
+  "historyId" : "2b6cfdbabe358921c7a6e3c9de13e7a3",
+  "time" : {
+    "start" : 1537189722699,
+    "stop" : 1537189805269,
+    "duration" : 82570
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "ESOCKETTIMEDOUT",
+  "statusTrace" : "Error: Couldn't connect to selenium server\n                    at url(\"https://vw.kodix.ru\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "ESOCKETTIMEDOUT",
+    "statusTrace" : "Error: Couldn't connect to selenium server\n                    at url(\"https://vw.kodix.ru\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/7e68850d76a499e9b67683c8733449aa/window/current/size",
+      "time" : {
+        "start" : 1537189722706,
+        "stop" : 1537189722862,
+        "duration" : 156
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bfd850f509a5a4ad",
+        "name" : "Request",
+        "source" : "bfd850f509a5a4ad.json",
+        "type" : "application/json",
+        "size" : 40
+      }, {
+        "uid" : "947de444abbacd5",
+        "name" : "Response",
+        "source" : "947de444abbacd5.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "POST /wd/hub/session/7e68850d76a499e9b67683c8733449aa/url",
+      "time" : {
+        "start" : 1537189722862,
+        "stop" : 1537189802867,
+        "duration" : 80005
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "332b12175c0a6416",
+        "name" : "Request",
+        "source" : "332b12175c0a6416.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "56d70c1aa21931c3",
+        "name" : "Response",
+        "source" : "56d70c1aa21931c3.json",
+        "type" : "application/json",
+        "size" : 255
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "GET /wd/hub/session/7e68850d76a499e9b67683c8733449aa/screenshot",
+      "time" : {
+        "start" : 1537189802886,
+        "stop" : 1537189805269,
+        "duration" : 2383
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: Couldn't connect to selenium server\n                    at url(\"https://vw.kodix.ru\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "bdbbf618bb29d17",
+        "name" : "Screenshot",
+        "source" : "bdbbf618bb29d17.png",
+        "type" : "image/png",
+        "size" : 149577
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "online-payments"
+  }, {
+    "name" : "testClass",
+    "value" : "online-payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "online-payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1dba3664b89b364c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537189668598,
+        "stop" : 1537189703830,
+        "duration" : 35232
+      }
+    }, {
+      "uid" : "648d499a7daa3cbf",
+      "status" : "broken",
+      "statusDetails" : "java.net.SocketException: Unexpected end of file from server",
+      "time" : {
+        "start" : 1537185870227,
+        "stop" : 1537185870606,
+        "duration" : 379
+      }
+    }, {
+      "uid" : "aaf1719d68586f10",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1537185373909,
+        "stop" : 1537185374356,
+        "duration" : 447
+      }
+    }, {
+      "uid" : "71a6f98b14c85dac",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1537185363174,
+        "stop" : 1537185363663,
+        "duration" : 489
+      }
+    }, {
+      "uid" : "338290174193a7ae",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1536765372367,
+        "stop" : 1536765372688,
+        "duration" : 321
+      }
+    }, {
+      "uid" : "58e8d7cbcb8a61e9",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1536765362416,
+        "stop" : 1536765362769,
+        "duration" : 353
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c48cd960eab9362d.json",
+  "parameterValues" : [ ]
+}
