@@ -6,11 +6,9 @@ describe('test booking car', () => {
     // получаем номер телефона
     let getPhone;
     before('open site', () => {
-        browser.helpers.openSite();
-        // закрываем фильтр
-        browser.click('#prompt-toggler_filter');
+        browser.helpers.openList();
         // ждём пока карточки станут видны
-        browser.waitForVisible('.avn001-2_image__car');
+        browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1)');
     }); 
 
     // выбираем первую картинку и переходим в деталку
@@ -24,7 +22,7 @@ describe('test booking car', () => {
         // кликаем по карточке
         browser.leftClick('.avn001-2_content .gridcontainer', 10, 10);
         // проверм что появилась картинка в деталке
-        browser.waitForVisible('.is-visible.avn008_image-switcher_image img');
+        browser.waitForVisible('.avn007-1_car-image  img');
     });
 
     // проверем что в деталке цена и диллер не поменялся

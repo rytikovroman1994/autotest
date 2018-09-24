@@ -2,21 +2,21 @@ describe('test booking car', () => {
     before('open site', () => {
         browser.helpers.openList();
         // ждём пока карточки станут видны
-        browser.waitForVisible('.avn001-2_image__car');
+        browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1)');
     }); 
 
     // добавляем сортировку по онлайн оплате
     it('click checkbox online payments', () => {
         // проверяем что что на странице есть чекбокс онлайн оплаты
-        browser.waitForExist('div:nth-child(1) > div > label > div > div.toggle_switch__states');
+        browser.waitForExist('.avn001-1_filter-item .toggle_switch__state');
         // кликаем по нему
-        browser.click('div:nth-child(1) > div > label > div > div.toggle_switch__states');
+        browser.click('.avn001-1_filter-item .toggle_switch__state');
         // проверяем что карточка стала с онлайн оплатой
-        browser.waitForVisible('.avn001-2_tags');
+        browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_tags');
         // наводимся на карточку
         browser.leftClick('.avn001-2_content .gridcontainer', 10, 10);
         // ждём появления картинки
-        browser.waitForVisible('.is-visible.avn008_image-switcher_image img');
+        browser.waitForVisible('.avn007-1_car-image img');
     });
 
     // проверяем наличие кнопки купить на странице
@@ -65,8 +65,10 @@ describe('test booking car', () => {
         browser.click('.rw-i-caret-down');
         // выбираем оплату по реквизитам
         browser.click('#rw_1_listbox > li:nth-child(3)');
+        // переносим курсор на "показать реквизиты"
+        browser.moveToObject('.op005_pay-by-req .vwd5-textlink_text');
         // расскрываем данные по реквизитам
-        browser.click('.op005_pay-by-req .vwd5-textlink_inner');
+        browser.click('.op005_pay-by-req .vwd5-textlink_text');
         // проверяем что в каждом поле есть данные не равные "нет данных"
         for( let i = 1; i <= 7 ; i++) {
             const getRequisites = browser.getText(`.op005_form_text > div > div > div:nth-child(${i}) > div:nth-child(2)`)
