@@ -35,7 +35,7 @@ describe('test auto hold', () => {
         // открываем всплывающее окно
         browser.click('div:nth-child(2) > div > div > div.avn008_option-check_more');
         // ждём появления картинки
-        browser.waitForVisible('.avn015_image picture img');
+        browser.waitForVisible('.avn015_content .image-container');
         // берём скриншот с локала
         ctx.originalScreenshot = 'snapshot/screenshotOption/autoHold.png';
         // делаем актуальный скриншот
