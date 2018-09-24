@@ -39,7 +39,7 @@ describe('test slider disks', () => {
     });
 
     it('checking the operation of the left slider', () => {
-        for( let i = 1; i <= 4; i ++) {
+        for( let i = 1; i <= 3; i ++) {
             // двигаем ползунок, для того, чтобы появилось условие в фильтре
             browser.helpers.slider('.rc-slider-handle-1',`div.rc-slider-step > span:nth-child(${i})`, 5, 5 );
             browser.pause(2000);
@@ -58,7 +58,7 @@ describe('test slider disks', () => {
     it('checking the operation of the right slider', () => {
         startingMaxDiameter = getMaxDiametr();
         console.log(startingMaxDiameter);
-        for( let i = 8; i >= 5; i--) {
+        for( let i = 5; i >= 3; i--) {
             // двигаем ползунок, для того, чтобы появилось условие в фильтре
             browser.helpers.slider('.rc-slider-handle-2',`div.rc-slider-step > span:nth-child(${i})`, 5, 5 );
             console.log(i);
