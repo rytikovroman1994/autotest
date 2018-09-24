@@ -32,7 +32,8 @@ describe('test of the price slider', () => {
         // получаем минимальную цену автомобиля
         startingMinPrice = getMinPrise();
         // двигаем ползунок 
-        browser.helpers.slider( '.rc-slider-handle-1','.avn008_budget__slider-self', 200, 0 );
+        browser.helpers.slider('.rc-slider-handle-1','.rc-slider-step', 200, 0 );
+        browser.pause(1000);
 
         // получаем новую минимальную цену
         newstartingMinPrice = getMinPrise();
@@ -50,19 +51,23 @@ describe('test of the price slider', () => {
         // проверяем наличие кнопки 
         browser.waitForVisible('.rc-slider-handle-2');
         // двигаем ползунок 
-        browser.helpers.slider( '.rc-slider-handle-2', '.avn008_budget__slider-self', 100, 0);
+        browser.helpers.slider( '.rc-slider-handle-2', '.rc-slider-step', 300, 0);
+        // ждём появления условия максимальной цены в фильтре
+        browser.waitForVisible('div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self');
         // получаем максимальную цену автомобиля
         maximumpPrice = getMaxPrise();
-        browser.helpers.slider( '.rc-slider-handle-2', '.avn008_budget__slider-self', 300, 0);
+        browser.helpers.slider('.rc-slider-handle-2', '.rc-slider-step', 400, 0);
+        browser.pause(1000);
 
-        // получаем новую минимальную цену
+        // получаем новую максимальную цену
         newstartingMaxPrice = getMaxPrise();
         expect(maximumpPrice).not.equal(null);
         expect(newstartingMaxPrice).to.not.equal(maximumpPrice);
+        browser.pause(5000);
     });
 
-    // проверяем, что в низжей плашке появился пункт минмальной цены
+    // проверяем, что в низжей плашке появился пункт максимальной цены
     it('minimum budget', () => {
-        browser.waitForExist(' div:nth-child(2) > div.avn008_filter-value-item__inner.avn008_filter-value-item__with-price');
+        browser.waitForExist('div:nth-child(2) > div.avn008_filter-value-item__inner.avn008_filter-value-item__with-price');
     });
 });
