@@ -1,8 +1,6 @@
 describe('test booking car', () => {
     before('open site', () => {
-        browser.helpers.openSite();
-        // закрываем фильтр
-        browser.click('#prompt-toggler_filter');
+        browser.helpers.openList();
         // ждём пока карточки станут видны
         browser.waitForVisible('.avn001-2_image__car');
     }); 
@@ -68,7 +66,7 @@ describe('test booking car', () => {
         // выбираем оплату по реквизитам
         browser.click('#rw_1_listbox > li:nth-child(3)');
         // расскрываем данные по реквизитам
-        browser.click('.op005_pay-by-req__links .vwd5-textlink_text');
+        browser.click('.op005_pay-by-req .vwd5-textlink_inner');
         // проверяем что в каждом поле есть данные не равные "нет данных"
         for( let i = 1; i <= 7 ; i++) {
             const getRequisites = browser.getText(`.op005_form_text > div > div > div:nth-child(${i}) > div:nth-child(2)`)
