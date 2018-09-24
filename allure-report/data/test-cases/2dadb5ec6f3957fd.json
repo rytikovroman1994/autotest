@@ -1,0 +1,136 @@
+{
+  "uid" : "2dadb5ec6f3957fd",
+  "name" : "consider the number of cards list",
+  "fullName" : "checking-cards.consider the number of cards list",
+  "historyId" : "6c9dfeb1f46b35b900ab6a454bee14ae",
+  "time" : {
+    "start" : 1536853643861,
+    "stop" : 1536853644290,
+    "duration" : 429
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <span class=\"toggle_switch__state\"></span> is not clickable at point (1101, 104). Other element would receive the click: <div class=\"avn001-1_filter-item\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.8366989918196495-35\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <span class=\"toggle_switch__state\"></span> is not clickable at point (1101, 104). Other element would receive the click: <div class=\"avn001-1_filter-item\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.8366989918196495-35\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/9dacf7abac6705940cdcbd282fb9e70f/element",
+      "time" : {
+        "start" : 1536853643864,
+        "stop" : 1536853643897,
+        "duration" : 33
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ac27ffddeeb10a0e",
+        "name" : "Request",
+        "source" : "ac27ffddeeb10a0e.json",
+        "type" : "application/json",
+        "size" : 69
+      }, {
+        "uid" : "9166e4555ba71d52",
+        "name" : "Response",
+        "source" : "9166e4555ba71d52.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/9dacf7abac6705940cdcbd282fb9e70f/element/0.8366989918196495-35/click",
+      "time" : {
+        "start" : 1536853643898,
+        "stop" : 1536853643970,
+        "duration" : 72
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8bc94e412d28552d",
+        "name" : "Response",
+        "source" : "8bc94e412d28552d.json",
+        "type" : "application/json",
+        "size" : 779
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/9dacf7abac6705940cdcbd282fb9e70f/screenshot",
+      "time" : {
+        "start" : 1536853643971,
+        "stop" : 1536853644290,
+        "duration" : 319
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.8366989918196495-35\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "72831cd185ffb8f3",
+        "name" : "Screenshot",
+        "source" : "72831cd185ffb8f3.png",
+        "type" : "image/png",
+        "size" : 172957
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "checking-cards"
+  }, {
+    "name" : "testClass",
+    "value" : "checking-cards"
+  }, {
+    "name" : "testMethod",
+    "value" : "consider the number of cards list"
+  }, {
+    "name" : "package",
+    "value" : "checking-cards"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2dadb5ec6f3957fd.json",
+  "parameterValues" : [ "chrome" ]
+}

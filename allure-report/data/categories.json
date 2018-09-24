@@ -7,7 +7,7 @@
       "name" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (826, 366). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open ReactModal__Overlay--before-close modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
       "children" : [ {
         "name" : "filter-easy open",
-        "uid" : "2f0292f9b1811314",
+        "uid" : "d779725f328959d",
         "parentUid" : "cb019007d64362008d6d9d246a61e571",
         "status" : "broken",
         "time" : {
@@ -20,32 +20,208 @@
       } ],
       "uid" : "cb019007d64362008d6d9d246a61e571"
     }, {
-      "name" : "element (\".avn008_ilter-value-item_image\") still not existing after 40000ms",
+      "name" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\businessLogic\\filter\\city-selection.js)",
       "children" : [ {
-        "name" : "check checkbox side assist",
-        "uid" : "908e4e0889ec6705",
-        "parentUid" : "5419c9e5a0087df84c64566087728421",
+        "name" : "\"before all\" hook",
+        "uid" : "a520c632005cbc78",
+        "parentUid" : "1c77cc5f45746d515c0159faf5a7e0e1",
         "status" : "broken",
         "time" : {
-          "start" : 1536834019126,
-          "stop" : 1536834060294,
-          "duration" : 41168
+          "start" : 1537782853763,
+          "stop" : 1537782943776,
+          "duration" : 90013
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1c77cc5f45746d515c0159faf5a7e0e1"
+    }, {
+      "name" : "unknown error: failed to change window state to maximized, current state is normal",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "1e6d439e02a91f05",
+        "parentUid" : "7263b9234b72c2ce4102eada5a1f0953",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537783015853,
+          "stop" : 1537783016119,
+          "duration" : 266
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7263b9234b72c2ce4102eada5a1f0953"
+    }, {
+      "name" : "no such session\n                  (Driver info: chromedriver=2.41.578700 (2f1ed5f9343c13f73144538f15c00b370eda6706),platform=Linux 4.9.93-boot2docker x86_64)",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "591fa0316614f756",
+        "parentUid" : "14d7af2168abe71a45d8c01ac62808f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537783164381,
+          "stop" : 1537783226580,
+          "duration" : 62199
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "14d7af2168abe71a45d8c01ac62808f6"
+    }, {
+      "name" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\accessServer\\status.js)",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "ec7a91b38f834ed9",
+        "parentUid" : "45bb851a2cdfdc72d0c88478edeca1aa",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537783270083,
+          "stop" : 1537783360091,
+          "duration" : 90008
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "45bb851a2cdfdc72d0c88478edeca1aa"
+    }, {
+      "name" : "ESOCKETTIMEDOUT",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "3ad9be6860081f09",
+        "parentUid" : "fb302c7f03bcc528f4dadacaefb2da5c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537785601383,
+          "stop" : 1537785684226,
+          "duration" : 82843
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fb302c7f03bcc528f4dadacaefb2da5c"
+    }, {
+      "name" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\exterior\\disks\\cast-stampedDisks.js)",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "7efdc6c3d9e5d22c",
+        "parentUid" : "485d5e3b7e2933cb9b5e9fecb07b6a8b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537785781855,
+          "stop" : 1537785871864,
+          "duration" : 90009
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "485d5e3b7e2933cb9b5e9fecb07b6a8b"
+    }, {
+      "name" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\exterior\\disks\\disks.js)",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "4de6fcee923696c8",
+        "parentUid" : "09a30f5752d02c0b342fabc0ba6e69a1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537785899255,
+          "stop" : 1537785989263,
+          "duration" : 90008
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "09a30f5752d02c0b342fabc0ba6e69a1"
+    }, {
+      "name" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\exterior\\options\\panoramic-sunroof.js)",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "8de48d231ea1b1b4",
+        "parentUid" : "68db0376668f5dc202e88520392f5ca1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537786132525,
+          "stop" : 1537786222538,
+          "duration" : 90013
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "68db0376668f5dc202e88520392f5ca1"
+    }, {
+      "name" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\exterior\\shine\\dynamic-light.js)",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "4e317ec0f1c9a784",
+        "parentUid" : "c842b69b4bd391fda1a2a1fae6e25c47",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537786728763,
+          "stop" : 1537786818773,
+          "duration" : 90010
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c842b69b4bd391fda1a2a1fae6e25c47"
+    }, {
+      "name" : "Promise was rejected with the following reason: java.net.ConnectException: Connection refused: connect",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "1681c16f9bd0b0c",
+        "parentUid" : "574ebd6b9a677740b89d859256e4bf44",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537795857450,
+          "stop" : 1537795904630,
+          "duration" : 47180
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "574ebd6b9a677740b89d859256e4bf44"
+    }, {
+      "name" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\budget\\filter-budget.js)",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "349560b5656f5ce0",
+        "parentUid" : "4a5f4857bd93134a18e23791fd40e04d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537800388735,
+          "stop" : 1537800478743,
+          "duration" : 90008
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4a5f4857bd93134a18e23791fd40e04d"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters (\"div:nth-child(1) > div > div > div > div:nth-child(4) > div > div > a > div\").",
+      "children" : [ {
+        "name" : "Check the city in the card",
+        "uid" : "3209e3a4a58ff5ea",
+        "parentUid" : "715b05ab817802a30cf5f399330cd3ba",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537804181687,
+          "stop" : 1537804217889,
+          "duration" : 36202
         },
         "flaky" : true,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "5419c9e5a0087df84c64566087728421"
+      "uid" : "715b05ab817802a30cf5f399330cd3ba"
     }, {
       "name" : "element (\".gridcontainer .grid_l_3:nth-child(1) > div > div > div > div:nth-child(1) > a > div > div > div > img\") still not visible after 5000ms",
       "children" : [ {
         "name" : "consider the number of cards",
-        "uid" : "d3f6c5b17a131b3d",
+        "uid" : "b1049eac0c4ca9b9",
         "parentUid" : "515b4b3a1cc86a64dbec9374f94291ee",
         "status" : "broken",
         "time" : {
-          "start" : 1536853638230,
-          "stop" : 1536853643860,
-          "duration" : 5630
+          "start" : 1537804251002,
+          "stop" : 1537804256614,
+          "duration" : 5612
         },
         "flaky" : true,
         "parameters" : [ "chrome" ]
@@ -55,270 +231,278 @@
       "name" : "unknown error: Element <span class=\"toggle_switch__state\"></span> is not clickable at point (1101, 104). Other element would receive the click: <div class=\"avn001-1_filter-item\">...</div>",
       "children" : [ {
         "name" : "consider the number of cards list",
-        "uid" : "f0277553c19707c4",
+        "uid" : "b76adbe472b9b361",
         "parentUid" : "2abe846b052aea391c4f7d37122c0334",
         "status" : "broken",
         "time" : {
-          "start" : 1536853643861,
-          "stop" : 1536853644290,
-          "duration" : 429
+          "start" : 1537804256614,
+          "stop" : 1537804257083,
+          "duration" : 469
         },
         "flaky" : true,
         "parameters" : [ "chrome" ]
       } ],
       "uid" : "2abe846b052aea391c4f7d37122c0334"
     }, {
-      "name" : "An element could not be located on the page using the given search parameters (\"div:nth-child(1) > div > div > div > div:nth-child(4) > div > div > a > div\").",
-      "children" : [ {
-        "name" : "Check the city in the card",
-        "uid" : "342524d9d3e584c8",
-        "parentUid" : "715b05ab817802a30cf5f399330cd3ba",
-        "status" : "broken",
-        "time" : {
-          "start" : 1537189407598,
-          "stop" : 1537189482049,
-          "duration" : 74451
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "715b05ab817802a30cf5f399330cd3ba"
-    }, {
-      "name" : "unknown error: failed to change window state to maximized, current state is normal",
+      "name" : "element (\".avn008_budget__slider-self\") still not existing after 40000ms",
       "children" : [ {
         "name" : "\"before all\" hook",
-        "uid" : "cc7f4ceab2f45aa9",
-        "parentUid" : "7263b9234b72c2ce4102eada5a1f0953",
+        "uid" : "eb3cc1ff7469187",
+        "parentUid" : "376b5da3206e80a5d58c503154dd3589",
         "status" : "broken",
         "time" : {
-          "start" : 1537189533152,
-          "stop" : 1537189533439,
-          "duration" : 287
+          "start" : 1537804327845,
+          "stop" : 1537804379989,
+          "duration" : 52144
         },
         "flaky" : true,
         "parameters" : [ ]
       } ],
-      "uid" : "7263b9234b72c2ce4102eada5a1f0953"
+      "uid" : "376b5da3206e80a5d58c503154dd3589"
     }, {
-      "name" : "An element could not be located on the page using the given search parameters (\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\").",
+      "name" : "element (\".avn015_image picture img\") still not visible after 40000ms",
       "children" : [ {
-        "name" : "right slider motion",
-        "uid" : "8aec591af6e065aa",
-        "parentUid" : "300bb0c8877f2ba6741fec1ff1ed9193",
+        "name" : "\"before all\" hook",
+        "uid" : "fa52cef5062317e5",
+        "parentUid" : "22857fde01f363c58ad52d56063dae17",
         "status" : "broken",
         "time" : {
-          "start" : 1537189622591,
-          "stop" : 1537189624305,
-          "duration" : 1714
+          "start" : 1537804652167,
+          "stop" : 1537804701173,
+          "duration" : 49006
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "check more in detail about dynamic light",
+        "uid" : "a5e1736aa09f6c50",
+        "parentUid" : "22857fde01f363c58ad52d56063dae17",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537804739872,
+          "stop" : 1537804780593,
+          "duration" : 40721
+        },
+        "flaky" : true,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "check more in detail about dynamic light",
+        "uid" : "e2de4444190da71a",
+        "parentUid" : "22857fde01f363c58ad52d56063dae17",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537805278057,
+          "stop" : 1537805320053,
+          "duration" : 41996
         },
         "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "300bb0c8877f2ba6741fec1ff1ed9193"
-    }, {
-      "name" : "element (\" div:nth-child(2) > div.avn008_filter-value-item__inner.avn008_filter-value-item__with-price\") still not existing after 40000ms",
-      "children" : [ {
-        "name" : "minimum budget",
-        "uid" : "6ce7677bcade1860",
-        "parentUid" : "fc9d6f134b6974fd18a75c9bdc035223",
-        "status" : "broken",
-        "time" : {
-          "start" : 1537189624306,
-          "stop" : 1537189664668,
-          "duration" : 40362
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "fc9d6f134b6974fd18a75c9bdc035223"
-    }, {
-      "name" : "ESOCKETTIMEDOUT",
-      "children" : [ {
-        "name" : "\"before all\" hook",
-        "uid" : "c48cd960eab9362d",
-        "parentUid" : "fb302c7f03bcc528f4dadacaefb2da5c",
-        "status" : "broken",
-        "time" : {
-          "start" : 1537189722699,
-          "stop" : 1537189805269,
-          "duration" : 82570
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "fb302c7f03bcc528f4dadacaefb2da5c"
+      "uid" : "22857fde01f363c58ad52d56063dae17"
     }, {
       "name" : "element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms",
       "children" : [ {
-        "name" : "check more in detail about dynamic light",
-        "uid" : "859ab21f5e67e946",
-        "parentUid" : "906670ac014a3a25f2c3f0124f223064",
-        "status" : "broken",
-        "time" : {
-          "start" : 1537190548587,
-          "stop" : 1537190589860,
-          "duration" : 41273
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "check more in detail about dynamic light",
-        "uid" : "4d05340041fb986e",
-        "parentUid" : "906670ac014a3a25f2c3f0124f223064",
-        "status" : "broken",
-        "time" : {
-          "start" : 1537190622930,
-          "stop" : 1537190664650,
-          "duration" : 41720
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "check more in detail about dynamic light",
-        "uid" : "fe08d8a7423ad6ae",
-        "parentUid" : "906670ac014a3a25f2c3f0124f223064",
-        "status" : "broken",
-        "time" : {
-          "start" : 1537190700033,
-          "stop" : 1537190741586,
-          "duration" : 41553
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
         "name" : "test multimedia checkbox activeInfoDisplay",
-        "uid" : "4938a51476ba3545",
+        "uid" : "77feb3e886cb4a65",
         "parentUid" : "906670ac014a3a25f2c3f0124f223064",
         "status" : "broken",
         "time" : {
-          "start" : 1537191052252,
-          "stop" : 1537191096469,
-          "duration" : 44217
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "check more in detail about active info display",
-        "uid" : "93b8040d363cd09d",
-        "parentUid" : "906670ac014a3a25f2c3f0124f223064",
-        "status" : "broken",
-        "time" : {
-          "start" : 1537191132029,
-          "stop" : 1537191173513,
-          "duration" : 41484
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "check more in detail about dynamic light",
-        "uid" : "948760242714d3b2",
-        "parentUid" : "906670ac014a3a25f2c3f0124f223064",
-        "status" : "broken",
-        "time" : {
-          "start" : 1537197353606,
-          "stop" : 1537197395053,
-          "duration" : 41447
+          "start" : 1537804854503,
+          "stop" : 1537804896504,
+          "duration" : 42001
         },
         "flaky" : true,
         "parameters" : [ "chrome" ]
       } ],
       "uid" : "906670ac014a3a25f2c3f0124f223064"
     }, {
-      "name" : "element (\"div:nth-child(5) > div > div > div.avn008_option-check_image > img\") still not visible after 40000ms",
-      "children" : [ {
-        "name" : "\"before all\" hook",
-        "uid" : "5d5452d3d2cbe963",
-        "parentUid" : "4022cde9402c209b28ae889b7c6eb8a2",
-        "status" : "broken",
-        "time" : {
-          "start" : 1537190746797,
-          "stop" : 1537190819784,
-          "duration" : 72987
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "4022cde9402c209b28ae889b7c6eb8a2"
-    }, {
-      "name" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (832, 336). Other element would receive the click: <div class=\"content-loader__overlay\">...</div>",
+      "name" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (827, 336). Other element would receive the click: <img alt=\"\" class=\"avn008_image-switcher_image\" src=\"https://cars.volkswagen.ru/images/resize/remote?width=685&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/option_images/images/active-info-display.jpg\">",
       "children" : [ {
         "name" : "test multimedia checkbox appConnect",
-        "uid" : "a93fd593293a00f",
-        "parentUid" : "c9ca97835c2ec924708dc846c0890369",
+        "uid" : "2cc72e149ed9d95f",
+        "parentUid" : "9efad2642c9e56482d575d482ad68939",
         "status" : "broken",
         "time" : {
-          "start" : 1537191096470,
-          "stop" : 1537191098309,
-          "duration" : 1839
+          "start" : 1537804896505,
+          "stop" : 1537804897227,
+          "duration" : 722
         },
         "flaky" : true,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "c9ca97835c2ec924708dc846c0890369"
+      "uid" : "9efad2642c9e56482d575d482ad68939"
     }, {
-      "name" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (1110, 336). Other element would receive the click: <div class=\"content-loader__overlay\">...</div>",
+      "name" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (1102, 336). Other element would receive the click: <img alt=\"\" class=\"avn008_image-switcher_image\" src=\"https://cars.volkswagen.ru/images/resize/remote?width=685&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/option_images/images/active-info-display.jpg\">",
       "children" : [ {
         "name" : "test multimedia checkbox bluetooth",
-        "uid" : "4099f03957b594b0",
-        "parentUid" : "e76e14bde0303e56253597d203a3663c",
+        "uid" : "26603d6b8528f2a9",
+        "parentUid" : "499f42fe552325d232bf7379e4d9d0e0",
         "status" : "broken",
         "time" : {
-          "start" : 1537191098369,
-          "stop" : 1537191099734,
-          "duration" : 1365
+          "start" : 1537804897227,
+          "stop" : 1537804897985,
+          "duration" : 758
         },
         "flaky" : true,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "e76e14bde0303e56253597d203a3663c"
+      "uid" : "499f42fe552325d232bf7379e4d9d0e0"
     }, {
-      "name" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (540, 511). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+      "name" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (537, 511). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
       "children" : [ {
         "name" : "test multimedia checkbox navigation",
-        "uid" : "b3181496fad009c6",
-        "parentUid" : "accf892284eb168b327b207d3e1279d8",
+        "uid" : "de17530523f59ac7",
+        "parentUid" : "8fb9fbf13e61d1da85c9d1a13cc9cbe3",
         "status" : "broken",
         "time" : {
-          "start" : 1537191099734,
-          "stop" : 1537191101185,
-          "duration" : 1451
+          "start" : 1537804897986,
+          "stop" : 1537804898755,
+          "duration" : 769
         },
         "flaky" : true,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "accf892284eb168b327b207d3e1279d8"
+      "uid" : "8fb9fbf13e61d1da85c9d1a13cc9cbe3"
     }, {
-      "name" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (846, 511). Other element would receive the click: <div class=\"avn015_description_text\">...</div>",
+      "name" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (841, 511). Other element would receive the click: <div class=\"avn015_description_text\">...</div>",
       "children" : [ {
         "name" : "test multimedia checkbox premiumAudio",
-        "uid" : "4a9131a84c78fcf9",
-        "parentUid" : "8bfba7fcd2949624cb3b79ce2bc189a9",
+        "uid" : "8e8c5253b19b1e24",
+        "parentUid" : "6151297374aa9135bc4dfdf306aa0555",
         "status" : "broken",
         "time" : {
-          "start" : 1537191101185,
-          "stop" : 1537191102584,
-          "duration" : 1399
+          "start" : 1537804898777,
+          "stop" : 1537804899437,
+          "duration" : 660
         },
         "flaky" : true,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "8bfba7fcd2949624cb3b79ce2bc189a9"
+      "uid" : "6151297374aa9135bc4dfdf306aa0555"
     }, {
-      "name" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (1160, 511). Other element would receive the click: <div class=\"avn015_description_text\">...</div>",
+      "name" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (1152, 511). Other element would receive the click: <div class=\"avn015_description_text\">...</div>",
       "children" : [ {
         "name" : "test multimedia checkbox wirelessСharger",
-        "uid" : "73fa971f0e7e92a7",
-        "parentUid" : "67a07058fc7c5d99a4731b44d8f52d1f",
+        "uid" : "7ff3ed091ee98401",
+        "parentUid" : "c176823398c46ea00f9e73899e359dd7",
         "status" : "broken",
         "time" : {
-          "start" : 1537191102584,
-          "stop" : 1537191104094,
-          "duration" : 1510
+          "start" : 1537804899437,
+          "stop" : 1537804900144,
+          "duration" : 707
         },
         "flaky" : true,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "67a07058fc7c5d99a4731b44d8f52d1f"
+      "uid" : "c176823398c46ea00f9e73899e359dd7"
+    }, {
+      "name" : "element (\".avn008_filter-value-item_image\") still not existing after 40000ms",
+      "children" : [ {
+        "name" : "check diagonal",
+        "uid" : "6d66008675d965a7",
+        "parentUid" : "43c0d6b5e72d4d1df36d6d1c5de446ca",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537804994758,
+          "stop" : 1537805042137,
+          "duration" : 47379
+        },
+        "flaky" : true,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "43c0d6b5e72d4d1df36d6d1c5de446ca"
+    }, {
+      "name" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\options\\assistants\\rain-sensor.js)",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "a6a5a4354fc6ed11",
+        "parentUid" : "b9e0adb674f580e9deba92ad6c1ca56c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537805588195,
+          "stop" : 1537805678205,
+          "duration" : 90010
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b9e0adb674f580e9deba92ad6c1ca56c"
+    }, {
+      "name" : "element (\".avn008_ilter-value-item_image\") still not existing after 40000ms",
+      "children" : [ {
+        "name" : "check checkbox side assist",
+        "uid" : "b1234417af5144c3",
+        "parentUid" : "5419c9e5a0087df84c64566087728421",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537805733239,
+          "stop" : 1537805774065,
+          "duration" : 40826
+        },
+        "flaky" : true,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "5419c9e5a0087df84c64566087728421"
+    }, {
+      "name" : "element (\".avn008_safety-images_main .LazyLoad.is-visible  img\") still not visible after 40000ms",
+      "children" : [ {
+        "name" : "\"before all\" hook",
+        "uid" : "c3b71ae1b4fc7ba",
+        "parentUid" : "3a2c06b595c3a2d648e3a257305b0dc7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537806204269,
+          "stop" : 1537806275797,
+          "duration" : 71528
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "\"before all\" hook",
+        "uid" : "d572e0d2cde488d2",
+        "parentUid" : "3a2c06b595c3a2d648e3a257305b0dc7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537806297319,
+          "stop" : 1537806354107,
+          "duration" : 56788
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3a2c06b595c3a2d648e3a257305b0dc7"
+    }, {
+      "name" : "element (\".grid_l_8\") still not visible after 40000ms",
+      "children" : [ {
+        "name" : "filter-budget",
+        "uid" : "bf14654941ce7b72",
+        "parentUid" : "5a09a7737325c8369bfb292aeab9bf7d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537806682945,
+          "stop" : 1537806723803,
+          "duration" : 40858
+        },
+        "flaky" : true,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "5a09a7737325c8369bfb292aeab9bf7d"
+    }, {
+      "name" : "Promise was rejected with the following reason: connect ECONNREFUSED 127.0.0.1:4444",
+      "children" : [ {
+        "name" : "filter-option",
+        "uid" : "b97235616c3529c5",
+        "parentUid" : "31392593fb1eb1b4dca06f9de16be7de",
+        "status" : "broken",
+        "time" : {
+          "start" : 1537806729481,
+          "stop" : 1537806769932,
+          "duration" : 40451
+        },
+        "flaky" : true,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "31392593fb1eb1b4dca06f9de16be7de"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   }, {
@@ -327,7 +511,7 @@
       "name" : "expected '' to equal 'ГАЛОГЕН'",
       "children" : [ {
         "name" : "shoose light",
-        "uid" : "7fc8d4aea5d0875a",
+        "uid" : "bc103d64eabdfc15",
         "parentUid" : "9d82a52a5aed974b7b79ebc01cfb4bfa",
         "status" : "failed",
         "time" : {
@@ -340,101 +524,113 @@
       } ],
       "uid" : "9d82a52a5aed974b7b79ebc01cfb4bfa"
     }, {
-      "name" : "expected '599 900' to not equal '599 900'",
-      "children" : [ {
-        "name" : "move the left slider",
-        "uid" : "d1e8a0978f311599",
-        "parentUid" : "a9b8b2f025188a21f59ac4dcbb6c0058",
-        "status" : "failed",
-        "time" : {
-          "start" : 1537189579516,
-          "stop" : 1537189582295,
-          "duration" : 2779
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "a9b8b2f025188a21f59ac4dcbb6c0058"
-    }, {
       "name" : "expected null to not equal null",
       "children" : [ {
         "name" : "compare screenshots",
-        "uid" : "624f8edeec14db43",
+        "uid" : "797b5031ce22bffd",
         "parentUid" : "765120cababe6d12a2c54c238643eabc",
         "status" : "failed",
         "time" : {
-          "start" : 1537190589861,
-          "stop" : 1537190589871,
-          "duration" : 10
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "compare screenshots",
-        "uid" : "3b5d4a520e1e375",
-        "parentUid" : "765120cababe6d12a2c54c238643eabc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1537190664651,
-          "stop" : 1537190664669,
-          "duration" : 18
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "compare screenshots",
-        "uid" : "c980ce1461578ecc",
-        "parentUid" : "765120cababe6d12a2c54c238643eabc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1537190741587,
-          "stop" : 1537190741597,
-          "duration" : 10
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "compare screenshots",
-        "uid" : "3391f98dbb940cfa",
-        "parentUid" : "765120cababe6d12a2c54c238643eabc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1537191173513,
-          "stop" : 1537191173519,
-          "duration" : 6
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "compare screenshots",
-        "uid" : "c287c606fe0bea78",
-        "parentUid" : "765120cababe6d12a2c54c238643eabc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1537197395054,
-          "stop" : 1537197395082,
-          "duration" : 28
+          "start" : 1537804780593,
+          "stop" : 1537804780597,
+          "duration" : 4
         },
         "flaky" : true,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "compare screenshots",
+        "uid" : "a93d282b2f6703f7",
+        "parentUid" : "765120cababe6d12a2c54c238643eabc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1537805320130,
+          "stop" : 1537805320153,
+          "duration" : 23
+        },
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
       "uid" : "765120cababe6d12a2c54c238643eabc"
     }, {
-      "name" : "expected '19' to not equal '19'",
+      "name" : "expected 0.3125 to be below 0.1",
       "children" : [ {
-        "name" : "checking the operation of the right slider",
-        "uid" : "efa900284f42cd2c",
-        "parentUid" : "30f2ebce074b2f9049d2ebdff9d867d2",
+        "name" : "compare screenshots",
+        "uid" : "2e3664806e169206",
+        "parentUid" : "7ea3956d6957b5e362f033ebcaadf201",
         "status" : "failed",
         "time" : {
-          "start" : 1537197049076,
-          "stop" : 1537197053119,
-          "duration" : 4043
+          "start" : 1537804943157,
+          "stop" : 1537804945327,
+          "duration" : 2170
         },
         "flaky" : true,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "30f2ebce074b2f9049d2ebdff9d867d2"
+      "uid" : "7ea3956d6957b5e362f033ebcaadf201"
+    }, {
+      "name" : "expected 0.140625 to be below 0.1",
+      "children" : [ {
+        "name" : "compare screenshots",
+        "uid" : "4746ccde536c59fb",
+        "parentUid" : "e65794d4ebd4e424f706a8d1b0e8f1f9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1537805160127,
+          "stop" : 1537805161441,
+          "duration" : 1314
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "e65794d4ebd4e424f706a8d1b0e8f1f9"
+    }, {
+      "name" : "expected 0.265625 to be below 0.1",
+      "children" : [ {
+        "name" : "compare screenshots",
+        "uid" : "2272f00ad9004ad6",
+        "parentUid" : "4ce35790d0bc8d49fa7d52471239fa4c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1537805571177,
+          "stop" : 1537805572284,
+          "duration" : 1107
+        },
+        "flaky" : true,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "4ce35790d0bc8d49fa7d52471239fa4c"
+    }, {
+      "name" : "expected 0.109375 to be below 0.1",
+      "children" : [ {
+        "name" : "compare screenshots",
+        "uid" : "a1701df879f3ff55",
+        "parentUid" : "8159619af660b43b879aeea16d603d58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1537805775808,
+          "stop" : 1537805776604,
+          "duration" : 796
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "8159619af660b43b879aeea16d603d58"
+    }, {
+      "name" : "expected 0.328125 to be below 0.1",
+      "children" : [ {
+        "name" : "compare screenshots",
+        "uid" : "4b2386a44f7f103f",
+        "parentUid" : "4fcb8167c718314be7591eb0ceaeb6cf",
+        "status" : "failed",
+        "time" : {
+          "start" : 1537805992627,
+          "stop" : 1537805993834,
+          "duration" : 1207
+        },
+        "flaky" : true,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "4fcb8167c718314be7591eb0ceaeb6cf"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]

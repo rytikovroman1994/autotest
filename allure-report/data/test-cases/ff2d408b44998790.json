@@ -1,0 +1,136 @@
+{
+  "uid" : "ff2d408b44998790",
+  "name" : "check more in detail about keyless-access",
+  "fullName" : "test keyless-access.check more in detail about keyless-access",
+  "historyId" : "fe622f9ebd6c1f2402be94a021544a96",
+  "time" : {
+    "start" : 1536749191457,
+    "stop" : 1536749191940,
+    "duration" : 483
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element not visible",
+  "statusTrace" : "Error: An element command could not be completed because the element is not visible on the page.\n                    at elementIdClick(\"0.6974571458874175-13\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element not visible",
+    "statusTrace" : "Error: An element command could not be completed because the element is not visible on the page.\n                    at elementIdClick(\"0.6974571458874175-13\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/0c2df76920f93c2c7c6f947769a9d8bc/element",
+      "time" : {
+        "start" : 1536749191461,
+        "stop" : 1536749191507,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3fd4ea73a5368258",
+        "name" : "Request",
+        "source" : "3fd4ea73a5368258.json",
+        "type" : "application/json",
+        "size" : 107
+      }, {
+        "uid" : "dac4988ec3787d60",
+        "name" : "Response",
+        "source" : "dac4988ec3787d60.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/0c2df76920f93c2c7c6f947769a9d8bc/element/0.6974571458874175-13/click",
+      "time" : {
+        "start" : 1536749191508,
+        "stop" : 1536749191557,
+        "duration" : 49
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6eb62449130267b4",
+        "name" : "Response",
+        "source" : "6eb62449130267b4.json",
+        "type" : "application/json",
+        "size" : 462
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/0c2df76920f93c2c7c6f947769a9d8bc/screenshot",
+      "time" : {
+        "start" : 1536749191562,
+        "stop" : 1536749191940,
+        "duration" : 378
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element command could not be completed because the element is not visible on the page.\n                    at elementIdClick(\"0.6974571458874175-13\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "26b38ac8205f8332",
+        "name" : "Screenshot",
+        "source" : "26b38ac8205f8332.png",
+        "type" : "image/png",
+        "size" : 128858
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test keyless-access"
+  }, {
+    "name" : "testClass",
+    "value" : "test keyless-access"
+  }, {
+    "name" : "testMethod",
+    "value" : "check more in detail about keyless-access"
+  }, {
+    "name" : "package",
+    "value" : "test keyless-access"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff2d408b44998790.json",
+  "parameterValues" : [ "chrome" ]
+}

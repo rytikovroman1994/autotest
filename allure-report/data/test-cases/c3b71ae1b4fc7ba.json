@@ -1,0 +1,85 @@
+{
+  "uid" : "c3b71ae1b4fc7ba",
+  "name" : "\"before all\" hook",
+  "fullName" : "test checkboxs page security.\"before all\" hook",
+  "historyId" : "c1d9ab488ef0492a80ccb07e62894bf0",
+  "time" : {
+    "start" : 1537806204269,
+    "stop" : 1537806275797,
+    "duration" : 71528
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn008_safety-images_main .LazyLoad.is-visible  img\") still not visible after 40000ms",
+  "statusTrace" : "Error: element (\".avn008_safety-images_main .LazyLoad.is-visible  img\") still not visible after 40000ms\n                    at elements(\".avn008_safety-images_main .LazyLoad.is-visible  img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn008_safety-images_main .LazyLoad.is-visible  img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn008_safety-images_main .LazyLoad.is-visible  img\") still not visible after 40000ms",
+    "statusTrace" : "Error: element (\".avn008_safety-images_main .LazyLoad.is-visible  img\") still not visible after 40000ms\n                    at elements(\".avn008_safety-images_main .LazyLoad.is-visible  img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn008_safety-images_main .LazyLoad.is-visible  img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "18a0b5137b882100",
+      "name" : "Screenshot",
+      "source" : "18a0b5137b882100.png",
+      "type" : "image/png",
+      "size" : 242867
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test checkboxs page security"
+  }, {
+    "name" : "testClass",
+    "value" : "test checkboxs page security"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test checkboxs page security"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "88a688ba3f3d733b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536830648037,
+        "stop" : 1536830659866,
+        "duration" : 11829
+      }
+    }, {
+      "uid" : "ef50bb84eb8db24b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536830562785,
+        "stop" : 1536830591710,
+        "duration" : 28925
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c3b71ae1b4fc7ba.json",
+  "parameterValues" : [ ]
+}

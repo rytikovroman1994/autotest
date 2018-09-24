@@ -1,0 +1,141 @@
+{
+  "uid" : "5cc25b73907fe3b7",
+  "name" : "check the available list of cars",
+  "fullName" : "test polo busines logic.check the available list of cars",
+  "historyId" : "9ed9732895160a1e9296bd6641d6e197",
+  "time" : {
+    "start" : 1536915930588,
+    "stop" : 1536915930696,
+    "duration" : 108
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "carName.join is not a function",
+  "statusTrace" : "TypeError: carName.join is not a function\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/polo-busines-logic.js:116:48)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "carName.join is not a function",
+    "statusTrace" : "TypeError: carName.join is not a function\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/polo-busines-logic.js:116:48)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/d9f73584f02d9687d6c4a392ac0a0a3b/elements",
+      "time" : {
+        "start" : 1536915930590,
+        "stop" : 1536915930604,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "aa55371a716a4587",
+        "name" : "Request",
+        "source" : "aa55371a716a4587.json",
+        "type" : "application/json",
+        "size" : 65
+      }, {
+        "uid" : "a4cecaaf65e2cc8b",
+        "name" : "Response",
+        "source" : "a4cecaaf65e2cc8b.json",
+        "type" : "application/json",
+        "size" : 365
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/d9f73584f02d9687d6c4a392ac0a0a3b/elements",
+      "time" : {
+        "start" : 1536915930619,
+        "stop" : 1536915930649,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "352fd7b29a6f13b0",
+        "name" : "Request",
+        "source" : "352fd7b29a6f13b0.json",
+        "type" : "application/json",
+        "size" : 106
+      }, {
+        "uid" : "b761b4768515c49e",
+        "name" : "Response",
+        "source" : "b761b4768515c49e.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/d9f73584f02d9687d6c4a392ac0a0a3b/element/0.6587560480314496-38/text",
+      "time" : {
+        "start" : 1536915930651,
+        "stop" : 1536915930690,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f6d8537be236ae4b",
+        "name" : "Response",
+        "source" : "f6d8537be236ae4b.json",
+        "type" : "application/json",
+        "size" : 102
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testClass",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testMethod",
+    "value" : "check the available list of cars"
+  }, {
+    "name" : "package",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5cc25b73907fe3b7.json",
+  "parameterValues" : [ "chrome" ]
+}

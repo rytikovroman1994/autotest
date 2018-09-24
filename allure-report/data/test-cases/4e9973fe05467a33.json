@@ -1,0 +1,179 @@
+{
+  "uid" : "4e9973fe05467a33",
+  "name" : "filter-pressure meter",
+  "fullName" : "screenshots-exterior.filter-pressure meter",
+  "historyId" : "45fec38c33e570af7377131ffac375e",
+  "time" : {
+    "start" : 1536752146391,
+    "stop" : 1536752147177,
+    "duration" : 786
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/11b3026ce7cd9df9cff3d247550d2c14/elements",
+      "time" : {
+        "start" : 1536752146393,
+        "stop" : 1536752146438,
+        "duration" : 45
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "be574130d9b7d9",
+        "name" : "Request",
+        "source" : "be574130d9b7d9.json",
+        "type" : "application/json",
+        "size" : 51
+      }, {
+        "uid" : "8ab4d26d626cdba9",
+        "name" : "Response",
+        "source" : "8ab4d26d626cdba9.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/11b3026ce7cd9df9cff3d247550d2c14/element/0.1256917967098785-25/displayed",
+      "time" : {
+        "start" : 1536752146439,
+        "stop" : 1536752146501,
+        "duration" : 62
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "26b4ed4a14337f9d",
+        "name" : "Response",
+        "source" : "26b4ed4a14337f9d.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/11b3026ce7cd9df9cff3d247550d2c14/element",
+      "time" : {
+        "start" : 1536752146509,
+        "stop" : 1536752146591,
+        "duration" : 82
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "30920b23d4ca793c",
+        "name" : "Request",
+        "source" : "30920b23d4ca793c.json",
+        "type" : "application/json",
+        "size" : 51
+      }, {
+        "uid" : "9c265904e7ba3a70",
+        "name" : "Response",
+        "source" : "9c265904e7ba3a70.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/11b3026ce7cd9df9cff3d247550d2c14/element/0.1256917967098785-25/click",
+      "time" : {
+        "start" : 1536752146592,
+        "stop" : 1536752146794,
+        "duration" : 202
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b69779a3b3bf3c2f",
+        "name" : "Response",
+        "source" : "b69779a3b3bf3c2f.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/11b3026ce7cd9df9cff3d247550d2c14/screenshot",
+      "time" : {
+        "start" : 1536752146806,
+        "stop" : 0,
+        "duration" : -1536752146806
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e653ee23f9f1b820",
+        "name" : "Screenshot",
+        "source" : "e653ee23f9f1b820.png",
+        "type" : "image/png",
+        "size" : 58443
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-pressure meter"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4e9973fe05467a33.json",
+  "parameterValues" : [ "chrome" ]
+}

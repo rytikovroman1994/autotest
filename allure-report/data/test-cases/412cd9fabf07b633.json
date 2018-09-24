@@ -1,0 +1,254 @@
+{
+  "uid" : "412cd9fabf07b633",
+  "name" : "filter-options",
+  "fullName" : "screenshots-exterior.filter-options",
+  "historyId" : "82d6dbe8b48c8f64b5ce5e2225743a41",
+  "time" : {
+    "start" : 1536761407683,
+    "stop" : 1536761408746,
+    "duration" : 1063
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/c2bce069644fd41af5d6f406ce20a7e9/element",
+      "time" : {
+        "start" : 1536761407690,
+        "stop" : 1536761407791,
+        "duration" : 101
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "44c13650afe7332e",
+        "name" : "Request",
+        "source" : "44c13650afe7332e.json",
+        "type" : "application/json",
+        "size" : 51
+      }, {
+        "uid" : "d60612c6603c21d8",
+        "name" : "Response",
+        "source" : "d60612c6603c21d8.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/c2bce069644fd41af5d6f406ce20a7e9/element/0.30256910787303126-2/click",
+      "time" : {
+        "start" : 1536761407795,
+        "stop" : 1536761408107,
+        "duration" : 312
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4bfc8bdcaa1a7ff5",
+        "name" : "Response",
+        "source" : "4bfc8bdcaa1a7ff5.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/c2bce069644fd41af5d6f406ce20a7e9/elements",
+      "time" : {
+        "start" : 1536761408123,
+        "stop" : 1536761408271,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c616206f95ffa77f",
+        "name" : "Request",
+        "source" : "c616206f95ffa77f.json",
+        "type" : "application/json",
+        "size" : 114
+      }, {
+        "uid" : "277e3df869c12f1e",
+        "name" : "Response",
+        "source" : "277e3df869c12f1e.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/c2bce069644fd41af5d6f406ce20a7e9/element/0.30256910787303126-3/displayed",
+      "time" : {
+        "start" : 1536761408275,
+        "stop" : 1536761408331,
+        "duration" : 56
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e94a06582b247d13",
+        "name" : "Response",
+        "source" : "e94a06582b247d13.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/c2bce069644fd41af5d6f406ce20a7e9/screenshot",
+      "time" : {
+        "start" : 1536761408336,
+        "stop" : 0,
+        "duration" : -1536761408336
+      },
+      "status" : "unknown",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3957dd3d12d2368f",
+        "name" : "Screenshot",
+        "source" : "3957dd3d12d2368f.png",
+        "type" : "image/png",
+        "size" : 127749
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-options"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cd399f58162a4b55",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536761228435,
+        "stop" : 1536761229824,
+        "duration" : 1389
+      }
+    }, {
+      "uid" : "72b33231479d7261",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <li class=\"avn008_filter__tab\" role=\"tab\" id=\"react-tabs-10\" aria-selected=\"false\" aria-disabled=\"false\" aria-controls=\"react-tabs-11\">...</li> is not clickable at point (1114, 105). Other element would receive the click: <form>...</form>",
+      "time" : {
+        "start" : 1536759668302,
+        "stop" : 1536759668873,
+        "duration" : 571
+      }
+    }, {
+      "uid" : "bdeb984fb747707f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536756553490,
+        "stop" : 1536756554500,
+        "duration" : 1010
+      }
+    }, {
+      "uid" : "f47da747931a9e87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752387525,
+        "stop" : 1536752388583,
+        "duration" : 1058
+      }
+    }, {
+      "uid" : "3a5113585c44d472",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752133387,
+        "stop" : 1536752134361,
+        "duration" : 974
+      }
+    }, {
+      "uid" : "715680297d6bfc74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752014930,
+        "stop" : 1536752016264,
+        "duration" : 1334
+      }
+    }, {
+      "uid" : "af43701fabab49ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751880801,
+        "stop" : 1536751881831,
+        "duration" : 1030
+      }
+    }, {
+      "uid" : "2f81c578a335cb36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751788123,
+        "stop" : 1536751789141,
+        "duration" : 1018
+      }
+    }, {
+      "uid" : "8e530cbab06819e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751619170,
+        "stop" : 1536751620429,
+        "duration" : 1259
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "412cd9fabf07b633.json",
+  "parameterValues" : [ "chrome" ]
+}

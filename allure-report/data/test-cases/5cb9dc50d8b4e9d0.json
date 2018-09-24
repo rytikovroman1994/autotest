@@ -1,0 +1,54 @@
+{
+  "uid" : "5cb9dc50d8b4e9d0",
+  "name" : "compare price and dealer",
+  "fullName" : "test booking car.compare price and dealer",
+  "historyId" : "17d7056c15650e98d1ac1bf2d0bdab69",
+  "time" : {
+    "start" : 1537441950110,
+    "stop" : 1537441950239,
+    "duration" : 129
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Invalid Chai property: br. Did you mean \"be\"?",
+  "statusTrace" : "Error: Invalid Chai property: br. Did you mean \"be\"?\n                    at Object.proxyGetter [as get] (C:\\autotest\\node_modules\\chai\\lib\\chai\\utils\\proxify.js:63:17)\n                    at Context.it (C:/autotest/test/specs/businessLogic/detail/dealer-price-number.js:33:9)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test booking car"
+  }, {
+    "name" : "testClass",
+    "value" : "test booking car"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare price and dealer"
+  }, {
+    "name" : "package",
+    "value" : "test booking car"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5cb9dc50d8b4e9d0.json",
+  "parameterValues" : [ "chrome" ]
+}

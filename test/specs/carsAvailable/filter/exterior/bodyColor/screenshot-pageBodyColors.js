@@ -9,7 +9,7 @@ describe('screenshot page body colors', () => {
         // переходим на страницу цвет кузова
         browser.click('#react-tabs-6');
         // ожидаём загрузки картинки
-        browser.waitForVisible('.avn008_color-display');
+        browser.waitForVisible('.avn008_image-switcher_image');
     });
 
     it('take screenshot page body color', () => {

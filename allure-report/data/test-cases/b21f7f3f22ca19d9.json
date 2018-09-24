@@ -1,0 +1,54 @@
+{
+  "uid" : "b21f7f3f22ca19d9",
+  "name" : "compare screenshots",
+  "fullName" : "test light assist.compare screenshots",
+  "historyId" : "c09e562fa3fa5743d6d509e6c3d16a27",
+  "time" : {
+    "start" : 1536833019967,
+    "stop" : 1536833019973,
+    "duration" : 6
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected null to not equal null",
+  "statusTrace" : "AssertionError: expected null to not equal null\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/options/assistants/light-assist.js:48:44)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test light assist"
+  }, {
+    "name" : "testClass",
+    "value" : "test light assist"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test light assist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b21f7f3f22ca19d9.json",
+  "parameterValues" : [ "chrome" ]
+}

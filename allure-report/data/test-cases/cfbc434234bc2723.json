@@ -1,0 +1,189 @@
+{
+  "uid" : "cfbc434234bc2723",
+  "name" : "choose online payment",
+  "fullName" : "test polo busines logic.choose online payment",
+  "historyId" : "9009a418d22d3a58e7241921d3a6ddad",
+  "time" : {
+    "start" : 1537188827611,
+    "stop" : 1537188828628,
+    "duration" : 1017
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 1 to equal 2",
+  "statusTrace" : "AssertionError: expected 1 to equal 2\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/polo-busines-logic.js:49:37)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected 1 to equal 2",
+    "statusTrace" : "AssertionError: expected 1 to equal 2\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/polo-busines-logic.js:49:37)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/37b00777a8a2c549987c2dea99d277c5/element",
+      "time" : {
+        "start" : 1537188827620,
+        "stop" : 1537188827693,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "770348399b6c4d6d",
+        "name" : "Request",
+        "source" : "770348399b6c4d6d.json",
+        "type" : "application/json",
+        "size" : 50
+      }, {
+        "uid" : "e73fca6c9a882ccd",
+        "name" : "Response",
+        "source" : "e73fca6c9a882ccd.json",
+        "type" : "application/json",
+        "size" : 136
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/37b00777a8a2c549987c2dea99d277c5/element/0.3650655785086778-4/click",
+      "time" : {
+        "start" : 1537188827712,
+        "stop" : 1537188828039,
+        "duration" : 327
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7a6d6c1bc93ff667",
+        "name" : "Response",
+        "source" : "7a6d6c1bc93ff667.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/37b00777a8a2c549987c2dea99d277c5/element",
+      "time" : {
+        "start" : 1537188828054,
+        "stop" : 1537188828130,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4a02a2d80b7d46f2",
+        "name" : "Request",
+        "source" : "4a02a2d80b7d46f2.json",
+        "type" : "application/json",
+        "size" : 72
+      }, {
+        "uid" : "497bdc138b952fbd",
+        "name" : "Response",
+        "source" : "497bdc138b952fbd.json",
+        "type" : "application/json",
+        "size" : 136
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/37b00777a8a2c549987c2dea99d277c5/element/0.3650655785086778-5/click",
+      "time" : {
+        "start" : 1537188828130,
+        "stop" : 1537188828501,
+        "duration" : 371
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c4dec8eb5ffc3235",
+        "name" : "Response",
+        "source" : "c4dec8eb5ffc3235.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/37b00777a8a2c549987c2dea99d277c5/elements",
+      "time" : {
+        "start" : 1537188828506,
+        "stop" : 1537188828610,
+        "duration" : 104
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a2e2d08555fad740",
+        "name" : "Request",
+        "source" : "a2e2d08555fad740.json",
+        "type" : "application/json",
+        "size" : 99
+      }, {
+        "uid" : "e59c62b9533280b9",
+        "name" : "Response",
+        "source" : "e59c62b9533280b9.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testClass",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testMethod",
+    "value" : "choose online payment"
+  }, {
+    "name" : "package",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cfbc434234bc2723.json",
+  "parameterValues" : [ "chrome" ]
+}

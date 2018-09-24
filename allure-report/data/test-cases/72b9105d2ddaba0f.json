@@ -1,0 +1,115 @@
+{
+  "uid" : "72b9105d2ddaba0f",
+  "name" : "shoose light",
+  "fullName" : "test polo busines logic.shoose light",
+  "historyId" : "f34691c796f9502667edc88c17a03c35",
+  "time" : {
+    "start" : 1536854328737,
+    "stop" : 1536854329067,
+    "duration" : 330
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "An element could not be located on the page using the given search parameters.",
+  "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"#react-tabs-16\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"#react-tabs-16\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "An element could not be located on the page using the given search parameters.",
+    "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"#react-tabs-16\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"#react-tabs-16\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/189bb4007fdd9dd331535a8f895c560f/element",
+      "time" : {
+        "start" : 1536854328740,
+        "stop" : 1536854328770,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c13dd4f5f0e94649",
+        "name" : "Request",
+        "source" : "c13dd4f5f0e94649.json",
+        "type" : "application/json",
+        "size" : 51
+      }, {
+        "uid" : "592219ec135f47a2",
+        "name" : "Response",
+        "source" : "592219ec135f47a2.json",
+        "type" : "application/json",
+        "size" : 595
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/189bb4007fdd9dd331535a8f895c560f/screenshot",
+      "time" : {
+        "start" : 1536854328772,
+        "stop" : 1536854329067,
+        "duration" : 295
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"#react-tabs-16\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"#react-tabs-16\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b9c9ab1d83941987",
+        "name" : "Screenshot",
+        "source" : "b9c9ab1d83941987.png",
+        "type" : "image/png",
+        "size" : 76476
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testClass",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testMethod",
+    "value" : "shoose light"
+  }, {
+    "name" : "package",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "72b9105d2ddaba0f.json",
+  "parameterValues" : [ "chrome" ]
+}

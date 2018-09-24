@@ -1,0 +1,60 @@
+{
+  "uid" : "a93d282b2f6703f7",
+  "name" : "compare screenshots",
+  "fullName" : "test materials.compare screenshots",
+  "historyId" : "205f7db98bef0c141e9527c18b61268",
+  "time" : {
+    "start" : 1537805320130,
+    "stop" : 1537805320153,
+    "duration" : 23
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected null to not equal null",
+  "statusTrace" : "AssertionError: expected null to not equal null\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/interior/seating/materials.js:84:44)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test materials"
+  }, {
+    "name" : "testClass",
+    "value" : "test materials"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test materials"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a93d282b2f6703f7.json",
+  "parameterValues" : [ "chrome" ]
+}

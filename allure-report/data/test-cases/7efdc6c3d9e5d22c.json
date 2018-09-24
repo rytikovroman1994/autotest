@@ -1,0 +1,85 @@
+{
+  "uid" : "7efdc6c3d9e5d22c",
+  "name" : "\"before all\" hook",
+  "fullName" : "test cast stamped disks.\"before all\" hook",
+  "historyId" : "c43cc52283bfd256716a2fd72c642fef",
+  "time" : {
+    "start" : 1537785781855,
+    "stop" : 1537785871864,
+    "duration" : 90009
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\exterior\\disks\\cast-stampedDisks.js)",
+  "statusTrace" : "Error: Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\exterior\\disks\\cast-stampedDisks.js)\n                    at Hook.Runnable._timeoutError (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:440:10)\n                    at Timeout.<anonymous> (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:251:24)\n                    at ontimeout (timers.js:498:11)\n                    at tryOnTimeout (timers.js:323:5)\n                    at Timer.listOnTimeout (timers.js:290:5)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test cast stamped disks"
+  }, {
+    "name" : "testClass",
+    "value" : "test cast stamped disks"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test cast stamped disks"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "de70432298e14fb5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537196886357,
+        "stop" : 1537196896800,
+        "duration" : 10443
+      }
+    }, {
+      "uid" : "ae3e255c06a7aeb1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537190305971,
+        "stop" : 1537190325557,
+        "duration" : 19586
+      }
+    }, {
+      "uid" : "b1454a6886a8c9ee",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1537185427099,
+        "stop" : 1537185427447,
+        "duration" : 348
+      }
+    }, {
+      "uid" : "9a12f4ae47efd1c9",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1536765411941,
+        "stop" : 1536765412332,
+        "duration" : 391
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7efdc6c3d9e5d22c.json",
+  "parameterValues" : [ ]
+}

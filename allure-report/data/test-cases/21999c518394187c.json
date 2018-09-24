@@ -1,0 +1,54 @@
+{
+  "uid" : "21999c518394187c",
+  "name" : "compare screenshots",
+  "fullName" : "test dynamic r-line trim package.compare screenshots",
+  "historyId" : "9397d883e4546839505a659b8798ae1d",
+  "time" : {
+    "start" : 1537190741587,
+    "stop" : 1537190741597,
+    "duration" : 10
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected null to not equal null",
+  "statusTrace" : "AssertionError: expected null to not equal null\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/exterior/options/rline-trim-package.js:46:44)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test dynamic r-line trim package"
+  }, {
+    "name" : "testClass",
+    "value" : "test dynamic r-line trim package"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test dynamic r-line trim package"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "21999c518394187c.json",
+  "parameterValues" : [ "chrome" ]
+}

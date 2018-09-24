@@ -1,0 +1,87 @@
+{
+  "uid" : "6d66008675d965a7",
+  "name" : "check diagonal",
+  "fullName" : "test display diagonal.check diagonal",
+  "historyId" : "298e236ddffd58509e7281d5aa672506",
+  "time" : {
+    "start" : 1537804994758,
+    "stop" : 1537805042137,
+    "duration" : 47379
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn008_filter-value-item_image\") still not existing after 40000ms",
+  "statusTrace" : "Error: element (\".avn008_filter-value-item_image\") still not existing after 40000ms\n                    at elements(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn008_filter-value-item_image\") still not existing after 40000ms",
+    "statusTrace" : "Error: element (\".avn008_filter-value-item_image\") still not existing after 40000ms\n                    at elements(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6d6bb1ab7632dc65",
+      "name" : "Screenshot",
+      "source" : "6d6bb1ab7632dc65.png",
+      "type" : "image/png",
+      "size" : 128401
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test display diagonal"
+  }, {
+    "name" : "testClass",
+    "value" : "test display diagonal"
+  }, {
+    "name" : "testMethod",
+    "value" : "check diagonal"
+  }, {
+    "name" : "package",
+    "value" : "test display diagonal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "84ab877990baef80",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not existing after 40000ms",
+      "time" : {
+        "start" : 1537798124053,
+        "stop" : 1537798168399,
+        "duration" : 44346
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6d66008675d965a7.json",
+  "parameterValues" : [ "chrome" ]
+}

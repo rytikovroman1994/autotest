@@ -1,0 +1,155 @@
+{
+  "uid" : "7ae76fafa36128e7",
+  "name" : "\"before all\" hook",
+  "fullName" : "transmission.\"before all\" hook",
+  "historyId" : "a7f8101a9331802de1190ab3be3047be",
+  "time" : {
+    "start" : 1537195903537,
+    "stop" : 1537195917930,
+    "duration" : 14393
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/91fb70b7952590d4a3eab7762707120a/window/current/size",
+      "time" : {
+        "start" : 1537195903545,
+        "stop" : 1537195904718,
+        "duration" : 1173
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "968ab10fc0f39e71",
+        "name" : "Request",
+        "source" : "968ab10fc0f39e71.json",
+        "type" : "application/json",
+        "size" : 40
+      }, {
+        "uid" : "ad5fd566cefef24f",
+        "name" : "Response",
+        "source" : "ad5fd566cefef24f.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/91fb70b7952590d4a3eab7762707120a/url",
+      "time" : {
+        "start" : 1537195904734,
+        "stop" : 1537195917465,
+        "duration" : 12731
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "231365e4859f91fd",
+        "name" : "Request",
+        "source" : "231365e4859f91fd.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "80556a547e265ee4",
+        "name" : "Response",
+        "source" : "80556a547e265ee4.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/91fb70b7952590d4a3eab7762707120a/elements",
+      "time" : {
+        "start" : 1537195917549,
+        "stop" : 1537195917732,
+        "duration" : 183
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "38abe80e2940cf2e",
+        "name" : "Request",
+        "source" : "38abe80e2940cf2e.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "929d3d5b039a0851",
+        "name" : "Response",
+        "source" : "929d3d5b039a0851.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/91fb70b7952590d4a3eab7762707120a/element/0.33692735052238176-1/displayed",
+      "time" : {
+        "start" : 1537195917755,
+        "stop" : 1537195917925,
+        "duration" : 170
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "42bbc904b8bdf223",
+        "name" : "Response",
+        "source" : "42bbc904b8bdf223.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7ae76fafa36128e7.json",
+  "parameterValues" : [ ]
+}

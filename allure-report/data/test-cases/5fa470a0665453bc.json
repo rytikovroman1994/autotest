@@ -1,0 +1,133 @@
+{
+  "uid" : "5fa470a0665453bc",
+  "name" : "\"before all\" hook",
+  "fullName" : "online-payments.\"before all\" hook",
+  "historyId" : "2b6cfdbabe358921c7a6e3c9de13e7a3",
+  "time" : {
+    "start" : 1537189722699,
+    "stop" : 1537189805269,
+    "duration" : 82570
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "ESOCKETTIMEDOUT",
+  "statusTrace" : "Error: Couldn't connect to selenium server\n                    at url(\"https://vw.kodix.ru\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "ESOCKETTIMEDOUT",
+    "statusTrace" : "Error: Couldn't connect to selenium server\n                    at url(\"https://vw.kodix.ru\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/7e68850d76a499e9b67683c8733449aa/window/current/size",
+      "time" : {
+        "start" : 1537189722706,
+        "stop" : 1537189722862,
+        "duration" : 156
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "32492a185c2dc9b6",
+        "name" : "Request",
+        "source" : "32492a185c2dc9b6.json",
+        "type" : "application/json",
+        "size" : 40
+      }, {
+        "uid" : "a77dce8f300ffdbd",
+        "name" : "Response",
+        "source" : "a77dce8f300ffdbd.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/7e68850d76a499e9b67683c8733449aa/url",
+      "time" : {
+        "start" : 1537189722862,
+        "stop" : 1537189802867,
+        "duration" : 80005
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "18dd03d77584d177",
+        "name" : "Request",
+        "source" : "18dd03d77584d177.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "2c3b21a1ec448f7f",
+        "name" : "Response",
+        "source" : "2c3b21a1ec448f7f.json",
+        "type" : "application/json",
+        "size" : 255
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/7e68850d76a499e9b67683c8733449aa/screenshot",
+      "time" : {
+        "start" : 1537189802886,
+        "stop" : 1537189805269,
+        "duration" : 2383
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: Couldn't connect to selenium server\n                    at url(\"https://vw.kodix.ru\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ed8ed76474fb3506",
+        "name" : "Screenshot",
+        "source" : "ed8ed76474fb3506.png",
+        "type" : "image/png",
+        "size" : 149577
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 5,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "online-payments"
+  }, {
+    "name" : "testClass",
+    "value" : "online-payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "online-payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5fa470a0665453bc.json",
+  "parameterValues" : [ ]
+}

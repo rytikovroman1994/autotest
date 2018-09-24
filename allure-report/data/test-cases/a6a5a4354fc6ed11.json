@@ -1,0 +1,75 @@
+{
+  "uid" : "a6a5a4354fc6ed11",
+  "name" : "\"before all\" hook",
+  "fullName" : "test rain sensor.\"before all\" hook",
+  "historyId" : "6b774ad7c0584417d4a3131abab34e53",
+  "time" : {
+    "start" : 1537805588195,
+    "stop" : 1537805678205,
+    "duration" : 90010
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\options\\assistants\\rain-sensor.js)",
+  "statusTrace" : "Error: Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\options\\assistants\\rain-sensor.js)\n                    at Hook.Runnable._timeoutError (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:440:10)\n                    at Timeout.<anonymous> (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:251:24)\n                    at ontimeout (timers.js:498:11)\n                    at tryOnTimeout (timers.js:323:5)\n                    at Timer.listOnTimeout (timers.js:290:5)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test rain sensor"
+  }, {
+    "name" : "testClass",
+    "value" : "test rain sensor"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test rain sensor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "235e88cb91e20575",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536834082032,
+        "stop" : 1536834091449,
+        "duration" : 9417
+      }
+    }, {
+      "uid" : "1a370f0c9b14fc9e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536833308567,
+        "stop" : 1536833316661,
+        "duration" : 8094
+      }
+    }, {
+      "uid" : "d1f12e2677770684",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536833281809,
+        "stop" : 1536833292318,
+        "duration" : 10509
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a6a5a4354fc6ed11.json",
+  "parameterValues" : [ ]
+}

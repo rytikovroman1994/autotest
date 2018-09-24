@@ -1,0 +1,163 @@
+{
+  "uid" : "879439e1a9c5d63",
+  "name" : "choose online payment",
+  "fullName" : "test polo busines logic.choose online payment",
+  "historyId" : "9009a418d22d3a58e7241921d3a6ddad",
+  "time" : {
+    "start" : 1536853941892,
+    "stop" : 1536853942634,
+    "duration" : 742
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "An element could not be located on the page using the given search parameters.",
+  "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\".checkbox__mask hasicon\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\".checkbox__mask hasicon\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "An element could not be located on the page using the given search parameters.",
+    "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\".checkbox__mask hasicon\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\".checkbox__mask hasicon\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/15274fcd13b621cba2f2fa846b6e5f03/element",
+      "time" : {
+        "start" : 1536853941898,
+        "stop" : 1536853942026,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "150d1b53074df0f6",
+        "name" : "Request",
+        "source" : "150d1b53074df0f6.json",
+        "type" : "application/json",
+        "size" : 50
+      }, {
+        "uid" : "101efc80aa4943d9",
+        "name" : "Response",
+        "source" : "101efc80aa4943d9.json",
+        "type" : "application/json",
+        "size" : 136
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/15274fcd13b621cba2f2fa846b6e5f03/element/0.7070692454433596-4/click",
+      "time" : {
+        "start" : 1536853942027,
+        "stop" : 1536853942217,
+        "duration" : 190
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4ac1200de789d47b",
+        "name" : "Response",
+        "source" : "4ac1200de789d47b.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/15274fcd13b621cba2f2fa846b6e5f03/element",
+      "time" : {
+        "start" : 1536853942218,
+        "stop" : 1536853942235,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7ab5114c68f46cdc",
+        "name" : "Request",
+        "source" : "7ab5114c68f46cdc.json",
+        "type" : "application/json",
+        "size" : 71
+      }, {
+        "uid" : "31d0ba727cc79dcb",
+        "name" : "Response",
+        "source" : "31d0ba727cc79dcb.json",
+        "type" : "application/json",
+        "size" : 635
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/15274fcd13b621cba2f2fa846b6e5f03/screenshot",
+      "time" : {
+        "start" : 1536853942241,
+        "stop" : 1536853942634,
+        "duration" : 393
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\".checkbox__mask hasicon\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\".checkbox__mask hasicon\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e2e71968b1426326",
+        "name" : "Screenshot",
+        "source" : "e2e71968b1426326.png",
+        "type" : "image/png",
+        "size" : 76476
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testClass",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testMethod",
+    "value" : "choose online payment"
+  }, {
+    "name" : "package",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "879439e1a9c5d63.json",
+  "parameterValues" : [ "chrome" ]
+}

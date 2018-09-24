@@ -1,0 +1,136 @@
+{
+  "uid" : "736d6a292230a0cd",
+  "name" : "filter-pressure meter",
+  "fullName" : "screenshots-exterior.filter-pressure meter",
+  "historyId" : "45fec38c33e570af7377131ffac375e",
+  "time" : {
+    "start" : 1536751800687,
+    "stop" : 1536751801335,
+    "duration" : 648
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <li class=\"avn008_filter__second-tab\" role=\"tab\" id=\"react-tabs-14\" aria-selected=\"false\" aria-disabled=\"false\" aria-controls=\"react-tabs-15\">...</li> is not clickable at point (656, 166). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open ReactModal__Overlay--before-close modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.8263456955360275-25\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <li class=\"avn008_filter__second-tab\" role=\"tab\" id=\"react-tabs-14\" aria-selected=\"false\" aria-disabled=\"false\" aria-controls=\"react-tabs-15\">...</li> is not clickable at point (656, 166). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open ReactModal__Overlay--before-close modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.8263456955360275-25\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/4ce08dd4de26fbcf0ff1cfe96812b19b/element",
+      "time" : {
+        "start" : 1536751800699,
+        "stop" : 1536751800763,
+        "duration" : 64
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "68b8ac1c8cb3b5b2",
+        "name" : "Request",
+        "source" : "68b8ac1c8cb3b5b2.json",
+        "type" : "application/json",
+        "size" : 51
+      }, {
+        "uid" : "98ee521e35f9e0b4",
+        "name" : "Response",
+        "source" : "98ee521e35f9e0b4.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/4ce08dd4de26fbcf0ff1cfe96812b19b/element/0.8263456955360275-25/click",
+      "time" : {
+        "start" : 1536751800771,
+        "stop" : 1536751800941,
+        "duration" : 170
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1bcaa5a2e146dbf4",
+        "name" : "Response",
+        "source" : "1bcaa5a2e146dbf4.json",
+        "type" : "application/json",
+        "size" : 1339
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/4ce08dd4de26fbcf0ff1cfe96812b19b/screenshot",
+      "time" : {
+        "start" : 1536751800950,
+        "stop" : 1536751801335,
+        "duration" : 385
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.8263456955360275-25\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a5302e982b17cc31",
+        "name" : "Screenshot",
+        "source" : "a5302e982b17cc31.png",
+        "type" : "image/png",
+        "size" : 130264
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-pressure meter"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "736d6a292230a0cd.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,115 @@
+{
+  "uid" : "f2b4fea31da6d931",
+  "name" : "filter-easy open",
+  "fullName" : "screenshots-exterior.filter-easy open",
+  "historyId" : "533a0ef8db784b9750bb07f78b21b06d",
+  "time" : {
+    "start" : 1536759669274,
+    "stop" : 1536759669646,
+    "duration" : 372
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "An element could not be located on the page using the given search parameters.",
+  "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"div:nth-child(2) > div > div > div.avn008_option-check_more\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"div:nth-child(2) > div > div > div.avn008_option-check_more\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "An element could not be located on the page using the given search parameters.",
+    "statusTrace" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"div:nth-child(2) > div > div > div.avn008_option-check_more\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"div:nth-child(2) > div > div > div.avn008_option-check_more\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/f4e43479b96fccd50a9428e33d1dda6c/element",
+      "time" : {
+        "start" : 1536759669276,
+        "stop" : 1536759669303,
+        "duration" : 27
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e53c658727d82556",
+        "name" : "Request",
+        "source" : "e53c658727d82556.json",
+        "type" : "application/json",
+        "size" : 107
+      }, {
+        "uid" : "54f788d843cc422d",
+        "name" : "Response",
+        "source" : "54f788d843cc422d.json",
+        "type" : "application/json",
+        "size" : 707
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/f4e43479b96fccd50a9428e33d1dda6c/screenshot",
+      "time" : {
+        "start" : 1536759669304,
+        "stop" : 1536759669646,
+        "duration" : 342
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element could not be located on the page using the given search parameters.\n                    at click(\"div:nth-child(2) > div > div > div.avn008_option-check_more\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"div:nth-child(2) > div > div > div.avn008_option-check_more\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b49e9d21c9347024",
+        "name" : "Screenshot",
+        "source" : "b49e9d21c9347024.png",
+        "type" : "image/png",
+        "size" : 120852
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-easy open"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f2b4fea31da6d931.json",
+  "parameterValues" : [ "chrome" ]
+}

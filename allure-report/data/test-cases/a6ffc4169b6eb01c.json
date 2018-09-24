@@ -1,0 +1,72 @@
+{
+  "uid" : "a6ffc4169b6eb01c",
+  "name" : "check for details",
+  "fullName" : "test booking car.check for details",
+  "historyId" : "234df8c984543574c12663f3471fae9c",
+  "time" : {
+    "start" : 1537432757555,
+    "stop" : 1537432758402,
+    "duration" : 847
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <span class=\"vwd5-textlink_text\">...</span> is not clickable at point (736, 533). Other element would receive the click: <div class=\"rw-popup-container rw-popup-transition-exiting\" style=\"height: 134px;\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.6233446019790561-49\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <span class=\"vwd5-textlink_text\">...</span> is not clickable at point (736, 533). Other element would receive the click: <div class=\"rw-popup-container rw-popup-transition-exiting\" style=\"height: 134px;\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.6233446019790561-49\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "78fe9e3b5a411a35",
+      "name" : "Screenshot",
+      "source" : "78fe9e3b5a411a35.png",
+      "type" : "image/png",
+      "size" : 68078
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test booking car"
+  }, {
+    "name" : "testClass",
+    "value" : "test booking car"
+  }, {
+    "name" : "testMethod",
+    "value" : "check for details"
+  }, {
+    "name" : "package",
+    "value" : "test booking car"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a6ffc4169b6eb01c.json",
+  "parameterValues" : [ "chrome" ]
+}

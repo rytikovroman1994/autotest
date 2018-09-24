@@ -1,0 +1,96 @@
+{
+  "uid" : "fa52cef5062317e5",
+  "name" : "\"before all\" hook",
+  "fullName" : "screenshot page options.\"before all\" hook",
+  "historyId" : "1a59ecbedd5faa59ef3aa3ae7b0562de",
+  "time" : {
+    "start" : 1537804652167,
+    "stop" : 1537804701173,
+    "duration" : 49006
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn015_image picture img\") still not visible after 40000ms",
+  "statusTrace" : "Error: element (\".avn015_image picture img\") still not visible after 40000ms\n                    at elements(\".avn015_image picture img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn015_image picture img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn015_image picture img\") still not visible after 40000ms",
+    "statusTrace" : "Error: element (\".avn015_image picture img\") still not visible after 40000ms\n                    at elements(\".avn015_image picture img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn015_image picture img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "768a604699e50c97",
+      "name" : "Screenshot",
+      "source" : "768a604699e50c97.png",
+      "type" : "image/png",
+      "size" : 84727
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "screenshot page options"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshot page options"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "screenshot page options"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9d9cdb9010eb5b46",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn015_image picture img\") still not visible after 40000ms",
+      "time" : {
+        "start" : 1537797556739,
+        "stop" : 1537797612180,
+        "duration" : 55441
+      }
+    }, {
+      "uid" : "e540233d7d36dd9f",
+      "status" : "broken",
+      "statusDetails" : "element (\"div:nth-child(5) > div > div > div.avn008_option-check_image > img\") still not visible after 40000ms",
+      "time" : {
+        "start" : 1537190746797,
+        "stop" : 1537190819784,
+        "duration" : 72987
+      }
+    }, {
+      "uid" : "7cab1a77231d2d8f",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1536765439650,
+        "stop" : 1536765439990,
+        "duration" : 340
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fa52cef5062317e5.json",
+  "parameterValues" : [ ]
+}

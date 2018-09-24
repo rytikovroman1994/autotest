@@ -1,0 +1,223 @@
+{
+  "uid" : "c1479f15c9b41d33",
+  "name" : "\"before all\" hook",
+  "fullName" : "fuel-type.\"before all\" hook",
+  "historyId" : "a5e91610686cae2c83c7a1f4ff5d79e6",
+  "time" : {
+    "start" : 1537195586055,
+    "stop" : 1537195602374,
+    "duration" : 16319
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/126e612f835a0d8df89aa707c90f9275/window/current/size",
+      "time" : {
+        "start" : 1537195586083,
+        "stop" : 1537195587374,
+        "duration" : 1291
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "92bce2289d6e5ca0",
+        "name" : "Request",
+        "source" : "92bce2289d6e5ca0.json",
+        "type" : "application/json",
+        "size" : 40
+      }, {
+        "uid" : "ddd18b059675272a",
+        "name" : "Response",
+        "source" : "ddd18b059675272a.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/126e612f835a0d8df89aa707c90f9275/url",
+      "time" : {
+        "start" : 1537195587401,
+        "stop" : 1537195601729,
+        "duration" : 14328
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2dccd23463bd21f9",
+        "name" : "Request",
+        "source" : "2dccd23463bd21f9.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "fa3d340d2e62e7a0",
+        "name" : "Response",
+        "source" : "fa3d340d2e62e7a0.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/126e612f835a0d8df89aa707c90f9275/elements",
+      "time" : {
+        "start" : 1537195601795,
+        "stop" : 1537195602020,
+        "duration" : 225
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9821ee32021f0200",
+        "name" : "Request",
+        "source" : "9821ee32021f0200.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "35e0011ee0d18612",
+        "name" : "Response",
+        "source" : "35e0011ee0d18612.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/126e612f835a0d8df89aa707c90f9275/element/0.11477671648309329-1/displayed",
+      "time" : {
+        "start" : 1537195602113,
+        "stop" : 1537195602371,
+        "duration" : 258
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dde2f3252ae51fe2",
+        "name" : "Response",
+        "source" : "dde2f3252ae51fe2.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 7,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "fuel-type"
+  }, {
+    "name" : "testClass",
+    "value" : "fuel-type"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "fuel-type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3b797e4efe11a4b8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537195532319,
+        "stop" : 1537195551576,
+        "duration" : 19257
+      }
+    }, {
+      "uid" : "409ce3d4a460a1a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537195340379,
+        "stop" : 1537195358254,
+        "duration" : 17875
+      }
+    }, {
+      "uid" : "22c0491733b7f52e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537194696772,
+        "stop" : 1537194734273,
+        "duration" : 37501
+      }
+    }, {
+      "uid" : "5ccb1bf7bab7fe71",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537194502795,
+        "stop" : 1537194524990,
+        "duration" : 22195
+      }
+    }, {
+      "uid" : "b8152a426ac70559",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537191765650,
+        "stop" : 1537191775414,
+        "duration" : 9764
+      }
+    }, {
+      "uid" : "ef27416a56dc816f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537190044404,
+        "stop" : 1537190058709,
+        "duration" : 14305
+      }
+    }, {
+      "uid" : "ff7cffd0bd0255a2",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1537185400628,
+        "stop" : 1537185400972,
+        "duration" : 344
+      }
+    }, {
+      "uid" : "dccbc9b3d8629543",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1536765392262,
+        "stop" : 1536765392586,
+        "duration" : 324
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c1479f15c9b41d33.json",
+  "parameterValues" : [ ]
+}
