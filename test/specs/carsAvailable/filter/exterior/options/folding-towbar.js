@@ -35,7 +35,7 @@ describe('test dynamic light', () => {
         // открываем всплывающее окно
         browser.click('div:nth-child(1) > div > div > div.avn008_option-check_more');
         // ждём появления картинки
-        browser.waitForVisible('div.avn015_image > div > div.LazyLoad.is-visible > div > img');
+        browser.waitForVisible('.avn015_image picture img');
         // берём скриншот с локала
         ctx.originalScreenshot = 'snapshot/screenshotExterior/hitch.png';
         // делаем актуальный скриншот

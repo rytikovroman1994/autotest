@@ -11,7 +11,7 @@ describe('screenshot page options', () => {
         // переходим на вкладку опции
         browser.click('#react-tabs-18');
         // ожидаем загрузки картинки лампы
-        browser.waitForVisible('div:nth-child(5) > div > div > div.avn008_option-check_image > img');
+        browser.waitForVisible('.avn015_image picture img');
     });
 
     it('take screenshot page options', () => {
