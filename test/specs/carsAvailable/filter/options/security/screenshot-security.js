@@ -11,7 +11,7 @@ describe('screenshot page security', () => {
         // переходим на страницу безопасность
         browser.click('#react-tabs-14');
         // ожидаем появление картинки 
-        browser.waitForVisible('.avn008_safety-images_main .LazyLoad.is-visible  img');
+        browser.waitForVisible('.avn008_safety-images_main img');
     });
 
     it('take screenshot page comfort', () => {

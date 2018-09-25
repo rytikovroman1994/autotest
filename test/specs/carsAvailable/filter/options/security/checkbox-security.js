@@ -14,7 +14,7 @@ describe('test checkboxs page security', () => {
         // переходим в вкладку безопастность 
         browser.click('#react-tabs-14');
         // ожидаем загрузку картинки
-        browser.waitForVisible('.avn008_safety-images_main .LazyLoad.is-visible  img');
+        browser.waitForVisible('.avn008_safety-images_main img');
     });
 
     // проверяем работу чекбоксов
