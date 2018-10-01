@@ -1,0 +1,78 @@
+{
+  "uid" : "cd5bb9ef1b882fb3",
+  "name" : "\"before all\" hook",
+  "fullName" : "smoke screenshot test save.\"before all\" hook",
+  "historyId" : "eb1b6fc88d11150b76ac20124f06cad8",
+  "time" : {
+    "start" : 1537979078184,
+    "stop" : 1537979079177,
+    "duration" : 993
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6bd4f5616f4aec5b",
+      "name" : "Screenshot",
+      "source" : "6bd4f5616f4aec5b.png",
+      "type" : "image/png",
+      "size" : 5761
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c7a4d4e1bc18f374",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1537872103196,
+        "stop" : 1537872103853,
+        "duration" : 657
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "cd5bb9ef1b882fb3.json",
+  "parameterValues" : [ ]
+}

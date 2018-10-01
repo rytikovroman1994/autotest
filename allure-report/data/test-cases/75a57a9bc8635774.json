@@ -1,0 +1,85 @@
+{
+  "uid" : "75a57a9bc8635774",
+  "name" : "compare screenshots",
+  "fullName" : "test Rear View Camera.compare screenshots",
+  "historyId" : "b25cb096b7338401a997a59a5fe9b887",
+  "time" : {
+    "start" : 1537978846705,
+    "stop" : 1537978847455,
+    "duration" : 750
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 0.109375 to be below 0.1",
+  "statusTrace" : "AssertionError: expected 0.109375 to be below 0.1\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/options/comfort/rear-view-camera.js:52:32)\n                    at <anonymous>\n                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test Rear View Camera"
+  }, {
+    "name" : "testClass",
+    "value" : "test Rear View Camera"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test Rear View Camera"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "9bcb8dfbf3f10f17",
+      "status" : "failed",
+      "statusDetails" : "expected 0.109375 to be below 0.1",
+      "time" : {
+        "start" : 1537871833185,
+        "stop" : 1537871834410,
+        "duration" : 1225
+      }
+    }, {
+      "uid" : "437b80802fdcf2ab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537806072741,
+        "stop" : 1537806074134,
+        "duration" : 1393
+      }
+    }, {
+      "uid" : "de5bddf309752851",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536749526705,
+        "stop" : 1536749527351,
+        "duration" : 646
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "75a57a9bc8635774.json",
+  "parameterValues" : [ "chrome" ]
+}

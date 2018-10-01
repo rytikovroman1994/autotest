@@ -1,0 +1,85 @@
+{
+  "uid" : "e1cc9951ffd684e1",
+  "name" : "compare screenshots",
+  "fullName" : "test mirror drive.compare screenshots",
+  "historyId" : "b85ace6acf132c3e0578131de7887283",
+  "time" : {
+    "start" : 1537978828784,
+    "stop" : 1537978829602,
+    "duration" : 818
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 0.109375 to be below 0.1",
+  "statusTrace" : "AssertionError: expected 0.109375 to be below 0.1\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/options/comfort/mirror-drive.js:50:32)\n                    at <anonymous>\n                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test mirror drive"
+  }, {
+    "name" : "testClass",
+    "value" : "test mirror drive"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test mirror drive"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ebb1f4e1368dfb43",
+      "status" : "failed",
+      "statusDetails" : "expected 0.109375 to be below 0.1",
+      "time" : {
+        "start" : 1537871814242,
+        "stop" : 1537871814829,
+        "duration" : 587
+      }
+    }, {
+      "uid" : "966c44d390f2de5b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537806041648,
+        "stop" : 1537806042704,
+        "duration" : 1056
+      }
+    }, {
+      "uid" : "d7b6f76c7e32b3c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536748969084,
+        "stop" : 1536748969691,
+        "duration" : 607
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e1cc9951ffd684e1.json",
+  "parameterValues" : [ "chrome" ]
+}

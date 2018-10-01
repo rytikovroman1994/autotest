@@ -1,0 +1,176 @@
+{
+  "uid" : "d971fba4186f4a2a",
+  "name" : "\"before all\" hook",
+  "fullName" : "test polo busines logic.\"before all\" hook",
+  "historyId" : "3fb1bfd4f3ea6e92218fe0a428b9f9eb",
+  "time" : {
+    "start" : 1536915909831,
+    "stop" : 1536915921237,
+    "duration" : 11406
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/d9f73584f02d9687d6c4a392ac0a0a3b/window/current/maximize",
+      "time" : {
+        "start" : 1536915909836,
+        "stop" : 1536915910975,
+        "duration" : 1139
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9a3e27509256cc81",
+        "name" : "Response",
+        "source" : "9a3e27509256cc81.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/d9f73584f02d9687d6c4a392ac0a0a3b/url",
+      "time" : {
+        "start" : 1536915910979,
+        "stop" : 1536915920840,
+        "duration" : 9861
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "af67f88209bb1c71",
+        "name" : "Request",
+        "source" : "af67f88209bb1c71.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "2fe73baebe026c2c",
+        "name" : "Response",
+        "source" : "2fe73baebe026c2c.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/d9f73584f02d9687d6c4a392ac0a0a3b/elements",
+      "time" : {
+        "start" : 1536915920874,
+        "stop" : 1536915920954,
+        "duration" : 80
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ae87b4ed1c556a91",
+        "name" : "Request",
+        "source" : "ae87b4ed1c556a91.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "a9d6d02b82de494b",
+        "name" : "Response",
+        "source" : "a9d6d02b82de494b.json",
+        "type" : "application/json",
+        "size" : 160
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/d9f73584f02d9687d6c4a392ac0a0a3b/element/0.6587560480314496-1/displayed",
+      "time" : {
+        "start" : 1536915920972,
+        "stop" : 1536915921036,
+        "duration" : 64
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d8de873fcec2bebc",
+        "name" : "Response",
+        "source" : "d8de873fcec2bebc.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/d9f73584f02d9687d6c4a392ac0a0a3b/elements",
+      "time" : {
+        "start" : 1536915921041,
+        "stop" : 1536915921234,
+        "duration" : 193
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f178fa008a96fff5",
+        "name" : "Request",
+        "source" : "f178fa008a96fff5.json",
+        "type" : "application/json",
+        "size" : 99
+      }, {
+        "uid" : "b16747bd2fd1a028",
+        "name" : "Response",
+        "source" : "b16747bd2fd1a028.json",
+        "type" : "application/json",
+        "size" : 89
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 8,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testClass",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d971fba4186f4a2a.json",
+  "parameterValues" : [ ]
+}

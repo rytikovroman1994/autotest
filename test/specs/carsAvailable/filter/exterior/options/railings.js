@@ -1,4 +1,4 @@
-describe('test dynamic railings', () => {
+describe('test railings', () => {
     const ctx = {
         originalScreenshot: null,
         newScreenshot: null,
@@ -11,7 +11,7 @@ describe('test dynamic railings', () => {
         browser.click('#react-tabs-18');
     });
 
-     it('check checkbox dynamic railings', () => {
+     it('check checkbox railings', () => {
         // проверяем что фильтр пуст
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -31,7 +31,7 @@ describe('test dynamic railings', () => {
         5000, "На странице уже есть одно условие фильтра");
      });
 
-     it('check more in detail about dynamic light', () => {
+     it('check more in detail about railings', () => {
         // открываем всплывающее окно
         browser.click('div:nth-child(3) > div > div > div.avn008_option-check_more');
         // ждём появления картинки

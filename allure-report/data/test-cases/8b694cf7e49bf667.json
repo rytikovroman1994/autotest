@@ -1,0 +1,54 @@
+{
+  "uid" : "8b694cf7e49bf667",
+  "name" : "compare screenshots",
+  "fullName" : "test side assist.compare screenshots",
+  "historyId" : "fac509a9ae1e8942792af971757cb870",
+  "time" : {
+    "start" : 1537871684774,
+    "stop" : 1537871685397,
+    "duration" : 623
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 0.140625 to be below 0.1",
+  "statusTrace" : "AssertionError: expected 0.140625 to be below 0.1\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/options/assistants/side-assist.js:54:32)\n                    at <anonymous>\n                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test side assist"
+  }, {
+    "name" : "testClass",
+    "value" : "test side assist"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test side assist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8b694cf7e49bf667.json",
+  "parameterValues" : [ "chrome" ]
+}

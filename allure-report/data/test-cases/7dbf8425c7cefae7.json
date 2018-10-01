@@ -1,0 +1,164 @@
+{
+  "uid" : "7dbf8425c7cefae7",
+  "name" : "\"before all\" hook",
+  "fullName" : "check of multimedia checkboxes.\"before all\" hook",
+  "historyId" : "8976e78dc85b1a57cc457b5b68018990",
+  "time" : {
+    "start" : 1537975670118,
+    "stop" : 1537975760128,
+    "duration" : 90010
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\interior\\multimedia\\(test)check-multimedia-checkboxes.js)",
+  "statusTrace" : "Error: Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\interior\\multimedia\\(test)check-multimedia-checkboxes.js)\n                    at Hook.Runnable._timeoutError (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:440:10)\n                    at Timeout.<anonymous> (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:251:24)\n                    at ontimeout (timers.js:498:11)\n                    at tryOnTimeout (timers.js:323:5)\n                    at Timer.listOnTimeout (timers.js:290:5)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "testClass",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "13e606ceabd84f8",
+      "status" : "broken",
+      "statusDetails" : "element (\".react-tabs[data-tabs=\"true\"]\") still not visible after 60000ms",
+      "time" : {
+        "start" : 1537871100341,
+        "stop" : 1537871163376,
+        "duration" : 63035
+      }
+    }, {
+      "uid" : "13365667ed4d31f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537191024780,
+        "stop" : 1537191052252,
+        "duration" : 27472
+      }
+    }, {
+      "uid" : "aa8e22785c76781b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536683723459,
+        "stop" : 1536683734050,
+        "duration" : 10591
+      }
+    }, {
+      "uid" : "c63397fa95e28b5a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536683364862,
+        "stop" : 1536683376830,
+        "duration" : 11968
+      }
+    }, {
+      "uid" : "2da06f7903dac94d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536683087969,
+        "stop" : 1536683097095,
+        "duration" : 9126
+      }
+    }, {
+      "uid" : "3c64838c207b1916",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536682858717,
+        "stop" : 1536682867057,
+        "duration" : 8340
+      }
+    }, {
+      "uid" : "bd0599596b4d2a77",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536682774692,
+        "stop" : 1536682784256,
+        "duration" : 9564
+      }
+    }, {
+      "uid" : "9317865bc620cb2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536682423201,
+        "stop" : 1536682432308,
+        "duration" : 9107
+      }
+    }, {
+      "uid" : "1fa95492b1530804",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536682346665,
+        "stop" : 1536682362501,
+        "duration" : 15836
+      }
+    }, {
+      "uid" : "cafd8cdf2eb52833",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536682197608,
+        "stop" : 1536682208719,
+        "duration" : 11111
+      }
+    }, {
+      "uid" : "66c724f8e401326f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536681333801,
+        "stop" : 1536681343534,
+        "duration" : 9733
+      }
+    }, {
+      "uid" : "ba6af43b98925570",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536681251469,
+        "stop" : 1536681261600,
+        "duration" : 10131
+      }
+    }, {
+      "uid" : "476c37672e5f2f3d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536681100595,
+        "stop" : 1536681111000,
+        "duration" : 10405
+      }
+    }, {
+      "uid" : "ca566964fc693b9a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536680950189,
+        "stop" : 1536680960855,
+        "duration" : 10666
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "7dbf8425c7cefae7.json",
+  "parameterValues" : [ ]
+}

@@ -58,7 +58,7 @@ describe('test polo busines logic', () => {
         // ожидаем загрузку картинки 
         browser.waitForVisible('.avn008_image-switcher_image');
         // выбираем чёрный цвет кузова
-        browser.click(' div:nth-child(10) label');
+        browser.click('div:nth-child(11) label');
         // проверяем, что добавилось условие цвет кузова
         currentNumber = numberConditions().length;
         expect(currentNumber).to.be.equal(startingNumber + 3);
@@ -107,21 +107,48 @@ describe('test polo busines logic', () => {
     it('check the available list of cars', () => {
         let number = listMachines().length;
         expect(number).to.be.equal(filterMachines);
-        for( let i = 1; i <= number; i++ ) {
+        for( let i = 1; i <= 4; i++ ) {
+            let card = `.avn001_display__enable-hover > div:nth-child(1) .grid_l_3:nth-child(${i})`
             // получаем модель и комплектацию машины
-            const carName = browser.getText(`.gridcontainer .grid_l_3:nth-child(${i}) .avn001-2_model-name`);
+            const carName = browser.getText(`${card} .avn001-2_model-name`);
             // так как могут быть разные комплектации вычленяем только модель
-            const brandMachine = carName.match(/(Polo)/i);
+            const brandMachine = String(carName).match(/(Polo)/i);
             // проверяем что все машины модели поло
             expect(brandMachine[1]).to.be.include('Polo');
             // проверяем что у всех машит есть онлайн оплата
-            browser.waitForVisible(`.gridcontainer .grid_l_3:nth-child(${i}) .avn001-2_tags`);
+            browser.waitForVisible(`${card} .avn001-2_tags`);
             // получаем цену каждого автобобиля
-            const carPrice = browser.getText(`.gridcontainer .grid_l_3:nth-child(${i}) .price-text`);
+            const carPrice = browser.getText(`${card} .price-text`);
+            console.log(carPrice);
             // убираем пробел 
             const carPriceDelete = carPrice.replace(/\s/g, "");
+            console.log(carPriceDelete);
             // преобразуем в число
             const numberCarPrice = +carPriceDelete;
+            console.log(numberCarPrice);
+            // проверяем что у всех машим цена не менее указанной в фильтре
+            expect(numberCarPrice).to.be.least(numberPriseCarS);
+        }
+
+        for( let i = 1; i <= number - 4; i++ ) {
+            let card = `.avn001_display__enable-hover > div:nth-child(2) .grid_l_3:nth-child(${i})`
+            // получаем модель и комплектацию машины
+            const carName = browser.getText(`${card} .avn001-2_model-name`);
+            // так как могут быть разные комплектации вычленяем только модель
+            const brandMachine = String(carName).match(/(Polo)/i);
+            // проверяем что все машины модели поло
+            expect(brandMachine[1]).to.be.include('Polo');
+            // проверяем что у всех машит есть онлайн оплата
+            browser.waitForVisible(`${card} .avn001-2_tags`);
+            // получаем цену каждого автобобиля
+            const carPrice = browser.getText(`${card} .price-text`);
+            console.log(carPrice);
+            // убираем пробел 
+            const carPriceDelete = carPrice.replace(/\s/g, "");
+            console.log(carPriceDelete);
+            // преобразуем в число
+            const numberCarPrice = +carPriceDelete;
+            console.log(numberCarPrice);
             // проверяем что у всех машим цена не менее указанной в фильтре
             expect(numberCarPrice).to.be.least(numberPriseCarS);
         }

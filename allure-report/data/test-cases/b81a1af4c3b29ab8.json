@@ -1,0 +1,69 @@
+{
+  "uid" : "b81a1af4c3b29ab8",
+  "name" : "\"before all\" hook",
+  "fullName" : "Constructor - smoke screenshot test colorSchemes.\"before all\" hook",
+  "historyId" : "c7e30991bbaeb760b179155f08c3ad2f",
+  "time" : {
+    "start" : 1537872696306,
+    "stop" : 1537872696725,
+    "duration" : 419
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "db8f91e4da955d7b",
+      "name" : "Screenshot",
+      "source" : "db8f91e4da955d7b.png",
+      "type" : "image/png",
+      "size" : 5761
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "Constructor - smoke screenshot test colorSchemes"
+  }, {
+    "name" : "testClass",
+    "value" : "Constructor - smoke screenshot test colorSchemes"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "Constructor - smoke screenshot test colorSchemes"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b81a1af4c3b29ab8.json",
+  "parameterValues" : [ ]
+}

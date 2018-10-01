@@ -1,0 +1,72 @@
+{
+  "uid" : "26137d5cb32bd908",
+  "name" : "check cards",
+  "fullName" : "smoke test cards.check cards",
+  "historyId" : "d92b8c3f8dbe95c72ba1c41fed51b12",
+  "time" : {
+    "start" : 1537894772468,
+    "stop" : 1537894773181,
+    "duration" : 713
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "selector needs to be typeof `string`",
+  "statusTrace" : "Error: selector needs to be typeof `string`\n                    at moveToObject(, 0, 100) -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element() - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\moveToObject.js:47:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selector needs to be typeof `string`",
+    "statusTrace" : "Error: selector needs to be typeof `string`\n                    at moveToObject(, 0, 100) -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element() - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\moveToObject.js:47:17",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "393fb7071fe0962c",
+      "name" : "Screenshot",
+      "source" : "393fb7071fe0962c.png",
+      "type" : "image/png",
+      "size" : 185899
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "smoke test cards"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke test cards"
+  }, {
+    "name" : "testMethod",
+    "value" : "check cards"
+  }, {
+    "name" : "package",
+    "value" : "smoke test cards"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "26137d5cb32bd908.json",
+  "parameterValues" : [ "chrome" ]
+}

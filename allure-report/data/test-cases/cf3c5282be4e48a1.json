@@ -1,0 +1,114 @@
+{
+  "uid" : "cf3c5282be4e48a1",
+  "name" : "get list city",
+  "fullName" : "test get all name city.get list city",
+  "historyId" : "c8ad2698216b00343d9b30a57c2d7a82",
+  "time" : {
+    "start" : 1536943081014,
+    "stop" : 1536943081106,
+    "duration" : 92
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "list is not defined",
+  "statusTrace" : "ReferenceError: list is not defined\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/city-selection.js:22:13)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "list is not defined",
+    "statusTrace" : "ReferenceError: list is not defined\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/city-selection.js:22:13)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/47019597059f657401448c2c798612ec/elements",
+      "time" : {
+        "start" : 1536943081024,
+        "stop" : 1536943081067,
+        "duration" : 43
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "62caf5f1c31c5743",
+        "name" : "Request",
+        "source" : "62caf5f1c31c5743.json",
+        "type" : "application/json",
+        "size" : 91
+      }, {
+        "uid" : "bb90d9f1fd5a75e0",
+        "name" : "Response",
+        "source" : "bb90d9f1fd5a75e0.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/47019597059f657401448c2c798612ec/element/0.05567770825645302-6/text",
+      "time" : {
+        "start" : 1536943081069,
+        "stop" : 1536943081101,
+        "duration" : 32
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "428dbbc44e7c4696",
+        "name" : "Response",
+        "source" : "428dbbc44e7c4696.json",
+        "type" : "application/json",
+        "size" : 101
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testClass",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testMethod",
+    "value" : "get list city"
+  }, {
+    "name" : "package",
+    "value" : "test get all name city"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cf3c5282be4e48a1.json",
+  "parameterValues" : [ "chrome" ]
+}

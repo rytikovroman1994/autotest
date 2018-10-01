@@ -1,0 +1,103 @@
+{
+  "uid" : "2fdfe609ad96b2",
+  "name" : "compare screenshots",
+  "fullName" : "test rain sensor.compare screenshots",
+  "historyId" : "98fde94b16352d4020442b9fce17cf0e",
+  "time" : {
+    "start" : 1537978681140,
+    "stop" : 1537978681980,
+    "duration" : 840
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test rain sensor"
+  }, {
+    "name" : "testClass",
+    "value" : "test rain sensor"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test rain sensor"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "faa99c4a6a28f08",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537869795961,
+        "stop" : 1537869796575,
+        "duration" : 614
+      }
+    }, {
+      "uid" : "7730ea6a25a3ca59",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537869762675,
+        "stop" : 1537869763299,
+        "duration" : 624
+      }
+    }, {
+      "uid" : "2304755c529632a4",
+      "status" : "failed",
+      "statusDetails" : "expected 0.421875 to be below 0.1",
+      "time" : {
+        "start" : 1537869725382,
+        "stop" : 1537869725951,
+        "duration" : 569
+      }
+    }, {
+      "uid" : "12e64a9f385a649f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536834093606,
+        "stop" : 1536834094225,
+        "duration" : 619
+      }
+    }, {
+      "uid" : "316cdf124c802bae",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536833318943,
+        "stop" : 1536833319525,
+        "duration" : 582
+      }
+    }, {
+      "uid" : "def650b6ab84916f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536833295131,
+        "stop" : 1536833295807,
+        "duration" : 676
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2fdfe609ad96b2.json",
+  "parameterValues" : [ "chrome" ]
+}

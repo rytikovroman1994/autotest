@@ -1,0 +1,103 @@
+{
+  "uid" : "e9547bf195d630ce",
+  "name" : "filter-heated steering wheel",
+  "fullName" : "screenshots-options.filter-heated steering wheel",
+  "historyId" : "301ee8af3be7d88e770c69cca6c323ef",
+  "time" : {
+    "start" : 1537872538795,
+    "stop" : 1537872539421,
+    "duration" : 626
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (826, 366). Other element would receive the click: <img alt=\"\" class=\"avn008_image-switcher_image\" src=\"https://cars.volkswagen.ru/images/resize/remote?width=685&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/option_images/images/mirrors-heat.jpg\">",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.24980488402595857-6\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (826, 366). Other element would receive the click: <img alt=\"\" class=\"avn008_image-switcher_image\" src=\"https://cars.volkswagen.ru/images/resize/remote?width=685&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/option_images/images/mirrors-heat.jpg\">",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.24980488402595857-6\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dbc0d8eacae0c84c",
+      "name" : "Screenshot",
+      "source" : "dbc0d8eacae0c84c.png",
+      "type" : "image/png",
+      "size" : 349909
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-heated steering wheel"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b04616fcec7ac7eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536764197191,
+        "stop" : 1536764198822,
+        "duration" : 1631
+      }
+    }, {
+      "uid" : "a21257263494c03e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536764163595,
+        "stop" : 1536764165252,
+        "duration" : 1657
+      }
+    }, {
+      "uid" : "9cb22da52c44d05e",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (826, 366). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open ReactModal__Overlay--before-close modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+      "time" : {
+        "start" : 1536764063928,
+        "stop" : 1536764064568,
+        "duration" : 640
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e9547bf195d630ce.json",
+  "parameterValues" : [ "chrome" ]
+}

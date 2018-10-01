@@ -1,0 +1,210 @@
+{
+  "uid" : "e0322f97964be2ae",
+  "name" : "check checkboxes diesel",
+  "fullName" : "fuel-type.check checkboxes diesel",
+  "historyId" : "6749387258c9311853975ddd13c23808",
+  "time" : {
+    "start" : 1537191819184,
+    "stop" : 1537191821743,
+    "duration" : 2559
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'ДИЗЕЛЬ'",
+  "statusTrace" : "AssertionError: expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'ДИЗЕЛЬ'\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/engine/fuel-type.js:47:81)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'ДИЗЕЛЬ'",
+    "statusTrace" : "AssertionError: expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'ДИЗЕЛЬ'\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/engine/fuel-type.js:47:81)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/f6030555c0aa9374126eaec79281ff38/element",
+      "time" : {
+        "start" : 1537191819193,
+        "stop" : 1537191819587,
+        "duration" : 394
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "390516d408cf0de7",
+        "name" : "Request",
+        "source" : "390516d408cf0de7.json",
+        "type" : "application/json",
+        "size" : 85
+      }, {
+        "uid" : "8309f41b6b622203",
+        "name" : "Response",
+        "source" : "8309f41b6b622203.json",
+        "type" : "application/json",
+        "size" : 136
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/f6030555c0aa9374126eaec79281ff38/element/0.3708792374351526-7/click",
+      "time" : {
+        "start" : 1537191819588,
+        "stop" : 1537191820762,
+        "duration" : 1174
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2a539eac27450044",
+        "name" : "Response",
+        "source" : "2a539eac27450044.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/f6030555c0aa9374126eaec79281ff38/elements",
+      "time" : {
+        "start" : 1537191820778,
+        "stop" : 1537191821166,
+        "duration" : 388
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4799783ed83bc524",
+        "name" : "Request",
+        "source" : "4799783ed83bc524.json",
+        "type" : "application/json",
+        "size" : 85
+      }, {
+        "uid" : "5a3e7b86f231a6d2",
+        "name" : "Response",
+        "source" : "5a3e7b86f231a6d2.json",
+        "type" : "application/json",
+        "size" : 227
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/f6030555c0aa9374126eaec79281ff38/elements",
+      "time" : {
+        "start" : 1537191821174,
+        "stop" : 1537191821341,
+        "duration" : 167
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4b11c0eb091c2db9",
+        "name" : "Request",
+        "source" : "4b11c0eb091c2db9.json",
+        "type" : "application/json",
+        "size" : 86
+      }, {
+        "uid" : "19a2628307f1e607",
+        "name" : "Response",
+        "source" : "19a2628307f1e607.json",
+        "type" : "application/json",
+        "size" : 227
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/f6030555c0aa9374126eaec79281ff38/element/0.3708792374351526-6/text",
+      "time" : {
+        "start" : 1537191821347,
+        "stop" : 1537191821740,
+        "duration" : 393
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /wd/hub/session/f6030555c0aa9374126eaec79281ff38/element/0.3708792374351526-9/text",
+        "time" : {
+          "start" : 1537191821367,
+          "stop" : 1537191821576,
+          "duration" : 209
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a5592be765063e69",
+          "name" : "Response",
+          "source" : "a5592be765063e69.json",
+          "type" : "application/json",
+          "size" : 101
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "e58c3e3daf0b3e94",
+        "name" : "Response",
+        "source" : "e58c3e3daf0b3e94.json",
+        "type" : "application/json",
+        "size" : 101
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "fuel-type"
+  }, {
+    "name" : "testClass",
+    "value" : "fuel-type"
+  }, {
+    "name" : "testMethod",
+    "value" : "check checkboxes diesel"
+  }, {
+    "name" : "package",
+    "value" : "fuel-type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e0322f97964be2ae.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,115 @@
+{
+  "uid" : "74c582ceed6cf368",
+  "name" : "get list city",
+  "fullName" : "test get all name city.get list city",
+  "historyId" : "c8ad2698216b00343d9b30a57c2d7a82",
+  "time" : {
+    "start" : 1536941222116,
+    "stop" : 1536941222661,
+    "duration" : 545
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "An element could not be located on the page using the given search parameters (\".avn005-2_citylist_item\").",
+  "statusTrace" : "Error: An element could not be located on the page using the given search parameters (\".avn005-2_citylist_item\").\n                    at getText(\".avn005-2_citylist_item\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn005-2_citylist_item\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\getText.js:18:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "An element could not be located on the page using the given search parameters (\".avn005-2_citylist_item\").",
+    "statusTrace" : "Error: An element could not be located on the page using the given search parameters (\".avn005-2_citylist_item\").\n                    at getText(\".avn005-2_citylist_item\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn005-2_citylist_item\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\getText.js:18:17",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/10b89aac614b0504117be19a8834ae20/elements",
+      "time" : {
+        "start" : 1536941222141,
+        "stop" : 1536941222237,
+        "duration" : 96
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d63beb182f01e35f",
+        "name" : "Request",
+        "source" : "d63beb182f01e35f.json",
+        "type" : "application/json",
+        "size" : 71
+      }, {
+        "uid" : "b52417275cf0b587",
+        "name" : "Response",
+        "source" : "b52417275cf0b587.json",
+        "type" : "application/json",
+        "size" : 89
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/10b89aac614b0504117be19a8834ae20/screenshot",
+      "time" : {
+        "start" : 1536941222245,
+        "stop" : 1536941222661,
+        "duration" : 416
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An element could not be located on the page using the given search parameters (\".avn005-2_citylist_item\").\n                    at getText(\".avn005-2_citylist_item\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn005-2_citylist_item\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\getText.js:18:17",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e8494f21679733b7",
+        "name" : "Screenshot",
+        "source" : "e8494f21679733b7.png",
+        "type" : "image/png",
+        "size" : 140090
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testClass",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testMethod",
+    "value" : "get list city"
+  }, {
+    "name" : "package",
+    "value" : "test get all name city"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "74c582ceed6cf368.json",
+  "parameterValues" : [ "chrome" ]
+}

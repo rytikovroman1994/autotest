@@ -80,25 +80,25 @@ exports.config = {
         //{browserName: 'chrome', platform: '', version: '', maxInstances: '5'},
         //{browserName: 'firefox', platform: '', version: '', maxInstances: '5'},
 
-          {
-              browserName: 'chrome',
-              maxInstances: '1',
-              seleniumProtocol: "WebDriver",
-              // specs: [
-              //     './test/specs/*.js'
-              // ],
-          },
-
           // {
-          //     browserName: 'firefox',
-          //     platform: '',
-          //     version: '',
+          //     browserName: 'chrome',
           //     maxInstances: '1',
-          //     //build: process.env.TRAVIS_BUILD_NUMBER,
+          //     seleniumProtocol: "WebDriver",
           //     // specs: [
-          //     //     './test/specs/sampe*.js'
+          //     //     './test/specs/*.js'
           //     // ],
           // },
+
+          {
+              browserName: 'firefox',
+              platform: '',
+              version: '',
+              maxInstances: '1',
+              //build: process.env.TRAVIS_BUILD_NUMBER,
+              // specs: [
+              //     './test/specs/sampe*.js'
+              // ],
+          },
 
           // {
           //     browserName: 'internet explorer',
@@ -175,7 +175,7 @@ exports.config = {
     // the wdio-sync package. If you still want to run your tests in an async way
     // e.g. using promises you can set the sync option to false.
     // path: '/wd/hub',
-    // host: '192.168.99.100',
+    host: '192.168.99.100',
     port: 4444,
     sync: true,
     reporters: ['spec'],
@@ -201,7 +201,7 @@ exports.config = {
       }
     },
     
-    services: ['selenium-standalone'],
+    // services: ['selenium-standalone'],
     // services: ['selenium-standalone', 'phantomjs'],
     // services: ['docker'],  
 

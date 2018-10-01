@@ -1,0 +1,100 @@
+{
+  "uid" : "4eca007b04abc431",
+  "name" : "\"before all\" hook",
+  "fullName" : "online-payments.\"before all\" hook",
+  "historyId" : "2b6cfdbabe358921c7a6e3c9de13e7a3",
+  "time" : {
+    "start" : 1537185363174,
+    "stop" : 1537185363663,
+    "duration" : 489
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/f247246bb7f4aeed8b923c7e8f184cbc/window/current/maximize",
+      "time" : {
+        "start" : 1537185363181,
+        "stop" : 1537185363355,
+        "duration" : 174
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "33178d35c816f031",
+        "name" : "Response",
+        "source" : "33178d35c816f031.json",
+        "type" : "application/json",
+        "size" : 563
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/f247246bb7f4aeed8b923c7e8f184cbc/screenshot",
+      "time" : {
+        "start" : 1537185363370,
+        "stop" : 1537185363663,
+        "duration" : 293
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "473ab7df267c8f00",
+        "name" : "Screenshot",
+        "source" : "473ab7df267c8f00.png",
+        "type" : "image/png",
+        "size" : 5761
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "online-payments"
+  }, {
+    "name" : "testClass",
+    "value" : "online-payments"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "online-payments"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4eca007b04abc431.json",
+  "parameterValues" : [ ]
+}

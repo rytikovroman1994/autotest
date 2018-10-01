@@ -1,0 +1,87 @@
+{
+  "uid" : "5b72ddbb919f694e",
+  "name" : "filter-budget",
+  "fullName" : "smoke screenshot test save.filter-budget",
+  "historyId" : "ade1d0df9aec250a164f83e0a2b0e49e",
+  "time" : {
+    "start" : 1537806682945,
+    "stop" : 1537806723803,
+    "duration" : 40858
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".grid_l_8\") still not visible after 40000ms",
+  "statusTrace" : "Error: element (\".grid_l_8\") still not visible after 40000ms\n                    at elements(\".grid_l_8\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".grid_l_8\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".grid_l_8\") still not visible after 40000ms",
+    "statusTrace" : "Error: element (\".grid_l_8\") still not visible after 40000ms\n                    at elements(\".grid_l_8\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".grid_l_8\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ffef7a0127430b08",
+      "name" : "Screenshot",
+      "source" : "ffef7a0127430b08.png",
+      "type" : "image/png",
+      "size" : 81847
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-budget"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b5ca15a2ed04f724",
+      "status" : "broken",
+      "statusDetails" : "element (\".grid_l_8\") still not visible after 40000ms",
+      "time" : {
+        "start" : 1537782495855,
+        "stop" : 1537782536485,
+        "duration" : 40630
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5b72ddbb919f694e.json",
+  "parameterValues" : [ "chrome" ]
+}

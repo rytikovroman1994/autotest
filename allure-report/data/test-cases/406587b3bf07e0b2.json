@@ -1,0 +1,100 @@
+{
+  "uid" : "406587b3bf07e0b2",
+  "name" : "\"before all\" hook",
+  "fullName" : "test cast stamped disks.\"before all\" hook",
+  "historyId" : "c43cc52283bfd256716a2fd72c642fef",
+  "time" : {
+    "start" : 1536765411941,
+    "stop" : 1536765412332,
+    "duration" : 391
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/cee0e4024bea1a9bc169323928a1205b/window/current/maximize",
+      "time" : {
+        "start" : 1536765411948,
+        "stop" : 1536765412092,
+        "duration" : 144
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7959995ffc3e4ee0",
+        "name" : "Response",
+        "source" : "7959995ffc3e4ee0.json",
+        "type" : "application/json",
+        "size" : 563
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/cee0e4024bea1a9bc169323928a1205b/screenshot",
+      "time" : {
+        "start" : 1536765412101,
+        "stop" : 1536765412332,
+        "duration" : 231
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a9792acfbc03c5e9",
+        "name" : "Screenshot",
+        "source" : "a9792acfbc03c5e9.png",
+        "type" : "image/png",
+        "size" : 5761
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test cast stamped disks"
+  }, {
+    "name" : "testClass",
+    "value" : "test cast stamped disks"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test cast stamped disks"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "406587b3bf07e0b2.json",
+  "parameterValues" : [ ]
+}

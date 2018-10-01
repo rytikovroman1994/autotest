@@ -1,0 +1,549 @@
+{
+  "uid" : "9a2f60f95a0e6455",
+  "name" : "check for details",
+  "fullName" : "test booking car.check for details",
+  "historyId" : "234df8c984543574c12663f3471fae9c",
+  "time" : {
+    "start" : 1537977550094,
+    "stop" : 1537977551645,
+    "duration" : 1551
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'Нет данных' to not equal 'Нет данных'",
+  "statusTrace" : "AssertionError: expected 'Нет данных' to not equal 'Нет данных'\n                    at Context.it (C:/autotest/test/specs/businessLogic/detail/booking-car.js:75:42)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test booking car"
+  }, {
+    "name" : "testClass",
+    "value" : "test booking car"
+  }, {
+    "name" : "testMethod",
+    "value" : "check for details"
+  }, {
+    "name" : "package",
+    "value" : "test booking car"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "54170935ebb89cd8",
+      "status" : "failed",
+      "statusDetails" : "expected 'Нет данных' to not equal 'Нет данных'",
+      "time" : {
+        "start" : 1537876121267,
+        "stop" : 1537876121883,
+        "duration" : 616
+      }
+    }, {
+      "uid" : "4ebaac1ab0154a09",
+      "status" : "failed",
+      "statusDetails" : "expected 'Нет данных' to not equal 'Нет данных'",
+      "time" : {
+        "start" : 1537875881885,
+        "stop" : 1537875882785,
+        "duration" : 900
+      }
+    }, {
+      "uid" : "6eeb71424fa25ad8",
+      "status" : "failed",
+      "statusDetails" : "expected 'Нет данных' to not equal 'Нет данных'",
+      "time" : {
+        "start" : 1537870374805,
+        "stop" : 1537870375759,
+        "duration" : 954
+      }
+    }, {
+      "uid" : "1862fa1da5bacd20",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537804144415,
+        "stop" : 1537804145501,
+        "duration" : 1086
+      }
+    }, {
+      "uid" : "47896776b5e43f84",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537803283916,
+        "stop" : 1537803284936,
+        "duration" : 1020
+      }
+    }, {
+      "uid" : "9a879c401a34c35d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537796661157,
+        "stop" : 1537796662216,
+        "duration" : 1059
+      }
+    }, {
+      "uid" : "8876250f0de4e485",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537796290619,
+        "stop" : 1537796291668,
+        "duration" : 1049
+      }
+    }, {
+      "uid" : "4232b2d7ee6346ff",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537796249586,
+        "stop" : 1537796250528,
+        "duration" : 942
+      }
+    }, {
+      "uid" : "c80636e693c7561d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537796058175,
+        "stop" : 1537796059221,
+        "duration" : 1046
+      }
+    }, {
+      "uid" : "ce1b318fb89b7dbf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537795967726,
+        "stop" : 1537795968863,
+        "duration" : 1137
+      }
+    }, {
+      "uid" : "56b43fe140dda0f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537795837968,
+        "stop" : 1537795838983,
+        "duration" : 1015
+      }
+    }, {
+      "uid" : "6ebfab16d4bd4dcb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537795738804,
+        "stop" : 1537795739794,
+        "duration" : 990
+      }
+    }, {
+      "uid" : "e19ec774b6c1183e",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span class=\"vwd5-textlink_text\">...</span> is not clickable at point (736, 533). Other element would receive the click: <div class=\"rw-popup-container rw-popup-transition-exiting\" style=\"height: 134px;\">...</div>",
+      "time" : {
+        "start" : 1537795699867,
+        "stop" : 1537795700754,
+        "duration" : 887
+      }
+    }, {
+      "uid" : "463702704b9b6dc1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537795661941,
+        "stop" : 1537795662984,
+        "duration" : 1043
+      }
+    }, {
+      "uid" : "a78a008123990a97",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537795523644,
+        "stop" : 1537795524422,
+        "duration" : 778
+      }
+    }, {
+      "uid" : "842b16befdec4721",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span class=\"vwd5-textlink_inner\">...</span> is not clickable at point (717, 533). Other element would receive the click: <div class=\"rw-popup-container rw-popup-transition-exiting\" style=\"height: 134px;\">...</div>",
+      "time" : {
+        "start" : 1537795337707,
+        "stop" : 1537795338578,
+        "duration" : 871
+      }
+    }, {
+      "uid" : "235de475991901e9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537795170096,
+        "stop" : 1537795171061,
+        "duration" : 965
+      }
+    }, {
+      "uid" : "dadd25c0ea8a06a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537794983136,
+        "stop" : 1537794984502,
+        "duration" : 1366
+      }
+    }, {
+      "uid" : "446ce8ad7fa9c34c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537793830658,
+        "stop" : 1537793831661,
+        "duration" : 1003
+      }
+    }, {
+      "uid" : "b4bffb5fc0ca90bc",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537790675499,
+        "stop" : 1537790675864,
+        "duration" : 365
+      }
+    }, {
+      "uid" : "5f90ecd55098569c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537789899816,
+        "stop" : 1537789901007,
+        "duration" : 1191
+      }
+    }, {
+      "uid" : "7de271186ff91763",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537789817255,
+        "stop" : 1537789818187,
+        "duration" : 932
+      }
+    }, {
+      "uid" : "e609cc905d58d3bb",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span class=\"vwd5-textlink_text\">...</span> is not clickable at point (736, 533). Other element would receive the click: <div class=\"rw-popup-container rw-popup-transition-exiting\" style=\"height: 134px;\">...</div>",
+      "time" : {
+        "start" : 1537789438122,
+        "stop" : 1537789438945,
+        "duration" : 823
+      }
+    }, {
+      "uid" : "abaa048b00f8837",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537789131943,
+        "stop" : 1537789132675,
+        "duration" : 732
+      }
+    }, {
+      "uid" : "4a8d627f0afd8c64",
+      "status" : "failed",
+      "statusDetails" : "expected 'Нет данных' to not equal 'Нет данных'",
+      "time" : {
+        "start" : 1537434440437,
+        "stop" : 1537434441197,
+        "duration" : 760
+      }
+    }, {
+      "uid" : "1ea21c747cd9ff86",
+      "status" : "failed",
+      "statusDetails" : "expected 'Нет данных' to not equal 'Нет данных'",
+      "time" : {
+        "start" : 1537432826741,
+        "stop" : 1537432827342,
+        "duration" : 601
+      }
+    }, {
+      "uid" : "a1f90dd9f4194405",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span class=\"vwd5-textlink_text\">...</span> is not clickable at point (736, 533). Other element would receive the click: <div class=\"rw-popup-container rw-popup-transition-exiting\" style=\"height: 134px;\">...</div>",
+      "time" : {
+        "start" : 1537432757555,
+        "stop" : 1537432758402,
+        "duration" : 847
+      }
+    }, {
+      "uid" : "c343be4ed32ff607",
+      "status" : "failed",
+      "statusDetails" : "expected 'Нет данных' to not equal 'Нет данных'",
+      "time" : {
+        "start" : 1537432556444,
+        "stop" : 1537432557203,
+        "duration" : 759
+      }
+    }, {
+      "uid" : "a54a424d5e4dc744",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span class=\"vwd5-textlink_text\">...</span> is not clickable at point (736, 533). Other element would receive the click: <div class=\"rw-popup-container rw-popup-transition-exiting\" style=\"height: 134px;\">...</div>",
+      "time" : {
+        "start" : 1537432438205,
+        "stop" : 1537432439088,
+        "duration" : 883
+      }
+    }, {
+      "uid" : "7357fe8f36ce10ba",
+      "status" : "failed",
+      "statusDetails" : "expected 'Нет данных' to not equal 'Нет данных'",
+      "time" : {
+        "start" : 1537375772934,
+        "stop" : 1537375773626,
+        "duration" : 692
+      }
+    }, {
+      "uid" : "c4b9bddfc2d00bf7",
+      "status" : "failed",
+      "statusDetails" : "expected 'Нет данных' to not equal 'Нет данных'",
+      "time" : {
+        "start" : 1537375710691,
+        "stop" : 1537375711429,
+        "duration" : 738
+      }
+    }, {
+      "uid" : "82b8b077e3b04424",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537375611815,
+        "stop" : 1537375612375,
+        "duration" : 560
+      }
+    }, {
+      "uid" : "9e143d61c482b8cb",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537375476262,
+        "stop" : 1537375476863,
+        "duration" : 601
+      }
+    }, {
+      "uid" : "7c9e715ced67485d",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537375434876,
+        "stop" : 1537375435467,
+        "duration" : 591
+      }
+    }, {
+      "uid" : "1c61e6bc8a6ed854",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537375391564,
+        "stop" : 1537375392130,
+        "duration" : 566
+      }
+    }, {
+      "uid" : "1d3e2b0ccd09009a",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537375331579,
+        "stop" : 1537375333012,
+        "duration" : 1433
+      }
+    }, {
+      "uid" : "dda48fd7500e503b",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537373798231,
+        "stop" : 1537373798791,
+        "duration" : 560
+      }
+    }, {
+      "uid" : "c26abd56bd9fc3f1",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537373645378,
+        "stop" : 1537373645965,
+        "duration" : 587
+      }
+    }, {
+      "uid" : "d97c75ead7580338",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537373511937,
+        "stop" : 1537373517046,
+        "duration" : 5109
+      }
+    }, {
+      "uid" : "4eada6142d80d132",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537373395478,
+        "stop" : 1537373396047,
+        "duration" : 569
+      }
+    }, {
+      "uid" : "75500ec509352ceb",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537373283865,
+        "stop" : 1537373284475,
+        "duration" : 610
+      }
+    }, {
+      "uid" : "929ce02b42baf511",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 20). Other element would receive the click: <div></div>",
+      "time" : {
+        "start" : 1537373181382,
+        "stop" : 1537373181877,
+        "duration" : 495
+      }
+    }, {
+      "uid" : "8477a20eb8b3593f",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 20). Other element would receive the click: <div></div>",
+      "time" : {
+        "start" : 1537373041000,
+        "stop" : 1537373041422,
+        "duration" : 422
+      }
+    }, {
+      "uid" : "eb224f49e7072819",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 20). Other element would receive the click: <div></div>",
+      "time" : {
+        "start" : 1537372836501,
+        "stop" : 1537372836960,
+        "duration" : 459
+      }
+    }, {
+      "uid" : "31e6b3eb296143aa",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 20). Other element would receive the click: <div></div>",
+      "time" : {
+        "start" : 1537372481679,
+        "stop" : 1537372482188,
+        "duration" : 509
+      }
+    }, {
+      "uid" : "2fceb383cd275c66",
+      "status" : "broken",
+      "statusDetails" : "connect ECONNREFUSED 127.0.0.1:4444",
+      "time" : {
+        "start" : 1537372408949,
+        "stop" : 1537372412954,
+        "duration" : 4005
+      }
+    }, {
+      "uid" : "aec5f528c1c84b2f",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 20). Other element would receive the click: <div></div>",
+      "time" : {
+        "start" : 1537372237484,
+        "stop" : 1537372237926,
+        "duration" : 442
+      }
+    }, {
+      "uid" : "3dea6642fea00114",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 613). Other element would receive the click: <div class=\"text\">...</div>",
+      "time" : {
+        "start" : 1537371962287,
+        "stop" : 1537371962761,
+        "duration" : 474
+      }
+    }, {
+      "uid" : "31114e3ee810576c",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537371779910,
+        "stop" : 1537371780310,
+        "duration" : 400
+      }
+    }, {
+      "uid" : "e7db15ea867795a3",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 613). Other element would receive the click: <div class=\"text\">...</div>",
+      "time" : {
+        "start" : 1537371481908,
+        "stop" : 1537371482401,
+        "duration" : 493
+      }
+    }, {
+      "uid" : "7be9133304effcf5",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 613). Other element would receive the click: <div class=\"text\">...</div>",
+      "time" : {
+        "start" : 1537371257704,
+        "stop" : 1537371258230,
+        "duration" : 526
+      }
+    }, {
+      "uid" : "759f0579fde5632b",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 613). Other element would receive the click: <div class=\"text\">...</div>",
+      "time" : {
+        "start" : 1537371014513,
+        "stop" : 1537371015006,
+        "duration" : 493
+      }
+    }, {
+      "uid" : "18fa8200cdaa4e1d",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 613). Other element would receive the click: <div class=\"text\">...</div>",
+      "time" : {
+        "start" : 1537370875641,
+        "stop" : 1537370876076,
+        "duration" : 435
+      }
+    }, {
+      "uid" : "565236d3438c2ea6",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <span aria-hidden=\"true\" class=\"rw-i rw-i-caret-down\"></span> is not clickable at point (836, 613). Other element would receive the click: <div class=\"text\">...</div>",
+      "time" : {
+        "start" : 1537370695365,
+        "stop" : 1537370695857,
+        "duration" : 492
+      }
+    }, {
+      "uid" : "2e00283f0005e692",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537370533759,
+        "stop" : 1537370534194,
+        "duration" : 435
+      }
+    }, {
+      "uid" : "7eafc306e871d87f",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1537370114337,
+        "stop" : 1537370114829,
+        "duration" : 492
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9a2f60f95a0e6455.json",
+  "parameterValues" : [ "chrome" ]
+}

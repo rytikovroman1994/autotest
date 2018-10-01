@@ -1,0 +1,87 @@
+{
+  "uid" : "290988928b53418b",
+  "name" : "filter-dynamic",
+  "fullName" : "screenshots-exterior.filter-dynamic",
+  "historyId" : "c443faa3e8291c817f6fd2ff386c54c4",
+  "time" : {
+    "start" : 1537872553323,
+    "stop" : 1537872593326,
+    "duration" : 40003
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms",
+  "statusTrace" : "Error: element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms\n                    at elements(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms",
+    "statusTrace" : "Error: element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms\n                    at elements(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "7929674548f38c10",
+      "name" : "Screenshot",
+      "source" : "7929674548f38c10.png",
+      "type" : "image/png",
+      "size" : 342422
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-dynamic"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7b28f7fac9679088",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <li class=\"avn008_filter__second-tab\" role=\"tab\" id=\"react-tabs-18\" aria-selected=\"false\" aria-disabled=\"false\" aria-controls=\"react-tabs-19\">...</li> is not clickable at point (892, 187). Other element would receive the click: <img alt=\"\" class=\"avn008_image-switcher_image\" src=\"https://cars.volkswagen.ru/images/resize/remote?width=685&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/option_images/images/alcantara.jpg\">",
+      "time" : {
+        "start" : 1537872160048,
+        "stop" : 1537872160498,
+        "duration" : 450
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "290988928b53418b.json",
+  "parameterValues" : [ "chrome" ]
+}

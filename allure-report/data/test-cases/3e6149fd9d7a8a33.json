@@ -1,0 +1,100 @@
+{
+  "uid" : "3e6149fd9d7a8a33",
+  "name" : "\"before all\" hook",
+  "fullName" : "screenshot page body colors.\"before all\" hook",
+  "historyId" : "7ef38d6bfc084aec292dfe94bb3e2ae",
+  "time" : {
+    "start" : 1537185404852,
+    "stop" : 1537185405240,
+    "duration" : 388
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: failed to change window state to maximized, current state is normal",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/1341b7b970e6415fa16682145a85a2ed/window/current/maximize",
+      "time" : {
+        "start" : 1537185404858,
+        "stop" : 1537185405022,
+        "duration" : 164
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7a653d4a60ad1530",
+        "name" : "Response",
+        "source" : "7a653d4a60ad1530.json",
+        "type" : "application/json",
+        "size" : 563
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/1341b7b970e6415fa16682145a85a2ed/screenshot",
+      "time" : {
+        "start" : 1537185405033,
+        "stop" : 1537185405240,
+        "duration" : 207
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleMaximize() -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "28b337818cf104f6",
+        "name" : "Screenshot",
+        "source" : "28b337818cf104f6.png",
+        "type" : "image/png",
+        "size" : 5761
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "screenshot page body colors"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshot page body colors"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "screenshot page body colors"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3e6149fd9d7a8a33.json",
+  "parameterValues" : [ ]
+}

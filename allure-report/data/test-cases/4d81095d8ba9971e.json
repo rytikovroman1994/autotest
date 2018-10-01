@@ -1,0 +1,86 @@
+{
+  "uid" : "4d81095d8ba9971e",
+  "name" : "filter-cruise Control",
+  "fullName" : "screenshots-options.filter-cruise Control",
+  "historyId" : "c041e6839dd0c7159c755a162f8afbc0",
+  "time" : {
+    "start" : 1537872338276,
+    "stop" : 1537872378923,
+    "duration" : 40647
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms",
+  "statusTrace" : "Error: element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms\n                    at elements(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms",
+    "statusTrace" : "Error: element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms\n                    at elements(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "162af282a1b7aef9",
+      "name" : "Screenshot",
+      "source" : "162af282a1b7aef9.png",
+      "type" : "image/png",
+      "size" : 457601
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-cruise Control"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "4d610867eb0a2941",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536763561136,
+        "stop" : 1536763563291,
+        "duration" : 2155
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "4d81095d8ba9971e.json",
+  "parameterValues" : [ "chrome" ]
+}

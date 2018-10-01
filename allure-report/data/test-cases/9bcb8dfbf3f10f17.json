@@ -1,0 +1,54 @@
+{
+  "uid" : "9bcb8dfbf3f10f17",
+  "name" : "compare screenshots",
+  "fullName" : "test Rear View Camera.compare screenshots",
+  "historyId" : "b25cb096b7338401a997a59a5fe9b887",
+  "time" : {
+    "start" : 1537871833185,
+    "stop" : 1537871834410,
+    "duration" : 1225
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 0.109375 to be below 0.1",
+  "statusTrace" : "AssertionError: expected 0.109375 to be below 0.1\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/options/comfort/rear-view-camera.js:52:32)\n                    at <anonymous>\n                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test Rear View Camera"
+  }, {
+    "name" : "testClass",
+    "value" : "test Rear View Camera"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test Rear View Camera"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9bcb8dfbf3f10f17.json",
+  "parameterValues" : [ "chrome" ]
+}

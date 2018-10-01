@@ -1,0 +1,78 @@
+{
+  "uid" : "d3f85632dcfa5899",
+  "name" : "filter-option",
+  "fullName" : "screenshots-exterior.filter-option",
+  "historyId" : "7bec2453a5b4a624c25dab7ddfe791e8",
+  "time" : {
+    "start" : 1537872593327,
+    "stop" : 1537872593822,
+    "duration" : 495
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <li class=\"avn008_filter__second-tab\" role=\"tab\" id=\"react-tabs-18\" aria-selected=\"false\" aria-disabled=\"false\" aria-controls=\"react-tabs-19\">...</li> is not clickable at point (900, 187). Other element would receive the click: <img alt=\"\" class=\"avn008_image-switcher_image\" src=\"https://cars.volkswagen.ru/images/resize/remote?width=685&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/option_images/images/dynamic-light.jpg\">",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.6636376601723455-8\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <li class=\"avn008_filter__second-tab\" role=\"tab\" id=\"react-tabs-18\" aria-selected=\"false\" aria-disabled=\"false\" aria-controls=\"react-tabs-19\">...</li> is not clickable at point (900, 187). Other element would receive the click: <img alt=\"\" class=\"avn008_image-switcher_image\" src=\"https://cars.volkswagen.ru/images/resize/remote?width=685&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/option_images/images/dynamic-light.jpg\">",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.6636376601723455-8\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "117ab5dbaefb787d",
+      "name" : "Screenshot",
+      "source" : "117ab5dbaefb787d.png",
+      "type" : "image/png",
+      "size" : 342422
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-option"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "d3f85632dcfa5899.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,279 @@
+{
+  "uid" : "facc816993ee9ab6",
+  "name" : "Check the city in the card",
+  "fullName" : "test get all name city.Check the city in the card",
+  "historyId" : "f1e771861f6ca9e3ecaf3d89302e5e24",
+  "time" : {
+    "start" : 1536945407812,
+    "stop" : 1536945409211,
+    "duration" : 1399
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "nameCity.match is not a function",
+  "statusTrace" : "TypeError: nameCity.match is not a function\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/city-selection.js:40:42)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "nameCity.match is not a function",
+    "statusTrace" : "TypeError: nameCity.match is not a function\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/city-selection.js:40:42)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/6ac8fb6491d0651a5c4d72a921333081/element",
+      "time" : {
+        "start" : 1536945407815,
+        "stop" : 1536945407840,
+        "duration" : 25
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c866d7d36d74af18",
+        "name" : "Request",
+        "source" : "c866d7d36d74af18.json",
+        "type" : "application/json",
+        "size" : 91
+      }, {
+        "uid" : "935c133a0685469e",
+        "name" : "Response",
+        "source" : "935c133a0685469e.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/6ac8fb6491d0651a5c4d72a921333081/element/0.20711196676927468-6/click",
+      "time" : {
+        "start" : 1536945407841,
+        "stop" : 1536945407993,
+        "duration" : 152
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4dcdf3ab2864cac3",
+        "name" : "Response",
+        "source" : "4dcdf3ab2864cac3.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/6ac8fb6491d0651a5c4d72a921333081/element",
+      "time" : {
+        "start" : 1536945408001,
+        "stop" : 1536945408085,
+        "duration" : 84
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4cd5af64769a78b8",
+        "name" : "Request",
+        "source" : "4cd5af64769a78b8.json",
+        "type" : "application/json",
+        "size" : 123
+      }, {
+        "uid" : "e8ca743bc2cda50",
+        "name" : "Response",
+        "source" : "e8ca743bc2cda50.json",
+        "type" : "application/json",
+        "size" : 138
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/6ac8fb6491d0651a5c4d72a921333081/element/0.20711196676927468-85/click",
+      "time" : {
+        "start" : 1536945408091,
+        "stop" : 1536945408270,
+        "duration" : 179
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "260116985866260b",
+        "name" : "Response",
+        "source" : "260116985866260b.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/6ac8fb6491d0651a5c4d72a921333081/element",
+      "time" : {
+        "start" : 1536945408274,
+        "stop" : 1536945408506,
+        "duration" : 232
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "df8cfa0aa5a57e95",
+        "name" : "Request",
+        "source" : "df8cfa0aa5a57e95.json",
+        "type" : "application/json",
+        "size" : 123
+      }, {
+        "uid" : "3a4d7a4d95398b20",
+        "name" : "Response",
+        "source" : "3a4d7a4d95398b20.json",
+        "type" : "application/json",
+        "size" : 138
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/6ac8fb6491d0651a5c4d72a921333081/element/0.20711196676927468-85/click",
+      "time" : {
+        "start" : 1536945408516,
+        "stop" : 1536945408713,
+        "duration" : 197
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "4ca9540cf8404ad4",
+        "name" : "Response",
+        "source" : "4ca9540cf8404ad4.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/6ac8fb6491d0651a5c4d72a921333081/elements",
+      "time" : {
+        "start" : 1536945408716,
+        "stop" : 1536945408990,
+        "duration" : 274
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "942476130bc17c6c",
+        "name" : "Request",
+        "source" : "942476130bc17c6c.json",
+        "type" : "application/json",
+        "size" : 123
+      }, {
+        "uid" : "f7c0027ecc84beab",
+        "name" : "Response",
+        "source" : "f7c0027ecc84beab.json",
+        "type" : "application/json",
+        "size" : 231
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/6ac8fb6491d0651a5c4d72a921333081/element/0.20711196676927468-86/text",
+      "time" : {
+        "start" : 1536945408997,
+        "stop" : 1536945409183,
+        "duration" : 186
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /wd/hub/session/6ac8fb6491d0651a5c4d72a921333081/element/0.20711196676927468-87/text",
+        "time" : {
+          "start" : 1536945408998,
+          "stop" : 1536945409094,
+          "duration" : 96
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a92097769d0cddda",
+          "name" : "Response",
+          "source" : "a92097769d0cddda.json",
+          "type" : "application/json",
+          "size" : 130
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "4ba848a273ad13ba",
+        "name" : "Response",
+        "source" : "4ba848a273ad13ba.json",
+        "type" : "application/json",
+        "size" : 130
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 13,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 9,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testClass",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the city in the card"
+  }, {
+    "name" : "package",
+    "value" : "test get all name city"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "facc816993ee9ab6.json",
+  "parameterValues" : [ "chrome" ]
+}

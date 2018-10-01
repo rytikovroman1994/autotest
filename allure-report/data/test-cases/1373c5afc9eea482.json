@@ -1,0 +1,54 @@
+{
+  "uid" : "1373c5afc9eea482",
+  "name" : "consider the number of cards",
+  "fullName" : "checking-cards.consider the number of cards",
+  "historyId" : "a75ce3bf48f02653307a23cc127c03b0",
+  "time" : {
+    "start" : 1537349476276,
+    "stop" : 1537349476282,
+    "duration" : 6
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Cannot read property 'querySelectorAll' of undefined",
+  "statusTrace" : "TypeError: Cannot read property 'querySelectorAll' of undefined\n                    at Context.it (C:/autotest/test/specs/carsAvailable/basicField/checking-cards.js:17:26)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "checking-cards"
+  }, {
+    "name" : "testClass",
+    "value" : "checking-cards"
+  }, {
+    "name" : "testMethod",
+    "value" : "consider the number of cards"
+  }, {
+    "name" : "package",
+    "value" : "checking-cards"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1373c5afc9eea482.json",
+  "parameterValues" : [ "chrome" ]
+}

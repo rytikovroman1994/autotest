@@ -1,0 +1,54 @@
+{
+  "uid" : "564ea8c0711b57bb",
+  "name" : "check checkboxes petrol",
+  "fullName" : "fuel-type.check checkboxes petrol",
+  "historyId" : "b5e195aa49e564e8dec9137693e2b074",
+  "time" : {
+    "start" : 1537870710627,
+    "stop" : 1537870711329,
+    "duration" : 702
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'ДИЗЕЛЬ' to equal 'БЕНЗИН'",
+  "statusTrace" : "AssertionError: expected 'ДИЗЕЛЬ' to equal 'БЕНЗИН'\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/engine/fuel-type.js:30:81)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "fuel-type"
+  }, {
+    "name" : "testClass",
+    "value" : "fuel-type"
+  }, {
+    "name" : "testMethod",
+    "value" : "check checkboxes petrol"
+  }, {
+    "name" : "package",
+    "value" : "fuel-type"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "564ea8c0711b57bb.json",
+  "parameterValues" : [ "chrome" ]
+}

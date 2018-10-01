@@ -1,0 +1,163 @@
+{
+  "uid" : "81f2591f95e44009",
+  "name" : "test multimedia checkbox premiumAudio",
+  "fullName" : "check of multimedia checkboxes.test multimedia checkbox premiumAudio",
+  "historyId" : "73ea842d757296fdc9df19934410623b",
+  "time" : {
+    "start" : 1537191101185,
+    "stop" : 1537191102584,
+    "duration" : 1399
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (846, 511). Other element would receive the click: <div class=\"avn015_description_text\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.7875923158222013-13\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <label class=\"checkbox\">...</label> is not clickable at point (846, 511). Other element would receive the click: <div class=\"avn015_description_text\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.7875923158222013-13\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/c17083af38e3c44107fb07785e256adc/elements",
+      "time" : {
+        "start" : 1537191101190,
+        "stop" : 1537191101327,
+        "duration" : 137
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e23014f842a66668",
+        "name" : "Request",
+        "source" : "e23014f842a66668.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "ee1d87b3b37be1c5",
+        "name" : "Response",
+        "source" : "ee1d87b3b37be1c5.json",
+        "type" : "application/json",
+        "size" : 89
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/c17083af38e3c44107fb07785e256adc/element",
+      "time" : {
+        "start" : 1537191101334,
+        "stop" : 1537191101479,
+        "duration" : 145
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "de6a668e5f385c3e",
+        "name" : "Request",
+        "source" : "de6a668e5f385c3e.json",
+        "type" : "application/json",
+        "size" : 124
+      }, {
+        "uid" : "8d38a266ac78c594",
+        "name" : "Response",
+        "source" : "8d38a266ac78c594.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/c17083af38e3c44107fb07785e256adc/element/0.7875923158222013-13/click",
+      "time" : {
+        "start" : 1537191101483,
+        "stop" : 1537191102141,
+        "duration" : 658
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "75e27b4a916dd45f",
+        "name" : "Response",
+        "source" : "75e27b4a916dd45f.json",
+        "type" : "application/json",
+        "size" : 771
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/c17083af38e3c44107fb07785e256adc/screenshot",
+      "time" : {
+        "start" : 1537191102144,
+        "stop" : 1537191102584,
+        "duration" : 440
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.7875923158222013-13\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3ea1993fb533ccce",
+        "name" : "Screenshot",
+        "source" : "3ea1993fb533ccce.png",
+        "type" : "image/png",
+        "size" : 122655
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "testClass",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "testMethod",
+    "value" : "test multimedia checkbox premiumAudio"
+  }, {
+    "name" : "package",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "81f2591f95e44009.json",
+  "parameterValues" : [ "chrome" ]
+}

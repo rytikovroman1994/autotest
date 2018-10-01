@@ -4,7 +4,7 @@ export default function openSite() {
     // переходим на страницу
     browser.url('https://vw.kodix.ru');
     // открываем фильтр
-    const firstFilter = browser.waitForVisible('.react-tabs[data-tabs="true"]', 60000);
+    const firstFilter = browser.waitForVisible('form .avn008_filter', 60000);
     if(firstFilter === false) {
         browser.click('#prompt-toggler_filter');
     }

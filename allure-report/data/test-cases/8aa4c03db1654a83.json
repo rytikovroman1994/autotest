@@ -1,0 +1,71 @@
+{
+  "uid" : "8aa4c03db1654a83",
+  "name" : "compare screenshots",
+  "fullName" : "test materials.compare screenshots",
+  "historyId" : "205f7db98bef0c141e9527c18b61268",
+  "time" : {
+    "start" : 1537978564907,
+    "stop" : 1537978565799,
+    "duration" : 892
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test materials"
+  }, {
+    "name" : "testClass",
+    "value" : "test materials"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test materials"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "217ee369ba98bd74",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537871421704,
+        "stop" : 1537871422281,
+        "duration" : 577
+      }
+    }, {
+      "uid" : "f5f6720ca5a48418",
+      "status" : "failed",
+      "statusDetails" : "expected null to not equal null",
+      "time" : {
+        "start" : 1537805320130,
+        "stop" : 1537805320153,
+        "duration" : 23
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8aa4c03db1654a83.json",
+  "parameterValues" : [ "chrome" ]
+}

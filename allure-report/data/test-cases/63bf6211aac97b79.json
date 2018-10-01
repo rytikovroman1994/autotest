@@ -1,0 +1,102 @@
+{
+  "uid" : "63bf6211aac97b79",
+  "name" : "filter-heated mirrors",
+  "fullName" : "screenshots-options.filter-heated mirrors",
+  "historyId" : "b8bbb908939fd7193f587411eb0cb03d",
+  "time" : {
+    "start" : 1537872498175,
+    "stop" : 1537872538794,
+    "duration" : 40619
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms",
+  "statusTrace" : "Error: element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms\n                    at elements(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms",
+    "statusTrace" : "Error: element (\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") still not visible after 40000ms\n                    at elements(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\"div.avn015_image > div > div.LazyLoad.is-visible > div > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e8bd47d07206db5e",
+      "name" : "Screenshot",
+      "source" : "e8bd47d07206db5e.png",
+      "type" : "image/png",
+      "size" : 349909
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-heated mirrors"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c9e3a8eeb1035827",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536764195681,
+        "stop" : 1536764197190,
+        "duration" : 1509
+      }
+    }, {
+      "uid" : "7bf7761eba176b75",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536764162135,
+        "stop" : 1536764163594,
+        "duration" : 1459
+      }
+    }, {
+      "uid" : "726131098f5b7057",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536764061970,
+        "stop" : 1536764063927,
+        "duration" : 1957
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "63bf6211aac97b79.json",
+  "parameterValues" : [ "chrome" ]
+}

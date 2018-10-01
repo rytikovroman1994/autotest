@@ -1,0 +1,150 @@
+{
+  "uid" : "aa72263fd00273d5",
+  "name" : "\"before all\" hook",
+  "fullName" : "test dynamic light.\"before all\" hook",
+  "historyId" : "89dcbe4de28b1ecec0dc6aea1e2a1f6",
+  "time" : {
+    "start" : 1537786728763,
+    "stop" : 1537786818773,
+    "duration" : 90010
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\exterior\\shine\\dynamic-light.js)",
+  "statusTrace" : "Error: Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\exterior\\shine\\dynamic-light.js)\n                    at Hook.Runnable._timeoutError (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:440:10)\n                    at Timeout.<anonymous> (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:251:24)\n                    at ontimeout (timers.js:498:11)\n                    at tryOnTimeout (timers.js:323:5)\n                    at Timer.listOnTimeout (timers.js:290:5)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test dynamic light"
+  }, {
+    "name" : "testClass",
+    "value" : "test dynamic light"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test dynamic light"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "13b88d589fed0ad",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537197335604,
+        "stop" : 1537197351100,
+        "duration" : 15496
+      }
+    }, {
+      "uid" : "d4db716176035f02",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537190887242,
+        "stop" : 1537190897577,
+        "duration" : 10335
+      }
+    }, {
+      "uid" : "e1b2f142db0d4232",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537190824456,
+        "stop" : 1537190839446,
+        "duration" : 14990
+      }
+    }, {
+      "uid" : "68d72d2c61704be2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537190440052,
+        "stop" : 1537190466127,
+        "duration" : 26075
+      }
+    }, {
+      "uid" : "8f1aadbee65edeb2",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1537185444234,
+        "stop" : 1537185444799,
+        "duration" : 565
+      }
+    }, {
+      "uid" : "fe56666bbd536db7",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1536765423707,
+        "stop" : 1536765424058,
+        "duration" : 351
+      }
+    }, {
+      "uid" : "b2ceac74af6f495b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536746949686,
+        "stop" : 1536746962345,
+        "duration" : 12659
+      }
+    }, {
+      "uid" : "d58c7ed919011aa8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536746786448,
+        "stop" : 1536746799447,
+        "duration" : 12999
+      }
+    }, {
+      "uid" : "b814f41ba45cd8c7",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <li class=\"avn008_filter__second-tab\" role=\"tab\" id=\"react-tabs-18\" aria-selected=\"false\" aria-disabled=\"false\" aria-controls=\"react-tabs-19\">...</li> is not clickable at point (892, 187). Other element would receive the click: <div class=\"content-loader__overlay\">...</div>",
+      "time" : {
+        "start" : 1536746762201,
+        "stop" : 1536746769371,
+        "duration" : 7170
+      }
+    }, {
+      "uid" : "51abb86081e08f24",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536746688882,
+        "stop" : 1536746698620,
+        "duration" : 9738
+      }
+    }, {
+      "uid" : "a1cf5e4b04bef70d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536746609391,
+        "stop" : 1536746619191,
+        "duration" : 9800
+      }
+    }, {
+      "uid" : "d1e641b8965ae587",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536746441907,
+        "stop" : 1536746457629,
+        "duration" : 15722
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "aa72263fd00273d5.json",
+  "parameterValues" : [ ]
+}

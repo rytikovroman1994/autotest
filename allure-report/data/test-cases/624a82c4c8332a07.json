@@ -1,0 +1,114 @@
+{
+  "uid" : "624a82c4c8332a07",
+  "name" : "check diagonal",
+  "fullName" : "test display diagonal.check diagonal",
+  "historyId" : "298e236ddffd58509e7281d5aa672506",
+  "time" : {
+    "start" : 1537978375515,
+    "stop" : 1537978426515,
+    "duration" : 51000
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn008_filter-value-item_image\") still not existing after 40000ms",
+  "statusTrace" : "Error: element (\".avn008_filter-value-item_image\") still not existing after 40000ms\n                    at elements(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn008_filter-value-item_image\") still not existing after 40000ms",
+    "statusTrace" : "Error: element (\".avn008_filter-value-item_image\") still not existing after 40000ms\n                    at elements(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3a12e484bf520f5d",
+      "name" : "Screenshot",
+      "source" : "3a12e484bf520f5d.png",
+      "type" : "image/png",
+      "size" : 162581
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test display diagonal"
+  }, {
+    "name" : "testClass",
+    "value" : "test display diagonal"
+  }, {
+    "name" : "testMethod",
+    "value" : "check diagonal"
+  }, {
+    "name" : "package",
+    "value" : "test display diagonal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "63b9dfac4089de5b",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not existing after 40000ms",
+      "time" : {
+        "start" : 1537976114724,
+        "stop" : 1537976158529,
+        "duration" : 43805
+      }
+    }, {
+      "uid" : "de9bc7111a9f98d1",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not existing after 40000ms",
+      "time" : {
+        "start" : 1537871249408,
+        "stop" : 1537871296017,
+        "duration" : 46609
+      }
+    }, {
+      "uid" : "e8c63116290bf540",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not existing after 40000ms",
+      "time" : {
+        "start" : 1537804994758,
+        "stop" : 1537805042137,
+        "duration" : 47379
+      }
+    }, {
+      "uid" : "76f796edfd751959",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not existing after 40000ms",
+      "time" : {
+        "start" : 1537798124053,
+        "stop" : 1537798168399,
+        "duration" : 44346
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "624a82c4c8332a07.json",
+  "parameterValues" : [ "chrome" ]
+}

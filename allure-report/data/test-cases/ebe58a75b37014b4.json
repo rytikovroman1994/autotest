@@ -1,0 +1,108 @@
+{
+  "uid" : "ebe58a75b37014b4",
+  "name" : "\"before all\" hook",
+  "fullName" : "status server.\"before all\" hook",
+  "historyId" : "b035ab0f839be589c0080cf22ab006fb",
+  "time" : {
+    "start" : 1537783270083,
+    "stop" : 1537783360091,
+    "duration" : 90008
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\accessServer\\status.js)",
+  "statusTrace" : "Error: Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\accessServer\\status.js)\n                    at Hook.Runnable._timeoutError (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:440:10)\n                    at Timeout.<anonymous> (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:251:24)\n                    at ontimeout (timers.js:498:11)\n                    at tryOnTimeout (timers.js:323:5)\n                    at Timer.listOnTimeout (timers.js:290:5)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "status server"
+  }, {
+    "name" : "testClass",
+    "value" : "status server"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "status server"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "395955ff8555a0da",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537189332101,
+        "stop" : 1537189355814,
+        "duration" : 23713
+      }
+    }, {
+      "uid" : "a2fdb0e8b2d9b31a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537185837220,
+        "stop" : 1537185845411,
+        "duration" : 8191
+      }
+    }, {
+      "uid" : "706c68e9ee2336e7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537185254482,
+        "stop" : 1537185290709,
+        "duration" : 36227
+      }
+    }, {
+      "uid" : "1922a187f5571287",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536853694395,
+        "stop" : 1536853701169,
+        "duration" : 6774
+      }
+    }, {
+      "uid" : "5d136c99cd46c299",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536853537922,
+        "stop" : 1536853570300,
+        "duration" : 32378
+      }
+    }, {
+      "uid" : "9984090f32b10451",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536765349392,
+        "stop" : 1536765349863,
+        "duration" : 471
+      }
+    }, {
+      "uid" : "1f561dec50786bc9",
+      "status" : "broken",
+      "statusDetails" : "connect ECONNREFUSED 127.0.0.1:4444",
+      "time" : {
+        "start" : 1536765050010,
+        "stop" : 1536765051626,
+        "duration" : 1616
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ebe58a75b37014b4.json",
+  "parameterValues" : [ ]
+}

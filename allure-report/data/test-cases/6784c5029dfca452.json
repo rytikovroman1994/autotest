@@ -1,0 +1,192 @@
+{
+  "uid" : "6784c5029dfca452",
+  "name" : "check the available list of cars",
+  "fullName" : "test polo busines logic.check the available list of cars",
+  "historyId" : "9ed9732895160a1e9296bd6641d6e197",
+  "time" : {
+    "start" : 1536857880502,
+    "stop" : 1536857881183,
+    "duration" : 681
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "carName.match is not a function",
+  "statusTrace" : "TypeError: carName.match is not a function\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/polo-busines-logic.js:113:42)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "carName.match is not a function",
+    "statusTrace" : "TypeError: carName.match is not a function\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/polo-busines-logic.js:113:42)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/891953f39600116ebf8b6960359c72d2/elements",
+      "time" : {
+        "start" : 1536857880514,
+        "stop" : 1536857880531,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "dce87021f8a5bc85",
+        "name" : "Request",
+        "source" : "dce87021f8a5bc85.json",
+        "type" : "application/json",
+        "size" : 65
+      }, {
+        "uid" : "d1f2aed5e38b589d",
+        "name" : "Response",
+        "source" : "d1f2aed5e38b589d.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/891953f39600116ebf8b6960359c72d2/elements",
+      "time" : {
+        "start" : 1536857880555,
+        "stop" : 1536857880576,
+        "duration" : 21
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d6ed2cffca1a9148",
+        "name" : "Request",
+        "source" : "d6ed2cffca1a9148.json",
+        "type" : "application/json",
+        "size" : 106
+      }, {
+        "uid" : "e0878e4fc34e789c",
+        "name" : "Response",
+        "source" : "e0878e4fc34e789c.json",
+        "type" : "application/json",
+        "size" : 231
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/891953f39600116ebf8b6960359c72d2/element/0.12349463669472804-40/text",
+      "time" : {
+        "start" : 1536857880577,
+        "stop" : 1536857881026,
+        "duration" : 449
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /wd/hub/session/891953f39600116ebf8b6960359c72d2/element/0.12349463669472804-41/text",
+        "time" : {
+          "start" : 1536857880578,
+          "stop" : 1536857880609,
+          "duration" : 31
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "fa06f4f26106515e",
+          "name" : "Response",
+          "source" : "fa06f4f26106515e.json",
+          "type" : "application/json",
+          "size" : 102
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "f5c4eda139069860",
+        "name" : "Response",
+        "source" : "f5c4eda139069860.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "e83942a0fe97d748",
+      "name" : "Response",
+      "source" : "e83942a0fe97d748.json",
+      "type" : "application/json",
+      "size" : 91
+    }, {
+      "uid" : "4e797e3f3926090f",
+      "name" : "Response",
+      "source" : "4e797e3f3926090f.json",
+      "type" : "application/json",
+      "size" : 507
+    }, {
+      "uid" : "897caa313578fee6",
+      "name" : "Response",
+      "source" : "897caa313578fee6.json",
+      "type" : "application/json",
+      "size" : 91
+    }, {
+      "uid" : "14bc67f4ec79f60e",
+      "name" : "Response",
+      "source" : "14bc67f4ec79f60e.json",
+      "type" : "application/json",
+      "size" : 91
+    }, {
+      "uid" : "ee3590e040eecb05",
+      "name" : "Response",
+      "source" : "ee3590e040eecb05.json",
+      "type" : "application/json",
+      "size" : 105
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 11,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testClass",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testMethod",
+    "value" : "check the available list of cars"
+  }, {
+    "name" : "package",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6784c5029dfca452.json",
+  "parameterValues" : [ "chrome" ]
+}

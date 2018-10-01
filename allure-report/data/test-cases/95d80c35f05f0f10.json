@@ -1,0 +1,274 @@
+{
+  "uid" : "95d80c35f05f0f10",
+  "name" : "Check the city in the card",
+  "fullName" : "test get all name city.Check the city in the card",
+  "historyId" : "f1e771861f6ca9e3ecaf3d89302e5e24",
+  "time" : {
+    "start" : 1537180073423,
+    "stop" : 1537180080401,
+    "duration" : 6978
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "На странице уже есть одно условие фильтра",
+  "statusTrace" : "Error: На странице уже есть одно условие фильтра\n                    at waitUntil(<Function>, 5000, \"На странице уже есть одно условие фильтра\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "На странице уже есть одно условие фильтра",
+    "statusTrace" : "Error: На странице уже есть одно условие фильтра\n                    at waitUntil(<Function>, 5000, \"На странице уже есть одно условие фильтра\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/59f51dff101971199140608f68bd37eb/element",
+      "time" : {
+        "start" : 1537180073434,
+        "stop" : 1537180073480,
+        "duration" : 46
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "617ff5671dfcaa49",
+        "name" : "Request",
+        "source" : "617ff5671dfcaa49.json",
+        "type" : "application/json",
+        "size" : 91
+      }, {
+        "uid" : "bd414a0ff418ba6e",
+        "name" : "Response",
+        "source" : "bd414a0ff418ba6e.json",
+        "type" : "application/json",
+        "size" : 136
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/59f51dff101971199140608f68bd37eb/element/0.9444430363665051-9/click",
+      "time" : {
+        "start" : 1537180073481,
+        "stop" : 1537180073696,
+        "duration" : 215
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fa1f849124212fcd",
+        "name" : "Response",
+        "source" : "fa1f849124212fcd.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/59f51dff101971199140608f68bd37eb/elements",
+      "time" : {
+        "start" : 1537180073704,
+        "stop" : 1537180073780,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9c704f5f453946a0",
+        "name" : "Request",
+        "source" : "9c704f5f453946a0.json",
+        "type" : "application/json",
+        "size" : 123
+      }, {
+        "uid" : "c1f755cb5e0bcf98",
+        "name" : "Response",
+        "source" : "c1f755cb5e0bcf98.json",
+        "type" : "application/json",
+        "size" : 227
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/59f51dff101971199140608f68bd37eb/element/0.9444430363665051-3/text",
+      "time" : {
+        "start" : 1537180073782,
+        "stop" : 1537180074318,
+        "duration" : 536
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /wd/hub/session/59f51dff101971199140608f68bd37eb/element/0.9444430363665051-4/text",
+        "time" : {
+          "start" : 1537180073784,
+          "stop" : 1537180073810,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "cef93ee118f28979",
+          "name" : "Response",
+          "source" : "cef93ee118f28979.json",
+          "type" : "application/json",
+          "size" : 157
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "3a3801c9ecc9bea9",
+        "name" : "Response",
+        "source" : "3a3801c9ecc9bea9.json",
+        "type" : "application/json",
+        "size" : 567
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/59f51dff101971199140608f68bd37eb/elements",
+      "time" : {
+        "start" : 1537180074327,
+        "stop" : 1537180074426,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8eca804062f8f934",
+        "name" : "Request",
+        "source" : "8eca804062f8f934.json",
+        "type" : "application/json",
+        "size" : 123
+      }, {
+        "uid" : "6ca3f142af153c63",
+        "name" : "Response",
+        "source" : "6ca3f142af153c63.json",
+        "type" : "application/json",
+        "size" : 229
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/59f51dff101971199140608f68bd37eb/element/0.9444430363665051-88/text",
+      "time" : {
+        "start" : 1537180074428,
+        "stop" : 1537180074970,
+        "duration" : 542
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /wd/hub/session/59f51dff101971199140608f68bd37eb/element/0.9444430363665051-89/text",
+        "time" : {
+          "start" : 1537180074430,
+          "stop" : 1537180074508,
+          "duration" : 78
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "ebface1ce62bf749",
+          "name" : "Response",
+          "source" : "ebface1ce62bf749.json",
+          "type" : "application/json",
+          "size" : 130
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "ee99427a661c0293",
+        "name" : "Response",
+        "source" : "ee99427a661c0293.json",
+        "type" : "application/json",
+        "size" : 130
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/59f51dff101971199140608f68bd37eb/screenshot",
+      "time" : {
+        "start" : 1537180079981,
+        "stop" : 1537180080401,
+        "duration" : 420
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: На странице уже есть одно условие фильтра\n                    at waitUntil(<Function>, 5000, \"На странице уже есть одно условие фильтра\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "18cf84019cb68fdf",
+        "name" : "Screenshot",
+        "source" : "18cf84019cb68fdf.png",
+        "type" : "image/png",
+        "size" : 195346
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 12,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 9,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testClass",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the city in the card"
+  }, {
+    "name" : "package",
+    "value" : "test get all name city"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "95d80c35f05f0f10.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,87 @@
+{
+  "uid" : "a67756a53834a8cd",
+  "name" : "check more in detail about dynamic light",
+  "fullName" : "test materials.check more in detail about dynamic light",
+  "historyId" : "db1495e2bc5d1a15f0228041c72aa993",
+  "time" : {
+    "start" : 1537978563226,
+    "stop" : 1537978564907,
+    "duration" : 1681
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6b6f362d74292e65",
+      "name" : "Screenshot",
+      "source" : "6b6f362d74292e65.png",
+      "type" : "image/png",
+      "size" : 303032
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test materials"
+  }, {
+    "name" : "testClass",
+    "value" : "test materials"
+  }, {
+    "name" : "testMethod",
+    "value" : "check more in detail about dynamic light"
+  }, {
+    "name" : "package",
+    "value" : "test materials"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "47ae2fc574e24ead",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537871420694,
+        "stop" : 1537871421703,
+        "duration" : 1009
+      }
+    }, {
+      "uid" : "6a1f2f231a34cf2b",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn015_image picture img\") still not visible after 40000ms",
+      "time" : {
+        "start" : 1537805278057,
+        "stop" : 1537805320053,
+        "duration" : 41996
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a67756a53834a8cd.json",
+  "parameterValues" : [ "chrome" ]
+}

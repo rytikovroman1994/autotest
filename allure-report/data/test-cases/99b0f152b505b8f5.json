@@ -1,0 +1,159 @@
+{
+  "uid" : "99b0f152b505b8f5",
+  "name" : "filter-keyless access",
+  "fullName" : "screenshots-exterior.filter-keyless access",
+  "historyId" : "f8f7a3f5ba5f6bd8cab321c387d643bc",
+  "time" : {
+    "start" : 1537872479159,
+    "stop" : 1537872479911,
+    "duration" : 752
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (275, 563). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.2402205687376151-7\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (275, 563). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.2402205687376151-7\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "76298dcf99cbe880",
+      "name" : "Screenshot",
+      "source" : "76298dcf99cbe880.png",
+      "type" : "image/png",
+      "size" : 676902
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-keyless access"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "96c9a3684ca0eb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536761431025,
+        "stop" : 1536761436030,
+        "duration" : 5005
+      }
+    }, {
+      "uid" : "23a0d59d4fbc48c1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536761238887,
+        "stop" : 1536761240464,
+        "duration" : 1577
+      }
+    }, {
+      "uid" : "f834e206c0965041",
+      "status" : "broken",
+      "statusDetails" : "connect ECONNREFUSED 127.0.0.1:4444",
+      "time" : {
+        "start" : 1536759750068,
+        "stop" : 1536759754092,
+        "duration" : 4024
+      }
+    }, {
+      "uid" : "f3973acb35bc5e58",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536756583984,
+        "stop" : 1536756585579,
+        "duration" : 1595
+      }
+    }, {
+      "uid" : "1a997da89b012b38",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752395152,
+        "stop" : 1536752396657,
+        "duration" : 1505
+      }
+    }, {
+      "uid" : "61ed6218616ad339",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752141389,
+        "stop" : 1536752142953,
+        "duration" : 1564
+      }
+    }, {
+      "uid" : "d6f4166fe982a88e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752024973,
+        "stop" : 1536752026489,
+        "duration" : 1516
+      }
+    }, {
+      "uid" : "afab57ba9b96f1a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751887862,
+        "stop" : 1536751889302,
+        "duration" : 1440
+      }
+    }, {
+      "uid" : "59892c95533ef52c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751795906,
+        "stop" : 1536751797419,
+        "duration" : 1513
+      }
+    }, {
+      "uid" : "c5ac87dbcb90bb96",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751648784,
+        "stop" : 1536751650678,
+        "duration" : 1894
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "99b0f152b505b8f5.json",
+  "parameterValues" : [ "chrome" ]
+}

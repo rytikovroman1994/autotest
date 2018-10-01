@@ -1,0 +1,113 @@
+{
+  "uid" : "79824ae6afdfcc1f",
+  "name" : "compare screenshots",
+  "fullName" : "test adaptive cruise control.compare screenshots",
+  "historyId" : "8426218a1580be0f0ce6f4bfe5175824",
+  "time" : {
+    "start" : 1537978601349,
+    "stop" : 1537978602082,
+    "duration" : 733
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test adaptive cruise control"
+  }, {
+    "name" : "testClass",
+    "value" : "test adaptive cruise control"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test adaptive cruise control"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6b481a0fd9fdc290",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537871461860,
+        "stop" : 1537871462458,
+        "duration" : 598
+      }
+    }, {
+      "uid" : "40a5d415c141a309",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537805411575,
+        "stop" : 1537805413375,
+        "duration" : 1800
+      }
+    }, {
+      "uid" : "855197ac3501683e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536832016051,
+        "stop" : 1536832016671,
+        "duration" : 620
+      }
+    }, {
+      "uid" : "e08fb9a67eb6a6c6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536831987599,
+        "stop" : 1536831988195,
+        "duration" : 596
+      }
+    }, {
+      "uid" : "81b633204e69bcdd",
+      "status" : "failed",
+      "statusDetails" : "expected 0.171875 to be below 0.1",
+      "time" : {
+        "start" : 1536831959300,
+        "stop" : 1536831959988,
+        "duration" : 688
+      }
+    }, {
+      "uid" : "1dff63f27bc8817e",
+      "status" : "failed",
+      "statusDetails" : "expected 0.171875 to be below 0.1",
+      "time" : {
+        "start" : 1536831915788,
+        "stop" : 1536831916416,
+        "duration" : 628
+      }
+    }, {
+      "uid" : "8b12fccba779579a",
+      "status" : "broken",
+      "statusDetails" : "ENOENT: no such file or directory, open 'C:\\autotest\\snapshot\\screenshotInterior\\sideAssist.png'",
+      "time" : {
+        "start" : 1536831873862,
+        "stop" : 1536831873901,
+        "duration" : 39
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "79824ae6afdfcc1f.json",
+  "parameterValues" : [ "chrome" ]
+}

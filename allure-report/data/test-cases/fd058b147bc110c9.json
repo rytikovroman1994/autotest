@@ -1,0 +1,86 @@
+{
+  "uid" : "fd058b147bc110c9",
+  "name" : "filter-auto Hold",
+  "fullName" : "screenshots-options.filter-auto Hold",
+  "historyId" : "5fc7bff205b9e1a74b90075eaa39e3a2",
+  "time" : {
+    "start" : 1537872378954,
+    "stop" : 1537872379769,
+    "duration" : 815
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (826, 366). Other element would receive the click: <img alt=\"\" class=\"avn008_image-switcher_image\" src=\"https://cars.volkswagen.ru/images/resize/remote?width=685&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/option_images/images/cruise-control.jpg\">",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.15083186516462166-6\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (826, 366). Other element would receive the click: <img alt=\"\" class=\"avn008_image-switcher_image\" src=\"https://cars.volkswagen.ru/images/resize/remote?width=685&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/option_images/images/cruise-control.jpg\">",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.15083186516462166-6\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b49c326a6f4a2c7c",
+      "name" : "Screenshot",
+      "source" : "b49c326a6f4a2c7c.png",
+      "type" : "image/png",
+      "size" : 457601
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-auto Hold"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1fc44f06296ce1ed",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536763563292,
+        "stop" : 1536763565122,
+        "duration" : 1830
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fd058b147bc110c9.json",
+  "parameterValues" : [ "chrome" ]
+}

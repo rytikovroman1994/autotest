@@ -1,0 +1,114 @@
+{
+  "uid" : "192009a1b7493a4",
+  "name" : "\"before all\" hook",
+  "fullName" : "screenshot page options.\"before all\" hook",
+  "historyId" : "1a59ecbedd5faa59ef3aa3ae7b0562de",
+  "time" : {
+    "start" : 1537978099650,
+    "stop" : 1537978149631,
+    "duration" : 49981
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn015_image picture img\") still not visible after 40000ms",
+  "statusTrace" : "Error: element (\".avn015_image picture img\") still not visible after 40000ms\n                    at elements(\".avn015_image picture img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn015_image picture img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn015_image picture img\") still not visible after 40000ms",
+    "statusTrace" : "Error: element (\".avn015_image picture img\") still not visible after 40000ms\n                    at elements(\".avn015_image picture img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn015_image picture img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "9c91850d9c2df36f",
+      "name" : "Screenshot",
+      "source" : "9c91850d9c2df36f.png",
+      "type" : "image/png",
+      "size" : 115218
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "screenshot page options"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshot page options"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "screenshot page options"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "48cd93ec5d0f3eb9",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn015_image picture img\") still not visible after 40000ms",
+      "time" : {
+        "start" : 1537870959216,
+        "stop" : 1537871011975,
+        "duration" : 52759
+      }
+    }, {
+      "uid" : "5a28375e74eb95d4",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn015_image picture img\") still not visible after 40000ms",
+      "time" : {
+        "start" : 1537804652167,
+        "stop" : 1537804701173,
+        "duration" : 49006
+      }
+    }, {
+      "uid" : "32efdcf439b7c044",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn015_image picture img\") still not visible after 40000ms",
+      "time" : {
+        "start" : 1537797556739,
+        "stop" : 1537797612180,
+        "duration" : 55441
+      }
+    }, {
+      "uid" : "661e3521e4fab55e",
+      "status" : "broken",
+      "statusDetails" : "element (\"div:nth-child(5) > div > div > div.avn008_option-check_image > img\") still not visible after 40000ms",
+      "time" : {
+        "start" : 1537190746797,
+        "stop" : 1537190819784,
+        "duration" : 72987
+      }
+    }, {
+      "uid" : "cc5942870e51527a",
+      "status" : "broken",
+      "statusDetails" : "unknown error: failed to change window state to maximized, current state is normal",
+      "time" : {
+        "start" : 1536765439650,
+        "stop" : 1536765439990,
+        "duration" : 340
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "192009a1b7493a4.json",
+  "parameterValues" : [ ]
+}

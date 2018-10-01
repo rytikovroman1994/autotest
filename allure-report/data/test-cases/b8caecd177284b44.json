@@ -1,0 +1,162 @@
+{
+  "uid" : "b8caecd177284b44",
+  "name" : "check the available list of cars",
+  "fullName" : "test polo busines logic.check the available list of cars",
+  "historyId" : "9ed9732895160a1e9296bd6641d6e197",
+  "time" : {
+    "start" : 1536857105763,
+    "stop" : 1536857106447,
+    "duration" : 684
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected [ 'Polo Comfortline', 'Polo Highline' ] to include 'Polo + '",
+  "statusTrace" : "AssertionError: expected [ 'Polo Comfortline', 'Polo Highline' ] to include 'Polo + '\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/polo-busines-logic.js:113:35)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected [ 'Polo Comfortline', 'Polo Highline' ] to include 'Polo + '",
+    "statusTrace" : "AssertionError: expected [ 'Polo Comfortline', 'Polo Highline' ] to include 'Polo + '\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/polo-busines-logic.js:113:35)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/54e14494d985ff1dc6aff8dc0bd93ee8/elements",
+      "time" : {
+        "start" : 1536857105769,
+        "stop" : 1536857105845,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6288234e5779a428",
+        "name" : "Request",
+        "source" : "6288234e5779a428.json",
+        "type" : "application/json",
+        "size" : 65
+      }, {
+        "uid" : "62840cbce476d839",
+        "name" : "Response",
+        "source" : "62840cbce476d839.json",
+        "type" : "application/json",
+        "size" : 501
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/54e14494d985ff1dc6aff8dc0bd93ee8/elements",
+      "time" : {
+        "start" : 1536857105845,
+        "stop" : 1536857105881,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5bec3dcf3e46d169",
+        "name" : "Request",
+        "source" : "5bec3dcf3e46d169.json",
+        "type" : "application/json",
+        "size" : 106
+      }, {
+        "uid" : "3cf6b371b75bfbf2",
+        "name" : "Response",
+        "source" : "3cf6b371b75bfbf2.json",
+        "type" : "application/json",
+        "size" : 229
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/54e14494d985ff1dc6aff8dc0bd93ee8/element/0.8529600345334294-28/text",
+      "time" : {
+        "start" : 1536857105884,
+        "stop" : 1536857106435,
+        "duration" : 551
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "GET /wd/hub/session/54e14494d985ff1dc6aff8dc0bd93ee8/element/0.8529600345334294-29/text",
+        "time" : {
+          "start" : 1536857105885,
+          "stop" : 1536857105913,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "a74f28a255917d42",
+          "name" : "Response",
+          "source" : "a74f28a255917d42.json",
+          "type" : "application/json",
+          "size" : 105
+        } ],
+        "parameters" : [ ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ {
+        "uid" : "48927b9620db7bae",
+        "name" : "Response",
+        "source" : "48927b9620db7bae.json",
+        "type" : "application/json",
+        "size" : 102
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testClass",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "testMethod",
+    "value" : "check the available list of cars"
+  }, {
+    "name" : "package",
+    "value" : "test polo busines logic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b8caecd177284b44.json",
+  "parameterValues" : [ "chrome" ]
+}

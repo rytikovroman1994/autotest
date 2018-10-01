@@ -1,0 +1,72 @@
+{
+  "uid" : "d472e3b9995a6286",
+  "name" : "filter-option",
+  "fullName" : "smoke screenshot test save.filter-option",
+  "historyId" : "7a35bd1d8b1263107f8a79ebf9aff43b",
+  "time" : {
+    "start" : 1537782544562,
+    "stop" : 1537782585417,
+    "duration" : 40855
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn008_option-check_image > img\") still not visible after 40000ms",
+  "statusTrace" : "Error: element (\".avn008_option-check_image > img\") still not visible after 40000ms\n                    at elements(\".avn008_option-check_image > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn008_option-check_image > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn008_option-check_image > img\") still not visible after 40000ms",
+    "statusTrace" : "Error: element (\".avn008_option-check_image > img\") still not visible after 40000ms\n                    at elements(\".avn008_option-check_image > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn008_option-check_image > img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6e55b23d902a009b",
+      "name" : "Screenshot",
+      "source" : "6e55b23d902a009b.png",
+      "type" : "image/png",
+      "size" : 112435
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-option"
+  }, {
+    "name" : "package",
+    "value" : "smoke screenshot test save"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d472e3b9995a6286.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,93 @@
+{
+  "uid" : "be4f58cdb6c29f55",
+  "name" : "compare screenshots",
+  "fullName" : "test heated steering wheel.compare screenshots",
+  "historyId" : "7dac6f791b41e52f9e958e3024ac35b",
+  "time" : {
+    "start" : 1537978971164,
+    "stop" : 1537978971802,
+    "duration" : 638
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 0.109375 to be below 0.1",
+  "statusTrace" : "AssertionError: expected 0.109375 to be below 0.1\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/options/winterPackage/heated-steering-wheel.js:50:32)\n                    at <anonymous>\n                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test heated steering wheel"
+  }, {
+    "name" : "testClass",
+    "value" : "test heated steering wheel"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test heated steering wheel"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "deb4b9d534c35ad9",
+      "status" : "failed",
+      "statusDetails" : "expected 0.109375 to be below 0.1",
+      "time" : {
+        "start" : 1537872002705,
+        "stop" : 1537872003455,
+        "duration" : 750
+      }
+    }, {
+      "uid" : "e39fac88f988ee42",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537806465656,
+        "stop" : 1537806468876,
+        "duration" : 3220
+      }
+    }, {
+      "uid" : "eefbd8822842a1d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536835493268,
+        "stop" : 1536835494008,
+        "duration" : 740
+      }
+    }, {
+      "uid" : "8fd1950aba4ea7b2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536835460723,
+        "stop" : 1536835461387,
+        "duration" : 664
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "be4f58cdb6c29f55.json",
+  "parameterValues" : [ "chrome" ]
+}

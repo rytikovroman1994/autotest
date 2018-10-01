@@ -1,0 +1,223 @@
+{
+  "uid" : "c77883b24be83e33",
+  "name" : "\"before all\" hook",
+  "fullName" : "test get all name city.\"before all\" hook",
+  "historyId" : "7e7979a028e9bfbed6d6de0a7b63262",
+  "time" : {
+    "start" : 1537175978459,
+    "stop" : 1537175988488,
+    "duration" : 10029
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <div class=\"avn001-1_sort-item\">...</div> is not clickable at point (354, 104). Other element would receive the click: <h4 class=\"h4\">...</h4>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.03691226553915983-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <div class=\"avn001-1_sort-item\">...</div> is not clickable at point (354, 104). Other element would receive the click: <h4 class=\"h4\">...</h4>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.03691226553915983-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/0ba63e06d97455e937ea5a0faa789d1a/window/current/maximize",
+      "time" : {
+        "start" : 1537175978470,
+        "stop" : 1537175979616,
+        "duration" : 1146
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "87701834b8b0ea41",
+        "name" : "Response",
+        "source" : "87701834b8b0ea41.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/0ba63e06d97455e937ea5a0faa789d1a/url",
+      "time" : {
+        "start" : 1537175979620,
+        "stop" : 1537175987386,
+        "duration" : 7766
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8e796b954e7c1e7b",
+        "name" : "Request",
+        "source" : "8e796b954e7c1e7b.json",
+        "type" : "application/json",
+        "size" : 37
+      }, {
+        "uid" : "4624773495876193",
+        "name" : "Response",
+        "source" : "4624773495876193.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/0ba63e06d97455e937ea5a0faa789d1a/elements",
+      "time" : {
+        "start" : 1537175987438,
+        "stop" : 1537175987570,
+        "duration" : 132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a13601eaf7f05bbf",
+        "name" : "Request",
+        "source" : "a13601eaf7f05bbf.json",
+        "type" : "application/json",
+        "size" : 63
+      }, {
+        "uid" : "253f8d93ac6f6187",
+        "name" : "Response",
+        "source" : "253f8d93ac6f6187.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/0ba63e06d97455e937ea5a0faa789d1a/element/0.03691226553915983-1/displayed",
+      "time" : {
+        "start" : 1537175987571,
+        "stop" : 1537175987764,
+        "duration" : 193
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "544bb94071f39c4f",
+        "name" : "Response",
+        "source" : "544bb94071f39c4f.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/0ba63e06d97455e937ea5a0faa789d1a/element",
+      "time" : {
+        "start" : 1537175987772,
+        "stop" : 1537175987872,
+        "duration" : 100
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "cdcdb4b26c69e914",
+        "name" : "Request",
+        "source" : "cdcdb4b26c69e914.json",
+        "type" : "application/json",
+        "size" : 123
+      }, {
+        "uid" : "6a574f72d0933e45",
+        "name" : "Response",
+        "source" : "6a574f72d0933e45.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/0ba63e06d97455e937ea5a0faa789d1a/element/0.03691226553915983-2/click",
+      "time" : {
+        "start" : 1537175987888,
+        "stop" : 1537175988039,
+        "duration" : 151
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e85f641199529d39",
+        "name" : "Response",
+        "source" : "e85f641199529d39.json",
+        "type" : "application/json",
+        "size" : 735
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/0ba63e06d97455e937ea5a0faa789d1a/screenshot",
+      "time" : {
+        "start" : 1537175988041,
+        "stop" : 1537175988488,
+        "duration" : 447
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.03691226553915983-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "437a7ddee7d3e617",
+        "name" : "Screenshot",
+        "source" : "437a7ddee7d3e617.png",
+        "type" : "image/png",
+        "size" : 127725
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testClass",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test get all name city"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c77883b24be83e33.json",
+  "parameterValues" : [ ]
+}

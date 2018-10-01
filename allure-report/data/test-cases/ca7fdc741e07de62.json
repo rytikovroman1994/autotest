@@ -1,0 +1,159 @@
+{
+  "uid" : "ca7fdc741e07de62",
+  "name" : "filter-mirror drive",
+  "fullName" : "screenshots-exterior.filter-mirror drive",
+  "historyId" : "63368df413d7df5d1f5838026f90e4e3",
+  "time" : {
+    "start" : 1537872478334,
+    "stop" : 1537872479141,
+    "duration" : 807
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (1138, 388). Other element would receive the click: <div class=\"avn015_content\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.2402205687376151-6\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (1138, 388). Other element would receive the click: <div class=\"avn015_content\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.2402205687376151-6\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e56f181907874186",
+      "name" : "Screenshot",
+      "source" : "e56f181907874186.png",
+      "type" : "image/png",
+      "size" : 676902
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-mirror drive"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "dc9c2e5b0f7d209f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536761420232,
+        "stop" : 1536761431025,
+        "duration" : 10793
+      }
+    }, {
+      "uid" : "a0243d17a05f7568",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536761236446,
+        "stop" : 1536761238886,
+        "duration" : 2440
+      }
+    }, {
+      "uid" : "9340488346b83dbd",
+      "status" : "broken",
+      "statusDetails" : "Promise was rejected with the following reason: connect ECONNREFUSED 127.0.0.1:4444",
+      "time" : {
+        "start" : 1536759710062,
+        "stop" : 1536759750067,
+        "duration" : 40005
+      }
+    }, {
+      "uid" : "b72d09ac6be7e546",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536756581539,
+        "stop" : 1536756583983,
+        "duration" : 2444
+      }
+    }, {
+      "uid" : "98fbecd195abc33f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752392921,
+        "stop" : 1536752395147,
+        "duration" : 2226
+      }
+    }, {
+      "uid" : "2b206fdb1ed5e0eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752139630,
+        "stop" : 1536752141383,
+        "duration" : 1753
+      }
+    }, {
+      "uid" : "c3515ffb81ac82f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752022569,
+        "stop" : 1536752024968,
+        "duration" : 2399
+      }
+    }, {
+      "uid" : "196b920426de7952",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751885881,
+        "stop" : 1536751887861,
+        "duration" : 1980
+      }
+    }, {
+      "uid" : "4ca606f8ead2680b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751794080,
+        "stop" : 1536751795906,
+        "duration" : 1826
+      }
+    }, {
+      "uid" : "ee019d9e42790b14",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751636466,
+        "stop" : 1536751648783,
+        "duration" : 12317
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ca7fdc741e07de62.json",
+  "parameterValues" : [ "chrome" ]
+}

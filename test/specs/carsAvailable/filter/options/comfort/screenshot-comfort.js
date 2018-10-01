@@ -9,7 +9,7 @@ describe('screenshot page comfort', () => {
         // открываем страницу опции
         browser.click('#react-tabs-10');
         // ожидаем появление последней картинки
-        browser.waitForVisible('div:nth-child(7) .avn008_option-check_image img');
+        browser.waitForVisible('.avn008_comfort div:nth-child(7) img');
     });
 
     it('take screenshot page comfort', () => {

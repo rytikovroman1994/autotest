@@ -1,0 +1,143 @@
+{
+  "uid" : "519f6252d611fde2",
+  "name" : "compare screenshots",
+  "fullName" : "test side assist.compare screenshots",
+  "historyId" : "fac509a9ae1e8942792af971757cb870",
+  "time" : {
+    "start" : 1537978717900,
+    "stop" : 1537978718649,
+    "duration" : 749
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 0.140625 to be below 0.1",
+  "statusTrace" : "AssertionError: expected 0.140625 to be below 0.1\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/options/assistants/side-assist.js:54:32)\n                    at <anonymous>\n                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test side assist"
+  }, {
+    "name" : "testClass",
+    "value" : "test side assist"
+  }, {
+    "name" : "testMethod",
+    "value" : "compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test side assist"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8b694cf7e49bf667",
+      "status" : "failed",
+      "statusDetails" : "expected 0.140625 to be below 0.1",
+      "time" : {
+        "start" : 1537871684774,
+        "stop" : 1537871685397,
+        "duration" : 623
+      }
+    }, {
+      "uid" : "f5fb9ef8ae3b9fb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537869677506,
+        "stop" : 1537869678134,
+        "duration" : 628
+      }
+    }, {
+      "uid" : "8a67b9ecddfb6d9b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1537869645876,
+        "stop" : 1537869646496,
+        "duration" : 620
+      }
+    }, {
+      "uid" : "9bfb46aa93b67141",
+      "status" : "failed",
+      "statusDetails" : "expected 0.109375 to be below 0.1",
+      "time" : {
+        "start" : 1537869527981,
+        "stop" : 1537869528568,
+        "duration" : 587
+      }
+    }, {
+      "uid" : "b579ff840473e9bf",
+      "status" : "failed",
+      "statusDetails" : "expected 0.109375 to be below 0.1",
+      "time" : {
+        "start" : 1537805775808,
+        "stop" : 1537805776604,
+        "duration" : 796
+      }
+    }, {
+      "uid" : "688933b3a842ae7a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536834061726,
+        "stop" : 1536834062331,
+        "duration" : 605
+      }
+    }, {
+      "uid" : "a12803f08bd22ff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536833917775,
+        "stop" : 1536833918486,
+        "duration" : 711
+      }
+    }, {
+      "uid" : "1e24e902538582dc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536833816579,
+        "stop" : 1536833817194,
+        "duration" : 615
+      }
+    }, {
+      "uid" : "5133fead497f6cbd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536833702646,
+        "stop" : 1536833703288,
+        "duration" : 642
+      }
+    }, {
+      "uid" : "cb6ad184093c7758",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536833624682,
+        "stop" : 1536833625295,
+        "duration" : 613
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "519f6252d611fde2.json",
+  "parameterValues" : [ "chrome" ]
+}

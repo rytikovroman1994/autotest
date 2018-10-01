@@ -1,0 +1,121 @@
+{
+  "uid" : "b24a1103f9c41527",
+  "name" : "\"before all\" hook",
+  "fullName" : "test of the price slider.\"before all\" hook",
+  "historyId" : "4fca2d9cad0c811219e6a00bbba58c0",
+  "time" : {
+    "start" : 1537185864475,
+    "stop" : 1537185864752,
+    "duration" : 277
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "java.net.SocketException: Unexpected end of file from server",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleSize(\"[object Object], width: 1366  height:768}\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "java.net.SocketException: Unexpected end of file from server",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleSize(\"[object Object], width: 1366  height:768}\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ {
+      "name" : "GET /wd/hub/session/2c1f27dbf30d22852906ec60b9abc54d/window_handles",
+      "time" : {
+        "start" : 1537185864481,
+        "stop" : 1537185864497,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "14db0149857a76c7",
+        "name" : "Response",
+        "source" : "14db0149857a76c7.json",
+        "type" : "application/json",
+        "size" : 146
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/2c1f27dbf30d22852906ec60b9abc54d/window/[object%20Object],%20width:%201366%20%20height:768%7D/size",
+      "time" : {
+        "start" : 1537185864501,
+        "stop" : 1537185864531,
+        "duration" : 30
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8f9492328f0f9760",
+        "name" : "Response",
+        "source" : "8f9492328f0f9760.json",
+        "type" : "application/json",
+        "size" : 352
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/2c1f27dbf30d22852906ec60b9abc54d/screenshot",
+      "time" : {
+        "start" : 1537185864549,
+        "stop" : 1537185864752,
+        "duration" : 203
+      },
+      "status" : "broken",
+      "statusMessage" : "Error: An unknown server-side error occurred while processing the command.\n                    at windowHandleSize(\"[object Object], width: 1366  height:768}\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8c5a26b10a67935c",
+        "name" : "Screenshot",
+        "source" : "8c5a26b10a67935c.png",
+        "type" : "image/png",
+        "size" : 5761
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testClass",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test of the price slider"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b24a1103f9c41527.json",
+  "parameterValues" : [ ]
+}

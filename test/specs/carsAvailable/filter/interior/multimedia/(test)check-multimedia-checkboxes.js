@@ -59,7 +59,7 @@ describe('check of multimedia checkboxes', () => {
                 // открываем всплывающее окно
                 browser.click(`div:nth-child(${i}) > div > div > div.avn008_option-check_more`);
                 // ждём появления картинки
-                browser.waitForVisible('div.avn015_image > div > div.LazyLoad.is-visible > div > img');
+                browser.waitForVisible('.avn015_content .image-container');
                 // берём скриншот с локала
                 ctx.originalScreenshot = `snapshot/screenshotInterior/${name}.png`;
                 // делаем актуальный скриншот

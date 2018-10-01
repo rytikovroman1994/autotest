@@ -1,0 +1,59 @@
+{
+  "uid" : "506d112eae2b57",
+  "name" : "\"before all\" hook",
+  "fullName" : "screenshot page comfort.\"before all\" hook",
+  "historyId" : "bd1fcb5133ab1f6dd36b64b3b82f846d",
+  "time" : {
+    "start" : 1537975138091,
+    "stop" : 1537975228102,
+    "duration" : 90011
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\options\\comfort\\screenshot-comfort.js)",
+  "statusTrace" : "Error: Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\carsAvailable\\filter\\options\\comfort\\screenshot-comfort.js)\n                    at Hook.Runnable._timeoutError (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:440:10)\n                    at Timeout.<anonymous> (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:251:24)\n                    at ontimeout (timers.js:498:11)\n                    at tryOnTimeout (timers.js:323:5)\n                    at Timer.listOnTimeout (timers.js:290:5)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "screenshot page comfort"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshot page comfort"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "screenshot page comfort"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "57370f49e32266bb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536749841314,
+        "stop" : 1536749850341,
+        "duration" : 9027
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "506d112eae2b57.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,72 @@
+{
+  "uid" : "f8a1b860eb61c318",
+  "name" : "check cards",
+  "fullName" : "smoke test cards.check cards",
+  "historyId" : "d92b8c3f8dbe95c72ba1c41fed51b12",
+  "time" : {
+    "start" : 1537892197344,
+    "stop" : 1537892198192,
+    "duration" : 848
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "invalid selector: An invalid or illegal selector was specified",
+  "statusTrace" : "Error: Argument was an invalid selector (e.g. XPath/CSS).\n                    at moveToObject(\"[object Object]\", 0, 200) -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"[object Object]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\moveToObject.js:47:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "invalid selector: An invalid or illegal selector was specified",
+    "statusTrace" : "Error: Argument was an invalid selector (e.g. XPath/CSS).\n                    at moveToObject(\"[object Object]\", 0, 200) -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"[object Object]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\moveToObject.js:47:17",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "2ad0487f0fff9515",
+      "name" : "Screenshot",
+      "source" : "2ad0487f0fff9515.png",
+      "type" : "image/png",
+      "size" : 185899
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "smoke test cards"
+  }, {
+    "name" : "testClass",
+    "value" : "smoke test cards"
+  }, {
+    "name" : "testMethod",
+    "value" : "check cards"
+  }, {
+    "name" : "package",
+    "value" : "smoke test cards"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f8a1b860eb61c318.json",
+  "parameterValues" : [ "chrome" ]
+}

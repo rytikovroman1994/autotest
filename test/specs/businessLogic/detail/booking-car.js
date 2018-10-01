@@ -31,7 +31,7 @@ describe('test booking car', () => {
         // нажимаем на кнопку
         browser.click('.avn007-2_price .btn.btn_cta.show-op');
         // ожидаем загрузки картинки
-        browser.waitForVisible('.gridcontainer.uac001_image-status  img')
+        browser.waitForVisible('.gridcontainer.uac001_image-status img')
         // скролим на случай если блок с резервированием не виден
         browser.moveToObject('.op005_form_title')
         // проверяем что перешли на страницу резервирования

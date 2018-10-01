@@ -1,0 +1,102 @@
+{
+  "uid" : "555e2535900b37b0",
+  "name" : "filter-parking heater",
+  "fullName" : "screenshots-options.filter-parking heater",
+  "historyId" : "dda8cb6d310c22def53232f8d267b1fd",
+  "time" : {
+    "start" : 1537872540013,
+    "stop" : 1537872540635,
+    "duration" : 622
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (539, 541). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.24980488402595857-8\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (539, 541). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.24980488402595857-8\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "55b09482852f5328",
+      "name" : "Screenshot",
+      "source" : "55b09482852f5328.png",
+      "type" : "image/png",
+      "size" : 349909
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-parking heater"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-options"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "73e119e304a2815d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536764200794,
+        "stop" : 1536764202424,
+        "duration" : 1630
+      }
+    }, {
+      "uid" : "8ac5cfe028eec41f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536764167741,
+        "stop" : 1536764169905,
+        "duration" : 2164
+      }
+    }, {
+      "uid" : "80ba0838844cbe10",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536764066864,
+        "stop" : 1536764070078,
+        "duration" : 3214
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "555e2535900b37b0.json",
+  "parameterValues" : [ "chrome" ]
+}

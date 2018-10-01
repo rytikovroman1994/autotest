@@ -1,0 +1,159 @@
+{
+  "uid" : "951b8702fce792",
+  "name" : "filter-Rear View Camera",
+  "fullName" : "screenshots-exterior.filter-Rear View Camera",
+  "historyId" : "6e99edd6a4134502199b4a9421d453c5",
+  "time" : {
+    "start" : 1537872479912,
+    "stop" : 1537872480554,
+    "duration" : 642
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (563, 563). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.2402205687376151-8\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <div class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (563, 563). Other element would receive the click: <div class=\"ReactModal__Overlay ReactModal__Overlay--after-open modal-window_overlay avn021 avn015_UspPop bg-transparent default-close avn015\" aria-modal=\"true\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.2402205687376151-8\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "eed198566401eb92",
+      "name" : "Screenshot",
+      "source" : "eed198566401eb92.png",
+      "type" : "image/png",
+      "size" : 676902
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testClass",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "testMethod",
+    "value" : "filter-Rear View Camera"
+  }, {
+    "name" : "package",
+    "value" : "screenshots-exterior"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "758dbe0ee81ec427",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536761436031,
+        "stop" : 1536761437734,
+        "duration" : 1703
+      }
+    }, {
+      "uid" : "fada550b40d62d82",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536761240466,
+        "stop" : 1536761242136,
+        "duration" : 1670
+      }
+    }, {
+      "uid" : "dc918f0f2e716959",
+      "status" : "broken",
+      "statusDetails" : "connect ECONNREFUSED 127.0.0.1:4444",
+      "time" : {
+        "start" : 1536759754093,
+        "stop" : 1536759758322,
+        "duration" : 4229
+      }
+    }, {
+      "uid" : "237b6c3ce48a977c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536756585580,
+        "stop" : 1536756587195,
+        "duration" : 1615
+      }
+    }, {
+      "uid" : "7cea8c373458bb6d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752396658,
+        "stop" : 1536752398233,
+        "duration" : 1575
+      }
+    }, {
+      "uid" : "5208d674c1676f7e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752142962,
+        "stop" : 1536752144621,
+        "duration" : 1659
+      }
+    }, {
+      "uid" : "cb71815b24d049f6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536752026491,
+        "stop" : 1536752028158,
+        "duration" : 1667
+      }
+    }, {
+      "uid" : "2ac53e50817a0124",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751889303,
+        "stop" : 1536751890913,
+        "duration" : 1610
+      }
+    }, {
+      "uid" : "fb8c04bf0e2b4038",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751797419,
+        "stop" : 1536751799013,
+        "duration" : 1594
+      }
+    }, {
+      "uid" : "34dab7f542e9557b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1536751650679,
+        "stop" : 1536751652326,
+        "duration" : 1647
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "951b8702fce792.json",
+  "parameterValues" : [ "chrome" ]
+}

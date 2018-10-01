@@ -1,0 +1,216 @@
+{
+  "uid" : "80de55874da4031e",
+  "name" : "test multimedia checkbox activeInfoDisplay",
+  "fullName" : "check of multimedia checkboxes.test multimedia checkbox activeInfoDisplay",
+  "historyId" : "e8bb57db48ea171503ba627a8cd2204c",
+  "time" : {
+    "start" : 1536681261600,
+    "stop" : 1536681262085,
+    "duration" : 485
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'ACTIVE INFO DISPLAY' to equal 'APP CONNECT'",
+  "statusTrace" : "AssertionError: expected 'ACTIVE INFO DISPLAY' to equal 'APP CONNECT'\n                    at optionName.forEach.name (C:/autotest/test/specs/carsAvailable/filter/interior/multimedia/check-multimedia-checkboxes.js:50:36)\n                    at Array.forEach (<anonymous>)\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/interior/multimedia/check-multimedia-checkboxes.js:49:24)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected 'ACTIVE INFO DISPLAY' to equal 'APP CONNECT'",
+    "statusTrace" : "AssertionError: expected 'ACTIVE INFO DISPLAY' to equal 'APP CONNECT'\n                    at optionName.forEach.name (C:/autotest/test/specs/carsAvailable/filter/interior/multimedia/check-multimedia-checkboxes.js:50:36)\n                    at Array.forEach (<anonymous>)\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/interior/multimedia/check-multimedia-checkboxes.js:49:24)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ {
+      "name" : "POST /wd/hub/session/69f18e4f75a2faf8c98ef8aad2b086a5/elements",
+      "time" : {
+        "start" : 1536681261614,
+        "stop" : 1536681261650,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "212364cca815138d",
+        "name" : "Request",
+        "source" : "212364cca815138d.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "8ee44eae169c8d24",
+        "name" : "Response",
+        "source" : "8ee44eae169c8d24.json",
+        "type" : "application/json",
+        "size" : 89
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/69f18e4f75a2faf8c98ef8aad2b086a5/element",
+      "time" : {
+        "start" : 1536681261661,
+        "stop" : 1536681261700,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "fa43a7b57a993124",
+        "name" : "Request",
+        "source" : "fa43a7b57a993124.json",
+        "type" : "application/json",
+        "size" : 124
+      }, {
+        "uid" : "575851aa01d11c59",
+        "name" : "Response",
+        "source" : "575851aa01d11c59.json",
+        "type" : "application/json",
+        "size" : 137
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/69f18e4f75a2faf8c98ef8aad2b086a5/element/0.08115559404532147-6/click",
+      "time" : {
+        "start" : 1536681261702,
+        "stop" : 1536681261884,
+        "duration" : 182
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "562761f6f7a632bf",
+        "name" : "Response",
+        "source" : "562761f6f7a632bf.json",
+        "type" : "application/json",
+        "size" : 91
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/69f18e4f75a2faf8c98ef8aad2b086a5/elements",
+      "time" : {
+        "start" : 1536681261898,
+        "stop" : 1536681261987,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9da2972ebb672c3d",
+        "name" : "Request",
+        "source" : "9da2972ebb672c3d.json",
+        "type" : "application/json",
+        "size" : 79
+      }, {
+        "uid" : "ffe1abbff970cabc",
+        "name" : "Response",
+        "source" : "ffe1abbff970cabc.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "POST /wd/hub/session/69f18e4f75a2faf8c98ef8aad2b086a5/elements",
+      "time" : {
+        "start" : 1536681261991,
+        "stop" : 1536681262025,
+        "duration" : 34
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "64a832b76fd6134d",
+        "name" : "Request",
+        "source" : "64a832b76fd6134d.json",
+        "type" : "application/json",
+        "size" : 86
+      }, {
+        "uid" : "6c6fe62d40af1ed1",
+        "name" : "Response",
+        "source" : "6c6fe62d40af1ed1.json",
+        "type" : "application/json",
+        "size" : 161
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "GET /wd/hub/session/69f18e4f75a2faf8c98ef8aad2b086a5/element/0.08115559404532147-8/text",
+      "time" : {
+        "start" : 1536681262031,
+        "stop" : 1536681262071,
+        "duration" : 40
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a8a06610b66d6c00",
+        "name" : "Response",
+        "source" : "a8a06610b66d6c00.json",
+        "type" : "application/json",
+        "size" : 108
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 10,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "testClass",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "testMethod",
+    "value" : "test multimedia checkbox activeInfoDisplay"
+  }, {
+    "name" : "package",
+    "value" : "check of multimedia checkboxes"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "80de55874da4031e.json",
+  "parameterValues" : [ "chrome" ]
+}
