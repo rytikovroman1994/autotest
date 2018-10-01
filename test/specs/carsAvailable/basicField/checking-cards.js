@@ -14,7 +14,7 @@ describe('checking-cards', () => {
             browser.waitForVisible(`${card} img`, 5000);
         }
         for( let i = 1; i <= numberOfCards - 4; i++) {
-            const card = `.avn001_display__enable-hover > div:nth-child(3) .grid_l_3:nth-child(${i})`;
+            const card = `.avn001_display__enable-hover > div:nth-child(2) .grid_l_3:nth-child(${i})`;
             browser.moveToObject(card, 0, 200);
             browser.waitForExist(card, 10000);
             browser.waitForVisible(`${card} img`, 5000);
