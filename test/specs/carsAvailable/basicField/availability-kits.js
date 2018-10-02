@@ -13,7 +13,7 @@ describe(' test availability of kits', () => {
             if(i > 2) {
                 browser.moveToObject('.slick-arrow.slick-next');
                 // двигаем слайдер
-                browser.leftClick('.slick-arrow.slick-next');
+                browser.click('.slick-arrow.slick-next');
             }
             // проверяем, что карточка существует
             browser.waitForVisible(selectorCards);
