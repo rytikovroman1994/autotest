@@ -6,9 +6,9 @@ describe('test dynamic light', () => {
     before(' open page light', () => {
         browser.helpers.openSite();
         // открываем страницу экстерьер
-        browser.click('#react-tabs-6');
+        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // открываем страницу свет
-        browser.click('#react-tabs-16');
+        browser.click('.avn008_filter__second-tab[data-name="Свет"]');
     });
 
      it('check checkbox dynamic light', () => {

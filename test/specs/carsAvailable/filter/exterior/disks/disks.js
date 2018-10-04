@@ -18,9 +18,9 @@ describe('test slider disks', () => {
     before('open page disks', () => {
         browser.helpers.openSite();
         // переходим на страницу экстерьер
-        browser.click('#react-tabs-6');
+        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // переходим на вкладку диски
-        browser.click('#react-tabs-14');
+        browser.click('.avn008_filter__second-tab[data-name="Диски"]');
         // ожидаем загрузки картинки дисков
         browser.waitForVisible('div:nth-child(2) > div > div.disc-item_image > img');
     });

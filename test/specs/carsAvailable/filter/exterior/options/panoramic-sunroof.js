@@ -6,9 +6,9 @@ describe('test dynamic sunroof', () => {
     before(' open page sunroof', () => {
         browser.helpers.openSite();
         // открываем страницу экстерьер
-        browser.click('#react-tabs-6');
+        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // открываем страницу свет
-        browser.click('#react-tabs-18');
+        browser.click('.avn008_filter__second-tab[data-name="Опции"]');
     });
 
      it('check checkbox dynamic sunroof', () => {
@@ -17,14 +17,14 @@ describe('test dynamic sunroof', () => {
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
         5000, "На странице уже есть одно условие фильтра");
         // включаем чекбокс
-        browser.click('div:nth-child(2) > div > div > div.avn008_option-check_checkbox-self ');
+        browser.click('.checkbox[data-name="Панорамный люк"]');
         // проверяем, что в фильтре появилось условие
         browser.waitForExist('.avn008_filter-value-item_image');
         // проверяем, что это именно фаркоп
         const text = browser.getText('.avn008_filter-value-item_text__bottom');
         expect(text).to.be.equal('ПАНОРАМНЫЙ ЛЮК');
         // убираем условие
-        browser.click('div:nth-child(2) > div > div > div.avn008_option-check_checkbox-self ');
+        browser.click('.checkbox[data-name="Панорамный люк"]');
         // проверяем, что условие пропало
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -33,7 +33,7 @@ describe('test dynamic sunroof', () => {
 
      it('check more in detail about dynamic light', () => {
         // открываем всплывающее окно
-        browser.click('div:nth-child(2) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Панорамный люк"]');
         // ждём появления картинки
         browser.waitForVisible('.avn015_content .image-container');
         // берём скриншот с локала

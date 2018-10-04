@@ -7,9 +7,9 @@ describe('screenshot page light', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу экстерьер
-        browser.click('#react-tabs-6');
+        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // переходим на вкладку свет
-        browser.click('#react-tabs-16');
+        browser.click('.avn008_filter__second-tab[data-name="Свет"]');
         // ожидаем загрузки картинки лампы
         browser.waitForVisible('.push_m_3 img');
     });

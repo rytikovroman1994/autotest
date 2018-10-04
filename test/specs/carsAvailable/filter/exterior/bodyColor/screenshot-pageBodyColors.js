@@ -7,7 +7,7 @@ describe('screenshot page body colors', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу цвет кузова
-        browser.click('#react-tabs-6');
+        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // ожидаём загрузки картинки
         browser.waitForVisible('.avn008_image-switcher_image');
     });

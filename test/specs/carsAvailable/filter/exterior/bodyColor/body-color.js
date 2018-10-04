@@ -18,7 +18,7 @@ describe('body-color', () => {
 
     // пеходим в раздел экстерьер-цвет кузова
     it('open page filter body color', () =>{
-        browser.click('#react-tabs-6');
+        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // ожидаем загрузки карртинки цвета капота
         browser.waitForVisible('.avn008_image-switcher_container');
         // получаем цвет капота на картинке

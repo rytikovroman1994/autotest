@@ -7,11 +7,11 @@ describe('screenshot page options', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу экстерьер
-        browser.click('#react-tabs-6');
+        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // переходим на вкладку опции
-        browser.click('#react-tabs-18');
-        // ожидаем загрузки картинки лампы
-        browser.waitForVisible('.avn015_image picture img');
+        browser.click('.avn008_filter__second-tab[data-name="Опции');
+        // ожидаем загрузки картинки тонировки
+        browser.waitForVisible('div:nth-child(5) > div > div > div.avn008_option-check_image img');
     });
 
     it('take screenshot page options', () => {
