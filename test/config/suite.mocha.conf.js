@@ -72,6 +72,12 @@ exports.config = {
     //
     maxInstances: 15,
 
+    seleniumArgs: {
+          javaArgs: [
+            `-Dwebdriver.edge.driver=${path.join(__dirname, './drivers/MicrosoftWebDriver.exe')}`,
+          ],
+        },
+
     capabilities: [
           // maxInstances can get overwritten per capability. So if you have an in-house Selenium
           // grid with only 5 firefox instance available you can make sure that not more than
@@ -107,6 +113,7 @@ exports.config = {
           //     browserName: 'internet explorer',
           //     platform: '',
           //     version: '',
+          //     seleniumProtocol: "iedriver",
           //     acceptUntrustedCertificates: true,
           //     ignoreProtectedModeSettings: true,    //only applicable to IE browser
           //     ignoreZoomSetting: true,              //only applicable to IE browser
