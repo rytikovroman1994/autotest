@@ -18,7 +18,7 @@ describe('engine-power', () => {
     // переходим на страницу бюджета
     it('page engine', () => {
         // кликаем по кнопке Бюджет
-        browser.click('#react-tabs-4');
+        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
 

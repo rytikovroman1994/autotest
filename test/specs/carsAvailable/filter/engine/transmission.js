@@ -6,7 +6,7 @@ describe('transmission', () => {
     // переходим на страницу двигателя
     it('page engine', () => {
         // кликаем по кнопке Бюджет
-        browser.click('#react-tabs-4');
+        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
     });
@@ -23,14 +23,14 @@ describe('transmission', () => {
     // проверяем работу чекбокса "Автоматическая"
     it('check checkboxes auto', () => {
         // нажимает на чекбокс 
-        browser.click('.prefix_l_1  label:nth-child(3)');
+        browser.click('.checkbox[data-name="Автоматическая"]');
         // проверяем что появился пункт в фильтре
         browser.waitForExist('.avn008_filter-value-item__with-image');
         // проверяем что это именно автоматическая
         expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('AT');
 
         // выключаем чекбокс 
-        browser.click('.prefix_l_1  label:nth-child(3)');
+        browser.click('.checkbox[data-name="Автоматическая"]');
         // проверяем что пункт фильтра пропал
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item__with-image') === false,
@@ -40,14 +40,14 @@ describe('transmission', () => {
     // проверяем работу чекбокса "Механическая"
     it('check checkboxes mech', () => {
         // нажимает на чекбокс 
-        browser.click('.prefix_l_1  label:nth-child(4)');
+        browser.click('.checkbox[data-name="Механическая"]');
         // проверяем что появился пункт в фильтре
         browser.waitForExist('.avn008_filter-value-item__with-image');
         // проверяем что это именно автоматическая
         expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('MT');
 
         // выключаем чекбокс 
-        browser.click('.prefix_l_1  label:nth-child(4)');
+        browser.click('.checkbox[data-name="Механическая"]');
         // проверяем что пункт фильтра пропал
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item__with-image') === false,
@@ -57,9 +57,9 @@ describe('transmission', () => {
     // проверяем работу сразу двух чекбоксов
     it('check checkboxes auto and mech', () => {
         // нажимает на чекбокс auto
-        browser.click('.prefix_l_1  label:nth-child(3)');
+        browser.click('.checkbox[data-name="Автоматическая"]');
         // нажимает на чекбокс mech
-        browser.click('.prefix_l_1  label:nth-child(4)');
+        browser.click('.checkbox[data-name="Механическая"]');
         // проверяем что появился пункт auto в фильтре
         browser.waitForExist('div:nth-child(1) > .avn008_filter-value-item__with-image');
         // проверяем что появился пункт mech в фильтре
@@ -70,9 +70,9 @@ describe('transmission', () => {
         expect(browser.getText('div:nth-child(2) > .avn008_filter-value-item__with-image')).to.be.equal('MT');
 
         // выключаем чекбокс auto
-        browser.click('.prefix_l_1  label:nth-child(3)');
+        browser.click('.checkbox[data-name="Автоматическая"]');
         // выключаем чекбокс mech
-        browser.click('.prefix_l_1  label:nth-child(4)');
+        browser.click('.checkbox[data-name="Механическая"]');
         // проверяем что пункт auto фильтра пропал
         browser.waitUntil(
             ()=> browser.isVisible('div:nth-child(1) > .avn008_filter-value-item__with-image') === false,

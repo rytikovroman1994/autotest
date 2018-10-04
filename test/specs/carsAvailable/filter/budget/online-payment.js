@@ -6,7 +6,7 @@ describe('online-payments', () => {
     // переходим на страницу бюджета
     it('page budget', () => {
         // кликаем по кнопке Бюджет
-        browser.click('#react-tabs-2');
+        browser.click('.avn008_filter__tab[data-name="Бюджет"]');
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
     });

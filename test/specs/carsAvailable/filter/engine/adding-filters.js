@@ -12,8 +12,8 @@ describe('transmission', () => {
 
     // переходим на страницу двигателя
     it('page engine', () => {
-        // кликаем по кнопке Бюджет
-        browser.click('#react-tabs-4');
+        // кликаем по кнопке Двигатель
+        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
     });
@@ -28,13 +28,13 @@ describe('transmission', () => {
     // добавляем фильтры
     it('add filters', () => {
         // добавляем фильтр
-        browser.click('div:nth-child(3) > div > label:nth-child(3)');
+        browser.click('.checkbox[data-name="Передний привод"]');
         // считаем количество фильтров
         newFilter = filter();
         // проверяем что колво фильтров увеличилось на 1
         expect(newFilter).to.be.equal(primaryFilter + 1);
         // добавляем ещё один фильтр
-        browser.click('div:nth-child(3) > div > label:nth-child(4)');
+        browser.click('.checkbox[data-name="Полный привод"]');
         // считаем количетсво фильтров
         newFilter = filter();
         // проверяем что колво фильров увеличилось на 2
@@ -44,13 +44,13 @@ describe('transmission', () => {
     // удаляем фильтры
     it('add filters', () => {
         // добавляем фильтр
-        browser.click('div:nth-child(3) > div > label:nth-child(3)');
+        browser.click('.checkbox[data-name="Передний привод"]');
         // считаем количество фильтров
         newFilter = filter();
         // проверяем что колво фильтров уменьшилось на 1
         expect(newFilter).to.be.equal(primaryFilter + 1);
         // добавляем ещё один фильтр
-        browser.click('div:nth-child(3) > div > label:nth-child(4)');
+        browser.click('.checkbox[data-name="Полный привод"]');
         // считаем количетсво фильтров
         newFilter = filter();
         // проверяем что колво фильров уменьшилось на 2

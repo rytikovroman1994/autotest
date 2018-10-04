@@ -22,8 +22,6 @@ describe('smoke screenshot test save', () => {
     it('filter-budget', () => {
         // переходим на страницу бюджет
         browser.click('#react-tabs-2');
-        // ожидаем загрузки елементов
-        browser.waitForVisible('.grid_l_8');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/mainFilterPages/budget.png');
         expect(screen).to.not.equal(null);
@@ -68,8 +66,8 @@ describe('smoke screenshot test save', () => {
         // переходим на страницу опции
         browser.click('#react-tabs-10');
         // ожидаем загрузки елементов
-        browser.waitForVisible('.avn008_option-check_image > img');
-        browser.waitForVisible('div:nth-child(7) > div > div > div.avn008_option-check_image > img');
+        browser.waitForVisible('.avn008_option-check_image img');
+        browser.waitForVisible('div:nth-child(7) > div > div > .avn008_option-check_image img');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/mainFilterPages/option.png');
         expect(screen).to.not.equal(null);

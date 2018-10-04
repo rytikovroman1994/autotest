@@ -7,7 +7,7 @@ describe('screenshot page body colors', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу двигатель
-        browser.click('#react-tabs-4');
+        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаём загрузки последней картинки
         browser.waitForExist('.grid_12.grid_s_4.grid_m_2 img');
     });

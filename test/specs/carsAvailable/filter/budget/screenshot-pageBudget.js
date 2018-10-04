@@ -7,9 +7,9 @@ describe('screenshot page body colors', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу бюджет
-        browser.click('#react-tabs-2');
+        browser.click('.avn008_filter__tab[data-name="Бюджет"]');
         // ожидаём загрузки бегунка
-        browser.waitForExist('.avn008_budget__slider-self');
+        browser.waitForExist('.rc-slider-step');
     });
 
     it('take screenshot page body color', () => {

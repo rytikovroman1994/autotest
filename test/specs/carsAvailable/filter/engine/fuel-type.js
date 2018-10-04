@@ -6,7 +6,7 @@ describe('fuel-type', () => {
     // переходим на страницу двигателя
     it('page engine', () => {
         // кликаем по кнопке Бюджет
-        browser.click('#react-tabs-4');
+        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
     });
@@ -23,14 +23,14 @@ describe('fuel-type', () => {
     // проверяем работу чекбокса "бензин"
     it('check checkboxes petrol', () => {
         // нажимает на чекбокс 
-        browser.click('.grid_m_2 > div > label:nth-child(3)');
+        browser.click('.checkbox[data-name="Бензин"]');
         // проверяем что появился пункт в фильтре
         browser.waitForExist('.avn008_filter-value-item__with-image');
         // проверяем что это именно автоматическая
         expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('БЕНЗИН');
 
         // выключаем чекбокс 
-        browser.click('.grid_m_2 > div > label:nth-child(3) ');
+        browser.click('.checkbox[data-name="Бензин"]');
         // проверяем что пункт фильтра пропал
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item__with-image') === false,
@@ -40,14 +40,14 @@ describe('fuel-type', () => {
     // проверяем работу чекбокса "Дизиль"
     it('check checkboxes diesel', () => {
         // нажимает на чекбокс 
-        browser.click('.grid_m_2 > div > label:nth-child(4) ');
+        browser.click('.checkbox[data-name="Дизель"]');
         // проверяем что появился пункт в фильтре
         browser.waitForExist('.avn008_filter-value-item__with-image');
         // проверяем что это именно автоматическая
         expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('ДИЗЕЛЬ');
 
         // выключаем чекбокс 
-        browser.click('.grid_m_2 > div > label:nth-child(4)');
+        browser.click('.checkbox[data-name="Дизель"]');
         // проверяем что пункт фильтра пропал
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item__with-image') === false,
@@ -57,9 +57,9 @@ describe('fuel-type', () => {
     // проверяем работу сразу двух чекбоксов
     it('check checkboxes petrol and diesel', () => {
         // нажимает на чекбокс auto
-        browser.click('.grid_m_2 > div > label:nth-child(3)');
+        browser.click('.checkbox[data-name="Бензин"]');
         // нажимает на чекбокс mech
-        browser.click('.grid_m_2 > div > label:nth-child(4)');
+        browser.click('.checkbox[data-name="Дизель"]');
         // проверяем что появился пункт auto в фильтре
         browser.waitForExist('div:nth-child(1) > .avn008_filter-value-item__with-image');
         // проверяем что появился пункт mech в фильтре
@@ -70,9 +70,9 @@ describe('fuel-type', () => {
         expect(browser.getText('div:nth-child(2) > .avn008_filter-value-item__with-image')).to.be.equal('ДИЗЕЛЬ');
 
         // выключаем чекбокс auto
-        browser.click('.grid_m_2 > div > label:nth-child(3)');
+        browser.click('.checkbox[data-name="Бензин"]');
         // выключаем чекбокс mech
-        browser.click('.grid_m_2 > div > label:nth-child(4)');
+        browser.click('.checkbox[data-name="Дизель"]');
         // проверяем что пункт auto фильтра пропал
         browser.waitUntil(
             ()=> browser.isVisible('div:nth-child(1) > .avn008_filter-value-item__with-image') === false,
