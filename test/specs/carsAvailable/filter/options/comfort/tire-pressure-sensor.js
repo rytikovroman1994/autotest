@@ -6,7 +6,7 @@ describe('test tire pressure sensor', () => {
     before(' open page options', () => {
         browser.helpers.openSite();
         // открываем страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // ожидаем появление последней картинки
         browser.waitForVisible('div:nth-child(7) .avn008_option-check_image img');
     });

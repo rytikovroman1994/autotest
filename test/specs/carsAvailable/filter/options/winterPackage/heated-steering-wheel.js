@@ -6,9 +6,9 @@ describe('test heated steering wheel', () => {
     before(' open page options', () => {
         browser.helpers.openSite();
         // открываем страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // открываем страницу зимний пакет
-        browser.click('#react-tabs-18');
+        browser.click('.avn008_filter__second-tab[data-name="Зимний пакет"]');
     });
 
      it('check checkbox heated steering wheel', () => {
@@ -17,14 +17,14 @@ describe('test heated steering wheel', () => {
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
         5000, "На странице уже есть одно условие фильтра");
         // включаем чекбокс
-        browser.click('div:nth-child(2) > div > div >.avn008_option-check_checkbox-self');
+        browser.click('.checkbox[data-name="Подогрев руля"]');
         // проверяем, что в фильтре появилось условие
         browser.waitForExist('.avn008_filter-value-item_image');
         // проверяем, что это именно фаркоп
         const text = browser.getText('.avn008_filter-value-item_text__bottom');
         expect(text).to.be.equal('ПОДОГРЕВ РУЛЯ');
         // убираем условие
-        browser.click('div:nth-child(2) > div > div >.avn008_option-check_checkbox-self');
+        browser.click('.checkbox[data-name="Подогрев руля"]');
         // проверяем, что условие пропало
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -33,7 +33,7 @@ describe('test heated steering wheel', () => {
 
      it('check more in detail heated steering wheel', () => {
         // открываем всплывающее окно
-        browser.click('div:nth-child(2) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Подогрев руля"]');
         // ждём появления картинки
         browser.waitForVisible('.avn015_content .image-container');
         // берём скриншот с локала

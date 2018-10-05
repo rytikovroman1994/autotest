@@ -7,9 +7,9 @@ describe('screenshot page assistanse', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // переходим на страницу асисистенты 
-        browser.click('#react-tabs-16');
+        browser.click('.avn008_filter__second-tab[data-name="Ассистенты"]');
         // ожидаем загрузки картинки асистенты парковки
         browser.waitForVisible('.avn008_option__slider-card-icon');
     });

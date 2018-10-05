@@ -6,9 +6,9 @@ describe('test side assist', () => {
     before(' open page options', () => {
         browser.helpers.openSite();
         // открываем страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // открываем страницу асистенты
-        browser.click('#react-tabs-16');
+        browser.click('.avn008_filter__second-tab[data-name="Ассистенты"]');
     });
 
      it('check checkbox side assist', () => {
@@ -17,16 +17,16 @@ describe('test side assist', () => {
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
         5000, "На странице уже есть одно условие фильтра");
         // перемещаем курсор к чекбоксу 
-        browser.moveToObject('div:nth-child(6) > div > div >.avn008_option-check_checkbox-self');
+        browser.moveToObject('.checkbox[data-name="Система Side Assist"]');
         // включаем чекбокс
-        browser.click('div:nth-child(6) > div > div >.avn008_option-check_checkbox-self');
+        browser.click('.checkbox[data-name="Система Side Assist"]');
         // проверяем, что в фильтре появилось условие
         browser.waitForExist('.avn008_filter-value-item');
         // проверяем, что это именно фаркоп
         const text = browser.getText('.avn008_filter-value-item_text__bottom');
         expect(text).to.be.equal('SIDE ASSIST');
         // убираем условие
-        browser.click('div:nth-child(6) > div > div >.avn008_option-check_checkbox-self');
+        browser.click('.checkbox[data-name="Система Side Assist"]');
         // проверяем, что условие пропало
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -35,9 +35,9 @@ describe('test side assist', () => {
 
      it('check more in detail side assist', () => {
         // перемещаем курсор к чекбоксу
-        browser.moveToObject('div:nth-child(6) > div > div > div.avn008_option-check_more'); 
+        browser.moveToObject('.avn008_option-check_more[data-name="checkbox%Система Side Assist'); 
         // открываем всплывающее окно
-        browser.click('div:nth-child(6) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Система Side Assist');
         // ждём появления картинки
         browser.waitForVisible('.avn015_content .image-container');
         // берём скриншот с локала

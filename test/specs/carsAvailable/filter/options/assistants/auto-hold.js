@@ -6,9 +6,9 @@ describe('test auto hold', () => {
     before(' open page options', () => {
         browser.helpers.openSite();
         // открываем страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // открываем страницу асистенты
-        browser.click('#react-tabs-16');
+        browser.click('.avn008_filter__second-tab[data-name="Ассистенты"]');
     });
 
      it('check checkbox auto hold', () => {
@@ -17,14 +17,14 @@ describe('test auto hold', () => {
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
         5000, "На странице уже есть одно условие фильтра");
         // включаем чекбокс
-        browser.click('div:nth-child(2) > div > div >.avn008_option-check_checkbox-self');
+        browser.click('.checkbox[data-name="Функция Auto-hold"]');
         // проверяем, что в фильтре появилось условие
         browser.waitForExist('.avn008_filter-value-item_image');
         // проверяем, что это именно фаркоп
         const text = browser.getText('.avn008_filter-value-item_text__bottom');
         expect(text).to.be.equal('ФУНКЦИЯ AUTO-HOLD');
         // убираем условие
-        browser.click('div:nth-child(2) > div > div >.avn008_option-check_checkbox-self');
+        browser.click('.checkbox[data-name="Функция Auto-hold"]');
         // проверяем, что условие пропало
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -33,7 +33,7 @@ describe('test auto hold', () => {
 
      it('check more in detail auto hold', () => {
         // открываем всплывающее окно
-        browser.click('div:nth-child(2) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Функция Auto-hold');
         // ждём появления картинки
         browser.waitForVisible('.avn015_content .image-container');
         // берём скриншот с локала

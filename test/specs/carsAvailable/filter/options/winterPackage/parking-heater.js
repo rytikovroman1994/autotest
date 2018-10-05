@@ -6,9 +6,9 @@ describe('test heated Parking heater', () => {
     before(' open page options', () => {
         browser.helpers.openSite();
         // открываем страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // открываем страницу зимний пакет
-        browser.click('#react-tabs-18');
+        browser.click('.avn008_filter__second-tab[data-name="Зимний пакет"]');
     });
 
      it('check checkbox heated Parking heater', () => {
@@ -17,16 +17,16 @@ describe('test heated Parking heater', () => {
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
         5000, "На странице уже есть одно условие фильтра");
         // двигаем курсор до кнопки
-        browser.moveToObject('div:nth-child(4) > div > div >.avn008_option-check_checkbox-self');
+        browser.moveToObject('.checkbox[data-name="Стояночный отопитель"]');
         // включаем чекбокс
-        browser.click('div:nth-child(4) > div > div >.avn008_option-check_checkbox-self');
+        browser.click('.checkbox[data-name="Стояночный отопитель"]');
         // проверяем, что в фильтре появилось условие
         browser.waitForExist('.avn008_filter-value-item_image');
         // проверяем, что это именно фаркоп
         const text = browser.getText('.avn008_filter-value-item_text__bottom');
         expect(text).to.be.equal('СТОЯНОЧНЫЙ ОТОПИТЕЛЬ');
         // убираем условие
-        browser.click('div:nth-child(4) > div > div >.avn008_option-check_checkbox-self');
+        browser.click('.checkbox[data-name="Стояночный отопитель"]');
         // проверяем, что условие пропало
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -34,9 +34,9 @@ describe('test heated Parking heater', () => {
      });
 
      it('check more in detail Parking heater', () => {
-        browser.moveToObject('div:nth-child(4) > div > div > div.avn008_option-check_more');
+        browser.moveToObject('.avn008_option-check_more[data-name="checkbox%Стояночный отопитель"]');
         // открываем всплывающее окно
-        browser.click('div:nth-child(4) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Стояночный отопитель"]');
         // ждём появления картинки
         browser.waitForVisible('.avn015_content .image-container');
         // берём скриншот с локала

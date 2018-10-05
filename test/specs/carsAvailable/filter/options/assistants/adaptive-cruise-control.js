@@ -6,9 +6,9 @@ describe('test adaptive cruise control', () => {
     before(' open page options', () => {
         browser.helpers.openSite();
         // открываем страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // открываем страницу асистенты
-        browser.click('#react-tabs-16');
+        browser.click('.avn008_filter__second-tab[data-name="Ассистенты"]');
     });
 
      it('check checkbox adaptive cruise control', () => {
@@ -17,14 +17,14 @@ describe('test adaptive cruise control', () => {
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
         5000, "На странице уже есть одно условие фильтра");
         // включаем чекбокс
-        browser.click('div:nth-child(1) > div > div >.avn008_option-check_checkbox-self');
+        browser.click('.checkbox[data-name="Адаптивный круиз-контроль"]');
         // проверяем, что в фильтре появилось условие
         browser.waitForExist('.avn008_filter-value-item_image');
         // проверяем, что это именно фаркоп
         const text = browser.getText('.avn008_filter-value-item_text__bottom');
         expect(text).to.be.equal('КРУИЗ-КОНТРОЛЬ');
         // убираем условие
-        browser.click('div:nth-child(1) > div > div >.avn008_option-check_checkbox-self');
+        browser.click('.checkbox[data-name="Адаптивный круиз-контроль"]');
         // проверяем, что условие пропало
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -33,7 +33,7 @@ describe('test adaptive cruise control', () => {
 
      it('check more in detail adaptive cruise control', () => {
         // открываем всплывающее окно
-        browser.click('div:nth-child(1) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Адаптивный круиз-контроль"]');
         // ждём появления картинки
         browser.waitForVisible('.avn015_content .image-container');
         // берём скриншот с локала

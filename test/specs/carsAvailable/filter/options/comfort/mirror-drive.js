@@ -6,7 +6,7 @@ describe('test mirror drive', () => {
     before(' open page options', () => {
         browser.helpers.openSite();
         // открываем страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // ожидаем появление последней картинки
         browser.waitForVisible('div:nth-child(7) .avn008_option-check_image img');
     });
@@ -17,14 +17,14 @@ describe('test mirror drive', () => {
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
         5000, "На странице уже есть одно условие фильтра");
         // включаем чекбокс
-        browser.click('div:nth-child(4) > div > div > div.avn008_option-check_checkbox-self > label');
+        browser.click('.checkbox[data-name="Электропривод зеркал заднего вида"]');
         // проверяем, что в фильтре появилось условие
         browser.waitForExist('.avn008_filter-value-item_image');
         // проверяем, что это именно фаркоп
         const text = browser.getText('.avn008_filter-value-item_text__bottom');
         expect(text).to.be.equal('ПРИВОД ЗЕРКАЛ');
         // убираем условие
-        browser.click('div:nth-child(4) > div > div > div.avn008_option-check_checkbox-self > label');
+        browser.click('.checkbox[data-name="Электропривод зеркал заднего вида"]');
         // проверяем, что условие пропало
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -33,7 +33,7 @@ describe('test mirror drive', () => {
 
      it('check more in detail about mirror drive', () => {
         // открываем всплывающее окно
-        browser.click('div:nth-child(4) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Электропривод зеркал заднего вида"]');
         // ждём появления картинки
         browser.waitForVisible('.avn015_content .image-container');
         // берём скриншот с локала
