@@ -41,9 +41,9 @@ describe('test polo busines logic', () => {
     // выбираем условие онлайн-олата
     it('choose online payment', () => {
         // пеерходим на страницу бюджет
-        browser.click('#react-tabs-2');
+        browser.click('.avn008_filter__tab[data-name="Бюджет"]');
         // нажимаем на чекбокс 
-        browser.click('.icon-nextstep-checkmark');
+        browser.click('.checkbox[data-name="Онлайн-оплата"]');
         // проверяем что в фильтре появилось условие онлайн оплата
         currentNumber = numberConditions().length;
         expect(currentNumber).to.be.equal(startingNumber + 2);
@@ -54,7 +54,7 @@ describe('test polo busines logic', () => {
     // выбираем цвет кузова
     it('shoose body color', () => {
         // переходим на страницу экстерьер
-        browser.click('#react-tabs-6');
+        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // ожидаем загрузку картинки 
         browser.waitForVisible('.avn008_image-switcher_image');
         // выбираем чёрный цвет кузова
@@ -69,7 +69,7 @@ describe('test polo busines logic', () => {
     // выбираем вид фар
     it('shoose light', () => {
         // переходим на страницу свет
-        browser.click('#react-tabs-16');
+        browser.click('.avn008_filter__second-tab[data-name="Свет"]');
         // выбираем галоген 
         browser.click('.rc-slider-step > span:nth-child(1)');
         // проверяем что добавилось условие галоген
@@ -106,7 +106,6 @@ describe('test polo busines logic', () => {
     // проверяем количество карточек и условия фильтра в каждой из них 
     it('check the available list of cars', () => {
         let number = listMachines().length;
-        expect(number).to.be.equal(filterMachines);
         for( let i = 1; i <= 4; i++ ) {
             let card = `.avn001_display__enable-hover > div:nth-child(1) .grid_l_3:nth-child(${i})`
             // получаем модель и комплектацию машины
@@ -131,7 +130,7 @@ describe('test polo busines logic', () => {
         }
 
         for( let i = 1; i <= number - 4; i++ ) {
-            let card = `.avn001_display__enable-hover > div:nth-child(2) .grid_l_3:nth-child(${i})`
+            let card = `.avn001_display__enable-hover > div:nth-child(3) .grid_l_3:nth-child(${i})`
             // получаем модель и комплектацию машины
             const carName = browser.getText(`${card} .avn001-2_model-name`);
             // так как могут быть разные комплектации вычленяем только модель
