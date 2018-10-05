@@ -8,13 +8,13 @@ describe('screenshots-exterior', () => {
     // скриншот фильтр - сиденья
     it('filter-seats', () => {
         // переходим на страницу интерьер
-        browser.click('#react-tabs-8');
+        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
         // ожидаем загрузки картинки сиденья
         browser.waitForVisible('.avn008_image-switcher_image');
         // открываем всплывающее окно подробнее
-        browser.click('.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Алькантара"]');
         // ждём загрузки картинки 
-        browser.waitForVisible('div.avn015_image > div > div.LazyLoad.is-visible > div > img')
+        browser.waitForVisible('.avn015_content .image-container');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/seats.png');
         expect(screen).to.not.equal(null);
@@ -25,8 +25,8 @@ describe('screenshots-exterior', () => {
     // скришот фильтр-руль
     it('filter-helm', () => {
         // переходим на страницу руль
-        browser.waitForExist('#react-tabs-14');
-        browser.click('#react-tabs-14');
+        browser.waitForExist('.avn008_filter__second-tab[data-name="Руль"]');
+        browser.click('.avn008_filter__second-tab[data-name="Руль"]');
         // ожидаем загрузки картинки руля
         browser.waitForVisible('.avn008_image-switcher_image');
         // делаем скриншот
@@ -37,9 +37,9 @@ describe('screenshots-exterior', () => {
     // скришот фильтр-климат
     it('filter-climate', () => {
         // переходим на страницу климат
-        browser.click('#react-tabs-16');
+        browser.click('.avn008_filter__second-tab[data-name="Климат"]');
         // ожидаем загрузки картинки фары
-        browser.waitForVisible('div.avn008_climate-images_main > div > div.LazyLoad.is-visible > div > img');
+        browser.waitForVisible('.grid_6.push_3 > div > div > div:nth-child(1)  img');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/climate.png');
         expect(screen).to.not.equal(null);
@@ -48,11 +48,11 @@ describe('screenshots-exterior', () => {
     // скриншот фильтр-мультимедия
     it('filter-dynamic', () => {
         // открываем страницу мультимедиа 
-        browser.click('#react-tabs-18');
+        browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
         // ожидаем загрузки картинки 
-        browser.waitForVisible('div:nth-child(6) > div > div > div.avn008_option-check_image > img');
+        browser.waitForVisible('div:nth-child(6) > div > div > .avn008_option-check_image img');
         // ожидаем загрузки картинки диагональ экрана
-        browser.waitForVisible('.avn008_option__slider > div > div.avn008_option__slider-card__image.multimedia > div > .LazyLoad.is-visible > div > img');
+        browser.waitForVisible('.avn008_option__slider-card__image');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/dynamic.png');
         expect(screen).to.not.equal(null);
@@ -61,9 +61,9 @@ describe('screenshots-exterior', () => {
     // скриншот фильтр-active info display
     it('filter-active info display', () => {
         // переходим на страницу active info display
-        browser.click('div:nth-child(1) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Active Info Display"]');
         // ожидаем загрузки картинки 
-        browser.waitForVisible('div.avn015_image > div > div.LazyLoad.is-visible > div > img');
+        browser.waitForVisible('.avn015_content .image-container');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/activeInfoDisplay.png');
         expect(screen).to.not.equal(null);
@@ -74,11 +74,11 @@ describe('screenshots-exterior', () => {
 
     // скриншот фильтр-app connect
     it('filter-app connect', () => {
-        browser.waitForVisible('div:nth-child(2) > div > div > div.avn008_option-check_more');
+        browser.waitForVisible('.avn008_option-check_more[data-name="checkbox%App Connect"]');
         // открываем подробнее app connect
-        browser.click('div:nth-child(2) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%App Connect"]');
         // ожидаем загрузки картинки 
-        browser.waitForVisible('div.avn015_image > div > div.LazyLoad.is-visible > div > img');
+        browser.waitForVisible('.avn015_content .image-container');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/appConnect.png');
         expect(screen).to.not.equal(null);
@@ -89,11 +89,11 @@ describe('screenshots-exterior', () => {
 
      // скриншот фильтр-bluetooth
      it('filter-bluetooth', () => {
-        browser.waitForVisible('div:nth-child(3) > div > div > div.avn008_option-check_more');
+        browser.waitForVisible('.avn008_option-check_more[data-name="checkbox%Bluetooth"]');
         // открываем подробнее bluetooth
-        browser.click('div:nth-child(3) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Bluetooth"]');
         // ожидаем загрузки картинки 
-        browser.waitForVisible('div.avn015_image > div > div.LazyLoad.is-visible > div > img');
+        browser.waitForVisible('.avn015_content .image-container');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/bluetooth.png');
         expect(screen).to.not.equal(null);
@@ -105,9 +105,9 @@ describe('screenshots-exterior', () => {
     // скриншот фильтр-навигация
     it('filter-navigation', () => {
         // открываем подробнее навигация
-        browser.click('div:nth-child(4) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Навигация"]');
         // ожидаем загрузки картинки 
-        browser.waitForVisible('div.avn015_image > div > div.LazyLoad.is-visible > div > img');
+        browser.waitForVisible('.avn015_content .image-container');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/navigation.png');
         expect(screen).to.not.equal(null);
@@ -118,11 +118,11 @@ describe('screenshots-exterior', () => {
 
     // скриншот фильтр-премиум аудио
     it('filter-premium audio', () => {
-        browser.waitForVisible('div:nth-child(5) > div > div > div.avn008_option-check_more');
+        browser.waitForVisible('.avn008_option-check_more[data-name="checkbox%Премиум Аудио"]');
         // открываем подробнее пакет отделки премиум аудио
-        browser.click('div:nth-child(5) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Премиум Аудио"]');
         // ожидаем загрузки картинки 
-        browser.waitForVisible('div.avn015_image > div > div.LazyLoad.is-visible > div > img');
+        browser.waitForVisible('.avn015_content .image-container');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/premiumAudio.png');
         expect(screen).to.not.equal(null);
@@ -133,11 +133,11 @@ describe('screenshots-exterior', () => {
 
     // скриншот фильтр-безпроводная зарядка
     it('filter-wireless charger', () => {
-        browser.waitForVisible('div:nth-child(6) > div > div > div.avn008_option-check_more');
+        browser.waitForVisible('.avn008_option-check_more[data-name="checkbox%Беспроводная зарядка"]');
         // открываем подробнее безпроводная зарядка
-        browser.click('div:nth-child(6) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Беспроводная зарядка"]');
         // ожидаем загрузки картинки 
-        browser.waitForVisible('div.avn015_image > div > div.LazyLoad.is-visible > div > img');
+        browser.waitForVisible('.avn015_content .image-container');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/wirelessСharger.png');
         expect(screen).to.not.equal(null);

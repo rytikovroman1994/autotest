@@ -21,7 +21,7 @@ describe('smoke screenshot test save', () => {
     // скришот фильтр-бюджет
     it('filter-budget', () => {
         // переходим на страницу бюджет
-        browser.click('#react-tabs-2');
+        browser.click('.avn008_filter__tab[data-name="Бюджет"]');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/mainFilterPages/budget.png');
         expect(screen).to.not.equal(null);
@@ -30,7 +30,7 @@ describe('smoke screenshot test save', () => {
     // скришот фильтр-двигатель
     it('filter-enhine', () => {
         // переходим на страницу двигатель
-        browser.click('#react-tabs-4');
+        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаем загрузки елементов
         browser.waitForVisible('.avn008_engine__card-image');
         // делаем скриншот
@@ -41,7 +41,7 @@ describe('smoke screenshot test save', () => {
     // скришот фильтр-экстерьер
     it('filter-exterior', () => {
         // переходим на страницу экстерьер
-        browser.click('#react-tabs-6');
+        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // ожидаем загрузки елементов
         browser.waitForVisible('.avn008_image-switcher_image');
         // делаем скриншот
@@ -52,7 +52,7 @@ describe('smoke screenshot test save', () => {
     // скришот фильтр-интерьер
     it('filter-interior', () => {
         // переходим на страницу интерьера
-        browser.click('#react-tabs-8');
+        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
         // ожидаем загрузки елементов
         browser.waitForVisible('.avn008_image-switcher_image');
         browser.pause(1000);
@@ -64,7 +64,7 @@ describe('smoke screenshot test save', () => {
     // скришот фильтр-опции
     it('filter-option', () => {
         // переходим на страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // ожидаем загрузки елементов
         browser.waitForVisible('.avn008_option-check_image img');
         browser.waitForVisible('div:nth-child(7) > div > div > .avn008_option-check_image img');
