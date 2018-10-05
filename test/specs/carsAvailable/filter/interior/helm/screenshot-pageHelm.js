@@ -7,9 +7,9 @@ describe('screenshot page seating', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу интерьер
-        browser.click('#react-tabs-8');
+        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
         // переходим на страницу руль 
-        browser.click('#react-tabs-14');
+        browser.click('.avn008_filter__second-tab[data-name="Руль"]');
         // ожидаем загрузки картинки руль
         browser.waitForVisible('.avn008_image-switcher_image');
     });

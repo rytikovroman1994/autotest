@@ -6,11 +6,11 @@ describe('test bluetooth', () => {
       before(' open page multimedia', () => {
         browser.helpers.openSite();
         // открываем страницу экстерьер
-        browser.click('#react-tabs-8');
+        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
         // ожидаем появление картинки кресла
         browser.waitForVisible('.avn008_image-switcher_image');
         // открываем страницу мульдимедиа
-        browser.click('#react-tabs-18');
+        browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
     });
 
      it('check checkbox bluetooth', () => {
@@ -19,14 +19,14 @@ describe('test bluetooth', () => {
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
         5000, "На странице уже есть одно условие фильтра");
         // включаем чекбокс
-        browser.click('div:nth-child(3) > div > div > div.avn008_option-check_checkbox-self > label');
+        browser.click('.checkbox[data-name="Bluetooth"]');
         // проверяем, что в фильтре появилось условие
         browser.waitForExist('.avn008_filter-value-item_image');
         // проверяем, что это именно фаркоп
         const text = browser.getText('.avn008_filter-value-item_text__bottom');
         expect(text).to.be.equal('BLUETOOTH');
         // убираем условие
-        browser.click('div:nth-child(3) > div > div > div.avn008_option-check_checkbox-self > label');
+        browser.click('.checkbox[data-name="Bluetooth"]');
         // проверяем, что условие пропало
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -35,7 +35,7 @@ describe('test bluetooth', () => {
 
      it('check more in detail about bluetooth', () => {
         // открываем всплывающее окно
-        browser.click('div:nth-child(3) > div > div > div.avn008_option-check_more');
+        browser.click('.avn008_option-check_more[data-name="checkbox%Bluetooth"]');
         // ждём появления картинки
         browser.waitForVisible('.avn015_content .image-container');
         // берём скриншот с локала

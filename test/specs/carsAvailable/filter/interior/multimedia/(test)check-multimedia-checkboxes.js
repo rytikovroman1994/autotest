@@ -24,11 +24,11 @@ describe('check of multimedia checkboxes', () => {
     before('open page multimedia', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьер
-        browser.click('#react-tabs-8');
+        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
         // ожидаем появление картинки кресла
         browser.waitForVisible('.avn008_image-switcher_image');
         // переходим на страницу мультимедиа 
-        browser.click('#react-tabs-18');
+        browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
         // ожидаем загрузки картинки диагональ экрана
         browser.waitForVisible('.multimedia img');
     });

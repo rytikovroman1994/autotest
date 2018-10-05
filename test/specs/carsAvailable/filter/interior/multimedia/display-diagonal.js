@@ -7,11 +7,11 @@ describe('test display diagonal', () => {
     before('open page multimedia', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьер
-        browser.click('#react-tabs-8');
+        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
         // ожидаем появление картинки кресла
         browser.waitForVisible('.avn008_image-switcher_image');
         // переходим на страницу мультимедиа 
-        browser.click('#react-tabs-18');
+        browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
         // ожидаем загрузки картинки диагональ экрана
         browser.waitForVisible('.multimedia img');
     });
@@ -35,8 +35,10 @@ describe('test display diagonal', () => {
             const getDiagonal =  browser.getText(`.avn008_multimedia__checkboxes label:nth-child(${i}) > span`);
             // избавляемся от ковычек
             let convertNumber = parseFloat(getDiagonal);
-            // проверяем, что в фильтре появилось условие
-            browser.waitForExist('.avn008_filter-value-item_image');
+            browser.waitUntil(
+                ()=> browser.isVisible('.avn008_filter-value-item_image') === true,
+                5000, `Кнопка диспелей ${convertNumber} дюймов не активна`);
+
             const text = browser.getText('.avn008_filter-value-item_text__bottom');
             expect(text).to.be.include(`ДИСПЛЕЙ ${convertNumber} ДЮЙМ`);
             // убираем условие

@@ -25,9 +25,9 @@ describe('test climate zones', () => {
     before('open page climate', () => {
         browser.helpers.openSite();
         // переходим в интерьер
-        browser.click('#react-tabs-8');
+        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
         // переходим в раздел климат
-        browser.click('.avn008_filter__second-tab-wrap li:nth-child(3)');
+        browser.click('.avn008_filter__second-tab[data-name="Климат"]');
         // ожидаем загрузки картинки
         browser.waitForVisible('.push_3 > div > div > div:nth-child(1) img');
     });

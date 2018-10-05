@@ -9,7 +9,7 @@ describe('test color seats', () => {
     before('open page seats', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьер
-        browser.click('#react-tabs-8');
+        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
         // ожидаем загрузки картинки сиденья
         browser.waitForVisible('.avn008_image-switcher_image');
     });
