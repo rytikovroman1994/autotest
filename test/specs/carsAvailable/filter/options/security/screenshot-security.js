@@ -7,9 +7,9 @@ describe('screenshot page security', () => {
     before(() => {
         browser.helpers.openSite();
         // открываем страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // переходим на страницу безопасность
-        browser.click('#react-tabs-14');
+        browser.click('.avn008_filter__second-tab[data-name="Безопасность"]');
         // ожидаем появление картинки 
         browser.waitForVisible('.avn008_safety-images_main img');
     });

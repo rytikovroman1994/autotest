@@ -1,18 +1,18 @@
 describe('test checkboxs page security', () => {
     const textList = [
-            'ЗАДНИЕ БОКОВЫЕ П.Б.',
+            'ЗАДНИЕ БОКОВЫЕ П. Б.',
             'ШТОРКИ Б/П',
-            'ФРОНТАЛЬНЫЕ П.Б.',
-            'ПЕРЕДНИЕ БОКОВЫЕ П.Б.',
+            'ФРОНТАЛЬНЫЕ П. Б.',
+            'ПЕРЕДНИЕ БОКОВЫЕ П. Б.',
             'Б/П КОЛЕНЕЙ'
     ]
 
     before('open page secutity', () => {
         browser.helpers.openSite();
         // переходим на страницу опции
-        browser.click('#react-tabs-10');
+        browser.click('.avn008_filter__tab[data-name="Опции"]');
         // переходим в вкладку безопастность 
-        browser.click('#react-tabs-14');
+        browser.click('.avn008_filter__second-tab[data-name="Безопасность"]');
         // ожидаем загрузку картинки
         browser.waitForVisible('.avn008_safety-images_main img');
     });
