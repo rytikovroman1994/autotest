@@ -50,7 +50,7 @@ describe('screenshots-exterior', () => {
         // открываем страницу мультимедиа 
         browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
         // ожидаем загрузки картинки 
-        browser.waitForVisible('div:nth-child(6) > div > div > .avn008_option-check_image img');
+        browser.waitForVisible('.image-container > img');
         // ожидаем загрузки картинки диагональ экрана
         browser.waitForVisible('.avn008_option__slider-card__image');
         // делаем скриншот
