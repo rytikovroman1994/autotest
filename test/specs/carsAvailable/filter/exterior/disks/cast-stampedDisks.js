@@ -13,7 +13,7 @@ describe('test cast stamped disks', () => {
         // выбираем литые дички
         browser.click('div:nth-child(1) > div > div.disc-item_image > img');
         // проверяем что появилось условие в фильтре
-        browser.waitForExist('.avn008_filter-value-item_image > img');
+        browser.waitForExist('.avn008_filter-value-item');
         // проверяем что это именно литые
         const text = browser.getText('.avn008_filter-value-item_text__bottom');
         expect(text).to.be.equal('ЛИТЫЕ ДИСКИ');
@@ -23,7 +23,7 @@ describe('test cast stamped disks', () => {
         // выбираем штампованные дички
         browser.click('div:nth-child(2) > div > div.disc-item_image > img');
         // проверяем что появилось условие в фильтре
-        browser.waitForExist('.avn008_filter-value-item_image > img');
+        browser.waitForExist('.avn008_filter-value-item');
         // проверяем что это именно литые
         const text = browser.getText('.avn008_filter-value-item_text__bottom');
         expect(text).to.be.equal('ШТАМПОВАНЫЕ ДИСКИ');
