@@ -6,8 +6,8 @@ describe('test slider in page winter package', () => {
     ];
     // список название подогрева сидений в фильтре 
     const listFilter = [
-        'Подогрев пер. сидений',
-        'Подогрев зад. сидений'
+        'Подогрев зад. сидений',
+        'Подогрев пер. сидений'
     ];
 
     before('open page filter', () => {
