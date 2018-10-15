@@ -11,62 +11,17 @@ describe('test materials', () => {
 
     // проверяем чекбокс кожа
     it('check checkbox materials leather', () => {
-        // проверяем что фильтр пуст
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
-        // включаем чекбокс
-        browser.click('.checkbox[data-name="Кожа"]');
-        // проверяем, что в фильтре появилось условие
-        browser.waitForExist('.avn008_filter-value-item_image');
-        const text = browser.getText('.avn008_filter-value-item_text__bottom');
-        expect(text).to.be.equal('КОЖАНЫЙ САЛОН');
-        // убираем условие
-        browser.click('.checkbox[data-name="Кожа"]');
-        // проверяем, что условие пропало
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
+        browser.helpers.checkCheckbox('Кожа', 'КОЖАНЫЙ САЛОН');
     });
 
     // проверяем чекбокс ткань
     it('check checkbox materials cloth', () => {
-        // проверяем что фильтр пуст
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
-        // включаем чекбокс
-        browser.click('.checkbox[data-name="Ткань"]');
-        // проверяем, что в фильтре появилось условие
-        browser.waitForExist('.avn008_filter-value-item_image');
-        const text = browser.getText('.avn008_filter-value-item_text__bottom');
-        expect(text).to.be.equal('ТКАНЕВЫЙ САЛОН');
-        // убираем условие
-        browser.click('.checkbox[data-name="Ткань"]');
-        // проверяем, что условие пропало
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
+        browser.helpers.checkCheckbox('Ткань', 'ТКАНЕВЫЙ САЛОН');
     });
 
     // проверяем чекбокс алькантара
     it('check checkbox materials Alcantara', () => {
-        // проверяем что фильтр пуст
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
-        // включаем чекбокс
-        browser.click('.checkbox[data-name="Алькантара"]');
-        // проверяем, что в фильтре появилось условие
-        browser.waitForExist('.avn008_filter-value-item_image');
-        const text = browser.getText('.avn008_filter-value-item_text__bottom');
-        expect(text).to.be.equal('САЛОН АЛЬКАНТАРА');
-        // убираем условие
-        browser.click('.checkbox[data-name="Алькантара"]');
-        // проверяем, что условие пропало
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
+        browser.helpers.checkCheckbox('Алькантара', 'САЛОН АЛЬКАНТАРА');
     });
     // проверяем псплывающее окно скриншотом
     it('check more in detail about dynamic light', () => {
