@@ -4,8 +4,7 @@ export default function openSite() {
     // переходим на страницу
     browser.url('https://vw.kodix.ru');
     // открываем фильтр
-    const firstFilter = browser.waitForVisible('form .avn008_filter', 60000);
-    if(firstFilter === false) {
+    while(browser.isVisible('.avn008_model_align-center-vertical') === false) {
         browser.click('#prompt-toggler_filter');
     }
 }
