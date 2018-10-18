@@ -28,7 +28,8 @@ describe('test histories in comparison', () => {
 
             // приравниваем текущие число машин к начальному 
             initialNumber = currentNumber;
-
+            // ожидаем появления текста 
+            browser.waitForVisible(`.avn001_display div:nth-child(1) > div > div > div:nth-child(${i}) > div > div > div > div:nth-child(2) .avn001-2_main.base-typo > h5`);
             // получаем имя автомобиля
             const nameCar = browser.getText(`.avn001_display div:nth-child(1) > div > div > div:nth-child(${i}) > div > div > div > div:nth-child(2) .avn001-2_main.base-typo > h5`);
             
@@ -61,6 +62,8 @@ describe('test histories in comparison', () => {
         // сравниваем с количеством в списке
         expect(numberCarComparison).to.be.equal(initialNumber);
 
+        // ожидаем загрузки последней картинки автомобиля
+        browser.waitForVisible('div:nth-child(4) .avn006-1_head-cell__image img');
         // получаем имена автомобилей на странице сравления 
         const listNameComparison = browser.getText('.avn006-1_head-cell__text a');
 
