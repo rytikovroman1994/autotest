@@ -9,8 +9,8 @@ describe('test Rear View Camera', () => {
         browser.helpers.openSite();
         // открываем страницу опции
         browser.click('.avn008_filter__tab[data-name="Опции"]');
-        // ожидаем появление последней картинки
-        browser.waitForVisible('div:nth-child(7) .avn008_option-check_image img');
+        // ожидаем загрузки послденей картинки
+        browser.waitForVisible('.avn008_option-check_image[data-name="Камера заднего вида"] img');
     });
 
      it(`Check checkbox ${conditions}`, () => {
@@ -19,12 +19,8 @@ describe('test Rear View Camera', () => {
      });
 
      it(`Check more in detail about ${conditions}`, () => {
-        // двигаем курсор к кнопке
-        browser.moveToObject('div:nth-child(6) > div > div > div.avn008_option-check_more', 5, 5);
-        // открываем всплывающее окно
-        browser.click(`.avn008_option-check_more[data-name="checkbox%${conditions}"]`);
-        // ждём появления картинки
-        browser.waitForVisible('.avn015_content .image-container');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
         ctx.originalScreenshot = 'snapshot/screenshotOption/rearViewCamera.png';
         // делаем актуальный скриншот

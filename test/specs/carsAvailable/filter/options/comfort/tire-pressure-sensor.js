@@ -7,8 +7,8 @@ describe('test tire pressure sensor', () => {
         browser.helpers.openSite();
         // открываем страницу опции
         browser.click('.avn008_filter__tab[data-name="Опции"]');
-        // ожидаем появление последней картинки
-        browser.waitForVisible('div:nth-child(7) .avn008_option-check_image img');
+        // ожидаем загрузки послденей картинки
+        browser.waitForVisible('.avn008_option-check_image[data-name="Камера заднего вида"] img');
     });
 
      it('check checkbox tire pressure sensor', () => {
@@ -32,12 +32,8 @@ describe('test tire pressure sensor', () => {
      });
 
      it('check more in detail about tire pressure sensor', () => {
-        // двигаем курсор к кнопке
-        browser.moveToObject('div:nth-child(7) > div > div > div.avn008_option-check_more', 5, 5);
-        // открываем всплывающее окно
-        browser.click('div:nth-child(7) > div > div > div.avn008_option-check_more');
-        // ждём появления картинки
-        browser.waitForVisible('.avn015_content .image-container');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
         ctx.originalScreenshot = 'snapshot/screenshotOption/pressureMeter.png';
         // делаем актуальный скриншот
