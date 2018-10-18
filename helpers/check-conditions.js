@@ -26,11 +26,11 @@ export default function checkConditions(filterCondition, conditionDetail) {
         () => browser.isVisible('.avn008_overlay_bar_warning__btn .btn[role="button"]') === false,
         5000, "Кнопка Показать не активна");
     // проверяем, что активная кнопка "Показать" отображается на странице   
-    browser.waitForVisible('.avn008_overlay_submit-block_btn .btn[role="button"]');
+    browser.waitForVisible('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
     // наводимся на данную кнопку
-    browser.moveToObject('.avn008_overlay_submit-block_btn .btn[role="button"]');
+    browser.moveToObject('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
     // кликаем по данной кнопке 
-    browser.click('.avn008_overlay_submit-block_btn .btn[role="button"]');
+    browser.click('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
 
     // ожидаем пока перерендерица список карточек
     browser.pause(2000);
