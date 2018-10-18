@@ -27,6 +27,8 @@ export default function checkConditions(filterCondition, conditionDetail) {
         5000, "Кнопка Показать не активна");
     // проверяем, что активная кнопка "Показать" отображается на странице   
     browser.waitForVisible('.avn008_overlay_submit-block_btn .btn[role="button"]');
+    // наводимся на данную кнопку
+    browser.moveToObject('.avn008_overlay_submit-block_btn .btn[role="button"]');
     // кликаем по данной кнопке 
     browser.click('.avn008_overlay_submit-block_btn .btn[role="button"]');
 
