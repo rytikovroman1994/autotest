@@ -10,82 +10,56 @@ describe('test material and options', () => {
     })
 
     // проверяем чекбокс материал-кожа
-    it('material leather', () => {
-        // проверяем что фильтр пуст
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
-        // включаем чекбокс
-        browser.click('.checkbox[data-name="Кожа"]');
-        // проверяем, что в фильтре появилось условие
-        browser.waitForExist('.avn008_filter-value-item_image');
-        const text = browser.getText('.avn008_filter-value-item_text__bottom');
-        expect(text).to.be.equal('КОЖАНЫЙ РУЛЬ');
-        // убираем условие
-        browser.click('.checkbox[data-name="Кожа"]');
-        // проверяем, что условие пропало
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
+    it('Material leather', () => {
+        browser.helpers.checkCheckbox('Кожа', 'КОЖАНЫЙ РУЛЬ');
+    });
+
+    // проверяем, что условие появилось в деталке машины
+    it('Check the equipment in detail Кожанный руль', () => {
+        const newArray = browser.helpers.checkConditions('Кожа', 'Кожаный руль');
+        // проверяем
+        expect(newArray).to.be.equal('Кожаный руль');
+
+        // выходим из деталки 
+        browser.helpers.fromDetailToFilter('Интерьер', 'Кожа', 'Руль');
     });
 
     // проверяем чекбокс опции- подогрев
-    it('options heating', () => {
-        // проверяем что фильтр пуст
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
-        // включаем чекбокс
-        browser.click('.checkbox[data-name="Подогрев"]');
-        // проверяем, что в фильтре появилось условие
-        browser.waitForExist('.avn008_filter-value-item_image');
-        const text = browser.getText('.avn008_filter-value-item_text__bottom');
-        expect(text).to.be.equal('ПОДОГРЕВ');
-        // убираем условие
-        browser.click('.checkbox[data-name="Подогрев"]');
-        // проверяем, что условие пропало
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
+    it('Options heating', () => {
+        browser.helpers.checkCheckbox('Подогрев', 'ПОДОГРЕВ');
+    });
+
+    it('Check the equipment in detail Подогрев', () => {
+        const newArray = browser.helpers.checkConditions('Подогрев', 'Подогрев руля');
+        // проверяем
+        expect(newArray).to.be.equal('Подогрев руля');
+
+        // выходим из деталки 
+        browser.helpers.fromDetailToFilter('Интерьер', 'Подогрев', 'Руль');
     });
 
     // проверяем чекбокс опции-мультируль
-    it('options multi-wheel', () => {
-        // проверяем что фильтр пуст
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
-        // включаем чекбокс
-        browser.click('.checkbox[data-name="Мультируль"]');
-        // проверяем, что в фильтре появилось условие
-        browser.waitForExist('.avn008_filter-value-item_image');
-        const text = browser.getText('.avn008_filter-value-item_text__bottom');
-        expect(text).to.be.equal('МУЛЬТИРУЛЬ');
-        // убираем условие
-        browser.click('.checkbox[data-name="Мультируль"]');
-        // проверяем, что условие пропало
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
+    it('Options multi-wheel', () => {
+        browser.helpers.checkCheckbox('Мультируль', 'МУЛЬТИРУЛЬ');
+    });
+
+    it('Check the equipment in detail Мультируль', () => {
+        const newArray = browser.helpers.checkConditions('Мультируль', 'Мультируль');
+        // проверяем
+        expect(newArray).to.be.equal('Мультируль');
+
+        // выходим из деталки 
+        browser.helpers.fromDetailToFilter('Интерьер', 'Мультируль', 'Руль');
     });
 
     // проверыем чекбокс опции-подрулеые лепестки 
-    it('options  paddle-operated gearbox', () => {
-        // проверяем что фильтр пуст
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
-        // включаем чекбокс
-        browser.click('.checkbox[data-name="Подрулевые лепестки"]');
-        // проверяем, что в фильтре появилось условие
-        browser.waitForExist('.avn008_filter-value-item_image');
-        const text = browser.getText('.avn008_filter-value-item_text__bottom');
-        expect(text).to.be.equal('ПОДРУЛЕВЫЕ ЛЕПЕСТКИ');
-        // убираем условие
-        browser.click('.checkbox[data-name="Подрулевые лепестки"]');
-        // проверяем, что условие пропало
-        browser.waitUntil(
-            ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
-        5000, "На странице уже есть одно условие фильтра");
+    it('Options  paddle-operated gearbox', () => {
+        browser.helpers.checkCheckbox('Подрулевые лепестки', 'ПОДРУЛЕВЫЕ ЛЕПЕСТКИ');
+    });
+
+    it('Check the equipment in detail Подрулевые лепестки', () => {
+        const newArray = browser.helpers.checkConditions('Подрулевые лепестки', 'Подрулевые лепестки');
+        // проверяем
+        expect(newArray).to.be.equal('Подрулевые лепестки');
     });
 });
