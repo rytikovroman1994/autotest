@@ -21,10 +21,8 @@ describe('test navigaton', () => {
      });
 
      it(`Check more in detail about ${conditions}`, () => {
-        // открываем всплывающее окно
-        browser.click(`.avn008_option-check_more[data-name="checkbox%${conditions}"]`);
-        // ждём появления картинки
-        browser.waitForVisible('.avn015_content .image-container');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
         ctx.originalScreenshot = 'snapshot/screenshotInterior/navigation.png';
         // делаем актуальный скриншот
