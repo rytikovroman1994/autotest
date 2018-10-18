@@ -11,6 +11,8 @@ describe('test dynamic light', () => {
         browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // открываем страницу свет
         browser.click('.avn008_filter__second-tab[data-name="Опции');
+        // ожидаем загрузки послденей картинки
+        browser.waitForVisible('.avn008_option-check_image[data-name="Тонировка"] img');
     });
 
      it(`Check checkbox ${conditions}`, () => {
@@ -19,10 +21,8 @@ describe('test dynamic light', () => {
      });
 
      it(`Check more in detail about ${conditions}`, () => {
-        // открываем всплывающее окно
-        browser.click(`.avn008_option-check_more[data-name="checkbox%${conditions}"]`);
-        // ждём появления картинки
-        browser.waitForVisible('.avn015_content .image-container');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
         ctx.originalScreenshot = 'snapshot/screenshotExterior/toning.png';
         // делаем актуальный скриншот
