@@ -11,6 +11,8 @@ describe('test adaptive cruise control', () => {
         browser.click('.avn008_filter__tab[data-name="Опции"]');
         // открываем страницу асистенты
         browser.click('.avn008_filter__second-tab[data-name="Ассистенты"]');
+        // ожидаем загрузки послденей картинки
+        browser.waitForVisible('.avn008_option-check_image[data-name="Система Side Assist"] img');
     });
 
      it(`Check checkbox ${conditions}`, () => {
@@ -19,10 +21,8 @@ describe('test adaptive cruise control', () => {
      });
 
      it(`Check more in detail ${conditions}`, () => {
-        // открываем всплывающее окно
-        browser.click(`.avn008_option-check_more[data-name="checkbox%${conditions}"]`);
-        // ждём появления картинки
-        browser.waitForVisible('.avn015_content .image-container img');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
         ctx.originalScreenshot = 'snapshot/screenshotOption/cruiseControl.png';
         // делаем актуальный скриншот

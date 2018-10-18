@@ -11,6 +11,8 @@ describe('test light assist', () => {
         browser.click('.avn008_filter__tab[data-name="Опции"]');
         // открываем страницу асистенты
         browser.click('.avn008_filter__second-tab[data-name="Ассистенты"]');
+        // ожидаем загрузки послденей картинки
+        browser.waitForVisible('.avn008_option-check_image[data-name="Система Side Assist"] img');
     });
 
      it(`Check checkbox ${conditions}`, () => {
@@ -19,12 +21,8 @@ describe('test light assist', () => {
      });
 
      it(`Check more in detail ${conditions}`, () => {
-        // перемещаем курсор к чекбоксу
-        browser.moveToObject(`.avn008_option-check_more[data-name="checkbox%${conditions}`); 
-        // открываем всплывающее окно
-        browser.click(`.avn008_option-check_more[data-name="checkbox%${conditions}`);
-        // ждём появления картинки
-        browser.waitForVisible('.avn015_content .image-container');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
         ctx.originalScreenshot = 'snapshot/screenshotOption/lightAssist.png';
         // делаем актуальный скриншот

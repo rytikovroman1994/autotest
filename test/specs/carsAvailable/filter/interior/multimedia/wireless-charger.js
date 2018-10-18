@@ -13,6 +13,8 @@ describe('test wireless charger', () => {
         browser.waitForVisible('.avn008_image-switcher_image');
         // открываем страницу мульдимедиа
         browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
+        // ожидаем загрузки послденей картинки
+        browser.waitForVisible('.avn008_option-check_image[data-name="Беспроводная зарядка"] img');
     });
 
      it(`Check checkbox ${conditions}`, () => {
