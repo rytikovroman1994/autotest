@@ -11,6 +11,8 @@ describe('test heated heated windscreen', () => {
         browser.click('.avn008_filter__tab[data-name="Опции"]');
         // открываем страницу зимний пакет
         browser.click('.avn008_filter__second-tab[data-name="Зимний пакет"]');
+        // ожидаем загрузки послденей картинки
+        browser.waitForVisible('.avn008_option__slider-card-icon');
     });
 
      it(`Check checkbox ${conditions}`, () => {
@@ -19,10 +21,8 @@ describe('test heated heated windscreen', () => {
      });
 
      it(`Check more in detail ${conditions}`, () => {
-        // открываем всплывающее окно
-        browser.click(`.avn008_option-check_more[data-name="checkbox%${conditions}"]`);
-        // ждём появления картинки
-        browser.waitForVisible('.avn015_content .image-container');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
         ctx.originalScreenshot = 'snapshot/screenshotOption/heatedWindshield.png';
         // делаем актуальный скриншот
