@@ -30,7 +30,7 @@ export default function checkConditions(filterCondition, conditionDetail) {
     // наводимся на данную кнопку
     browser.moveToObject('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
     // кликаем по данной кнопке 
-    browser.leftClick('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
+    browser.doubleClick('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
 
     // ожидаем пока перерендерица список карточек
     browser.pause(2000);
