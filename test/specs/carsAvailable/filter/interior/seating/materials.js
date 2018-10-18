@@ -1,4 +1,6 @@
 describe('test materials', () => {
+    // выносим часто используемое название условия комплектации
+    let conditions = 'Алькантара';
     const ctx = {
         originalScreenshot: null,
         newScreenshot: null,
@@ -21,14 +23,12 @@ describe('test materials', () => {
 
     // проверяем чекбокс алькантара
     it('check checkbox materials Alcantara', () => {
-        browser.helpers.checkCheckbox('Алькантара', 'САЛОН АЛЬКАНТАРА');
+        browser.helpers.checkCheckbox(conditions, 'САЛОН АЛЬКАНТАРА');
     });
     // проверяем псплывающее окно скриншотом
     it('check more in detail about dynamic light', () => {
-        // открываем всплывающее окно
-        browser.click('.avn008_option-check_more[data-name="checkbox%Алькантара"]');
-        // ждём появления картинки
-        browser.waitForVisible('.avn015_content .image-container');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
         ctx.originalScreenshot = 'snapshot/screenshotInterior/seats.png';
         // делаем актуальный скриншот
@@ -41,5 +41,12 @@ describe('test materials', () => {
     
         const distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
         expect(distance).to.be.below(0.1);
+      });
+
+      // проверяем, что условие появилось в деталке машины
+      it('Check the equipment in detail', () => {
+        const newArray = browser.helpers.checkConditions(conditions, 'Салон Алькантара');
+        // проверяем
+        expect(newArray).to.be.equal('Салон Алькантара');
       });
 });
