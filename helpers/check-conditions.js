@@ -1,6 +1,6 @@
 /**
  * @memberOf Helpers
- * @function slider
+ * @function checkConditions
  * @param {string} filterCondition - дата атрибут конткретного элемента комплектации
  * @param {string} conditionDetail - title условия в деталке
  * @example

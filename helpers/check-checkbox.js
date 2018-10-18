@@ -1,6 +1,6 @@
 /**
  * @memberOf Helpers
- * @function slider
+ * @function checkCheckbox
  * @param {string} conditions - дата атрибут конткретного элемента комплектации
  * @param {string} conditionsFilter - title условия в фильтре
  * @example
