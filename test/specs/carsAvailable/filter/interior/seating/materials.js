@@ -16,6 +16,16 @@ describe('test materials', () => {
         browser.helpers.checkCheckbox('Кожа', 'КОЖАНЫЙ САЛОН');
     });
 
+    // проверяем, что условие появилось в деталке машины
+    it('Check the equipment in detail Кожа', () => {
+        const newArray = browser.helpers.checkConditions('Кожа', 'Кожаные сидения');
+        // проверяем
+        expect(newArray).to.be.equal('Кожаные сидения');
+
+        // выходим из деталки 
+        browser.helpers.fromDetailToFilter('Интерьер', 'Кожа');
+    });
+
     // проверяем чекбокс ткань
     it('check checkbox materials cloth', () => {
         browser.helpers.checkCheckbox('Ткань', 'ТКАНЕВЫЙ САЛОН');
