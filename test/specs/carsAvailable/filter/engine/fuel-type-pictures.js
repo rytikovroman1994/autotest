@@ -20,17 +20,19 @@ describe('test fuel type in pictures', () => {
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         browser.pause(2000);
         // проверяем, что в карточке есть условие TDI
-        const getView = browser.getText('div:nth-child(1) > div > div > div:nth-child(1) > div > div > div > div:nth-child(3) > div > div > div:nth-child(1) > div > div > div:nth-child(1)');
+        const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_specs-item[data-type="catalogue_item_specs_engine"]');
         expect(getView).to.be.include('TDI');
     });
 
-    // переъодим обратно в фильтр
-    it('open filter', () => {
+    // переходим обратно в фильтр
+    it('Open filter', () => {
         browser.click('#prompt-toggler_filter');
         // переходим на страницу двигатель 
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // отключаем условие автоматической трансмисии
         browser.click('.checkbox[data-name="Дизель"]');
+        // переносим курсор к кнопке
+        browser.moveToObject('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         browser.click('#prompt-toggler_filter');
@@ -52,7 +54,7 @@ describe('test fuel type in pictures', () => {
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         // проверяем, что в карточке есть условие MPI
-        const getView = browser.getText('div:nth-child(1) > div > div > div:nth-child(1) > div > div > div > div:nth-child(3) > div > div > div:nth-child(1) > div > div > div:nth-child(1)');
+        const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_specs-item[data-type="catalogue_item_specs_engine"]');
         expect(getView).to.be.include('MPI');
     });
 });

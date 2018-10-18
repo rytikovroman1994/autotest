@@ -19,7 +19,7 @@ describe('test drive unit in pictures', () => {
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         // проверяем, что в карточке есть условие АКП
-        const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) > div > div > div > div:nth-child(3) > div > div > div:nth-child(1) > div > div > div:nth-child(3) > div.avn001-2_specs-item_text');
+        const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_specs-item[data-type="catalogue_item_specs_drive"]');
         expect(getView).to.be.include('FWD');
     });
 
@@ -48,11 +48,13 @@ describe('test drive unit in pictures', () => {
 
         // проверяем, что кнопка "Показать" активна
         browser.waitForVisible('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+        // наводим курсор на данную кнопку
+        browser.moveToObject('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         browser.pause(2000);
         // проверяем, что в карточке есть условие АКП
-        const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) > div > div > div > div:nth-child(3) > div > div > div:nth-child(1) > div > div > div:nth-child(3) > div.avn001-2_specs-item_text');
+        const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_specs-item[data-type="catalogue_item_specs_drive"]');
         expect(getView).to.be.include('4WD');
     });
 });
