@@ -28,14 +28,14 @@ export default function checkConditions(filterCondition, conditionDetail) {
     // проверяем, что активная кнопка "Показать" отображается на странице   
     browser.waitForVisible('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
     // наводимся на данную кнопку
-    browser.moveToObject('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
+    // browser.moveToObject('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
     // кликаем по данной кнопке 
-    browser.doubleClick('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
+    browser.click('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
 
     // ожидаем пока перерендерица список карточек
     browser.pause(2000);
     // кликаем на рандомную карточку
-    browser.leftClick('.avn001-2_content .gridcontainer', 10, 10);
+    browser.click('#root > div > div:nth-child(5) > main > div:nth-child(3) > div > div > div.avn001_display.avn001_display__view-tiles.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) > div > div > div > div:nth-child(1) > a > div > div > div > div > div:nth-child(1) > div > img');
 
     // ожидаем появления картинки на странице деталки
     browser.waitForVisible('.avn007-1_car-image img');
@@ -54,7 +54,7 @@ export default function checkConditions(filterCondition, conditionDetail) {
     const getListName = () => $$('.avn013_usp_item_title');
     const numberListName = getListName().length;
         for(let i = 1; i <= numberListName; i++ ) {
-            browser.moveToObject(`div:nth-child(${i}) > div > div.avn013_usp_item_text .avn013_usp_item_title`);
+            // browser.moveToObject(`div:nth-child(${i}) > div > div.avn013_usp_item_text .avn013_usp_item_title`);
             const getCity = browser.getText(`div:nth-child(${i}) > div > div.avn013_usp_item_text .avn013_usp_item_title`);
             list.push(getCity);
         }
