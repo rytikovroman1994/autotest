@@ -6,16 +6,15 @@ describe('checking-cards', () => {
     // стандартный режим
     it('consider the number of cards', () => {
         // считае кол-во карточек на странице
-        const { length: numberOfCards } = $$('.gridcontainer .grid_l_3');
+        const { length: numberOfCards } = $$('.avn001-2_catalogue-item');
         for( let i = 1; i <= 4; i++) {
             const card = `.avn001_display__enable-hover > div:nth-child(1) .grid_l_3:nth-child(${i})`;
-            browser.moveToObject(card, 0, 200);
             browser.waitForExist(card, 10000);
             browser.waitForVisible(`${card} img`, 5000);
         }
         for( let i = 1; i <= numberOfCards - 4; i++) {
             const card = `.avn001_display__enable-hover > div:nth-child(3) .grid_l_3:nth-child(${i})`;
-            browser.moveToObject(card, 0, 200);
+            browser.scroll(card, 0, 400);
             browser.waitForExist(card, 10000);
             browser.waitForVisible(`${card} img`, 5000);
         }
@@ -23,12 +22,12 @@ describe('checking-cards', () => {
 
     // списком
     it('consider the number of cards list', () => {
-        browser.scroll(0, 0);
         browser.waitForVisible('.is_visible .toggle_switch__states  span');
+        browser.scroll('.is_visible .toggle_switch__states  span', 0, -100);
         browser.click('.is_visible .toggle_switch__states  span');
         for(let i = 1; i < 29 ; i++) {
-            const card = `.avn001_display__enable-hover .grid_12:nth-child(${i}) `;
-            browser.moveToObject(card, 0, 200);
+            const card = `.avn001_display__enable-hover .grid_12:nth-child(${i})`;
+            browser.scroll(card, 0, 400);
             browser.waitForExist(card, 10000);
             browser.waitForVisible(`${card} img`, 5000);
         }

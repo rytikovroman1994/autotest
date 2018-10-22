@@ -20,7 +20,7 @@ describe('test booking car', () => {
         // избавляемся от города
         getDilerName = getDiler.split(', ')[0];
         // кликаем по карточке
-        browser.leftClick('.avn001-2_content .gridcontainer', 10, 10);
+        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // проверм что появилась картинка в деталке
         browser.waitForVisible('.avn007-1_car-image  img');
     });

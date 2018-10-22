@@ -5,7 +5,7 @@ describe('test button to book', () => {
     before('open page', () => {
         browser.helpers.openList();
         // переходим в деталку
-        browser.leftClick('.avn001-2_content .gridcontainer', 10, 10);
+        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // ждём появления картинки
         browser.waitForVisible('.avn007-1_car-image img');
     });
@@ -34,43 +34,41 @@ describe('test button to book', () => {
         browser.click('.op005_form_first .op005_form-btn');
         // ждём пока загрузится авторизация в ЛК
         browser.waitForVisible('.cblock');
-        // переводим курсор на кнопку зарегестрироваться 
-        browser.moveToObject('.cblock__overhang_short div:nth-child(2)');
         // кликаем по кнопке зарегестрироваться
         browser.click('.cblock__overhang_short div:nth-child(2)');
     });
 
     it('verification of email input', () => {
-        browser.waitForExist('#email');
+        browser.waitForExist('body #email');
         // вводидим эмеил
-        browser.setValue('#email', faker.internet.email(1));
+        browser.setValue('body #email', faker.internet.email(1));
     });
     it('checking phone input', () => {
         // вводим телефонный номер
-        browser.waitForExist('#mobile');
-        browser.setValue('#mobile', faker.phone.phoneNumber(0));
+        browser.waitForExist('body #mobile');
+        browser.setValue('body #mobile', faker.phone.phoneNumber(0));
     });
     it('checking the last name', () => {
         // выбираем гендер
         browser.click('.form__radio span');
-        browser.waitForExist('#lastName');
+        browser.waitForExist('body #lastName');
         // вводим фамилию
-        browser.setValue('#lastName', faker.name.lastName(1));
+        browser.setValue('body #lastName', faker.name.lastName(1));
     });
     it('input check name', () => {
         // вводим имя
-        browser.setValue('#firstName', faker.name.firstName(1));
+        browser.setValue('body #firstName', faker.name.firstName(1));
     });
     it('entry check patronymic', () => {
         // вводим отчество
-        browser.setValue('#patronomic', faker.name.lastName(1));
+        browser.setValue('body #patronomic', faker.name.lastName(1));
     });
     it('enter the password', () => {
         const password = faker.internet.password(10);
         // вводим пароль
-        browser.setValue('#password', password);
+        browser.setValue('body #password', password);
         // подтверждаем пароль
-        browser.setValue('#password-confirm', password);
+        browser.setValue('body #password-confirm', password);
     });
     it('check that we are back', () => {
         // кликаем по кнопке "Зарегестрироваться"
