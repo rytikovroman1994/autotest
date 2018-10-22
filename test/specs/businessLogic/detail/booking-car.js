@@ -11,10 +11,14 @@ describe('test booking car', () => {
         browser.waitForExist('.avn001-1_filter-item .toggle_switch__state');
         // кликаем по нему
         browser.click('.avn001-1_filter-item .toggle_switch__state');
-        // проверяем что карточка стала с онлайн оплатой
-        browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_tags');
+        // Ждём пока карточки перерендерятся 
+        browser.pause(3000);
+        // проверяем что первая карточка стала с онлайн оплатой
+        browser.waitUntil(
+            () => browser.isVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_tags') === true,
+            5000, "Сортировка по онлайн оплате не рабоатет");
         // наводимся на карточку
-        browser.leftClick('.avn001-2_content .gridcontainer', 10, 10);
+        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // ждём появления картинки
         browser.waitForVisible('.avn007-1_car-image img');
     });
@@ -32,8 +36,6 @@ describe('test booking car', () => {
         browser.click('.avn007-2_price .btn.btn_cta.show-op');
         // ожидаем загрузки картинки
         browser.waitForVisible('.gridcontainer.uac001_image-status img')
-        // скролим на случай если блок с резервированием не виден
-        browser.moveToObject('.op005_form_title')
         // проверяем что перешли на страницу резервирования
         browser.waitUntil(
             () => browser.isVisible('.op005_form_title') === true,
@@ -53,7 +55,7 @@ describe('test booking car', () => {
         // изменяем размер предоплаты 
         let statePrise = browser.getAttribute('.flex-container .text-input input','value');
         // скролим до слайдера в том случаи если он не виден
-        browser.moveToObject('.op005_form-btn .btn_cta');
+        browser.scroll(0, 450);
         browser.helpers.slider('.rc-slider-handle', '.rc-slider-rail', 100, 0);
         let currentPrise = browser.getAttribute('.flex-container .text-input input','value');
         expect(currentPrise).to.not.equal(statePrise);
@@ -85,8 +87,6 @@ describe('test booking car', () => {
         // проверяем что текст кнопки именно отправить заказ
         const getTextBUtton = browser.getText('.op005_form-btn .btn_cta');
         expect(getTextBUtton).to.be.equal('Отправить заказ');
-        // скролим до кнопки
-        browser.moveToObject('.op005_disclaimer', 20, 20);
         // кликаем по кнопке
         browser.click('.op005_form-btn .btn_cta');
         // проверяем что перешли на страницу авторизации в личном кабинете
