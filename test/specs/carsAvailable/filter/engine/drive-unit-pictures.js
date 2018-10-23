@@ -25,14 +25,14 @@ describe('test drive unit in pictures', () => {
 
     // переъодим обратно в фильтр
     it('open filter', () => {
-        browser.click('#prompt-toggler_filter');
+        browser.click('body #prompt-toggler_filter');
         // переходим на страницу двигатель 
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // отключаем условие автоматической трансмисии
         browser.click('.checkbox[data-name="Передний привод"]');
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
-        browser.click('#prompt-toggler_filter');
+        browser.click('body #prompt-toggler_filter');
     });
 
     // проверяем наличие условия и появления его в фильтре
@@ -48,8 +48,6 @@ describe('test drive unit in pictures', () => {
 
         // проверяем, что кнопка "Показать" активна
         browser.waitForVisible('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
-        // наводим курсор на данную кнопку
-        browser.moveToObject('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         browser.pause(2000);

@@ -26,16 +26,14 @@ describe('test fuel type in pictures', () => {
 
     // переходим обратно в фильтр
     it('Open filter', () => {
-        browser.click('#prompt-toggler_filter');
+        browser.click('body #prompt-toggler_filter');
         // переходим на страницу двигатель 
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // отключаем условие автоматической трансмисии
         browser.click('.checkbox[data-name="Дизель"]');
-        // переносим курсор к кнопке
-        browser.moveToObject('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
-        browser.click('#prompt-toggler_filter');
+        browser.click('body #prompt-toggler_filter');
     });
 
     // проверяем наличие условия и появления его в фильтре

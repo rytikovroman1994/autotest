@@ -27,14 +27,14 @@ describe('test transmission in pictures', () => {
 
     // переъодим обратно в фильтр
     it('open filter', () => {
-        browser.click('#prompt-toggler_filter');
+        browser.click('body #prompt-toggler_filter');
         // переходим на страницу двигатель 
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // отключаем условие автоматической трансмисии
         browser.click('.checkbox[data-name="Автоматическая"]');
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
-        browser.click('#prompt-toggler_filter');
+        browser.click('body #prompt-toggler_filter');
     });
 
     // проверяем наличие условия и появления его в фильтре
@@ -52,6 +52,8 @@ describe('test transmission in pictures', () => {
         browser.waitForVisible('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+        // ожидаем пока карточки перерендерятся
+        browser.pause(2000);
         // проверяем, что в карточке есть условие АКП
         const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_specs-item[data-type="catalogue_item_specs_gearing"]');
         expect(getView).to.be.include('МКП');
