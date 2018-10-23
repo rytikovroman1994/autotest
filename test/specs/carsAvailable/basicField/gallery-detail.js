@@ -6,7 +6,7 @@ describe('test gallery in detail', () => {
     before('open page detail', () => {
         browser.helpers.openList();
         // отркываем деталку
-        browser.leftClick('.avn001-2_content .gridcontainer', 10, 10);
+        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
     });
 
     // проверяем кнопку галерея

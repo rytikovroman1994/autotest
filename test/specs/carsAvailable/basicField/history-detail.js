@@ -2,7 +2,7 @@ describe('test history detail', () => {
     before('open page list', () => {
         browser.helpers.openList();
         // переходим в деталку
-        browser.leftClick('.avn001-2_content .gridcontainer', 10, 10);
+        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // ожидаем загрузки картинки
         browser.waitForVisible('.image-container');
     }); 
