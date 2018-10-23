@@ -5,6 +5,6 @@ export default function openSite() {
     browser.url('https://vw.kodix.ru');
     // открываем фильтр
     while(browser.isVisible('.avn008_model_align-center-vertical') === false) {
-        browser.click('.avn003_column-left .avn003__action-item');
+        browser.click('body #prompt-toggler_filter');
     }
 }
