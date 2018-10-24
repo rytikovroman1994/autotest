@@ -44,8 +44,6 @@ describe('test climate zones', () => {
             // проверяем текст
             expect(getNameClimate).to.be.equal(nameList[i-1]);
             browser.scroll(0, 600);
-            // двигаем курсор к чекбоксу
-            browser.moveToObject(`.rc-slider-step span:nth-child(${i})`);
             // выбираем вид климат контроля
             browser.click(`.rc-slider-step span:nth-child(${i})`);
             // проверяем, что появилось условие в фильтре

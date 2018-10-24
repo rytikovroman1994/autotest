@@ -22,7 +22,7 @@ describe('test color seats', () => {
         console.log(stateQuantity);
         for( let i = 1; i <= quantity; i++) {
             // прокручиваем до видимости кнопки
-            browser.moveToObject(`.avn_color-picker_checks > div:nth-child(${i})`);
+            browser.scroll(`.avn_color-picker_checks > div:nth-child(${i})`, 0, 20);
             // выбираем цвет
             browser.click(`.avn_color-picker_checks > div:nth-child(${i})`);
             // проверяем количество условий в фильтре

@@ -15,7 +15,9 @@ describe('test drive unit in pictures', () => {
         expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('ПЕРЕДНИЙ');
 
         // проверяем, что кнопка "Показать" активна
-        browser.waitForVisible('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+        browser.waitUntil(
+            () => browser.isExisting('avn008_overlay_bar--progress') === false,
+            10000, "Кнопка Показать не активна в течении 10 секунд");
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         // проверяем, что в карточке есть условие АКП
@@ -47,7 +49,9 @@ describe('test drive unit in pictures', () => {
         expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('ПОЛНЫЙ');
 
         // проверяем, что кнопка "Показать" активна
-        browser.waitForVisible('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+        browser.waitUntil(
+            () => browser.isExisting('avn008_overlay_bar--progress') === false,
+            10000, "Кнопка Показать не активна в течении 10 секунд");
         // переходим к списку 
         browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
         browser.pause(2000);
