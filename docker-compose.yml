@@ -1,12 +1,12 @@
 version: "3"
 services:
   hub:
-    image: selenium/hub:3.14.0-curium
+    image: selenium/hub:3.14.0-iron
     ports:
       - "4444:4444"
 
   chrome:
-    image: selenium/node-chrome:3.14.0-curium
+    image: selenium/node-chrome:3.14.0-iron
     shm_size: 2G
     depends_on:
       - hub
@@ -15,7 +15,7 @@ services:
       - HUB_PORT=4444
 
   firefox:
-    image: selenium/node-firefox:3.14.0-curium
+    image: selenium/node-firefox:3.14.0-iron
     shm_size: 2G
     depends_on:
       - hub
