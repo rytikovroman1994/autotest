@@ -1,6 +1,6 @@
 /* Вспомогательный тест для генерации актуальных скриншотов в разделе фильтр-опции-зимний пакет.*/
 
-describe('screenshots-options', () => {
+describe.skip('screenshots-options', () => {
     before(() => {
         browser.helpers.openSite();
     });

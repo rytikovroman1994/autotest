@@ -1,7 +1,7 @@
 /* Вспомогательный тест для создания базы актуальных скриншотов основных страниц фильтра
 */
 
-describe('smoke screenshot test save', () => {
+describe.skip('smoke screenshot test save', () => {
     before(() => {
         browser.windowHandleMaximize ();
         // переходим на страницу

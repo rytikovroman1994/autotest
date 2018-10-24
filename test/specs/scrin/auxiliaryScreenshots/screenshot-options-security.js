@@ -1,6 +1,6 @@
 /* Вспомогательный тест для генерации актуальных скриншотов в разделе фильтр-опции.*/
 
-describe('screenshots-exterior', () => {
+describe.skip('screenshots-exterior', () => {
     before(() => {
         browser.helpers.openSite();
     });
