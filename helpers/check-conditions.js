@@ -23,12 +23,10 @@ export default function checkConditions(filterCondition, conditionDetail) {
 
     // проверяем что кнопка "Показать" активна
     browser.waitUntil(
-        () => browser.isVisible('.avn008_overlay_bar_warning__btn .btn[role="button"]') === false,
-        5000, "Кнопка Показать не активна");
-    // проверяем, что активная кнопка "Показать" отображается на странице   
-    browser.waitForVisible('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
+            () => browser.isExisting('avn008_overlay_bar--progress') === false,
+            10000, "Кнопка Показать не активна в течении 10 секунд");
     // кликаем по данной кнопке 
-    browser.click('.avn008_overlay_submit-block_btn .btn[role="button"] .btn__text');
+    browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
 
     // ожидаем пока перерендерица список карточек
     browser.pause(2000);
