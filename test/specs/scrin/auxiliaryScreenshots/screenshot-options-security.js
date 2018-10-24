@@ -17,10 +17,8 @@ describe('screenshots-exterior', () => {
 
     // скришот фильтр-комфорт система area view
     it('filter-area view', () => {
-        // открываем страницу система area view
-        browser.click('.avn008_option-check_more[data-name="checkbox%Система Area View"]');
-        // ожидаем загрузки картинки фары
-        browser.waitForVisible('.avn008_image-switcher_image');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Система Area View');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/areaView.png');
         expect(screen).to.not.equal(null);
@@ -31,10 +29,8 @@ describe('screenshots-exterior', () => {
 
     // скришот фильтр-комфорт система easy open
     it('filter-easy open', () => {
-        // открываем страницу система easy open
-        browser.click('.avn008_option-check_more[data-name="checkbox%Система Easy Open"]');
-        // ожидаем загрузки картинки фары
-        browser.waitForVisible('.avn008_image-switcher_image');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Система Easy Open');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/easyOpen.png');
         expect(screen).to.not.equal(null);
@@ -45,11 +41,8 @@ describe('screenshots-exterior', () => {
 
     // скриншот фильтр-'электропривод двери багажного отделения
     it('filter-electric trunk', () => {
-        browser.waitForVisible('.avn008_option-check_more[data-name="checkbox%Электропривод двери багажного отделения"]');
-        // переходим на страницу electric trunk
-        browser.click('.avn008_option-check_more[data-name="checkbox%Электропривод двери багажного отделения"]');
-        // ожидаем загрузки картинки 
-        browser.waitForVisible('.avn008_image-switcher_image');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Электропривод двери багажного отделения');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/electricTrunk.png');
         expect(screen).to.not.equal(null);
@@ -60,11 +53,8 @@ describe('screenshots-exterior', () => {
 
     // скриншот фильтр-электро привод зеркал заднего вида
     it('filter-mirror drive', () => {
-        browser.waitForVisible('.avn008_option-check_more[data-name="checkbox%Электропривод зеркал заднего вида"]');
-        // открываем подробнее mirror drive
-        browser.click('.avn008_option-check_more[data-name="checkbox%Электропривод зеркал заднего вида"]');
-        // ожидаем загрузки картинки 
-        browser.waitForVisible('.avn008_image-switcher_image');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Электропривод зеркал заднего вида');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/mirrorDrive.png');
         expect(screen).to.not.equal(null);
@@ -75,12 +65,8 @@ describe('screenshots-exterior', () => {
 
      // скриншот фильтр-keyless access
      it('filter-keyless access', () => {
-         // не видно кнопку, нужно к ней проскролить
-        browser.moveToObject('.avn008_option-check_more[data-name="checkbox%Система Keyless Access"]', 10, 10);
-        // открываем подробнее keyless access
-        browser.click('.avn008_option-check_more[data-name="checkbox%Система Keyless Access"]');
-        // ожидаем загрузки картинки 
-        browser.waitForVisible('.avn008_image-switcher_image');
+         // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Система Keyless Access');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/keylessAccess.png');
         expect(screen).to.not.equal(null);
@@ -91,12 +77,8 @@ describe('screenshots-exterior', () => {
 
     // скриншот фильтр-камера заднего вида
     it('filter-Rear View Camera', () => {
-        // не видно кнопку, нужно к ней проскролить
-        browser.moveToObject('.avn008_option-check_more[data-name="checkbox%Камера заднего вида', 10, 10);
-        // открываем подробнее камера заднего вида
-        browser.click('.avn008_option-check_more[data-name="checkbox%Камера заднего вида');
-        // ожидаем загрузки картинки 
-        browser.waitForVisible('.avn008_image-switcher_image');
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Камера заднего вида');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/rearViewCamera.png');
         expect(screen).to.not.equal(null);
@@ -107,8 +89,6 @@ describe('screenshots-exterior', () => {
 
     // скриншот фильтр-датчик контроля давления в шинах
     it('filter-pressure meter', () => {
-        // не видно кнопку, нужно к ней проскролить
-        browser.moveToObject('div:nth-child(7) > div > div > div.avn008_option-check_more', 10, 10);
         browser.waitForVisible('div:nth-child(7) > div > div > div.avn008_option-check_more');
         // открываем подробнее датчик контроля давления в шинах
         browser.click('div:nth-child(7) > div > div > div.avn008_option-check_more');

@@ -5,24 +5,25 @@ describe('screenshots-options', () => {
         browser.helpers.openSite();
     });
     // скришот фильтр-опции-асистенты
-    it('filter-options-assistants', () => {
+    it('Filter-options-assistants', () => {
         // переходим на страницу опции
         browser.click('.avn008_filter__tab[data-name="Опции"]');
         // переходим на страницу асистенты
         browser.click('.avn008_filter__second-tab[data-name="Ассистенты"]');
         // ожидаем загрузки картинки
         browser.waitForVisible('.avn008_option__slider-card-icon');
+        // ожидаем загрузки последей картинки
+        browser.waitForVisible('.avn008_option-check_image[data-name="Система Side Assist"]');
+        browser.pause(3000);
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/assistants.png');
         expect(screen).to.not.equal(null);
     });
 
     // скришот фильтр-асисстенты адаптивный круиз контроль
-    it('filter-cruise Control', () => {
-        // открываем страницу 
-        browser.click('.avn008_option-check_more[data-name="checkbox%Адаптивный круиз-контроль"]');
-        // ожидаем загрузки картинки фары
-        browser.waitForVisible('.avn008_image-switcher_image');
+    it('Filter-cruise Control', () => {
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Адаптивный круиз-контроль');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/cruiseControl.png');
         expect(screen).to.not.equal(null);
@@ -32,11 +33,9 @@ describe('screenshots-options', () => {
     });
 
     // скришот фильтр-асисстенты функция auto-hold
-    it('filter-auto Hold', () => {
-        // открываем страницу система easy open
-        browser.click('.avn008_option-check_more[data-name="checkbox%Функция Auto-hold"]');
-        // ожидаем загрузки картинки фары
-        browser.waitForVisible('.avn008_image-switcher_image');
+    it('Filter-auto Hold', () => {
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Функция Auto-hold');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/autoHold.png');
         expect(screen).to.not.equal(null);
@@ -46,12 +45,9 @@ describe('screenshots-options', () => {
     });
 
     // скриншот фильтр- front assist
-    it('filter-front Assist', () => {
-        browser.waitForVisible('.avn008_option-check_more[data-name="checkbox%Система Front Assist"]');
-        // переходим на страницу electric trunk
-        browser.click('.avn008_option-check_more[data-name="checkbox%Система Front Assist"]');
-        // ожидаем загрузки картинки 
-        browser.waitForVisible('.avn008_image-switcher_image');
+    it('Filter-front Assist', () => {
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Система Front Assist');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/frontAssist.png');
         expect(screen).to.not.equal(null);
@@ -61,13 +57,9 @@ describe('screenshots-options', () => {
     });
 
     // скриншот фильтр-light assist
-    it('filter-light Assist', () => {
-        browser.moveToObject('.avn008_option-check_more[data-name="checkbox%Система Light Assist"]', 5, 5);
-        browser.waitForVisible('.avn008_option-check_more[data-name="checkbox%Система Light Assist"]');
-        // открываем подробнее mirror drive
-        browser.click('.avn008_option-check_more[data-name="checkbox%Система Light Assist"]');
-        // ожидаем загрузки картинки 
-        browser.waitForVisible('.avn008_image-switcher_image');
+    it('Filter-light Assist', () => {
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Система Light Assist');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/lightAssist.png');
         expect(screen).to.not.equal(null);
@@ -77,13 +69,9 @@ describe('screenshots-options', () => {
     });
 
      // скриншот фильтр-датчик дождя
-     it('filter-rain Sensor', () => {
-         // не видно кнопку, нужно к ней проскролить
-        browser.moveToObject('.avn008_option-check_more[data-name="checkbox%Датчик дождя"]', 10, 10);
-        // открываем подробнее keyless access
-        browser.click('.avn008_option-check_more[data-name="checkbox%Датчик дождя"]');
-        // ожидаем загрузки картинки 
-        browser.waitForVisible('.avn008_image-switcher_image');
+     it('Filter-rain Sensor', () => {
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Датчик дождя');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/rainSensor.png');
         expect(screen).to.not.equal(null);
@@ -93,13 +81,9 @@ describe('screenshots-options', () => {
     });
 
     // скриншот фильтр-side assist
-    it('filter-side Assist', () => {
-        // не видно кнопку, нужно к ней проскролить
-        browser.moveToObject('.avn008_option-check_more[data-name="checkbox%Система Side Assist"]', 10, 10);
-        // открываем подробнее камера заднего вида
-        browser.click('.avn008_option-check_more[data-name="checkbox%Система Side Assist"]');
-        // ожидаем загрузки картинки 
-        browser.waitForVisible('.avn008_image-switcher_image');
+    it('Filter-side Assist', () => {
+        // открываем всплывающее окно подробнее и делаем скриншот
+        browser.helpers.moreDetail('Система Side Assist');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotOption/sideAssist.png');
         expect(screen).to.not.equal(null);
