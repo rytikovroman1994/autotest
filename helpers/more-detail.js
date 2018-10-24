@@ -8,6 +8,7 @@
  */
 
 export default function moreDetail(conditions) {
+    browser.waitForVisible(`.avn008_option-check_more[data-name="${conditions}"]`);
     // открываем всплывающее окно
     browser.click(`.avn008_option-check_more[data-name="${conditions}"]`);
     // ждём появления картинки
