@@ -16,11 +16,11 @@ describe('test fuel type in pictures', () => {
 
         // проверяем, что кнопка "Показать" активна
         browser.waitUntil(
-            () => browser.isExisting('avn008_overlay_bar--progress') === false,
+            () => browser.isVisible('avn008_overlay_bar--progress') === false,
             10000, "Кнопка Показать не активна в течении 10 секунд");
-        browser.waitForVisible('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+        browser.waitForVisible('.avn008_overlay_submit-block_btn .btn.btn_cta');
         // переходим к списку 
-        browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+        browser.click('.avn008_overlay_submit-block_btn .btn.btn_cta');
         browser.pause(2000);
         // проверяем, что в карточке есть условие TDI
         const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_specs-item[data-type="catalogue_item_specs_engine"]');
@@ -34,13 +34,18 @@ describe('test fuel type in pictures', () => {
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // отключаем условие автоматической трансмисии
         browser.click('.checkbox[data-name="Дизель"]');
+        browser.waitUntil(
+            () => browser.isVisible('avn008_overlay_bar--progress') === false,
+            10000, "Кнопка Показать не активна в течении 10 секунд");
         // переходим к списку 
-        browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+        browser.click('.avn008_overlay_submit-block_btn .btn.btn_cta');
         browser.click('body #prompt-toggler_filter');
     });
 
     // проверяем наличие условия и появления его в фильтре
     it('Check checkbox diesel', () => {
+        // ожидаем появления кнопки
+        browser.waitForVisible('.avn008_filter__tab[data-name="Двигатель"]');
         // переходим на страницу двигатель 
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // нажимает на чекбокс 
@@ -52,10 +57,10 @@ describe('test fuel type in pictures', () => {
 
         // проверяем, что кнопка "Показать" активна
         browser.waitUntil(
-            () => browser.isExisting('avn008_overlay_bar--progress') === false,
+            () => browser.isVisible('avn008_overlay_bar--progress') === false,
             10000, "Кнопка Показать не активна в течении 10 секунд");
         // переходим к списку 
-        browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+        browser.click('.avn008_overlay_submit-block_btn .btn.btn_cta');
         // проверяем, что в карточке есть условие MPI
         const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_specs-item[data-type="catalogue_item_specs_engine"]');
         expect(getView).to.be.include('MPI');
