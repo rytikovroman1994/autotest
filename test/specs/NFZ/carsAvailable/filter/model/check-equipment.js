@@ -24,7 +24,7 @@ describe('test check equipment', () => {
             if(browser.isVisible(`.avn008_model__wrap > div.gridcontainer > div:nth-child(${i})`) === false) {
                 browser.scroll(`.avn008_model__wrap > div.gridcontainer > div:nth-child(${i})`, 5, 5);
             }
-            // получаем имя автомобился
+            // получаем имя автомобиля
             nameCar = browser.getText(`div:nth-child(${i}) > div > div > div.avn008_car__info > div.avn008_car__desc > h4`);
             console.log(nameCar);
             // кликаем на карточку
