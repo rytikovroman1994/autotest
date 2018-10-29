@@ -46,7 +46,6 @@ describe('tesr check model card', () => {
     it('Check the availability of the names of the models', () => {
         // получаем список имён поделей автомобилей
         const listName = browser.getText('.avn008_car__title');
-        console.log(listName);
         // сравниваем два массива на наличие оличий 
         const result = listName.diff(list);
         // считаем количество несовпадений между массивами
