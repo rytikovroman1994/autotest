@@ -13,8 +13,6 @@ describe('test mechanical transmission', () => {
 
     // ожидаем, пока загрузится первая карточка и проверяем наличие комплектации
     it('Check condition in the card', () => {
-        // ожидаем, пока появится карточка
-        browser.waitForVisible('.avn001-2_content');
         // ожидаем, пока перерендерится список карточек
         browser.pause(2000);
         // проверяем, что в карточке есть условие МКП
