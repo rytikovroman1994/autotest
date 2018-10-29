@@ -8,20 +8,7 @@ describe('test mechanical transmission', () => {
 
     // выбираем механическую коробку передач
     it('Check the manual transmission', () => {
-        // выбираем чекбокс
-        browser.click('.prefix_l_1 > div > label:nth-child(3)');
-        // проверяем, что появилось условие в фильтре
-        browser.waitUntil(
-            () => browser.isExisting('.avn008_filter-value-item') === true,
-            5000, "Условие не появилось в фильтре");
-        // проверяем что это именно автоматическая
-        expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal('MT');
-        // проверяем, что кнопка "Показать" активна
-        browser.waitUntil(
-            () => browser.isVisible('avn008_overlay_bar--progress') === false,
-            10000, "Кнопка Показать не активна в течении 10 секунд");  
-        // переходим к списку
-        browser.click('.avn008_overlay_bar_column-right .btn_cta');
+        browser.helpers.checkCheckboxNfz('.prefix_l_1 > div > label:nth-child(3)', 'MT');
     });
 
     // ожидаем, пока загрузится первая карточка и проверяем наличие комплектации
