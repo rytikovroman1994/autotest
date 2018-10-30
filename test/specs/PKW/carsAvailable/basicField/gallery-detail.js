@@ -42,9 +42,5 @@ describe('test gallery in detail', () => {
                 () => browser.isVisible('.avn007-4_loader-wrapper.is_visible > div > div') === false,
                 10000, `${i} по счёту картинка не отображается`);
         }
-        // проверяем количество классов 
-        const numberAtributs = $$('.slick-slide[aria-hidden="true"]').length;
-        // проверяем что количетсво выключенных лоадеров совпадает с количеством картинок
-        expect(numberAtributs).to.be.equal(numberImage);
     });
 });
