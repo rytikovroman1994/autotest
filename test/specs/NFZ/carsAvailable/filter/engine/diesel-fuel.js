@@ -2,7 +2,7 @@ describe('test diesel-fuel', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // открываем страницу "Двигатель"
-        browser.click('#react-tabs-2');
+        browser.click('body #react-tabs-2');
     });
 
     // выбираем топливо дизель

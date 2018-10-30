@@ -15,7 +15,7 @@ describe('test slider power', () => {
     // переходим на страницу "Двигатель"
     it('Check open page engine', () => {
         // открываем страницу двигатель
-        browser.click('#react-tabs-2');
+        browser.click('body #react-tabs-2');
         // ожтдаем закрузки послденей картинки
         browser.waitForVisible('.grid_m_2 img');
         // провеярем, что появился слайдер

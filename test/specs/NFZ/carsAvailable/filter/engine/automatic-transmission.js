@@ -2,7 +2,7 @@ describe('test automatic transmission', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу "Двигатель"
-        browser.click('#react-tabs-2');
+        browser.click('body #react-tabs-2');
     });
 
     // выбираем автоматическую коробку передач
