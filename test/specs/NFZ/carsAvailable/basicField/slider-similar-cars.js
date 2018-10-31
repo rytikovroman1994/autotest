@@ -12,13 +12,16 @@ describe('test slider similar cars', () => {
         // ожидаем загрузки картинки
         browser.waitForVisible('.image-container');
         // скролим страницу до слайдера 
-        browser.scroll(0, 2600);
+        browser.scroll('.avn010_advantages .detail-page__default-title', 10, 800);
+        // ожидаем пока прогрузится блок
+        browser.waitForVisible('.avn009_body__is-rendered');
     });
 
     // проверяем работу нижних кнопок
     it('Check side buttons slider', () => {
         // получаем количество переключений
         const switching = numberSwitching();
+        console.log(switching);
         // двигаем слайдер вправо
         for( let i = 2; i <= switching; i++ ) {
             // делаем скриншот 
