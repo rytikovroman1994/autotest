@@ -1,11 +1,11 @@
 describe('test pictures-detail', () => {
     const list = [];
     before('open page', () => {
-        browser.helpers.openListNfz();
+        browser.helpers.openList();
         // переходим в деталку
         browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // ждём появления картинки
-        browser.waitForVisible('.preview_img img');
+        browser.waitForVisible('.avn007-1_car-image img');
         // скролим до нужного блока
         browser.scroll('.avn012-1_item.is_active', 0, 100);
     });
