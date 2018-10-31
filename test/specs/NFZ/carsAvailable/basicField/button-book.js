@@ -1,6 +1,6 @@
 import faker from "faker"
 
-describe('button book in the menu', () => {
+describe('test button book in the menu', () => {
     const buttonClass = '.mainStageinfo .btn_cta';
     before('open page', () => {
         browser.helpers.openListNfz();
