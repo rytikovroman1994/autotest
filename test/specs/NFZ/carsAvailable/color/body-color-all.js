@@ -1,4 +1,4 @@
-describe('test body color', () => {
+describe('test body color all', () => {
     const color = () => $$('.avn008_filter-value-item');
     // начальное число цветов
     let initialNumberColor;
