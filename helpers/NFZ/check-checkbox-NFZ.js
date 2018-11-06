@@ -9,7 +9,7 @@
 
 export default function checkCheckboxNfz(selector, condition) {
     // выбираем чекбокс
-    browser.click(selector);
+    browser.click(`.option-group__checkbox[data-name="${selector}"]`);
     // проверяем, что появилось условие в фильтре
     browser.waitUntil(
         () => browser.isExisting('.avn008_filter-value-item') === true,
@@ -18,8 +18,12 @@ export default function checkCheckboxNfz(selector, condition) {
     expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal(condition);
     // проверяем, что кнопка "Показать" активна
     browser.waitUntil(
-        () => browser.isVisible('avn008_overlay_bar--progress') === false,
+        () => browser.isVisible('.avn008_overlay_bar--progress') === false,
         10000, "Кнопка Показать не активна в течении 10 секунд");  
-    // переходим к списку
-    browser.click('.avn008_overlay_bar_column-right .btn_cta');
+    // убираем условие
+    browser.click(`.option-group__checkbox[data-name="${selector}"]`);
+    // проверяем, что условие пропало
+    browser.waitUntil(
+        ()=> browser.isVisible('.avn008_overlay_bar .avn008_filter-value-item_image') === false,
+    5000, "На странице уже есть одно условие фильтра");
 }
