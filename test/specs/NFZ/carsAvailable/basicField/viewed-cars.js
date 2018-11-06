@@ -18,7 +18,6 @@ describe('test viewed cars', () => {
             const idCar = browser.getAttribute(`.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(${i}) .avn001-2_catalogue-item`, 'data-carid');
             // записываем ид в массив
             list.push(idCar);
-            console.log(list);
             // переходим в данную карточку
             browser.click(`.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(${i}) img`);
             // ждём пока загрузится картинка
