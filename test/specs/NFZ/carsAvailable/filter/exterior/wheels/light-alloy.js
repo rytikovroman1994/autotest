@@ -4,7 +4,7 @@ describe('test wheels light-alloy', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // проверяем переход на страницу Интерьер
-        browser.click('body #react-tabs-6');
+        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
     }); 
 
     // проверяем работу чекбоскса

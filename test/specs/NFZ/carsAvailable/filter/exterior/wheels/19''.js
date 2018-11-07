@@ -1,6 +1,6 @@
-describe('test wheels 15', () => {
+describe('test wheels 19', () => {
     // выносим часто используемое название условия комплектации
-    let conditions = `15''`;
+    let conditions = `19''`;
     before('open page filter', () => {
         browser.helpers.openFilter();
         // проверяем переход на страницу Интерьер
@@ -10,7 +10,7 @@ describe('test wheels 15', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, `15''`);
+       browser.helpers.checkCheckboxNfz(conditions, `19''`);
     });
 
     // проверяем, что условие появилось в деталке машины
