@@ -13,11 +13,11 @@ export default function checkConditionsNfz(filterCondition, conditionDetail) {
         // закрываем всплывающее окно
         browser.click('.modal-window_close');
         // ожидаем появления кнопки
-        browser.waitForVisible(`.option-group__checkbox[data-name="${filterCondition}"]`);
+        browser.waitForVisible(`[data-name="${filterCondition}"]`);
     }
 
     // включаем чекбокс 
-    browser.click(`.option-group__checkbox[data-name="${filterCondition}"]`);
+    browser.click(`[data-name="${filterCondition}"]`);
     // проверяем, что появилось условие
     browser.waitForVisible('.avn008_filter-value-item_image');
 
