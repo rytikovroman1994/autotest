@@ -11,9 +11,9 @@ describe('test body color all', () => {
     // переходим нас траницу Цвет
     it('Open page Color', () => {
         // ожидаем пока появится кнопка Цвет
-        browser.waitForVisible('body #react-tabs-4');
+        browser.waitForVisible('.avn008_filter__tab[data-name="Цвет"]');
         // переходим в раздел Цвет
-        browser.click('body #react-tabs-4');
+        browser.click('.avn008_filter__tab[data-name="Цвет"]');
         // ожидаем появления картинки дверей
         browser.waitForVisible('.avn008_image-switcher_image');
     });
