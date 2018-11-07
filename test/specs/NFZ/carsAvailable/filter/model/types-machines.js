@@ -23,7 +23,7 @@ describe('test types machines', () => {
     // порвеярем что в каегории "Для бизнесса" два скрытых автобибиля
     it('Check for family', () => {
         // переходим на вкладку для семьи
-        browser.click('.avn008_model_tabs div:nth-child(2)');
+        browser.click('.avn008_model__filter-item[data-name="Для семьи"]');
         // считаем количество заблокированных карточек 
         const blockCards = $$('.false.avn008_car--for_business').length;
         // проверяем что число равно 2
@@ -44,7 +44,7 @@ describe('test types machines', () => {
     // порвеярем что в каегории "Для семьи" два скрытых автобибиля
     it('Check for business', () => {
         // переходим на вкладку для бизнесса
-        browser.click('.avn008_model_tabs div:nth-child(3)');
+        browser.click('.avn008_model__filter-item[data-name="Для бизнеса"]');
         // считаем количество заблокированных карточек 
         const blockCards = $$('.false.avn008_car--for_family').length;
         // проверяем что число равно 2

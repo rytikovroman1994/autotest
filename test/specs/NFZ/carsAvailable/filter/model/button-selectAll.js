@@ -12,9 +12,9 @@ describe('test button select all', () => {
             () => browser.isExisting('.avn008_kits__btn--selected') === false,
             5000, "На странице есть изначально активная кнопка комплектации");
         // ожидаем появления кнопки
-        browser.waitForVisible('.avn008_kits__inner div:nth-child(7)');
+        browser.waitForVisible('.avn008_kits__inner div:nth-child(6)');
         // кликаем по кнопке "Выбрать всё"
-        browser.click('.avn008_kits__inner div:nth-child(7)');
+        browser.click('.avn008_kits__inner div:nth-child(6)');
 
         // проверяем, что появилось 5 активных кнопок с комплектацией
         const numberAcrivButton = $$('.avn008_kits__btn--selected').length;
@@ -24,7 +24,7 @@ describe('test button select all', () => {
     // проверяем работу кнопки "Отменить всё"
     it('Check buttun cancel all', () => {
         // нажимаеи на кнопку 
-        browser.click('.avn008_kits__inner div:nth-child(7)');
+        browser.click('.avn008_kits__inner div:nth-child(6)');
         // проверяем, что все активные кнопки комплектации пропали
         browser.waitUntil(
             () => browser.isExisting('.avn008_kits__btn--selected') === false,
