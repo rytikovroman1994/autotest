@@ -9,7 +9,7 @@
 
 export default function checkCheckboxNfz(atribut, condition) {
     // выбираем чекбокс
-    browser.click(`[data-name="${atribut}"]`);
+    browser.click(`.checkbox[data-name="${atribut}"]`);
     // проверяем, что появилось условие в фильтре
     browser.waitUntil(
         () => browser.isExisting('.avn008_filter-value-item') === true,
@@ -21,7 +21,7 @@ export default function checkCheckboxNfz(atribut, condition) {
         () => browser.isVisible('.avn008_overlay_bar--progress') === false,
         10000, "Кнопка Показать не активна в течении 10 секунд");  
     // убираем условие
-    browser.click(`[data-name="${atribut}"]`);
+    browser.click(`.checkbox[data-name="${atribut}"]`);
     // проверяем, что условие пропало
     browser.waitUntil(
         ()=> browser.isVisible('.avn008_overlay_bar .avn008_filter-value-item_image') === false,
