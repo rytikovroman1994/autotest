@@ -2,12 +2,20 @@ describe('test fuel-gasoline', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // открываем страницу "Двигатель"
-        browser.click('body #react-tabs-2');
+        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
     });
 
     // выбираем топливо бензин
     it('Check fuel-gasoline', () => {
-        browser.helpers.checkCheckboxNfz('div:nth-child(4) > div > label:nth-child(4)', 'БЕНЗИН');
+        browser.helpers.checkCheckboxNfz('Бензин', 'БЕНЗИН');
+
+        // переходим к списку
+        browser.click('.checkbox[data-name="Дизель"]');
+        // проверяем что кнопка "Показать" активна
+        browser.waitUntil(
+            () => browser.isExisting('avn008_overlay_bar--progress') === false,
+            10000, "Кнопка Показать не активна в течении 10 секунд");
+        browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
     });
 
     // ожидаем, пока загрузится первая карточка и проверяем наличие комплектации
