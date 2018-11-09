@@ -10,7 +10,7 @@ describe('test multimedia Bluetooth / Handsfree', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'BLUETOOTH / HANDSFREE');
+       browser.helpers.checkCheckboxNfz(conditions, 'BLUETOOTH / HANDSFREE', 'bluetooth');
     });
 
     // проверяем, что условие появилось в деталке машины

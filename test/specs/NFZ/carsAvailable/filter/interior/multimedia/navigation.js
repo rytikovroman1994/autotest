@@ -10,7 +10,7 @@ describe('test multimedia navigation', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'НАВИГАЦИЯ');
+       browser.helpers.checkCheckboxNfz(conditions, 'НАВИГАЦИЯ', 'navigation');
     });
 
     // проверяем, что условие появилось в деталке машины
