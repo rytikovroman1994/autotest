@@ -10,7 +10,7 @@ describe('test additionally arcs and light', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'ДУГИ И СВЕТ');
+       browser.helpers.checkCheckboxNfz(conditions, 'ДУГИ И СВЕТ', 'additional-light');
     });
 
     // проверяем, что условие появилось в деталке машины

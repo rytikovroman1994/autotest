@@ -10,7 +10,7 @@ describe('test additionally conversion', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'ПЕРЕОБОРУДОВАНИЕ');
+       browser.helpers.checkCheckboxNfz(conditions, 'ПЕРЕОБОРУДОВАНИЕ', 'rebuild');
     });
 
     // проверяем, что условие появилось в деталке машины
