@@ -10,7 +10,7 @@ describe('test additionally heated seats', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'ПОДОГРЕВ СИДЕНИЙ');
+       browser.helpers.checkCheckboxNfz(conditions, 'ПОДОГРЕВ СИДЕНИЙ', 'seats-heating');
     });
 
     // проверяем, что условие появилось в деталке машины

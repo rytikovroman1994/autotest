@@ -10,7 +10,7 @@ describe('test additionally ultifunction wheel', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'МУЛЬТИРУЛЬ');
+       browser.helpers.checkCheckboxNfz(conditions, 'МУЛЬТИРУЛЬ', 'wheel-multi');
     });
 
     // проверяем, что условие появилось в деталке машины
