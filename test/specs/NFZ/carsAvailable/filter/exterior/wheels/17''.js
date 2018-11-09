@@ -10,7 +10,7 @@ describe('test wheels 17', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, `17''`);
+       browser.helpers.checkCheckboxNfz(conditions, `17''`, 'wheel-17');
     });
 
     // проверяем, что условие появилось в деталке машины

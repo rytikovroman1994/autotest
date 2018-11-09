@@ -10,7 +10,7 @@ describe('test wheels light-alloy', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'ЛЕГКОСПЛАВНЫЕ ДИСКИ');
+       browser.helpers.checkCheckboxNfz(conditions, 'ЛЕГКОСПЛАВНЫЕ ДИСКИ', 'alloy-wheel');
     });
 
     // проверяем, что условие появилось в деталке машины
