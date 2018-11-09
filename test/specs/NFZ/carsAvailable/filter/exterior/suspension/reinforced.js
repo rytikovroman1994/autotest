@@ -10,7 +10,7 @@ describe('test suspension reinforced', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'УСИЛЕННАЯ');
+       browser.helpers.checkCheckboxNfz(conditions, 'УСИЛЕННАЯ', 'suspension-2');
     });
 
     // проверяем, что условие появилось в деталке машины

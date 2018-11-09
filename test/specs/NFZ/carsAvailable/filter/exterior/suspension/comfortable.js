@@ -10,7 +10,7 @@ describe('test suspension comfortable', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'КОМФОРТНАЯ');
+       browser.helpers.checkCheckboxNfz(conditions, 'КОМФОРТНАЯ', 'suspension-1');
     });  
 
     // проверяем, что условие появилось в деталке машины
