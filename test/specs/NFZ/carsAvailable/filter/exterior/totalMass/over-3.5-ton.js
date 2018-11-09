@@ -1,6 +1,6 @@
-describe('test totalMass over-2.5-ton', () => {
+describe('test totalMass over-3.5-ton', () => {
     // выносим часто используемое название условия комплектации
-    let conditions = '2.5т-3.5т';
+    let conditions = 'Более 3.5т';
     before('open page filter', () => {
         browser.helpers.openFilter();
         // проверяем переход на страницу Интерьер
@@ -10,7 +10,7 @@ describe('test totalMass over-2.5-ton', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, '2.5Т-3.5Т', 'weight-2');
+       browser.helpers.checkCheckboxNfz(conditions, 'БОЛЕЕ 3.5Т', 'weight-3');
     });
 
     // проверяем, что условие появилось в деталке машины

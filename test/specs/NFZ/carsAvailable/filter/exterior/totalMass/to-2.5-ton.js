@@ -10,7 +10,7 @@ describe('test totalMass to-2.5-ton', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'ДО 2.5Т');
+       browser.helpers.checkCheckboxNfz(conditions, 'ДО 2.5Т', 'weight-1');
     });
 
     // проверяем, что условие появилось в деталке машины
