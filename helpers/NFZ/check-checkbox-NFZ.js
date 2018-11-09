@@ -1,13 +1,14 @@
 /**
  * @memberOf Helpers
- * @function checkCheckbox
+ * @function checkCheckboxNfz
  * @param {string} atribut - селектор чекбокса
  * @param {string} condition - title условия в фильтре
+ * @param {string} picture - название картинке в ссылке на неё
  * @example
  *      browser.helpers.checkCheckbox('.prefix_l_1 > div > label:nth-child(4)', 'AT');
  */
 
-export default function checkCheckboxNfz(atribut, condition) {
+export default function checkCheckboxNfz(atribut, condition, picture) {
     // выбираем чекбокс
     browser.click(`.checkbox[data-name="${atribut}"]`);
     // проверяем, что появилось условие в фильтре
@@ -16,6 +17,8 @@ export default function checkCheckboxNfz(atribut, condition) {
         5000, "Условие не появилось в фильтре");
     // проверяем что это именно автоматическая
     expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal(condition);
+    // проверяем что подставилась нужная картинка 
+    expect(browser.getAttribute('.avn008_filter-value-item_image img', 'src')).to.be.include(picture);
     // проверяем, что кнопка "Показать" активна
     browser.waitUntil(
         () => browser.isVisible('.avn008_overlay_bar--progress') === false,
