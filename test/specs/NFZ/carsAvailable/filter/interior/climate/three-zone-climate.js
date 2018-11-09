@@ -10,7 +10,7 @@ describe('test three zone climate', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, '3-ЗОННЫЙ');
+       browser.helpers.checkCheckboxNfz(conditions, '3-ЗОННЫЙ', 'climate-3');
     });
 
     // проверяем, что условие появилось в деталке машины

@@ -10,7 +10,7 @@ describe('test two zone climate', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, '2-ЗОННЫЙ');
+       browser.helpers.checkCheckboxNfz(conditions, '2-ЗОННЫЙ', 'climate-2');
     });
 
     // проверяем, что условие появилось в деталке машины

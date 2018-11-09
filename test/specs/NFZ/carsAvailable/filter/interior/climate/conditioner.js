@@ -10,7 +10,7 @@ describe('test climate conditioner', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'CLIMATIC');
+       browser.helpers.checkCheckboxNfz(conditions, 'CLIMATIC', 'climate-1');
     });
 
     // проверяем, что условие появилось в деталке машины
