@@ -10,7 +10,7 @@ describe('test carrying to one ton', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'СВЫШЕ 1Т');
+       browser.helpers.checkCheckboxNfz(conditions, 'СВЫШЕ 1Т', 'load-capacity-2');
     });
 
     // проверяем, что условие появилось в деталке машины
