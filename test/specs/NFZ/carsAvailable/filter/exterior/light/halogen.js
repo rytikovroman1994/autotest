@@ -10,7 +10,7 @@ describe('test light halogen', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'ГАЛОГЕН');
+       browser.helpers.checkCheckboxNfz(conditions, 'ГАЛОГЕН', 'light-led');
     });
 
     // проверяем, что условие появилось в деталке машины

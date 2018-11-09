@@ -10,7 +10,7 @@ describe('test light fog light', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'ПРОТИВОТУМАННЫЕ ФАРЫ');
+       browser.helpers.checkCheckboxNfz(conditions, 'ПРОТИВОТУМАННЫЕ ФАРЫ', 'fog-light');
     });
 
     // проверяем, что условие появилось в деталке машины

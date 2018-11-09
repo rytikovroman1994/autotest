@@ -10,7 +10,7 @@ describe('test light bixenon', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'БИКСЕНОН / СВЕТОДИОДЫ');
+       browser.helpers.checkCheckboxNfz(conditions, 'БИКСЕНОН / СВЕТОДИОДЫ', 'light-led');
     });
 
     // проверяем, что условие появилось в деталке машины
