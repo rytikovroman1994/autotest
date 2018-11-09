@@ -10,7 +10,7 @@ describe('test sittings electric seat drive', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'ПРИВОД СИДЕНИЙ');
+       browser.helpers.checkCheckboxNfz(conditions, 'ПРИВОД СИДЕНИЙ', 'seats-transform');
     });
 
     // проверяем, что условие появилось в деталке машины

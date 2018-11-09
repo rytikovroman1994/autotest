@@ -10,7 +10,7 @@ describe('test sittings fabric', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, 'ТКАНЕВЫЙ САЛОН');
+       browser.helpers.checkCheckboxNfz(conditions, 'ТКАНЕВЫЙ САЛОН', 'seats-cloth');
     });
 
     // проверяем, что условие появилось в деталке машины
