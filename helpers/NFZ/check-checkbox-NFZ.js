@@ -17,12 +17,23 @@ export default function checkCheckboxNfz(atribut, condition, picture) {
         5000, "Условие не появилось в фильтре");
     // проверяем что это именно автоматическая
     expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal(condition);
+    // получаем ссылку на картинку условия в фильтре
+    const linkPicture = browser.getAttribute('.avn008_filter-value-item_image img', 'src');
     // проверяем что подставилась нужная картинка 
-    expect(browser.getAttribute('.avn008_filter-value-item_image img', 'src')).to.be.include(picture);
-    // проверяем, что кнопка "Показать" активна
+    expect(linkPicture).to.be.include(picture);
+    console.log(linkPicture)
+    // проверяем что картинка отображается
+    const checkStatus = () => {
+        var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", `${linkPicture}`, false);
+        xhr.send("result_cat=true");
+        return xhr.status;
+    }
+    console.log(checkStatus());
     browser.waitUntil(
-        () => browser.isVisible('.avn008_overlay_bar--progress') === false,
-        10000, "Кнопка Показать не активна в течении 10 секунд");  
+        () => checkStatus() != 404,
+        5000, `У ${atribut} отсутствует картинка в фильтре`);  
     // убираем условие
     browser.click(`.checkbox[data-name="${atribut}"]`);
     // проверяем, что условие пропало
