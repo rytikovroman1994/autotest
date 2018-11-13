@@ -1,4 +1,4 @@
-describe('transmission', () => {
+describe.skip('transmission', () => {
     before(() => {
         browser.helpers.openSite();
     });
