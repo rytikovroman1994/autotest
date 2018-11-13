@@ -17,7 +17,7 @@ describe('test heated steering wheel', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ПОДОГРЕВ РУЛЯ');
+        browser.helpers.checkCheckbox(conditions, 'ПОДОГРЕВ РУЛЯ', 'wheel-heating');
      });
 
      it(`Check more in detail ${conditions}`, () => {

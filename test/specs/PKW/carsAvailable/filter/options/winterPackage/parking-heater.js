@@ -17,7 +17,7 @@ describe('test heated Parking heater', () => {
 
      it(`Check checkbox heated ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'СТОЯНОЧНЫЙ ОТОПИТЕЛЬ');
+        browser.helpers.checkCheckbox(conditions, 'СТОЯНОЧНЫЙ ОТОПИТЕЛЬ', 'parking-heating');
      });
 
      it(`Check more in detail ${conditions}`, () => {

@@ -17,7 +17,7 @@ describe('test adaptive cruise control', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'КРУИЗ-КОНТРОЛЬ');
+        browser.helpers.checkCheckbox(conditions, 'КРУИЗ-КОНТРОЛЬ', 'cruise-control');
      });
 
      it(`Check more in detail ${conditions}`, () => {

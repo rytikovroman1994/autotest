@@ -17,7 +17,7 @@ describe('test rain sensor', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ДАТЧИК ДОЖДЯ');
+        browser.helpers.checkCheckbox(conditions, 'ДАТЧИК ДОЖДЯ', 'rain-detect');
      });
 
      it(`Check more in detail ${conditions}`, () => {

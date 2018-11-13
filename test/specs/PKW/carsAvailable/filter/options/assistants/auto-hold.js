@@ -17,7 +17,7 @@ describe('test auto hold', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ФУНКЦИЯ AUTO-HOLD');
+        browser.helpers.checkCheckbox(conditions, 'ФУНКЦИЯ AUTO-HOLD', 'auto-hold');
      });
 
      it(`Check more in detail ${conditions}`, () => {

@@ -17,7 +17,7 @@ describe('test heated mirrors', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ПОДОГРЕВ ЗЕРКАЛ');
+        browser.helpers.checkCheckbox(conditions, 'ПОДОГРЕВ ЗЕРКАЛ', 'mirrors-heating');
      });
 
      it(`Check more in detail ${conditions}`, () => {

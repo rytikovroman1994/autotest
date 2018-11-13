@@ -17,7 +17,7 @@ describe('test front assist', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'FRONT ASSIST');
+        browser.helpers.checkCheckbox(conditions, 'FRONT ASSIST', 'front-assist');
      });
 
      it(`Check more in detail ${conditions}`, () => {

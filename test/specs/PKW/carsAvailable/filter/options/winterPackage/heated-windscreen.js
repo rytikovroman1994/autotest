@@ -17,7 +17,7 @@ describe('test heated heated windscreen', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ПОДОГРЕВ СТЕКЛА');
+        browser.helpers.checkCheckbox(conditions, 'ПОДОГРЕВ СТЕКЛА', 'front-heating');
      });
 
      it(`Check more in detail ${conditions}`, () => {

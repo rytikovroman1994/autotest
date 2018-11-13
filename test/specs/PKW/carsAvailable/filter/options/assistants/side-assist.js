@@ -17,7 +17,7 @@ describe('test side assist', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'SIDE ASSIST');
+        browser.helpers.checkCheckbox(conditions, 'SIDE ASSIST', 'side-assist');
      });
 
      it(`Check more in detail ${conditions}`, () => {

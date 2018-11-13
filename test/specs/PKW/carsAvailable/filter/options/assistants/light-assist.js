@@ -17,7 +17,7 @@ describe('test light assist', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'LIGHT ASSIST');
+        browser.helpers.checkCheckbox(conditions, 'LIGHT ASSIST', 'light-assist');
      });
 
      it(`Check more in detail ${conditions}`, () => {
