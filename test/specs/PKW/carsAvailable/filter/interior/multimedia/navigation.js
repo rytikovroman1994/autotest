@@ -19,7 +19,7 @@ describe('test navigaton', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'НАВИГАЦИЯ');
+        browser.helpers.checkCheckbox(conditions, 'НАВИГАЦИЯ', 'navigation');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

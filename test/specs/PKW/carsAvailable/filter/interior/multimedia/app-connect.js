@@ -19,7 +19,7 @@ describe('test app connect', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'APP CONNECT');
+        browser.helpers.checkCheckbox(conditions, 'APP CONNECT', 'app-connect');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

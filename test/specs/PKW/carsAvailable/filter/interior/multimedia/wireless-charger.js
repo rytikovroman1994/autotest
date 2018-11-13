@@ -19,7 +19,7 @@ describe('test wireless charger', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'QI ЗАРЯДКА');
+        browser.helpers.checkCheckbox(conditions, 'QI ЗАРЯДКА', 'qi-charge');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

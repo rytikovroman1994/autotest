@@ -19,7 +19,7 @@ describe('test premium audio', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ПРЕМИУМ АУДИО');
+        browser.helpers.checkCheckbox(conditions, 'ПРЕМИУМ АУДИО', 'premium-audio');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

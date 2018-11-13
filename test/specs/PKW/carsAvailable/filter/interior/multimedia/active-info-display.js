@@ -19,7 +19,7 @@ describe('test active info display', () => {
 
      it(`Check checkbox dynamic ${conditions}`, () => {
          // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ACTIVE INFO DISPLAY');
+        browser.helpers.checkCheckbox(conditions, 'ACTIVE INFO DISPLAY', 'active-info-display');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

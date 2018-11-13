@@ -19,7 +19,7 @@ describe('test bluetooth', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'BLUETOOTH');
+        browser.helpers.checkCheckbox(conditions, 'BLUETOOTH', 'bluetooth');
      });
 
      it(`Check more in detail about ${conditions}`, () => {
