@@ -15,7 +15,7 @@ describe('test mirror drive', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ПРИВОД ЗЕРКАЛ');
+        browser.helpers.checkCheckbox(conditions, 'ПРИВОД ЗЕРКАЛ', 'mirrors');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

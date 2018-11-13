@@ -15,7 +15,7 @@ describe('test electronic tailgate openings', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ПРИВОД БАГАЖНИКА');
+        browser.helpers.checkCheckbox(conditions, 'ПРИВОД БАГАЖНИКА', 'automatic-trunk');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

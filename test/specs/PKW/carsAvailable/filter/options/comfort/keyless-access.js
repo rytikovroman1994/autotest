@@ -15,7 +15,7 @@ describe('test keyless-access', () => {
 
      it(`Check checkbox ${conditions}`, () => {
        // проверяем работу чекбокса
-       browser.helpers.checkCheckbox(conditions, 'KEYLESS ACCESS');
+       browser.helpers.checkCheckbox(conditions, 'KEYLESS ACCESS', 'keyless-access');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

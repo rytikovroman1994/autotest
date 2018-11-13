@@ -15,7 +15,7 @@ describe('test easy-open', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'СИСТЕМА EASY OPEN');
+        browser.helpers.checkCheckbox(conditions, 'СИСТЕМА EASY OPEN', 'easy-open');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

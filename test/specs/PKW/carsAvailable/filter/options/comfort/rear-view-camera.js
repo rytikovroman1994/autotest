@@ -15,7 +15,7 @@ describe('test Rear View Camera', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'REAR VIEW');
+        browser.helpers.checkCheckbox(conditions, 'REAR VIEW', 'rear-camera');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

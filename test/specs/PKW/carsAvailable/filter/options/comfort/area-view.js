@@ -15,7 +15,7 @@ describe('test area view', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'СИСТЕМА AREA VIEW');
+        browser.helpers.checkCheckbox(conditions, 'СИСТЕМА AREA VIEW', 'area-view');
      });
 
      it(`Check more in detail about ${conditions}`, () => {
