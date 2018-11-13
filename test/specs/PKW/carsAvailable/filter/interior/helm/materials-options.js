@@ -1,4 +1,4 @@
-describe('test material and options', () => {
+describe.skip('test material and options', () => {
     before('open page helm', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьер
