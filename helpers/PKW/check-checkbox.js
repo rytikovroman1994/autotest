@@ -8,7 +8,7 @@
  *      browser.helpers.checkCheckbox('.prefix_l_1 > div > label:nth-child(4)', 'AT', 'wheel');
  */
 
-export default function checkCheckboxNfz(atribut, condition, picture) {
+export default function checkCheckbox(atribut, condition, picture) {
     // выбираем чекбокс
     browser.click(`.checkbox[data-name="${atribut}"]`);
     // проверяем, что появилось условие в фильтре
