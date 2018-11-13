@@ -5,7 +5,7 @@
  * @param {string} condition - title условия в фильтре
  * @param {string} picture - название картинке в ссылке на неё
  * @example
- *      browser.helpers.checkCheckbox('.prefix_l_1 > div > label:nth-child(4)', 'AT');
+ *      browser.helpers.checkCheckbox('.prefix_l_1 > div > label:nth-child(4)', 'AT', 'wheel');
  */
 
 export default function checkCheckboxNfz(atribut, condition, picture) {
@@ -15,7 +15,7 @@ export default function checkCheckboxNfz(atribut, condition, picture) {
     browser.waitUntil(
         () => browser.isExisting('.avn008_filter-value-item') === true,
         5000, "Условие не появилось в фильтре");
-    // проверяем что это именно автоматическая
+    // проверяем что это именно выбранное условие
     expect(browser.getText('.avn008_filter-value-item_text__bottom')).to.be.equal(condition);
     // получаем ссылку на картинку условия в фильтре
     const linkPicture = browser.getAttribute('.avn008_filter-value-item_image img', 'src');
