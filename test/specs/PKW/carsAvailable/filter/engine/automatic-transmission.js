@@ -4,7 +4,7 @@ describe('test automatic transmission', () => {
     });
 
     // переходим на страницу двигателя
-    it('page engine', () => {
+    it('Page engine', () => {
         // кликаем по кнопке Бюджет
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаем перехода на страницу 
@@ -12,7 +12,7 @@ describe('test automatic transmission', () => {
     });
 
     // проверяе что картинка на месте
-    it('check images transmision', () => {
+    it('Check images transmision', () => {
         // проверяем что картинка видна
         browser.waitForVisible('.prefix_l_1 img');
         // проверяем что отображается нужная картинка
@@ -21,7 +21,7 @@ describe('test automatic transmission', () => {
     });
 
     // проверяем работу чекбокса "Автоматическая"
-    it('check checkboxes auto', () => {
+    it('Check checkboxes auto', () => {
         browser.helpers.checkCheckboxNfz('Автоматическая', 'AT', 'transmission');
     });
 });
