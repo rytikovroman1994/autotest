@@ -1,4 +1,4 @@
-describe('test materials', () => {
+describe.skip('test materials', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Алькантара';
     const ctx = {
