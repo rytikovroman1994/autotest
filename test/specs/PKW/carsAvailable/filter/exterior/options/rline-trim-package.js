@@ -17,7 +17,7 @@ describe('test dynamic r-line trim package', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'R-LINE');
+        browser.helpers.checkCheckbox(conditions, 'R-LINE','r-line');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

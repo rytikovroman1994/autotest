@@ -17,7 +17,7 @@ describe('test railings', () => {
 
      it(`Сheck checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'РЕЙЛИНГИ');
+        browser.helpers.checkCheckbox(conditions, 'РЕЙЛИНГИ', 'roof-rails');
      });
 
      it(`Сheck more in detail about ${conditions}`, () => {

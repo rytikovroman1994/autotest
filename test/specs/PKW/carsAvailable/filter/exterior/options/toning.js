@@ -17,7 +17,7 @@ describe('test dynamic light', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ТОНИРОВКА');
+        browser.helpers.checkCheckbox(conditions, 'ТОНИРОВКА', 'toning');
      });
 
      it(`Check more in detail about ${conditions}`, () => {

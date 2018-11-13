@@ -17,7 +17,7 @@ describe('test dynamic sunroof', () => {
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-        browser.helpers.checkCheckbox(conditions, 'ПАНОРАМНЫЙ ЛЮК');
+        browser.helpers.checkCheckbox(conditions, 'ПАНОРАМНЫЙ ЛЮК', 'sunroof');
      });
 
      it(`Check more in detail about ${conditions}`, () => {
