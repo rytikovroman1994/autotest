@@ -17,5 +17,5 @@ describe('test electric seat drive', () => {
         const newArray = browser.helpers.checkConditions(conditions, 'Тканевые сидения');
         // проверяем
         expect(newArray).to.be.equal('Тканевые сидения');
-      });
+    });
 });
