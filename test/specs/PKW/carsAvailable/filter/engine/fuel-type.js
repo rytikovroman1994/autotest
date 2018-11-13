@@ -1,4 +1,4 @@
-describe('fuel-type', () => {
+describe.skip('fuel-type', () => {
     before(() => {
         browser.helpers.openSite();
     });
