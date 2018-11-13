@@ -22,6 +22,6 @@ describe('test gasoline', () => {
 
     // проверяем работу чекбокса "Автоматическая"
     it('Check checkboxes auto', () => {
-        browser.helpers.checkCheckboxNfz('Бензин', 'БЕНЗИН', 'gas-type');
+        browser.helpers.checkCheckbox('Бензин', 'БЕНЗИН', 'gas-type');
     });
 });

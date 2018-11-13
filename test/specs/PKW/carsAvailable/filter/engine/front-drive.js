@@ -22,6 +22,6 @@ describe('test front drive', () => {
 
     // проверяем работу чекбокса "Автоматическая"
     it('Check checkboxes auto', () => {
-        browser.helpers.checkCheckboxNfz('Передний привод', 'ПЕРЕДНИЙ', 'chassis');
+        browser.helpers.checkCheckbox('Передний привод', 'ПЕРЕДНИЙ', 'chassis');
     });
 });

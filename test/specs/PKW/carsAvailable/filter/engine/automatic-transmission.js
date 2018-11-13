@@ -22,6 +22,6 @@ describe('test automatic transmission', () => {
 
     // проверяем работу чекбокса "Автоматическая"
     it('Check checkboxes auto', () => {
-        browser.helpers.checkCheckboxNfz('Автоматическая', 'AT', 'transmission');
+        browser.helpers.checkCheckbox('Автоматическая', 'AT', 'transmission');
     });
 });

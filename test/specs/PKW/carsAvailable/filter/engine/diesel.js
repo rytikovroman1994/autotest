@@ -22,6 +22,6 @@ describe('test diesel', () => {
 
     // проверяем работу чекбокса "Автоматическая"
     it('Check checkboxes auto', () => {
-        browser.helpers.checkCheckboxNfz('Дизель', 'ДИЗЕЛЬ', 'gas-type');
+        browser.helpers.checkCheckbox('Дизель', 'ДИЗЕЛЬ', 'gas-type');
     });
 });

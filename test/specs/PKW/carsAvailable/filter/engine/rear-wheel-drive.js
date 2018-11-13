@@ -22,6 +22,6 @@ describe('test rear wheel drive', () => {
 
     // проверяем работу чекбокса "Автоматическая"
     it('Check checkboxes auto', () => {
-        browser.helpers.checkCheckboxNfz('Полный привод', 'ПОЛНЫЙ', 'chassis');
+        browser.helpers.checkCheckbox('Полный привод', 'ПОЛНЫЙ', 'chassis');
     });
 });
