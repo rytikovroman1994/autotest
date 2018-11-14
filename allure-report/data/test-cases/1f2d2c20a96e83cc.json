@@ -1,0 +1,78 @@
+{
+  "uid" : "1f2d2c20a96e83cc",
+  "name" : "Checking phone input",
+  "fullName" : "test button book in the menu.Checking phone input",
+  "historyId" : "19c06d297aa925e0e265687c6a11337c",
+  "time" : {
+    "start" : 1541692218406,
+    "stop" : 1541692239062,
+    "duration" : 20656
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".input__field[placeholder=\"Телефон\"]\") still not existing after 20000ms",
+  "statusTrace" : "Error: element (\".input__field[placeholder=\"Телефон\"]\") still not existing after 20000ms\n                    at elements(\".input__field[placeholder=\"Телефон\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".input__field[placeholder=\"Телефон\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".input__field[placeholder=\"Телефон\"]\") still not existing after 20000ms",
+    "statusTrace" : "Error: element (\".input__field[placeholder=\"Телефон\"]\") still not existing after 20000ms\n                    at elements(\".input__field[placeholder=\"Телефон\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".input__field[placeholder=\"Телефон\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cb52b9d19c641854",
+      "name" : "Screenshot",
+      "source" : "cb52b9d19c641854.png",
+      "type" : "image/png",
+      "size" : 514315
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "testClass",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "testMethod",
+    "value" : "Checking phone input"
+  }, {
+    "name" : "package",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1f2d2c20a96e83cc.json",
+  "parameterValues" : [ "firefox" ]
+}

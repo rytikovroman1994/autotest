@@ -1,0 +1,87 @@
+{
+  "uid" : "63a3cfd2b9b578f8",
+  "name" : "\"before all\" hook",
+  "fullName" : "test totalMass over-2.5-ton.\"before all\" hook",
+  "historyId" : "51ea09cb499f8f55b43a4b7076027cb",
+  "time" : {
+    "start" : 1541767720661,
+    "stop" : 1541767720667,
+    "duration" : 6
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Cannot read property 'openFilter' of undefined",
+  "statusTrace" : "TypeError: Cannot read property 'openFilter' of undefined\n                    at Context.before (C:/autotest/test/specs/NFZ/carsAvailable/filter/exterior/totalMass/over-2.5-ton.js:5:25)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test totalMass over-2.5-ton"
+  }, {
+    "name" : "testClass",
+    "value" : "test totalMass over-2.5-ton"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test totalMass over-2.5-ton"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c1d7c2a9b38c1415",
+      "status" : "broken",
+      "statusDetails" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\NFZ\\carsAvailable\\filter\\exterior\\totalMass\\over-2.5-ton.js)",
+      "time" : {
+        "start" : 1541698904412,
+        "stop" : 1541698994417,
+        "duration" : 90005
+      }
+    }, {
+      "uid" : "2e86c37005d50134",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1541698623133,
+        "stop" : 1541698634505,
+        "duration" : 11372
+      }
+    }, {
+      "uid" : "31a26222b76b29b9",
+      "status" : "broken",
+      "statusDetails" : "ESOCKETTIMEDOUT",
+      "time" : {
+        "start" : 1541683228889,
+        "stop" : 1541683249921,
+        "duration" : 21032
+      }
+    }, {
+      "uid" : "80a8078edf8c1c1b",
+      "status" : "broken",
+      "statusDetails" : "ESOCKETTIMEDOUT",
+      "time" : {
+        "start" : 1541682035026,
+        "stop" : 1541682057182,
+        "duration" : 22156
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "63a3cfd2b9b578f8.json",
+  "parameterValues" : [ ]
+}

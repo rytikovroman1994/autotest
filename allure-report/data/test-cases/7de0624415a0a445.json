@@ -1,0 +1,54 @@
+{
+  "uid" : "7de0624415a0a445",
+  "name" : "Check condition in the card",
+  "fullName" : "test mechanical transmission.Check condition in the card",
+  "historyId" : "1b1c7f13d8a8c2fe0d7ddb9f72e5226f",
+  "time" : {
+    "start" : 1540815944191,
+    "stop" : 1540815947859,
+    "duration" : 3668
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '5-МКП' to include 'МКП4'",
+  "statusTrace" : "AssertionError: expected '5-МКП' to include 'МКП4'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/engine/mechanical-transmission.js:33:31)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test mechanical transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "test mechanical transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check condition in the card"
+  }, {
+    "name" : "package",
+    "value" : "test mechanical transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7de0624415a0a445.json",
+  "parameterValues" : [ "chrome" ]
+}

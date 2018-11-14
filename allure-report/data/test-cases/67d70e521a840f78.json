@@ -1,0 +1,60 @@
+{
+  "uid" : "67d70e521a840f78",
+  "name" : "Checking phone input",
+  "fullName" : "button book in the menu.Checking phone input",
+  "historyId" : "654552d4c9da8323cfba1db61b969045",
+  "time" : {
+    "start" : 1541700696266,
+    "stop" : 1541700786284,
+    "duration" : 90018
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\NFZ\\carsAvailable\\basicField\\button-book-menu.js)",
+  "statusTrace" : "Error: Timeout of 90000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\NFZ\\carsAvailable\\basicField\\button-book-menu.js)\n                    at Test.Runnable._timeoutError (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:440:10)\n                    at Timeout.<anonymous> (C:\\autotest\\node_modules\\wdio-mocha-framework\\node_modules\\mocha\\lib\\runnable.js:251:24)\n                    at ontimeout (timers.js:498:11)\n                    at tryOnTimeout (timers.js:323:5)\n                    at Timer.listOnTimeout (timers.js:290:5)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "testClass",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "testMethod",
+    "value" : "Checking phone input"
+  }, {
+    "name" : "package",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "internet explorer"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "67d70e521a840f78.json",
+  "parameterValues" : [ "internet explorer" ]
+}

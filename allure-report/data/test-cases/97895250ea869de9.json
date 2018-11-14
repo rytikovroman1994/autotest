@@ -1,0 +1,186 @@
+{
+  "uid" : "97895250ea869de9",
+  "name" : "Check checkbox diesel",
+  "fullName" : "test fuel type in pictures.Check checkbox diesel",
+  "historyId" : "fb2e3e44226812c1e1dbe19fde23ce75",
+  "time" : {
+    "start" : 1542132081307,
+    "stop" : 1542132085883,
+    "duration" : 4576
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'TSI 150 Л.С.' to include 'MPI'",
+  "statusTrace" : "AssertionError: expected 'TSI 150 Л.С.' to include 'MPI'\n                    at Context.it (C:/autotest/test/specs/PKW/carsAvailable/filter/engine/fuel-type-pictures.js:66:31)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test fuel type in pictures"
+  }, {
+    "name" : "testClass",
+    "value" : "test fuel type in pictures"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox diesel"
+  }, {
+    "name" : "package",
+    "value" : "test fuel type in pictures"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cc39080b447bb381",
+      "status" : "failed",
+      "statusDetails" : "expected 'TSI 150 Л.С.' to include 'MPI'",
+      "time" : {
+        "start" : 1542131883173,
+        "stop" : 1542131888269,
+        "duration" : 5096
+      }
+    }, {
+      "uid" : "8c4ba91b6ba4731d",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter__tab[data-name=\"Двигатель\"]\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1541690025302,
+        "stop" : 1541690045749,
+        "duration" : 20447
+      }
+    }, {
+      "uid" : "3907b28f12e44fe5",
+      "status" : "failed",
+      "statusDetails" : "expected 'TDI 249 Л.С.' to include 'MPI'",
+      "time" : {
+        "start" : 1540469156212,
+        "stop" : 1540469157760,
+        "duration" : 1548
+      }
+    }, {
+      "uid" : "f7a7bd73d1a8a257",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <div class=\"btn btn_cta\" role=\"button\">...</div> is not clickable at point (1236, 600). Other element would receive the click: <div class=\"avn008_filter \">...</div>",
+      "time" : {
+        "start" : 1540469033533,
+        "stop" : 1540469035225,
+        "duration" : 1692
+      }
+    }, {
+      "uid" : "562f862448925b05",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter__tab[data-name=\"Двигатель\"]\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1540468931744,
+        "stop" : 1540468952084,
+        "duration" : 20340
+      }
+    }, {
+      "uid" : "d9eaaaeab955b4d4",
+      "status" : "failed",
+      "statusDetails" : "expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'БЕНЗИН'",
+      "time" : {
+        "start" : 1540468778702,
+        "stop" : 1540468779806,
+        "duration" : 1104
+      }
+    }, {
+      "uid" : "5a84acc62eb6a154",
+      "status" : "failed",
+      "statusDetails" : "expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'БЕНЗИН'",
+      "time" : {
+        "start" : 1540468712761,
+        "stop" : 1540468713368,
+        "duration" : 607
+      }
+    }, {
+      "uid" : "c635c28ef0904fdb",
+      "status" : "failed",
+      "statusDetails" : "expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'БЕНЗИН'",
+      "time" : {
+        "start" : 1540468627116,
+        "stop" : 1540468627696,
+        "duration" : 580
+      }
+    }, {
+      "uid" : "5c17259558217aec",
+      "status" : "failed",
+      "statusDetails" : "expected 'TSI 150 Л.С.' to include 'MPI'",
+      "time" : {
+        "start" : 1540468196552,
+        "stop" : 1540468198202,
+        "duration" : 1650
+      }
+    }, {
+      "uid" : "79c7b42f298961f0",
+      "status" : "failed",
+      "statusDetails" : "expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'БЕНЗИН'",
+      "time" : {
+        "start" : 1540468093382,
+        "stop" : 1540468093960,
+        "duration" : 578
+      }
+    }, {
+      "uid" : "de96e0807dff9e1a",
+      "status" : "failed",
+      "statusDetails" : "expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'БЕНЗИН'",
+      "time" : {
+        "start" : 1540467943957,
+        "stop" : 1540467944475,
+        "duration" : 518
+      }
+    }, {
+      "uid" : "b9f2fa5582196d56",
+      "status" : "failed",
+      "statusDetails" : "expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'БЕНЗИН'",
+      "time" : {
+        "start" : 1540467890323,
+        "stop" : 1540467890849,
+        "duration" : 526
+      }
+    }, {
+      "uid" : "27a932017ab5f872",
+      "status" : "failed",
+      "statusDetails" : "expected [ 'ДИЗЕЛЬ', 'БЕНЗИН' ] to equal 'БЕНЗИН'",
+      "time" : {
+        "start" : 1540467791753,
+        "stop" : 1540467792303,
+        "duration" : 550
+      }
+    }, {
+      "uid" : "af924a4f8cd9672a",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1540406167222,
+        "stop" : 1540406167559,
+        "duration" : 337
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "97895250ea869de9.json",
+  "parameterValues" : [ "chrome" ]
+}

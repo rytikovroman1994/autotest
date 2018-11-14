@@ -1,0 +1,95 @@
+{
+  "uid" : "9e61f6391d9ed472",
+  "name" : "Check the equipment in detail Массаж",
+  "fullName" : "test options.Check the equipment in detail Массаж",
+  "historyId" : "68d5113e97806bc894f924a50fff4c06",
+  "time" : {
+    "start" : 1542135644886,
+    "stop" : 1542135667504,
+    "duration" : 22618
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn008_filter-value-item_image\") still not visible after 20000ms",
+  "statusTrace" : "Error: element (\".avn008_filter-value-item_image\") still not visible after 20000ms\n                    at elements(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn008_filter-value-item_image\") still not visible after 20000ms",
+    "statusTrace" : "Error: element (\".avn008_filter-value-item_image\") still not visible after 20000ms\n                    at elements(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn008_filter-value-item_image\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "50329d716731fab7",
+      "name" : "Screenshot",
+      "source" : "50329d716731fab7.png",
+      "type" : "image/png",
+      "size" : 134186
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test options"
+  }, {
+    "name" : "testClass",
+    "value" : "test options"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail Массаж"
+  }, {
+    "name" : "package",
+    "value" : "test options"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a04d6c1194161ad3",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1542135499854,
+        "stop" : 1542135522478,
+        "duration" : 22624
+      }
+    }, {
+      "uid" : "544afe75e2c512cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540406989749,
+        "stop" : 1540407004504,
+        "duration" : 14755
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9e61f6391d9ed472.json",
+  "parameterValues" : [ "chrome" ]
+}

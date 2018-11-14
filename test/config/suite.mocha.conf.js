@@ -88,6 +88,7 @@ exports.config = {
 
           {
               browserName: 'chrome',
+              version: '69.0.3497.100',
               maxInstances: '1',
               seleniumProtocol: "WebDriver",
               // specs: [
@@ -95,15 +96,38 @@ exports.config = {
               // ],
           },
 
+          {
+              browserName: 'chrome',
+              version: '70.0.3538.77',
+              maxInstances: '1',
+              seleniumProtocol: "WebDriver",
+              // specs: [
+              //     './test/specs/*.js'
+              // ],
+        },
+
           // {
           //     browserName: 'firefox',
+          //     version: '63.0.1',
           //     maxInstances: '1',
-          //     seleniumProtocol: "WebDriver",
+          //     marionette: true,
           //     //build: process.env.TRAVIS_BUILD_NUMBER,
           //     // specs: [
           //     //     './test/specs/sampe*.js'
           //     // ],
           // },
+
+        //   {
+        //       browserName: 'firefox',
+        //       version: '62.0.3',
+        //       maxInstances: '1',
+        //       seleniumProtocol: "geckodriver",
+        //       marionette: true,
+        //       //build: process.env.TRAVIS_BUILD_NUMBER,
+        //       // specs: [
+        //       //     './test/specs/sampe*.js'
+        //       // ],
+        // },
 
           // {
           //     browserName: 'internet explorer',
@@ -181,8 +205,8 @@ exports.config = {
     // the wdio-sync package. If you still want to run your tests in an async way
     // e.g. using promises you can set the sync option to false.
     // path: '/wd/hub',
-    maxSession: 25,
-    // host: '192.168.99.100',
+    // maxSession: 1,
+    host: '192.168.99.100',
     port: 4444,
     sync: true,
     reporters: ['spec'],
@@ -194,8 +218,8 @@ exports.config = {
     // with "/", then the base url gets prepended.
     baseUrl: 'https://vw.kodix.ru/',
     waitforTimeout: 20000,            // Default timeout for all waitFor* commands.
-    connectionRetryTimeout: 10000,    // Default timeout in milliseconds for request if Selenium Grid doesn't send response
-    connectionRetryCount: 2,          // Default request retries count
+    connectionRetryTimeout: 60000,    // Default timeout in milliseconds for request if Selenium Grid doesn't send response
+    connectionRetryCount:3,          // Default request retries count
     
     // подключил webdrivercss для более сложных скриншотов
     plugins: {
@@ -209,14 +233,14 @@ exports.config = {
       // browsererevent : {}
     },
     
-    services: ['selenium-standalone'],
+    // services: ['selenium-standalone'],
     // services: ['selenium-standalone', 'phantomjs'],
     // services: ['docker'],  
 
     framework: 'mocha',
     mochaOpts: {
       ui: 'bdd',
-      timeout: 900000,
+      timeout: 180000,
       compilers: ['js:babel-register'],
     },
 
@@ -226,8 +250,8 @@ exports.config = {
         json:   {outputDir:   './test/reports/json-results/'},
         allure: {
           outputDir:   './test/reports/allure-results/',
-          disableWebdriverStepsReporting: true,
-          //useCucumberStepReporter: false,
+          disableWebdriverStepsReporting: false,
+          useCucumberStepReporter: false,
         },
         mochawesome:  {outputDir:   './test/reports/mocha-results/'},
         mochawesomeOpts: {

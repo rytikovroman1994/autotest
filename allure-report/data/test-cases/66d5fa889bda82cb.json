@@ -1,0 +1,96 @@
+{
+  "uid" : "66d5fa889bda82cb",
+  "name" : "check slider in page parking assistant",
+  "fullName" : "test slider in page parking assistant.check slider in page parking assistant",
+  "historyId" : "867e360127168691ae47db6b76ed078d",
+  "time" : {
+    "start" : 1542136740737,
+    "stop" : 1542136749233,
+    "duration" : 8496
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Функция Trailer Assist не доступна",
+  "statusTrace" : "Error: Функция Trailer Assist не доступна\n                    at isVisible(\".avn008_filter-value-item\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn008_filter-value-item\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Функция Trailer Assist не доступна",
+    "statusTrace" : "Error: Функция Trailer Assist не доступна\n                    at isVisible(\".avn008_filter-value-item\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn008_filter-value-item\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f251f840b4825bb4",
+      "name" : "Screenshot",
+      "source" : "f251f840b4825bb4.png",
+      "type" : "image/png",
+      "size" : 141644
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test slider in page parking assistant"
+  }, {
+    "name" : "testClass",
+    "value" : "test slider in page parking assistant"
+  }, {
+    "name" : "testMethod",
+    "value" : "check slider in page parking assistant"
+  }, {
+    "name" : "package",
+    "value" : "test slider in page parking assistant"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "dea6b09ba9d6712",
+      "status" : "broken",
+      "statusDetails" : "Функция Trailer Assist не доступна",
+      "time" : {
+        "start" : 1542136560112,
+        "stop" : 1542136567552,
+        "duration" : 7440
+      }
+    }, {
+      "uid" : "4be62f306b176600",
+      "status" : "broken",
+      "statusDetails" : "Функция Trailer Assist не доступна",
+      "time" : {
+        "start" : 1540407230817,
+        "stop" : 1540407236477,
+        "duration" : 5660
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "66d5fa889bda82cb.json",
+  "parameterValues" : [ "chrome" ]
+}

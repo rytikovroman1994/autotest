@@ -1,0 +1,93 @@
+{
+  "uid" : "ccc805af5ef9f4e0",
+  "name" : "Check fuel-gasoline",
+  "fullName" : "test fuel-gasoline.Check fuel-gasoline",
+  "historyId" : "c2d560fc3d09e57bc91082df90086d73",
+  "time" : {
+    "start" : 1540898101694,
+    "stop" : 1540898103338,
+    "duration" : 1644
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'ДИЗЕЛЬ' to equal 'БЕНЗИН'",
+  "statusTrace" : "AssertionError: expected 'ДИЗЕЛЬ' to equal 'БЕНЗИН'\n                    at Object.checkCheckboxNfz (C:/autotest/helpers/NFZ/check-checkbox-NFZ.js:18:77)\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/engine/fuel-gasoline.js:10:25)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test fuel-gasoline"
+  }, {
+    "name" : "testClass",
+    "value" : "test fuel-gasoline"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check fuel-gasoline"
+  }, {
+    "name" : "package",
+    "value" : "test fuel-gasoline"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e07d41d4e9e4e529",
+      "status" : "failed",
+      "statusDetails" : "expected 'ДИЗЕЛЬ' to equal 'БЕНЗИН'",
+      "time" : {
+        "start" : 1540897966313,
+        "stop" : 1540897967526,
+        "duration" : 1213
+      }
+    }, {
+      "uid" : "110e285d76ca2d18",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540895852490,
+        "stop" : 1540895888410,
+        "duration" : 35920
+      }
+    }, {
+      "uid" : "e78d124173546f19",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540895782721,
+        "stop" : 1540895787392,
+        "duration" : 4671
+      }
+    }, {
+      "uid" : "c5c0a3efd0d7d027",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540895726355,
+        "stop" : 1540895731567,
+        "duration" : 5212
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "ccc805af5ef9f4e0.json",
+  "parameterValues" : [ "firefox" ]
+}

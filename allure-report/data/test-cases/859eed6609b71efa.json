@@ -1,0 +1,71 @@
+{
+  "uid" : "859eed6609b71efa",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test multimedia navigation.Check the equipment in detail",
+  "historyId" : "b7f89efd7176b04165226e3b0a6bbb32",
+  "time" : {
+    "start" : 1541772373106,
+    "stop" : 1541772380142,
+    "duration" : 7036
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test multimedia navigation"
+  }, {
+    "name" : "testClass",
+    "value" : "test multimedia navigation"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test multimedia navigation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bf03f97525806042",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not visible after 60000ms",
+      "time" : {
+        "start" : 1541515093529,
+        "stop" : 1541515154046,
+        "duration" : 60517
+      }
+    }, {
+      "uid" : "eda265547a48dac0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541514899019,
+        "stop" : 1541514905590,
+        "duration" : 6571
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "859eed6609b71efa.json",
+  "parameterValues" : [ "chrome" ]
+}

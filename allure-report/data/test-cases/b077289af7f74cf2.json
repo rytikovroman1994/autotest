@@ -1,0 +1,78 @@
+{
+  "uid" : "b077289af7f74cf2",
+  "name" : "Check the color of the door",
+  "fullName" : "test body color.Check the color of the door",
+  "historyId" : "a89f6fbe6d1825d10c61990282958f88",
+  "time" : {
+    "start" : 1541078921849,
+    "stop" : 1541078923058,
+    "duration" : 1209
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <div class=\"avn-color-checkbox avn-color-checkbox--enabled\"></div> is not clickable at point (506, 555). Other element would receive the click: <div class=\"avn_color-container avn_color-container_mask\"></div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.9461159582953418-14\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <div class=\"avn-color-checkbox avn-color-checkbox--enabled\"></div> is not clickable at point (506, 555). Other element would receive the click: <div class=\"avn_color-container avn_color-container_mask\"></div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.9461159582953418-14\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "33934e876a47aaf9",
+      "name" : "Screenshot",
+      "source" : "33934e876a47aaf9.png",
+      "type" : "image/png",
+      "size" : 149245
+    }, {
+      "uid" : "ca3f366ed1bec6a",
+      "name" : "Screenshot",
+      "source" : "ca3f366ed1bec6a.png",
+      "type" : "image/png",
+      "size" : 160165
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test body color"
+  }, {
+    "name" : "testClass",
+    "value" : "test body color"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the color of the door"
+  }, {
+    "name" : "package",
+    "value" : "test body color"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b077289af7f74cf2.json",
+  "parameterValues" : [ "chrome" ]
+}

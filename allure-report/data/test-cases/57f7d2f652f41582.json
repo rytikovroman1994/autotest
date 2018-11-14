@@ -1,0 +1,78 @@
+{
+  "uid" : "57f7d2f652f41582",
+  "name" : "Verification of email input",
+  "fullName" : "test button book in the menu.Verification of email input",
+  "historyId" : "9149bdc710c17c9249a20dcc7012636f",
+  "time" : {
+    "start" : 1541692239063,
+    "stop" : 1541692260062,
+    "duration" : 20999
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".input__field[placeholder=\"Email\"]\") still not existing after 20000ms",
+  "statusTrace" : "Error: element (\".input__field[placeholder=\"Email\"]\") still not existing after 20000ms\n                    at elements(\".input__field[placeholder=\"Email\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".input__field[placeholder=\"Email\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".input__field[placeholder=\"Email\"]\") still not existing after 20000ms",
+    "statusTrace" : "Error: element (\".input__field[placeholder=\"Email\"]\") still not existing after 20000ms\n                    at elements(\".input__field[placeholder=\"Email\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".input__field[placeholder=\"Email\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "995a2188230170ad",
+      "name" : "Screenshot",
+      "source" : "995a2188230170ad.png",
+      "type" : "image/png",
+      "size" : 514315
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "testClass",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "testMethod",
+    "value" : "Verification of email input"
+  }, {
+    "name" : "package",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "57f7d2f652f41582.json",
+  "parameterValues" : [ "firefox" ]
+}

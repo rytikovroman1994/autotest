@@ -1,0 +1,72 @@
+{
+  "uid" : "224e075ac49bcb83",
+  "name" : "Check cards in viewed cars",
+  "fullName" : "test viewed cars.Check cards in viewed cars",
+  "historyId" : "c9cfdd44359ea0b2bf38a80e96452c4d",
+  "time" : {
+    "start" : 1541162063068,
+    "stop" : 1541162125015,
+    "duration" : 61947
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".slick-slide.slick-active\") still not existing after 60000ms",
+  "statusTrace" : "Error: element (\".slick-slide.slick-active\") still not existing after 60000ms\n                    at elements(\".slick-slide.slick-active\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".slick-slide.slick-active\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".slick-slide.slick-active\") still not existing after 60000ms",
+    "statusTrace" : "Error: element (\".slick-slide.slick-active\") still not existing after 60000ms\n                    at elements(\".slick-slide.slick-active\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".slick-slide.slick-active\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5d289013a9cdcade",
+      "name" : "Screenshot",
+      "source" : "5d289013a9cdcade.png",
+      "type" : "image/png",
+      "size" : 144772
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test viewed cars"
+  }, {
+    "name" : "testClass",
+    "value" : "test viewed cars"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check cards in viewed cars"
+  }, {
+    "name" : "package",
+    "value" : "test viewed cars"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "224e075ac49bcb83.json",
+  "parameterValues" : [ "chrome" ]
+}

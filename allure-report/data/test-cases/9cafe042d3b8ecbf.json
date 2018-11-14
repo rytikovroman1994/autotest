@@ -1,0 +1,87 @@
+{
+  "uid" : "9cafe042d3b8ecbf",
+  "name" : "\"before all\" hook",
+  "fullName" : "test pictures-detail.\"before all\" hook",
+  "historyId" : "e7bb6d3e01c0f94b1715df2af2fc4a74",
+  "time" : {
+    "start" : 1541684954438,
+    "stop" : 1541684976116,
+    "duration" : 21678
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "ESOCKETTIMEDOUT",
+  "statusTrace" : "Error: Couldn't connect to selenium server\n                    at url(\"https://vw.kodix.ru\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "ESOCKETTIMEDOUT",
+    "statusTrace" : "Error: Couldn't connect to selenium server\n                    at url(\"https://vw.kodix.ru\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e9fa5d37d47df0e",
+      "name" : "Screenshot",
+      "source" : "e9fa5d37d47df0e.png",
+      "type" : "image/png",
+      "size" : 236890
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test pictures-detail"
+  }, {
+    "name" : "testClass",
+    "value" : "test pictures-detail"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test pictures-detail"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a89ae66d5801bb25",
+      "status" : "broken",
+      "statusDetails" : "ESOCKETTIMEDOUT",
+      "time" : {
+        "start" : 1541611509777,
+        "stop" : 1541611531454,
+        "duration" : 21677
+      }
+    }, {
+      "uid" : "bf5fab6500dbbdbf",
+      "status" : "broken",
+      "statusDetails" : "element (\".preview_img img\") still not visible after 60000ms",
+      "time" : {
+        "start" : 1541004464606,
+        "stop" : 1541004538384,
+        "duration" : 73778
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9cafe042d3b8ecbf.json",
+  "parameterValues" : [ ]
+}

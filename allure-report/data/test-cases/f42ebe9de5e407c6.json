@@ -1,0 +1,86 @@
+{
+  "uid" : "f42ebe9de5e407c6",
+  "name" : "consider the number of cards",
+  "fullName" : "test checking cards in list.consider the number of cards",
+  "historyId" : "a3f43760f485405c9bc933dd80ff8c2c",
+  "time" : {
+    "start" : 1541692296525,
+    "stop" : 1541692307457,
+    "duration" : 10932
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn001_display__enable-hover > div:nth-child(2) .grid_l_3:nth-child(1) img\") still not visible after 5000ms",
+  "statusTrace" : "Error: element (\".avn001_display__enable-hover > div:nth-child(2) .grid_l_3:nth-child(1) img\") still not visible after 5000ms\n                    at elementIdDisplayed(\"b1ea9600-e955-40db-bc28-fb2d85465a7e\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:71:55",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn001_display__enable-hover > div:nth-child(2) .grid_l_3:nth-child(1) img\") still not visible after 5000ms",
+    "statusTrace" : "Error: element (\".avn001_display__enable-hover > div:nth-child(2) .grid_l_3:nth-child(1) img\") still not visible after 5000ms\n                    at elementIdDisplayed(\"b1ea9600-e955-40db-bc28-fb2d85465a7e\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:71:55",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "43559e22d48f21b7",
+      "name" : "Screenshot",
+      "source" : "43559e22d48f21b7.png",
+      "type" : "image/png",
+      "size" : 198333
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test checking cards in list"
+  }, {
+    "name" : "testClass",
+    "value" : "test checking cards in list"
+  }, {
+    "name" : "testMethod",
+    "value" : "consider the number of cards"
+  }, {
+    "name" : "package",
+    "value" : "test checking cards in list"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3d5dc12aea885ece",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540901142438,
+        "stop" : 1540901154062,
+        "duration" : 11624
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f42ebe9de5e407c6.json",
+  "parameterValues" : [ "firefox" ]
+}

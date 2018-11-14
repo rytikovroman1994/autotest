@@ -1,0 +1,71 @@
+{
+  "uid" : "439eb703822dec7b",
+  "name" : "Check slider power",
+  "fullName" : "test slider power.Check slider power",
+  "historyId" : "977bfde19630e1dbf38085aa42ab4f29",
+  "time" : {
+    "start" : 1541589965315,
+    "stop" : 1541589966744,
+    "duration" : 1429
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test slider power"
+  }, {
+    "name" : "testClass",
+    "value" : "test slider power"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check slider power"
+  }, {
+    "name" : "package",
+    "value" : "test slider power"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e4cc199f6262cec",
+      "status" : "failed",
+      "statusDetails" : "expected '102 - 224' to equal '102 - 223'",
+      "time" : {
+        "start" : 1540809078198,
+        "stop" : 1540809080215,
+        "duration" : 2017
+      }
+    }, {
+      "uid" : "101c354da5d76a95",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540809047762,
+        "stop" : 1540809048904,
+        "duration" : 1142
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "439eb703822dec7b.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,54 @@
+{
+  "uid" : "aa3bd1e1939d9494",
+  "name" : "Check condition in the card",
+  "fullName" : "test fuel-gasoline.Check condition in the card",
+  "historyId" : "31e07a55665d5309831a89645467db19",
+  "time" : {
+    "start" : 1540897967527,
+    "stop" : 1540897969619,
+    "duration" : 2092
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'TDI 140 Л.С.' to include 'MPI'",
+  "statusTrace" : "AssertionError: expected 'TDI 140 Л.С.' to include 'MPI'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/engine/fuel-gasoline.js:19:31)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test fuel-gasoline"
+  }, {
+    "name" : "testClass",
+    "value" : "test fuel-gasoline"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check condition in the card"
+  }, {
+    "name" : "package",
+    "value" : "test fuel-gasoline"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "aa3bd1e1939d9494.json",
+  "parameterValues" : [ "firefox" ]
+}

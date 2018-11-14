@@ -1,0 +1,54 @@
+{
+  "uid" : "5376c21297284bcf",
+  "name" : "Check condition in the card",
+  "fullName" : "test front-wheel drive.Check condition in the card",
+  "historyId" : "56c38f0f5fdc98b4621f972db6e7fbb9",
+  "time" : {
+    "start" : 1540824371067,
+    "stop" : 1540824374206,
+    "duration" : 3139
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'FWD' to include '4WD'",
+  "statusTrace" : "AssertionError: expected 'FWD' to include '4WD'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/engine/awd.js:21:31)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test front-wheel drive"
+  }, {
+    "name" : "testClass",
+    "value" : "test front-wheel drive"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check condition in the card"
+  }, {
+    "name" : "package",
+    "value" : "test front-wheel drive"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5376c21297284bcf.json",
+  "parameterValues" : [ "chrome" ]
+}

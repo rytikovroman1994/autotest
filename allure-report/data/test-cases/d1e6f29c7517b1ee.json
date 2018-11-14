@@ -1,0 +1,54 @@
+{
+  "uid" : "d1e6f29c7517b1ee",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test carrying to one ton.Check the equipment in detail",
+  "historyId" : "99cf72bd4e4f19ce1ecf98f7ecc1d12f",
+  "time" : {
+    "start" : 1541604574294,
+    "stop" : 1541604580673,
+    "duration" : 6379
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected undefined to equal 'Свыше 1т'",
+  "statusTrace" : "AssertionError: expected undefined to equal 'Свыше 1т'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/exterior/carrying/over-one-ton.js:20:32)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "testClass",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d1e6f29c7517b1ee.json",
+  "parameterValues" : [ "chrome" ]
+}

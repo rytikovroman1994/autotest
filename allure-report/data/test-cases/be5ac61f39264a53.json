@@ -1,0 +1,54 @@
+{
+  "uid" : "be5ac61f39264a53",
+  "name" : "check checkboxes auto",
+  "fullName" : "transmission.check checkboxes auto",
+  "historyId" : "bf611fca22b2b4ac7d3c62d1e5990c78",
+  "time" : {
+    "start" : 1542106491131,
+    "stop" : 1542106491751,
+    "duration" : 620
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/s/transmission.png' to include 'transmssion'",
+  "statusTrace" : "AssertionError: expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/s/transmission.png' to include 'transmssion'\n                    at Object.checkCheckboxNfz (C:/autotest/helpers/PKW/check-checkbox.js:23:31)\n                    at Context.it (C:/autotest/test/specs/PKW/carsAvailable/filter/engine/automatic-transmission.js:25:25)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "check checkboxes auto"
+  }, {
+    "name" : "package",
+    "value" : "transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "be5ac61f39264a53.json",
+  "parameterValues" : [ "chrome" ]
+}

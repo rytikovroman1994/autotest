@@ -1,0 +1,60 @@
+{
+  "uid" : "53706cbb73d917c6",
+  "name" : "Check checkbox 1",
+  "fullName" : "test number-packages 2.Check checkbox 1",
+  "historyId" : "48df9d9fc055b45a74737ca2a4f0b76",
+  "time" : {
+    "start" : 1541773480770,
+    "stop" : 1541773481264,
+    "duration" : 494
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '1' to equal '2'",
+  "statusTrace" : "AssertionError: expected '1' to equal '2'\n                    at Object.checkCheckboxNfz (C:/autotest/helpers/NFZ/check-checkbox-NFZ.js:19:77)\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/interior/number-packages/2.js:13:24)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test number-packages 2"
+  }, {
+    "name" : "testClass",
+    "value" : "test number-packages 2"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox 1"
+  }, {
+    "name" : "package",
+    "value" : "test number-packages 2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "53706cbb73d917c6.json",
+  "parameterValues" : [ "chrome" ]
+}

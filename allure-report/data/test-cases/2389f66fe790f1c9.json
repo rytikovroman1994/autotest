@@ -1,0 +1,86 @@
+{
+  "uid" : "2389f66fe790f1c9",
+  "name" : "Check the equipment in detail Кожа",
+  "fullName" : "test materials.Check the equipment in detail Кожа",
+  "historyId" : "cded88ba50be06096094ee88fff6d297",
+  "time" : {
+    "start" : 1542109084087,
+    "stop" : 1542109085340,
+    "duration" : 1253
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <div class=\"avn008_overlay_submit-block_btn\">...</div> is not clickable at point (1236, 600). Other element would receive the click: <div class=\"avn008_filter \">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.6325422374324072-5\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <div class=\"avn008_overlay_submit-block_btn\">...</div> is not clickable at point (1236, 600). Other element would receive the click: <div class=\"avn008_filter \">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.6325422374324072-5\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c184854e8b743a4f",
+      "name" : "Screenshot",
+      "source" : "c184854e8b743a4f.png",
+      "type" : "image/png",
+      "size" : 107774
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test materials"
+  }, {
+    "name" : "testClass",
+    "value" : "test materials"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail Кожа"
+  }, {
+    "name" : "package",
+    "value" : "test materials"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e53a3027c55d9130",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540406925836,
+        "stop" : 1540406942489,
+        "duration" : 16653
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2389f66fe790f1c9.json",
+  "parameterValues" : [ "chrome" ]
+}

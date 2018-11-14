@@ -1,0 +1,103 @@
+{
+  "uid" : "8ea70e96b051b595",
+  "name" : "Check checkbox Складной фаркоп",
+  "fullName" : "test dynamic light.Check checkbox Складной фаркоп",
+  "historyId" : "83fbb14af9e9ccb7276d0202e75f8b14",
+  "time" : {
+    "start" : 1542132771500,
+    "stop" : 1542132777640,
+    "duration" : 6140
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Условие не появилось в фильтре",
+  "statusTrace" : "Error: Условие не появилось в фильтре\n                    at isExisting(\".avn008_filter-value-item\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn008_filter-value-item\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Условие не появилось в фильтре",
+    "statusTrace" : "Error: Условие не появилось в фильтре\n                    at isExisting(\".avn008_filter-value-item\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn008_filter-value-item\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "20d44e78f5fceb8c",
+      "name" : "Screenshot",
+      "source" : "20d44e78f5fceb8c.png",
+      "type" : "image/png",
+      "size" : 117644
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test dynamic light"
+  }, {
+    "name" : "testClass",
+    "value" : "test dynamic light"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox Складной фаркоп"
+  }, {
+    "name" : "package",
+    "value" : "test dynamic light"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6eb3c011339899ae",
+      "status" : "broken",
+      "statusDetails" : "Условие не появилось в фильтре",
+      "time" : {
+        "start" : 1542132558924,
+        "stop" : 1542132587930,
+        "duration" : 29006
+      }
+    }, {
+      "uid" : "af650ddb35b15c31",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541690311414,
+        "stop" : 1541690313397,
+        "duration" : 1983
+      }
+    }, {
+      "uid" : "8841588f448282a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540406337483,
+        "stop" : 1540406338914,
+        "duration" : 1431
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "8ea70e96b051b595.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,78 @@
+{
+  "uid" : "118ed637bb17902a",
+  "name" : "Check the clickability of the booking button",
+  "fullName" : "test button book in the menu.Check the clickability of the booking button",
+  "historyId" : "825e998dc4fbeb8f07d103eac52154e8",
+  "time" : {
+    "start" : 1541692170049,
+    "stop" : 1541692174510,
+    "duration" : 4461
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Element <div class=\"btn btn_cta show-op\"> is not clickable at point (1123.4833984375,284.75) because another element <div class=\"grid_s_3 grid_l_2\"> obscures it",
+  "statusTrace" : "Error: The Element Click command could not be completed because the element receiving the events is obscuring the element that was requested clicked.\n                    at elementIdClick(\"fbe24537-a678-48af-81f8-fd5b15520328\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Element <div class=\"btn btn_cta show-op\"> is not clickable at point (1123.4833984375,284.75) because another element <div class=\"grid_s_3 grid_l_2\"> obscures it",
+    "statusTrace" : "Error: The Element Click command could not be completed because the element receiving the events is obscuring the element that was requested clicked.\n                    at elementIdClick(\"fbe24537-a678-48af-81f8-fd5b15520328\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5e23904a8719518b",
+      "name" : "Screenshot",
+      "source" : "5e23904a8719518b.png",
+      "type" : "image/png",
+      "size" : 514315
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "testClass",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the clickability of the booking button"
+  }, {
+    "name" : "package",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "118ed637bb17902a.json",
+  "parameterValues" : [ "firefox" ]
+}

@@ -1,0 +1,140 @@
+{
+  "uid" : "2c501e974dc921d9",
+  "name" : "Check checkbox front-wheel drive",
+  "fullName" : "test drive unit in pictures.Check checkbox front-wheel drive",
+  "historyId" : "e6e526dec9b5a5e4aba6fae8a187fe36",
+  "time" : {
+    "start" : 1542131870746,
+    "stop" : 1542131881363,
+    "duration" : 10617
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test drive unit in pictures"
+  }, {
+    "name" : "testClass",
+    "value" : "test drive unit in pictures"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox front-wheel drive"
+  }, {
+    "name" : "package",
+    "value" : "test drive unit in pictures"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "693a9c314b6ea6db",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542131677862,
+        "stop" : 1542131690832,
+        "duration" : 12970
+      }
+    }, {
+      "uid" : "33ce92e91d5b9a30",
+      "status" : "failed",
+      "statusDetails" : "expected [ 'ПЕРЕДНИЙ', 'ПОЛНЫЙ' ] to equal 'ПОЛНЫЙ'",
+      "time" : {
+        "start" : 1541689964368,
+        "stop" : 1541689966838,
+        "duration" : 2470
+      }
+    }, {
+      "uid" : "d1cc23942ae8fb7f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541611792578,
+        "stop" : 1541611798479,
+        "duration" : 5901
+      }
+    }, {
+      "uid" : "b168db2644873830",
+      "status" : "failed",
+      "statusDetails" : "expected [ 'БЮДЖЕТ', 'ПЕРЕДНИЙ', 'ПОЛНЫЙ' ] to equal 'ПОЛНЫЙ'",
+      "time" : {
+        "start" : 1540469478017,
+        "stop" : 1540469479874,
+        "duration" : 1857
+      }
+    }, {
+      "uid" : "8c2acff67b43c6e8",
+      "status" : "failed",
+      "statusDetails" : "expected [ 'БЮДЖЕТ', 'ПЕРЕДНИЙ', 'ПОЛНЫЙ' ] to equal 'ПОЛНЫЙ'",
+      "time" : {
+        "start" : 1540469410328,
+        "stop" : 1540469412243,
+        "duration" : 1915
+      }
+    }, {
+      "uid" : "d49a429aa9781114",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter__tab[data-name=\"Двигатель\"]\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1540469343770,
+        "stop" : 1540469364134,
+        "duration" : 20364
+      }
+    }, {
+      "uid" : "5a5e4ac4ef7bac9b",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <div class=\"avn008_overlay_submit-block_btn\">...</div> is not clickable at point (1236, 600). Other element would receive the click: <div class=\"avn008_filter \">...</div>",
+      "time" : {
+        "start" : 1540469288242,
+        "stop" : 1540469289805,
+        "duration" : 1563
+      }
+    }, {
+      "uid" : "4e646a60fe3722f8",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1540469207767,
+        "stop" : 1540469208103,
+        "duration" : 336
+      }
+    }, {
+      "uid" : "ff22e5c788267897",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540468282539,
+        "stop" : 1540468285996,
+        "duration" : 3457
+      }
+    }, {
+      "uid" : "9e4900a2e6ed23d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540406114284,
+        "stop" : 1540406119123,
+        "duration" : 4839
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2c501e974dc921d9.json",
+  "parameterValues" : [ "chrome" ]
+}

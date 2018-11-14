@@ -1,0 +1,123 @@
+{
+  "uid" : "5726c90341594d34",
+  "name" : "Check the tooltip and slider",
+  "fullName" : "test booking car.Check the tooltip and slider",
+  "historyId" : "518530811789cb38aa66e3595e29ba23",
+  "time" : {
+    "start" : 1542129443499,
+    "stop" : 1542129447487,
+    "duration" : 3988
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '15 000' to not equal '15 000'",
+  "statusTrace" : "AssertionError: expected '15 000' to not equal '15 000'\n                    at Context.it (C:/autotest/test/specs/PKW/businessLogic/detail/booking-car.js:61:37)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test booking car"
+  }, {
+    "name" : "testClass",
+    "value" : "test booking car"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the tooltip and slider"
+  }, {
+    "name" : "package",
+    "value" : "test booking car"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "834d95490d3cd408",
+      "status" : "failed",
+      "statusDetails" : "expected '15 000' to not equal '15 000'",
+      "time" : {
+        "start" : 1542129406994,
+        "stop" : 1542129440142,
+        "duration" : 33148
+      }
+    }, {
+      "uid" : "6aeaeb5042492744",
+      "status" : "failed",
+      "statusDetails" : "expected '15 000' to not equal '15 000'",
+      "time" : {
+        "start" : 1541689052883,
+        "stop" : 1541689054378,
+        "duration" : 1495
+      }
+    }, {
+      "uid" : "372213dcdb8dfa1b",
+      "status" : "failed",
+      "statusDetails" : "expected '15 000' to not equal '15 000'",
+      "time" : {
+        "start" : 1541684304899,
+        "stop" : 1541684306475,
+        "duration" : 1576
+      }
+    }, {
+      "uid" : "706c1cca51288282",
+      "status" : "failed",
+      "statusDetails" : "expected '15 000' to not equal '15 000'",
+      "time" : {
+        "start" : 1541610880187,
+        "stop" : 1541610881199,
+        "duration" : 1012
+      }
+    }, {
+      "uid" : "e9f832c8fa205512",
+      "status" : "failed",
+      "statusDetails" : "expected '15 000' to not equal '15 000'",
+      "time" : {
+        "start" : 1541610256450,
+        "stop" : 1541610259417,
+        "duration" : 2967
+      }
+    }, {
+      "uid" : "699cf682712184c1",
+      "status" : "failed",
+      "statusDetails" : "expected '15 000' to not equal '15 000'",
+      "time" : {
+        "start" : 1540405483350,
+        "stop" : 1540405485259,
+        "duration" : 1909
+      }
+    }, {
+      "uid" : "a492e0373be287c8",
+      "status" : "failed",
+      "statusDetails" : "expected '15 000' to not equal '15 000'",
+      "time" : {
+        "start" : 1540403101997,
+        "stop" : 1540403109788,
+        "duration" : 7791
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "5726c90341594d34.json",
+  "parameterValues" : [ "chrome" ]
+}

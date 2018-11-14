@@ -1,0 +1,54 @@
+{
+  "uid" : "fc0884d68655cc00",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test heated mirrors.Check the equipment in detail",
+  "historyId" : "fb06b5adaee4e490c7daec93fe03ffac",
+  "time" : {
+    "start" : 1542127831079,
+    "stop" : 1542127840074,
+    "duration" : 8995
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected undefined to equal 'Подогрев зеркал'",
+  "statusTrace" : "AssertionError: expected undefined to equal 'Подогрев зеркал'\n                    at Context.it (C:/autotest/test/specs/PKW/carsAvailable/filter/options/winterPackage/heated-mirrors.js:44:32)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test heated mirrors"
+  }, {
+    "name" : "testClass",
+    "value" : "test heated mirrors"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test heated mirrors"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fc0884d68655cc00.json",
+  "parameterValues" : [ "chrome" ]
+}

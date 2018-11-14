@@ -1,0 +1,60 @@
+{
+  "uid" : "1adcd125fc81094f",
+  "name" : "Choose body color",
+  "fullName" : "test Polo busines logic.Choose body color",
+  "historyId" : "6577b39866032b56c1beb5f7eb8a95ff",
+  "time" : {
+    "start" : 1540403535288,
+    "stop" : 1540403540795,
+    "duration" : 5507
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 2 to equal 3",
+  "statusTrace" : "AssertionError: expected 2 to equal 3\n                    at Context.it (C:/autotest/test/specs/businessLogic/filter/polo-busines-logic.js:68:37)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test Polo busines logic"
+  }, {
+    "name" : "testClass",
+    "value" : "test Polo busines logic"
+  }, {
+    "name" : "testMethod",
+    "value" : "Choose body color"
+  }, {
+    "name" : "package",
+    "value" : "test Polo busines logic"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1adcd125fc81094f.json",
+  "parameterValues" : [ "firefox" ]
+}

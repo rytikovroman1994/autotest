@@ -1,0 +1,69 @@
+{
+  "uid" : "f2ef95f31a3ffbc5",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test airbag four.Check the equipment in detail",
+  "historyId" : "7b10f5f6e2bbc523fa814aa9a75441ba",
+  "time" : {
+    "start" : 1541586995235,
+    "stop" : 1541587002885,
+    "duration" : 7650
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected undefined to equal '4'",
+  "statusTrace" : "AssertionError: expected undefined to equal '4'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/interior/airbag/four.js:20:32)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test airbag four"
+  }, {
+    "name" : "testClass",
+    "value" : "test airbag four"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test airbag four"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cedab872d1eccdde",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not visible after 60000ms",
+      "time" : {
+        "start" : 1541508143053,
+        "stop" : 1541508203528,
+        "duration" : 60475
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f2ef95f31a3ffbc5.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,54 @@
+{
+  "uid" : "39467f986e7cce81",
+  "name" : "Open page interier",
+  "fullName" : "test interier colors.Open page interier",
+  "historyId" : "504bf04e92aa114695fb2970e7a68771",
+  "time" : {
+    "start" : 1541090316193,
+    "stop" : 1541090316497,
+    "duration" : 304
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'https://nfz.kodix.ru/images/resize/remote?width=398&height=0&url=https://183024.selcdn.ru/vwgr_available_cars/nfz/filter/cloth-gray.png' to include '/cloth-pray'",
+  "statusTrace" : "AssertionError: expected 'https://nfz.kodix.ru/images/resize/remote?width=398&height=0&url=https://183024.selcdn.ru/vwgr_available_cars/nfz/filter/cloth-gray.png' to include '/cloth-pray'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/color/interier-colors.js:22:33)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test interier colors"
+  }, {
+    "name" : "testClass",
+    "value" : "test interier colors"
+  }, {
+    "name" : "testMethod",
+    "value" : "Open page interier"
+  }, {
+    "name" : "package",
+    "value" : "test interier colors"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "39467f986e7cce81.json",
+  "parameterValues" : [ "chrome" ]
+}

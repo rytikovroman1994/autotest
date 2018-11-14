@@ -1,0 +1,54 @@
+{
+  "uid" : "b3fa5f35a0dbe3c0",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test totalMass to-2.5-ton.Check the equipment in detail",
+  "historyId" : "7ddc0980ee5f25b33ceb6ed7f9ef90dc",
+  "time" : {
+    "start" : 1541766224236,
+    "stop" : 1541766231157,
+    "duration" : 6921
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected undefined to equal 'До 2.5т'",
+  "statusTrace" : "AssertionError: expected undefined to equal 'До 2.5т'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/exterior/totalMass/to-2.5-ton.js:20:32)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test totalMass to-2.5-ton"
+  }, {
+    "name" : "testClass",
+    "value" : "test totalMass to-2.5-ton"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test totalMass to-2.5-ton"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b3fa5f35a0dbe3c0.json",
+  "parameterValues" : [ "chrome" ]
+}

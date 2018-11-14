@@ -1,0 +1,102 @@
+{
+  "uid" : "a5c801701cb5649c",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test app connect.Check the equipment in detail",
+  "historyId" : "ef1080be9554cdee80718e20a2a020f8",
+  "time" : {
+    "start" : 1542134403790,
+    "stop" : 1542134440962,
+    "duration" : 37172
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn007-1_car-image img\") still not visible after 20000ms",
+  "statusTrace" : "Error: element (\".avn007-1_car-image img\") still not visible after 20000ms\n                    at elementIdDisplayed(\"0.9753975768126029-17\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:71:55",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn007-1_car-image img\") still not visible after 20000ms",
+    "statusTrace" : "Error: element (\".avn007-1_car-image img\") still not visible after 20000ms\n                    at elementIdDisplayed(\"0.9753975768126029-17\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:71:55",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e371c512c6774276",
+      "name" : "Screenshot",
+      "source" : "e371c512c6774276.png",
+      "type" : "image/png",
+      "size" : 154160
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test app connect"
+  }, {
+    "name" : "testClass",
+    "value" : "test app connect"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test app connect"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "24c9a2f2b6023e25",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542134198092,
+        "stop" : 1542134239694,
+        "duration" : 41602
+      }
+    }, {
+      "uid" : "1192137af50a04b4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542125974078,
+        "stop" : 1542125983656,
+        "duration" : 9578
+      }
+    }, {
+      "uid" : "e14f919b8e096e3f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540406712510,
+        "stop" : 1540406724963,
+        "duration" : 12453
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a5c801701cb5649c.json",
+  "parameterValues" : [ "chrome" ]
+}

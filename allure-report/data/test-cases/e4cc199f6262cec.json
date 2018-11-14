@@ -1,0 +1,54 @@
+{
+  "uid" : "e4cc199f6262cec",
+  "name" : "Check slider power",
+  "fullName" : "test slider power.Check slider power",
+  "historyId" : "977bfde19630e1dbf38085aa42ab4f29",
+  "time" : {
+    "start" : 1540809078198,
+    "stop" : 1540809080215,
+    "duration" : 2017
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '102 - 224' to equal '102 - 223'",
+  "statusTrace" : "AssertionError: expected '102 - 224' to equal '102 - 223'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/engine/slider-power.js:39:39)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test slider power"
+  }, {
+    "name" : "testClass",
+    "value" : "test slider power"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check slider power"
+  }, {
+    "name" : "package",
+    "value" : "test slider power"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e4cc199f6262cec.json",
+  "parameterValues" : [ "chrome" ]
+}

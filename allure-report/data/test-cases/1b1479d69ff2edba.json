@@ -1,0 +1,54 @@
+{
+  "uid" : "1b1479d69ff2edba",
+  "name" : "Compare dealer and phone number",
+  "fullName" : "test booking car.Compare dealer and phone number",
+  "historyId" : "423469059fa4f58f8c4ba248e5d2e6e2",
+  "time" : {
+    "start" : 1540985540056,
+    "stop" : 1540985540534,
+    "duration" : 478
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '+7 (495) 741-45-45' to equal undefined",
+  "statusTrace" : "AssertionError: expected '+7 (495) 741-45-45' to equal undefined\n                    at Context.it (C:/autotest/test/specs/NFZ/businessLogic/detail/dealer-price-number.js:51:37)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test booking car"
+  }, {
+    "name" : "testClass",
+    "value" : "test booking car"
+  }, {
+    "name" : "testMethod",
+    "value" : "Compare dealer and phone number"
+  }, {
+    "name" : "package",
+    "value" : "test booking car"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1b1479d69ff2edba.json",
+  "parameterValues" : [ "chrome" ]
+}

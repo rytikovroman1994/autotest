@@ -1,0 +1,78 @@
+{
+  "uid" : "dd16adf7e2645a36",
+  "name" : "Check the tooltip and slider",
+  "fullName" : "test booking car.Check the tooltip and slider",
+  "historyId" : "cc70e8f1d67d7b4237095554de50760c",
+  "time" : {
+    "start" : 1540403078309,
+    "stop" : 1540403084979,
+    "duration" : 6670
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '15 000' to not equal '15 000'",
+  "statusTrace" : "AssertionError: expected '15 000' to not equal '15 000'\n                    at Context.it (C:/autotest/test/specs/businessLogic/detail/booking-car.js:61:37)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected '15 000' to not equal '15 000'",
+    "statusTrace" : "AssertionError: expected '15 000' to not equal '15 000'\n                    at Context.it (C:/autotest/test/specs/businessLogic/detail/booking-car.js:61:37)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6a46af279fbda961",
+      "name" : "Screenshot",
+      "source" : "6a46af279fbda961.png",
+      "type" : "image/png",
+      "size" : 67279
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test booking car"
+  }, {
+    "name" : "testClass",
+    "value" : "test booking car"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the tooltip and slider"
+  }, {
+    "name" : "package",
+    "value" : "test booking car"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "dd16adf7e2645a36.json",
+  "parameterValues" : [ "firefox" ]
+}

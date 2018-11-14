@@ -1,0 +1,63 @@
+{
+  "uid" : "e4769954139dd0cb",
+  "name" : "Check checkbox Более 3.5т",
+  "fullName" : "test totalMass over-3.5-ton.Check checkbox Более 3.5т",
+  "historyId" : "923604aa1a96af89a3931a6fc6b318c4",
+  "time" : {
+    "start" : 1541765872537,
+    "stop" : 1541765873969,
+    "duration" : 1432
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test totalMass over-3.5-ton"
+  }, {
+    "name" : "testClass",
+    "value" : "test totalMass over-3.5-ton"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox Более 3.5т"
+  }, {
+    "name" : "package",
+    "value" : "test totalMass over-3.5-ton"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c95369eb171fe827",
+      "status" : "failed",
+      "statusDetails" : "expected 'БОЛЕЕ 3.5Т' to equal 'Более 3.5т'",
+      "time" : {
+        "start" : 1541765786672,
+        "stop" : 1541765787504,
+        "duration" : 832
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e4769954139dd0cb.json",
+  "parameterValues" : [ "chrome" ]
+}

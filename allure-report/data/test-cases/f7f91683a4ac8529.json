@@ -1,0 +1,113 @@
+{
+  "uid" : "f7f91683a4ac8529",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test wheels light-alloy.Check the equipment in detail",
+  "historyId" : "5701eeb23bb8b0cfe1d1bb801fdf3ecc",
+  "time" : {
+    "start" : 1541760293751,
+    "stop" : 1541760300240,
+    "duration" : 6489
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test wheels light-alloy"
+  }, {
+    "name" : "testClass",
+    "value" : "test wheels light-alloy"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test wheels light-alloy"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c5625ee2fedea12a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541760169174,
+        "stop" : 1541760180702,
+        "duration" : 11528
+      }
+    }, {
+      "uid" : "84b62323079d2fbd",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1541759991642,
+        "stop" : 1541760012511,
+        "duration" : 20869
+      }
+    }, {
+      "uid" : "4eba1f5aec6c0d0d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541592369263,
+        "stop" : 1541592376677,
+        "duration" : 7414
+      }
+    }, {
+      "uid" : "e1689b52ba085623",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not visible after 60000ms",
+      "time" : {
+        "start" : 1541523470651,
+        "stop" : 1541523531362,
+        "duration" : 60711
+      }
+    }, {
+      "uid" : "8acc90286c2e3a4e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541523237910,
+        "stop" : 1541523245725,
+        "duration" : 7815
+      }
+    }, {
+      "uid" : "879005f9e6a5aaa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541523194534,
+        "stop" : 1541523203455,
+        "duration" : 8921
+      }
+    }, {
+      "uid" : "a11f6cde617c8eaf",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1541523090404,
+        "stop" : 1541523090838,
+        "duration" : 434
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f7f91683a4ac8529.json",
+  "parameterValues" : [ "chrome" ]
+}

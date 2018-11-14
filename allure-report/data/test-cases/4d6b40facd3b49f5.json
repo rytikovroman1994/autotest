@@ -1,0 +1,87 @@
+{
+  "uid" : "4d6b40facd3b49f5",
+  "name" : "Check checkbox trade-in",
+  "fullName" : "test trade in detail.Check checkbox trade-in",
+  "historyId" : "f9846a6d98fa5b77454032676f67210e",
+  "time" : {
+    "start" : 1541008692955,
+    "stop" : 1541008695706,
+    "duration" : 2751
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Element <label class=\"checkbox\"> is not clickable at point (1033.4833374023438,345.75) because another element <img class=\"avn008_car__image\" src=\"https://nfz.kodix.ru/images/resize/remote?width=200&height=0&url=https://183024.selcdn.ru/vwgr_available_cars/volkswagen/california/.default/.default.png\"> obscures it",
+  "statusTrace" : "Error: The Element Click command could not be completed because the element receiving the events is obscuring the element that was requested clicked.\n                    at elementIdClick(\"7a414d6e-f6f4-40e9-a6c7-f0493c72f86f\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Element <label class=\"checkbox\"> is not clickable at point (1033.4833374023438,345.75) because another element <img class=\"avn008_car__image\" src=\"https://nfz.kodix.ru/images/resize/remote?width=200&height=0&url=https://183024.selcdn.ru/vwgr_available_cars/volkswagen/california/.default/.default.png\"> obscures it",
+    "statusTrace" : "Error: The Element Click command could not be completed because the element receiving the events is obscuring the element that was requested clicked.\n                    at elementIdClick(\"7a414d6e-f6f4-40e9-a6c7-f0493c72f86f\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "79135bf10d5705a9",
+      "name" : "Screenshot",
+      "source" : "79135bf10d5705a9.png",
+      "type" : "image/png",
+      "size" : 474032
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test trade in detail"
+  }, {
+    "name" : "testClass",
+    "value" : "test trade in detail"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox trade-in"
+  }, {
+    "name" : "package",
+    "value" : "test trade in detail"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "cb2cf5ffd1936bb2",
+      "status" : "broken",
+      "statusDetails" : "Element <label class=\"checkbox\"> is not clickable at point (1033.4833374023438,345.75) because another element <img class=\"avn008_car__image\" src=\"https://nfz.kodix.ru/images/resize/remote?width=200&height=0&url=https://183024.selcdn.ru/vwgr_available_cars/volkswagen/california/.default/.default.png\"> obscures it",
+      "time" : {
+        "start" : 1541008661485,
+        "stop" : 1541008664505,
+        "duration" : 3020
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "4d6b40facd3b49f5.json",
+  "parameterValues" : [ "firefox" ]
+}

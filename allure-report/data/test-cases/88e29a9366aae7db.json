@@ -1,0 +1,96 @@
+{
+  "uid" : "88e29a9366aae7db",
+  "name" : "Check checkbox 2.5т-3.5т",
+  "fullName" : "test totalMass over-2.5-ton.Check checkbox 2.5т-3.5т",
+  "historyId" : "a6a153f3aa249b62d6a579bd337596cf",
+  "time" : {
+    "start" : 1541699450526,
+    "stop" : 1541699458983,
+    "duration" : 8457
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Условие не появилось в фильтре",
+  "statusTrace" : "Error: Условие не появилось в фильтре\n                    at isExisting(\".avn008_filter-value-item\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn008_filter-value-item\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Условие не появилось в фильтре",
+    "statusTrace" : "Error: Условие не появилось в фильтре\n                    at isExisting(\".avn008_filter-value-item\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn008_filter-value-item\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d209e2bd987f5bd6",
+      "name" : "Screenshot",
+      "source" : "d209e2bd987f5bd6.png",
+      "type" : "image/png",
+      "size" : 146826
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test totalMass over-2.5-ton"
+  }, {
+    "name" : "testClass",
+    "value" : "test totalMass over-2.5-ton"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox 2.5т-3.5т"
+  }, {
+    "name" : "package",
+    "value" : "test totalMass over-2.5-ton"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "df1425b7e6315ad2",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1541699436179,
+        "stop" : 1541699442575,
+        "duration" : 6396
+      }
+    }, {
+      "uid" : "9677607032ac54d9",
+      "status" : "broken",
+      "statusDetails" : "Условие не появилось в фильтре",
+      "time" : {
+        "start" : 1541698688624,
+        "stop" : 1541698696486,
+        "duration" : 7862
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "88e29a9366aae7db.json",
+  "parameterValues" : [ "firefox" ]
+}

@@ -1,0 +1,78 @@
+{
+  "uid" : "bb67ddb4a6cf8464",
+  "name" : "Entry check patronymic",
+  "fullName" : "test button book in the menu.Entry check patronymic",
+  "historyId" : "f41d3c2a8b36b704695d1f198c5fa7db",
+  "time" : {
+    "start" : 1541692197861,
+    "stop" : 1541692218360,
+    "duration" : 20499
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".input__field[placeholder=\"Отчество\"]\") still not existing after 20000ms",
+  "statusTrace" : "Error: element (\".input__field[placeholder=\"Отчество\"]\") still not existing after 20000ms\n                    at elements(\".input__field[placeholder=\"Отчество\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".input__field[placeholder=\"Отчество\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".input__field[placeholder=\"Отчество\"]\") still not existing after 20000ms",
+    "statusTrace" : "Error: element (\".input__field[placeholder=\"Отчество\"]\") still not existing after 20000ms\n                    at elements(\".input__field[placeholder=\"Отчество\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".input__field[placeholder=\"Отчество\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1c59d5c588f032d5",
+      "name" : "Screenshot",
+      "source" : "1c59d5c588f032d5.png",
+      "type" : "image/png",
+      "size" : 514315
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "testClass",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "testMethod",
+    "value" : "Entry check patronymic"
+  }, {
+    "name" : "package",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "bb67ddb4a6cf8464.json",
+  "parameterValues" : [ "firefox" ]
+}

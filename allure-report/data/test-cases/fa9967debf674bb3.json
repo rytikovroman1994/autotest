@@ -1,0 +1,78 @@
+{
+  "uid" : "fa9967debf674bb3",
+  "name" : "\"before all\" hook",
+  "fullName" : "test front-wheel drive.\"before all\" hook",
+  "historyId" : "ba5e9eb2a4685444c0abe6ff0e90e747",
+  "time" : {
+    "start" : 1540898342779,
+    "stop" : 1540898360584,
+    "duration" : 17805
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown variant `id`, expected one of `css selector`, `link text`, `partial link text`, `tag name`, `xpath` at line 1 column 13",
+  "statusTrace" : "Error: The arguments passed to a command are either invalid or malformed.\n                    at click(\"#react-tabs-2\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"#react-tabs-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown variant `id`, expected one of `css selector`, `link text`, `partial link text`, `tag name`, `xpath` at line 1 column 13",
+    "statusTrace" : "Error: The arguments passed to a command are either invalid or malformed.\n                    at click(\"#react-tabs-2\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at element(\"#react-tabs-2\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:12:17",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "16190311e9efddaf",
+      "name" : "Screenshot",
+      "source" : "16190311e9efddaf.png",
+      "type" : "image/png",
+      "size" : 207854
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test front-wheel drive"
+  }, {
+    "name" : "testClass",
+    "value" : "test front-wheel drive"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test front-wheel drive"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "91c6cbf5b1af5de7",
+      "status" : "broken",
+      "statusDetails" : "ESOCKETTIMEDOUT",
+      "time" : {
+        "start" : 1540823033354,
+        "stop" : 1540823070081,
+        "duration" : 36727
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fa9967debf674bb3.json",
+  "parameterValues" : [ ]
+}

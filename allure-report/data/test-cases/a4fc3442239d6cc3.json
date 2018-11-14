@@ -1,0 +1,78 @@
+{
+  "uid" : "a4fc3442239d6cc3",
+  "name" : "Checking the last name",
+  "fullName" : "test button book in the menu.Checking the last name",
+  "historyId" : "ccb84004c1d0d5d524fb0d60d93a98c5",
+  "time" : {
+    "start" : 1541692177227,
+    "stop" : 1541692197860,
+    "duration" : 20633
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".input__field[placeholder=\"Фамилия\"]\") still not existing after 20000ms",
+  "statusTrace" : "Error: element (\".input__field[placeholder=\"Фамилия\"]\") still not existing after 20000ms\n                    at elements(\".input__field[placeholder=\"Фамилия\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".input__field[placeholder=\"Фамилия\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".input__field[placeholder=\"Фамилия\"]\") still not existing after 20000ms",
+    "statusTrace" : "Error: element (\".input__field[placeholder=\"Фамилия\"]\") still not existing after 20000ms\n                    at elements(\".input__field[placeholder=\"Фамилия\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\".input__field[placeholder=\"Фамилия\"]\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b419dc6bc130c0fc",
+      "name" : "Screenshot",
+      "source" : "b419dc6bc130c0fc.png",
+      "type" : "image/png",
+      "size" : 514315
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "testClass",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "testMethod",
+    "value" : "Checking the last name"
+  }, {
+    "name" : "package",
+    "value" : "test button book in the menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a4fc3442239d6cc3.json",
+  "parameterValues" : [ "firefox" ]
+}

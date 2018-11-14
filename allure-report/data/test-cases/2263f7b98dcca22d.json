@@ -1,0 +1,105 @@
+{
+  "uid" : "2263f7b98dcca22d",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test carrying to one ton.Check the equipment in detail",
+  "historyId" : "692f060dbc3e9eda9fe957aeb4723d0b",
+  "time" : {
+    "start" : 1541604828739,
+    "stop" : 1541604828746,
+    "duration" : 7
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "A session id is required for this command but wasn't found in the response payload",
+  "statusTrace" : "Error: A session id is required for this command but wasn't found in the response payload\n                    at isVisible(\".avn015_content .image-container\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn015_content .image-container\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "testClass",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d16b45c46cc5a93a",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1541603318407,
+        "stop" : 1541603319394,
+        "duration" : 987
+      }
+    }, {
+      "uid" : "d6da88b0e1a48982",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1541603115003,
+        "stop" : 1541603116415,
+        "duration" : 1412
+      }
+    }, {
+      "uid" : "cdc05087bff52815",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1541602909440,
+        "stop" : 1541602910121,
+        "duration" : 681
+      }
+    }, {
+      "uid" : "8873dd8048ec44e",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1541602662867,
+        "stop" : 1541602663584,
+        "duration" : 717
+      }
+    }, {
+      "uid" : "5452f00c08e608ed",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1541602625350,
+        "stop" : 1541602626017,
+        "duration" : 667
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "2263f7b98dcca22d.json",
+  "parameterValues" : [ "firefox" ]
+}

@@ -1,0 +1,177 @@
+{
+  "uid" : "4221aed28fdbf8c5",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test carrying to one ton.Check the equipment in detail",
+  "historyId" : "99cf72bd4e4f19ce1ecf98f7ecc1d12f",
+  "time" : {
+    "start" : 1541762932189,
+    "stop" : 1541762939154,
+    "duration" : 6965
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected undefined to equal 'Свыше 1т'",
+  "statusTrace" : "AssertionError: expected undefined to equal 'Свыше 1т'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/exterior/carrying/over-one-ton.js:20:32)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "testClass",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "b8d097d36edfd1d1",
+      "status" : "failed",
+      "statusDetails" : "expected undefined to equal 'До 1т'",
+      "time" : {
+        "start" : 1541762799960,
+        "stop" : 1541762806964,
+        "duration" : 7004
+      }
+    }, {
+      "uid" : "d1e6f29c7517b1ee",
+      "status" : "failed",
+      "statusDetails" : "expected undefined to equal 'Свыше 1т'",
+      "time" : {
+        "start" : 1541604574294,
+        "stop" : 1541604580673,
+        "duration" : 6379
+      }
+    }, {
+      "uid" : "fed17b52b8250e7e",
+      "status" : "broken",
+      "statusDetails" : "connect ECONNREFUSED 127.0.0.1:4444",
+      "time" : {
+        "start" : 1541604535380,
+        "stop" : 1541604539379,
+        "duration" : 3999
+      }
+    }, {
+      "uid" : "1ceced37e1b24f32",
+      "status" : "failed",
+      "statusDetails" : "expected undefined to equal 'Свыше 1т'",
+      "time" : {
+        "start" : 1541603806135,
+        "stop" : 1541603815465,
+        "duration" : 9330
+      }
+    }, {
+      "uid" : "540feb31c2b3851e",
+      "status" : "failed",
+      "statusDetails" : "expected undefined to equal 'Свыше 1т'",
+      "time" : {
+        "start" : 1541603718377,
+        "stop" : 1541603724478,
+        "duration" : 6101
+      }
+    }, {
+      "uid" : "4fe84535e6b33d9f",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png\" srcset=\"https://nfz.kodix.ru/images/resize/remote?width=205&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png 1x\" sources=\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\" alt=\"Transporter Kasten\" class=\"avn001-2_image__car\"> is not clickable at point (289, 57). Other element would receive the click: <div class=\"avn008_filter-value-list\">...</div>",
+      "time" : {
+        "start" : 1541603642575,
+        "stop" : 1541603646898,
+        "duration" : 4323
+      }
+    }, {
+      "uid" : "a1478db94cda4d4d",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png\" srcset=\"https://nfz.kodix.ru/images/resize/remote?width=205&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png 1x\" sources=\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\" alt=\"Transporter Kasten\" class=\"avn001-2_image__car\"> is not clickable at point (289, 57). Other element would receive the click: <div class=\"avn008_filter-value-list\">...</div>",
+      "time" : {
+        "start" : 1541603612668,
+        "stop" : 1541603616516,
+        "duration" : 3848
+      }
+    }, {
+      "uid" : "d2474559668fc930",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png\" srcset=\"https://nfz.kodix.ru/images/resize/remote?width=205&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png 1x\" sources=\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\" alt=\"Transporter Kasten\" class=\"avn001-2_image__car\"> is not clickable at point (289, 57). Other element would receive the click: <div class=\"avn008_filter-value-list\">...</div>",
+      "time" : {
+        "start" : 1541603538250,
+        "stop" : 1541603542097,
+        "duration" : 3847
+      }
+    }, {
+      "uid" : "71c8abfe34988fa0",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png\" srcset=\"https://nfz.kodix.ru/images/resize/remote?width=205&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png 1x\" sources=\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\" alt=\"Transporter Kasten\" class=\"avn001-2_image__car\"> is not clickable at point (289, 57). Other element would receive the click: <div class=\"avn008_filter-value-list\">...</div>",
+      "time" : {
+        "start" : 1541603480485,
+        "stop" : 1541603484774,
+        "duration" : 4289
+      }
+    }, {
+      "uid" : "a5292287fea162a1",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png\" srcset=\"https://nfz.kodix.ru/images/resize/remote?width=205&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png 1x\" sources=\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\" alt=\"Transporter Kasten\" class=\"avn001-2_image__car\"> is not clickable at point (290, 57). Other element would receive the click: <div class=\"avn008_filter-value-list\">...</div>",
+      "time" : {
+        "start" : 1541603420811,
+        "stop" : 1541603427364,
+        "duration" : 6553
+      }
+    }, {
+      "uid" : "ab989f4fee6efd63",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png\" srcset=\"https://nfz.kodix.ru/images/resize/remote?width=205&amp;height=0&amp;url=https://183024.selcdn.ru/vwgr_available_cars/volkswagen/transporter/t6-transporter/t6-transporter-kasten-short/van/B4B4/1.png 1x\" sources=\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\" alt=\"Transporter Kasten\" class=\"avn001-2_image__car\"> is not clickable at point (290, 57). Other element would receive the click: <div class=\"avn008_filter-value-list\">...</div>",
+      "time" : {
+        "start" : 1541603353715,
+        "stop" : 1541603358784,
+        "duration" : 5069
+      }
+    }, {
+      "uid" : "eefc4b16a18c3ee9",
+      "status" : "failed",
+      "statusDetails" : "expected undefined to equal 'Свыше 1т'",
+      "time" : {
+        "start" : 1541602552377,
+        "stop" : 1541602557130,
+        "duration" : 4753
+      }
+    }, {
+      "uid" : "9717fccf24b86ac3",
+      "status" : "failed",
+      "statusDetails" : "expected undefined to equal 'До 1т'",
+      "time" : {
+        "start" : 1541602364177,
+        "stop" : 1541602370439,
+        "duration" : 6262
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "4221aed28fdbf8c5.json",
+  "parameterValues" : [ "chrome" ]
+}

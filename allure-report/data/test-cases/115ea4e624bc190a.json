@@ -1,0 +1,54 @@
+{
+  "uid" : "115ea4e624bc190a",
+  "name" : "Check the manual transmission",
+  "fullName" : "test mechanical transmission.Check the manual transmission",
+  "historyId" : "30e8acaa71fc56d04bfecc658b001510",
+  "time" : {
+    "start" : 1540823434266,
+    "stop" : 1540823434756,
+    "duration" : 490
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'AT' to equal 'MT'",
+  "statusTrace" : "AssertionError: expected 'AT' to equal 'MT'\n                    at Object.checkCheckboxNfz (C:/autotest/helpers/NFZ/check-checkbox-NFZ.js:18:77)\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/engine/mechanical-transmission.js:11:25)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test mechanical transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "test mechanical transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the manual transmission"
+  }, {
+    "name" : "package",
+    "value" : "test mechanical transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "115ea4e624bc190a.json",
+  "parameterValues" : [ "chrome" ]
+}

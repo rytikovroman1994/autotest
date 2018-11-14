@@ -1,0 +1,69 @@
+{
+  "uid" : "4264c945a1f60530",
+  "name" : "Check checkboxes auto",
+  "fullName" : "test alcantara materials.Check checkboxes auto",
+  "historyId" : "5e3e010c5e4c0d287031d9aafb959a8e",
+  "time" : {
+    "start" : 1542135082035,
+    "stop" : 1542135084706,
+    "duration" : 2671
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '' to equal 'САЛОН АЛЬКАНТАРА'",
+  "statusTrace" : "AssertionError: expected '' to equal 'САЛОН АЛЬКАНТАРА'\n                    at Object.checkCheckboxNfz (C:/autotest/helpers/NFZ/check-checkbox-NFZ.js:19:77)\n                    at Context.it (C:/autotest/test/specs/PKW/carsAvailable/filter/interior/seating/alcantara-materials.js:16:25)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test alcantara materials"
+  }, {
+    "name" : "testClass",
+    "value" : "test alcantara materials"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkboxes auto"
+  }, {
+    "name" : "package",
+    "value" : "test alcantara materials"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "145515655bc6578c",
+      "status" : "failed",
+      "statusDetails" : "expected '' to equal 'САЛОН АЛЬКАНТАРА'",
+      "time" : {
+        "start" : 1542134869359,
+        "stop" : 1542134871981,
+        "duration" : 2622
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "4264c945a1f60530.json",
+  "parameterValues" : [ "chrome" ]
+}

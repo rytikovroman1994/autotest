@@ -1,0 +1,72 @@
+{
+  "uid" : "f4bbfd18bb2ff71d",
+  "name" : "Check the complete set in Caddy",
+  "fullName" : "test check equipment.Check the complete set in Caddy",
+  "historyId" : "8fbbcb6e6623c99ede49e2b83266c021",
+  "time" : {
+    "start" : 1541590470849,
+    "stop" : 1541590475091,
+    "duration" : 4242
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test check equipment"
+  }, {
+    "name" : "testClass",
+    "value" : "test check equipment"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the complete set in Caddy"
+  }, {
+    "name" : "package",
+    "value" : "test check equipment"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e50698c5bab98f0e",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <div class=\"avn008_kits__btn\n                            \n                            avn008_kits__btn--disabled\n                            false\n                            avn008_kits__btn--for_family\n                            \">...</div> is not clickable at point (937, 491). Other element would receive the click: <div class=\"avn008_kits__btns\">...</div>",
+      "time" : {
+        "start" : 1540805124972,
+        "stop" : 1540805128338,
+        "duration" : 3366
+      }
+    }, {
+      "uid" : "588e422c0cb43581",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <div class=\"avn008_kits__btn\n                            \n                            avn008_kits__btn--disabled\n                            false\n                            avn008_kits__btn--for_family\n                            \">...</div> is not clickable at point (937, 491). Other element would receive the click: <div class=\"avn008_kits__btns\">...</div>",
+      "time" : {
+        "start" : 1540556841239,
+        "stop" : 1540556845343,
+        "duration" : 4104
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f4bbfd18bb2ff71d.json",
+  "parameterValues" : [ "chrome" ]
+}

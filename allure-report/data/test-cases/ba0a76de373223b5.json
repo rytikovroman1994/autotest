@@ -1,0 +1,54 @@
+{
+  "uid" : "ba0a76de373223b5",
+  "name" : "Check checkbox AT transmissiion",
+  "fullName" : "test transmission in pictures.Check checkbox AT transmissiion",
+  "historyId" : "785a0317ecbaf48ff57dedc10fab966f",
+  "time" : {
+    "start" : 1540469526355,
+    "stop" : 1540469527539,
+    "duration" : 1184
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected [ 'БЮДЖЕТ', 'AT' ] to equal 'AT'",
+  "statusTrace" : "AssertionError: expected [ 'БЮДЖЕТ', 'AT' ] to equal 'AT'\n                    at Context.it (C:/autotest/test/specs/carsAvailable/filter/engine/transmission-pictures.js:15:81)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test transmission in pictures"
+  }, {
+    "name" : "testClass",
+    "value" : "test transmission in pictures"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox AT transmissiion"
+  }, {
+    "name" : "package",
+    "value" : "test transmission in pictures"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ba0a76de373223b5.json",
+  "parameterValues" : [ "chrome" ]
+}

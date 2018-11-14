@@ -1,0 +1,54 @@
+{
+  "uid" : "fa7c1263ebf0535b",
+  "name" : "Check button histiry",
+  "fullName" : "test history detail.Check button histiry",
+  "historyId" : "b4b2d95683b23a83dd8187a9994b1d36",
+  "time" : {
+    "start" : 1540904549357,
+    "stop" : 1540904550019,
+    "duration" : 662
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'https://nfz.kodix.ru/' to equal 'https://vw.kodix.ru/'",
+  "statusTrace" : "AssertionError: expected 'https://nfz.kodix.ru/' to equal 'https://vw.kodix.ru/'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/basicField/history-detail.js:19:27)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test history detail"
+  }, {
+    "name" : "testClass",
+    "value" : "test history detail"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check button histiry"
+  }, {
+    "name" : "package",
+    "value" : "test history detail"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "fa7c1263ebf0535b.json",
+  "parameterValues" : [ "chrome" ]
+}

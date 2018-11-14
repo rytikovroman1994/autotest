@@ -1,0 +1,94 @@
+{
+  "uid" : "10f3faac7ec78f38",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test ventilation.Check the equipment in detail",
+  "historyId" : "e7e8c662a6aa92970fa6b5882251e920",
+  "time" : {
+    "start" : 1542135897414,
+    "stop" : 1542135940699,
+    "duration" : 43285
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn007-1_car-image img\") still not visible after 20000ms",
+  "statusTrace" : "Error: element (\".avn007-1_car-image img\") still not visible after 20000ms\n                    at elements(\".avn007-1_car-image img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn007-1_car-image img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn007-1_car-image img\") still not visible after 20000ms",
+    "statusTrace" : "Error: element (\".avn007-1_car-image img\") still not visible after 20000ms\n                    at elements(\".avn007-1_car-image img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn007-1_car-image img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1552e46cbb1d019e",
+      "name" : "Screenshot",
+      "source" : "1552e46cbb1d019e.png",
+      "type" : "image/png",
+      "size" : 79611
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test ventilation"
+  }, {
+    "name" : "testClass",
+    "value" : "test ventilation"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test ventilation"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "db9c41c56c8ca13c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542135684105,
+        "stop" : 1542135705887,
+        "duration" : 21782
+      }
+    }, {
+      "uid" : "6986707b2b1e999a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542122257354,
+        "stop" : 1542122265573,
+        "duration" : 8219
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "10f3faac7ec78f38.json",
+  "parameterValues" : [ "chrome" ]
+}

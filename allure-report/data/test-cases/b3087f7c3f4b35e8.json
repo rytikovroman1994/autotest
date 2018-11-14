@@ -1,0 +1,54 @@
+{
+  "uid" : "b3087f7c3f4b35e8",
+  "name" : "Check checkbox 2х зонный",
+  "fullName" : "test two zone climate.Check checkbox 2х зонный",
+  "historyId" : "231b10cdfa7508e34eceeda2fb41d8ce",
+  "time" : {
+    "start" : 1541771641084,
+    "stop" : 1541771642092,
+    "duration" : 1008
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/nfz/filter/m/climate-2.png' to include 'climate-1'",
+  "statusTrace" : "AssertionError: expected 'https://183024.selcdn.ru/vwgr_available_cars/nfz/filter/m/climate-2.png' to include 'climate-1'\n                    at Object.checkCheckboxNfz (C:/autotest/helpers/NFZ/check-checkbox-NFZ.js:23:31)\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/interior/climate/two-zone-climate.js:13:24)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test two zone climate"
+  }, {
+    "name" : "testClass",
+    "value" : "test two zone climate"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox 2х зонный"
+  }, {
+    "name" : "package",
+    "value" : "test two zone climate"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b3087f7c3f4b35e8.json",
+  "parameterValues" : [ "chrome" ]
+}

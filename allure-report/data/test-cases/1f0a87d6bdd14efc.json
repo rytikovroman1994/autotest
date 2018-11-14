@@ -1,0 +1,72 @@
+{
+  "uid" : "1f0a87d6bdd14efc",
+  "name" : "check the clickability of the booking button",
+  "fullName" : "test button to book.check the clickability of the booking button",
+  "historyId" : "464d23b97ca9aa3ff4cd7c4e32821db",
+  "time" : {
+    "start" : 1542130107136,
+    "stop" : 1542130164870,
+    "duration" : 57734
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".op005_form_first\") still not visible after 20000ms",
+  "statusTrace" : "Error: element (\".op005_form_first\") still not visible after 20000ms\n                    at elements(\".op005_form_first\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".op005_form_first\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".op005_form_first\") still not visible after 20000ms",
+    "statusTrace" : "Error: element (\".op005_form_first\") still not visible after 20000ms\n                    at elements(\".op005_form_first\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".op005_form_first\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "434bb17192c83654",
+      "name" : "Screenshot",
+      "source" : "434bb17192c83654.png",
+      "type" : "image/png",
+      "size" : 78473
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test button to book"
+  }, {
+    "name" : "testClass",
+    "value" : "test button to book"
+  }, {
+    "name" : "testMethod",
+    "value" : "check the clickability of the booking button"
+  }, {
+    "name" : "package",
+    "value" : "test button to book"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1f0a87d6bdd14efc.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,71 @@
+{
+  "uid" : "19606ced4f29ed11",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test sittings fabric.Check the equipment in detail",
+  "historyId" : "40b3bb17d941a7cf7da4f2a0890ba7d0",
+  "time" : {
+    "start" : 1541772067005,
+    "stop" : 1541772073546,
+    "duration" : 6541
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test sittings fabric"
+  }, {
+    "name" : "testClass",
+    "value" : "test sittings fabric"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test sittings fabric"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2a26f801c5f26f79",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1541772015475,
+        "stop" : 1541772040104,
+        "duration" : 24629
+      }
+    }, {
+      "uid" : "29bff756e76cfe2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541509561417,
+        "stop" : 1541509569697,
+        "duration" : 8280
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "19606ced4f29ed11.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,54 @@
+{
+  "uid" : "41b7a19a24e47c8d",
+  "name" : "Check the complete set in each card",
+  "fullName" : "test check equipment.Check the complete set in each card",
+  "historyId" : "5e6ade6b4903c1ad493653430eea3afc",
+  "time" : {
+    "start" : 1540555394626,
+    "stop" : 1540555395934,
+    "duration" : 1308
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'CADDY' to equal [Function: toUpperCase]",
+  "statusTrace" : "AssertionError: expected 'CADDY' to equal [Function: toUpperCase]\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/model/check-equipment.js:40:45)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test check equipment"
+  }, {
+    "name" : "testClass",
+    "value" : "test check equipment"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the complete set in each card"
+  }, {
+    "name" : "package",
+    "value" : "test check equipment"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "41b7a19a24e47c8d.json",
+  "parameterValues" : [ "chrome" ]
+}

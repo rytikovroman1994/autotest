@@ -1,0 +1,104 @@
+{
+  "uid" : "f77e9bc011a4962",
+  "name" : "Check condition in the card",
+  "fullName" : "test automatic transmission.Check condition in the card",
+  "historyId" : "dae7ea8fda779e53def0204fcf0792d2",
+  "time" : {
+    "start" : 1541698468236,
+    "stop" : 1541698470335,
+    "duration" : 2099
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test automatic transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "test automatic transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check condition in the card"
+  }, {
+    "name" : "package",
+    "value" : "test automatic transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "27fb9ae1ea17dab4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541588921279,
+        "stop" : 1541588923376,
+        "duration" : 2097
+      }
+    }, {
+      "uid" : "c51cc7a99f374a1a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541588895554,
+        "stop" : 1541588897644,
+        "duration" : 2090
+      }
+    }, {
+      "uid" : "a6711c97b585bb4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541588870563,
+        "stop" : 1541588872652,
+        "duration" : 2089
+      }
+    }, {
+      "uid" : "58dfa0ab786f50f4",
+      "status" : "failed",
+      "statusDetails" : "expected '6-МКП' to include 'АКП'",
+      "time" : {
+        "start" : 1541588696716,
+        "stop" : 1541588698813,
+        "duration" : 2097
+      }
+    }, {
+      "uid" : "7e97252b702c1f52",
+      "status" : "failed",
+      "statusDetails" : "expected '6-МКП' to include 'АКП'",
+      "time" : {
+        "start" : 1541588661116,
+        "stop" : 1541588663184,
+        "duration" : 2068
+      }
+    }, {
+      "uid" : "9556852676c5f646",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540816470572,
+        "stop" : 1540816476264,
+        "duration" : 5692
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f77e9bc011a4962.json",
+  "parameterValues" : [ "chrome" ]
+}

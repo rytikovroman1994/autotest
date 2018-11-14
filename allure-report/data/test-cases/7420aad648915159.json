@@ -1,0 +1,63 @@
+{
+  "uid" : "7420aad648915159",
+  "name" : "check checkboxes auto",
+  "fullName" : "test rear wheel drive.check checkboxes auto",
+  "historyId" : "887a58a1a705c8baafb7fb98aeadd60",
+  "time" : {
+    "start" : 1542107983605,
+    "stop" : 1542107985613,
+    "duration" : 2008
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test rear wheel drive"
+  }, {
+    "name" : "testClass",
+    "value" : "test rear wheel drive"
+  }, {
+    "name" : "testMethod",
+    "value" : "check checkboxes auto"
+  }, {
+    "name" : "package",
+    "value" : "test rear wheel drive"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "22adfe1398465d24",
+      "status" : "failed",
+      "statusDetails" : "expected 'ПОЛНЫЙ' to equal 'ПОЛЫНЙ'",
+      "time" : {
+        "start" : 1542107951761,
+        "stop" : 1542107952318,
+        "duration" : 557
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7420aad648915159.json",
+  "parameterValues" : [ "chrome" ]
+}

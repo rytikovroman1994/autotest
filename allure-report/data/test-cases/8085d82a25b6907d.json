@@ -1,0 +1,54 @@
+{
+  "uid" : "8085d82a25b6907d",
+  "name" : "Check quantity",
+  "fullName" : "test quantity and price.Check quantity",
+  "historyId" : "b317eec670f8865acc81bd6bf7d3c7bf",
+  "time" : {
+    "start" : 1540558302257,
+    "stop" : 1540558302260,
+    "duration" : 3
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Cannot read property 'length' of undefined",
+  "statusTrace" : "TypeError: Cannot read property 'length' of undefined\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/model/quantity-price.js:11:35)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test quantity and price"
+  }, {
+    "name" : "testClass",
+    "value" : "test quantity and price"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check quantity"
+  }, {
+    "name" : "package",
+    "value" : "test quantity and price"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8085d82a25b6907d.json",
+  "parameterValues" : [ "chrome" ]
+}

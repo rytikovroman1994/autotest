@@ -1,0 +1,60 @@
+{
+  "uid" : "c8af74cdfa7ec9ab",
+  "name" : "Check checkbox 2",
+  "fullName" : "test number-packages 2.Check checkbox 2",
+  "historyId" : "d11523eb4933e24727934a8358003c3c",
+  "time" : {
+    "start" : 1541773556175,
+    "stop" : 1541773556823,
+    "duration" : 648
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/nfz/filter/s/airbag-2.png' to include 'seats-2'",
+  "statusTrace" : "AssertionError: expected 'https://183024.selcdn.ru/vwgr_available_cars/nfz/filter/s/airbag-2.png' to include 'seats-2'\n                    at Object.checkCheckboxNfz (C:/autotest/helpers/NFZ/check-checkbox-NFZ.js:23:31)\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/interior/number-packages/2.js:13:24)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test number-packages 2"
+  }, {
+    "name" : "testClass",
+    "value" : "test number-packages 2"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox 2"
+  }, {
+    "name" : "package",
+    "value" : "test number-packages 2"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c8af74cdfa7ec9ab.json",
+  "parameterValues" : [ "chrome" ]
+}

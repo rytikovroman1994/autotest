@@ -1,0 +1,78 @@
+{
+  "uid" : "f747fb14a4229990",
+  "name" : "Check that we are back",
+  "fullName" : "button book in the menu.Check that we are back",
+  "historyId" : "c98472eb7790e8a83a753020266fb91b",
+  "time" : {
+    "start" : 1541700787338,
+    "stop" : 1541700792479,
+    "duration" : 5141
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Кнопка Отправить заказ не стала активной",
+  "statusTrace" : "Error: Кнопка Отправить заказ не стала активной\n                    at isExisting(\".btn_cta.is_disabled\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".btn_cta.is_disabled\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Кнопка Отправить заказ не стала активной",
+    "statusTrace" : "Error: Кнопка Отправить заказ не стала активной\n                    at isExisting(\".btn_cta.is_disabled\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".btn_cta.is_disabled\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "99f9292ecf78d637",
+      "name" : "Screenshot",
+      "source" : "99f9292ecf78d637.png",
+      "type" : "image/png",
+      "size" : 91955
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "testClass",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check that we are back"
+  }, {
+    "name" : "package",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "internet explorer"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "f747fb14a4229990.json",
+  "parameterValues" : [ "internet explorer" ]
+}

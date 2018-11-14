@@ -1,0 +1,93 @@
+{
+  "uid" : "b5f92c7b354e1892",
+  "name" : "Check condition in the card",
+  "fullName" : "test fuel-gasoline.Check condition in the card",
+  "historyId" : "31e07a55665d5309831a89645467db19",
+  "time" : {
+    "start" : 1540898103339,
+    "stop" : 1540898105457,
+    "duration" : 2118
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'TDI 140 Л.С.' to include 'MPI'",
+  "statusTrace" : "AssertionError: expected 'TDI 140 Л.С.' to include 'MPI'\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/engine/fuel-gasoline.js:19:31)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test fuel-gasoline"
+  }, {
+    "name" : "testClass",
+    "value" : "test fuel-gasoline"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check condition in the card"
+  }, {
+    "name" : "package",
+    "value" : "test fuel-gasoline"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "aa3bd1e1939d9494",
+      "status" : "failed",
+      "statusDetails" : "expected 'TDI 140 Л.С.' to include 'MPI'",
+      "time" : {
+        "start" : 1540897967527,
+        "stop" : 1540897969619,
+        "duration" : 2092
+      }
+    }, {
+      "uid" : "4528339b0aec1c87",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540895888411,
+        "stop" : 1540895891613,
+        "duration" : 3202
+      }
+    }, {
+      "uid" : "ad213bca7a7f426d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540895787392,
+        "stop" : 1540895789502,
+        "duration" : 2110
+      }
+    }, {
+      "uid" : "71c2872016f8c1ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540895731568,
+        "stop" : 1540895733658,
+        "duration" : 2090
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b5f92c7b354e1892.json",
+  "parameterValues" : [ "firefox" ]
+}

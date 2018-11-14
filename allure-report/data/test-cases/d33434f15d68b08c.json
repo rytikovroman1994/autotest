@@ -1,0 +1,54 @@
+{
+  "uid" : "d33434f15d68b08c",
+  "name" : "Check cards in viewed cars",
+  "fullName" : "test viewed cars.Check cards in viewed cars",
+  "historyId" : "c9cfdd44359ea0b2bf38a80e96452c4d",
+  "time" : {
+    "start" : 1541159786711,
+    "stop" : 1541159786717,
+    "duration" : 6
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "i is not defined",
+  "statusTrace" : "ReferenceError: i is not defined\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/basicField/viewed-cars.js:33:103)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test viewed cars"
+  }, {
+    "name" : "testClass",
+    "value" : "test viewed cars"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check cards in viewed cars"
+  }, {
+    "name" : "package",
+    "value" : "test viewed cars"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d33434f15d68b08c.json",
+  "parameterValues" : [ "chrome" ]
+}

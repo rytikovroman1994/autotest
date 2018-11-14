@@ -1,0 +1,104 @@
+{
+  "uid" : "c0036c14290c03f5",
+  "name" : "choose stamped disks",
+  "fullName" : "test cast stamped disks.choose stamped disks",
+  "historyId" : "784b05c3074f59d1635b68e5089088d6",
+  "time" : {
+    "start" : 1542132596105,
+    "stop" : 1542132597986,
+    "duration" : 1881
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/option_images/images/wheel-2.png\" alt=\"\"> is not clickable at point (836, 331). Other element would receive the click: <div class=\"grid_6 grid_s_5 push_s_1 grid_m_3 push_m_3\">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.29813143102479644-4\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/option_images/images/wheel-2.png\" alt=\"\"> is not clickable at point (836, 331). Other element would receive the click: <div class=\"grid_6 grid_s_5 push_s_1 grid_m_3 push_m_3\">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.29813143102479644-4\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "5edd7dbd879b0a77",
+      "name" : "Screenshot",
+      "source" : "5edd7dbd879b0a77.png",
+      "type" : "image/png",
+      "size" : 169772
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test cast stamped disks"
+  }, {
+    "name" : "testClass",
+    "value" : "test cast stamped disks"
+  }, {
+    "name" : "testMethod",
+    "value" : "choose stamped disks"
+  }, {
+    "name" : "package",
+    "value" : "test cast stamped disks"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e67351890e622fb9",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/option_images/images/wheel-2.png\" alt=\"\"> is not clickable at point (836, 331). Other element would receive the click: <div class=\"grid_6 grid_s_5 push_s_1 grid_m_3 push_m_3\">...</div>",
+      "time" : {
+        "start" : 1542132396391,
+        "stop" : 1542132406441,
+        "duration" : 10050
+      }
+    }, {
+      "uid" : "3b3f012bc7437042",
+      "status" : "broken",
+      "statusDetails" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/option_images/images/wheel-2.png\" alt=\"\"> is not clickable at point (836, 331). Other element would receive the click: <div class=\"grid_6 grid_s_5 push_s_1 grid_m_3 push_m_3\">...</div>",
+      "time" : {
+        "start" : 1541690220448,
+        "stop" : 1541690221101,
+        "duration" : 653
+      }
+    }, {
+      "uid" : "33ce324436673880",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540406280803,
+        "stop" : 1540406281419,
+        "duration" : 616
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c0036c14290c03f5.json",
+  "parameterValues" : [ "chrome" ]
+}

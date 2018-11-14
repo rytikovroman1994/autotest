@@ -1,0 +1,84 @@
+{
+  "uid" : "3b012ac207f31c98",
+  "name" : "consider the number of cards list",
+  "fullName" : "test checking cards in list.consider the number of cards list",
+  "historyId" : "ce85f71c542f14a1fc74e27649ad0d81",
+  "time" : {
+    "start" : 1541700902834,
+    "stop" : 1541700914104,
+    "duration" : 11270
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Promise was rejected with the following reason: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $\n                Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                Driver info: driver.version: unknown",
+  "statusTrace" : "Error: Promise was rejected with the following reason: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $\n                    Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                    System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                    Driver info: driver.version: unknown\n                    at elements(\".avn001_display__enable-hover .grid_12:nth-child(1) img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn001_display__enable-hover .grid_12:nth-child(1) img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Promise was rejected with the following reason: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $\n                Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                Driver info: driver.version: unknown",
+    "statusTrace" : "Error: Promise was rejected with the following reason: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $\n                    Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T15:15:08.936Z'\n                    System info: host: 'N-KDX-09', ip: '169.254.149.116', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '10.0.2'\n                    Driver info: driver.version: unknown\n                    at elements(\".avn001_display__enable-hover .grid_12:nth-child(1) img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".avn001_display__enable-hover .grid_12:nth-child(1) img\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "ce310b603d47d809",
+      "name" : "Screenshot",
+      "source" : "ce310b603d47d809.png",
+      "type" : "image/png",
+      "size" : 133730
+    }, {
+      "uid" : "258756ab4371691a",
+      "name" : "Screenshot",
+      "source" : "258756ab4371691a.png",
+      "type" : "image/png",
+      "size" : 133730
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test checking cards in list"
+  }, {
+    "name" : "testClass",
+    "value" : "test checking cards in list"
+  }, {
+    "name" : "testMethod",
+    "value" : "consider the number of cards list"
+  }, {
+    "name" : "package",
+    "value" : "test checking cards in list"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "internet explorer"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3b012ac207f31c98.json",
+  "parameterValues" : [ "internet explorer" ]
+}

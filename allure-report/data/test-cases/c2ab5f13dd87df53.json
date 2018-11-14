@@ -1,0 +1,115 @@
+{
+  "uid" : "c2ab5f13dd87df53",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test electric seat drive.Check the equipment in detail",
+  "historyId" : "c1243f859a62354f1a712c4e631c8578",
+  "time" : {
+    "start" : 1542135785314,
+    "stop" : 1542135846780,
+    "duration" : 61466
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test electric seat drive"
+  }, {
+    "name" : "testClass",
+    "value" : "test electric seat drive"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test electric seat drive"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7a13a38de169b574",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542135629658,
+        "stop" : 1542135652313,
+        "duration" : 22655
+      }
+    }, {
+      "uid" : "8f2b871a74b74b9f",
+      "status" : "failed",
+      "statusDetails" : "expected undefined to equal 'Тканевые сидения'",
+      "time" : {
+        "start" : 1542135262531,
+        "stop" : 1542135300866,
+        "duration" : 38335
+      }
+    }, {
+      "uid" : "5eff09de8e5571be",
+      "status" : "failed",
+      "statusDetails" : "expected undefined to equal 'Тканевые сидения'",
+      "time" : {
+        "start" : 1542135061274,
+        "stop" : 1542135104688,
+        "duration" : 43414
+      }
+    }, {
+      "uid" : "b92704c9698bcb5d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542121778609,
+        "stop" : 1542121787436,
+        "duration" : 8827
+      }
+    }, {
+      "uid" : "b4046559b922ab6b",
+      "status" : "failed",
+      "statusDetails" : "expected 'Сидения с массажем' to equal 'Сидениея с массажем'",
+      "time" : {
+        "start" : 1542121675970,
+        "stop" : 1542121687916,
+        "duration" : 11946
+      }
+    }, {
+      "uid" : "858f2ccef73235e8",
+      "status" : "failed",
+      "statusDetails" : "expected undefined to equal 'Сидение с массажем'",
+      "time" : {
+        "start" : 1542121611383,
+        "stop" : 1542121624023,
+        "duration" : 12640
+      }
+    }, {
+      "uid" : "c6c75ae3e28b16b0",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1542121544593,
+        "stop" : 1542121568200,
+        "duration" : 23607
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c2ab5f13dd87df53.json",
+  "parameterValues" : [ "chrome" ]
+}

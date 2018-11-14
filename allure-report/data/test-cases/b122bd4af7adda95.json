@@ -1,0 +1,72 @@
+{
+  "uid" : "b122bd4af7adda95",
+  "name" : "check image in gallery",
+  "fullName" : "test gallery in detail.check image in gallery",
+  "historyId" : "fbe1bdbddc99feeca57e9f65908c459d",
+  "time" : {
+    "start" : 1540905593020,
+    "stop" : 1540905653808,
+    "duration" : 60788
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".mk002__dots button\") still not visible after 60000ms",
+  "statusTrace" : "Error: element (\".mk002__dots button\") still not visible after 60000ms\n                    at elements(\".mk002__dots button\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".mk002__dots button\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".mk002__dots button\") still not visible after 60000ms",
+    "statusTrace" : "Error: element (\".mk002__dots button\") still not visible after 60000ms\n                    at elements(\".mk002__dots button\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17\n                    at isVisible(\".mk002__dots button\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForVisible.js:73:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "525d6dde2886d101",
+      "name" : "Screenshot",
+      "source" : "525d6dde2886d101.png",
+      "type" : "image/png",
+      "size" : 809209
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test gallery in detail"
+  }, {
+    "name" : "testClass",
+    "value" : "test gallery in detail"
+  }, {
+    "name" : "testMethod",
+    "value" : "check image in gallery"
+  }, {
+    "name" : "package",
+    "value" : "test gallery in detail"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b122bd4af7adda95.json",
+  "parameterValues" : [ "chrome" ]
+}

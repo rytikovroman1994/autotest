@@ -1,0 +1,72 @@
+{
+  "uid" : "8ef290e71b3d4ca7",
+  "name" : "Check color skin",
+  "fullName" : "test interier colors.Check color skin",
+  "historyId" : "d69c379c4d312390d38810f56324890e",
+  "time" : {
+    "start" : 1541092243219,
+    "stop" : 1541092248990,
+    "duration" : 5771
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Promise was rejected with the following reason: bottomText.equals is not a function",
+  "statusTrace" : "Error: Promise was rejected with the following reason: bottomText.equals is not a function\n                    at waitUntil(<Function>, 5000, \"Текст условия фильтра отличается\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Promise was rejected with the following reason: bottomText.equals is not a function",
+    "statusTrace" : "Error: Promise was rejected with the following reason: bottomText.equals is not a function\n                    at waitUntil(<Function>, 5000, \"Текст условия фильтра отличается\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:312:3",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "af37c8ada13818da",
+      "name" : "Screenshot",
+      "source" : "af37c8ada13818da.png",
+      "type" : "image/png",
+      "size" : 168032
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test interier colors"
+  }, {
+    "name" : "testClass",
+    "value" : "test interier colors"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check color skin"
+  }, {
+    "name" : "package",
+    "value" : "test interier colors"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8ef290e71b3d4ca7.json",
+  "parameterValues" : [ "chrome" ]
+}

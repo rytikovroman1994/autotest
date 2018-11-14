@@ -1,0 +1,72 @@
+{
+  "uid" : "ec4f375e6206c14a",
+  "name" : "Check that we are back",
+  "fullName" : "button book in the menu.Check that we are back",
+  "historyId" : "1da7cd670a8edae1dd628641761e45b1",
+  "time" : {
+    "start" : 1540993945475,
+    "stop" : 1540993950932,
+    "duration" : 5457
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "Кнопка Отправить заказ не стала активной",
+  "statusTrace" : "Error: Кнопка Отправить заказ не стала активной\n                    at isExisting(\".btn_cta.is_disabled\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".btn_cta.is_disabled\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Кнопка Отправить заказ не стала активной",
+    "statusTrace" : "Error: Кнопка Отправить заказ не стала активной\n                    at isExisting(\".btn_cta.is_disabled\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".btn_cta.is_disabled\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "682c03baa2f056ba",
+      "name" : "Screenshot",
+      "source" : "682c03baa2f056ba.png",
+      "type" : "image/png",
+      "size" : 28225
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "testClass",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check that we are back"
+  }, {
+    "name" : "package",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ec4f375e6206c14a.json",
+  "parameterValues" : [ "chrome" ]
+}

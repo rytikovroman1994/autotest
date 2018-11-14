@@ -1,0 +1,94 @@
+{
+  "uid" : "1ebecd676162a4db",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test heated Parking heater.Check the equipment in detail",
+  "historyId" : "52f0225f8c014af7eb1aa5f9e4db28b9",
+  "time" : {
+    "start" : 1542138083875,
+    "stop" : 1542138125487,
+    "duration" : 41612
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn007-1_car-image img\") still not visible after 20000ms",
+  "statusTrace" : "Error: element (\".avn007-1_car-image img\") still not visible after 20000ms\n                    at elementIdDisplayed(\"0.58253260530933-16\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:71:55",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn007-1_car-image img\") still not visible after 20000ms",
+    "statusTrace" : "Error: element (\".avn007-1_car-image img\") still not visible after 20000ms\n                    at elementIdDisplayed(\"0.58253260530933-16\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:71:55",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "33ffaf8649f8a6de",
+      "name" : "Screenshot",
+      "source" : "33ffaf8649f8a6de.png",
+      "type" : "image/png",
+      "size" : 78100
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test heated Parking heater"
+  }, {
+    "name" : "testClass",
+    "value" : "test heated Parking heater"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test heated Parking heater"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5ca7f18621bbdc7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542137927657,
+        "stop" : 1542137958833,
+        "duration" : 31176
+      }
+    }, {
+      "uid" : "1c90f2cbbcaf25a3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540407583271,
+        "stop" : 1540407594713,
+        "duration" : 11442
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "1ebecd676162a4db.json",
+  "parameterValues" : [ "chrome" ]
+}

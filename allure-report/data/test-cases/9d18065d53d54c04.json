@@ -1,0 +1,96 @@
+{
+  "uid" : "9d18065d53d54c04",
+  "name" : "\"before all\" hook",
+  "fullName" : "test get all name city.\"before all\" hook",
+  "historyId" : "7e7979a028e9bfbed6d6de0a7b63262",
+  "time" : {
+    "start" : 1542129601464,
+    "stop" : 1542129687369,
+    "duration" : 85905
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "invalid session id\n                  (Driver info: chromedriver=2.43.600233 (523efee95e3d68b8719b3a1c83051aa63aa6b10d),platform=Linux 4.9.93-boot2docker x86_64)",
+  "statusTrace" : "Error: A session is either terminated or not started\n                    at isVisible(\".avn008_model_align-center-vertical\") -     at C:\\autotest\\node_modules\\wdio-sync\\build\\at elements(\".avn008_model_align-center-vertical\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:54:17",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testClass",
+    "value" : "test get all name city"
+  }, {
+    "name" : "testMethod",
+    "value" : "\"before all\" hook"
+  }, {
+    "name" : "package",
+    "value" : "test get all name city"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f10144b490f301d7",
+      "status" : "broken",
+      "statusDetails" : "ESOCKETTIMEDOUT",
+      "time" : {
+        "start" : 1540466073896,
+        "stop" : 1540466106954,
+        "duration" : 33058
+      }
+    }, {
+      "uid" : "4b08974f576946d6",
+      "status" : "broken",
+      "statusDetails" : "An element could not be located on the page using the given search parameters.",
+      "time" : {
+        "start" : 1540465307555,
+        "stop" : 1540465309358,
+        "duration" : 1803
+      }
+    }, {
+      "uid" : "fae448ebb90941e",
+      "status" : "broken",
+      "statusDetails" : "ESOCKETTIMEDOUT",
+      "time" : {
+        "start" : 1540464895518,
+        "stop" : 1540464948939,
+        "duration" : 53421
+      }
+    }, {
+      "uid" : "91bfadfacf62a522",
+      "status" : "broken",
+      "statusDetails" : "ESOCKETTIMEDOUT",
+      "time" : {
+        "start" : 1540464810325,
+        "stop" : 1540464864981,
+        "duration" : 54656
+      }
+    }, {
+      "uid" : "9738001d5e82b153",
+      "status" : "broken",
+      "statusDetails" : "Timeout of 20000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\businessLogic\\filter\\city-selection.js)",
+      "time" : {
+        "start" : 1540463069440,
+        "stop" : 1540463089458,
+        "duration" : 20018
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9d18065d53d54c04.json",
+  "parameterValues" : [ ]
+}

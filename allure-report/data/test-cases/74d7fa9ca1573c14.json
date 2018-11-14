@@ -1,0 +1,156 @@
+{
+  "uid" : "74d7fa9ca1573c14",
+  "name" : "check the clickability of the booking button",
+  "fullName" : "button book in the menu.check the clickability of the booking button",
+  "historyId" : "d76f4efcf860e5eedb0c20349bbed772",
+  "time" : {
+    "start" : 1542130200717,
+    "stop" : 1542130201333,
+    "duration" : 616
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element not interactable",
+  "statusTrace" : "Error: An element command could not be completed because the element is not visible on the page.\n                    at elementIdClick(\"0.332032889491795-5\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element not interactable",
+    "statusTrace" : "Error: An element command could not be completed because the element is not visible on the page.\n                    at elementIdClick(\"0.332032889491795-5\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dfec687ccee4164",
+      "name" : "Screenshot",
+      "source" : "dfec687ccee4164.png",
+      "type" : "image/png",
+      "size" : 110892
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "testClass",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "testMethod",
+    "value" : "check the clickability of the booking button"
+  }, {
+    "name" : "package",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5dc406e45de46b4e",
+      "status" : "broken",
+      "statusDetails" : "element not interactable",
+      "time" : {
+        "start" : 1542130003764,
+        "stop" : 1542130005594,
+        "duration" : 1830
+      }
+    }, {
+      "uid" : "e3f1d930c1acae25",
+      "status" : "broken",
+      "statusDetails" : "element not interactable",
+      "time" : {
+        "start" : 1541689371509,
+        "stop" : 1541689372128,
+        "duration" : 619
+      }
+    }, {
+      "uid" : "bc1f34646e789825",
+      "status" : "broken",
+      "statusDetails" : "element not interactable",
+      "time" : {
+        "start" : 1541684597830,
+        "stop" : 1541684598127,
+        "duration" : 297
+      }
+    }, {
+      "uid" : "2b16eb91794619e8",
+      "status" : "broken",
+      "statusDetails" : "element not interactable",
+      "time" : {
+        "start" : 1541611166745,
+        "stop" : 1541611167109,
+        "duration" : 364
+      }
+    }, {
+      "uid" : "23167930e1eeeed0",
+      "status" : "broken",
+      "statusDetails" : "element not interactable",
+      "time" : {
+        "start" : 1541610596433,
+        "stop" : 1541610596748,
+        "duration" : 315
+      }
+    }, {
+      "uid" : "7e6f7a1e879511bc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540990987575,
+        "stop" : 1540990989775,
+        "duration" : 2200
+      }
+    }, {
+      "uid" : "c06aacbfe93104bc",
+      "status" : "broken",
+      "statusDetails" : "element (\".op005_form_first\") still not visible after 60000ms",
+      "time" : {
+        "start" : 1540989884183,
+        "stop" : 1540989946377,
+        "duration" : 62194
+      }
+    }, {
+      "uid" : "4ee2122328efc994",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540405749832,
+        "stop" : 1540405755521,
+        "duration" : 5689
+      }
+    }, {
+      "uid" : "6862e9ebdc8369d3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540403649071,
+        "stop" : 1540403691445,
+        "duration" : 42374
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "74d7fa9ca1573c14.json",
+  "parameterValues" : [ "chrome" ]
+}

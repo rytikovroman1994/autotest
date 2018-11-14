@@ -1,0 +1,68 @@
+{
+  "uid" : "e405e93d43ee76e6",
+  "name" : "check checkbox materials Alcantara",
+  "fullName" : "test materials.check checkbox materials Alcantara",
+  "historyId" : "8cf9d478c4f09eb09ec9372e44bf3b67",
+  "time" : {
+    "start" : 1542109085341,
+    "stop" : 1542109085342,
+    "duration" : 1
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "browser.helpers.checkCheckbox is not a function",
+  "statusTrace" : "TypeError: browser.helpers.checkCheckbox is not a function\n                    at Context.it (C:/autotest/test/specs/PKW/carsAvailable/filter/interior/seating/materials.js:36:25)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test materials"
+  }, {
+    "name" : "testClass",
+    "value" : "test materials"
+  }, {
+    "name" : "testMethod",
+    "value" : "check checkbox materials Alcantara"
+  }, {
+    "name" : "package",
+    "value" : "test materials"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bcd311204727099e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540406943813,
+        "stop" : 1540406944958,
+        "duration" : 1145
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "e405e93d43ee76e6.json",
+  "parameterValues" : [ "chrome" ]
+}

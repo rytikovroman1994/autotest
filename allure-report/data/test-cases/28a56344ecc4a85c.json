@@ -1,0 +1,54 @@
+{
+  "uid" : "28a56344ecc4a85c",
+  "name" : "Check front-wheel drive",
+  "fullName" : "test front-wheel drive.Check front-wheel drive",
+  "historyId" : "4dd57600c43bc4dc3d3cf3c081238740",
+  "time" : {
+    "start" : 1540822636165,
+    "stop" : 1540822636610,
+    "duration" : 445
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'ПОЛНЫЙ' to equal 'ПЕРЕДНИЙ'",
+  "statusTrace" : "AssertionError: expected 'ПОЛНЫЙ' to equal 'ПЕРЕДНИЙ'\n                    at Object.checkCheckboxNfz (C:/autotest/helpers/NFZ/check-checkbox-NFZ.js:18:77)\n                    at Context.it (C:/autotest/test/specs/NFZ/carsAvailable/filter/engine/front-wheel-drive.js:10:25)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test front-wheel drive"
+  }, {
+    "name" : "testClass",
+    "value" : "test front-wheel drive"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check front-wheel drive"
+  }, {
+    "name" : "package",
+    "value" : "test front-wheel drive"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "28a56344ecc4a85c.json",
+  "parameterValues" : [ "chrome" ]
+}

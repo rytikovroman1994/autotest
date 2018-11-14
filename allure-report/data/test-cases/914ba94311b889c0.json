@@ -1,0 +1,71 @@
+{
+  "uid" : "914ba94311b889c0",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test additionally heated seats.Check the equipment in detail",
+  "historyId" : "dd5cacef9e59063c8b3dda7abdccce55",
+  "time" : {
+    "start" : 1541772692408,
+    "stop" : 1541772699932,
+    "duration" : 7524
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test additionally heated seats"
+  }, {
+    "name" : "testClass",
+    "value" : "test additionally heated seats"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test additionally heated seats"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "100d6dafaec61925",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541587770745,
+        "stop" : 1541587777755,
+        "duration" : 7010
+      }
+    }, {
+      "uid" : "d75061f09ae4311c",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn008_filter-value-item_image\") still not visible after 60000ms",
+      "time" : {
+        "start" : 1541519829555,
+        "stop" : 1541519890172,
+        "duration" : 60617
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "914ba94311b889c0.json",
+  "parameterValues" : [ "chrome" ]
+}

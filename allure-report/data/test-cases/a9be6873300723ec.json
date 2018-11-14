@@ -1,0 +1,60 @@
+{
+  "uid" : "a9be6873300723ec",
+  "name" : "Check checkbox До 1т",
+  "fullName" : "test carrying to one ton.Check checkbox До 1т",
+  "historyId" : "ad73847cf8d75f4dcdf4a4e2fd196cd9",
+  "time" : {
+    "start" : 1541604758644,
+    "stop" : 1541604828738,
+    "duration" : 70094
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "A session id is required for this command but wasn't found in the response payload",
+  "statusTrace" : "Error: A session id is required for this command but wasn't found in the response payload\n                    at new RuntimeError (C:\\autotest\\node_modules\\webdriverio\\build\\lib\\utils\\ErrorHandler.js:143:12)\n                    at RequestHandler.createOptions (C:\\autotest\\node_modules\\webdriverio\\build\\lib\\utils\\RequestHandler.js:121:23)\n                    at RequestHandler.create (C:\\autotest\\node_modules\\webdriverio\\build\\lib\\utils\\RequestHandler.js:212:43)\n                    at C:\\autotest\\node_modules\\webdriverio\\build\\lib\\protocol\\execute.js:78:41\n                    at <anonymous>\n                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "testClass",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox До 1т"
+  }, {
+    "name" : "package",
+    "value" : "test carrying to one ton"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "firefox"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "a9be6873300723ec.json",
+  "parameterValues" : [ "firefox" ]
+}

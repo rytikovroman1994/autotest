@@ -1,0 +1,72 @@
+{
+  "uid" : "829150b2cbc0e87b",
+  "name" : "Check checkbox dynamic Кондиционер",
+  "fullName" : "test climate conditioner.Check checkbox dynamic Кондиционер",
+  "historyId" : "6c80bbdf25b1ae97818c3059f4b1680b",
+  "time" : {
+    "start" : 1541503376438,
+    "stop" : 1541503377869,
+    "duration" : 1431
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "unknown error: Element <div class=\"btn btn_cta\" role=\"button\" data-name=\"button_submit_filter\">...</div> is not clickable at point (1236, 600). Other element would receive the click: <div class=\"avn008_filter \">...</div>",
+  "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.9167431083204169-6\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "unknown error: Element <div class=\"btn btn_cta\" role=\"button\" data-name=\"button_submit_filter\">...</div> is not clickable at point (1236, 600). Other element would receive the click: <div class=\"avn008_filter \">...</div>",
+    "statusTrace" : "Error: An unknown server-side error occurred while processing the command.\n                    at elementIdClick(\"0.9167431083204169-6\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\click.js:20:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "60f028aad11a754e",
+      "name" : "Screenshot",
+      "source" : "60f028aad11a754e.png",
+      "type" : "image/png",
+      "size" : 131925
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test climate conditioner"
+  }, {
+    "name" : "testClass",
+    "value" : "test climate conditioner"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check checkbox dynamic Кондиционер"
+  }, {
+    "name" : "package",
+    "value" : "test climate conditioner"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "829150b2cbc0e87b.json",
+  "parameterValues" : [ "chrome" ]
+}

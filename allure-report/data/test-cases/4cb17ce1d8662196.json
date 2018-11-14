@@ -1,0 +1,87 @@
+{
+  "uid" : "4cb17ce1d8662196",
+  "name" : "check checkboxes auto",
+  "fullName" : "transmission.check checkboxes auto",
+  "historyId" : "bf611fca22b2b4ac7d3c62d1e5990c78",
+  "time" : {
+    "start" : 1542106525187,
+    "stop" : 1542106527134,
+    "duration" : 1947
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "transmission"
+  }, {
+    "name" : "testClass",
+    "value" : "transmission"
+  }, {
+    "name" : "testMethod",
+    "value" : "check checkboxes auto"
+  }, {
+    "name" : "package",
+    "value" : "transmission"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "be5ac61f39264a53",
+      "status" : "failed",
+      "statusDetails" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/s/transmission.png' to include 'transmssion'",
+      "time" : {
+        "start" : 1542106491131,
+        "stop" : 1542106491751,
+        "duration" : 620
+      }
+    }, {
+      "uid" : "7b21a5a1c9ddbdb8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542106452932,
+        "stop" : 1542106454989,
+        "duration" : 2057
+      }
+    }, {
+      "uid" : "82f792d413729efc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1541690125225,
+        "stop" : 1541690126810,
+        "duration" : 1585
+      }
+    }, {
+      "uid" : "c247b5339ac95192",
+      "status" : "passed",
+      "time" : {
+        "start" : 1540406227709,
+        "stop" : 1540406229160,
+        "duration" : 1451
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4cb17ce1d8662196.json",
+  "parameterValues" : [ "chrome" ]
+}
