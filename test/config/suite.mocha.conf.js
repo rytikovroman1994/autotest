@@ -251,7 +251,7 @@ exports.config = {
         allure: {
           outputDir:   './test/reports/allure-results/',
           disableWebdriverStepsReporting: false,
-          useCucumberStepReporter: false,
+          useCucumberStepReporter: false,v
         },
         mochawesome:  {outputDir:   './test/reports/mocha-results/'},
         mochawesomeOpts: {

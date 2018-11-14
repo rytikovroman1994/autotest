@@ -7,7 +7,7 @@ describe('test checkboxs page security', () => {
             'Б/П КОЛЕНЕЙ'
     ]
 
-    before('open page secutity', () => {
+    before('Open page secutity', () => {
         browser.helpers.openSite();
         // переходим на страницу опции
         browser.click('.avn008_filter__tab[data-name="Опции"]');
@@ -18,7 +18,7 @@ describe('test checkboxs page security', () => {
     });
 
     // проверяем работу чекбоксов
-    it('check all checkbox in page security', () => {
+    it('Check all checkbox in page security', () => {
         for( let i = 2; i <= 6; i++ ) {
             // проверяем что фильтр пуст
             browser.waitUntil(

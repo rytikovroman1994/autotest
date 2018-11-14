@@ -1,4 +1,4 @@
-describe('body-color', () => {
+describe('test body-color', () => {
     // считаем количетсво чекбоксов цвета
     const numberOfCheckbox = () => $$('.grid_12 .checkbox__control').map(i => i.getAttribute('type'));
     // полный класс условия добалнения цвета в фильтр
@@ -17,7 +17,7 @@ describe('body-color', () => {
     });
 
     // пеходим в раздел экстерьер-цвет кузова
-    it('open page filter body color', () =>{
+    it('Open page filter body color', () =>{
         browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // ожидаем загрузки карртинки цвета капота
         browser.waitForVisible('.avn008_image-switcher_container');
@@ -25,7 +25,7 @@ describe('body-color', () => {
         currentСolor = imageName();
     });
 
-    it('add a new color', () => {
+    it('Add a new color', () => {
         const quantity = numberOfCheckbox().length;
         for(let i=1; i <= quantity; i++) {
             // выбираем цвет
