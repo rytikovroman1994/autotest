@@ -86,15 +86,15 @@ exports.config = {
         //{browserName: 'chrome', platform: '', version: '', maxInstances: '5'},
         //{browserName: 'firefox', platform: '', version: '', maxInstances: '5'},
 
-          {
-              browserName: 'chrome',
-              version: '69.0.3497.100',
-              maxInstances: '1',
-              seleniumProtocol: "WebDriver",
-              // specs: [
-              //     './test/specs/*.js'
-              // ],
-          },
+          // {
+          //     browserName: 'chrome',
+          //     version: '69.0.3497.100',
+          //     maxInstances: '1',
+          //     seleniumProtocol: "WebDriver",
+          //     // specs: [
+          //     //     './test/specs/*.js'
+          //     // ],
+          // },
 
           {
               browserName: 'chrome',
@@ -206,7 +206,7 @@ exports.config = {
     // e.g. using promises you can set the sync option to false.
     // path: '/wd/hub',
     // maxSession: 1,
-    host: '192.168.99.100',
+    // host: '192.168.99.100',
     port: 4444,
     sync: true,
     reporters: ['spec'],
@@ -233,7 +233,7 @@ exports.config = {
       // browsererevent : {}
     },
     
-    // services: ['selenium-standalone'],
+    services: ['selenium-standalone'],
     // services: ['selenium-standalone', 'phantomjs'],
     // services: ['docker'],  
 
