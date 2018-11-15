@@ -34,7 +34,7 @@ export default function checkConditions(filterCondition, conditionDetail) {
     browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
 
     // ожидаем появления картинки на странице деталки
-    browser.waitForVisible('.avn007-1_car-image img');
+    browser.waitForVisible('.avn007-1_car-image img', 40000);
 
     // скролим вниз 
     browser.scroll(0, 600);
