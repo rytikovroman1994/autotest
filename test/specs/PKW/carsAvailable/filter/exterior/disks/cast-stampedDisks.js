@@ -10,8 +10,12 @@ describe('test cast stamped disks', () => {
     });
 
     it('choose cast disks', () => {
-        // выбираем литые дички
+        // выбираем литые диски
         browser.click('div:nth-child(1) > div > div.disc-item_image > img');
+        // проверяем, что штампованые диски не задизейблились
+        browser.waitUntil(
+            () => browser.isExisting('.disc-item.is_disabled') === false,
+            10000, "Штампованые диски стали дизейбл");
         // проверяем что появилось условие в фильтре
         browser.waitForExist('.avn008_filter-value-item');
         // проверяем что это именно литые
@@ -20,8 +24,12 @@ describe('test cast stamped disks', () => {
     });
 
     it('choose stamped disks', () => {
-        // выбираем штампованные дички
+        // выбираем штампованные диски
         browser.click('div:nth-child(2) > div > div.disc-item_image > img');
+        // проверяем, что литые диски не задизейблились
+        browser.waitUntil(
+            () => browser.isExisting('.disc-item.is_disabled') === false,
+            10000, "Литые диски стали дизейбл");
         // проверяем что появилось условие в фильтре
         browser.waitForExist('.avn008_filter-value-item');
         // проверяем что это именно литые
