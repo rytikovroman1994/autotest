@@ -40,7 +40,7 @@ describe('test gallery in detail', () => {
             // проверяем что пропадает лоадер
             browser.waitUntil(
                 () => browser.isVisible('.avn007-4_loader-wrapper.is_visible > div > div') === false,
-                10000, `${i} по счёту картинка не отображается`);
+                20000, `${i} по счёту картинка не отображается`);
         }
     });
 });
