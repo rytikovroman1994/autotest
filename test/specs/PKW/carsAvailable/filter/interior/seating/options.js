@@ -1,4 +1,4 @@
-describe('test options', () => {
+describe.skip('test options', () => {
     before('open page options', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьера

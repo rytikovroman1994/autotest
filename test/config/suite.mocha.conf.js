@@ -240,7 +240,7 @@ exports.config = {
     framework: 'mocha',
     mochaOpts: {
       ui: 'bdd',
-      timeout: 180000,
+      timeout: 200000,
       compilers: ['js:babel-register'],
     },
 
@@ -250,8 +250,8 @@ exports.config = {
         json:   {outputDir:   './test/reports/json-results/'},
         allure: {
           outputDir:   './test/reports/allure-results/',
-          disableWebdriverStepsReporting: false,
-          useCucumberStepReporter: false,v
+          disableWebdriverStepsReporting: true,
+          useCucumberStepReporter: false,
         },
         mochawesome:  {outputDir:   './test/reports/mocha-results/'},
         mochawesomeOpts: {

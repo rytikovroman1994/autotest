@@ -7,8 +7,8 @@ describe('test materials fabric', () => {
         browser.click('.avn008_filter__tab[data-name="Интерьер"]');
     });
 
-    // проверяем работу чекбокса "Автоматическая"
-    it('Check checkboxes auto', () => {
+    // проверяем работу чекбокса 
+    it(`Check checkboxes ${conditions}`, () => {
         browser.helpers.checkCheckboxNfz(conditions, 'ТКАНЕВЫЙ САЛОН', 'seats-cloth');
     });
 

@@ -1,0 +1,135 @@
+{
+  "uid" : "11cd4400916ac9b7",
+  "name" : "check cards, filter and image",
+  "fullName" : "test climate zones.check cards, filter and image",
+  "historyId" : "5d8393b55de18c663cf5f4b362a3d1e1",
+  "time" : {
+    "start" : 1542220630321,
+    "stop" : 1542220680693,
+    "duration" : 50372
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected '3-ЗОННЫЙ' to equal '4-ЗОННЫЙ'",
+  "statusTrace" : "AssertionError: expected '3-ЗОННЫЙ' to equal '4-ЗОННЫЙ'\n                    at Context.it (C:/autotest/test/specs/PKW/carsAvailable/filter/interior/climate/climate-zones.js:54:47)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "expected '3-ЗОННЫЙ' to equal '4-ЗОННЫЙ'",
+    "statusTrace" : "AssertionError: expected '3-ЗОННЫЙ' to equal '4-ЗОННЫЙ'\n                    at Context.it (C:/autotest/test/specs/PKW/carsAvailable/filter/interior/climate/climate-zones.js:54:47)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "34f9d00264516d20",
+      "name" : "Screenshot",
+      "source" : "34f9d00264516d20.png",
+      "type" : "image/png",
+      "size" : 228615
+    }, {
+      "uid" : "40f511bd1d06a20",
+      "name" : "Screenshot",
+      "source" : "40f511bd1d06a20.png",
+      "type" : "image/png",
+      "size" : 246860
+    }, {
+      "uid" : "f5e7d526eec7d2b3",
+      "name" : "Screenshot",
+      "source" : "f5e7d526eec7d2b3.png",
+      "type" : "image/png",
+      "size" : 246860
+    }, {
+      "uid" : "67b6e27e86189bb0",
+      "name" : "Screenshot",
+      "source" : "67b6e27e86189bb0.png",
+      "type" : "image/png",
+      "size" : 229836
+    }, {
+      "uid" : "a2398a4806869d9",
+      "name" : "Screenshot",
+      "source" : "a2398a4806869d9.png",
+      "type" : "image/png",
+      "size" : 229836
+    }, {
+      "uid" : "bbb3972057966abc",
+      "name" : "Screenshot",
+      "source" : "bbb3972057966abc.png",
+      "type" : "image/png",
+      "size" : 234553
+    }, {
+      "uid" : "5526506eaa45db71",
+      "name" : "Screenshot",
+      "source" : "5526506eaa45db71.png",
+      "type" : "image/png",
+      "size" : 234553
+    }, {
+      "uid" : "eb5aa3b04db868e",
+      "name" : "Screenshot",
+      "source" : "eb5aa3b04db868e.png",
+      "type" : "image/png",
+      "size" : 233389
+    }, {
+      "uid" : "38ade85697cd7044",
+      "name" : "Screenshot",
+      "source" : "38ade85697cd7044.png",
+      "type" : "image/png",
+      "size" : 233389
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 9,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test climate zones"
+  }, {
+    "name" : "testClass",
+    "value" : "test climate zones"
+  }, {
+    "name" : "testMethod",
+    "value" : "check cards, filter and image"
+  }, {
+    "name" : "package",
+    "value" : "test climate zones"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "fa3968212fdcd95a",
+      "status" : "failed",
+      "statusDetails" : "expected '3-ЗОННЫЙ' to equal '4-ЗОННЫЙ'",
+      "time" : {
+        "start" : 1542220481195,
+        "stop" : 1542220528276,
+        "duration" : 47081
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "11cd4400916ac9b7.json",
+  "parameterValues" : [ "chrome" ]
+}

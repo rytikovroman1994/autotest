@@ -1,0 +1,87 @@
+{
+  "uid" : "b903e63577c8051b",
+  "name" : "check image in gallery",
+  "fullName" : "test gallery in detail.check image in gallery",
+  "historyId" : "fbe1bdbddc99feeca57e9f65908c459d",
+  "time" : {
+    "start" : 1542217662962,
+    "stop" : 1542217708927,
+    "duration" : 45965
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "8 по счёту картинка не отображается",
+  "statusTrace" : "Error: 8 по счёту картинка не отображается\n                    at elementIdDisplayed(\"0.8517296252520379-14\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:71:55",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "8 по счёту картинка не отображается",
+    "statusTrace" : "Error: 8 по счёту картинка не отображается\n                    at elementIdDisplayed(\"0.8517296252520379-14\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:71:55",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "b16f973febcbe72b",
+      "name" : "Screenshot",
+      "source" : "b16f973febcbe72b.png",
+      "type" : "image/png",
+      "size" : 702299
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test gallery in detail"
+  }, {
+    "name" : "testClass",
+    "value" : "test gallery in detail"
+  }, {
+    "name" : "testMethod",
+    "value" : "check image in gallery"
+  }, {
+    "name" : "package",
+    "value" : "test gallery in detail"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8928afe03235cafc",
+      "status" : "broken",
+      "statusDetails" : "5 по счёту картинка не отображается",
+      "time" : {
+        "start" : 1542217518581,
+        "stop" : 1542217559387,
+        "duration" : 40806
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "b903e63577c8051b.json",
+  "parameterValues" : [ "chrome" ]
+}

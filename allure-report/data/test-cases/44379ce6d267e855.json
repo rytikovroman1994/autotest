@@ -1,0 +1,87 @@
+{
+  "uid" : "44379ce6d267e855",
+  "name" : "checking phone input",
+  "fullName" : "test button to book.checking phone input",
+  "historyId" : "a10d1a7bcf6c14db311bea70c057cdc3",
+  "time" : {
+    "start" : 1542217281903,
+    "stop" : 1542217303867,
+    "duration" : 21964
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\"body #mobile\") still not existing after 20000ms",
+  "statusTrace" : "Error: element (\"body #mobile\") still not existing after 20000ms\n                    at elements(\"body #mobile\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\"body #mobile\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\"body #mobile\") still not existing after 20000ms",
+    "statusTrace" : "Error: element (\"body #mobile\") still not existing after 20000ms\n                    at elements(\"body #mobile\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\"body #mobile\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "d61369b6dcc48e5d",
+      "name" : "Screenshot",
+      "source" : "d61369b6dcc48e5d.png",
+      "type" : "image/png",
+      "size" : 78473
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test button to book"
+  }, {
+    "name" : "testClass",
+    "value" : "test button to book"
+  }, {
+    "name" : "testMethod",
+    "value" : "checking phone input"
+  }, {
+    "name" : "package",
+    "value" : "test button to book"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "be0ab3c02c7aee78",
+      "status" : "broken",
+      "statusDetails" : "element (\"body #mobile\") still not existing after 20000ms",
+      "time" : {
+        "start" : 1542217225909,
+        "stop" : 1542217246442,
+        "duration" : 20533
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "44379ce6d267e855.json",
+  "parameterValues" : [ "chrome" ]
+}

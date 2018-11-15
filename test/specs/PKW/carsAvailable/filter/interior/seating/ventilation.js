@@ -8,7 +8,7 @@ describe('test ventilation', () => {
     });
 
     // проверяем работу чекбокса "Автоматическая"
-    it('Check checkboxes auto', () => {
+    it(`Check checkboxes ${conditions}`, () => {
         browser.helpers.checkCheckboxNfz(conditions, 'ВЕНТИЛЯЦИЯ СИДЕНИЙ', 'seats-condition');
     });
 

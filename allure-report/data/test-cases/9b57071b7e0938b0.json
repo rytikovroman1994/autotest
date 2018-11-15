@@ -1,0 +1,54 @@
+{
+  "uid" : "9b57071b7e0938b0",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test electric seat drive.Check the equipment in detail",
+  "historyId" : "c1243f859a62354f1a712c4e631c8578",
+  "time" : {
+    "start" : 1542222440613,
+    "stop" : 1542222497590,
+    "duration" : 56977
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected undefined to equal 'Тканевые сидения'",
+  "statusTrace" : "AssertionError: expected undefined to equal 'Тканевые сидения'\n                    at Context.it (C:/autotest/test/specs/PKW/carsAvailable/filter/interior/seating/electric-seat-drive.js:19:32)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test electric seat drive"
+  }, {
+    "name" : "testClass",
+    "value" : "test electric seat drive"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test electric seat drive"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9b57071b7e0938b0.json",
+  "parameterValues" : [ "chrome" ]
+}

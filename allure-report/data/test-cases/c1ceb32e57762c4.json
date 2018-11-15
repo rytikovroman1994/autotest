@@ -1,0 +1,78 @@
+{
+  "uid" : "c1ceb32e57762c4",
+  "name" : "verification of email input",
+  "fullName" : "button book in the menu.verification of email input",
+  "historyId" : "510a61d0c91a2ffe8e3dccde1176b746",
+  "time" : {
+    "start" : 1542217124069,
+    "stop" : 1542217145201,
+    "duration" : 21132
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\"body #email\") still not existing after 20000ms",
+  "statusTrace" : "Error: element (\"body #email\") still not existing after 20000ms\n                    at elements(\"body #email\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\"body #email\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\"body #email\") still not existing after 20000ms",
+    "statusTrace" : "Error: element (\"body #email\") still not existing after 20000ms\n                    at elements(\"body #email\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isExisting.js:46:17\n                    at isExisting(\"body #email\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\waitForExist.js:67:22",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "97fb81fbb3e4f320",
+      "name" : "Screenshot",
+      "source" : "97fb81fbb3e4f320.png",
+      "type" : "image/png",
+      "size" : 110892
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "testClass",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "testMethod",
+    "value" : "verification of email input"
+  }, {
+    "name" : "package",
+    "value" : "button book in the menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "c1ceb32e57762c4.json",
+  "parameterValues" : [ "chrome" ]
+}

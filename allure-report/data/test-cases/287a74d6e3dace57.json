@@ -1,0 +1,69 @@
+{
+  "uid" : "287a74d6e3dace57",
+  "name" : "check checkbox memory",
+  "fullName" : "test options.check checkbox memory",
+  "historyId" : "16da667b311649d9801700217b33d0a",
+  "time" : {
+    "start" : 1542222860098,
+    "stop" : 1542222862674,
+    "duration" : 2576
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/s/seats-memory.png' to include undefined",
+  "statusTrace" : "AssertionError: expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/s/seats-memory.png' to include undefined\n                    at Object.checkCheckbox (C:/autotest/helpers/PKW/check-checkbox.js:23:31)\n                    at Context.it (C:/autotest/test/specs/PKW/carsAvailable/filter/interior/seating/options.js:40:25)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:590:26\n                    at new Promise (<anonymous>)\n                    at new F (C:\\autotest\\node_modules\\core-js\\library\\modules\\_export.js:36:28)\n                    at Context.executeSync (C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:588:12)\n                    at C:\\autotest\\node_modules\\wdio-sync\\build\\index.js:759:42",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test options"
+  }, {
+    "name" : "testClass",
+    "value" : "test options"
+  }, {
+    "name" : "testMethod",
+    "value" : "check checkbox memory"
+  }, {
+    "name" : "package",
+    "value" : "test options"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d3575684cd699774",
+      "status" : "failed",
+      "statusDetails" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/s/seats-memory.png' to include undefined",
+      "time" : {
+        "start" : 1542222765131,
+        "stop" : 1542222767873,
+        "duration" : 2742
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "287a74d6e3dace57.json",
+  "parameterValues" : [ "chrome" ]
+}

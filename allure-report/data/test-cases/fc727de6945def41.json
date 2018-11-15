@@ -1,0 +1,69 @@
+{
+  "uid" : "fc727de6945def41",
+  "name" : "Compare screenshots",
+  "fullName" : "test bluetooth.Compare screenshots",
+  "historyId" : "798cb84ad91569325c5f2376346a2489",
+  "time" : {
+    "start" : 1542221624861,
+    "stop" : 1542221625556,
+    "duration" : 695
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "failed",
+  "statusMessage" : "expected 0.109375 to be below 0.1",
+  "statusTrace" : "AssertionError: expected 0.109375 to be below 0.1\n                    at Context.it (C:/autotest/test/specs/PKW/carsAvailable/filter/interior/multimedia/bluetooth.js:39:32)\n                    at <anonymous>\n                    at process._tickDomainCallback (internal/process/next_tick.js:228:7)",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test bluetooth"
+  }, {
+    "name" : "testClass",
+    "value" : "test bluetooth"
+  }, {
+    "name" : "testMethod",
+    "value" : "Compare screenshots"
+  }, {
+    "name" : "package",
+    "value" : "test bluetooth"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "685c500079cb1f5a",
+      "status" : "failed",
+      "statusDetails" : "expected 0.109375 to be below 0.1",
+      "time" : {
+        "start" : 1542221462697,
+        "stop" : 1542221463430,
+        "duration" : 733
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "fc727de6945def41.json",
+  "parameterValues" : [ "chrome" ]
+}

@@ -1,0 +1,87 @@
+{
+  "uid" : "575fa62d7e0c2f5d",
+  "name" : "Check the equipment in detail",
+  "fullName" : "test wireless charger.Check the equipment in detail",
+  "historyId" : "a40d9ef84c72615bcf49608059747c64",
+  "time" : {
+    "start" : 1542222143726,
+    "stop" : 1542222184809,
+    "duration" : 41083
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "broken",
+  "statusMessage" : "element (\".avn007-1_car-image img\") still not visible after 20000ms",
+  "statusTrace" : "Error: element (\".avn007-1_car-image img\") still not visible after 20000ms\n                    at elementIdDisplayed(\"0.5204976110840867-17\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:71:55",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "element (\".avn007-1_car-image img\") still not visible after 20000ms",
+    "statusTrace" : "Error: element (\".avn007-1_car-image img\") still not visible after 20000ms\n                    at elementIdDisplayed(\"0.5204976110840867-17\") - C:\\autotest\\node_modules\\webdriverio\\build\\lib\\commands\\isVisible.js:71:55",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e279c7a12e6acb3e",
+      "name" : "Screenshot",
+      "source" : "e279c7a12e6acb3e.png",
+      "type" : "image/png",
+      "size" : 182513
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "suite",
+    "value" : "test wireless charger"
+  }, {
+    "name" : "testClass",
+    "value" : "test wireless charger"
+  }, {
+    "name" : "testMethod",
+    "value" : "Check the equipment in detail"
+  }, {
+    "name" : "package",
+    "value" : "test wireless charger"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "55a4ff2edcf924ac",
+      "status" : "broken",
+      "statusDetails" : "element (\".avn007-1_car-image img\") still not visible after 20000ms",
+      "time" : {
+        "start" : 1542221936211,
+        "stop" : 1542221970952,
+        "duration" : 34741
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "575fa62d7e0c2f5d.json",
+  "parameterValues" : [ "chrome" ]
+}
