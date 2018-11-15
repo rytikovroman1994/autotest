@@ -1,9 +1,9 @@
-describe('test tire pressure sensor', () => {
+describe.skip('test tire pressure sensor', () => {
     const ctx = {
         originalScreenshot: null,
         newScreenshot: null,
       };
-    before(' open page options', () => {
+    before('open page options', () => {
         browser.helpers.openSite();
         // открываем страницу опции
         browser.click('.avn008_filter__tab[data-name="Опции"]');
@@ -11,7 +11,7 @@ describe('test tire pressure sensor', () => {
         browser.waitForVisible('.avn008_option-check_image[data-name="Камера заднего вида"] img');
     });
 
-     it('check checkbox tire pressure sensor', () => {
+     it('Сheck checkbox tire pressure sensor', () => {
         // проверяем что фильтр пуст
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -31,7 +31,7 @@ describe('test tire pressure sensor', () => {
         5000, "На странице уже есть одно условие фильтра");
      });
 
-     it('check more in detail about tire pressure sensor', () => {
+     it('Сheck more in detail about tire pressure sensor', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
