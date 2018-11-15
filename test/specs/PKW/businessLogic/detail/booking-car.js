@@ -1,4 +1,4 @@
-describe('test booking car', () => {
+describe('test businessLogic booking car', () => {
     before('open site', () => {
         browser.helpers.openList();
         // ждём пока карточки станут видны
@@ -56,9 +56,14 @@ describe('test booking car', () => {
         let statePrise = browser.getAttribute('.flex-container .text-input input','value');
         // скролим до слайдера в том случаи если он не виден
         browser.scroll(0, 450);
-        browser.helpers.slider('.rc-slider-handle', '.rc-slider-rail', 100, 0);
-        let currentPrise = browser.getAttribute('.flex-container .text-input input','value');
-        expect(currentPrise).to.not.equal(statePrise);
+        if(browser.isExisting('.op005_amount-range.is_disabled_temp') === false) {
+            // двигаем слайдер
+            browser.helpers.slider('.rc-slider-handle', '.rc-slider-rail', 100, 0);
+            // получаем новый размер предоплаты
+            let currentPrise = browser.getAttribute('.flex-container .text-input input','value');
+            // проверяем что цена изменилась
+            expect(currentPrise).to.not.equal(statePrise);
+        }
     });
 
     // проверяем что что загружаются реквизиты
@@ -68,7 +73,11 @@ describe('test booking car', () => {
         // выбираем оплату по реквизитам
         browser.click('body #rw_1_listbox > li:nth-child(3)');
         // расскрываем данные по реквизитам
-        browser.click('.op005_pay-by-req .vwd5-textlink_text');
+        browser.click('.op005_pay-by-req__links .icon-link');
+        // проверяем, что появилась таблица с реквизитами
+        browser.waitUntil(
+            () => browser.isExisting('.op005_table') === true,
+            5000, "Таблица реквизитов не отображается");
         // проверяем что в каждом поле есть данные не равные "нет данных"
         for( let i = 1; i <= 7 ; i++) {
             const getRequisites = browser.getText(`.op005_form_text > div > div > div:nth-child(${i}) > div:nth-child(2)`)
