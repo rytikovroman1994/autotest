@@ -107,7 +107,7 @@ describe('test Polo busines logic', () => {
             const carPrice = browser.getText(`${card} .price-text`);
             console.log(carPrice);
             // убираем пробел 
-            const carPriceDelete = carPrice.replace(/\s/g, "");
+            const carPriceDelete = carPrice[0].replace(/\s/g, "");
             console.log(carPriceDelete);
             // преобразуем в число
             const numberCarPrice = +carPriceDelete;
