@@ -2,544 +2,196 @@
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
   "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "expected '15 000' to not equal '15 000'",
-      "children" : [ {
-        "name" : "Check the tooltip and slider",
-        "uid" : "ae2dc1527aee39fd",
-        "parentUid" : "d28c77d8fd34a3c9c648cfd95099b4ba",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542216489042,
-          "stop" : 1542216492904,
-          "duration" : 3862
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "d28c77d8fd34a3c9c648cfd95099b4ba"
-    }, {
-      "name" : "expected 'TSI 150 Л.С.' to include 'MPI'",
-      "children" : [ {
-        "name" : "Check checkbox diesel",
-        "uid" : "d47704abc0b69cf4",
-        "parentUid" : "62ca578107ea858acdd52984d99048fa",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542219005461,
-          "stop" : 1542219009282,
-          "duration" : 3821
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "62ca578107ea858acdd52984d99048fa"
-    }, {
-      "name" : "expected '3-ЗОННЫЙ' to equal '4-ЗОННЫЙ'",
-      "children" : [ {
-        "name" : "check cards, filter and image",
-        "uid" : "11cd4400916ac9b7",
-        "parentUid" : "0ab9e7c6619bb78df9c5978247c1a9ff",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542220630321,
-          "stop" : 1542220680693,
-          "duration" : 50372
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "0ab9e7c6619bb78df9c5978247c1a9ff"
-    }, {
-      "name" : "expected 0.109375 to be below 0.1",
-      "children" : [ {
-        "name" : "Compare screenshots",
-        "uid" : "fc727de6945def41",
-        "parentUid" : "8159619af660b43b879aeea16d603d58",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542221624861,
-          "stop" : 1542221625556,
-          "duration" : 695
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "8159619af660b43b879aeea16d603d58"
-    }, {
-      "name" : "expected '' to equal 'САЛОН АЛЬКАНТАРА'",
-      "children" : [ {
-        "name" : "Check checkboxes auto",
-        "uid" : "b19adae0fae451d0",
-        "parentUid" : "7d02865b6579fb679c50acb1ecba767a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542222232884,
-          "stop" : 1542222235141,
-          "duration" : 2257
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "7d02865b6579fb679c50acb1ecba767a"
-    }, {
-      "name" : "expected null to not equal null",
-      "children" : [ {
-        "name" : "compare screenshots",
-        "uid" : "f0ce69a092573d4a",
-        "parentUid" : "765120cababe6d12a2c54c238643eabc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542222236121,
-          "stop" : 1542222236123,
-          "duration" : 2
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "compare screenshots",
-        "uid" : "4a70204a8b74aab9",
-        "parentUid" : "765120cababe6d12a2c54c238643eabc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542224814594,
-          "stop" : 1542224814596,
-          "duration" : 2
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "765120cababe6d12a2c54c238643eabc"
-    }, {
-      "name" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/s/seats-transform.png' to include undefined",
-      "children" : [ {
-        "name" : "check checkbox electric drive",
-        "uid" : "e2bb9fbccc9c6a2d",
-        "parentUid" : "d367cc2dcfa643f79ec12c0fba2435a8",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542222806878,
-          "stop" : 1542222808242,
-          "duration" : 1364
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "d367cc2dcfa643f79ec12c0fba2435a8"
-    }, {
-      "name" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/s/seats-massage.png' to include undefined",
-      "children" : [ {
-        "name" : "check checkbox massage",
-        "uid" : "6fed3593b688209f",
-        "parentUid" : "429d4bfb1431dba768d46808d0f06460",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542222829919,
-          "stop" : 1542222832648,
-          "duration" : 2729
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "429d4bfb1431dba768d46808d0f06460"
-    }, {
-      "name" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/s/seats-memory.png' to include undefined",
-      "children" : [ {
-        "name" : "check checkbox memory",
-        "uid" : "287a74d6e3dace57",
-        "parentUid" : "bdb39622c7960ad75afa678bd6627d07",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542222860098,
-          "stop" : 1542222862674,
-          "duration" : 2576
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "bdb39622c7960ad75afa678bd6627d07"
-    }, {
-      "name" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/option_images/icons/s/seats-condition.png' to include undefined",
-      "children" : [ {
-        "name" : "check checkbox ventilation",
-        "uid" : "8b4ba4940045ddd7",
-        "parentUid" : "202ba47cdf388c224bf15352b1b81af6",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542222884505,
-          "stop" : 1542222888168,
-          "duration" : 3663
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "202ba47cdf388c224bf15352b1b81af6"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  }, {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "Timeout of 200000ms exceeded. Try to reduce the run time or increase your timeout for test specs (http://webdriver.io/guide/testrunner/timeouts.html); if returning a Promise, ensure it resolves. (C:\\autotest\\test\\specs\\PKW\\businessLogic\\filter\\city-selection.js)",
+      "name" : "В городе Маxачкала нет списка доступных машин",
       "children" : [ {
         "name" : "Check the city in the card",
-        "uid" : "97bbb154d1a4547c",
-        "parentUid" : "45055dda5e048da06bb6bad96dc660a7",
+        "uid" : "3667121d8bee7260",
+        "parentUid" : "b79680807dbcbddafa1e2614a051594d",
         "status" : "broken",
         "time" : {
-          "start" : 1542216666511,
-          "stop" : 1542216866526,
-          "duration" : 200015
+          "start" : 1542636168249,
+          "stop" : 1542636307431,
+          "duration" : 139182
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "45055dda5e048da06bb6bad96dc660a7"
+      "uid" : "b79680807dbcbddafa1e2614a051594d"
     }, {
-      "name" : "carPrice.replace is not a function",
-      "children" : [ {
-        "name" : "Check the available list of cars",
-        "uid" : "7e8e8127db928da0",
-        "parentUid" : "223f6696985b33fd35ef39cb41359d6d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542216958406,
-          "stop" : 1542216959096,
-          "duration" : 690
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "223f6696985b33fd35ef39cb41359d6d"
-    }, {
-      "name" : "Модель Polo с комплектацией conceptline не выбирается",
+      "name" : "Модель Golf с комплектацией highline не выбирается",
       "children" : [ {
         "name" : "check availability kits",
-        "uid" : "85c5a881d9955c13",
-        "parentUid" : "7879bc8542fd8cfa20b2891cb349c23e",
+        "uid" : "ab64ac0dd1df36d1",
+        "parentUid" : "f00a09b1723bb3370f3b059fba0be429",
         "status" : "broken",
         "time" : {
-          "start" : 1542217000002,
-          "stop" : 1542217037760,
-          "duration" : 37758
+          "start" : 1542636379244,
+          "stop" : 1542636411872,
+          "duration" : 32628
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "7879bc8542fd8cfa20b2891cb349c23e"
+      "uid" : "f00a09b1723bb3370f3b059fba0be429"
     }, {
-      "name" : "element (\".avn007-1_car-image img\") still not visible after 20000ms",
+      "name" : "Форма Запросить автомобиль не появилась",
       "children" : [ {
-        "name" : "\"before all\" hook",
-        "uid" : "ccfd48f3f13a8dc9",
-        "parentUid" : "154bbf9545fa97f58809de44433e7e88",
+        "name" : "Check the clickability of the booking button",
+        "uid" : "c57dc1bcd0d531d1",
+        "parentUid" : "bcc4848bca121c13383618da67d6f1ef",
         "status" : "broken",
         "time" : {
-          "start" : 1542217059350,
-          "stop" : 1542217124043,
-          "duration" : 64693
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Check the equipment in detail",
-        "uid" : "575fa62d7e0c2f5d",
-        "parentUid" : "154bbf9545fa97f58809de44433e7e88",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542222143726,
-          "stop" : 1542222184809,
-          "duration" : 41083
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "Check the equipment in detail",
-        "uid" : "716bbc14e749397d",
-        "parentUid" : "154bbf9545fa97f58809de44433e7e88",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542223592500,
-          "stop" : 1542223637800,
-          "duration" : 45300
+          "start" : 1542636433650,
+          "stop" : 1542636447104,
+          "duration" : 13454
         },
         "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "154bbf9545fa97f58809de44433e7e88"
-    }, {
-      "name" : "element (\".avn012_content .btn__text\") still not visible after 20000ms",
-      "children" : [ {
-        "name" : "check button book it",
-        "uid" : "d71decd26b65fc83",
-        "parentUid" : "7c416441b244677f7919ca9455075414",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217082433,
-          "stop" : 1542217123510,
-          "duration" : 41077
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "7c416441b244677f7919ca9455075414"
-    }, {
-      "name" : "element not interactable",
-      "children" : [ {
-        "name" : "check the clickability of the booking button",
-        "uid" : "173abb48e07d3a35",
-        "parentUid" : "8d63a8d6f9426fb23642c567c8a3c8ca",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217123510,
-          "stop" : 1542217124068,
-          "duration" : 558
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "8d63a8d6f9426fb23642c567c8a3c8ca"
-    }, {
-      "name" : "element (\"body #email\") still not existing after 20000ms",
-      "children" : [ {
-        "name" : "verification of email input",
-        "uid" : "c1ceb32e57762c4",
-        "parentUid" : "d8b313dd55289e1fd5264cf58e2777fa",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217124069,
-          "stop" : 1542217145201,
-          "duration" : 21132
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "verification of email input",
-        "uid" : "9a88732eb36b0231",
-        "parentUid" : "d8b313dd55289e1fd5264cf58e2777fa",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217261541,
-          "stop" : 1542217281902,
-          "duration" : 20361
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "d8b313dd55289e1fd5264cf58e2777fa"
-    }, {
-      "name" : "element (\"body #mobile\") still not existing after 20000ms",
-      "children" : [ {
-        "name" : "checking phone input",
-        "uid" : "74597234927a6687",
-        "parentUid" : "38c05c9a44c6bf5dba9fed041a264de0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217145202,
-          "stop" : 1542217166750,
-          "duration" : 21548
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "checking phone input",
-        "uid" : "44379ce6d267e855",
-        "parentUid" : "38c05c9a44c6bf5dba9fed041a264de0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217281903,
-          "stop" : 1542217303867,
-          "duration" : 21964
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "38c05c9a44c6bf5dba9fed041a264de0"
+      "uid" : "bcc4848bca121c13383618da67d6f1ef"
     }, {
       "name" : "An element could not be located on the page using the given search parameters.",
       "children" : [ {
-        "name" : "checking the last name",
-        "uid" : "e1ec742b67e18da9",
+        "name" : "Choose the sex of the person",
+        "uid" : "5b77eb088404ea40",
         "parentUid" : "d53bb646b3c97098681e1db1a25832ed",
         "status" : "broken",
         "time" : {
-          "start" : 1542217166751,
-          "stop" : 1542217167110,
-          "duration" : 359
+          "start" : 1542636447104,
+          "stop" : 1542636447353,
+          "duration" : 249
         },
         "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "check that we are back",
-        "uid" : "4ad706e80392d85c",
-        "parentUid" : "d53bb646b3c97098681e1db1a25832ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217168004,
-          "stop" : 1542217168257,
-          "duration" : 253
-        },
-        "flaky" : false,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "checking the last name",
-        "uid" : "27e2c4962afa124",
-        "parentUid" : "d53bb646b3c97098681e1db1a25832ed",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217303928,
-          "stop" : 1542217305730,
-          "duration" : 1802
-        },
-        "flaky" : true,
         "parameters" : [ "chrome" ]
       } ],
       "uid" : "d53bb646b3c97098681e1db1a25832ed"
     }, {
-      "name" : "An element could not be located on the page using the given search parameters (\"body #firstName\").",
+      "name" : "An element could not be located on the page using the given search parameters (\".input__field[placeholder=\"Введите ваше имя\"]\").",
       "children" : [ {
-        "name" : "input check name",
-        "uid" : "e56a755986873961",
-        "parentUid" : "60d00e5a633c912944dcc2a2e84f90d8",
+        "name" : "Input check name",
+        "uid" : "b526b47a7d96a2ba",
+        "parentUid" : "c961e54f740e1aeaa1ffc2d0d61217ad",
         "status" : "broken",
         "time" : {
-          "start" : 1542217167110,
-          "stop" : 1542217167375,
-          "duration" : 265
+          "start" : 1542636447353,
+          "stop" : 1542636447639,
+          "duration" : 286
         },
         "flaky" : false,
         "parameters" : [ "chrome" ]
-      }, {
-        "name" : "input check name",
-        "uid" : "34ccb11a36ff04ab",
-        "parentUid" : "60d00e5a633c912944dcc2a2e84f90d8",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217305731,
-          "stop" : 1542217306089,
-          "duration" : 358
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "60d00e5a633c912944dcc2a2e84f90d8"
+      "uid" : "c961e54f740e1aeaa1ffc2d0d61217ad"
     }, {
-      "name" : "An element could not be located on the page using the given search parameters (\"body #patronomic\").",
+      "name" : "element (\".input__field[placeholder=\"Фамилия\"]\") still not existing after 20000ms",
       "children" : [ {
-        "name" : "entry check patronymic",
-        "uid" : "257d73fee5cc7ab9",
-        "parentUid" : "0468f8179195eda97f2c9ff14f1d4cda",
+        "name" : "Checking the last name",
+        "uid" : "4070554c8a9cee90",
+        "parentUid" : "a650d0e32f19df34f10d14d4bd48dce3",
         "status" : "broken",
         "time" : {
-          "start" : 1542217167375,
-          "stop" : 1542217167639,
-          "duration" : 264
+          "start" : 1542636447639,
+          "stop" : 1542636467868,
+          "duration" : 20229
         },
         "flaky" : false,
         "parameters" : [ "chrome" ]
-      }, {
-        "name" : "entry check patronymic",
-        "uid" : "a52fa2e075266a1e",
-        "parentUid" : "0468f8179195eda97f2c9ff14f1d4cda",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217306089,
-          "stop" : 1542217306435,
-          "duration" : 346
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "0468f8179195eda97f2c9ff14f1d4cda"
+      "uid" : "a650d0e32f19df34f10d14d4bd48dce3"
     }, {
-      "name" : "An element could not be located on the page using the given search parameters (\"body #password\").",
+      "name" : "element (\".input__field[placeholder=\"Отчество\"]\") still not existing after 20000ms",
       "children" : [ {
-        "name" : "enter the password",
-        "uid" : "71611b1e75eda020",
-        "parentUid" : "88ba31eccb2402da6134da35c7c5ef29",
+        "name" : "Entry check patronymic",
+        "uid" : "1bfb0bf14c9a2c98",
+        "parentUid" : "ff69e65b678a4fb0a56cfa9454e37bcb",
         "status" : "broken",
         "time" : {
-          "start" : 1542217167640,
-          "stop" : 1542217168003,
-          "duration" : 363
+          "start" : 1542636467869,
+          "stop" : 1542636488076,
+          "duration" : 20207
         },
         "flaky" : false,
         "parameters" : [ "chrome" ]
-      }, {
-        "name" : "enter the password",
-        "uid" : "13ab8d5405841e4c",
-        "parentUid" : "88ba31eccb2402da6134da35c7c5ef29",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217306435,
-          "stop" : 1542217306715,
-          "duration" : 280
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "88ba31eccb2402da6134da35c7c5ef29"
+      "uid" : "ff69e65b678a4fb0a56cfa9454e37bcb"
     }, {
-      "name" : "element (\".op005_form_first\") still not visible after 20000ms",
+      "name" : "element (\".input__field[placeholder=\"Телефон\"]\") still not existing after 20000ms",
       "children" : [ {
-        "name" : "check the clickability of the booking button",
-        "uid" : "6a1fd5c4a70fb58",
-        "parentUid" : "76ac2cc99485276b69470e8878836320",
+        "name" : "Checking phone input",
+        "uid" : "8a4e2debfac61213",
+        "parentUid" : "4d5ac84e8731bc7495b9de5fc5785959",
         "status" : "broken",
         "time" : {
-          "start" : 1542217230750,
-          "stop" : 1542217261541,
-          "duration" : 30791
+          "start" : 1542636488076,
+          "stop" : 1542636508310,
+          "duration" : 20234
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "76ac2cc99485276b69470e8878836320"
+      "uid" : "4d5ac84e8731bc7495b9de5fc5785959"
     }, {
-      "name" : "unknown error: Element <div type=\"submit\" class=\"btn btn_cta is_disabled\" role=\"button\">...</div> is not clickable at point (675, 631). Other element would receive the click: <div class=\"btn_with_loader \">...</div>",
+      "name" : "element (\".input__field[placeholder=\"Email\"]\") still not existing after 20000ms",
+      "children" : [ {
+        "name" : "Verification of email input",
+        "uid" : "ad000d39166a7827",
+        "parentUid" : "3ab73bc307ea381eaabc07ce11fe575e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1542636508311,
+          "stop" : 1542636528535,
+          "duration" : 20224
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "3ab73bc307ea381eaabc07ce11fe575e"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters (\".op006_result-message_title\").",
+      "children" : [ {
+        "name" : "Check that we are back",
+        "uid" : "e3b127aa249c526e",
+        "parentUid" : "2016cb2a0c1c7d7017f62eb104339096",
+        "status" : "broken",
+        "time" : {
+          "start" : 1542636528536,
+          "stop" : 1542636531070,
+          "duration" : 2534
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "2016cb2a0c1c7d7017f62eb104339096"
+    }, {
+      "name" : "element (\".cblock\") still not existing after 20000ms",
       "children" : [ {
         "name" : "check that we are back",
-        "uid" : "353f71ede926cfd3",
-        "parentUid" : "c7b1e1e83c474364134abd562f14eb12",
+        "uid" : "b35dcaf2c14bfe5e",
+        "parentUid" : "c25b5a5696abf1a967fc5efb6de1c558",
         "status" : "broken",
         "time" : {
-          "start" : 1542217306715,
-          "stop" : 1542217307396,
-          "duration" : 681
+          "start" : 1542636573423,
+          "stop" : 1542636599041,
+          "duration" : 25618
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "c7b1e1e83c474364134abd562f14eb12"
-    }, {
-      "name" : "8 по счёту картинка не отображается",
-      "children" : [ {
-        "name" : "check image in gallery",
-        "uid" : "b903e63577c8051b",
-        "parentUid" : "4234e47744a0b7128954e2b38744dcdf",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542217662962,
-          "stop" : 1542217708927,
-          "duration" : 45965
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "4234e47744a0b7128954e2b38744dcdf"
+      "uid" : "c25b5a5696abf1a967fc5efb6de1c558"
     }, {
       "name" : "Touareg не является внедорожником",
       "children" : [ {
         "name" : "check categories SUV",
-        "uid" : "2625808c6f39a775",
+        "uid" : "4db7861f942b88d3",
         "parentUid" : "bbede0370f7036f44d90c6b0c0b6266b",
         "status" : "broken",
         "time" : {
-          "start" : 1542217954013,
-          "stop" : 1542217962748,
-          "duration" : 8735
+          "start" : 1542636831689,
+          "stop" : 1542636838481,
+          "duration" : 6792
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
       "uid" : "bbede0370f7036f44d90c6b0c0b6266b"
@@ -547,15 +199,15 @@
       "name" : "unknown error: Element <img src=\"https://183024.selcdn.ru/vwgr_available_cars/option_images/images/wheel-2.png\" alt=\"\"> is not clickable at point (836, 331). Other element would receive the click: <div class=\"grid_6 grid_s_5 push_s_1 grid_m_3 push_m_3\">...</div>",
       "children" : [ {
         "name" : "choose stamped disks",
-        "uid" : "7d40b7cbcd0c8e3a",
+        "uid" : "1728c14f4814ddb9",
         "parentUid" : "ddd6fa1e415e362a7e5732fe13c1d8eb",
         "status" : "broken",
         "time" : {
-          "start" : 1542219554480,
-          "stop" : 1542219556439,
-          "duration" : 1959
+          "start" : 1542637448047,
+          "stop" : 1542637448725,
+          "duration" : 678
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
       "uid" : "ddd6fa1e415e362a7e5732fe13c1d8eb"
@@ -563,63 +215,31 @@
       "name" : "Условие не появилось в фильтре",
       "children" : [ {
         "name" : "Check checkbox Складной фаркоп",
-        "uid" : "86a4e7bc5b0871ea",
+        "uid" : "eb172e4c51bac5c8",
         "parentUid" : "d4f589e991d25012074b480a8cb52d85",
         "status" : "broken",
         "time" : {
-          "start" : 1542219748107,
-          "stop" : 1542219753978,
-          "duration" : 5871
+          "start" : 1542637521015,
+          "stop" : 1542637526521,
+          "duration" : 5506
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
       "uid" : "d4f589e991d25012074b480a8cb52d85"
     }, {
-      "name" : "Функция Ксенон не доступна",
-      "children" : [ {
-        "name" : "check slider in page shine",
-        "uid" : "3836c302a939b547",
-        "parentUid" : "6715f7105bc8214378ccea6eb330d946",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542220574399,
-          "stop" : 1542220581134,
-          "duration" : 6735
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "6715f7105bc8214378ccea6eb330d946"
-    }, {
-      "name" : "Кнопка диспелей 5 дюймов не активна",
-      "children" : [ {
-        "name" : "check diagonal",
-        "uid" : "84789d3b1166b94a",
-        "parentUid" : "f7bfde472d2677e43e583e15bf70246d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542221733396,
-          "stop" : 1542221740649,
-          "duration" : 7253
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "f7bfde472d2677e43e583e15bf70246d"
-    }, {
       "name" : "unknown error: Element <div data-type=\"checkbox_more_btn\" data-name=\"Алькантара\" class=\"avn008_option-check_more link-like\">...</div> is not clickable at point (293, 465). Other element would receive the click: <form>...</form>",
       "children" : [ {
         "name" : "check more in detail about dynamic light",
-        "uid" : "2fa20833f8849793",
+        "uid" : "9fa57a31b2b7cd1",
         "parentUid" : "6c85f76357137d8ae0d9310f4bf2f877",
         "status" : "broken",
         "time" : {
-          "start" : 1542222235143,
-          "stop" : 1542222236120,
-          "duration" : 977
+          "start" : 1542638493603,
+          "stop" : 1542638494416,
+          "duration" : 813
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
       "uid" : "6c85f76357137d8ae0d9310f4bf2f877"
@@ -627,103 +247,135 @@
       "name" : "unknown error: Element <label data-type=\"checkbox\" data-name=\"Алькантара\" class=\"checkbox\">...</label> is not clickable at point (293, 432). Other element would receive the click: <form>...</form>",
       "children" : [ {
         "name" : "Check the equipment in detail",
-        "uid" : "a57a79c2a1866523",
+        "uid" : "f8d9fb7e2920a36b",
         "parentUid" : "49aa12ff34da0a6f6deeff3208c532c2",
         "status" : "broken",
         "time" : {
-          "start" : 1542222236123,
-          "stop" : 1542222236805,
-          "duration" : 682
+          "start" : 1542638494418,
+          "stop" : 1542638494871,
+          "duration" : 453
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
       "uid" : "49aa12ff34da0a6f6deeff3208c532c2"
     }, {
-      "name" : "element (\".avn008_filter-value-item_image\") still not visible after 20000ms",
-      "children" : [ {
-        "name" : "Check the equipment in detail Электропривод сидений",
-        "uid" : "fe5a35eb404c3527",
-        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542222808243,
-          "stop" : 1542222829918,
-          "duration" : 21675
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "Check the equipment in detail Массаж",
-        "uid" : "ce79e3f8d5a106a0",
-        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542222832649,
-          "stop" : 1542222860097,
-          "duration" : 27448
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "Check the equipment in detail Память",
-        "uid" : "aed72795d2a68488",
-        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542222862716,
-          "stop" : 1542222884505,
-          "duration" : 21789
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      }, {
-        "name" : "Check the equipment in detail Вентиляция",
-        "uid" : "cc95713f54b72219",
-        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542222888168,
-          "stop" : 1542222912740,
-          "duration" : 24572
-        },
-        "flaky" : true,
-        "parameters" : [ "chrome" ]
-      } ],
-      "uid" : "dfa1dfe5c18383edd144c8c2601426c5"
-    }, {
       "name" : "Функция Trailer Assist не доступна",
       "children" : [ {
         "name" : "check slider in page parking assistant",
-        "uid" : "ef828bbed3d5e0ab",
+        "uid" : "a1378c3383223877",
         "parentUid" : "30f2bf6045040e97af34e8c043b95e47",
         "status" : "broken",
         "time" : {
-          "start" : 1542223985177,
-          "stop" : 1542223994215,
-          "duration" : 9038
+          "start" : 1542639074001,
+          "stop" : 1542639079735,
+          "duration" : 5734
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
       "uid" : "30f2bf6045040e97af34e8c043b95e47"
     }, {
-      "name" : "conditions is not defined",
+      "name" : "element not interactable",
       "children" : [ {
-        "name" : "check more in detail about tire pressure sensor",
-        "uid" : "51627b48cc06a465",
-        "parentUid" : "489d8fcc84396a2721cfcd5fd5cac255",
+        "name" : "Check the equipment in detail",
+        "uid" : "5d124992dc4b726f",
+        "parentUid" : "8d63a8d6f9426fb23642c567c8a3c8ca",
         "status" : "broken",
         "time" : {
-          "start" : 1542224814588,
-          "stop" : 1542224814593,
-          "duration" : 5
+          "start" : 1542639103529,
+          "stop" : 1542639112617,
+          "duration" : 9088
         },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ "chrome" ]
       } ],
-      "uid" : "489d8fcc84396a2721cfcd5fd5cac255"
+      "uid" : "8d63a8d6f9426fb23642c567c8a3c8ca"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected 0.296875 to be below 0.1",
+      "children" : [ {
+        "name" : "Compare screenshots",
+        "uid" : "f3344e0e67142e2b",
+        "parentUid" : "a22dacd95b24afab224af3708afcdf08",
+        "status" : "failed",
+        "time" : {
+          "start" : 1542637798940,
+          "stop" : 1542637799548,
+          "duration" : 608
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "a22dacd95b24afab224af3708afcdf08"
+    }, {
+      "name" : "expected '3-ЗОННЫЙ' to equal '4-ЗОННЫЙ'",
+      "children" : [ {
+        "name" : "check cards, filter and image",
+        "uid" : "53c88c51c97090f1",
+        "parentUid" : "0ab9e7c6619bb78df9c5978247c1a9ff",
+        "status" : "failed",
+        "time" : {
+          "start" : 1542637893290,
+          "stop" : 1542637904504,
+          "duration" : 11214
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "0ab9e7c6619bb78df9c5978247c1a9ff"
+    }, {
+      "name" : "expected 0.109375 to be below 0.1",
+      "children" : [ {
+        "name" : "Compare screenshots",
+        "uid" : "852c4e5cdd0bedee",
+        "parentUid" : "8159619af660b43b879aeea16d603d58",
+        "status" : "failed",
+        "time" : {
+          "start" : 1542638258455,
+          "stop" : 1542638259091,
+          "duration" : 636
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "8159619af660b43b879aeea16d603d58"
+    }, {
+      "name" : "expected '' to equal 'САЛОН АЛЬКАНТАРА'",
+      "children" : [ {
+        "name" : "Check checkboxes Алькантара",
+        "uid" : "4db523bf1c0e63f9",
+        "parentUid" : "7d02865b6579fb679c50acb1ecba767a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1542638492413,
+          "stop" : 1542638493603,
+          "duration" : 1190
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "7d02865b6579fb679c50acb1ecba767a"
+    }, {
+      "name" : "expected null to not equal null",
+      "children" : [ {
+        "name" : "compare screenshots",
+        "uid" : "9af3db5f9b6bbf54",
+        "parentUid" : "765120cababe6d12a2c54c238643eabc",
+        "status" : "failed",
+        "time" : {
+          "start" : 1542638494416,
+          "stop" : 1542638494417,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "765120cababe6d12a2c54c238643eabc"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }
