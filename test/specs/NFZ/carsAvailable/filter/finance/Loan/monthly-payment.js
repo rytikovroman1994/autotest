@@ -1,4 +1,4 @@
-describe('test monthly payment', () => {
+describe('test loan monthly payment', () => {
     // выносим часто используемый класс
     let selector = '.avn008_credit__monthlyPaySlider';
     before('open page filter', () => {

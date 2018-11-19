@@ -1,4 +1,4 @@
-describe('test initial payment', () => {
+describe('test loan initial payment', () => {
     // выносим часто используемый класс
     let selector = '.avn008_credit__firstPaySlider';
     before('open page filter', () => {
