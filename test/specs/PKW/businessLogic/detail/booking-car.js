@@ -68,20 +68,23 @@ describe('test businessLogic booking car', () => {
 
     // проверяем что что загружаются реквизиты
     it('Check for details', () => {
-        //расскрываем список вариантов оплаты
-        browser.click('.rw-i-caret-down');
-        // выбираем оплату по реквизитам
-        browser.click('body #rw_1_listbox > li:nth-child(3)');
-        // расскрываем данные по реквизитам
-        browser.click('.op005_pay-by-req__links .icon-link');
-        // проверяем, что появилась таблица с реквизитами
-        browser.waitUntil(
-            () => browser.isExisting('.op005_table') === true,
-            5000, "Таблица реквизитов не отображается");
-        // проверяем что в каждом поле есть данные не равные "нет данных"
-        for( let i = 1; i <= 7 ; i++) {
-            const getRequisites = browser.getText(`.op005_form_text > div > div > div:nth-child(${i}) > div:nth-child(2)`)
-            expect(getRequisites).to.not.equal('Нет данных');
+        // т.к. убрали в некоторы карточках реквизиты, ставим проверку
+        if(browser.isExisting('.is_filled.is_valid.is_disabled') === false) {
+            //расскрываем список вариантов оплаты
+            browser.click('.rw-i-caret-down');
+            // выбираем оплату по реквизитам
+            browser.click('body #rw_1_listbox > li:nth-child(3)');
+            // расскрываем данные по реквизитам
+            browser.click('.op005_pay-by-req__links .vwd5-textlink_inner');
+            // проверяем, что появилась таблица с реквизитами
+            browser.waitUntil(
+                () => browser.isExisting('.op005_table') === true,
+                5000, "Таблица реквизитов не отображается");
+            // проверяем что в каждом поле есть данные не равные "нет данных"
+            for( let i = 1; i <= 7 ; i++) {
+                const getRequisites = browser.getText(`.op005_form_text > div > div > div:nth-child(${i}) > div:nth-child(2)`)
+                expect(getRequisites).to.not.equal('Нет данных');
+            }
         }
     });
 
