@@ -21,62 +21,103 @@ describe('test button to book', () => {
     });
 
     // проверяем, что кнопка кликабельна
-    it('check the clickability of the booking button', () => {
+    it('Check the clickability of the booking button', () => {
         // кликаем на кнопку
         browser.click(buttonClass);
         // ждём пока прогрузится картинка
-        browser.waitForVisible('.uac001_image-status img')
+        browser.waitForVisible('.uac001_image-status img');
+        // проверяем что есть кнпока отправить заказ
+        browser.click('.op005_form-btn .btn_cta');
+        // переходим на страницу Зарегестрироваться
+        browser.click('.cblock__overhang-inner .gridcontainer div:nth-child(2)');
         // проверяем, что перешли на страницу заполнения формы
-        browser.waitForVisible('.op005_form_first');
-        // проверяем, что кнопка отправить заказ отображается
-        browser.waitForVisible('.op005_form_first .op005_form-btn');
-        // переходим на след страницу
-        browser.click('.op005_form_first .op005_form-btn');
-        // ждём пока загрузится авторизация в ЛК
-        browser.waitForVisible('.cblock');
-        // кликаем по кнопке зарегестрироваться
-        browser.click('.cblock__overhang_short div:nth-child(2)');
+        browser.waitUntil(
+            () => browser.isExisting('.cblock') === true,
+            10000, "Форма Регистрании не появилась");
     });
 
-    it('verification of email input', () => {
-        browser.waitForExist('body #email');
+    it('Verification of email input', () => {
+        browser.waitForExist('.form__input[name="email"]');
         // вводидим эмеил
-        browser.setValue('body #email', faker.internet.email(1));
+        browser.setValue('.form__input[name="email"]', faker.internet.email(1));
     });
-    it('checking phone input', () => {
+
+    it('Checking phone input', () => {
         // вводим телефонный номер
-        browser.waitForExist('body #mobile');
-        browser.setValue('body #mobile', faker.phone.phoneNumber(0));
+        browser.waitForExist('.form__input[name="mobile"]');
+        browser.setValue('.form__input[name="mobile"]', faker.phone.phoneNumber()); 
+        // убираем фокус
+        browser.keys('/uE007');
+
+        while(browser.isVisible('.op005_register div:nth-child(5) > div > span') === true) {
+            browser.clearElement('.form__input[name="mobile"]');
+            browser.setValue('.form__input[name="mobile"]', faker.phone.phoneNumber());
+        }
     });
-    it('checking the last name', () => {
+
+    it('Choose the sex of the person', () => {
         // выбираем гендер
-        browser.click('.form__radio span');
-        browser.waitForExist('body #lastName');
+        browser.click('.form__row_checks label:nth-child(1)');
+    });
+
+    it('Checking the last name', () => {
+        browser.waitForExist('.form__input[name="lastName"]');
         // вводим фамилию
-        browser.setValue('body #lastName', faker.name.lastName(1));
+        browser.setValue('.form__input[name="lastName"]', faker.name.firstName(1));
     });
-    it('input check name', () => {
+
+    it('Input check name', () => {
+        browser.waitForExist('.form__input[name="firstName"]');
         // вводим имя
-        browser.setValue('body #firstName', faker.name.firstName(1));
+        browser.setValue('.form__input[name="firstName"]', faker.name.firstName(1));
     });
-    it('entry check patronymic', () => {
+
+    it('Entry check patronymic', () => {
+        browser.waitForExist('.form__input[name="user.attributes.patronomic"]');
         // вводим отчество
-        browser.setValue('body #patronomic', faker.name.lastName(1));
+        browser.setValue('.form__input[name="user.attributes.patronomic"]', faker.name.firstName(1));
     });
-    it('enter the password', () => {
-        const password = faker.internet.password(10);
-        // вводим пароль
-        browser.setValue('body #password', password);
-        // подтверждаем пароль
-        browser.setValue('body #password-confirm', password);
+
+    it('Entry check password', () => {
+        // вводим пароль 
+        browser.setValue('.form__input[name="password"]', "12345678");
+        browser.waitForVisible('.form__input[name="password-confirm"]');
+        // повторяем пароль
+        browser.setValue('.form__input[name="password-confirm"]', "12345678");
     });
-    it('check that we are back', () => {
-        // кликаем по кнопке "Зарегестрироваться"
-        browser.click('.btn_cta[type="submit"]');
+
+    it('Check that we are back', () => {
+        // проверям, что кнопка Зарегестрироваться работает
+        browser.click('.form__row .btn_cta');
         // ожидаем загрузку карточки
-        browser.waitForExist('.cblock');
-        // Получаем текст, что нужно подтвердить емаил
-        const getText = browser.getText('.cblock__title');
-        expect(getText).to.be.equal('Подтверждение адреса E-mail');
+        browser.waitUntil(
+            () => browser.isExisting('.form__input[name="firstName"]') === false,
+            10000, "Заявка на регестрацию не отравляется");
+        // проверяем на наличие лоадера ожидания
+        if(browser.isVisible('.mk004__text') === true) {
+            // проверяем текст
+            const textError = browser.getText('.mk004__text');
+            browser.waitUntil(
+                () => (textError != "К сожалению, error check rse car reserved.") === true,
+                10000, "Выбранный автомобиль не удалось забронировать");
+        }
+        // ожидаем появления сообщения
+        browser.waitUntil(
+            () => browser.isExisting('.mk004__inner .gridcontainer') === true,
+            30000, "Сообение Ваш заказ оформлен! не появилось после 30 секунд");
+        // Получаем текст, что заказ оформлен
+        const getText = browser.getText('.pb30');
+        expect(getText).to.be.equal('Ваш заказ оформлен!');
+
+        // проверяем что кнопка Перейти в каталог отображается
+        browser.waitUntil(
+            () => browser.isVisible('.mk004__btn .btn__text') === true,
+            10000, "Кнопка Перейти в ЛК не отображается");
+        // переходим в каталог
+        browser.click('.mk004__btn .btn__text');
+        // проверяем, что перешли именно к списку
+        browser.waitUntil(
+            () => browser.isVisible('.uac008_tile-list_container .uac008_tile-item-container') === true,
+            10000, "Кнопка не ведёт на страницу ЛК");
     });
 });
