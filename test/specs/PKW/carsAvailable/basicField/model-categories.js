@@ -17,7 +17,6 @@ describe('test model categories cars', () => {
     const SUV = [
         'Teramont',
         'Tiguan',
-        'Touareg',
         'Новый Touareg'
     ];
 
