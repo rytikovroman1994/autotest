@@ -29,6 +29,7 @@ describe.skip('screenshots-exterior', () => {
         browser.click('.avn008_filter__second-tab[data-name="Руль"]');
         // ожидаем загрузки картинки руля
         browser.waitForVisible('.avn008_image-switcher_image');
+        browser.pause(5000);
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/helm.png');
         expect(screen).to.not.equal(null);

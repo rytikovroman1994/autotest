@@ -5,921 +5,945 @@
     "name" : "status server",
     "children" : [ {
       "name" : "check status server",
-      "uid" : "6cd29264459458dd",
+      "uid" : "a35c43f0a7c25051",
       "parentUid" : "6774542e1110edb4bf3bfeff2ca4bd14",
       "status" : "passed",
       "time" : {
-        "start" : 1542636040501,
-        "stop" : 1542636041644,
-        "duration" : 1143
+        "start" : 1542734711840,
+        "stop" : 1542734712704,
+        "duration" : 864
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "6774542e1110edb4bf3bfeff2ca4bd14"
   }, {
     "name" : "test businessLogic booking car",
     "children" : [ {
       "name" : "Click checkbox online payments",
-      "uid" : "419d604f3e08fc21",
+      "uid" : "445ae3019a24245f",
       "parentUid" : "4958b52327e05a2e36ef5ed1d6fb1840",
       "status" : "passed",
       "time" : {
-        "start" : 1542636062828,
-        "stop" : 1542636069751,
-        "duration" : 6923
+        "start" : 1542734771345,
+        "stop" : 1542734778128,
+        "duration" : 6783
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the buy button",
-      "uid" : "fdd5ec4d42dccdcf",
+      "uid" : "64d6e0834478ae22",
       "parentUid" : "4958b52327e05a2e36ef5ed1d6fb1840",
       "status" : "passed",
       "time" : {
-        "start" : 1542636069752,
-        "stop" : 1542636100101,
-        "duration" : 30349
+        "start" : 1542734778128,
+        "stop" : 1542734779464,
+        "duration" : 1336
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the tooltip and slider",
-      "uid" : "90168001bf75e1d0",
+      "uid" : "cd69ef10f7f6c7d6",
       "parentUid" : "4958b52327e05a2e36ef5ed1d6fb1840",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542636100102,
-        "stop" : 1542636101825,
-        "duration" : 1723
+        "start" : 1542734779465,
+        "stop" : 1542734782077,
+        "duration" : 2612
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check for details",
-      "uid" : "f076fedc71b7ca07",
+      "uid" : "88035ea747f786ba",
       "parentUid" : "4958b52327e05a2e36ef5ed1d6fb1840",
       "status" : "passed",
       "time" : {
-        "start" : 1542636101826,
-        "stop" : 1542636104422,
-        "duration" : 2596
+        "start" : 1542734782078,
+        "stop" : 1542734784214,
+        "duration" : 2136
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the submit order button",
-      "uid" : "580d362b974ef245",
+      "uid" : "46143465d3f49974",
       "parentUid" : "4958b52327e05a2e36ef5ed1d6fb1840",
       "status" : "passed",
       "time" : {
-        "start" : 1542636104422,
-        "stop" : 1542636107365,
-        "duration" : 2943
+        "start" : 1542734784215,
+        "stop" : 1542734787221,
+        "duration" : 3006
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "4958b52327e05a2e36ef5ed1d6fb1840"
   }, {
     "name" : "test booking car",
     "children" : [ {
       "name" : "go to details",
-      "uid" : "57026b21514af191",
+      "uid" : "e38573b69ce4b64a",
       "parentUid" : "2d31f36ef1fbf6f20af63b4ab5b2cb50",
       "status" : "passed",
       "time" : {
-        "start" : 1542636130326,
-        "stop" : 1542636133444,
-        "duration" : 3118
+        "start" : 1542734822719,
+        "stop" : 1542734826194,
+        "duration" : 3475
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare price and dealer",
-      "uid" : "5679634b31149d86",
+      "uid" : "dd57163c5be2f7c8",
       "parentUid" : "2d31f36ef1fbf6f20af63b4ab5b2cb50",
       "status" : "passed",
       "time" : {
-        "start" : 1542636133444,
-        "stop" : 1542636136526,
-        "duration" : 3082
+        "start" : 1542734826195,
+        "stop" : 1542734827070,
+        "duration" : 875
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare dealer and phone number",
-      "uid" : "c036496ce5249264",
+      "uid" : "4f06e0d5eaa8ce68",
       "parentUid" : "2d31f36ef1fbf6f20af63b4ab5b2cb50",
       "status" : "passed",
       "time" : {
-        "start" : 1542636136527,
-        "stop" : 1542636136966,
-        "duration" : 439
+        "start" : 1542734827071,
+        "stop" : 1542734827319,
+        "duration" : 248
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "2d31f36ef1fbf6f20af63b4ab5b2cb50"
   }, {
     "name" : "test get all name city",
     "children" : [ {
       "name" : "get list city",
-      "uid" : "7b371580dc9a72d2",
+      "uid" : "3075337d3aa68cec",
       "parentUid" : "2812d2b1caff8b43d485bd81cc3ef004",
       "status" : "passed",
       "time" : {
-        "start" : 1542636158413,
-        "stop" : 1542636168248,
-        "duration" : 9835
+        "start" : 1542734864541,
+        "stop" : 1542734871464,
+        "duration" : 6923
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the city in the card",
-      "uid" : "3667121d8bee7260",
+      "uid" : "11b67df616d4a053",
       "parentUid" : "2812d2b1caff8b43d485bd81cc3ef004",
       "status" : "broken",
       "time" : {
-        "start" : 1542636168249,
-        "stop" : 1542636307431,
-        "duration" : 139182
+        "start" : 1542734871465,
+        "stop" : 1542735007943,
+        "duration" : 136478
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "2812d2b1caff8b43d485bd81cc3ef004"
   }, {
     "name" : "test Polo busines logic",
     "children" : [ {
       "name" : "Select the model Polo",
-      "uid" : "c3f920557f199286",
+      "uid" : "dfcff063b0894cea",
       "parentUid" : "6bc1daac69d3cf69d592c8b723f89b56",
       "status" : "passed",
       "time" : {
-        "start" : 1542636326698,
-        "stop" : 1542636355778,
-        "duration" : 29080
+        "start" : 1542735039787,
+        "stop" : 1542735040799,
+        "duration" : 1012
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Choose online payment",
-      "uid" : "a205b979ce95531d",
+      "uid" : "5ecee67d00ca4bd5",
       "parentUid" : "6bc1daac69d3cf69d592c8b723f89b56",
       "status" : "passed",
       "time" : {
-        "start" : 1542636355781,
-        "stop" : 1542636358000,
-        "duration" : 2219
+        "start" : 1542735040799,
+        "stop" : 1542735044613,
+        "duration" : 3814
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Choose body color",
-      "uid" : "8f872013dbf3dc",
+      "uid" : "67375b39023b217e",
       "parentUid" : "6bc1daac69d3cf69d592c8b723f89b56",
       "status" : "passed",
       "time" : {
-        "start" : 1542636358001,
-        "stop" : 1542636360065,
-        "duration" : 2064
+        "start" : 1542735044614,
+        "stop" : 1542735046246,
+        "duration" : 1632
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Get the number of cars",
-      "uid" : "c2c9674f72c467a7",
+      "uid" : "ebf6821aa33ee3d4",
       "parentUid" : "6bc1daac69d3cf69d592c8b723f89b56",
       "status" : "passed",
       "time" : {
-        "start" : 1542636360066,
-        "stop" : 1542636362215,
-        "duration" : 2149
+        "start" : 1542735046247,
+        "stop" : 1542735047563,
+        "duration" : 1316
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the available list of cars",
-      "uid" : "4f58d6e83ca0c3a5",
+      "uid" : "b9bc6db1f6ee39bd",
       "parentUid" : "6bc1daac69d3cf69d592c8b723f89b56",
       "status" : "passed",
       "time" : {
-        "start" : 1542636362219,
-        "stop" : 1542636362682,
-        "duration" : 463
+        "start" : 1542735047564,
+        "stop" : 1542735047971,
+        "duration" : 407
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "6bc1daac69d3cf69d592c8b723f89b56"
   }, {
     "name" : " test availability of kits",
     "children" : [ {
       "name" : "check availability kits",
-      "uid" : "ab64ac0dd1df36d1",
+      "uid" : "d35ee8e0ba538358",
       "parentUid" : "fe00eb6030174afb47c756d755087e82",
       "status" : "broken",
       "time" : {
-        "start" : 1542636379244,
-        "stop" : 1542636411872,
-        "duration" : 32628
+        "start" : 1542735078817,
+        "stop" : 1542735107172,
+        "duration" : 28355
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "fe00eb6030174afb47c756d755087e82"
   }, {
     "name" : "button book in the menu",
     "children" : [ {
       "name" : "Check button book it",
-      "uid" : "2184af30bfd5dd46",
+      "uid" : "4bc558b4ae07a92f",
       "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
       "status" : "passed",
       "time" : {
-        "start" : 1542636432511,
-        "stop" : 1542636433650,
-        "duration" : 1139
+        "start" : 1542735147108,
+        "stop" : 1542735147809,
+        "duration" : 701
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the clickability of the booking button",
-      "uid" : "c57dc1bcd0d531d1",
+      "uid" : "248b00b70a78874a",
       "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1542636433650,
-        "stop" : 1542636447104,
-        "duration" : 13454
+        "start" : 1542735147810,
+        "stop" : 1542735151087,
+        "duration" : 3277
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
-    }, {
-      "name" : "Choose the sex of the person",
-      "uid" : "5b77eb088404ea40",
-      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
-      "status" : "broken",
-      "time" : {
-        "start" : 1542636447104,
-        "stop" : 1542636447353,
-        "duration" : 249
-      },
-      "flaky" : false,
-      "parameters" : [ "chrome" ]
-    }, {
-      "name" : "Input check name",
-      "uid" : "b526b47a7d96a2ba",
-      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
-      "status" : "broken",
-      "time" : {
-        "start" : 1542636447353,
-        "stop" : 1542636447639,
-        "duration" : 286
-      },
-      "flaky" : false,
-      "parameters" : [ "chrome" ]
-    }, {
-      "name" : "Checking the last name",
-      "uid" : "4070554c8a9cee90",
-      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
-      "status" : "broken",
-      "time" : {
-        "start" : 1542636447639,
-        "stop" : 1542636467868,
-        "duration" : 20229
-      },
-      "flaky" : false,
-      "parameters" : [ "chrome" ]
-    }, {
-      "name" : "Entry check patronymic",
-      "uid" : "1bfb0bf14c9a2c98",
-      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
-      "status" : "broken",
-      "time" : {
-        "start" : 1542636467869,
-        "stop" : 1542636488076,
-        "duration" : 20207
-      },
-      "flaky" : false,
-      "parameters" : [ "chrome" ]
-    }, {
-      "name" : "Checking phone input",
-      "uid" : "8a4e2debfac61213",
-      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
-      "status" : "broken",
-      "time" : {
-        "start" : 1542636488076,
-        "stop" : 1542636508310,
-        "duration" : 20234
-      },
-      "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Verification of email input",
-      "uid" : "ad000d39166a7827",
+      "uid" : "99eb362c39d15f74",
       "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1542636508311,
-        "stop" : 1542636528535,
-        "duration" : 20224
+        "start" : 1542735151088,
+        "stop" : 1542735151384,
+        "duration" : 296
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Checking phone input",
+      "uid" : "9b65511c8b7f0550",
+      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542735151385,
+        "stop" : 1542735151852,
+        "duration" : 467
+      },
+      "flaky" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Choose the sex of the person",
+      "uid" : "48febcc613c77c2",
+      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542735151852,
+        "stop" : 1542735152164,
+        "duration" : 312
+      },
+      "flaky" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Checking the last name",
+      "uid" : "edba37c29ed98a90",
+      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542735152165,
+        "stop" : 1542735152308,
+        "duration" : 143
+      },
+      "flaky" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Input check name",
+      "uid" : "48f2c4eb331c3a",
+      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542735152308,
+        "stop" : 1542735152424,
+        "duration" : 116
+      },
+      "flaky" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Entry check patronymic",
+      "uid" : "1c4023d31f18db3",
+      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542735152425,
+        "stop" : 1542735152607,
+        "duration" : 182
+      },
+      "flaky" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Entry check password",
+      "uid" : "db3ecba7b6e3f52f",
+      "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542735152608,
+        "stop" : 1542735152908,
+        "duration" : 300
+      },
+      "flaky" : false,
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check that we are back",
-      "uid" : "e3b127aa249c526e",
+      "uid" : "fb37d08129255928",
       "parentUid" : "7bc92e8dd1b63663fb5e7c5dc74aa675",
       "status" : "broken",
       "time" : {
-        "start" : 1542636528536,
-        "stop" : 1542636531070,
-        "duration" : 2534
+        "start" : 1542735152910,
+        "stop" : 1542735166573,
+        "duration" : 13663
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "7bc92e8dd1b63663fb5e7c5dc74aa675"
   }, {
     "name" : "test button to book",
     "children" : [ {
       "name" : "check button book it",
-      "uid" : "b9ac5482fae194e4",
+      "uid" : "31adb35c453e7924",
       "parentUid" : "9c461ce89263bd3c1dc37ff3f49abcfa",
       "status" : "passed",
       "time" : {
-        "start" : 1542636558603,
-        "stop" : 1542636560200,
-        "duration" : 1597
+        "start" : 1542735201190,
+        "stop" : 1542735201691,
+        "duration" : 501
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
-      "name" : "check the clickability of the booking button",
-      "uid" : "d12e9d4b31a9d2d1",
+      "name" : "Check the clickability of the booking button",
+      "uid" : "c7d459cbfc256fa2",
       "parentUid" : "9c461ce89263bd3c1dc37ff3f49abcfa",
       "status" : "passed",
       "time" : {
-        "start" : 1542636560202,
-        "stop" : 1542636570301,
-        "duration" : 10099
+        "start" : 1542735201692,
+        "stop" : 1542735204866,
+        "duration" : 3174
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
-      "name" : "verification of email input",
-      "uid" : "49db0c8e2d4afece",
+      "name" : "Verification of email input",
+      "uid" : "25e0b321f6a5a4a8",
       "parentUid" : "9c461ce89263bd3c1dc37ff3f49abcfa",
       "status" : "passed",
       "time" : {
-        "start" : 1542636570301,
-        "stop" : 1542636571002,
-        "duration" : 701
+        "start" : 1542735204866,
+        "stop" : 1542735205138,
+        "duration" : 272
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
-      "name" : "checking phone input",
-      "uid" : "95a42cf281e7dce4",
+      "name" : "Checking phone input",
+      "uid" : "112668f0d93972bb",
       "parentUid" : "9c461ce89263bd3c1dc37ff3f49abcfa",
       "status" : "passed",
       "time" : {
-        "start" : 1542636571003,
-        "stop" : 1542636571678,
-        "duration" : 675
+        "start" : 1542735205138,
+        "stop" : 1542735205606,
+        "duration" : 468
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
-      "name" : "checking the last name",
-      "uid" : "2e273a372413eae",
+      "name" : "Choose the sex of the person",
+      "uid" : "83aae8849a5598ee",
       "parentUid" : "9c461ce89263bd3c1dc37ff3f49abcfa",
       "status" : "passed",
       "time" : {
-        "start" : 1542636571679,
-        "stop" : 1542636572264,
-        "duration" : 585
+        "start" : 1542735205606,
+        "stop" : 1542735205923,
+        "duration" : 317
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
-      "name" : "input check name",
-      "uid" : "8543b18ea4c99994",
+      "name" : "Checking the last name",
+      "uid" : "b543f74dbda2d5d2",
       "parentUid" : "9c461ce89263bd3c1dc37ff3f49abcfa",
       "status" : "passed",
       "time" : {
-        "start" : 1542636572264,
-        "stop" : 1542636572533,
-        "duration" : 269
+        "start" : 1542735205923,
+        "stop" : 1542735206049,
+        "duration" : 126
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
-      "name" : "entry check patronymic",
-      "uid" : "fcf6be7dea1108d",
+      "name" : "Input check name",
+      "uid" : "21b7ef1ecc1ddd03",
       "parentUid" : "9c461ce89263bd3c1dc37ff3f49abcfa",
       "status" : "passed",
       "time" : {
-        "start" : 1542636572533,
-        "stop" : 1542636572818,
-        "duration" : 285
+        "start" : 1542735206049,
+        "stop" : 1542735206155,
+        "duration" : 106
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
-      "name" : "enter the password",
-      "uid" : "e8aa3641eb4c2a95",
+      "name" : "Entry check patronymic",
+      "uid" : "703a2200ec2c5f82",
       "parentUid" : "9c461ce89263bd3c1dc37ff3f49abcfa",
       "status" : "passed",
       "time" : {
-        "start" : 1542636572819,
-        "stop" : 1542636573422,
-        "duration" : 603
+        "start" : 1542735206155,
+        "stop" : 1542735206309,
+        "duration" : 154
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
-      "name" : "check that we are back",
-      "uid" : "b35dcaf2c14bfe5e",
+      "name" : "Entry check password",
+      "uid" : "e765815287a62d3",
+      "parentUid" : "9c461ce89263bd3c1dc37ff3f49abcfa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542735206310,
+        "stop" : 1542735206618,
+        "duration" : 308
+      },
+      "flaky" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Check that we are back",
+      "uid" : "a22228522e47624e",
       "parentUid" : "9c461ce89263bd3c1dc37ff3f49abcfa",
       "status" : "broken",
       "time" : {
-        "start" : 1542636573423,
-        "stop" : 1542636599041,
-        "duration" : 25618
+        "start" : 1542735206618,
+        "stop" : 1542735228604,
+        "duration" : 21986
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "9c461ce89263bd3c1dc37ff3f49abcfa"
   }, {
     "name" : "test card features",
     "children" : [ {
       "name" : "check card features",
-      "uid" : "e20572e677b85e02",
+      "uid" : "96794b5bf84f9bf",
       "parentUid" : "77d3904c75bb6d127b7688e30dc9df14",
       "status" : "passed",
       "time" : {
-        "start" : 1542636647014,
-        "stop" : 1542636647281,
-        "duration" : 267
+        "start" : 1542735267956,
+        "stop" : 1542735268074,
+        "duration" : 118
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "77d3904c75bb6d127b7688e30dc9df14"
   }, {
     "name" : "checking-cards",
     "children" : [ {
       "name" : "consider the number of cards",
-      "uid" : "6b51d4698bda673b",
+      "uid" : "ac5dc85efec4eaf1",
       "parentUid" : "6bb80f639474d1a1a74c248597d666aa",
       "status" : "passed",
       "time" : {
-        "start" : 1542636667106,
-        "stop" : 1542636678666,
-        "duration" : 11560
+        "start" : 1542735300185,
+        "stop" : 1542735311952,
+        "duration" : 11767
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "consider the number of cards list",
-      "uid" : "35a627ee42934c3f",
+      "uid" : "2468a560f426a136",
       "parentUid" : "6bb80f639474d1a1a74c248597d666aa",
       "status" : "passed",
       "time" : {
-        "start" : 1542636678668,
-        "stop" : 1542636697520,
-        "duration" : 18852
+        "start" : 1542735311952,
+        "stop" : 1542735327239,
+        "duration" : 15287
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "6bb80f639474d1a1a74c248597d666aa"
   }, {
     "name" : "Test empty filter",
     "children" : [ {
       "name" : "Check top filter",
-      "uid" : "ae5e7d84bb667540",
+      "uid" : "cb69ea71c725109d",
       "parentUid" : "d5498724491ae083a8d4188e1a622584",
       "status" : "passed",
       "time" : {
-        "start" : 1542636714961,
-        "stop" : 1542636715105,
-        "duration" : 144
+        "start" : 1542735357678,
+        "stop" : 1542735357712,
+        "duration" : 34
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "d5498724491ae083a8d4188e1a622584"
   }, {
     "name" : "test gallery in detail",
     "children" : [ {
       "name" : "check button gallery",
-      "uid" : "bb8096f1f43ed611",
+      "uid" : "d87f2c0b33f55820",
       "parentUid" : "d5f18a0b70bbc59038c9b80aa5494054",
       "status" : "passed",
       "time" : {
-        "start" : 1542636732434,
-        "stop" : 1542636734395,
-        "duration" : 1961
+        "start" : 1542735391795,
+        "stop" : 1542735393986,
+        "duration" : 2191
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "click button gallery",
-      "uid" : "d7a7428e9468c46d",
+      "uid" : "b7306681c7c7f4a3",
       "parentUid" : "d5f18a0b70bbc59038c9b80aa5494054",
       "status" : "passed",
       "time" : {
-        "start" : 1542636734396,
-        "stop" : 1542636735847,
-        "duration" : 1451
+        "start" : 1542735393986,
+        "stop" : 1542735394904,
+        "duration" : 918
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check image in gallery",
-      "uid" : "187797dcbbd41d0d",
+      "uid" : "a202c48816cc7efd",
       "parentUid" : "d5f18a0b70bbc59038c9b80aa5494054",
       "status" : "passed",
       "time" : {
-        "start" : 1542636735848,
-        "stop" : 1542636758560,
-        "duration" : 22712
+        "start" : 1542735394904,
+        "stop" : 1542735428688,
+        "duration" : 33784
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "d5f18a0b70bbc59038c9b80aa5494054"
   }, {
     "name" : "test histories in comparison",
     "children" : [ {
       "name" : "Add to comparison",
-      "uid" : "fd2fcb2699032499",
+      "uid" : "a62cc006244ae433",
       "parentUid" : "f09ed1ba2cd5a0fde13d7841ff530fcf",
       "status" : "passed",
       "time" : {
-        "start" : 1542636777474,
-        "stop" : 1542636781149,
-        "duration" : 3675
+        "start" : 1542735462527,
+        "stop" : 1542735467667,
+        "duration" : 5140
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Go to page comparison",
-      "uid" : "97cc441c9dd6b79",
+      "uid" : "e338e9cf31c62515",
       "parentUid" : "f09ed1ba2cd5a0fde13d7841ff530fcf",
       "status" : "passed",
       "time" : {
-        "start" : 1542636781150,
-        "stop" : 1542636782057,
-        "duration" : 907
+        "start" : 1542735467668,
+        "stop" : 1542735468579,
+        "duration" : 911
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : " Check number car in comparison",
-      "uid" : "378592e65c157d0c",
+      "uid" : "496b47a87a95a11d",
       "parentUid" : "f09ed1ba2cd5a0fde13d7841ff530fcf",
       "status" : "passed",
       "time" : {
-        "start" : 1542636782059,
-        "stop" : 1542636783566,
-        "duration" : 1507
+        "start" : 1542735468580,
+        "stop" : 1542735469626,
+        "duration" : 1046
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check histori in comparison",
-      "uid" : "350660ae4bac30e0",
+      "uid" : "df2ef8cea6f89fca",
       "parentUid" : "f09ed1ba2cd5a0fde13d7841ff530fcf",
       "status" : "passed",
       "time" : {
-        "start" : 1542636783567,
-        "stop" : 1542636784699,
-        "duration" : 1132
+        "start" : 1542735469629,
+        "stop" : 1542735470504,
+        "duration" : 875
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "f09ed1ba2cd5a0fde13d7841ff530fcf"
   }, {
     "name" : "test history detail",
     "children" : [ {
       "name" : "Check button histiry",
-      "uid" : "3a7259290a7b0340",
+      "uid" : "69dbd82078ed5d5c",
       "parentUid" : "fa732642d00a06ccfba1a05b320fefe9",
       "status" : "passed",
       "time" : {
-        "start" : 1542636807799,
-        "stop" : 1542636810068,
-        "duration" : 2269
+        "start" : 1542735505325,
+        "stop" : 1542735506262,
+        "duration" : 937
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "fa732642d00a06ccfba1a05b320fefe9"
   }, {
     "name" : "test model categories cars",
     "children" : [ {
       "name" : "check categories sedan",
-      "uid" : "641e51b2822945e7",
+      "uid" : "879c4c5ea0ff707",
       "parentUid" : "88e12d93e517e7950629cae1c9454234",
       "status" : "passed",
       "time" : {
-        "start" : 1542636827922,
-        "stop" : 1542636830229,
-        "duration" : 2307
+        "start" : 1542735540670,
+        "stop" : 1542735544223,
+        "duration" : 3553
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check categories MPV",
-      "uid" : "306d960f66b6e600",
+      "uid" : "26757f3b74dab950",
       "parentUid" : "88e12d93e517e7950629cae1c9454234",
       "status" : "passed",
       "time" : {
-        "start" : 1542636830229,
-        "stop" : 1542636831688,
-        "duration" : 1459
+        "start" : 1542735544224,
+        "stop" : 1542735545250,
+        "duration" : 1026
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check categories SUV",
-      "uid" : "4db7861f942b88d3",
+      "uid" : "9f4f1e02b03fde47",
       "parentUid" : "88e12d93e517e7950629cae1c9454234",
       "status" : "broken",
       "time" : {
-        "start" : 1542636831689,
-        "stop" : 1542636838481,
-        "duration" : 6792
+        "start" : 1542735545250,
+        "stop" : 1542735551714,
+        "duration" : 6464
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check categories hatchback",
-      "uid" : "d8654c1232e5ad30",
+      "uid" : "a23f4562708544f9",
       "parentUid" : "88e12d93e517e7950629cae1c9454234",
       "status" : "passed",
       "time" : {
-        "start" : 1542636838482,
-        "stop" : 1542636839269,
-        "duration" : 787
+        "start" : 1542735551714,
+        "stop" : 1542735552532,
+        "duration" : 818
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "88e12d93e517e7950629cae1c9454234"
   }, {
     "name" : "test pictures-detail",
     "children" : [ {
       "name" : "Check pictures detail",
-      "uid" : "73791eff6a099b8c",
+      "uid" : "9d2958d6ce7a1a07",
       "parentUid" : "fff81305097e0440bdbb148fe4bb5ea3",
       "status" : "passed",
       "time" : {
-        "start" : 1542636886204,
-        "stop" : 1542636894557,
-        "duration" : 8353
+        "start" : 1542735586536,
+        "stop" : 1542735588770,
+        "duration" : 2234
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "fff81305097e0440bdbb148fe4bb5ea3"
   }, {
     "name" : "test slider filter",
     "children" : [ {
       "name" : "click right slider button",
-      "uid" : "960f52f5b00cb759",
+      "uid" : "a2727b319eccae0d",
       "parentUid" : "fc62f3fca8e5c79b29dc8edeb9a6511b",
       "status" : "passed",
       "time" : {
-        "start" : 1542636917629,
-        "stop" : 1542636922585,
-        "duration" : 4956
+        "start" : 1542735627267,
+        "stop" : 1542735631533,
+        "duration" : 4266
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "fc62f3fca8e5c79b29dc8edeb9a6511b"
   }, {
     "name" : "test slider similar cars",
     "children" : [ {
       "name" : "Check side buttons slider",
-      "uid" : "65c64f354dae7b85",
+      "uid" : "7b548b21d0559067",
       "parentUid" : "a135ecb415ef021df6c4d8b022d26fd7",
       "status" : "passed",
       "time" : {
-        "start" : 1542636946304,
-        "stop" : 1542636956266,
-        "duration" : 9962
+        "start" : 1542735672585,
+        "stop" : 1542735696415,
+        "duration" : 23830
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check side right buttons slider",
-      "uid" : "619bb80cfee80d16",
+      "uid" : "5c07655741750a0b",
       "parentUid" : "a135ecb415ef021df6c4d8b022d26fd7",
       "status" : "passed",
       "time" : {
-        "start" : 1542636956298,
-        "stop" : 1542636964538,
-        "duration" : 8240
+        "start" : 1542735696415,
+        "stop" : 1542735716464,
+        "duration" : 20049
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check side left buttons slider",
-      "uid" : "65eb3080ec320a02",
+      "uid" : "76510e6911465454",
       "parentUid" : "a135ecb415ef021df6c4d8b022d26fd7",
       "status" : "passed",
       "time" : {
-        "start" : 1542636964538,
-        "stop" : 1542636973433,
-        "duration" : 8895
+        "start" : 1542735716465,
+        "stop" : 1542735736013,
+        "duration" : 19548
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "a135ecb415ef021df6c4d8b022d26fd7"
   }, {
     "name" : "test of the price slider",
     "children" : [ {
       "name" : "page budget",
-      "uid" : "fdaca55829c50892",
+      "uid" : "f29e84fa2801b487",
       "parentUid" : "991c1070be0c73210b0b59f27efba981",
       "status" : "passed",
       "time" : {
-        "start" : 1542636992041,
-        "stop" : 1542636993014,
-        "duration" : 973
+        "start" : 1542735769784,
+        "stop" : 1542735770484,
+        "duration" : 700
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "move the left slider",
-      "uid" : "c1cdd95f43d627df",
+      "uid" : "1ef899a1ca66bb96",
       "parentUid" : "991c1070be0c73210b0b59f27efba981",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542636993015,
-        "stop" : 1542636994998,
-        "duration" : 1983
+        "start" : 1542735770484,
+        "stop" : 1542735772513,
+        "duration" : 2029
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "right slider motion",
-      "uid" : "a46e5d5f4525f8ce",
+      "uid" : "3f788e3144a589a3",
       "parentUid" : "991c1070be0c73210b0b59f27efba981",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542636995044,
-        "stop" : 1542637003061,
-        "duration" : 8017
+        "start" : 1542735792725,
+        "stop" : 1542735813281,
+        "duration" : 20556
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "minimum budget",
-      "uid" : "8180170c1c7e6ff7",
+      "uid" : "3aef02c2fb4de11d",
       "parentUid" : "991c1070be0c73210b0b59f27efba981",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542637003061,
-        "stop" : 1542637003095,
-        "duration" : 34
+        "start" : 1542735813281,
+        "stop" : 1542735833456,
+        "duration" : 20175
       },
-      "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "flaky" : true,
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "991c1070be0c73210b0b59f27efba981"
   }, {
     "name" : "online-payments",
     "children" : [ {
       "name" : "check checkbox online payments",
-      "uid" : "4dc54589792d45e1",
+      "uid" : "ae06f9c199cf87b6",
       "parentUid" : "2046993ddaea0d06b716978cb45834e7",
       "status" : "passed",
       "time" : {
-        "start" : 1542637019407,
-        "stop" : 1542637020488,
-        "duration" : 1081
+        "start" : 1542735864376,
+        "stop" : 1542735867204,
+        "duration" : 2828
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check filter parametr online payments",
-      "uid" : "fad060ce4f3acad3",
+      "uid" : "3af2158984aaf004",
       "parentUid" : "2046993ddaea0d06b716978cb45834e7",
       "status" : "passed",
       "time" : {
-        "start" : 1542637020488,
-        "stop" : 1542637020764,
-        "duration" : 276
+        "start" : 1542735867207,
+        "stop" : 1542735867298,
+        "duration" : 91
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "off online payment",
-      "uid" : "e3d2acc33022aeab",
+      "uid" : "5ca550dcee8bb3d",
       "parentUid" : "2046993ddaea0d06b716978cb45834e7",
       "status" : "passed",
       "time" : {
-        "start" : 1542637020765,
-        "stop" : 1542637021919,
-        "duration" : 1154
+        "start" : 1542735867298,
+        "stop" : 1542735868122,
+        "duration" : 824
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "page budget",
-      "uid" : "5704bd577730326c",
+      "uid" : "c608a4137cb15596",
       "parentUid" : "2046993ddaea0d06b716978cb45834e7",
       "status" : "passed",
       "time" : {
-        "start" : 1542637038503,
-        "stop" : 1542637039924,
-        "duration" : 1421
+        "start" : 1542735900050,
+        "stop" : 1542735902146,
+        "duration" : 2096
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "conclusion of the minimum price",
-      "uid" : "a76bb66e3b6c0fd6",
+      "uid" : "54d3c38a2b8b2463",
       "parentUid" : "2046993ddaea0d06b716978cb45834e7",
       "status" : "passed",
       "time" : {
-        "start" : 1542637039926,
-        "stop" : 1542637042507,
-        "duration" : 2581
+        "start" : 1542735902147,
+        "stop" : 1542735905753,
+        "duration" : 3606
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check position button",
-      "uid" : "855b468c4a2fb6cb",
+      "uid" : "682706fd8f9e8da9",
       "parentUid" : "2046993ddaea0d06b716978cb45834e7",
       "status" : "passed",
       "time" : {
-        "start" : 1542637042508,
-        "stop" : 1542637042661,
-        "duration" : 153
+        "start" : 1542735905754,
+        "stop" : 1542735905982,
+        "duration" : 228
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "2046993ddaea0d06b716978cb45834e7"
   }, {
     "name" : "transmission",
     "children" : [ {
       "name" : "page engine",
-      "uid" : "c58d6c0010730446",
+      "uid" : "ba55e44e090740b1",
       "parentUid" : "f037c46f447ebc77ac7fd3df7ca5597d",
       "status" : "passed",
       "time" : {
-        "start" : 1542637096655,
-        "stop" : 1542637097962,
-        "duration" : 1307
+        "start" : 1542735988706,
+        "stop" : 1542735990546,
+        "duration" : 1840
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "consider objects",
-      "uid" : "e3412d7020a513c2",
+      "uid" : "47f726fceb43cff3",
       "parentUid" : "f037c46f447ebc77ac7fd3df7ca5597d",
       "status" : "passed",
       "time" : {
-        "start" : 1542637097963,
-        "stop" : 1542637098012,
-        "duration" : 49
+        "start" : 1542735990547,
+        "stop" : 1542735990608,
+        "duration" : 61
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "add filters",
-      "uid" : "316ff67eac447ade",
+      "uid" : "f648f9a7d6d1f769",
       "parentUid" : "f037c46f447ebc77ac7fd3df7ca5597d",
       "status" : "passed",
       "time" : {
-        "start" : 1542637099615,
-        "stop" : 1542637100773,
-        "duration" : 1158
+        "start" : 1542735992675,
+        "stop" : 1542735993829,
+        "duration" : 1154
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "page engine",
-      "uid" : "df61380e0803d740",
+      "uid" : "f78e9d22c3ebc23f",
       "parentUid" : "f037c46f447ebc77ac7fd3df7ca5597d",
       "status" : "skipped",
       "time" : {
-        "start" : 1542637382556,
-        "stop" : 1542637382557,
-        "duration" : 1
+        "start" : 1542736505567,
+        "stop" : 1542736505567,
+        "duration" : 0
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -929,277 +953,277 @@
     "name" : "test automatic transmission",
     "children" : [ {
       "name" : "Page engine",
-      "uid" : "4e9c31ef96496d40",
+      "uid" : "9f8a86e7ee128e94",
       "parentUid" : "729d0531c9fd81d164ef82100fd846ed",
       "status" : "passed",
       "time" : {
-        "start" : 1542637116353,
-        "stop" : 1542637117627,
-        "duration" : 1274
+        "start" : 1542736025072,
+        "stop" : 1542736025805,
+        "duration" : 733
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check images transmision",
-      "uid" : "23823e2bb926015f",
+      "uid" : "7450831a49a2531a",
       "parentUid" : "729d0531c9fd81d164ef82100fd846ed",
       "status" : "passed",
       "time" : {
-        "start" : 1542637117627,
-        "stop" : 1542637118290,
-        "duration" : 663
+        "start" : 1542736025807,
+        "stop" : 1542736025962,
+        "duration" : 155
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkboxes auto",
-      "uid" : "296d64c41da5fea1",
+      "uid" : "fc85797acade883e",
       "parentUid" : "729d0531c9fd81d164ef82100fd846ed",
       "status" : "passed",
       "time" : {
-        "start" : 1542637118291,
-        "stop" : 1542637121046,
-        "duration" : 2755
+        "start" : 1542736025963,
+        "stop" : 1542736030128,
+        "duration" : 4165
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "729d0531c9fd81d164ef82100fd846ed"
   }, {
     "name" : "test diesel",
     "children" : [ {
       "name" : "Page engine",
-      "uid" : "d2c778c534342d20",
+      "uid" : "5df91d18e993cfa2",
       "parentUid" : "e5ed48388d5e4380db4a3ba6b413ff53",
       "status" : "passed",
       "time" : {
-        "start" : 1542637135743,
-        "stop" : 1542637136968,
-        "duration" : 1225
+        "start" : 1542736063341,
+        "stop" : 1542736064095,
+        "duration" : 754
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check images transmision",
-      "uid" : "889f0c6ac2795f5",
+      "uid" : "2f277f01ad1e5c6c",
       "parentUid" : "e5ed48388d5e4380db4a3ba6b413ff53",
       "status" : "passed",
       "time" : {
-        "start" : 1542637136969,
-        "stop" : 1542637137683,
-        "duration" : 714
+        "start" : 1542736064097,
+        "stop" : 1542736065421,
+        "duration" : 1324
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkboxes auto",
-      "uid" : "aa9e86de84c5d977",
+      "uid" : "7378d08f79d0a236",
       "parentUid" : "e5ed48388d5e4380db4a3ba6b413ff53",
       "status" : "passed",
       "time" : {
-        "start" : 1542637137683,
-        "stop" : 1542637140412,
-        "duration" : 2729
+        "start" : 1542736065421,
+        "stop" : 1542736068410,
+        "duration" : 2989
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "e5ed48388d5e4380db4a3ba6b413ff53"
   }, {
     "name" : "test drive unit in pictures",
     "children" : [ {
       "name" : "Check checkbox four-wheel drive",
-      "uid" : "9dfaf07b610738e",
+      "uid" : "d624f8f59abadc89",
       "parentUid" : "e82a3a9b716754512c3bc86835cce2b2",
       "status" : "passed",
       "time" : {
-        "start" : 1542637156791,
-        "stop" : 1542637159874,
-        "duration" : 3083
+        "start" : 1542736121524,
+        "stop" : 1542736125987,
+        "duration" : 4463
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "open filter",
-      "uid" : "643f568df822de2e",
+      "uid" : "ff73a4642c74ca85",
       "parentUid" : "e82a3a9b716754512c3bc86835cce2b2",
       "status" : "passed",
       "time" : {
-        "start" : 1542637159875,
-        "stop" : 1542637163455,
-        "duration" : 3580
+        "start" : 1542736125988,
+        "stop" : 1542736129716,
+        "duration" : 3728
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkbox front-wheel drive",
-      "uid" : "684851f5c70a0ed0",
+      "uid" : "58369ea9089d8b45",
       "parentUid" : "e82a3a9b716754512c3bc86835cce2b2",
       "status" : "passed",
       "time" : {
-        "start" : 1542637163456,
-        "stop" : 1542637168944,
-        "duration" : 5488
+        "start" : 1542736129717,
+        "stop" : 1542736135074,
+        "duration" : 5357
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "e82a3a9b716754512c3bc86835cce2b2"
   }, {
     "name" : "engine-power",
     "children" : [ {
       "name" : "page engine",
-      "uid" : "fbbff829ab09b601",
+      "uid" : "99f95a2678f065ed",
       "parentUid" : "b130f0c6411f30c7893c5be520d8fe1f",
       "status" : "passed",
       "time" : {
-        "start" : 1542637187924,
-        "stop" : 1542637189390,
-        "duration" : 1466
+        "start" : 1542736177463,
+        "stop" : 1542736178507,
+        "duration" : 1044
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check the slider step1",
-      "uid" : "10e7a4242c3b7bb4",
+      "uid" : "e6a7478acb1e7564",
       "parentUid" : "b130f0c6411f30c7893c5be520d8fe1f",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542637189391,
-        "stop" : 1542637190690,
-        "duration" : 1299
+        "start" : 1542736178508,
+        "stop" : 1542736201227,
+        "duration" : 22719
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check the slider step2",
-      "uid" : "bc0e46bce7b6cf7f",
+      "uid" : "12ccebf9a72cd198",
       "parentUid" : "b130f0c6411f30c7893c5be520d8fe1f",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542637190690,
-        "stop" : 1542637191665,
-        "duration" : 975
+        "start" : 1542736201227,
+        "stop" : 1542736201830,
+        "duration" : 603
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check the slider step3",
-      "uid" : "cde387b22182b19f",
+      "uid" : "1646bd7531495c7a",
       "parentUid" : "b130f0c6411f30c7893c5be520d8fe1f",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542637191666,
-        "stop" : 1542637192612,
-        "duration" : 946
+        "start" : 1542736201830,
+        "stop" : 1542736202546,
+        "duration" : 716
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check the slider step4",
-      "uid" : "fd3307b9dc7d344d",
+      "uid" : "577d042b8b992669",
       "parentUid" : "b130f0c6411f30c7893c5be520d8fe1f",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542637192615,
-        "stop" : 1542637193661,
-        "duration" : 1046
+        "start" : 1542736202546,
+        "stop" : 1542736203232,
+        "duration" : 686
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "b130f0c6411f30c7893c5be520d8fe1f"
   }, {
     "name" : "test front drive",
     "children" : [ {
       "name" : "Page engine",
-      "uid" : "71cdb1fa17390291",
+      "uid" : "aa375b66a390992f",
       "parentUid" : "3f66fe8cde684f9c7abc4cd401225199",
       "status" : "passed",
       "time" : {
-        "start" : 1542637208566,
-        "stop" : 1542637209823,
-        "duration" : 1257
+        "start" : 1542736236767,
+        "stop" : 1542736237465,
+        "duration" : 698
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check images transmision",
-      "uid" : "ddf7fc8ec89d895d",
+      "uid" : "17c8a6b2fdf8ee2b",
       "parentUid" : "3f66fe8cde684f9c7abc4cd401225199",
       "status" : "passed",
       "time" : {
-        "start" : 1542637209824,
-        "stop" : 1542637210547,
-        "duration" : 723
+        "start" : 1542736237466,
+        "stop" : 1542736238674,
+        "duration" : 1208
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkboxes auto",
-      "uid" : "ef9463a4ae4446d0",
+      "uid" : "15342ef243818fa8",
       "parentUid" : "3f66fe8cde684f9c7abc4cd401225199",
       "status" : "passed",
       "time" : {
-        "start" : 1542637210548,
-        "stop" : 1542637213176,
-        "duration" : 2628
+        "start" : 1542736238675,
+        "stop" : 1542736241853,
+        "duration" : 3178
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "3f66fe8cde684f9c7abc4cd401225199"
   }, {
     "name" : "test fuel type in pictures",
     "children" : [ {
       "name" : "Check checkbox petrol",
-      "uid" : "3fd252e7eddf72bb",
+      "uid" : "a8dbad6694e989aa",
       "parentUid" : "b33797f7e78fb2f8830845d29521304c",
       "status" : "passed",
       "time" : {
-        "start" : 1542637229445,
-        "stop" : 1542637234780,
-        "duration" : 5335
+        "start" : 1542736273968,
+        "stop" : 1542736279573,
+        "duration" : 5605
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Open filter",
-      "uid" : "7c30c0051b48e365",
+      "uid" : "373dc1279767f263",
       "parentUid" : "b33797f7e78fb2f8830845d29521304c",
       "status" : "passed",
       "time" : {
-        "start" : 1542637234781,
-        "stop" : 1542637239085,
-        "duration" : 4304
+        "start" : 1542736279579,
+        "stop" : 1542736283872,
+        "duration" : 4293
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkbox diesel",
-      "uid" : "9fa89daca4688e7",
+      "uid" : "d8e5ae6c22970f49",
       "parentUid" : "b33797f7e78fb2f8830845d29521304c",
       "status" : "passed",
       "time" : {
-        "start" : 1542637239085,
-        "stop" : 1542637244730,
-        "duration" : 5645
+        "start" : 1542736283873,
+        "stop" : 1542736288823,
+        "duration" : 4950
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "b33797f7e78fb2f8830845d29521304c"
   }, {
     "name" : "fuel-type",
     "children" : [ {
       "name" : "page engine",
-      "uid" : "1aa396d711b48b2e",
+      "uid" : "fc9f3dc180dae092",
       "parentUid" : "071f1df76e223768c1cad1f5f894df12",
       "status" : "skipped",
       "time" : {
-        "start" : 1542637250617,
-        "stop" : 1542637250619,
-        "duration" : 2
+        "start" : 1542736302104,
+        "stop" : 1542736302105,
+        "duration" : 1
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -1209,817 +1233,817 @@
     "name" : "test gasoline",
     "children" : [ {
       "name" : "Page engine",
-      "uid" : "ff6cd74e7f32da9f",
+      "uid" : "cffc62e9e78c0ed8",
       "parentUid" : "a315afe20811c1948dc9b1a358cbbf04",
       "status" : "passed",
       "time" : {
-        "start" : 1542637267294,
-        "stop" : 1542637268649,
-        "duration" : 1355
+        "start" : 1542736334434,
+        "stop" : 1542736335229,
+        "duration" : 795
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check images transmision",
-      "uid" : "623dfa6d45a58983",
+      "uid" : "71ea6d88cb4402f0",
       "parentUid" : "a315afe20811c1948dc9b1a358cbbf04",
       "status" : "passed",
       "time" : {
-        "start" : 1542637268650,
-        "stop" : 1542637269211,
-        "duration" : 561
+        "start" : 1542736335229,
+        "stop" : 1542736335430,
+        "duration" : 201
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkboxes auto",
-      "uid" : "ba3a88e86873d759",
+      "uid" : "4cf7473c0fadb549",
       "parentUid" : "a315afe20811c1948dc9b1a358cbbf04",
       "status" : "passed",
       "time" : {
-        "start" : 1542637269211,
-        "stop" : 1542637272085,
-        "duration" : 2874
+        "start" : 1542736335430,
+        "stop" : 1542736339435,
+        "duration" : 4005
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "a315afe20811c1948dc9b1a358cbbf04"
   }, {
     "name" : "test mechanical transmission",
     "children" : [ {
       "name" : "Page engine",
-      "uid" : "3ad04e9c8e35d96c",
+      "uid" : "a1340a801e47630f",
       "parentUid" : "552bc2bcf1ee6ee0fde2aa57599ba3a5",
       "status" : "passed",
       "time" : {
-        "start" : 1542637290235,
-        "stop" : 1542637291358,
-        "duration" : 1123
+        "start" : 1542736366937,
+        "stop" : 1542736367720,
+        "duration" : 783
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check images transmision",
-      "uid" : "54bca013a670216f",
+      "uid" : "65f23a5527976c63",
       "parentUid" : "552bc2bcf1ee6ee0fde2aa57599ba3a5",
       "status" : "passed",
       "time" : {
-        "start" : 1542637291359,
-        "stop" : 1542637292087,
-        "duration" : 728
+        "start" : 1542736367720,
+        "stop" : 1542736367983,
+        "duration" : 263
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkboxes auto",
-      "uid" : "c23994b4ebf5fa",
+      "uid" : "2c3f7eccb6268964",
       "parentUid" : "552bc2bcf1ee6ee0fde2aa57599ba3a5",
       "status" : "passed",
       "time" : {
-        "start" : 1542637292087,
-        "stop" : 1542637295825,
-        "duration" : 3738
+        "start" : 1542736367983,
+        "stop" : 1542736371749,
+        "duration" : 3766
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "552bc2bcf1ee6ee0fde2aa57599ba3a5"
   }, {
     "name" : "test rear wheel drive",
     "children" : [ {
       "name" : "Page engine",
-      "uid" : "ce038aa060974062",
+      "uid" : "10cb5d3de41171be",
       "parentUid" : "f9f20d855f20b2aa7622f1f5b298a982",
       "status" : "passed",
       "time" : {
-        "start" : 1542637325199,
-        "stop" : 1542637326441,
-        "duration" : 1242
+        "start" : 1542736400097,
+        "stop" : 1542736401985,
+        "duration" : 1888
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check images transmision",
-      "uid" : "683c67999dfde835",
+      "uid" : "54c8af6419b0a138",
       "parentUid" : "f9f20d855f20b2aa7622f1f5b298a982",
       "status" : "passed",
       "time" : {
-        "start" : 1542637326442,
-        "stop" : 1542637327111,
-        "duration" : 669
+        "start" : 1542736401985,
+        "stop" : 1542736402126,
+        "duration" : 141
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkboxes auto",
-      "uid" : "cf417b70f1d17080",
+      "uid" : "252d2f12ba6ff8ff",
       "parentUid" : "f9f20d855f20b2aa7622f1f5b298a982",
       "status" : "passed",
       "time" : {
-        "start" : 1542637327112,
-        "stop" : 1542637329924,
-        "duration" : 2812
+        "start" : 1542736402128,
+        "stop" : 1542736405201,
+        "duration" : 3073
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "f9f20d855f20b2aa7622f1f5b298a982"
   }, {
     "name" : "test transmission in pictures",
     "children" : [ {
       "name" : "Check checkbox AT transmissiion",
-      "uid" : "29483d43f83946be",
+      "uid" : "af9a5eb8f4ccdc5d",
       "parentUid" : "f78ebf20fec9824502f99b17206b515d",
       "status" : "passed",
       "time" : {
-        "start" : 1542637364277,
-        "stop" : 1542637369403,
-        "duration" : 5126
+        "start" : 1542736464474,
+        "stop" : 1542736470607,
+        "duration" : 6133
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "open filter",
-      "uid" : "a56bf306c2ab7499",
+      "uid" : "665f72b628064654",
       "parentUid" : "f78ebf20fec9824502f99b17206b515d",
       "status" : "passed",
       "time" : {
-        "start" : 1542637369406,
-        "stop" : 1542637373406,
-        "duration" : 4000
+        "start" : 1542736470608,
+        "stop" : 1542736475336,
+        "duration" : 4728
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkbox MT transmissiion",
-      "uid" : "2a717d8a28c6e53c",
+      "uid" : "3f2a9012314b885b",
       "parentUid" : "f78ebf20fec9824502f99b17206b515d",
       "status" : "passed",
       "time" : {
-        "start" : 1542637373406,
-        "stop" : 1542637378443,
-        "duration" : 5037
+        "start" : 1542736475336,
+        "stop" : 1542736481680,
+        "duration" : 6344
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "f78ebf20fec9824502f99b17206b515d"
   }, {
     "name" : "test body-color",
     "children" : [ {
       "name" : "Open page filter body color",
-      "uid" : "1baf6c970b52fa60",
+      "uid" : "14c70d78286f47bd",
       "parentUid" : "f48f228ed2149524dfc7de370de22952",
       "status" : "passed",
       "time" : {
-        "start" : 1542637398306,
-        "stop" : 1542637399513,
-        "duration" : 1207
+        "start" : 1542736538818,
+        "stop" : 1542736539666,
+        "duration" : 848
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Add a new color",
-      "uid" : "2d60057cb71e6c21",
+      "uid" : "580b335542ff6753",
       "parentUid" : "f48f228ed2149524dfc7de370de22952",
       "status" : "passed",
       "time" : {
-        "start" : 1542637399514,
-        "stop" : 1542637412519,
-        "duration" : 13005
+        "start" : 1542736539667,
+        "stop" : 1542736551228,
+        "duration" : 11561
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "f48f228ed2149524dfc7de370de22952"
   }, {
     "name" : "screenshot page body colors",
     "children" : [ {
       "name" : "take screenshot page body color",
-      "uid" : "6f5dce3a80f2421",
+      "uid" : "dc6bcb268ee4045f",
       "parentUid" : "38f7b29df02e173893dc32761559efda",
       "status" : "passed",
       "time" : {
-        "start" : 1542637428903,
-        "stop" : 1542637428905,
-        "duration" : 2
+        "start" : 1542736584843,
+        "stop" : 1542736584849,
+        "duration" : 6
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "do second screenshot",
-      "uid" : "d5077a197d8152b7",
+      "uid" : "e7b5010779bd2914",
       "parentUid" : "38f7b29df02e173893dc32761559efda",
       "status" : "passed",
       "time" : {
-        "start" : 1542637428906,
-        "stop" : 1542637429234,
-        "duration" : 328
+        "start" : 1542736584852,
+        "stop" : 1542736585295,
+        "duration" : 443
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "c037897fd36fba2f",
+      "uid" : "38bb3c584b8a6220",
       "parentUid" : "38f7b29df02e173893dc32761559efda",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542637429235,
-        "stop" : 1542637429800,
-        "duration" : 565
+        "start" : 1542736585296,
+        "stop" : 1542736585836,
+        "duration" : 540
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "38f7b29df02e173893dc32761559efda"
   }, {
     "name" : "test cast stamped disks",
     "children" : [ {
       "name" : "choose cast disks",
-      "uid" : "42a01627c7663181",
+      "uid" : "533cd7a2c0b7c54b",
       "parentUid" : "519d5dd7996ab5c4d2fe9e5146abd414",
       "status" : "passed",
       "time" : {
-        "start" : 1542637446892,
-        "stop" : 1542637448047,
-        "duration" : 1155
+        "start" : 1542736618398,
+        "stop" : 1542736619132,
+        "duration" : 734
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "choose stamped disks",
-      "uid" : "1728c14f4814ddb9",
+      "uid" : "cf66a14f5acedbfb",
       "parentUid" : "519d5dd7996ab5c4d2fe9e5146abd414",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1542637448047,
-        "stop" : 1542637448725,
-        "duration" : 678
+        "start" : 1542736619133,
+        "stop" : 1542736620054,
+        "duration" : 921
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "519d5dd7996ab5c4d2fe9e5146abd414"
   }, {
     "name" : "test slider disks",
     "children" : [ {
       "name" : "moov slider",
-      "uid" : "69db4707afea4762",
+      "uid" : "7ca54dbabd2cd457",
       "parentUid" : "94ccfd2cfb3b691bbf56e0eb4b1a4b75",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542637465929,
-        "stop" : 1542637466872,
-        "duration" : 943
+        "start" : 1542736654920,
+        "stop" : 1542736676171,
+        "duration" : 21251
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "checking the operation of the left slider",
-      "uid" : "e14c6adb7c9de2ad",
+      "uid" : "2dd13cf11aa27fd4",
       "parentUid" : "94ccfd2cfb3b691bbf56e0eb4b1a4b75",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542637466873,
-        "stop" : 1542637475207,
-        "duration" : 8334
+        "start" : 1542736676171,
+        "stop" : 1542736678897,
+        "duration" : 2726
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "checking the operation of the right slider",
-      "uid" : "54c8fc5f8cf73df7",
+      "uid" : "fdecf26aae6f77ea",
       "parentUid" : "94ccfd2cfb3b691bbf56e0eb4b1a4b75",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542637475208,
-        "stop" : 1542637483333,
-        "duration" : 8125
+        "start" : 1542736678897,
+        "stop" : 1542736679170,
+        "duration" : 273
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "94ccfd2cfb3b691bbf56e0eb4b1a4b75"
   }, {
     "name" : "screenshot page body disks",
     "children" : [ {
       "name" : "take screenshot page disks",
-      "uid" : "bf08b5a255279704",
+      "uid" : "c02f207820a685c2",
       "parentUid" : "cce70b08df5e30a018908e669962f7ff",
       "status" : "passed",
       "time" : {
-        "start" : 1542637501406,
-        "stop" : 1542637501407,
-        "duration" : 1
+        "start" : 1542736712089,
+        "stop" : 1542736712092,
+        "duration" : 3
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "do second screenshot",
-      "uid" : "1610214fe43ab2a9",
+      "uid" : "b9a06d4f19148137",
       "parentUid" : "cce70b08df5e30a018908e669962f7ff",
       "status" : "passed",
       "time" : {
-        "start" : 1542637501408,
-        "stop" : 1542637501791,
-        "duration" : 383
+        "start" : 1542736712097,
+        "stop" : 1542736712567,
+        "duration" : 470
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "6d3ececdd7dc3956",
+      "uid" : "f85686e509435891",
       "parentUid" : "cce70b08df5e30a018908e669962f7ff",
       "status" : "passed",
       "time" : {
-        "start" : 1542637501791,
-        "stop" : 1542637502389,
-        "duration" : 598
+        "start" : 1542736712568,
+        "stop" : 1542736713104,
+        "duration" : 536
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "cce70b08df5e30a018908e669962f7ff"
   }, {
     "name" : "test dynamic light",
     "children" : [ {
       "name" : "Check checkbox Складной фаркоп",
-      "uid" : "eb172e4c51bac5c8",
+      "uid" : "cb42fedd37f475e0",
       "parentUid" : "7ef7b2c9a28dbb7b52d98d95cc2c82a6",
       "status" : "broken",
       "time" : {
-        "start" : 1542637521015,
-        "stop" : 1542637526521,
-        "duration" : 5506
+        "start" : 1542736746656,
+        "stop" : 1542736753038,
+        "duration" : 6382
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Складной фаркоп",
-      "uid" : "17c7719505141de",
+      "uid" : "60eacf24db33c85f",
       "parentUid" : "7ef7b2c9a28dbb7b52d98d95cc2c82a6",
       "status" : "passed",
       "time" : {
-        "start" : 1542637526521,
-        "stop" : 1542637528855,
-        "duration" : 2334
+        "start" : 1542736753039,
+        "stop" : 1542736755735,
+        "duration" : 2696
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkbox Тонировка",
-      "uid" : "b4dd5884b16ebc6c",
+      "uid" : "9273429df663a482",
       "parentUid" : "7ef7b2c9a28dbb7b52d98d95cc2c82a6",
       "status" : "passed",
       "time" : {
-        "start" : 1542637756158,
-        "stop" : 1542637758669,
-        "duration" : 2511
+        "start" : 1542737018725,
+        "stop" : 1542737020859,
+        "duration" : 2134
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Тонировка",
-      "uid" : "de5fcfdff15ca1a",
+      "uid" : "6db3413e4a839190",
       "parentUid" : "7ef7b2c9a28dbb7b52d98d95cc2c82a6",
       "status" : "passed",
       "time" : {
-        "start" : 1542637758670,
-        "stop" : 1542637761914,
-        "duration" : 3244
+        "start" : 1542737020860,
+        "stop" : 1542737023880,
+        "duration" : 3020
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkboxes auto",
-      "uid" : "b453ed87e608d52d",
+      "uid" : "34deea0c017222d8",
       "parentUid" : "7ef7b2c9a28dbb7b52d98d95cc2c82a6",
       "status" : "passed",
       "time" : {
-        "start" : 1542637794442,
-        "stop" : 1542637797441,
-        "duration" : 2999
+        "start" : 1542737089179,
+        "stop" : 1542737092808,
+        "duration" : 3629
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about dynamic light",
-      "uid" : "38005467197a9db2",
+      "uid" : "8737aeaccae31511",
       "parentUid" : "7ef7b2c9a28dbb7b52d98d95cc2c82a6",
       "status" : "passed",
       "time" : {
-        "start" : 1542637797441,
-        "stop" : 1542637798940,
-        "duration" : 1499
+        "start" : 1542737092808,
+        "stop" : 1542737094156,
+        "duration" : 1348
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "f3344e0e67142e2b",
+      "uid" : "ce5d632fadcfdec",
       "parentUid" : "7ef7b2c9a28dbb7b52d98d95cc2c82a6",
       "status" : "failed",
       "time" : {
-        "start" : 1542637798940,
-        "stop" : 1542637799548,
-        "duration" : 608
+        "start" : 1542737094157,
+        "stop" : 1542737094744,
+        "duration" : 587
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "adbd68e5bd665ea4",
+      "uid" : "15286a594eb9f497",
       "parentUid" : "7ef7b2c9a28dbb7b52d98d95cc2c82a6",
       "status" : "passed",
       "time" : {
-        "start" : 1542637799583,
-        "stop" : 1542637813024,
-        "duration" : 13441
+        "start" : 1542737094769,
+        "stop" : 1542737106499,
+        "duration" : 11730
       },
       "flaky" : true,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "7ef7b2c9a28dbb7b52d98d95cc2c82a6"
   }, {
     "name" : "test dynamic sunroof",
     "children" : [ {
       "name" : "Check checkbox Панорамный люк",
-      "uid" : "d4cff1221463d5f0",
+      "uid" : "4d345f524ccd6c48",
       "parentUid" : "24894d09c25fdb5cb26599b2b28c50c3",
       "status" : "passed",
       "time" : {
-        "start" : 1542637570918,
-        "stop" : 1542637598627,
-        "duration" : 27709
+        "start" : 1542736809728,
+        "stop" : 1542736812605,
+        "duration" : 2877
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Панорамный люк",
-      "uid" : "70103c0e9082b608",
+      "uid" : "af2a5ca5c4d7e563",
       "parentUid" : "24894d09c25fdb5cb26599b2b28c50c3",
       "status" : "passed",
       "time" : {
-        "start" : 1542637598628,
-        "stop" : 1542637601261,
-        "duration" : 2633
+        "start" : 1542736812605,
+        "stop" : 1542736815151,
+        "duration" : 2546
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "9a14b96801545b8a",
+      "uid" : "c0ccd24f2119ac13",
       "parentUid" : "24894d09c25fdb5cb26599b2b28c50c3",
       "status" : "passed",
       "time" : {
-        "start" : 1542637601299,
-        "stop" : 1542637602108,
-        "duration" : 809
+        "start" : 1542736815152,
+        "stop" : 1542736815717,
+        "duration" : 565
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "1c8a73451e42884a",
+      "uid" : "c33d703527fff156",
       "parentUid" : "24894d09c25fdb5cb26599b2b28c50c3",
       "status" : "passed",
       "time" : {
-        "start" : 1542637602135,
-        "stop" : 1542637619450,
-        "duration" : 17315
+        "start" : 1542736815742,
+        "stop" : 1542736849910,
+        "duration" : 34168
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "24894d09c25fdb5cb26599b2b28c50c3"
   }, {
     "name" : "test railings",
     "children" : [ {
       "name" : "Сheck checkbox Рейлинги",
-      "uid" : "315da2ff14c13d2f",
+      "uid" : "6953b38f5634ae5e",
       "parentUid" : "65b4d8bcac355ddb1ca2f06e152b1bfd",
       "status" : "passed",
       "time" : {
-        "start" : 1542637640258,
-        "stop" : 1542637643787,
-        "duration" : 3529
+        "start" : 1542736888654,
+        "stop" : 1542736891422,
+        "duration" : 2768
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Сheck more in detail about Рейлинги",
-      "uid" : "f3412212d6ac7017",
+      "uid" : "df6422b6d2424231",
       "parentUid" : "65b4d8bcac355ddb1ca2f06e152b1bfd",
       "status" : "passed",
       "time" : {
-        "start" : 1542637643788,
-        "stop" : 1542637645997,
-        "duration" : 2209
+        "start" : 1542736891422,
+        "stop" : 1542736894164,
+        "duration" : 2742
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Сompare screenshots",
-      "uid" : "cc9d14f87d2e66d6",
+      "uid" : "5bfcbaa8d6c25bbb",
       "parentUid" : "65b4d8bcac355ddb1ca2f06e152b1bfd",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542637646025,
-        "stop" : 1542637646668,
-        "duration" : 643
+        "start" : 1542736894188,
+        "stop" : 1542736894770,
+        "duration" : 582
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "d518a7f3cc6cba6f",
+      "uid" : "c5e8d1d116525245",
       "parentUid" : "65b4d8bcac355ddb1ca2f06e152b1bfd",
       "status" : "passed",
       "time" : {
-        "start" : 1542637646692,
-        "stop" : 1542637661029,
-        "duration" : 14337
+        "start" : 1542736894782,
+        "stop" : 1542736905781,
+        "duration" : 10999
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "65b4d8bcac355ddb1ca2f06e152b1bfd"
   }, {
     "name" : "test dynamic r-line trim package",
     "children" : [ {
       "name" : "Check checkbox Пакет отделки R-line",
-      "uid" : "567f947f260ac0da",
+      "uid" : "bf19f37479360e98",
       "parentUid" : "0da0723f2f370163a74356769aef738c",
       "status" : "passed",
       "time" : {
-        "start" : 1542637679665,
-        "stop" : 1542637683014,
-        "duration" : 3349
+        "start" : 1542736938192,
+        "stop" : 1542736940580,
+        "duration" : 2388
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Пакет отделки R-line",
-      "uid" : "39dd223ac11df79e",
+      "uid" : "144cda917ab9e031",
       "parentUid" : "0da0723f2f370163a74356769aef738c",
       "status" : "passed",
       "time" : {
-        "start" : 1542637683015,
-        "stop" : 1542637684846,
-        "duration" : 1831
+        "start" : 1542736940580,
+        "stop" : 1542736942773,
+        "duration" : 2193
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "652fb6ac7d108499",
+      "uid" : "635accf701caf943",
       "parentUid" : "0da0723f2f370163a74356769aef738c",
       "status" : "passed",
       "time" : {
-        "start" : 1542637684846,
-        "stop" : 1542637685460,
-        "duration" : 614
+        "start" : 1542736942774,
+        "stop" : 1542736943306,
+        "duration" : 532
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "ac71b7dab7e64f44",
+      "uid" : "28d5de6e9ba5eb03",
       "parentUid" : "0da0723f2f370163a74356769aef738c",
       "status" : "passed",
       "time" : {
-        "start" : 1542637685484,
-        "stop" : 1542637710731,
-        "duration" : 25247
+        "start" : 1542736943327,
+        "stop" : 1542736953716,
+        "duration" : 10389
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "0da0723f2f370163a74356769aef738c"
   }, {
     "name" : "screenshot page options",
     "children" : [ {
       "name" : "take screenshot page options",
-      "uid" : "13ffcbb063aac9de",
+      "uid" : "f9ca87b035d8014e",
       "parentUid" : "4c42023e27940c4e3410e5eec3f6f5ef",
       "status" : "passed",
       "time" : {
-        "start" : 1542637738130,
-        "stop" : 1542637738131,
-        "duration" : 1
+        "start" : 1542736986610,
+        "stop" : 1542736986612,
+        "duration" : 2
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "do second screenshot",
-      "uid" : "bd4f332e46c4bc31",
+      "uid" : "bbb564238d104a35",
       "parentUid" : "4c42023e27940c4e3410e5eec3f6f5ef",
       "status" : "passed",
       "time" : {
-        "start" : 1542637738132,
-        "stop" : 1542637738388,
-        "duration" : 256
+        "start" : 1542736986613,
+        "stop" : 1542736987056,
+        "duration" : 443
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "ed9ebe7cd512d2b8",
+      "uid" : "3f9d6e06e9fdc620",
       "parentUid" : "4c42023e27940c4e3410e5eec3f6f5ef",
       "status" : "passed",
       "time" : {
-        "start" : 1542637738388,
-        "stop" : 1542637738964,
-        "duration" : 576
+        "start" : 1542736987056,
+        "stop" : 1542736987569,
+        "duration" : 513
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "4c42023e27940c4e3410e5eec3f6f5ef"
   }, {
     "name" : "screenshot page light",
     "children" : [ {
       "name" : "take screenshot page light",
-      "uid" : "811bb1533fb365a9",
+      "uid" : "6900e7c1ce37f8a2",
       "parentUid" : "504cd0137372df99d1547ab7d65eaa45",
       "status" : "passed",
       "time" : {
-        "start" : 1542637832402,
-        "stop" : 1542637832404,
-        "duration" : 2
+        "start" : 1542737142985,
+        "stop" : 1542737142988,
+        "duration" : 3
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "do second screenshot",
-      "uid" : "610fb70bbf57b11f",
+      "uid" : "3ea384900466e7fd",
       "parentUid" : "504cd0137372df99d1547ab7d65eaa45",
       "status" : "passed",
       "time" : {
-        "start" : 1542637832405,
-        "stop" : 1542637832814,
-        "duration" : 409
+        "start" : 1542737142989,
+        "stop" : 1542737144264,
+        "duration" : 1275
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "8ed2533b53a43b05",
+      "uid" : "a479f92bf655ac3c",
       "parentUid" : "504cd0137372df99d1547ab7d65eaa45",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542637832814,
-        "stop" : 1542637833410,
-        "duration" : 596
+        "start" : 1542737144264,
+        "stop" : 1542737144783,
+        "duration" : 519
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "504cd0137372df99d1547ab7d65eaa45"
   }, {
     "name" : "test slider in page shine",
     "children" : [ {
       "name" : "check slider in page shine",
-      "uid" : "9db348533bffd878",
+      "uid" : "fefd503cc01b2ce5",
       "parentUid" : "e30cc2b7c21ce7a2445d48e36fdc50f7",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542637851615,
-        "stop" : 1542637854905,
-        "duration" : 3290
+        "start" : 1542737178850,
+        "stop" : 1542737186265,
+        "duration" : 7415
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "e30cc2b7c21ce7a2445d48e36fdc50f7"
   }, {
     "name" : "test climate zones",
     "children" : [ {
       "name" : "check cards, filter and image",
-      "uid" : "53c88c51c97090f1",
+      "uid" : "99384b13f5092b2b",
       "parentUid" : "99d3f67ea5ca7e5658e0a648f9be3806",
       "status" : "failed",
       "time" : {
-        "start" : 1542637893290,
-        "stop" : 1542637904504,
-        "duration" : 11214
+        "start" : 1542737215960,
+        "stop" : 1542737225918,
+        "duration" : 9958
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "99d3f67ea5ca7e5658e0a648f9be3806"
   }, {
     "name" : "test heated steering wheel",
     "children" : [ {
       "name" : "Material leather",
-      "uid" : "70bfe87ef85ab442",
+      "uid" : "556c7c71baabc91",
       "parentUid" : "d7c3202e520c35be54198e70d3feb310",
       "status" : "passed",
       "time" : {
-        "start" : 1542637924877,
-        "stop" : 1542637927625,
-        "duration" : 2748
+        "start" : 1542737258840,
+        "stop" : 1542737261785,
+        "duration" : 2945
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkbox Подогрев руля",
-      "uid" : "e890fd6ab04be049",
+      "uid" : "fafd8a0c0231d04d",
       "parentUid" : "d7c3202e520c35be54198e70d3feb310",
       "status" : "passed",
       "time" : {
-        "start" : 1542639713263,
-        "stop" : 1542639717070,
-        "duration" : 3807
+        "start" : 1542739393192,
+        "stop" : 1542739396602,
+        "duration" : 3410
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail Подогрев руля",
-      "uid" : "34e61963b5cbaffd",
+      "uid" : "d627e350444b2fca",
       "parentUid" : "d7c3202e520c35be54198e70d3feb310",
       "status" : "passed",
       "time" : {
-        "start" : 1542639717071,
-        "stop" : 1542639720444,
-        "duration" : 3373
+        "start" : 1542739396603,
+        "stop" : 1542739398927,
+        "duration" : 2324
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "a3faf2338316912b",
+      "uid" : "cc9b2580f362ea24",
       "parentUid" : "d7c3202e520c35be54198e70d3feb310",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542639720444,
-        "stop" : 1542639721604,
-        "duration" : 1160
+        "start" : 1542739398928,
+        "stop" : 1542739399499,
+        "duration" : 571
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "bc7969b056d08b3a",
+      "uid" : "edcc827c9233e90",
       "parentUid" : "d7c3202e520c35be54198e70d3feb310",
       "status" : "passed",
       "time" : {
-        "start" : 1542639721626,
-        "stop" : 1542639773767,
-        "duration" : 52141
+        "start" : 1542739399518,
+        "stop" : 1542739410263,
+        "duration" : 10745
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "d7c3202e520c35be54198e70d3feb310"
   }, {
     "name" : "test material and options",
     "children" : [ {
       "name" : "Check images transmision",
-      "uid" : "13348594e6e303a5",
+      "uid" : "37e243cda3c6b29b",
       "parentUid" : "5d8cfad9dc75f1ffa975a29f3da64400",
       "status" : "passed",
       "time" : {
-        "start" : 1542637959423,
-        "stop" : 1542637959609,
-        "duration" : 186
+        "start" : 1542737306719,
+        "stop" : 1542737306890,
+        "duration" : 171
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Material leather",
-      "uid" : "b420c0e6c4950d9c",
+      "uid" : "3131834ab294784e",
       "parentUid" : "5d8cfad9dc75f1ffa975a29f3da64400",
       "status" : "passed",
       "time" : {
-        "start" : 1542637959610,
-        "stop" : 1542637962150,
-        "duration" : 2540
+        "start" : 1542737306890,
+        "stop" : 1542737309118,
+        "duration" : 2228
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "6a9dc39c11ea70ea",
+      "uid" : "190c6a8783c427db",
       "parentUid" : "5d8cfad9dc75f1ffa975a29f3da64400",
       "status" : "passed",
       "time" : {
-        "start" : 1542637962150,
-        "stop" : 1542637974146,
-        "duration" : 11996
+        "start" : 1542737309118,
+        "stop" : 1542737318076,
+        "duration" : 8958
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Material leather",
-      "uid" : "4e2f816473354f06",
+      "uid" : "d7ada1b12d688ec9",
       "parentUid" : "5d8cfad9dc75f1ffa975a29f3da64400",
       "status" : "skipped",
       "time" : {
-        "start" : 1542637980786,
-        "stop" : 1542637980787,
-        "duration" : 1
+        "start" : 1542737330123,
+        "stop" : 1542737330125,
+        "duration" : 2
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -2029,688 +2053,688 @@
     "name" : "test multifunction steering wheel",
     "children" : [ {
       "name" : "Material leather",
-      "uid" : "2d45b14b8c277749",
+      "uid" : "690af0880c587b25",
       "parentUid" : "2f5bdb21335aa5153395dec5c3bf7b2f",
       "status" : "passed",
       "time" : {
-        "start" : 1542638040824,
-        "stop" : 1542638049423,
-        "duration" : 8599
+        "start" : 1542737406624,
+        "stop" : 1542737410036,
+        "duration" : 3412
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "e889ec3c2db21c4d",
+      "uid" : "e425eeba6537cded",
       "parentUid" : "2f5bdb21335aa5153395dec5c3bf7b2f",
       "status" : "passed",
       "time" : {
-        "start" : 1542638049423,
-        "stop" : 1542638064341,
-        "duration" : 14918
+        "start" : 1542737410037,
+        "stop" : 1542737419529,
+        "duration" : 9492
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "2f5bdb21335aa5153395dec5c3bf7b2f"
   }, {
     "name" : "check of multimedia checkboxes",
     "children" : [ {
       "name" : "test multimedia checkbox activeInfoDisplay",
-      "uid" : "1938be833afe92d5",
+      "uid" : "e7859646ea82aac6",
       "parentUid" : "31afad32bde791a7b5997a1b4fce5524",
       "status" : "passed",
       "time" : {
-        "start" : 1542638128859,
-        "stop" : 1542638132635,
-        "duration" : 3776
+        "start" : 1542737488058,
+        "stop" : 1542737491340,
+        "duration" : 3282
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "test multimedia checkbox appConnect",
-      "uid" : "cc121dc353674bcc",
+      "uid" : "40a7930d522c45e9",
       "parentUid" : "31afad32bde791a7b5997a1b4fce5524",
       "status" : "passed",
       "time" : {
-        "start" : 1542638132636,
-        "stop" : 1542638135917,
-        "duration" : 3281
+        "start" : 1542737491340,
+        "stop" : 1542737494527,
+        "duration" : 3187
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "test multimedia checkbox bluetooth",
-      "uid" : "3c632193f141c30d",
+      "uid" : "d5d587fb611363a5",
       "parentUid" : "31afad32bde791a7b5997a1b4fce5524",
       "status" : "passed",
       "time" : {
-        "start" : 1542638135918,
-        "stop" : 1542638139258,
-        "duration" : 3340
+        "start" : 1542737494527,
+        "stop" : 1542737497163,
+        "duration" : 2636
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "test multimedia checkbox navigation",
-      "uid" : "8f11fc2aaf374144",
+      "uid" : "fefd35328e167bdf",
       "parentUid" : "31afad32bde791a7b5997a1b4fce5524",
       "status" : "passed",
       "time" : {
-        "start" : 1542638139258,
-        "stop" : 1542638142669,
-        "duration" : 3411
+        "start" : 1542737497163,
+        "stop" : 1542737500257,
+        "duration" : 3094
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "test multimedia checkbox premiumAudio",
-      "uid" : "ceadd6b8c82e1efc",
+      "uid" : "936e727d91636227",
       "parentUid" : "31afad32bde791a7b5997a1b4fce5524",
       "status" : "passed",
       "time" : {
-        "start" : 1542638142669,
-        "stop" : 1542638145873,
-        "duration" : 3204
+        "start" : 1542737500257,
+        "stop" : 1542737502694,
+        "duration" : 2437
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "test multimedia checkbox wirelessСharger",
-      "uid" : "28ab1a37fbcc3465",
+      "uid" : "54a473209cdc5d9b",
       "parentUid" : "31afad32bde791a7b5997a1b4fce5524",
       "status" : "passed",
       "time" : {
-        "start" : 1542638145873,
-        "stop" : 1542638149304,
-        "duration" : 3431
+        "start" : 1542737502695,
+        "stop" : 1542737505539,
+        "duration" : 2844
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "31afad32bde791a7b5997a1b4fce5524"
   }, {
     "name" : "test active info display",
     "children" : [ {
       "name" : "Check checkbox dynamic Active Info Display",
-      "uid" : "fc7cacf11374fc24",
+      "uid" : "ec5a956445d1f6b4",
       "parentUid" : "e7517abfa165906104105f5f196a30e8",
       "status" : "passed",
       "time" : {
-        "start" : 1542638170557,
-        "stop" : 1542638173767,
-        "duration" : 3210
+        "start" : 1542737539749,
+        "stop" : 1542737542158,
+        "duration" : 2409
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Active Info Display",
-      "uid" : "7ef99af6fd6365a0",
+      "uid" : "c36af922b3900e31",
       "parentUid" : "e7517abfa165906104105f5f196a30e8",
       "status" : "passed",
       "time" : {
-        "start" : 1542638173768,
-        "stop" : 1542638176852,
-        "duration" : 3084
+        "start" : 1542737542159,
+        "stop" : 1542737545071,
+        "duration" : 2912
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "1fb1306457c59305",
+      "uid" : "152a0982d4004bce",
       "parentUid" : "e7517abfa165906104105f5f196a30e8",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542638176892,
-        "stop" : 1542638177573,
-        "duration" : 681
+        "start" : 1542737545072,
+        "stop" : 1542737545635,
+        "duration" : 563
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "9fbb463c8a713034",
+      "uid" : "f90d26e9a27d1105",
       "parentUid" : "e7517abfa165906104105f5f196a30e8",
       "status" : "passed",
       "time" : {
-        "start" : 1542638177600,
-        "stop" : 1542638192596,
-        "duration" : 14996
+        "start" : 1542737545657,
+        "stop" : 1542737556274,
+        "duration" : 10617
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "e7517abfa165906104105f5f196a30e8"
   }, {
     "name" : "test app connect",
     "children" : [ {
       "name" : "Check checkbox App Connect",
-      "uid" : "eb6c0cded9557e49",
+      "uid" : "c9e085325e1270c",
       "parentUid" : "76d5979b9671678431c4bce54919fbec",
       "status" : "passed",
       "time" : {
-        "start" : 1542638214049,
-        "stop" : 1542638217153,
-        "duration" : 3104
+        "start" : 1542737589241,
+        "stop" : 1542737593303,
+        "duration" : 4062
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about App Connect",
-      "uid" : "f803bec6db7c834c",
+      "uid" : "2d8c786e3e123173",
       "parentUid" : "76d5979b9671678431c4bce54919fbec",
       "status" : "passed",
       "time" : {
-        "start" : 1542638217154,
-        "stop" : 1542638219621,
-        "duration" : 2467
+        "start" : 1542737593303,
+        "stop" : 1542737595520,
+        "duration" : 2217
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "de23ef29e48a0fb4",
+      "uid" : "91990774f6dc9782",
       "parentUid" : "76d5979b9671678431c4bce54919fbec",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542638219621,
-        "stop" : 1542638220248,
-        "duration" : 627
+        "start" : 1542737595520,
+        "stop" : 1542737596102,
+        "duration" : 582
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "f656acfb73a98a7",
+      "uid" : "2000d8efcb21cbd5",
       "parentUid" : "76d5979b9671678431c4bce54919fbec",
       "status" : "passed",
       "time" : {
-        "start" : 1542638220273,
-        "stop" : 1542638230785,
-        "duration" : 10512
+        "start" : 1542737596121,
+        "stop" : 1542737605638,
+        "duration" : 9517
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "76d5979b9671678431c4bce54919fbec"
   }, {
     "name" : "test bluetooth",
     "children" : [ {
       "name" : "Check checkbox Bluetooth",
-      "uid" : "120e69309d55671e",
+      "uid" : "aa47ec41fe405cce",
       "parentUid" : "7e2942e7039ee2a17d80d5f2fe8e1548",
       "status" : "passed",
       "time" : {
-        "start" : 1542638253686,
-        "stop" : 1542638256586,
-        "duration" : 2900
+        "start" : 1542737642068,
+        "stop" : 1542737644335,
+        "duration" : 2267
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Bluetooth",
-      "uid" : "39ab5d0b7d0ae560",
+      "uid" : "a856cfc13b16708f",
       "parentUid" : "7e2942e7039ee2a17d80d5f2fe8e1548",
       "status" : "passed",
       "time" : {
-        "start" : 1542638256589,
-        "stop" : 1542638258454,
-        "duration" : 1865
+        "start" : 1542737644336,
+        "stop" : 1542737647054,
+        "duration" : 2718
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "852c4e5cdd0bedee",
+      "uid" : "805ec83d19e6167b",
       "parentUid" : "7e2942e7039ee2a17d80d5f2fe8e1548",
       "status" : "failed",
       "time" : {
-        "start" : 1542638258455,
-        "stop" : 1542638259091,
-        "duration" : 636
+        "start" : 1542737647079,
+        "stop" : 1542737647634,
+        "duration" : 555
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "57a84e1aa775bb02",
+      "uid" : "d369f023689354c1",
       "parentUid" : "7e2942e7039ee2a17d80d5f2fe8e1548",
       "status" : "passed",
       "time" : {
-        "start" : 1542638259112,
-        "stop" : 1542638273119,
-        "duration" : 14007
+        "start" : 1542737647662,
+        "stop" : 1542737658200,
+        "duration" : 10538
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "7e2942e7039ee2a17d80d5f2fe8e1548"
   }, {
     "name" : "test display diagonal",
     "children" : [ {
       "name" : "check diagonal",
-      "uid" : "6b23f1c9b9f568f4",
+      "uid" : "c8de3e2e08542ac6",
       "parentUid" : "bc94adb59d6996dc53a755af0f33f151",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542638293291,
-        "stop" : 1542638304594,
-        "duration" : 11303
+        "start" : 1542737710226,
+        "stop" : 1542737712786,
+        "duration" : 2560
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "bc94adb59d6996dc53a755af0f33f151"
   }, {
     "name" : "test navigaton",
     "children" : [ {
       "name" : "Check checkbox Навигация",
-      "uid" : "317b07e6752d6b7a",
+      "uid" : "ecee1479df31265",
       "parentUid" : "2acb688310f4c1fe6052cc4c67675efd",
       "status" : "passed",
       "time" : {
-        "start" : 1542638326327,
-        "stop" : 1542638329183,
-        "duration" : 2856
+        "start" : 1542737746954,
+        "stop" : 1542737749350,
+        "duration" : 2396
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Навигация",
-      "uid" : "37a2776d22cd7e8a",
+      "uid" : "26d38373e11ae943",
       "parentUid" : "2acb688310f4c1fe6052cc4c67675efd",
       "status" : "passed",
       "time" : {
-        "start" : 1542638329185,
-        "stop" : 1542638330997,
-        "duration" : 1812
+        "start" : 1542737749351,
+        "stop" : 1542737752064,
+        "duration" : 2713
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "b4111429945676c4",
+      "uid" : "49028ff58d36df0a",
       "parentUid" : "2acb688310f4c1fe6052cc4c67675efd",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542638331024,
-        "stop" : 1542638331631,
-        "duration" : 607
+        "start" : 1542737752064,
+        "stop" : 1542737752609,
+        "duration" : 545
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "89ffec7da66650ee",
+      "uid" : "c24a433373a69534",
       "parentUid" : "2acb688310f4c1fe6052cc4c67675efd",
       "status" : "passed",
       "time" : {
-        "start" : 1542638331663,
-        "stop" : 1542638345864,
-        "duration" : 14201
+        "start" : 1542737752622,
+        "stop" : 1542737762491,
+        "duration" : 9869
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "2acb688310f4c1fe6052cc4c67675efd"
   }, {
     "name" : "test premium audio",
     "children" : [ {
       "name" : "Check checkbox Премиум Аудио",
-      "uid" : "e9f94090d5cf7e1e",
+      "uid" : "6511e4d4ee32619a",
       "parentUid" : "343dff97e0a2a2af44c4bda6d3d9c355",
       "status" : "passed",
       "time" : {
-        "start" : 1542638366688,
-        "stop" : 1542638369796,
-        "duration" : 3108
+        "start" : 1542737800202,
+        "stop" : 1542737803155,
+        "duration" : 2953
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Премиум Аудио",
-      "uid" : "c8cf0e67f512c6fb",
+      "uid" : "d035e71e9d95aa59",
       "parentUid" : "343dff97e0a2a2af44c4bda6d3d9c355",
       "status" : "passed",
       "time" : {
-        "start" : 1542638369797,
-        "stop" : 1542638371703,
-        "duration" : 1906
+        "start" : 1542737803155,
+        "stop" : 1542737806149,
+        "duration" : 2994
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "7072f1aa789f1450",
+      "uid" : "4f34610bf1490809",
       "parentUid" : "343dff97e0a2a2af44c4bda6d3d9c355",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542638371747,
-        "stop" : 1542638372332,
-        "duration" : 585
+        "start" : 1542737806179,
+        "stop" : 1542737806745,
+        "duration" : 566
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "43a9fc5f61735bed",
+      "uid" : "371b5fe1d9f4e420",
       "parentUid" : "343dff97e0a2a2af44c4bda6d3d9c355",
       "status" : "passed",
       "time" : {
-        "start" : 1542638372362,
-        "stop" : 1542638388131,
-        "duration" : 15769
+        "start" : 1542737806759,
+        "stop" : 1542737817857,
+        "duration" : 11098
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "343dff97e0a2a2af44c4bda6d3d9c355"
   }, {
     "name" : "screenshot page multimedia",
     "children" : [ {
       "name" : "take screenshot page multimedia",
-      "uid" : "377637d1a12025f1",
+      "uid" : "e592f7508d5f58a0",
       "parentUid" : "3dc6601a2610c4d673e84097cb7ebbaa",
       "status" : "passed",
       "time" : {
-        "start" : 1542638408695,
-        "stop" : 1542638408697,
-        "duration" : 2
+        "start" : 1542737849530,
+        "stop" : 1542737849531,
+        "duration" : 1
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "do second screenshot",
-      "uid" : "47d52e924f37ac57",
+      "uid" : "3d3c3dcbc60347df",
       "parentUid" : "3dc6601a2610c4d673e84097cb7ebbaa",
       "status" : "passed",
       "time" : {
-        "start" : 1542638408698,
-        "stop" : 1542638409471,
-        "duration" : 773
+        "start" : 1542737849531,
+        "stop" : 1542737850213,
+        "duration" : 682
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "708eb497d4195720",
+      "uid" : "957aa8cf1bbeef57",
       "parentUid" : "3dc6601a2610c4d673e84097cb7ebbaa",
       "status" : "passed",
       "time" : {
-        "start" : 1542638409471,
-        "stop" : 1542638410082,
-        "duration" : 611
+        "start" : 1542737850214,
+        "stop" : 1542737850732,
+        "duration" : 518
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "3dc6601a2610c4d673e84097cb7ebbaa"
   }, {
     "name" : "test wireless charger",
     "children" : [ {
       "name" : "Check checkbox Беспроводная зарядка",
-      "uid" : "d8fb3089a146fbb1",
+      "uid" : "9c6fd7b12f6ddba5",
       "parentUid" : "7b798f60ddff3dac305585008ca10011",
       "status" : "passed",
       "time" : {
-        "start" : 1542638430723,
-        "stop" : 1542638434175,
-        "duration" : 3452
+        "start" : 1542737881634,
+        "stop" : 1542737884107,
+        "duration" : 2473
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Беспроводная зарядка",
-      "uid" : "ad76f61d790bbec1",
+      "uid" : "80739a5e9032b1cb",
       "parentUid" : "7b798f60ddff3dac305585008ca10011",
       "status" : "passed",
       "time" : {
-        "start" : 1542638434176,
-        "stop" : 1542638436097,
-        "duration" : 1921
+        "start" : 1542737884108,
+        "stop" : 1542737886351,
+        "duration" : 2243
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "fc5d85e39ade7316",
+      "uid" : "72ff33b3a5cfaf53",
       "parentUid" : "7b798f60ddff3dac305585008ca10011",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542638436099,
-        "stop" : 1542638436689,
-        "duration" : 590
+        "start" : 1542737886352,
+        "stop" : 1542737886838,
+        "duration" : 486
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "20c329061c7a5ba1",
+      "uid" : "484cd649812e8e85",
       "parentUid" : "7b798f60ddff3dac305585008ca10011",
       "status" : "passed",
       "time" : {
-        "start" : 1542638436709,
-        "stop" : 1542638472373,
-        "duration" : 35664
+        "start" : 1542737886855,
+        "stop" : 1542737897518,
+        "duration" : 10663
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "7b798f60ddff3dac305585008ca10011"
   }, {
     "name" : "test alcantara materials",
     "children" : [ {
       "name" : "Check checkboxes Алькантара",
-      "uid" : "4db523bf1c0e63f9",
+      "uid" : "479f4de7f2c504f",
       "parentUid" : "8176c23cade2eda2a338f399e7e32c7e",
       "status" : "failed",
       "time" : {
-        "start" : 1542638492413,
-        "stop" : 1542638493603,
-        "duration" : 1190
+        "start" : 1542737929904,
+        "stop" : 1542737932438,
+        "duration" : 2534
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "check more in detail about dynamic light",
-      "uid" : "9fa57a31b2b7cd1",
+      "uid" : "1b869781d737bb69",
       "parentUid" : "8176c23cade2eda2a338f399e7e32c7e",
       "status" : "broken",
       "time" : {
-        "start" : 1542638493603,
-        "stop" : 1542638494416,
-        "duration" : 813
+        "start" : 1542737932441,
+        "stop" : 1542737933013,
+        "duration" : 572
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "9af3db5f9b6bbf54",
+      "uid" : "3039fa39c7928e16",
       "parentUid" : "8176c23cade2eda2a338f399e7e32c7e",
       "status" : "failed",
       "time" : {
-        "start" : 1542638494416,
-        "stop" : 1542638494417,
+        "start" : 1542737933013,
+        "stop" : 1542737933014,
         "duration" : 1
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "f8d9fb7e2920a36b",
+      "uid" : "5e790318bc2925b7",
       "parentUid" : "8176c23cade2eda2a338f399e7e32c7e",
       "status" : "broken",
       "time" : {
-        "start" : 1542638494418,
-        "stop" : 1542638494871,
-        "duration" : 453
+        "start" : 1542737933014,
+        "stop" : 1542737933495,
+        "duration" : 481
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "8176c23cade2eda2a338f399e7e32c7e"
   }, {
     "name" : "test color seats",
     "children" : [ {
       "name" : "check color seats",
-      "uid" : "4e732bc35498cd78",
+      "uid" : "300baeda91ed6ee0",
       "parentUid" : "661ea40a1ef630043f1557a0418ae60e",
       "status" : "passed",
       "time" : {
-        "start" : 1542638512214,
-        "stop" : 1542638518193,
-        "duration" : 5979
+        "start" : 1542737964174,
+        "stop" : 1542737969580,
+        "duration" : 5406
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "661ea40a1ef630043f1557a0418ae60e"
   }, {
     "name" : "screenshot page seating",
     "children" : [ {
       "name" : "take screenshot page disks",
-      "uid" : "78f7907031463867",
+      "uid" : "fb661537a8ae938a",
       "parentUid" : "083b04d41fbb4c9297eb164c89fcd471",
       "status" : "passed",
       "time" : {
-        "start" : 1542638535214,
-        "stop" : 1542638535215,
-        "duration" : 1
+        "start" : 1542738001417,
+        "stop" : 1542738001419,
+        "duration" : 2
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "do second screenshot",
-      "uid" : "d93d15e9fc0c7afd",
+      "uid" : "8b97ae9acf2ee548",
       "parentUid" : "083b04d41fbb4c9297eb164c89fcd471",
       "status" : "passed",
       "time" : {
-        "start" : 1542638535216,
-        "stop" : 1542638535478,
-        "duration" : 262
+        "start" : 1542738001420,
+        "stop" : 1542738001942,
+        "duration" : 522
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "5a9d1b4fc4cb03b7",
+      "uid" : "2f3cd441694e9c5d",
       "parentUid" : "083b04d41fbb4c9297eb164c89fcd471",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542638535478,
-        "stop" : 1542638536114,
-        "duration" : 636
+        "start" : 1542738001942,
+        "stop" : 1542738002456,
+        "duration" : 514
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "083b04d41fbb4c9297eb164c89fcd471"
   }, {
     "name" : "test electric seat drive",
     "children" : [ {
       "name" : "Check checkboxes Электропривод сидений",
-      "uid" : "87353a86576c631e",
+      "uid" : "5083bdf45655a220",
       "parentUid" : "23b3c11e41dff984d9bf4e02a9ac6e9a",
       "status" : "passed",
       "time" : {
-        "start" : 1542638551998,
-        "stop" : 1542638555389,
-        "duration" : 3391
+        "start" : 1542738033829,
+        "stop" : 1542738036968,
+        "duration" : 3139
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check checkboxes Массаж",
-      "uid" : "1fb1b9a871473030",
+      "uid" : "a11798fd086a2ced",
       "parentUid" : "23b3c11e41dff984d9bf4e02a9ac6e9a",
       "status" : "passed",
       "time" : {
-        "start" : 1542638724265,
-        "stop" : 1542638727438,
-        "duration" : 3173
+        "start" : 1542738243571,
+        "stop" : 1542738246885,
+        "duration" : 3314
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "6ecee2764e2b5ca0",
+      "uid" : "45d96ce666b4f1ca",
       "parentUid" : "23b3c11e41dff984d9bf4e02a9ac6e9a",
       "status" : "passed",
       "time" : {
-        "start" : 1542638727439,
-        "stop" : 1542638741396,
-        "duration" : 13957
+        "start" : 1542738246886,
+        "stop" : 1542738256506,
+        "duration" : 9620
       },
       "flaky" : true,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "23b3c11e41dff984d9bf4e02a9ac6e9a"
   }, {
     "name" : "test materials fabric",
     "children" : [ {
       "name" : "Check checkboxes Ткань",
-      "uid" : "c50062d432a3a7d0",
+      "uid" : "2195c84d3c6e13ea",
       "parentUid" : "036a8ee9f1bd9f564b25978d302959c1",
       "status" : "passed",
       "time" : {
-        "start" : 1542638586057,
-        "stop" : 1542638589281,
-        "duration" : 3224
+        "start" : 1542738082444,
+        "stop" : 1542738086803,
+        "duration" : 4359
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "f25a22b907267ec9",
+      "uid" : "22c3e9836827effe",
       "parentUid" : "036a8ee9f1bd9f564b25978d302959c1",
       "status" : "passed",
       "time" : {
-        "start" : 1542638589282,
-        "stop" : 1542638601869,
-        "duration" : 12587
+        "start" : 1542738086803,
+        "stop" : 1542738098011,
+        "duration" : 11208
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "036a8ee9f1bd9f564b25978d302959c1"
   }, {
     "name" : "test materials leather",
     "children" : [ {
       "name" : "Check checkboxes Кожа",
-      "uid" : "28a133c203a91133",
+      "uid" : "f0e593c5c4246510",
       "parentUid" : "d5aa980802370dcf12e0f7a9c3942d21",
       "status" : "passed",
       "time" : {
-        "start" : 1542638620557,
-        "stop" : 1542638623465,
-        "duration" : 2908
+        "start" : 1542738128784,
+        "stop" : 1542738131181,
+        "duration" : 2397
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "4203e44ea41bbb69",
+      "uid" : "983fd3ae7b3b4448",
       "parentUid" : "d5aa980802370dcf12e0f7a9c3942d21",
       "status" : "passed",
       "time" : {
-        "start" : 1542638623465,
-        "stop" : 1542638636003,
-        "duration" : 12538
+        "start" : 1542738131182,
+        "stop" : 1542738141168,
+        "duration" : 9986
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "d5aa980802370dcf12e0f7a9c3942d21"
   }, {
     "name" : "test materials",
     "children" : [ {
       "name" : "check checkbox materials leather",
-      "uid" : "a9d1bba538bfc6b6",
+      "uid" : "383ef43317a48bed",
       "parentUid" : "614f39d5e87ea3cdfe0cd6138ed784f6",
       "status" : "skipped",
       "time" : {
-        "start" : 1542638643134,
-        "stop" : 1542638643135,
+        "start" : 1542738153061,
+        "stop" : 1542738153062,
         "duration" : 1
       },
       "flaky" : false,
@@ -2721,40 +2745,40 @@
     "name" : "test memory seats",
     "children" : [ {
       "name" : "Check checkboxes Память",
-      "uid" : "50e796263cb3a8f1",
+      "uid" : "abeeea8716c389cb",
       "parentUid" : "8e3d7ee63a85bcfa1c64352cbe1213b5",
       "status" : "passed",
       "time" : {
-        "start" : 1542638661742,
-        "stop" : 1542638665497,
-        "duration" : 3755
+        "start" : 1542738185791,
+        "stop" : 1542738189079,
+        "duration" : 3288
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "da937eb306b87ad0",
+      "uid" : "5ffb635f7a9d3318",
       "parentUid" : "8e3d7ee63a85bcfa1c64352cbe1213b5",
       "status" : "passed",
       "time" : {
-        "start" : 1542638665498,
-        "stop" : 1542638678042,
-        "duration" : 12544
+        "start" : 1542738189080,
+        "stop" : 1542738199082,
+        "duration" : 10002
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "8e3d7ee63a85bcfa1c64352cbe1213b5"
   }, {
     "name" : "test options",
     "children" : [ {
       "name" : "check checkbox electric drive",
-      "uid" : "4900e4c09149a66e",
+      "uid" : "41c14d97474b559a",
       "parentUid" : "43547b0663df0c5bd3cc7481ac113698",
       "status" : "skipped",
       "time" : {
-        "start" : 1542638685117,
-        "stop" : 1542638685118,
+        "start" : 1542738213702,
+        "stop" : 1542738213703,
         "duration" : 1
       },
       "flaky" : false,
@@ -2765,760 +2789,760 @@
     "name" : "test ventilation",
     "children" : [ {
       "name" : "Check checkboxes Вентиляция",
-      "uid" : "4743580977afa5d9",
+      "uid" : "284927ce1ecec53",
       "parentUid" : "f35ae172bba33a118911a0b9c0e37644",
       "status" : "passed",
       "time" : {
-        "start" : 1542638760742,
-        "stop" : 1542638764080,
-        "duration" : 3338
+        "start" : 1542738303649,
+        "stop" : 1542738307272,
+        "duration" : 3623
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "b3acf1f7f7262df8",
+      "uid" : "fa1be634aecd440f",
       "parentUid" : "f35ae172bba33a118911a0b9c0e37644",
       "status" : "passed",
       "time" : {
-        "start" : 1542638764081,
-        "stop" : 1542638777127,
-        "duration" : 13046
+        "start" : 1542738307273,
+        "stop" : 1542738316547,
+        "duration" : 9274
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "f35ae172bba33a118911a0b9c0e37644"
   }, {
     "name" : "test adaptive cruise control",
     "children" : [ {
       "name" : "Check checkbox Адаптивный круиз-контроль",
-      "uid" : "2c09d29cc8aa7402",
+      "uid" : "103ec8f5ac33dd0f",
       "parentUid" : "29afe42ec3e710887bb8af9da792ab9e",
       "status" : "passed",
       "time" : {
-        "start" : 1542638796677,
-        "stop" : 1542638799541,
-        "duration" : 2864
+        "start" : 1542738349182,
+        "stop" : 1542738352671,
+        "duration" : 3489
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail Адаптивный круиз-контроль",
-      "uid" : "e0f7a849ab2c179d",
+      "uid" : "394f51e1297edfa7",
       "parentUid" : "29afe42ec3e710887bb8af9da792ab9e",
       "status" : "passed",
       "time" : {
-        "start" : 1542638799542,
-        "stop" : 1542638802112,
-        "duration" : 2570
+        "start" : 1542738352672,
+        "stop" : 1542738355463,
+        "duration" : 2791
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "787eef12342afcba",
+      "uid" : "a2ed9048b98e3c20",
       "parentUid" : "29afe42ec3e710887bb8af9da792ab9e",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542638802113,
-        "stop" : 1542638802717,
-        "duration" : 604
+        "start" : 1542738355463,
+        "stop" : 1542738356009,
+        "duration" : 546
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "df7fee3d6a808d97",
+      "uid" : "205291af2c6a3260",
       "parentUid" : "29afe42ec3e710887bb8af9da792ab9e",
       "status" : "passed",
       "time" : {
-        "start" : 1542638802741,
-        "stop" : 1542638817669,
-        "duration" : 14928
+        "start" : 1542738356030,
+        "stop" : 1542738365357,
+        "duration" : 9327
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "29afe42ec3e710887bb8af9da792ab9e"
   }, {
     "name" : "test auto hold",
     "children" : [ {
       "name" : "Check checkbox Функция Auto-hold",
-      "uid" : "70d94166b399a3f8",
+      "uid" : "4d3dddfee0416cd7",
       "parentUid" : "4a9457425f86003a9a67a2fe99572f59",
       "status" : "passed",
       "time" : {
-        "start" : 1542638838464,
-        "stop" : 1542638841265,
-        "duration" : 2801
+        "start" : 1542738398278,
+        "stop" : 1542738400567,
+        "duration" : 2289
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail Функция Auto-hold",
-      "uid" : "106fc8e1821339a4",
+      "uid" : "9a89ac211fce9d97",
       "parentUid" : "4a9457425f86003a9a67a2fe99572f59",
       "status" : "passed",
       "time" : {
-        "start" : 1542638841266,
-        "stop" : 1542638843892,
-        "duration" : 2626
+        "start" : 1542738400568,
+        "stop" : 1542738403599,
+        "duration" : 3031
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "cd1cfcae83150cc8",
+      "uid" : "4e38838ad0670648",
       "parentUid" : "4a9457425f86003a9a67a2fe99572f59",
       "status" : "passed",
       "time" : {
-        "start" : 1542638843913,
-        "stop" : 1542638844579,
-        "duration" : 666
+        "start" : 1542738403622,
+        "stop" : 1542738404218,
+        "duration" : 596
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "28df9eb32087fd16",
+      "uid" : "5caa736d797b9981",
       "parentUid" : "4a9457425f86003a9a67a2fe99572f59",
       "status" : "passed",
       "time" : {
-        "start" : 1542638844599,
-        "stop" : 1542638857966,
-        "duration" : 13367
+        "start" : 1542738404240,
+        "stop" : 1542738414766,
+        "duration" : 10526
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "4a9457425f86003a9a67a2fe99572f59"
   }, {
     "name" : "test front assist",
     "children" : [ {
       "name" : "Check checkbox Система Front Assist",
-      "uid" : "db63d3affbd60aa5",
+      "uid" : "ba464f328a0ffdcf",
       "parentUid" : "8f5aaa031b329ce624c942058d234af1",
       "status" : "passed",
       "time" : {
-        "start" : 1542638877993,
-        "stop" : 1542638880601,
-        "duration" : 2608
+        "start" : 1542738443563,
+        "stop" : 1542738447254,
+        "duration" : 3691
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail Система Front Assist",
-      "uid" : "e2004711b0285665",
+      "uid" : "4819ae31d2996efb",
       "parentUid" : "8f5aaa031b329ce624c942058d234af1",
       "status" : "passed",
       "time" : {
-        "start" : 1542638880602,
-        "stop" : 1542638883435,
-        "duration" : 2833
+        "start" : 1542738447254,
+        "stop" : 1542738450679,
+        "duration" : 3425
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "e68f78b78ef2f0d0",
+      "uid" : "90954db564873b8d",
       "parentUid" : "8f5aaa031b329ce624c942058d234af1",
       "status" : "passed",
       "time" : {
-        "start" : 1542638883436,
-        "stop" : 1542638884000,
-        "duration" : 564
+        "start" : 1542738450699,
+        "stop" : 1542738451288,
+        "duration" : 589
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "752a70a13b4463b7",
+      "uid" : "9b8aa2658a019f47",
       "parentUid" : "8f5aaa031b329ce624c942058d234af1",
       "status" : "passed",
       "time" : {
-        "start" : 1542638884030,
-        "stop" : 1542638896809,
-        "duration" : 12779
+        "start" : 1542738451310,
+        "stop" : 1542738460933,
+        "duration" : 9623
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "8f5aaa031b329ce624c942058d234af1"
   }, {
     "name" : "test light assist",
     "children" : [ {
       "name" : "Check checkbox Система Light Assist",
-      "uid" : "c8baec22dfb2a2ef",
+      "uid" : "ccbb112fceca9e6c",
       "parentUid" : "b26c1ea9db8588714aebee4da9110f82",
       "status" : "passed",
       "time" : {
-        "start" : 1542638918766,
-        "stop" : 1542638921603,
-        "duration" : 2837
+        "start" : 1542738490080,
+        "stop" : 1542738492924,
+        "duration" : 2844
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail Система Light Assist",
-      "uid" : "1a12b0f5e1636ee2",
+      "uid" : "89c608bf5d721706",
       "parentUid" : "b26c1ea9db8588714aebee4da9110f82",
       "status" : "passed",
       "time" : {
-        "start" : 1542638921604,
-        "stop" : 1542638924152,
-        "duration" : 2548
+        "start" : 1542738492924,
+        "stop" : 1542738495704,
+        "duration" : 2780
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "ad6b1b826a2e13b4",
+      "uid" : "c4fab237ac3e61",
       "parentUid" : "b26c1ea9db8588714aebee4da9110f82",
       "status" : "passed",
       "time" : {
-        "start" : 1542638924186,
-        "stop" : 1542638924824,
-        "duration" : 638
+        "start" : 1542738495733,
+        "stop" : 1542738496281,
+        "duration" : 548
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "c65332f9f39b01e",
+      "uid" : "36eda693ee5ad530",
       "parentUid" : "b26c1ea9db8588714aebee4da9110f82",
       "status" : "passed",
       "time" : {
-        "start" : 1542638924838,
-        "stop" : 1542638937610,
-        "duration" : 12772
+        "start" : 1542738496294,
+        "stop" : 1542738507316,
+        "duration" : 11022
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "b26c1ea9db8588714aebee4da9110f82"
   }, {
     "name" : "test rain sensor",
     "children" : [ {
       "name" : "Check checkbox Датчик дождя",
-      "uid" : "78b831bfb3135b3f",
+      "uid" : "125adf9c9bb83719",
       "parentUid" : "9e997946f48e807093c76a5999d02678",
       "status" : "passed",
       "time" : {
-        "start" : 1542638956873,
-        "stop" : 1542638959548,
-        "duration" : 2675
+        "start" : 1542738541018,
+        "stop" : 1542738543844,
+        "duration" : 2826
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail Датчик дождя",
-      "uid" : "18226f930f70d11c",
+      "uid" : "9c3508de24275a9d",
       "parentUid" : "9e997946f48e807093c76a5999d02678",
       "status" : "passed",
       "time" : {
-        "start" : 1542638959549,
-        "stop" : 1542638961682,
-        "duration" : 2133
+        "start" : 1542738543844,
+        "stop" : 1542738546630,
+        "duration" : 2786
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "bb4af70fa01ad255",
+      "uid" : "5d92dcc0f25f6788",
       "parentUid" : "9e997946f48e807093c76a5999d02678",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542638961682,
-        "stop" : 1542638962255,
-        "duration" : 573
+        "start" : 1542738546661,
+        "stop" : 1542738547268,
+        "duration" : 607
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "8a72fc1fc1d0e1b7",
+      "uid" : "5ee5e3029cf492b2",
       "parentUid" : "9e997946f48e807093c76a5999d02678",
       "status" : "passed",
       "time" : {
-        "start" : 1542638962279,
-        "stop" : 1542638978151,
-        "duration" : 15872
+        "start" : 1542738547293,
+        "stop" : 1542738557211,
+        "duration" : 9918
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "9e997946f48e807093c76a5999d02678"
   }, {
     "name" : "screenshot page assistanse",
     "children" : [ {
       "name" : "take screenshot page assistanse",
-      "uid" : "c2614eaf9d495dff",
+      "uid" : "83ac6e0f88007b3d",
       "parentUid" : "07fbfd8f56c13378cceb0a086c5cad59",
       "status" : "passed",
       "time" : {
-        "start" : 1542639014462,
-        "stop" : 1542639014464,
-        "duration" : 2
+        "start" : 1542738588969,
+        "stop" : 1542738588973,
+        "duration" : 4
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "do second screenshot",
-      "uid" : "e68772325256f08f",
+      "uid" : "df78941c592dbfb1",
       "parentUid" : "07fbfd8f56c13378cceb0a086c5cad59",
       "status" : "passed",
       "time" : {
-        "start" : 1542639014466,
-        "stop" : 1542639014795,
-        "duration" : 329
+        "start" : 1542738588975,
+        "stop" : 1542738589326,
+        "duration" : 351
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "fd6638b390199ed4",
+      "uid" : "4ac57fcb7f385321",
       "parentUid" : "07fbfd8f56c13378cceb0a086c5cad59",
       "status" : "passed",
       "time" : {
-        "start" : 1542639014796,
-        "stop" : 1542639015374,
-        "duration" : 578
+        "start" : 1542738589326,
+        "stop" : 1542738589872,
+        "duration" : 546
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "07fbfd8f56c13378cceb0a086c5cad59"
   }, {
     "name" : "test side assist",
     "children" : [ {
       "name" : "Check checkbox Система Side Assist",
-      "uid" : "877f99ef30064291",
+      "uid" : "9cb691b3f140b709",
       "parentUid" : "d321a4817b51a24722997cdfed4ba7fc",
       "status" : "passed",
       "time" : {
-        "start" : 1542639034672,
-        "stop" : 1542639037627,
-        "duration" : 2955
+        "start" : 1542738622135,
+        "stop" : 1542738625791,
+        "duration" : 3656
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail Система Side Assist",
-      "uid" : "1e587608e8a0ac8",
+      "uid" : "624f0af0fb989e06",
       "parentUid" : "d321a4817b51a24722997cdfed4ba7fc",
       "status" : "passed",
       "time" : {
-        "start" : 1542639037628,
-        "stop" : 1542639040166,
-        "duration" : 2538
+        "start" : 1542738625793,
+        "stop" : 1542738628804,
+        "duration" : 3011
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "864c04ae34b885c1",
+      "uid" : "956685c713418227",
       "parentUid" : "d321a4817b51a24722997cdfed4ba7fc",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542639040226,
-        "stop" : 1542639040916,
-        "duration" : 690
+        "start" : 1542738628822,
+        "stop" : 1542738629409,
+        "duration" : 587
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "81e1a08e3cfbf2b5",
+      "uid" : "510092eb3216fcc9",
       "parentUid" : "d321a4817b51a24722997cdfed4ba7fc",
       "status" : "passed",
       "time" : {
-        "start" : 1542639040937,
-        "stop" : 1542639054637,
-        "duration" : 13700
+        "start" : 1542738629430,
+        "stop" : 1542738640390,
+        "duration" : 10960
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "d321a4817b51a24722997cdfed4ba7fc"
   }, {
     "name" : "test slider in page parking assistant",
     "children" : [ {
       "name" : "check slider in page parking assistant",
-      "uid" : "a1378c3383223877",
+      "uid" : "f1f4c75c258f8e8c",
       "parentUid" : "664329b1dd93c0510b7df8395b08cd08",
       "status" : "broken",
       "time" : {
-        "start" : 1542639074001,
-        "stop" : 1542639079735,
-        "duration" : 5734
+        "start" : 1542738671285,
+        "stop" : 1542738677098,
+        "duration" : 5813
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "664329b1dd93c0510b7df8395b08cd08"
   }, {
     "name" : "test area view",
     "children" : [ {
       "name" : "Check checkbox Система Area View",
-      "uid" : "df3bbdd6d44c45b8",
+      "uid" : "d22f547f7f5a8731",
       "parentUid" : "b97e1030d3f01314f7a604b69649d404",
       "status" : "passed",
       "time" : {
-        "start" : 1542639097265,
-        "stop" : 1542639100277,
-        "duration" : 3012
+        "start" : 1542738707760,
+        "stop" : 1542738710714,
+        "duration" : 2954
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Система Area View",
-      "uid" : "17ed4cf22e855ec2",
+      "uid" : "58f7db090075260",
       "parentUid" : "b97e1030d3f01314f7a604b69649d404",
       "status" : "passed",
       "time" : {
-        "start" : 1542639100278,
-        "stop" : 1542639102893,
-        "duration" : 2615
+        "start" : 1542738710714,
+        "stop" : 1542738713949,
+        "duration" : 3235
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "155943da1a4c52b",
+      "uid" : "9b092dbb7e1e50db",
       "parentUid" : "b97e1030d3f01314f7a604b69649d404",
       "status" : "passed",
       "time" : {
-        "start" : 1542639102919,
-        "stop" : 1542639103507,
-        "duration" : 588
+        "start" : 1542738713949,
+        "stop" : 1542738714494,
+        "duration" : 545
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "5d124992dc4b726f",
+      "uid" : "949d65f4a27084e7",
       "parentUid" : "b97e1030d3f01314f7a604b69649d404",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1542639103529,
-        "stop" : 1542639112617,
-        "duration" : 9088
+        "start" : 1542738714516,
+        "stop" : 1542738724586,
+        "duration" : 10070
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "b97e1030d3f01314f7a604b69649d404"
   }, {
     "name" : "test easy-open",
     "children" : [ {
       "name" : "Check checkbox Система Easy Open",
-      "uid" : "34b18f002c137a08",
+      "uid" : "8c48e6810b1a68c2",
       "parentUid" : "dcbea944917e1b57e0b5e7b7afcd905e",
       "status" : "passed",
       "time" : {
-        "start" : 1542639136751,
-        "stop" : 1542639140263,
-        "duration" : 3512
+        "start" : 1542738754560,
+        "stop" : 1542738758617,
+        "duration" : 4057
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Система Easy Open",
-      "uid" : "aacc398f49bd17f3",
+      "uid" : "70d0d714c3ddf346",
       "parentUid" : "dcbea944917e1b57e0b5e7b7afcd905e",
       "status" : "passed",
       "time" : {
-        "start" : 1542639140264,
-        "stop" : 1542639142857,
-        "duration" : 2593
+        "start" : 1542738758624,
+        "stop" : 1542738761398,
+        "duration" : 2774
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "712bb126a08624a6",
+      "uid" : "561c219d545c5333",
       "parentUid" : "dcbea944917e1b57e0b5e7b7afcd905e",
       "status" : "passed",
       "time" : {
-        "start" : 1542639142882,
-        "stop" : 1542639143627,
-        "duration" : 745
+        "start" : 1542738761422,
+        "stop" : 1542738762013,
+        "duration" : 591
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "6e034cd51582e48b",
+      "uid" : "26fe98ae36132157",
       "parentUid" : "dcbea944917e1b57e0b5e7b7afcd905e",
       "status" : "passed",
       "time" : {
-        "start" : 1542639143652,
-        "stop" : 1542639162951,
-        "duration" : 19299
+        "start" : 1542738762044,
+        "stop" : 1542738771855,
+        "duration" : 9811
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "dcbea944917e1b57e0b5e7b7afcd905e"
   }, {
     "name" : "test electronic tailgate openings",
     "children" : [ {
       "name" : "Check checkbox Электропривод двери багажного отделения",
-      "uid" : "2e7e94cfd8112253",
+      "uid" : "b3709f9ea67ca77c",
       "parentUid" : "9d46b669eebd813bda7f67fe6785937d",
       "status" : "passed",
       "time" : {
-        "start" : 1542639187420,
-        "stop" : 1542639190679,
-        "duration" : 3259
+        "start" : 1542738806376,
+        "stop" : 1542738808472,
+        "duration" : 2096
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Электропривод двери багажного отделения",
-      "uid" : "b534bf7839f14b2a",
+      "uid" : "4977d4bfd6d2fc0a",
       "parentUid" : "9d46b669eebd813bda7f67fe6785937d",
       "status" : "passed",
       "time" : {
-        "start" : 1542639190679,
-        "stop" : 1542639193162,
-        "duration" : 2483
+        "start" : 1542738808473,
+        "stop" : 1542738816521,
+        "duration" : 8048
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "6b4c4b7cfd95f70d",
+      "uid" : "dc0daa981869977",
       "parentUid" : "9d46b669eebd813bda7f67fe6785937d",
       "status" : "passed",
       "time" : {
-        "start" : 1542639193206,
-        "stop" : 1542639193798,
-        "duration" : 592
+        "start" : 1542738816522,
+        "stop" : 1542738817063,
+        "duration" : 541
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "e9ae6047396df066",
+      "uid" : "13ceb95ef09fd674",
       "parentUid" : "9d46b669eebd813bda7f67fe6785937d",
       "status" : "passed",
       "time" : {
-        "start" : 1542639193825,
-        "stop" : 1542639232198,
-        "duration" : 38373
+        "start" : 1542738817084,
+        "stop" : 1542738826552,
+        "duration" : 9468
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "9d46b669eebd813bda7f67fe6785937d"
   }, {
     "name" : "test keyless-access",
     "children" : [ {
       "name" : "Check checkbox Система Keyless Access",
-      "uid" : "6a292369af6d19bd",
+      "uid" : "695286942f820aa9",
       "parentUid" : "785c80badf22ab9da5b9e6c8b8cc70b5",
       "status" : "passed",
       "time" : {
-        "start" : 1542639259200,
-        "stop" : 1542639262322,
-        "duration" : 3122
+        "start" : 1542738857143,
+        "stop" : 1542738860539,
+        "duration" : 3396
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Система Keyless Access",
-      "uid" : "e2731c388ec88171",
+      "uid" : "84bfb35fa96db2b4",
       "parentUid" : "785c80badf22ab9da5b9e6c8b8cc70b5",
       "status" : "passed",
       "time" : {
-        "start" : 1542639262323,
-        "stop" : 1542639264946,
-        "duration" : 2623
+        "start" : 1542738860540,
+        "stop" : 1542738863062,
+        "duration" : 2522
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "47a987a2f81527f",
+      "uid" : "9ba23bf3bf6e774e",
       "parentUid" : "785c80badf22ab9da5b9e6c8b8cc70b5",
       "status" : "passed",
       "time" : {
-        "start" : 1542639264946,
-        "stop" : 1542639266284,
-        "duration" : 1338
+        "start" : 1542738863062,
+        "stop" : 1542738863630,
+        "duration" : 568
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "d816a147924e2f22",
+      "uid" : "3dd07bb87e5b6412",
       "parentUid" : "785c80badf22ab9da5b9e6c8b8cc70b5",
       "status" : "passed",
       "time" : {
-        "start" : 1542639266284,
-        "stop" : 1542639283555,
-        "duration" : 17271
+        "start" : 1542738863652,
+        "stop" : 1542738873952,
+        "duration" : 10300
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "785c80badf22ab9da5b9e6c8b8cc70b5"
   }, {
     "name" : "test mirror drive",
     "children" : [ {
       "name" : "Check checkbox Электропривод зеркал заднего вида",
-      "uid" : "611f53cf021d9ef8",
+      "uid" : "6c1f8c516ff5e47e",
       "parentUid" : "33059d645de1a987c05ab7d2132328ba",
       "status" : "passed",
       "time" : {
-        "start" : 1542639304181,
-        "stop" : 1542639306715,
-        "duration" : 2534
+        "start" : 1542738906290,
+        "stop" : 1542738910495,
+        "duration" : 4205
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Электропривод зеркал заднего вида",
-      "uid" : "787d9319b6e97b59",
+      "uid" : "bede5ac5b64699bb",
       "parentUid" : "33059d645de1a987c05ab7d2132328ba",
       "status" : "passed",
       "time" : {
-        "start" : 1542639306716,
-        "stop" : 1542639309105,
-        "duration" : 2389
+        "start" : 1542738910495,
+        "stop" : 1542738913164,
+        "duration" : 2669
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "6d9ecea719c32b93",
+      "uid" : "cb89219dc1a008ee",
       "parentUid" : "33059d645de1a987c05ab7d2132328ba",
       "status" : "passed",
       "time" : {
-        "start" : 1542639309106,
-        "stop" : 1542639309718,
-        "duration" : 612
+        "start" : 1542738913164,
+        "stop" : 1542738913706,
+        "duration" : 542
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "2305a8ed1ebfa219",
+      "uid" : "2d265720d10bb747",
       "parentUid" : "33059d645de1a987c05ab7d2132328ba",
       "status" : "passed",
       "time" : {
-        "start" : 1542639309737,
-        "stop" : 1542639321517,
-        "duration" : 11780
+        "start" : 1542738913723,
+        "stop" : 1542738920354,
+        "duration" : 6631
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "33059d645de1a987c05ab7d2132328ba"
   }, {
     "name" : "test Rear View Camera",
     "children" : [ {
       "name" : "Check checkbox Камера заднего вида",
-      "uid" : "2c0e9cd6da46271b",
+      "uid" : "4310a603f48500ee",
       "parentUid" : "8608763282fce702e66e2788ced90b09",
       "status" : "passed",
       "time" : {
-        "start" : 1542639343167,
-        "stop" : 1542639345803,
-        "duration" : 2636
+        "start" : 1542738952804,
+        "stop" : 1542738955704,
+        "duration" : 2900
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail about Камера заднего вида",
-      "uid" : "3fcaf1fa25952137",
+      "uid" : "594b81f20b796536",
       "parentUid" : "8608763282fce702e66e2788ced90b09",
       "status" : "passed",
       "time" : {
-        "start" : 1542639345803,
-        "stop" : 1542639347706,
-        "duration" : 1903
+        "start" : 1542738955705,
+        "stop" : 1542738958024,
+        "duration" : 2319
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "db248acf80648fe",
+      "uid" : "92e4bd169adf24ce",
       "parentUid" : "8608763282fce702e66e2788ced90b09",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542639347732,
-        "stop" : 1542639348583,
-        "duration" : 851
+        "start" : 1542738958056,
+        "stop" : 1542738958633,
+        "duration" : 577
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "20cc7608720b0ffc",
+      "uid" : "cf1095d0dad834f3",
       "parentUid" : "8608763282fce702e66e2788ced90b09",
       "status" : "passed",
       "time" : {
-        "start" : 1542639348601,
-        "stop" : 1542639384887,
-        "duration" : 36286
+        "start" : 1542738958646,
+        "stop" : 1542738968229,
+        "duration" : 9583
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "8608763282fce702e66e2788ced90b09"
   }, {
     "name" : "screenshot page comfort",
     "children" : [ {
       "name" : "take screenshot page comfort",
-      "uid" : "39b021161ff4be65",
+      "uid" : "a7ffc8a5d836be4f",
       "parentUid" : "e192559ed6afc35201a40f1e024972bd",
       "status" : "passed",
       "time" : {
-        "start" : 1542639404197,
-        "stop" : 1542639404198,
-        "duration" : 1
+        "start" : 1542738996848,
+        "stop" : 1542738996853,
+        "duration" : 5
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "do second screenshot",
-      "uid" : "f420382cb6411593",
+      "uid" : "75bf05e75f49baf8",
       "parentUid" : "e192559ed6afc35201a40f1e024972bd",
       "status" : "passed",
       "time" : {
-        "start" : 1542639404202,
-        "stop" : 1542639404639,
-        "duration" : 437
+        "start" : 1542738996855,
+        "stop" : 1542738998189,
+        "duration" : 1334
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "16d664ffaacf02e4",
+      "uid" : "22bb00216c87592a",
       "parentUid" : "e192559ed6afc35201a40f1e024972bd",
       "status" : "passed",
       "time" : {
-        "start" : 1542639404640,
-        "stop" : 1542639405313,
-        "duration" : 673
+        "start" : 1542738998192,
+        "stop" : 1542738998738,
+        "duration" : 546
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "e192559ed6afc35201a40f1e024972bd"
   }, {
     "name" : "test tire pressure sensor",
     "children" : [ {
       "name" : "Сheck checkbox tire pressure sensor",
-      "uid" : "df50b1f24026063b",
+      "uid" : "5b996703f8934900",
       "parentUid" : "66082b72f5f65eec80d16f1db30f6062",
       "status" : "skipped",
       "time" : {
-        "start" : 1542639410614,
-        "stop" : 1542639410614,
+        "start" : 1542739008583,
+        "stop" : 1542739008583,
         "duration" : 0
       },
       "flaky" : false,
@@ -3529,437 +3553,437 @@
     "name" : "test blinds",
     "children" : [ {
       "name" : "Check checkbox Шторки",
-      "uid" : "75afc472ac32a010",
+      "uid" : "967f599c097e76e4",
       "parentUid" : "a9cfba5206e560a7472eaa9f1739ca81",
       "status" : "passed",
       "time" : {
-        "start" : 1542639430636,
-        "stop" : 1542639434905,
-        "duration" : 4269
+        "start" : 1542739035815,
+        "stop" : 1542739039773,
+        "duration" : 3958
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "3b85f80f83c328a8",
+      "uid" : "def74213a64f539b",
       "parentUid" : "a9cfba5206e560a7472eaa9f1739ca81",
       "status" : "passed",
       "time" : {
-        "start" : 1542639434906,
-        "stop" : 1542639449471,
-        "duration" : 14565
+        "start" : 1542739039774,
+        "stop" : 1542739049733,
+        "duration" : 9959
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "a9cfba5206e560a7472eaa9f1739ca81"
   }, {
     "name" : "test checkboxs page security",
     "children" : [ {
       "name" : "Check all checkbox in page security",
-      "uid" : "a295a318fd353813",
+      "uid" : "13610f285b93a48c",
       "parentUid" : "6f58bf7a97d56fa4a45dbfff2c281ba5",
       "status" : "passed",
       "time" : {
-        "start" : 1542639468637,
-        "stop" : 1542639477584,
-        "duration" : 8947
+        "start" : 1542739082603,
+        "stop" : 1542739090424,
+        "duration" : 7821
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "6f58bf7a97d56fa4a45dbfff2c281ba5"
   }, {
     "name" : "test front side",
     "children" : [ {
       "name" : "Check checkbox Передние боковые",
-      "uid" : "891e47b4699cbc6e",
+      "uid" : "260a77881ca9a85",
       "parentUid" : "bcecce88d2de0d634b810c82c2b0db07",
       "status" : "passed",
       "time" : {
-        "start" : 1542639497942,
-        "stop" : 1542639500749,
-        "duration" : 2807
+        "start" : 1542739120687,
+        "stop" : 1542739123988,
+        "duration" : 3301
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "96fb91eea237f44e",
+      "uid" : "e60787d6bdd0055a",
       "parentUid" : "bcecce88d2de0d634b810c82c2b0db07",
       "status" : "passed",
       "time" : {
-        "start" : 1542639500750,
-        "stop" : 1542639512194,
-        "duration" : 11444
+        "start" : 1542739123988,
+        "stop" : 1542739133671,
+        "duration" : 9683
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "bcecce88d2de0d634b810c82c2b0db07"
   }, {
     "name" : "test frontal",
     "children" : [ {
       "name" : "Check checkbox Фронтальные",
-      "uid" : "50f4efa4ea6841ed",
+      "uid" : "3f5abbfa89ddfd4a",
       "parentUid" : "e1a702bba87c23c09b1e908299d5f5db",
       "status" : "passed",
       "time" : {
-        "start" : 1542639531205,
-        "stop" : 1542639533910,
-        "duration" : 2705
+        "start" : 1542739165925,
+        "stop" : 1542739168371,
+        "duration" : 2446
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "88ea769deb635e35",
+      "uid" : "e4eaef257a80bb15",
       "parentUid" : "e1a702bba87c23c09b1e908299d5f5db",
       "status" : "passed",
       "time" : {
-        "start" : 1542639533911,
-        "stop" : 1542639543970,
-        "duration" : 10059
+        "start" : 1542739168372,
+        "stop" : 1542739174598,
+        "duration" : 6226
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "e1a702bba87c23c09b1e908299d5f5db"
   }, {
     "name" : "test lap",
     "children" : [ {
       "name" : "Check checkbox Колени",
-      "uid" : "ef6e0f58fba1d2f2",
+      "uid" : "bb4719ba257021af",
       "parentUid" : "b9d964cb4c344ef3e455a0cee88be0c5",
       "status" : "passed",
       "time" : {
-        "start" : 1542639565792,
-        "stop" : 1542639568924,
-        "duration" : 3132
+        "start" : 1542739202721,
+        "stop" : 1542739205227,
+        "duration" : 2506
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "737d368d4e0d5611",
+      "uid" : "4f5fec09495ec969",
       "parentUid" : "b9d964cb4c344ef3e455a0cee88be0c5",
       "status" : "passed",
       "time" : {
-        "start" : 1542639568925,
-        "stop" : 1542639597362,
-        "duration" : 28437
+        "start" : 1542739205228,
+        "stop" : 1542739214898,
+        "duration" : 9670
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "b9d964cb4c344ef3e455a0cee88be0c5"
   }, {
     "name" : "test rear side",
     "children" : [ {
       "name" : "Check checkbox Задние боковые",
-      "uid" : "2f3706ee551b66a5",
+      "uid" : "f783679d8b746e75",
       "parentUid" : "1b6d71f7c5a464e02048ee55a49a28c5",
       "status" : "passed",
       "time" : {
-        "start" : 1542639616969,
-        "stop" : 1542639620079,
-        "duration" : 3110
+        "start" : 1542739247914,
+        "stop" : 1542739251086,
+        "duration" : 3172
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "dcc4ad165c50d981",
+      "uid" : "2e77f9bd26528911",
       "parentUid" : "1b6d71f7c5a464e02048ee55a49a28c5",
       "status" : "passed",
       "time" : {
-        "start" : 1542639620080,
-        "stop" : 1542639633329,
-        "duration" : 13249
+        "start" : 1542739251087,
+        "stop" : 1542739260184,
+        "duration" : 9097
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "1b6d71f7c5a464e02048ee55a49a28c5"
   }, {
     "name" : "screenshot page security",
     "children" : [ {
       "name" : "take screenshot page comfort",
-      "uid" : "f4fc44ebf921a2a",
+      "uid" : "2be866ba9d13f9c8",
       "parentUid" : "5bc946dc3d6498bec7963d178c2e67eb",
       "status" : "passed",
       "time" : {
-        "start" : 1542639655474,
-        "stop" : 1542639655477,
-        "duration" : 3
+        "start" : 1542739293486,
+        "stop" : 1542739293487,
+        "duration" : 1
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "do second screenshot",
-      "uid" : "e0880b5988319212",
+      "uid" : "66f427dc29fc695",
       "parentUid" : "5bc946dc3d6498bec7963d178c2e67eb",
       "status" : "passed",
       "time" : {
-        "start" : 1542639655479,
-        "stop" : 1542639656010,
-        "duration" : 531
+        "start" : 1542739293488,
+        "stop" : 1542739294720,
+        "duration" : 1232
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "4f2400433d7dcf6f",
+      "uid" : "f54faafc8e3889c2",
       "parentUid" : "5bc946dc3d6498bec7963d178c2e67eb",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542639656011,
-        "stop" : 1542639656622,
-        "duration" : 611
+        "start" : 1542739294721,
+        "stop" : 1542739295278,
+        "duration" : 557
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "5bc946dc3d6498bec7963d178c2e67eb"
   }, {
     "name" : "test heated mirrors",
     "children" : [ {
       "name" : "Check checkbox Подогрев зеркал",
-      "uid" : "3a6e1470f65ded2",
+      "uid" : "608853e2e0b3db91",
       "parentUid" : "4df4a6f09b55dcc1a50edac79396ad6b",
       "status" : "passed",
       "time" : {
-        "start" : 1542639674496,
-        "stop" : 1542639677948,
-        "duration" : 3452
+        "start" : 1542739347478,
+        "stop" : 1542739349713,
+        "duration" : 2235
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail Подогрев зеркал",
-      "uid" : "be3ceaf1353ba2b9",
+      "uid" : "90ab4cd471ebace5",
       "parentUid" : "4df4a6f09b55dcc1a50edac79396ad6b",
       "status" : "passed",
       "time" : {
-        "start" : 1542639677948,
-        "stop" : 1542639680070,
-        "duration" : 2122
+        "start" : 1542739349713,
+        "stop" : 1542739353187,
+        "duration" : 3474
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "7a15e2f3a8e2e3ab",
+      "uid" : "bc4455ec83a4dbd4",
       "parentUid" : "4df4a6f09b55dcc1a50edac79396ad6b",
       "status" : "passed",
       "time" : {
-        "start" : 1542639680070,
-        "stop" : 1542639680732,
-        "duration" : 662
+        "start" : 1542739353205,
+        "stop" : 1542739353759,
+        "duration" : 554
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "328fa0f90c00372c",
+      "uid" : "5d6b7a60a64896",
       "parentUid" : "4df4a6f09b55dcc1a50edac79396ad6b",
       "status" : "passed",
       "time" : {
-        "start" : 1542639680760,
-        "stop" : 1542639691744,
-        "duration" : 10984
+        "start" : 1542739353778,
+        "stop" : 1542739360587,
+        "duration" : 6809
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "4df4a6f09b55dcc1a50edac79396ad6b"
   }, {
     "name" : "test heated heated windscreen",
     "children" : [ {
       "name" : "Check checkbox Подогрев лобового стекла",
-      "uid" : "52c43f2ed25b9ccb",
+      "uid" : "3697ef84bedd01c4",
       "parentUid" : "39d67d04b5e98775a5e7861c31a01ba8",
       "status" : "passed",
       "time" : {
-        "start" : 1542639801668,
-        "stop" : 1542639804691,
-        "duration" : 3023
+        "start" : 1542739443230,
+        "stop" : 1542739445764,
+        "duration" : 2534
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail Подогрев лобового стекла",
-      "uid" : "9d911859b22272ef",
+      "uid" : "62f96f7ea37a8454",
       "parentUid" : "39d67d04b5e98775a5e7861c31a01ba8",
       "status" : "passed",
       "time" : {
-        "start" : 1542639804692,
-        "stop" : 1542639807570,
-        "duration" : 2878
+        "start" : 1542739445764,
+        "stop" : 1542739449176,
+        "duration" : 3412
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "a3f3fa02a20bcf8c",
+      "uid" : "48535945b263867b",
       "parentUid" : "39d67d04b5e98775a5e7861c31a01ba8",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542639807570,
-        "stop" : 1542639808280,
-        "duration" : 710
+        "start" : 1542739449190,
+        "stop" : 1542739449838,
+        "duration" : 648
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "c5b7d053f57e40c8",
+      "uid" : "8afc91a2732b654",
       "parentUid" : "39d67d04b5e98775a5e7861c31a01ba8",
       "status" : "passed",
       "time" : {
-        "start" : 1542639808297,
-        "stop" : 1542639825246,
-        "duration" : 16949
+        "start" : 1542739449862,
+        "stop" : 1542739461556,
+        "duration" : 11694
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "39d67d04b5e98775a5e7861c31a01ba8"
   }, {
     "name" : "test heated Parking heater",
     "children" : [ {
       "name" : "Check checkbox heated Стояночный отопитель",
-      "uid" : "af9f48126f47c7b6",
+      "uid" : "9e85bc9c0d0dd752",
       "parentUid" : "87dd6227e5b003d5d6ae1273db1cc1b7",
       "status" : "passed",
       "time" : {
-        "start" : 1542639845340,
-        "stop" : 1542639848211,
-        "duration" : 2871
+        "start" : 1542739492391,
+        "stop" : 1542739496384,
+        "duration" : 3993
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check more in detail Стояночный отопитель",
-      "uid" : "a894dd13b38921f4",
+      "uid" : "f777fe11fe8df615",
       "parentUid" : "87dd6227e5b003d5d6ae1273db1cc1b7",
       "status" : "passed",
       "time" : {
-        "start" : 1542639848212,
-        "stop" : 1542639850624,
-        "duration" : 2412
+        "start" : 1542739496385,
+        "stop" : 1542739499168,
+        "duration" : 2783
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Compare screenshots",
-      "uid" : "f7c6fa8f15c04b0e",
+      "uid" : "6a08cd7fda283fcd",
       "parentUid" : "87dd6227e5b003d5d6ae1273db1cc1b7",
-      "status" : "passed",
+      "status" : "failed",
       "time" : {
-        "start" : 1542639850650,
-        "stop" : 1542639851436,
-        "duration" : 786
+        "start" : 1542739499201,
+        "stop" : 1542739499763,
+        "duration" : 562
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "Check the equipment in detail",
-      "uid" : "2503374ed9af6691",
+      "uid" : "a11f4bf8dd277921",
       "parentUid" : "87dd6227e5b003d5d6ae1273db1cc1b7",
       "status" : "passed",
       "time" : {
-        "start" : 1542639851453,
-        "stop" : 1542639863840,
-        "duration" : 12387
+        "start" : 1542739499782,
+        "stop" : 1542739510375,
+        "duration" : 10593
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "87dd6227e5b003d5d6ae1273db1cc1b7"
   }, {
     "name" : "screenshot page winter package",
     "children" : [ {
       "name" : "take screenshot page winter package",
-      "uid" : "48bbfec3ce732016",
+      "uid" : "1407aef3e5e8bd07",
       "parentUid" : "13dffa2a7b6e6052986d9f0cc18846f4",
       "status" : "passed",
       "time" : {
-        "start" : 1542639882418,
-        "stop" : 1542639882421,
-        "duration" : 3
+        "start" : 1542739564769,
+        "stop" : 1542739564770,
+        "duration" : 1
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "do second screenshot",
-      "uid" : "f80b9034aa3c09f7",
+      "uid" : "fa8e18c67a54ae44",
       "parentUid" : "13dffa2a7b6e6052986d9f0cc18846f4",
       "status" : "passed",
       "time" : {
-        "start" : 1542639882422,
-        "stop" : 1542639882785,
-        "duration" : 363
+        "start" : 1542739564770,
+        "stop" : 1542739565122,
+        "duration" : 352
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     }, {
       "name" : "compare screenshots",
-      "uid" : "364dd7bdfee25cc7",
+      "uid" : "f21ce579928f615a",
       "parentUid" : "13dffa2a7b6e6052986d9f0cc18846f4",
       "status" : "passed",
       "time" : {
-        "start" : 1542639882785,
-        "stop" : 1542639883354,
-        "duration" : 569
+        "start" : 1542739565123,
+        "stop" : 1542739565681,
+        "duration" : 558
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "13dffa2a7b6e6052986d9f0cc18846f4"
   }, {
     "name" : "test slider in page winter package",
     "children" : [ {
       "name" : "check slider in page winter package",
-      "uid" : "b7505a1b2e6ef8ad",
+      "uid" : "2122c6196672cf75",
       "parentUid" : "c80b36a5a9ff1eea8245d4b8e2420baf",
-      "status" : "passed",
+      "status" : "broken",
       "time" : {
-        "start" : 1542639898770,
-        "stop" : 1542639900755,
-        "duration" : 1985
+        "start" : 1542739597119,
+        "stop" : 1542739602869,
+        "duration" : 5750
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "c80b36a5a9ff1eea8245d4b8e2420baf"
   }, {
     "name" : "my website should always look the same",
     "children" : [ {
       "name" : "header should look the same",
-      "uid" : "61de9a06cdec44a9",
+      "uid" : "42b7715057bde82c",
       "parentUid" : "7fd47fec84e9f663516d6a525567ea48",
       "status" : "passed",
       "time" : {
-        "start" : 1542639906181,
-        "stop" : 1542639911874,
-        "duration" : 5693
+        "start" : 1542739612757,
+        "stop" : 1542739625288,
+        "duration" : 12531
       },
       "flaky" : false,
-      "parameters" : [ "chrome" ]
+      "parameters" : [ "firefox" ]
     } ],
     "uid" : "7fd47fec84e9f663516d6a525567ea48"
   }, {
     "name" : "smoke screenshot test save",
     "children" : [ {
       "name" : "filter-model",
-      "uid" : "e50ef51fec49c3c6",
+      "uid" : "3837c6dfc1ce8651",
       "parentUid" : "cde9c71f2c707a409324315b1d4fbb89",
       "status" : "skipped",
       "time" : {
-        "start" : 1542639917256,
-        "stop" : 1542639917256,
-        "duration" : 0
+        "start" : 1542739633649,
+        "stop" : 1542739633650,
+        "duration" : 1
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -3969,37 +3993,37 @@
     "name" : "screenshots-exterior",
     "children" : [ {
       "name" : "Filter-seats",
-      "uid" : "1c459083f0024962",
+      "uid" : "c10adbaf2764ca01",
       "parentUid" : "5b12192407b578fcdb8b6753431c8706",
       "status" : "skipped",
       "time" : {
-        "start" : 1542639921130,
-        "stop" : 1542639921131,
-        "duration" : 1
+        "start" : 1542739643639,
+        "stop" : 1542739643642,
+        "duration" : 3
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "filter-options",
-      "uid" : "ec17288554c7f33b",
+      "uid" : "c234ad76d909ce94",
       "parentUid" : "5b12192407b578fcdb8b6753431c8706",
       "status" : "skipped",
       "time" : {
-        "start" : 1542639928741,
-        "stop" : 1542639928742,
+        "start" : 1542739661890,
+        "stop" : 1542739661891,
         "duration" : 1
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "Filter-disks",
-      "uid" : "3cc5b12738e23278",
+      "uid" : "65cbf291d29b39e",
       "parentUid" : "5b12192407b578fcdb8b6753431c8706",
       "status" : "skipped",
       "time" : {
-        "start" : 1542639936053,
-        "stop" : 1542639936054,
-        "duration" : 1
+        "start" : 1542739680566,
+        "stop" : 1542739680568,
+        "duration" : 2
       },
       "flaky" : false,
       "parameters" : [ ]
@@ -4009,29 +4033,57 @@
     "name" : "screenshots-options",
     "children" : [ {
       "name" : "Filter-options-assistants",
-      "uid" : "e9c92c6b5f67c4da",
+      "uid" : "569826226145d5b7",
       "parentUid" : "19311a522342a40194d4978ee8424196",
       "status" : "skipped",
       "time" : {
-        "start" : 1542639924878,
-        "stop" : 1542639924879,
+        "start" : 1542739652865,
+        "stop" : 1542739652866,
         "duration" : 1
       },
       "flaky" : false,
       "parameters" : [ ]
     }, {
       "name" : "Filter-options-winter package",
-      "uid" : "2589d667734fd038",
+      "uid" : "463e0127ef02e85b",
       "parentUid" : "19311a522342a40194d4978ee8424196",
       "status" : "skipped",
       "time" : {
-        "start" : 1542639932346,
-        "stop" : 1542639932346,
-        "duration" : 0
+        "start" : 1542739671175,
+        "stop" : 1542739671176,
+        "duration" : 1
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
     "uid" : "19311a522342a40194d4978ee8424196"
+  }, {
+    "name" : "test login up",
+    "children" : [ {
+      "name" : "Go to personal account page",
+      "uid" : "66aaee424a5f12bc",
+      "parentUid" : "15a65c865f15becc8d21174ed6b6e16c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542739710298,
+        "stop" : 1542739714928,
+        "duration" : 4630
+      },
+      "flaky" : false,
+      "parameters" : [ "firefox" ]
+    }, {
+      "name" : "Enter user data",
+      "uid" : "b3484921b5c1572c",
+      "parentUid" : "15a65c865f15becc8d21174ed6b6e16c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1542739714929,
+        "stop" : 1542739718616,
+        "duration" : 3687
+      },
+      "flaky" : false,
+      "parameters" : [ "firefox" ]
+    } ],
+    "uid" : "15a65c865f15becc8d21174ed6b6e16c"
   } ]
 }

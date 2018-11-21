@@ -3,14 +3,7 @@
 
 describe.skip('smoke screenshot test save', () => {
     before(() => {
-        browser.windowHandleMaximize ();
-        // переходим на страницу
-        browser.url('https://vw.kodix.ru');
-        // скрываем раздел Фильтр
-        const firstFilter = browser.waitForVisible('.avn008_overlay');
-        if(firstFilter === false) {
-            browser.click('.avn003_column-left');
-        }
+        browser.helpers.openSite();
     });
     // скриншот фильтр-модель
     it('filter-model', () => {
@@ -32,7 +25,7 @@ describe.skip('smoke screenshot test save', () => {
         // переходим на страницу двигатель
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаем загрузки елементов
-        browser.waitForVisible('.avn008_engine__card-image');
+        browser.waitForVisible('.grid_m_2 img');
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/mainFilterPages/enhine.png');
         expect(screen).to.not.equal(null);
