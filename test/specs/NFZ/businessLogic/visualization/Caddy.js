@@ -2,7 +2,7 @@ describe('test screenshots cars', () => {
     let nameCar;
     before('open page filter', () => {
         // делаем размер окна браузера
-        browser.windowHandleSize ({width: 1920, height: 1080});
+        browser.windowHandleSize ({width: 1152, height: 864});
         // переходим на страницу
         browser.url('https://nfz.kodix.ru');
         // открываем фильтр
@@ -52,7 +52,7 @@ describe('test screenshots cars', () => {
                 // ждём появления картинки
                 browser.waitForVisible('.preview_img img');
                 // делаем скриншот страницы и сохраняем в папку
-                var screen = browser.saveScreenshot(`./screenshotModel/versionOne/size1920х1080/${nameCar}-${nameEquipment}.png`);
+                var screen = browser.saveScreenshot(`./screenshotModel/versionToo/size1152x864/${nameCar}-${nameEquipment}.png`);
                 expect(screen).to.not.equal(null);
 
                 // возвращаемся в фильтр
