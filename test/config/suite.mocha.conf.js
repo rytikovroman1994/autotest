@@ -96,26 +96,26 @@ exports.config = {
           //     // ],
           // },
 
-          {
-              browserName: 'chrome',
-              version: '70.0.3538.102',
-              maxInstances: '1',
-              seleniumProtocol: "WebDriver",
-              // specs: [
-              //     './test/specs/*.js'
-              // ],
-        },
+        //   {
+        //       browserName: 'chrome',
+        //       version: '70.0.3538.102',
+        //       maxInstances: '1',
+        //       seleniumProtocol: "WebDriver",
+        //       // specs: [
+        //       //     './test/specs/*.js'
+        //       // ],
+        // },
 
-          // {
-          //     browserName: 'firefox',
-          //     version: '63.0.1',
-          //     maxInstances: '1',
-          //     marionette: true,
-          //     //build: process.env.TRAVIS_BUILD_NUMBER,
-          //     // specs: [
-          //     //     './test/specs/sampe*.js'
-          //     // ],
-          // },
+          {
+              browserName: 'firefox',
+              version: '63.0.1',
+              maxInstances: '1',
+              marionette: true,
+              //build: process.env.TRAVIS_BUILD_NUMBER,
+              // specs: [
+              //     './test/specs/sampe*.js'
+              // ],
+          },
 
         //   {
         //       browserName: 'firefox',
@@ -206,7 +206,7 @@ exports.config = {
     // e.g. using promises you can set the sync option to false.
     // path: '/wd/hub',
     // maxSession: 1,
-    // host: '192.168.99.100',
+    host: '192.168.99.100',
     port: 4444,
     sync: true,
     reporters: ['spec'],
@@ -233,7 +233,7 @@ exports.config = {
       // browsererevent : {}
     },
     
-    services: ['selenium-standalone'],
+    // services: ['selenium-standalone'],
     // services: ['selenium-standalone', 'phantomjs'],
     // services: ['docker'],  
 

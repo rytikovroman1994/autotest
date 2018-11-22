@@ -27,8 +27,6 @@ describe('test display diagonal', () => {
             browser.waitUntil(
                 ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
                 5000, "На странице уже есть одно условие фильтра");
-            // наводимся на чекбокс 
-            browser.moveToObject(checkbox);
             // включаем чекбокс
             browser.click(checkbox);
             // получаем размер диагонали
