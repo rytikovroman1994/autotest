@@ -16,7 +16,7 @@ describe('engine-power', () => {
     });
 
     // переходим на страницу бюджета
-    it('page engine', () => {
+    it('Page engine', () => {
         // кликаем по кнопке Бюджет
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаем перехода на страницу 
@@ -29,9 +29,9 @@ describe('engine-power', () => {
     });
 
     // проверяем сдвиг ползунка до отмки 150
-    it('check the slider step1', () => {
+    it('Check the slider step1', () => {
         // двигаем ползунок 
-        browser.helpers.slider( '.rc-slider-handle','.rc-slider-step > span:nth-child(3)', 5, 5 );
+        browser.click('.rc-slider-step > span:nth-child(3)');
         // получаем новую локацию
         newPosition = Buttun();
         // проверяем что локация кнопки изменилась
@@ -42,9 +42,9 @@ describe('engine-power', () => {
         startPower = GetPower();
     });
     // проверяем сдвиг ползунка до отмки 150-200
-    it('check the slider step2', () => {
+    it('Check the slider step2', () => {
         // двигаем ползунок
-        browser.helpers.slider( '.rc-slider-handle','.rc-slider-step > span:nth-child(2)', 5, 5 );
+        browser.click( '.rc-slider-step > span:nth-child(2)');
         // получаем новую локацию
         newPosition = Buttun();
         // проверяем что локация кнопки изменилась
@@ -56,9 +56,9 @@ describe('engine-power', () => {
     });
 
     // проверяем сдвиг ползунка до отмки более 200
-    it('check the slider step3', () => {
+    it('Check the slider step3', () => {
         // двигаем ползунок
-        browser.helpers.slider( '.rc-slider-handle','.rc-slider-step > span:nth-child(1)', 5, 5 );
+        browser.click( '.rc-slider-step > span:nth-child(1)');
         // получаем новую локацию
         newPosition = Buttun();
         // проверяем что локация кнопки изменилась
@@ -70,9 +70,9 @@ describe('engine-power', () => {
     });
 
     // проверяем сдвиг ползунка до отметки показать все
-    it('check the slider step4', () => {
+    it('Check the slider step4', () => {
         // двигаем ползунок
-        browser.helpers.slider( '.rc-slider-handle','.rc-slider-step > span:nth-child(4)', 5, 5 );
+        browser.click('.rc-slider-step > span:nth-child(4)');
         // получаем новую локацию
         newPosition = Buttun();
         // проверяем что локация кнопки изменилась
