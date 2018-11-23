@@ -21,7 +21,7 @@ describe('test slider in page shine', () => {
         // в цикле проверяем работу слайдера
         for(let i = 3; i >= 1; i-- ) {
             // двигаем слайдер
-            browser.helpers.slider('.rc-slider-handle', `.rc-slider-step span:nth-child(${i})`, 5 , 5);
+            browser.helpers.slider(`.rc-slider-step > span:nth-child(${i})`);
             // провеярем, что появилось условие в фильтре 
             browser.waitUntil(
                 () => browser.isVisible('.avn008_filter-value-item') === true,
