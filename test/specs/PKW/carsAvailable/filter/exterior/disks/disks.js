@@ -4,9 +4,9 @@
 */
 describe('test slider disks', () => {
     // вызов начального размера дисков
-    const getMinDiametr = () => browser.getText('div.avn008_filter-value-item_range.avn008_filter-value-item_range__min > span');
+    const getMinDiametr = () => browser.getText('.avn008_filter-value-item_range__min span');
     // вызов максимального размера дисков
-    const getMaxDiametr = () => browser.getText('div.avn008_filter-value-item_range.avn008_filter-value-item_range__max > span');
+    const getMaxDiametr = () => browser.getText('.avn008_filter-value-item_range__max span');
     // начальный минимальный размер диска
     let startingMinDiameter;
     // начальный максимальный размер диска
@@ -31,7 +31,7 @@ describe('test slider disks', () => {
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
         5000, "На скратице уже есть одно условие фильтра");
         // двигаем ползунок, для того, чтобы появилось условие в фильтре
-        browser.helpers.slider( '.rc-slider-handle-1','div.rc-slider-step > span:nth-child(2)', 5, 5 );
+        browser.click(`.rc-slider-step span:nth-child(2)`);
         // проверяем, что появилось условие в фильтре
         browser.waitForVisible('.avn008_filter-value-item_image');
         // получаем минималье размер дисков
@@ -41,7 +41,7 @@ describe('test slider disks', () => {
     it('checking the operation of the left slider', () => {
         for( let i = 1; i <= 3; i ++) {
             // двигаем ползунок, для того, чтобы появилось условие в фильтре
-            browser.helpers.slider('.rc-slider-handle-1',`div.rc-slider-step > span:nth-child(${i})`, 5, 5 );
+            browser.click(`.rc-slider-step span:nth-child(${i})`);
             browser.pause(2000);
             // получаем новый развер дисков 
             newstartingMinDiameter = getMinDiametr();
@@ -58,9 +58,11 @@ describe('test slider disks', () => {
     it('checking the operation of the right slider', () => {
         startingMaxDiameter = getMaxDiametr();
         console.log(startingMaxDiameter);
-        for( let i = 5; i >= 3; i--) {
+        for( let i = 8; i > 6; i--) {
+            // инициализируем правый слайдер
+            browser.click('.rc-slider-handle-2');
             // двигаем ползунок, для того, чтобы появилось условие в фильтре
-            browser.helpers.slider('.rc-slider-handle-2',`div.rc-slider-step > span:nth-child(${i})`, 5, 5 );
+            browser.click(`.rc-slider-step span:nth-child(${i})`);
             console.log(i);
             browser.pause(2000);
             // получаем новый развер дисков 
