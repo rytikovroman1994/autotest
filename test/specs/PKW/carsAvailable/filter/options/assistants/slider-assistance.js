@@ -22,6 +22,8 @@ describe('test slider in page parking assistant', () => {
 
     // проверяем работу Слайдера
     it('check slider in page parking assistant', () => {
+        // получаем началью позицию слайдера 
+        statePositionSlider = statePosition();
         // в цикле проверяем работу слайдера
         for(let i = 1; i <= 3; i++ ) {
             console.log(i);
@@ -54,7 +56,7 @@ describe('test slider in page parking assistant', () => {
         const newPositionSlider = statePosition();
         // проверяем, что они равны изначальным
         browser.waitUntil(
-            () => (newPositionSlider === statePositionSlider) === true,
+            () => (newPositionSlider.y === statePositionSlider.y) === true,
             5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
     });
 });

@@ -23,6 +23,8 @@ describe('test slider in page shine', () => {
 
     // проверяем работу Слайдера
     it('check slider in page shine', () => {
+        // получаем началью позицию слайдера 
+        statePositionSlider = statePosition();
         // в цикле проверяем работу слайдера
         for(let i = 3; i >= 1; i-- ) {
             // двигаем слайдер
@@ -44,6 +46,8 @@ describe('test slider in page shine', () => {
 
     // проверяем, что условие фильтра сбрасывается
     it('Check that the filter is cleared', () => {
+        // ожидаем, пока пропадёт блок подвала
+        browser.pause(2000);
         // сбрасываем условие фильтра
         browser.click('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item');
         // ждём пока подвал станет активным
@@ -53,8 +57,10 @@ describe('test slider in page shine', () => {
         // получаем кординаты слайдера
         const newPositionSlider = statePosition();
         // проверяем, что они равны изначальным
+        console.log(newPositionSlider);
+        console.log(statePositionSlider);
         browser.waitUntil(
-            () => (newPositionSlider === statePositionSlider) === true,
+            () => (newPositionSlider.y === statePositionSlider.y) === true,
             5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
     });
 });

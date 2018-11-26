@@ -76,10 +76,10 @@ describe('online-payments', () => {
             newPositionRight = rightButton();
             // проверяем, что они равны изначальным
             browser.waitUntil(
-                () => (newPositionLeft == startingPositionLeft) === true,
+                () => (newPositionLeft.x == startingPositionLeft.x) === true,
                 5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
             browser.waitUntil(
-                () => (newPositionRight == startingPositionRight) === true,
+                () => (newPositionRight.x == startingPositionRight.x) === true,
                 5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
     });
 });

@@ -83,19 +83,21 @@ describe('engine-power', () => {
         expect(newPower).to.not.equal(startPower);
     });
 
-    // // проверяем, что условие фильтра сбрасывается
-    // it('Check that the filter is cleared', () => {
-    //     // сбрасываем условие фильтра
-    //     browser.click('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item');
-    //     // ждём пока подвал станет активным
-    //     browser.waitUntil(
-    //         () => browser.isExisting('.avn008_overlay_bar.avn008_overlay_bar--progress') === false,
-    //         10000, "Подвал не стал активным после 10 секунд ожидания");
-    //     // получаем кординаты слайдера
-    //     newPosition = Buttun();
-    //     // проверяем, что они равны изначальным
-    //     browser.waitUntil(
-    //         () => (newPosition == startPosition) === true,
-    //         5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
-    // });
+    // проверяем, что условие фильтра сбрасывается
+    it('Check that the filter is cleared', () => {
+        // ожидаем, пока пропадёт блок подвала
+        browser.pause(2000);
+        // сбрасываем условие фильтра
+        browser.click('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item');
+        // ждём пока подвал станет активным
+        browser.waitUntil(
+            () => browser.isExisting('.avn008_overlay_bar.avn008_overlay_bar--progress') === false,
+            10000, "Подвал не стал активным после 10 секунд ожидания");
+        // получаем кординаты слайдера
+        newPosition = Buttun();
+        // проверяем, что они равны изначальным
+        browser.waitUntil(
+            () => (newPosition.y == startPosition.y) === true,
+            5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
+    });
 });

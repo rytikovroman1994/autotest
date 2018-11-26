@@ -60,7 +60,7 @@ describe('test slider in page winter package', () => {
         const newPositionSlider = statePosition();
         // проверяем, что они равны изначальным
         browser.waitUntil(
-            () => (newPositionSlider === statePositionSlider) === true,
+            () => (newPositionSlider.y === statePositionSlider.y) === true,
             5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
     });
 });
