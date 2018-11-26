@@ -1,6 +1,10 @@
 describe('test loan initial payment', () => {
     // выносим часто используемый класс
-    let selector = '.avn008_credit__firstPaySlider';
+    let selector = '.avn008_credit__firstPaySlider[data-name="Первоначальный платёж"]';
+    // позиция слайдера
+    const statePosition = () => browser.getLocation(`${selector} .range-slider-handle.range-slider-handle-2`);
+    // начальная позиция слайдера 
+    let startPosition;
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу финансы
@@ -12,7 +16,7 @@ describe('test loan initial payment', () => {
         // переходим на вкладку Кредит
         browser.click('.rc-slider-step > span:nth-child(2)');
         // запоминаем положение слайдера
-        const startPosition = browser.getLocation(`${selector} .range-slider-handle.range-slider-handle-2`);
+        startPosition = browser.getLocation(`${selector} .range-slider-handle.range-slider-handle-2`);
         // очищаем поле ввода суммы Первоначального платежа
         browser.clearElement(`${selector} .ci001-1_input`);
         // вводим свою сумму 
@@ -24,5 +28,25 @@ describe('test loan initial payment', () => {
         browser.waitUntil(
             () => (finishPosition != startPosition) === true,
             5000, "Слайдер Первоначальный платёж не переместился при изменнеии суммы");
+    });
+
+    // проверяем, что условие фильтра сбрасывается
+    it('Check that the filter is cleared', () => {
+        // ждём пока подвал станет активным
+        browser.pause(3000);
+        // сбрасываем условие фильтра
+        browser.click('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item');
+        // ждём пока подвал станет активным
+        browser.waitUntil(
+            () => browser.isExisting('.avn008_overlay_bar.avn008_overlay_bar--progress') === false,
+            10000, "Подвал не стал активным после 10 секунд ожидания");
+        // получаем кординаты слайдера
+        const newPositionSlider = statePosition();
+        // проверяем, что они равны изначальным
+        console.log(newPositionSlider.x);
+        console.log(startPosition.x);
+        browser.waitUntil(
+            () => newPositionSlider.x === startPosition.x,
+            5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
     });
 });
