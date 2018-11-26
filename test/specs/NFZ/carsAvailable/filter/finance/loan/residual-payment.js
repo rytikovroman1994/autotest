@@ -44,8 +44,6 @@ describe('test loan residual payment', () => {
         // получаем кординаты слайдера
         const newPositionSlider = statePosition();
         // проверяем, что они равны изначальным
-        console.log(newPositionSlider.x);
-        console.log(startPosition.x);
         browser.waitUntil(
             () => newPositionSlider.x === startPosition.x,
             5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
