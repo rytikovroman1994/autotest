@@ -5,6 +5,10 @@ describe('test slider in page parking assistant', () => {
         'Park Pilot',
         'Trailer Assist'
     ];
+    // позиция слайдера
+    const statePosition = () => browser.getLocation('.rc-slider-handle');
+    // начальная позиция слайдера 
+    let statePositionSlider;
 
     before('open page filter', () => {
         browser.helpers.openSite();
@@ -19,10 +23,10 @@ describe('test slider in page parking assistant', () => {
     // проверяем работу Слайдера
     it('check slider in page parking assistant', () => {
         // в цикле проверяем работу слайдера
-        for(let i = 3; i >= 1; i-- ) {
+        for(let i = 1; i <= 3; i++ ) {
             console.log(i);
             // двигаем слайдер
-            browser.helpers.slider('.rc-slider-handle', `.rc-slider-step span:nth-child(${i})`, 5 , 5);
+            browser.click(`.rc-slider-step span:nth-child(${i})`);
             // провеярем, что появилось условие в фильтре 
             browser.waitUntil(
                 () => browser.isVisible('.avn008_filter-value-item') === true,
@@ -30,6 +34,27 @@ describe('test slider in page parking assistant', () => {
             // получаем название вида фар
             const nameSHine = browser.getText('.avn008_filter-value-item_text__bottom');   
             expect(nameSHine).to.be.equal(list[i - 1].toUpperCase());
+        // проверяе, что позиция ползунка изменилась 
+        const newPositionSlider = statePosition();
+        browser.waitUntil(
+            () => (newPositionSlider !== statePositionSlider) === true,
+            5000, `Позиция сайдера не изменилась`);
         }
+    });
+
+    // проверяем, что условие фильтра сбрасывается
+    it('Check that the filter is cleared', () => {
+        // сбрасываем условие фильтра
+        browser.click('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item');
+        // ждём пока подвал станет активным
+        browser.waitUntil(
+            () => browser.isExisting('.avn008_overlay_bar.avn008_overlay_bar--progress') === false,
+            10000, "Подвал не стал активным после 10 секунд ожидания");
+        // получаем кординаты слайдера
+        const newPositionSlider = statePosition();
+        // проверяем, что они равны изначальным
+        browser.waitUntil(
+            () => (newPositionSlider === statePositionSlider) === true,
+            5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
     });
 });

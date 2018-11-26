@@ -6,6 +6,11 @@ describe('test slider in page shine', () => {
         'Ксенон'
     ];
 
+    // позиция слайдера
+    const statePosition = () => browser.getLocation('.rc-slider-handle');
+    // начальная позиция слайдера 
+    let statePositionSlider;
+
     before('open page filter', () => {
         browser.helpers.openSite();
         // переходим на страницу экстрерьера
@@ -29,6 +34,27 @@ describe('test slider in page shine', () => {
             // получаем название вида фар
             const nameSHine = browser.getText('.avn008_filter-value-item_text__bottom');   
             expect(nameSHine).to.be.equal(list[i - 1].toUpperCase());
+        // проверяе, что позиция ползунка изменилась 
+        const newPositionSlider = statePosition();
+        browser.waitUntil(
+            () => (newPositionSlider !== statePositionSlider) === true,
+            5000, `Позиция сайдера не изменилась`);
         }
+    });
+
+    // проверяем, что условие фильтра сбрасывается
+    it('Check that the filter is cleared', () => {
+        // сбрасываем условие фильтра
+        browser.click('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item');
+        // ждём пока подвал станет активным
+        browser.waitUntil(
+            () => browser.isExisting('.avn008_overlay_bar.avn008_overlay_bar--progress') === false,
+            10000, "Подвал не стал активным после 10 секунд ожидания");
+        // получаем кординаты слайдера
+        const newPositionSlider = statePosition();
+        // проверяем, что они равны изначальным
+        browser.waitUntil(
+            () => (newPositionSlider === statePositionSlider) === true,
+            5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
     });
 });

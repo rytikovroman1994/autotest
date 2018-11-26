@@ -43,9 +43,9 @@ describe('online-payments', () => {
         // очищаем поле
         browser.clearElement(priseTwo);
         // вводим цену
-        browser.setValue(priseTwo, faker.random.number({min: 1500000, max: 3000000}));
+        browser.setValue(priseTwo, faker.random.number({min: 2000000, max: 4000000}));
         // вынужденный клик, без него цена сьрасывается на дефолтную 
-        browser.click('.avn008_budget__slider-numbers-toggle_all');
+        browser.click('form');
     });
 
         // проверяем что кнопки поменяли своё положение
@@ -63,4 +63,23 @@ describe('online-payments', () => {
             expect(startingPositionRight).to.not.equal(newPositionRight);
         });
 
+        // проверяем, что условие фильтра сбрасывается
+        it('Check that the filter is cleared', () => {
+            // сбрасываем условие фильтра
+            browser.click('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item');
+            // ждём пока подвал станет активным
+            browser.waitUntil(
+                () => browser.isExisting('.avn008_overlay_bar.avn008_overlay_bar--progress') === false,
+                10000, "Подвал не стал активным после 10 секунд ожидания");
+
+            newPositionLeft = leftButtun();
+            newPositionRight = rightButton();
+            // проверяем, что они равны изначальным
+            browser.waitUntil(
+                () => (newPositionLeft == startingPositionLeft) === true,
+                5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
+            browser.waitUntil(
+                () => (newPositionRight == startingPositionRight) === true,
+                5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
+    });
 });
