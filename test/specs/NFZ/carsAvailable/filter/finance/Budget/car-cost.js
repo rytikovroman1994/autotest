@@ -1,4 +1,8 @@
 describe('test budget slider car prise', () => {
+    // начальное положение левого слайера
+    let leftSlider;
+    // начальное положение правого слайдера
+    let rightSlider;
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу финансы
@@ -8,13 +12,13 @@ describe('test budget slider car prise', () => {
     // проверяем работу слайдера Стоимость автомобиля 
     it('Check slider initial paymen', () => {
         // запоминаем положение правого слайдера
-        const leftSlider = browser.getLocation('.rc-slider .rc-slider-handle-1');
+        leftSlider = browser.getLocation('.rc-slider .rc-slider-handle-1');
         // запоминаем положение левого слайдера
-        const rightSlider = browser.getLocation('.rc-slider .rc-slider-handle-2');
+        rightSlider = browser.getLocation('.rc-slider .rc-slider-handle-2');
         // очищаем поле ввода суммы Стоимости автомобиля
         browser.clearElement('div:nth-child(1) > div.avn008_budget__price-item-self input[type="text"]');
         // вводим свою сумму 
-        browser.addValue('div:nth-child(1) > div.avn008_budget__price-item-self input[type="text"]', '3000000');
+        browser.addValue('div:nth-child(1) > div.avn008_budget__price-item-self input[type="text"]', '2000000');
         // убираем фокус, чтобы сумма применилась
         browser.click('form');
         // проверяем, что слайдер поменял позицию 
@@ -26,7 +30,7 @@ describe('test budget slider car prise', () => {
         // очищаем поле ввода суммы Первоначального платежа
         browser.clearElement('div:nth-child(3) > div.avn008_budget__price-item-self input[type="text"]');
         // вводим свою сумму 
-        browser.addValue('div:nth-child(3) > div.avn008_budget__price-item-self input[type="text"]', '5000000');
+        browser.addValue('div:nth-child(3) > div.avn008_budget__price-item-self input[type="text"]', '4000000');
         // убираем фокус, чтобы сумма применилась
         browser.click('form');
         // проверяем, что слайдер поменял позицию 
@@ -48,5 +52,28 @@ describe('test budget slider car prise', () => {
         browser.waitUntil(
             () => (budgetUpTo === "ДО") === true,
             5000, "Сумма бюджета ДО не появилась в фильтре");
+    });
+
+    // проверяем, что условие фильтра сбрасывается
+    it('Check that the filter is cleared', () => {
+        // ждём пока подвал станет активным
+        browser.pause(3000);
+        // сбрасываем условие фильтра
+        browser.click('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item');
+        // ждём пока подвал станет активным
+        browser.waitUntil(
+            () => browser.isExisting('.avn008_overlay_bar.avn008_overlay_bar--progress') === false,
+            10000, "Подвал не стал активным после 10 секунд ожидания");
+        // получаем кординаты левого слайдера
+        const newleftSlider = browser.getLocation('.rc-slider .rc-slider-handle-1');
+        // получаем координаты правого слайдера
+        const newRIghtSlider = browser.getLocation('.rc-slider .rc-slider-handle-2');
+        // проверяем, что они равны изначальным
+        browser.waitUntil(
+            () => newleftSlider.x === leftSlider.x,
+            5000, "ERROR - левый слайдер не изменил свою поцию на изначальную при очистке фильтра");
+        browser.waitUntil(
+            () => newRIghtSlider.x === rightSlider.x,
+            5000, "ERROR - правый слайдер не изменил свою поцию на изначальную при очистке фильтра");
     });
 });
