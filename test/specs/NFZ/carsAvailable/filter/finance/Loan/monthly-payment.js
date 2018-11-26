@@ -1,6 +1,6 @@
 describe('test loan monthly payment', () => {
     // выносим часто используемый класс
-    let selector = '.avn008_credit__monthlyPaySlider';
+    let selector = '.avn008_credit__monthlyPaySlider[data-name="Ежемесячный платёж"]';
     // позиция слайдера
     const statePosition = () => browser.getLocation(`${selector} .range-slider-handle.range-slider-handle-2`);
     // начальная позиция слайдера 

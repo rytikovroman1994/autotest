@@ -1,6 +1,6 @@
 describe('test loan loan period', () => {
     // выносим часто используемый класс
-    let selector = '.avn008_credit__termSlider';
+    let selector = '.avn008_credit__termSlider[data-name="Срок кредита"]';
     // позиция слайдера
     const statePosition = () => browser.getLocation(`${selector} .range-slider-handle.range-slider-handle-2`);
     // начальная позиция слайдера 
