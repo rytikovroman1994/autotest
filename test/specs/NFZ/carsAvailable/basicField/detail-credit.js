@@ -31,22 +31,22 @@ describe('test detail credit', () => {
             () => browser.isVisible('.mainStageinfo_section-credit .mainStageinfo_button-credit .btn__text') === true,
             5000, "Кнопка Расчитать кредит не отображается в деталке автомобиля");
         // кликаем по кнопке Рассчитать
-        browser.click('.mainStageinfo_section-credit .mainStageinfo_button-credit .btn__text');
+        browser.click('.mainStageinfo_section-credit .mainStageinfo_button-credit');
         // ожидаем появления слайдеров 
         browser.waitUntil(
             () => browser.isVisible('.nfz002_input__wrap') === true,
             10000, "Поле расчёта кредита в деталке не загрузилось за 10 сукунд");
         // запоминаем ключевые цифры
         // запоминаем первоначальный платёж
-        initialPayment = browser.getAttribute('.nfz002_input__wrap > div:nth-child(1) .ci001-1_input', 'value');
+        initialPayment = browser.getAttribute('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_input', 'value');
         // процент первоначального платежа 
-        percentageInitialPayment = browser.getText('.nfz002_input__wrap > div:nth-child(1) .ci001-1_suffix');
+        percentageInitialPayment = browser.getText('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_suffix');
         // получаем срок кредита 
-        initialMoth = browser.getAttribute('.nfz002_input__wrap > div:nth-child(2) .ci001-1_input', 'value');
+        initialMoth = browser.getAttribute('.nfz002_input[data-name="Срок кредита"] .ci001-1_input', 'value');
         // получаем остаточный платёж
-        residualPayment = browser.getAttribute('.nfz002_input__wrap > div:nth-child(4) .ci001-1_input', 'value');
+        residualPayment = browser.getAttribute('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input', 'value');
         // процент остаточного платежа
-        percentageResidualPayment = browser.getText('.nfz002_input__wrap > div:nth-child(4) .ci001-1_suffix');
+        percentageResidualPayment = browser.getText('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_suffix');
         // получаем ежемесячный платёж
         monthlyPayment = browser.getText('.nfz002_foot__wrap .price-text');
     });
@@ -54,22 +54,26 @@ describe('test detail credit', () => {
     // проверяем работу сладера первоначальный платёж 
     it('Check the work of the slader initial payment', () => {
         // запоминаем начальное положение слайдера 
-        const initialPosition = browser.getLocation('.nfz002_input__wrap > div:nth-child(1) .range-slider-handle-2');
+        const initialPosition = browser.getLocation('.nfz002_input[data-name="Первоначальный платеж"] .range-slider-handle-2');
+        // очищаем вводимое поле
+        browser.clearElement('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_input');
         // меняем первоначальный платёж 
-        browser.setValue('.nfz002_input__wrap > div:nth-child(1) .ci001-1_input', '1500000');
-        browser.click('.nfz002_input__wrap > div:nth-child(1) .ci001-1_focus-icon');
+        browser.addValue('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_input', '1500000');
+        browser.click('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_focus-icon');
         // проверяем, что изменился первоначальный платёж
-        const currentInitialPayment = browser.getAttribute('.nfz002_input__wrap > div:nth-child(1) .ci001-1_input', 'value');
+        const currentInitialPayment = browser.getAttribute('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_input', 'value');
         browser.waitUntil(
             () => currentInitialPayment !== initialPayment,
             5000, "Сумма Первоначального платежа не изменилась");
         // проверяем, что процент ПП изменился
-        const currentPercentageInitialPayment = browser.getText('.nfz002_input__wrap > div:nth-child(1) .ci001-1_suffix');
+        const currentPercentageInitialPayment = browser.getText('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_suffix');
+        console.log(currentPercentageInitialPayment);
+        console.log(percentageInitialPayment);
         browser.waitUntil(
             () => currentPercentageInitialPayment !== percentageInitialPayment,
             5000, "Процент ПП не изменился после изменения суммы");
         // проверяем, что слайдер изменил своё положение
-        const currentInitialPosition = browser.getLocation('.nfz002_input__wrap > div:nth-child(1) .range-slider-handle-2');
+        const currentInitialPosition = browser.getLocation('.nfz002_input[data-name="Первоначальный платеж"] .range-slider-handle-2');
         browser.waitUntil(
             () => currentInitialPosition !== initialPosition,
             5000, "Слайдер не изменил своё положение после изменния суммы");
@@ -83,22 +87,26 @@ describe('test detail credit', () => {
     // проверяем работу сладйера Остаточный платёж 
     it('Check the work of the slider residual payment', () => {
         // запоминаем начальное положение слайдера 
-        const initialPosition = browser.getLocation('.nfz002_input__wrap > div:nth-child(4) .range-slider-handle-2');
+        const initialPosition = browser.getLocation('.nfz002_input[data-name="Остаточный платеж"] .range-slider-handle-2');
+        // очищаем вводимое поле
+        browser.clearElement('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input');
         // меняем первоначальный платёж 
-        browser.setValue('.nfz002_input__wrap > div:nth-child(4) .ci001-1_input', '1000000');
-        browser.click('.nfz002_input__wrap > div:nth-child(4) .ci001-1_focus-icon');
+        browser.addValue('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input', '1000000');
+        browser.click('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_focus-icon');
         // проверяем, что изменился остаточный платёж
-        const currentResidualPayment = browser.getAttribute('.nfz002_input__wrap > div:nth-child(4) .ci001-1_input', 'value');
+        const currentResidualPayment = browser.getAttribute('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input', 'value');
         browser.waitUntil(
             () => currentResidualPayment !== residualPayment,
             5000, "Сумма Первоначального платежа не изменилась");
         // проверяем, что процент ОП изменился
-        const currentPercentageResidualPayment = browser.getText('.nfz002_input__wrap > div:nth-child(4) .ci001-1_suffix');
+        const currentPercentageResidualPayment = browser.getText('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_suffix');
+        console.log(currentPercentageResidualPayment);
+        console.log(percentageResidualPayment);
         browser.waitUntil(
             () => currentPercentageResidualPayment !== percentageResidualPayment,
             5000, "Процент ПП не изменился после изменения суммы");
         // проверяем, что слайдер изменил своё положение
-        const currentInitialPosition = browser.getLocation('.nfz002_input__wrap > div:nth-child(4) .range-slider-handle-2');
+        const currentInitialPosition = browser.getLocation('.nfz002_input[data-name="Остаточный платеж"] .range-slider-handle-2');
         browser.waitUntil(
             () => currentInitialPosition !== initialPosition,
             5000, "Слайдер не изменил своё положение после изменния суммы");
@@ -113,13 +121,21 @@ describe('test detail credit', () => {
      it('Check that the residual payment is lost', () => {
         // проверяем, что остаточный платёж отображается на странице
         browser.waitUntil(
-            () => browser.isVisible('.nfz002_input__wrap > div:nth-child(4)') === true,
+            () => browser.isVisible('.nfz002_input[data-name="Остаточный платеж"]') === true,
             10000, "Поле с остаточным платежом не отображается на странице");
+        // получаем начальное значение процентной ставки 
+        const initialRate = browser.getText('div:nth-child(2) > div > div > div.nfz002_param-display_text');
         // выключаем чекбокс
-        browser.click('.nfz002_input__wrap > div:nth-child(3) .checkbox');
+        browser.click('.nfz002_input--checkbox  .checkbox');
         // проверяем, что поле ОП пропало
         browser.waitUntil(
-            () => browser.isExisting('.nfz002_input__wrap > div:nth-child(4)') === false,
+            () => browser.isExisting('.nfz002_input[data-name="Остаточный платеж"]') === false,
             10000, "Поле остаточного платежа не пропало после отключения");
+        // получаем тукущее значение кредитной ставки
+        const currentRate = browser.getText('div:nth-child(2) > div > div > div.nfz002_param-display_text');
+        // проверяем, что оно изменилось
+        browser.waitUntil(
+            () => currentRate !== initialRate,
+            5000, "Процентная ставка не изменилась при отключении Остаточного платежа");
      });
 });
