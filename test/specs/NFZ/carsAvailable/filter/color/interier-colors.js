@@ -133,7 +133,7 @@ describe('test interier colors', () => {
             // делаем скриншот 
             ctx.originalScreenshot = browser.screenshot().value;
             // выбираем цвет 
-            browser.click(`.avn008_color-colors > div:nth-child(${i})`);
+            browser.click(`.avn008_color-colors > div:nth-child(${i}) .avn-color-checkbox`);
             // проверяем что в фильтре появилось условие
             browser.waitUntil(
                 () => browser.isVisible('.avn008_filter-value-item__with-color') === true,

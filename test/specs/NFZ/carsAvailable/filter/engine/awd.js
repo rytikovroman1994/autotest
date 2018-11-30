@@ -7,7 +7,7 @@ describe('test awd', () => {
 
     // выбираем полный привод
     it('Check awd', () => {
-        browser.helpers.checkCheckboxNfz('Полный привод', 'ПОЛНЫЙ');
+        browser.helpers.checkCheckboxNfz('Полный привод', 'ПОЛНЫЙ', 'chassis');
 
         // переходим к списку
         browser.click('.checkbox[data-name="Полный привод"]');

@@ -23,7 +23,7 @@ describe('test body color all', () => {
         browser.scroll('.avn008_image-switcher_image', 0, 200);
         // запоминаем начальное кол-во 
         initialNumberColor = color().length;
-        for( let i = 1;  i <= 8; i++ ) {
+        for( let i = 1;  i <= 7; i++ ) {
             if( browser.isVisible(`.avn008_color-colors > div:nth-child(${i})`) === true) {
             // выбираем цвет 
             browser.click(`.avn008_color-colors > div:nth-child(${i})`);

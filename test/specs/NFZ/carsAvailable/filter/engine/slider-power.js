@@ -4,8 +4,8 @@ describe('test slider power', () => {
     const list = [
         '204 - 224',
         '150 - 180',
-        '102 - 140',
-        '102 - 224'
+        '100 - 140',
+        '100 - 224'
     ];
 
     before('open page filter', () => {

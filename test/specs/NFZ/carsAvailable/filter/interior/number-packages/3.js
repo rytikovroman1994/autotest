@@ -15,8 +15,8 @@ describe('test number-packages 3', () => {
 
     // проверяем, что условие появилось в деталке машины
     it('Check the equipment in detail', () => {
-        const newArray = browser.helpers.checkConditionsNfz(conditions, conditions);
+        const newArray = browser.helpers.checkConditionsNfz(conditions, '3 сиденья');
         // проверяем
-        expect(newArray).to.be.equal(conditions);
+        expect(newArray).to.be.equal('3 сиденья');
     });
 });

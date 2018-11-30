@@ -1,4 +1,13 @@
 describe('test diesel-fuel', () => {
+    const listPetrol = [
+        'TDI',
+        'BITDI'
+    ]
+
+    Array.prototype.diff = function(a) {
+        return this.filter(function(i){
+            return a.indexOf(i) < 0;});
+    };
     before('open page filter', () => {
         browser.helpers.openFilter();
         // открываем страницу "Двигатель"
@@ -7,7 +16,7 @@ describe('test diesel-fuel', () => {
 
     // выбираем топливо дизель
     it('Check diesel-fuel', () => {
-        browser.helpers.checkCheckboxNfz('Дизель', 'ДИЗЕЛЬ');
+        browser.helpers.checkCheckboxNfz('Дизель', 'ДИЗЕЛЬ', 'gas-type');
 
         // переходим к списку
         browser.click('.checkbox[data-name="Дизель"]');
@@ -24,6 +33,13 @@ describe('test diesel-fuel', () => {
         browser.pause(2000);
         // проверяем, что в карточке есть условие АКП
         const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .gridcontainer > div:nth-child(4) > div > div > div:nth-child(1) > div > div > div:nth-child(1) > div.avn001-2_specs-item_text');
-        expect(getView).to.be.include('TDI');
+        // проверяем совпадение массивов
+        const result = [getView.split(' ')[0]].diff(listPetrol);
+        // считаем количество несовпадений между массивами
+        const emptyArray = result.length;
+        // количество элементов в массиве не должно быть больше 0
+        browser.waitUntil(
+            () => (emptyArray == 0) === true,
+            5000, `${result[0]} не входит в список доступных видов бензина`);
     });
 });

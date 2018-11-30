@@ -4,713 +4,365 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "В городе Маxачкала нет списка доступных машин",
-      "children" : [ {
-        "name" : "Check the city in the card",
-        "uid" : "964176fb9ed1d540",
-        "parentUid" : "b79680807dbcbddafa1e2614a051594d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542888322858,
-          "stop" : 1542888442537,
-          "duration" : 119679
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "b79680807dbcbddafa1e2614a051594d"
-    }, {
-      "name" : "Модель Golf с комплектацией highline не выбирается",
-      "children" : [ {
-        "name" : "check availability kits",
-        "uid" : "e64e4bef68980d4f",
-        "parentUid" : "f00a09b1723bb3370f3b059fba0be429",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542888508213,
-          "stop" : 1542888532052,
-          "duration" : 23839
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "f00a09b1723bb3370f3b059fba0be429"
-    }, {
-      "name" : "Сообение Ваш заказ оформлен! не появилось после 30 секунд",
-      "children" : [ {
-        "name" : "Check that we are back",
-        "uid" : "457aeddafb528b45",
-        "parentUid" : "a7e7a705da10157818cabad90ac0de7d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542888571068,
-          "stop" : 1542888605345,
-          "duration" : 34277
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "Check that we are back",
-        "uid" : "cde30689184d7101",
-        "parentUid" : "a7e7a705da10157818cabad90ac0de7d",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542888663177,
-          "stop" : 1542888696411,
-          "duration" : 33234
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "a7e7a705da10157818cabad90ac0de7d"
-    }, {
-      "name" : "element (\".image-container\") still not visible after 20000ms",
+      "name" : "No active session with ID 84f7b89774521aad000e759f93e70495",
       "children" : [ {
         "name" : "\"before all\" hook",
-        "uid" : "feda2c9858d99800",
-        "parentUid" : "ae4a2876ee1b23633b70ede6ecb5674d",
+        "uid" : "4d02eb5641e6812d",
+        "parentUid" : "bacbdbe1b1394a201489728ae8a96b84",
         "status" : "broken",
         "time" : {
-          "start" : 1542888901860,
-          "stop" : 1542888949716,
-          "duration" : 47856
+          "start" : 1543511314281,
+          "stop" : 1543511328442,
+          "duration" : 14161
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "ae4a2876ee1b23633b70ede6ecb5674d"
+      "uid" : "bacbdbe1b1394a201489728ae8a96b84"
     }, {
-      "name" : "element (\".slick-next\") still not visible after 20000ms",
+      "name" : "Цена автомобиля в заявке отличается от цена в деталке",
       "children" : [ {
-        "name" : "\"before all\" hook",
-        "uid" : "146b837d81336104",
-        "parentUid" : "79de34468e0ac7afc9afdb135010139c",
+        "name" : "Check data match",
+        "uid" : "4c1387f81dda7a32",
+        "parentUid" : "b779f84b9e964d108b2b09b5363aa704",
         "status" : "broken",
         "time" : {
-          "start" : 1542889068428,
-          "stop" : 1542889111771,
-          "duration" : 43343
+          "start" : 1543511392384,
+          "stop" : 1543511398353,
+          "duration" : 5969
         },
         "flaky" : false,
-        "parameters" : [ ]
+        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "79de34468e0ac7afc9afdb135010139c"
+      "uid" : "b779f84b9e964d108b2b09b5363aa704"
     }, {
-      "name" : "element (\"div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self\") still not visible after 20000ms",
+      "name" : "Ставка по лизинга в Заявке отличается от ставки в деталке",
       "children" : [ {
-        "name" : "right slider motion",
-        "uid" : "1f66177c1770b4f9",
-        "parentUid" : "b6eed40ec4031c6f8f356d15be61167c",
+        "name" : "Check data match",
+        "uid" : "2d44f6da6162f898",
+        "parentUid" : "9ecd4bc9e4c87107cd837542e0d2aaa1",
         "status" : "broken",
         "time" : {
-          "start" : 1542889170712,
-          "stop" : 1542889191214,
-          "duration" : 20502
+          "start" : 1543511426851,
+          "stop" : 1543511432521,
+          "duration" : 5670
         },
         "flaky" : false,
-        "parameters" : [ "firefox" ]
+        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "b6eed40ec4031c6f8f356d15be61167c"
+      "uid" : "9ecd4bc9e4c87107cd837542e0d2aaa1"
     }, {
-      "name" : "element (\"div:nth-child(2) > div.avn008_filter-value-item__inner.avn008_filter-value-item__with-price\") still not existing after 20000ms",
+      "name" : "element not interactable",
       "children" : [ {
-        "name" : "minimum budget",
-        "uid" : "4fc83b56d41506aa",
-        "parentUid" : "cb116a0417abf5b2b18dd51b50c5337b",
+        "name" : "Check color fabric",
+        "uid" : "8edf6633c81eb674",
+        "parentUid" : "8d63a8d6f9426fb23642c567c8a3c8ca",
         "status" : "broken",
         "time" : {
-          "start" : 1542889191214,
-          "stop" : 1542889211384,
-          "duration" : 20170
+          "start" : 1543512218151,
+          "stop" : 1543512220076,
+          "duration" : 1925
         },
-        "flaky" : true,
-        "parameters" : [ "firefox" ]
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "cb116a0417abf5b2b18dd51b50c5337b"
-    }, {
-      "name" : "Element <div class=\"avn008_overlay_submit-block_btn\"> is not clickable at point (1246,659) because another element <div class=\"avn008_filter \"> obscures it",
-      "children" : [ {
-        "name" : "Check checkbox four-wheel drive",
-        "uid" : "9fd9f33e8a0b356c",
-        "parentUid" : "c6e3c8e9470f00e852daa291981c305f",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542889448083,
-          "stop" : 1542889451545,
-          "duration" : 3462
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "c6e3c8e9470f00e852daa291981c305f"
-    }, {
-      "name" : "element (\".avn008_filter__tab[data-name=\"Двигатель\"]\") still not visible after 20000ms",
-      "children" : [ {
-        "name" : "open filter",
-        "uid" : "f3cf7a3bfd0d8ab6",
-        "parentUid" : "82f584f21fed4e7e089871577cc50b54",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542889451546,
-          "stop" : 1542889473407,
-          "duration" : 21861
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "82f584f21fed4e7e089871577cc50b54"
-    }, {
-      "name" : "element (\".avn008_filter-value-item_text-self\") still not existing after 20000ms",
-      "children" : [ {
-        "name" : "check the slider step1",
-        "uid" : "cad74ec90de91963",
-        "parentUid" : "c780ff9081418fecf1fb22d5c2708cc1",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542889514796,
-          "stop" : 1542889537636,
-          "duration" : 22840
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "c780ff9081418fecf1fb22d5c2708cc1"
-    }, {
-      "name" : "An element could not be located on the page using the given search parameters (\".avn008_filter-value-item_text-self\").",
-      "children" : [ {
-        "name" : "check the slider step2",
-        "uid" : "f61ada3d714799eb",
-        "parentUid" : "ab413ca6cce7f71cc1e3f6b652bb5a21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542889537637,
-          "stop" : 1542889538146,
-          "duration" : 509
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "check the slider step3",
-        "uid" : "79d8537953ff1097",
-        "parentUid" : "ab413ca6cce7f71cc1e3f6b652bb5a21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542889538146,
-          "stop" : 1542889538593,
-          "duration" : 447
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "check the slider step4",
-        "uid" : "6208a316783c37b6",
-        "parentUid" : "ab413ca6cce7f71cc1e3f6b652bb5a21",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542889538593,
-          "stop" : 1542889539099,
-          "duration" : 506
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "ab413ca6cce7f71cc1e3f6b652bb5a21"
-    }, {
-      "name" : "element (\".avn008_filter-value-item_image\") still not visible after 20000ms",
-      "children" : [ {
-        "name" : "moov slider",
-        "uid" : "371880217efe7596",
-        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542889972389,
-          "stop" : 1542889993818,
-          "duration" : 21429
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "dfa1dfe5c18383edd144c8c2601426c5"
-    }, {
-      "name" : "An element could not be located on the page using the given search parameters (\"div.avn008_filter-value-item_range.avn008_filter-value-item_range__min > span\").",
-      "children" : [ {
-        "name" : "checking the operation of the left slider",
-        "uid" : "dc3c6413783b3c7",
-        "parentUid" : "9a9b4a4961afca3ac60daef7d3a605a2",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542889993819,
-          "stop" : 1542889996570,
-          "duration" : 2751
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "9a9b4a4961afca3ac60daef7d3a605a2"
-    }, {
-      "name" : "An element could not be located on the page using the given search parameters (\"div.avn008_filter-value-item_range.avn008_filter-value-item_range__max > span\").",
-      "children" : [ {
-        "name" : "checking the operation of the right slider",
-        "uid" : "94fdb64d7fa90e0",
-        "parentUid" : "f956371e5fa21f23a0d7684119cae11a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542889996570,
-          "stop" : 1542889996877,
-          "duration" : 307
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "f956371e5fa21f23a0d7684119cae11a"
+      "uid" : "8d63a8d6f9426fb23642c567c8a3c8ca"
     }, {
       "name" : "Условие не появилось в фильтре",
       "children" : [ {
-        "name" : "Check checkbox Складной фаркоп",
-        "uid" : "eabcfbf72f871666",
+        "name" : "Check checkbox Фаркоп",
+        "uid" : "ae7f93809620e902",
         "parentUid" : "d4f589e991d25012074b480a8cb52d85",
         "status" : "broken",
         "time" : {
-          "start" : 1542890057077,
-          "stop" : 1542890062742,
-          "duration" : 5665
+          "start" : 1543512628959,
+          "stop" : 1543512634695,
+          "duration" : 5736
         },
         "flaky" : false,
-        "parameters" : [ "firefox" ]
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "Check checkbox Стальные",
+        "uid" : "adc0ed5562375c21",
+        "parentUid" : "d4f589e991d25012074b480a8cb52d85",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543513184303,
+          "stop" : 1543513189912,
+          "duration" : 5609
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "Check checkbox App Connect",
+        "uid" : "b5c51a8f52160212",
+        "parentUid" : "d4f589e991d25012074b480a8cb52d85",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543513664966,
+          "stop" : 1543513670568,
+          "duration" : 5602
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
       } ],
       "uid" : "d4f589e991d25012074b480a8cb52d85"
     }, {
-      "name" : "Функция Ксенон не доступна",
-      "children" : [ {
-        "name" : "check slider in page shine",
-        "uid" : "b5cb933a0f1e158d",
-        "parentUid" : "6715f7105bc8214378ccea6eb330d946",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542890472304,
-          "stop" : 1542890479201,
-          "duration" : 6897
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "6715f7105bc8214378ccea6eb330d946"
-    }, {
-      "name" : "POST /session/8ddb8360-310a-4629-86de-e69c130b12ba/moveto did not match a known command",
-      "children" : [ {
-        "name" : "check diagonal",
-        "uid" : "bca10014b91edbc9",
-        "parentUid" : "fc49aeaba70cd972b158096c38789002",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542891026764,
-          "stop" : 1542891027375,
-          "duration" : 611
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "fc49aeaba70cd972b158096c38789002"
-    }, {
-      "name" : "Element <div class=\"avn008_option-check_more link-like\"> is not clickable at point (292.125,467.01666259765625) because another element <form> obscures it",
-      "children" : [ {
-        "name" : "check more in detail about dynamic light",
-        "uid" : "15582ed9a8d08a3d",
-        "parentUid" : "6ffa0bba46eea462a002f82577f17292",
-        "status" : "broken",
-        "time" : {
-          "start" : 1542891334361,
-          "stop" : 1542891334998,
-          "duration" : 637
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "6ffa0bba46eea462a002f82577f17292"
-    }, {
-      "name" : "Element <label class=\"checkbox\"> is not clickable at point (292.125,433.51666259765625) because another element <form> obscures it",
+      "name" : "element (\".avn008_filter-value-item_image\") still not visible after 20000ms",
       "children" : [ {
         "name" : "Check the equipment in detail",
-        "uid" : "3dae7226a86f33aa",
-        "parentUid" : "e517456a9e07965cd4a3b428deeb8d5f",
+        "uid" : "f1f1625a9b806ff6",
+        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
         "status" : "broken",
         "time" : {
-          "start" : 1542891335002,
-          "stop" : 1542891335339,
-          "duration" : 337
+          "start" : 1543512634696,
+          "stop" : 1543512655207,
+          "duration" : 20511
         },
         "flaky" : false,
-        "parameters" : [ "firefox" ]
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "Check the equipment in detail",
+        "uid" : "8c11e55e8d63aabb",
+        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543513189912,
+          "stop" : 1543513210410,
+          "duration" : 20498
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "Check the equipment in detail",
+        "uid" : "e557bb24d603684a",
+        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543513670569,
+          "stop" : 1543513690997,
+          "duration" : 20428
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "Check the equipment in detail",
+        "uid" : "5f73e46add097a43",
+        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543513802966,
+          "stop" : 1543513823975,
+          "duration" : 21009
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "Check the equipment in detail",
+        "uid" : "b39aaeb112da76f",
+        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543513872349,
+          "stop" : 1543513893098,
+          "duration" : 20749
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "Check the equipment in detail",
+        "uid" : "c53a8ddcbd6efe66",
+        "parentUid" : "dfa1dfe5c18383edd144c8c2601426c5",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543513914566,
+          "stop" : 1543513935266,
+          "duration" : 20700
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "e517456a9e07965cd4a3b428deeb8d5f"
+      "uid" : "dfa1dfe5c18383edd144c8c2601426c5"
     }, {
-      "name" : "Функция Trailer Assist не доступна",
+      "name" : "invalid element state: Element is not currently interactable and may not be manipulated",
       "children" : [ {
-        "name" : "check slider in page parking assistant",
-        "uid" : "1d5ba59b98a9edf",
-        "parentUid" : "30f2bf6045040e97af34e8c043b95e47",
+        "name" : "Check slider initial paymen",
+        "uid" : "d09aa28d1ce9723a",
+        "parentUid" : "5f1541f0a9edb706ece3843b30ab1f80",
         "status" : "broken",
         "time" : {
-          "start" : 1542892135426,
-          "stop" : 1542892141138,
-          "duration" : 5712
+          "start" : 1543513224297,
+          "stop" : 1543513226862,
+          "duration" : 2565
         },
         "flaky" : false,
-        "parameters" : [ "firefox" ]
+        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "30f2bf6045040e97af34e8c043b95e47"
+      "uid" : "5f1541f0a9edb706ece3843b30ab1f80"
     }, {
-      "name" : "Функция Передние не доступна",
+      "name" : "An element could not be located on the page using the given search parameters (\"div:nth-child(2) > div.avn008_filter-value-item__inner .avn008_filter-value-item_text__top\").",
       "children" : [ {
-        "name" : "check slider in page winter package",
-        "uid" : "b3c679e1b20d31b8",
-        "parentUid" : "d906716c4b9afdba46c4b4c3d1223c3a",
+        "name" : "Check  condition budget in the filter",
+        "uid" : "5c4d5ea7d24d34c0",
+        "parentUid" : "5acedcc98e52dfbcb5148b7f191e5885",
         "status" : "broken",
         "time" : {
-          "start" : 1542893183189,
-          "stop" : 1542893188781,
-          "duration" : 5592
+          "start" : 1543513226862,
+          "stop" : 1543513227833,
+          "duration" : 971
         },
         "flaky" : false,
-        "parameters" : [ "firefox" ]
+        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "d906716c4b9afdba46c4b4c3d1223c3a"
+      "uid" : "5acedcc98e52dfbcb5148b7f191e5885"
+    }, {
+      "name" : "An element could not be located on the page using the given search parameters (\".avn008_credit__firstPaySlider[data-name=\"Первоначальный платёж\"] .range-slider-handle.range-slider-handle-2\").",
+      "children" : [ {
+        "name" : "Check slider initial paymen",
+        "uid" : "759933ae5f5ec51a",
+        "parentUid" : "0ac8bc814e54d61f703fdc2b5ee07953",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543513246112,
+          "stop" : 1543513247680,
+          "duration" : 1568
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "0ac8bc814e54d61f703fdc2b5ee07953"
+    }, {
+      "name" : "У 6 отсутствует картинка в фильтре",
+      "children" : [ {
+        "name" : "Check checkbox 6",
+        "uid" : "39a79d3bda977f1c",
+        "parentUid" : "110766d21921abf9f063ef2f6a4039e6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543513865180,
+          "stop" : 1543513872348,
+          "duration" : 7168
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "110766d21921abf9f063ef2f6a4039e6"
+    }, {
+      "name" : "У 8 отсутствует картинка в фильтре",
+      "children" : [ {
+        "name" : "Check checkbox 8",
+        "uid" : "7fb39024479aeb76",
+        "parentUid" : "19d9df2a8746caef71524076ecfe3fdb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543513907509,
+          "stop" : 1543513914566,
+          "duration" : 7057
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "19d9df2a8746caef71524076ecfe3fdb"
+    }, {
+      "name" : "unknown error: Element <div class=\"avn008_kits__btn\n                            \n                            avn008_kits__btn--disabled\n                            false\n                            avn008_kits__btn--for_family\n                            \">...</div> is not clickable at point (938, 492). Other element would receive the click: <div class=\"avn008_kits__btns\">...</div>",
+      "children" : [ {
+        "name" : "Check the complete set in Caddy",
+        "uid" : "75a9aef674cff953",
+        "parentUid" : "d25f23d5d95d075f4dfc126f28ebe2c1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543514057458,
+          "stop" : 1543514062536,
+          "duration" : 5078
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "d25f23d5d95d075f4dfc126f28ebe2c1"
+    }, {
+      "name" : "unknown error: Element <div class=\"avn008_kits__btn\n                            \n                            avn008_kits__btn--disabled\n                            false\n                            avn008_kits__btn--for_family\n                            \">...</div> is not clickable at point (560, 412). Other element would receive the click: <div class=\"avn008_kits__btns\">...</div>",
+      "children" : [ {
+        "name" : "Check the complete set in Caravelle",
+        "uid" : "62b17cb35ba64a0c",
+        "parentUid" : "086d317b9244e0b2fb43317e1415c254",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543514089006,
+          "stop" : 1543514090842,
+          "duration" : 1836
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "086d317b9244e0b2fb43317e1415c254"
+    }, {
+      "name" : "unknown error: Element <div class=\"grid_s_3 grid_l_2\">...</div> is not clickable at point (245, 443). Other element would receive the click: <div class=\"avn008_kits__inner\">...</div>",
+      "children" : [ {
+        "name" : "Check the complete set in Multivan",
+        "uid" : "26570cbb700aabac",
+        "parentUid" : "3a3738f3840357143efdbec0afbb6828",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543514090843,
+          "stop" : 1543514091583,
+          "duration" : 740
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "3a3738f3840357143efdbec0afbb6828"
+    }, {
+      "name" : "unknown error: Element <div class=\"grid_s_3 grid_l_2\">...</div> is not clickable at point (439, 443). Other element would receive the click: <div class=\"avn008_kits__btns\">...</div>",
+      "children" : [ {
+        "name" : "Check the complete set in Transporter",
+        "uid" : "f7396e4b0eb82881",
+        "parentUid" : "432e7ecfd84e604fa0be1b420810964c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1543514091584,
+          "stop" : 1543514092435,
+          "duration" : 851
+        },
+        "flaky" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "432e7ecfd84e604fa0be1b420810964c"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   }, {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "expected '559 662' to not equal '559 662'",
+      "name" : "expected 'TDI 102 Л.С.' to include 'MPI'",
       "children" : [ {
-        "name" : "move the left slider",
-        "uid" : "43e076eaab4174ba",
-        "parentUid" : "e3c308e952dd14afe7a186d1d0683aa1",
+        "name" : "Check condition in the card",
+        "uid" : "8658246886de3572",
+        "parentUid" : "651b1d6de1f965017be9f5689d40eb9d",
         "status" : "failed",
         "time" : {
-          "start" : 1542889147958,
-          "stop" : 1542889150543,
-          "duration" : 2585
+          "start" : 1543512460405,
+          "stop" : 1543512462495,
+          "duration" : 2090
         },
         "flaky" : false,
-        "parameters" : [ "firefox" ]
+        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "e3c308e952dd14afe7a186d1d0683aa1"
+      "uid" : "651b1d6de1f965017be9f5689d40eb9d"
     }, {
-      "name" : "expected [ 'ПЕРЕДНИЙ', 'ПОЛНЫЙ' ] to equal 'ПОЛНЫЙ'",
+      "name" : "expected 'https://183024.selcdn.ru/vwgr_available_cars/nfz/filter/s/airbag-4.png' to include 'seats-4'",
       "children" : [ {
-        "name" : "Check checkbox front-wheel drive",
-        "uid" : "c529546c089bd4",
-        "parentUid" : "da30cce514f6b6e9d35621dc8c4b566e",
+        "name" : "Check checkbox 4",
+        "uid" : "1b7b114f8c5a3006",
+        "parentUid" : "8f75d111d751166ddeecce8019ca7b17",
         "status" : "failed",
         "time" : {
-          "start" : 1542889473407,
-          "stop" : 1542889475822,
-          "duration" : 2415
+          "start" : 1543513802037,
+          "stop" : 1543513802965,
+          "duration" : 928
         },
         "flaky" : false,
-        "parameters" : [ "firefox" ]
+        "parameters" : [ "chrome" ]
       } ],
-      "uid" : "da30cce514f6b6e9d35621dc8c4b566e"
-    }, {
-      "name" : "expected 0.171875 to be below 0.1",
-      "children" : [ {
-        "name" : "Сompare screenshots",
-        "uid" : "2e0088e05bfa4bb3",
-        "parentUid" : "b421cee28609a9cd1c59f9a8e388287a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542890170801,
-          "stop" : 1542890171470,
-          "duration" : 669
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "Compare screenshots",
-        "uid" : "41d6980e10e7b8b3",
-        "parentUid" : "b421cee28609a9cd1c59f9a8e388287a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542890845957,
-          "stop" : 1542890846624,
-          "duration" : 667
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "Compare screenshots",
-        "uid" : "4aa159e6d45776fa",
-        "parentUid" : "b421cee28609a9cd1c59f9a8e388287a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542893052563,
-          "stop" : 1542893053197,
-          "duration" : 634
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "b421cee28609a9cd1c59f9a8e388287a"
-    }, {
-      "name" : "expected 0.3125 to be below 0.1",
-      "children" : [ {
-        "name" : "Compare screenshots",
-        "uid" : "b508d9bc76f56ac6",
-        "parentUid" : "7ea3956d6957b5e362f033ebcaadf201",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542890404999,
-          "stop" : 1542890405606,
-          "duration" : 607
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "7ea3956d6957b5e362f033ebcaadf201"
-    }, {
-      "name" : "expected 0.1875 to be below 0.1",
-      "children" : [ {
-        "name" : "compare screenshots",
-        "uid" : "5e9d3be3ac8ed4e1",
-        "parentUid" : "313eeda73d98e6e3b08e7ac46bc4615a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542890445861,
-          "stop" : 1542890446429,
-          "duration" : 568
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "Compare screenshots",
-        "uid" : "acc9c1a1beb5ffb3",
-        "parentUid" : "313eeda73d98e6e3b08e7ac46bc4615a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542891066331,
-          "stop" : 1542891066942,
-          "duration" : 611
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "Compare screenshots",
-        "uid" : "70c5ec917a25a9b1",
-        "parentUid" : "313eeda73d98e6e3b08e7ac46bc4615a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542892010224,
-          "stop" : 1542892010860,
-          "duration" : 636
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "313eeda73d98e6e3b08e7ac46bc4615a"
-    }, {
-      "name" : "expected '3-ЗОННЫЙ' to equal '4-ЗОННЫЙ'",
-      "children" : [ {
-        "name" : "check cards, filter and image",
-        "uid" : "e09305b240b362d0",
-        "parentUid" : "0ab9e7c6619bb78df9c5978247c1a9ff",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542890512520,
-          "stop" : 1542890522603,
-          "duration" : 10083
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "0ab9e7c6619bb78df9c5978247c1a9ff"
-    }, {
-      "name" : "expected 0.109375 to be below 0.1",
-      "children" : [ {
-        "name" : "Compare screenshots",
-        "uid" : "6348aedf16f70848",
-        "parentUid" : "8159619af660b43b879aeea16d603d58",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542890927104,
-          "stop" : 1542890927752,
-          "duration" : 648
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "8159619af660b43b879aeea16d603d58"
-    }, {
-      "name" : "expected 0.125 to be below 0.1",
-      "children" : [ {
-        "name" : "Compare screenshots",
-        "uid" : "de27f3c53696d1a8",
-        "parentUid" : "82edf17d7d4ef5ceb45503fa2baad4a9",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542890981379,
-          "stop" : 1542890981980,
-          "duration" : 601
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "Compare screenshots",
-        "uid" : "683ff5977fb65840",
-        "parentUid" : "82edf17d7d4ef5ceb45503fa2baad4a9",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542892516486,
-          "stop" : 1542892517063,
-          "duration" : 577
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "Compare screenshots",
-        "uid" : "ba1365f8ae3f7b9a",
-        "parentUid" : "82edf17d7d4ef5ceb45503fa2baad4a9",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542893101785,
-          "stop" : 1542893102369,
-          "duration" : 584
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "82edf17d7d4ef5ceb45503fa2baad4a9"
-    }, {
-      "name" : "expected 0.15625 to be below 0.1",
-      "children" : [ {
-        "name" : "Compare screenshots",
-        "uid" : "5db46da93ec2e511",
-        "parentUid" : "1c6e2413d54264fbe974847498d7fc2d",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542891138446,
-          "stop" : 1542891139043,
-          "duration" : 597
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "Compare screenshots",
-        "uid" : "d4849d544d2a1ebd",
-        "parentUid" : "1c6e2413d54264fbe974847498d7fc2d",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542892998602,
-          "stop" : 1542892999191,
-          "duration" : 589
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "1c6e2413d54264fbe974847498d7fc2d"
-    }, {
-      "name" : "expected 0.140625 to be below 0.1",
-      "children" : [ {
-        "name" : "Compare screenshots",
-        "uid" : "8adb1696862065f0",
-        "parentUid" : "e65794d4ebd4e424f706a8d1b0e8f1f9",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542891289207,
-          "stop" : 1542891289766,
-          "duration" : 559
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "Compare screenshots",
-        "uid" : "6523ed54f239990c",
-        "parentUid" : "e65794d4ebd4e424f706a8d1b0e8f1f9",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542891780258,
-          "stop" : 1542891780871,
-          "duration" : 613
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      }, {
-        "name" : "Compare screenshots",
-        "uid" : "d95d9f9fd56b41fb",
-        "parentUid" : "e65794d4ebd4e424f706a8d1b0e8f1f9",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542892094286,
-          "stop" : 1542892094858,
-          "duration" : 572
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "e65794d4ebd4e424f706a8d1b0e8f1f9"
-    }, {
-      "name" : "expected '' to equal 'САЛОН АЛЬКАНТАРА'",
-      "children" : [ {
-        "name" : "Check checkboxes Алькантара",
-        "uid" : "a266b64ca52b994c",
-        "parentUid" : "7d02865b6579fb679c50acb1ecba767a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542891333187,
-          "stop" : 1542891334361,
-          "duration" : 1174
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "7d02865b6579fb679c50acb1ecba767a"
-    }, {
-      "name" : "expected null to not equal null",
-      "children" : [ {
-        "name" : "compare screenshots",
-        "uid" : "bd27298d04998c7c",
-        "parentUid" : "765120cababe6d12a2c54c238643eabc",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542891334998,
-          "stop" : 1542891335000,
-          "duration" : 2
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "765120cababe6d12a2c54c238643eabc"
-    }, {
-      "name" : "expected 0.203125 to be below 0.1",
-      "children" : [ {
-        "name" : "compare screenshots",
-        "uid" : "71d4ae2a07dcf7ef",
-        "parentUid" : "e1fb01f8aac08bf633b2a3613c221353",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542891418047,
-          "stop" : 1542891418636,
-          "duration" : 589
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "e1fb01f8aac08bf633b2a3613c221353"
-    }, {
-      "name" : "expected 0.25 to be below 0.1",
-      "children" : [ {
-        "name" : "compare screenshots",
-        "uid" : "f840255b6f2c950d",
-        "parentUid" : "37bcfeb7949bfbba7f15431fe0320bec",
-        "status" : "failed",
-        "time" : {
-          "start" : 1542892892196,
-          "stop" : 1542892892784,
-          "duration" : 588
-        },
-        "flaky" : false,
-        "parameters" : [ "firefox" ]
-      } ],
-      "uid" : "37bcfeb7949bfbba7f15431fe0320bec"
+      "uid" : "8f75d111d751166ddeecce8019ca7b17"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]

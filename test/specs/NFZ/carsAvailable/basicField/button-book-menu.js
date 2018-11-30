@@ -45,34 +45,34 @@ describe('button book in the menu', () => {
 
     it('Input check name', () => {
         // вводим имя
-        browser.setValue('.input__field[placeholder="Введите ваше имя"]', faker.name.firstName(1));
+        browser.setValue('.op005_form-item[data-name="Имя"] input', faker.name.firstName(1));
     });
     it('Checking the last name', () => {
-        browser.waitForExist('.input__field[placeholder="Фамилия"]');
+        browser.waitForExist('.op005_form-item[data-name="Фамилия"] input');
         // вводим фамилию
-        browser.setValue('.input__field[placeholder="Фамилия"]', faker.name.firstName(1));
+        browser.setValue('.op005_form-item[data-name="Фамилия"] input', faker.name.firstName(1));
     });
     it('Entry check patronymic', () => {
-        browser.waitForExist('.input__field[placeholder="Отчество"]');
+        browser.waitForExist('.op005_form-item[data-name="Отчество"] input');
         // вводим отчество
-        browser.setValue('.input__field[placeholder="Отчество"]', faker.name.firstName(1));
+        browser.setValue('.op005_form-item[data-name="Отчество"] input', faker.name.firstName(1));
     });
     it('Checking phone input', () => {
         // вводим телефонный номер
-        browser.waitForExist('.input__field[placeholder="Телефон"]');
-        browser.setValue('.input__field[placeholder="Телефон"]', faker.phone.phoneNumber());
+        browser.waitForExist('.op005_form-item[data-name="Телефон"] input');
+        browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber());
         // клик для переноса фокуса 
-        browser.click('.input__field[placeholder="Отчество"]');
+        browser.click('.op005_form-item[data-name="Отчество"] input');
 
         while(browser.isVisible('.op005_register div:nth-child(5) > div > span') === true) {
-            browser.clearElement('.input__field[placeholder="Телефон"]');
-            browser.setValue('.input__field[placeholder="Телефон"]', faker.phone.phoneNumber());
+            browser.clearElement('.op005_form-item[data-name="Телефон"] input');
+            browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber());
         }
     });
     it('Verification of email input', () => {
-        browser.waitForExist('.input__field[placeholder="Email"]');
+        browser.waitForExist('.op005_form-item[data-name="Email"] input');
         // вводидим эмеил
-        browser.setValue('.input__field[placeholder="Email"]', faker.internet.email(1));
+        browser.setValue('.op005_form-item[data-name="Email"] input', faker.internet.email(1));
     });
     it('Check that we are back', () => {
         // проверям, что кнопка стала активной
@@ -83,7 +83,7 @@ describe('button book in the menu', () => {
         browser.click('.op005_form-btn .btn_cta');
         // ожидаем загрузку карточки
         browser.waitUntil(
-            () => browser.isExisting('.input__field[placeholder="Введите ваше имя"]') === false,
+            () => browser.isExisting('.op005_form-item[data-name="Имя"] input') === false,
             10000, "Заявка на запрос автомобиля не отравляется");
         // Получаем текст, что нужно подтвердить емаил
         const getText = browser.getText('.op005_form_title');

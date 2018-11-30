@@ -1,4 +1,4 @@
-describe('test images detall in all model', () => {
+describe.skip('test images detall in all model', () => {
     // модель автомобиля
     let nameCar;
     // коплектация автомобиля

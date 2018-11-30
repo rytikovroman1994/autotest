@@ -21,7 +21,7 @@ describe('test viewed cars', () => {
             // переходим в данную карточку
             browser.click(`.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(${i}) img`);
             // ждём пока загрузится картинка
-            browser.waitForVisible('.preview_img-inner .image-container img');
+            browser.waitForVisible('.preview_img-inner .image-container img', 40000);
             // возращаемся к списку
             browser.click('.avn003_link-back');
         }
@@ -34,6 +34,8 @@ describe('test viewed cars', () => {
         // ждём пока загрузится картинка
         browser.waitForVisible('.preview_img-inner .image-container img');
         // скролим страницу до блока "Вы уже смотрели"
+        browser.scroll(0, 5000);
+        browser.pause(5000);
         browser.scroll('.nfz001_title > div > h2', 0, 10);
         browser.pause(5000);
         // получаем массив ид машин 

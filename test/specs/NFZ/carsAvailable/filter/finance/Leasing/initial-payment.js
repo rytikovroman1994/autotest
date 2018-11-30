@@ -1,6 +1,6 @@
 describe('test leasing initial payment', () => {
     // выносим часто используемый класс
-    let selector = '.avn008_credit__firstPaySlider[data-name="Первоначальный платёж"]';
+    let selector = '.avn008_credit__firstPaySlider[data-name="Авансовый лизинговый платеж"]';
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу финансы

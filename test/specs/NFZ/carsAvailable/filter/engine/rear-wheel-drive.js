@@ -7,7 +7,7 @@ describe('test rear-wheel-drive', () => {
 
     // выбираем задний привод
     it('Check rear-wheel-drive', () => {
-        browser.helpers.checkCheckboxNfz('Задний привод', 'ЗАДНИЙ');
+        browser.helpers.checkCheckboxNfz('Задний привод', 'ЗАДНИЙ', 'chassis');
 
         // переходим к списку
         browser.click('.checkbox[data-name="Задний привод"]');

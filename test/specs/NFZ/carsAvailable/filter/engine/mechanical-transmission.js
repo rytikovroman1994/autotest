@@ -8,7 +8,7 @@ describe('test mechanical transmission', () => {
 
     // выбираем механическую коробку передач
     it('Check the manual transmission', () => {
-        browser.helpers.checkCheckboxNfz('Механическая', 'MT');
+        browser.helpers.checkCheckboxNfz('Механическая', 'MT', 'transmission');
 
         // переходим к списку
         browser.click('.checkbox[data-name="Механическая"]');

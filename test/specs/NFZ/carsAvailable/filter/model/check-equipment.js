@@ -37,23 +37,26 @@ describe('test check equipment', () => {
             // считаем количетсво комплектаций 
             const numberEquipment = $$('.avn008_kits__btn');
             for( let y = 1; y <= numberEquipment.length - 1; y++ ) {
-                // получаем имя комплектации
-                const nameEquipment = browser.getText(`div:nth-child(${y}) > div.avn008_kits__btn-title`);
-                // кликаем по кнопки комплектации
-                browser.click(`.grid_s_11.grid_m_8.grid_l_9 > div > div:nth-child(${y})`);
-                // проверяем что в фильтре появилось условие 
-                browser.waitUntil(
-                    () => browser.isVisible('.avn008_filter-value-item__inner ') === true,
-                    5000, `Не удалось выбрать комплектацию ${nameEquipment}`);
+                const disable = browser.getCssProperty(`.grid_s_11.grid_m_8.grid_l_9 > div > div:nth-child(${y})`, 'opacity');
+                console.log(disable.value);
+                if(disable.value == 1) {
+                    // получаем имя комплектации
+                    const nameEquipment = browser.getText(`div:nth-child(${y}) > div.avn008_kits__btn-title`);
+                    // кликаем по кнопки комплектации
+                    browser.click(`.grid_s_11.grid_m_8.grid_l_9 > div > div:nth-child(${y})`);
+                    // проверяем что в фильтре появилось условие 
+                    browser.waitUntil(
+                        () => browser.isVisible('.avn008_filter-value-item__inner ') === true,
+                        5000, `Не удалось выбрать комплектацию ${nameEquipment}`);
 
-                // проверяем что имя можели в фильтре совпадает с проверяемой
-                nameCarFilter = browser.getText('.avn008_filter-value-item_text__bottom');
-                console.log(nameCarFilter)
-                expect(nameCarFilter).to.be.equal(nameCar.toUpperCase());
+                    // проверяем что имя можели в фильтре совпадает с проверяемой
+                    nameCarFilter = browser.getText('.avn008_filter-value-item_text__bottom');
+                    console.log(nameCarFilter)
+                    expect(nameCarFilter).to.be.equal(nameCar.toUpperCase());
 
-                // убираем комплектацию
-                browser.click(`.grid_s_11.grid_m_8.grid_l_9 > div > div:nth-child(${y})`);
-            
+                    // убираем комплектацию
+                    browser.click(`.grid_s_11.grid_m_8.grid_l_9 > div > div:nth-child(${y})`);
+                }
             }
             // закрываем окно комплектаций 
             browser.click('.avn008_kits__close');

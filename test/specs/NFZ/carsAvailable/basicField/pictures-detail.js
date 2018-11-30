@@ -1,4 +1,4 @@
-describe('test pictures-detail', () => {
+describe('test pictures detail', () => {
     const list = [];
     before('open page', () => {
         browser.helpers.openListNfz();

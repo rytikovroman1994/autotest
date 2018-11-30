@@ -1,4 +1,4 @@
-describe('test screenshots cars', () => {
+describe.skip('test screenshots cars', () => {
     let nameCar;
     before('open page filter', () => {
         // делаем размер окна браузера

@@ -1,4 +1,4 @@
-describe('test airbag four', () => {
+describe('test number-packages 4', () => {
     // выносим часто используемое название условия комплектации
     let conditions = '4';
     before('open page filter', () => {
@@ -10,13 +10,13 @@ describe('test airbag four', () => {
     // проверяем работу чекбоскса
     it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
-       browser.helpers.checkCheckboxNfz(conditions, '4', 'airbag-4');
+       browser.helpers.checkCheckboxNfz(conditions, '4', 'seats-4');
     });
 
     // проверяем, что условие появилось в деталке машины
     it('Check the equipment in detail', () => {
-        const newArray = browser.helpers.checkConditionsNfz(conditions, '4 подушки');
+        const newArray = browser.helpers.checkConditionsNfz(conditions, '4 сиденья');
         // проверяем
-        expect(newArray).to.be.equal('4 подушки');
+        expect(newArray).to.be.equal('4 сиденья');
     });
 });
