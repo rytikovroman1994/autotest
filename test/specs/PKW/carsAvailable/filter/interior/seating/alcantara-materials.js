@@ -21,7 +21,7 @@ describe('test alcantara materials', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
-        ctx.originalScreenshot = 'snapshot/screenshotInterior/seats.png';
+        ctx.originalScreenshot = 'snapshot/screenshotInterior/seats-alcantara.png';
         // делаем актуальный скриншот
         ctx.newScreenshot = browser.screenshot().value;
      });
@@ -31,7 +31,17 @@ describe('test alcantara materials', () => {
         expect(ctx.newScreenshot).not.equal(null);
     
         const distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
-        expect(distance).to.be.below(0.1);
+        const diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
+    
+        // expect(distance).to.be.above(0);
+        if(diff.percent > 0.01 || distance > 0.1) {
+            // если большое различие, то сохраняем изображение с отличием
+            diff.image.write('./test/reports/allure-results/budget.png');
+            // проверяем допустипость отличия в пикселях
+            expect(diff.percent).to.be.below(0.01);
+            // проверем допустимость отличия в растоянии
+            expect(distance).to.be.below(0.1);
+        }
       });
 
     // проверяем, что условие появилось в деталке машины

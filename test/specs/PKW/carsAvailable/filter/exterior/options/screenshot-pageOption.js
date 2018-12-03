@@ -34,7 +34,7 @@ describe('screenshot page options', () => {
         // expect(distance).to.be.above(0);
         if(diff.percent > 0.01 || distance > 0.1) {
             // если большое различие, то сохраняем изображение с отличием
-            diff.image.write('./test/reports/allure-results/engine.png');
+            diff.image.write('./test/reports/allure-results/exterior-option.png');
             // проверяем допустипость отличия в пикселях
             expect(diff.percent).to.be.below(0.01);
             // проверем допустимость отличия в растоянии

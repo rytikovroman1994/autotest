@@ -16,5 +16,5 @@ export default function moreDetail(conditions) {
         20000, `Картинка ${conditions} не отображается в Подробнее`);
     browser.waitForVisible('.avn015_content .image-container img');
     // страховочная пауза
-    browser.pause(1000);
+    browser.pause(2000);
 }
