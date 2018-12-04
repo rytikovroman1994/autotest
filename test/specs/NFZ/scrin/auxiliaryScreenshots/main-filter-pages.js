@@ -1,8 +1,11 @@
-describe('test nfz main filter pages', () => {
+describe.skip('test nfz main filter pages', () => {
     before('open first page', () => {
         browser.helpers.openFilter();
         // ожидаем пока загрузится последняя картинка модели
         browser.waitForVisible('div:nth-child(8) .image-container img');
+        browser.execute(
+            () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
+        );
     });
 
     // делаем скриншот страницы Модель
