@@ -1,4 +1,4 @@
-describe.skip('test nfz main filter pages', () => {
+describe('test nfz main filter pages', () => {
     before('open first page', () => {
         browser.helpers.openFilter();
         // ожидаем пока загрузится последняя картинка модели

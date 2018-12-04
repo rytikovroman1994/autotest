@@ -18,9 +18,10 @@ describe('test budget slider car prise', () => {
         // очищаем поле ввода суммы Стоимости автомобиля
         browser.clearElement('div:nth-child(1) > div.avn008_budget__price-item-self input[type="text"]');
         // вводим свою сумму 
-        browser.addValue('div:nth-child(1) > div.avn008_budget__price-item-self input[type="text"]', '2000000');
+        browser.setValue('div:nth-child(1) > div.avn008_budget__price-item-self input[type="text"]', '2000000');
+        browser.pause(2000);
         // убираем фокус, чтобы сумма применилась
-        browser.click('.avn008_budget__slider-numbers-toggle_all');
+        browser.click('.rc-slider .rc-slider-handle-2');
         // проверяем, что слайдер поменял позицию 
         const finishPositionLeft = browser.getLocation('.rc-slider .rc-slider-handle-1');
         browser.waitUntil(
@@ -30,11 +31,12 @@ describe('test budget slider car prise', () => {
         // очищаем поле ввода суммы Первоначального платежа
         browser.clearElement('div:nth-child(3) > div.avn008_budget__price-item-self input[type="text"]');
         // вводим свою сумму 
-        browser.addValue('div:nth-child(3) > div.avn008_budget__price-item-self input[type="text"]', '3000000');
+        browser.setValue('div:nth-child(3) > div.avn008_budget__price-item-self input[type="text"]', '3000000');
+        browser.pause(2000);
         // убираем фокус, чтобы сумма применилась
         browser.click('.avn008_budget__slider-numbers-toggle_all');
         // проверяем, что слайдер поменял позицию 
-        const finishPositionRight = browser.getLocation('.rc-slider .rc-slider-handle-2');
+        const finishPositionRight = browser.getLocation('.rc-slider .rc-slider-handle-1');
         browser.waitUntil(
             () => (finishPositionRight != rightSlider) === true,
             5000, "Правый слайдер Стоимость авто не переместился при изменнеии суммы");

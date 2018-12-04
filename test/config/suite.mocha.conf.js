@@ -223,12 +223,14 @@ exports.config = {
     
     // подключил webdrivercss для более сложных скриншотов
     plugins: {
-      webdrivercss: {
-        screenshotRoot: './snapshot',
-        failedComparisonsRoot: './test/reports/errorShots',
-        misMatchTolerance: '0.05',
-        screenWidth: [640, 1024]
+      'wdio-screenshot': {
       },
+      // webdrivercss: {
+      //   screenshotRoot: './snapshot',
+      //   failedComparisonsRoot: './test/reports/errorShots',
+      //   misMatchTolerance: '0.05',
+      //   screenWidth: [640, 1024]
+      // },
       // webdriverrtc : {},
       // browsererevent : {}
     },

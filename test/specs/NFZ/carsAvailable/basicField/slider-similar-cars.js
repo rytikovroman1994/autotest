@@ -12,9 +12,9 @@ describe('test slider similar cars', () => {
         // ожидаем загрузки картинки
         browser.waitForVisible('.image-container');
         // скролим страницу до слайдера 
-        browser.scroll('.avn010_advantages .detail-page__default-title', 10, 1300);
+        browser.scroll('.avn022_Footer', 10, -700);
         // ожидаем пока прогрузится блок
-        browser.waitForVisible('.slick-initialized .slick-active img');
+        browser.waitForVisible('.avn009_similar-offers div:nth-child(1) > div > a img');
     });
 
     // проверяем работу нижних кнопок

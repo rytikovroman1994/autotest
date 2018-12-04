@@ -13,6 +13,8 @@ describe('test page diler', () => {
         browser.waitForVisible('.grid_l_9 > div > div:nth-child(1)');
         // выбираем данную комплектацию 
         browser.click('.grid_l_9 > div > div:nth-child(1)');
+        // закрываем окно комплектаций
+        browser.click('.avn008_kits__close');
     });
 
     it('Chose page diler', () => {
