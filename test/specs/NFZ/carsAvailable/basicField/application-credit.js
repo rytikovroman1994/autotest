@@ -46,9 +46,9 @@ describe('test application credit', () => {
         // получаем остаточный платёж
         residualPayment = browser.getAttribute('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input', 'value');
         // получаем ежемесячный платёж
-        monthlyPayment = browser.getText('.nfz002_foot__wrap .price-text');
+        monthlyPayment = browser.getText('.nfz002_foot__wrap .h3 .price-text');
         // получаем ставку по кредиту
-        initialRate = browser.getText('div:nth-child(2) > div > div > div.nfz002_param-display_text');
+        initialRate = browser.getText('div:nth-child(1) > div > div.nfz002_param-display_text.h4 > h5');
         // получаем цену автомобиля
         detalPriseCar = browser.getText('.mainStageinfo_section-buy h3 .price-text');
 
@@ -89,18 +89,19 @@ describe('test application credit', () => {
         // проверяем Ставку кредита 
         const currentInitialRate = browser.getText('.nfz0033_table > div:nth-child(4) .nfz0033_table-item_text');
         browser.waitUntil(
-            () => currentInitialRate === initialRate.slice(0, -1),
+            () => currentInitialRate === initialRate,
             5000, "Ставка по кредиту в Заявке отличается от ставки в деталке");
         // проверяем цену автомобиля 
-        const currentPriseCar = browser.getText('.uac001_price-block .price-text');
+        const currentPriseCar = browser.getText('.uac001_price-block_current-price .price-text');
         browser.waitUntil(
             () => currentPriseCar === detalPriseCar,
             5000, "Цена автомобиля отличается");
         // проверяем Выкупную стоимость автомобиля
-        const applicationPriseCar = browser.getText('.nfz0033_table > div:nth-child(6) .price-text');
-        browser.waitUntil(
-            () => applicationPriseCar !== detalPriseCar,
-            5000, "Цена автомобиля в заявке отличается от цена в деталке");
+        // ПОЛЕ ОТСУТСВУЕТ В ДАННЫЙ МОМЕНТ
+        // const applicationPriseCar = browser.getText('.nfz0033_table > div:nth-child(6) .price-text');
+        // browser.waitUntil(
+        //     () => applicationPriseCar !== detalPriseCar,
+        //     5000, "Цена автомобиля в заявке отличается от цена в деталке");
     });
 
     // заполняем данные и отправляем заявку
@@ -109,27 +110,34 @@ describe('test application credit', () => {
         browser.waitUntil(
             () => browser.isExisting('.btn_cta.is_disabled') === true,
             5000, "Кнопка отправить активна без валидных данных");
+        browser.scroll('form .radio-group__horizontal div:nth-child(1) label', 0, 10);
+        // выбираем гендер
+        browser.click('form .radio-group__horizontal div:nth-child(1) label');
         // вводим фамилию
-        browser.setValue('form > div:nth-child(1) .input__field', faker.name.firstName(1));
-        // вводим фамилию 
-        browser.setValue('form > div:nth-child(2) .input__field', faker.name.firstName(1));
+        browser.setValue('.op005_form-item[data-name="Фамилия"] input', faker.name.firstName(1));
+        browser.scroll('.op005_form-item[data-name="Имя"] input', 0, 10);
+        // вводим имя 
+        browser.setValue('.op005_form-item[data-name="Имя"] input', faker.name.firstName(1));
         // вводим телефон 
-        browser.setValue('form > div:nth-child(3) .input__field', faker.phone.phoneNumber());
+        browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber());
         // клик для применения номера
-        browser.click('form > div:nth-child(4) .input__field');
+        browser.click('.op005_form-item[data-name="Email"] input');
         // проверка на некоректный номер
-        while(browser.isVisible('form > div:nth-child(3) .error-container') === true) {
-            browser.clearElement('form > div:nth-child(3) .input__field');
-            browser.setValue('form > div:nth-child(3) .input__field', faker.phone.phoneNumber());
+        while(browser.isVisible('.op005_form-item[data-name="Телефон"] .error-container') === true) {
+            browser.clearElement('.op005_form-item[data-name="Телефон"] input');
+            browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber());
         }
+        browser.scroll('.op005_form-item[data-name="Email"] input', 0, 10);
         // вводим электронную почту
-        browser.setValue('form > div:nth-child(4) .input__field', faker.internet.email(1));
+        browser.setValue('.op005_form-item[data-name="Email"] input', faker.internet.email(1));
         // проверяем, что кнопка стала активной 
         browser.waitUntil(
             () => browser.isExisting('.btn_cta.is_disabled') === false,
             5000, "Кнопка отправить заявку на кредит не стала активной");
         // нажимает кнопку
-        browser.click('form > div:nth-child(5) .btn_cta')
+        browser.click('.btn_with_loader');
+        // магическая дичь, ожидаем пока пропадёт оверлей 
+        browser.pause(4000);
 
         // ожидаем пока появится поле Заявка отправлена
         browser.waitUntil(

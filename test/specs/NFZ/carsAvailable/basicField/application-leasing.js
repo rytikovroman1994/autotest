@@ -14,6 +14,8 @@ describe('test application leasing', () => {
     let initialRate;
     // цена автомобиля в деталке
     let detalPriseCar;
+    // сумма договора лизинга 
+    let leasingContract;
     before('open page list', () => {
         browser.helpers.openListNfz();
         // переходим в деталку 
@@ -49,12 +51,14 @@ describe('test application leasing', () => {
         // получаем остаточный платёж
         residualPayment = browser.getAttribute('.nfz002_input[data-name="Платеж в счет выкупа"] .ci001-1_input', 'value');
         // получаем ежемесячный платёж
-        monthlyPayment = browser.getText('.nfz002_foot__wrap .price-text');
-        // получаем ставку по лизинга
-        initialRate = browser.getText('div:nth-child(2) > div > div > div.nfz002_param-display_text');
+        monthlyPayment = browser.getText('.nfz002_param-display_text .h3 .price-text');
+        // НДС к позмещению
+        initialRate = browser.getText('div:nth-child(1) > div > div.nfz002_param-display_text.h4 > h5 > span > span.price-text');
         // получаем цену автомобиля
         detalPriseCar = browser.getText('.mainStageinfo_section-buy h3 .price-text');
-
+        // получаем сумму договра лизинга
+        leasingContract = browser.getText('div:nth-child(2) > div > div.nfz002_param-display_text.h4 > h5 > span > span.price-text');
+    
         // нажимаем Заполнить заявку 
         browser.click('.nfz002_foot__wrap .btn__text');
         // жёдм пока загрузится картинка
@@ -83,26 +87,26 @@ describe('test application leasing', () => {
         const currentrResidualPayment = browser.getText('.nfz0033_table > div:nth-child(5) .price-text');
         browser.waitUntil(
             () => currentrResidualPayment === residualPayment,
-            5000, "Размер остаточного платежа в Заявке отличается от платежа в деталке");
+            5000, "Плаьёж в счёт выкупа в Заявке отличается от платежа в деталке");
         // проверяем Первоначальный платёж 
         const currentInitialPayment = browser.getText('.nfz0033_table > div:nth-child(2) .nfz0033_table-item_text');
         browser.waitUntil(
             () => currentInitialPayment === initialPayment,
-            5000, "Размер первоначального платежа в Заявке отличается от платежа в деталке");
-        // проверяем Ставку лизинга 
+            5000, "Авансовый лизинговый платёж в Заявке отличается от платежа в деталке");
+        // проверяем НДС к возмещению
         const currentInitialRate = browser.getText('.nfz0033_table > div:nth-child(4) .nfz0033_table-item_text');
         browser.waitUntil(
-            () => currentInitialRate === initialRate.slice(0, -1),
-            5000, "Ставка по лизинга в Заявке отличается от ставки в деталке");
+            () => currentInitialRate === initialRate,
+            5000, "НДС к возмещению в Заявке отличается от ставки в деталке");
         // проверяем цену автомобиля 
-        const currentPriseCar = browser.getText('.uac001_price-block .price-text');
+        const currentPriseCar = browser.getText('.uac001_price-block_current-price .price-text');
         browser.waitUntil(
             () => currentPriseCar === detalPriseCar,
             5000, "Цена автомобиля отличается");
         // проверяем Выкупную стоимость автомобиля
-        const applicationPriseCar = browser.getText('.nfz0033_table > div:nth-child(6) .price-text');
+        const currentLeasingContract = browser.getText('.nfz0033_table > div:nth-child(6) .price-text');
         browser.waitUntil(
-            () => applicationPriseCar !== detalPriseCar,
+            () => currentLeasingContract === leasingContract,
             5000, "Цена автомобиля в заявке отличается от цена в деталке");
     });
 
@@ -112,27 +116,42 @@ describe('test application leasing', () => {
         browser.waitUntil(
             () => browser.isExisting('.btn_cta.is_disabled') === true,
             5000, "Кнопка отправить активна без валидных данных");
+        browser.scroll('form .radio-group__horizontal div:nth-child(1) label', 0, 10);
+        // выбираем гендер
+        browser.click('form .radio-group__horizontal div:nth-child(1) label');
         // вводим фамилию
-        browser.setValue('form > div:nth-child(1) .input__field', faker.name.firstName(1));
-        // вводим фамилию 
-        browser.setValue('form > div:nth-child(2) .input__field', faker.name.firstName(1));
+        browser.setValue('.op005_form-item[data-name="Фамилия"] input', faker.name.firstName(1));
+        browser.scroll('.op005_form-item[data-name="Имя"] input', 0, 10);
+        // вводим имя 
+        browser.setValue('.op005_form-item[data-name="Имя"] input', faker.name.firstName(1));
         // вводим телефон 
-        browser.setValue('form > div:nth-child(3) .input__field', faker.phone.phoneNumber());
+        browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber());
         // клик для применения номера
-        browser.click('form > div:nth-child(4) .input__field');
+        browser.click('.op005_form-item[data-name="Email"] input');
         // проверка на некоректный номер
-        while(browser.isVisible('form > div:nth-child(3) .error-container') === true) {
-            browser.clearElement('form > div:nth-child(3) .input__field');
-            browser.setValue('form > div:nth-child(3) .input__field', faker.phone.phoneNumber());
+        while(browser.isVisible('.op005_form-item[data-name="Телефон"] .error-container') === true) {
+            browser.clearElement('.op005_form-item[data-name="Телефон"] input');
+            browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber());
         }
+        browser.scroll('.op005_form-item[data-name="Email"] input', 0, 10);
         // вводим электронную почту
-        browser.setValue('form > div:nth-child(4) .input__field', faker.internet.email(1));
+        browser.setValue('.op005_form-item[data-name="Email"] input', faker.internet.email(1));
+        // вводим Наименование компании
+        browser.setValue('.op005_form-item[data-name="Наименование организации"] input', faker.company.companyName(1));
+        browser.scroll('.op005_form-item[data-name="Адрес"] input', 0, 10);
+        // вводим адресс 
+        browser.setValue('.op005_form-item[data-name="Адрес"] input', faker.address.streetAddress(1));
+        // вводим адресс 
+        browser.setValue('.op005_form-item[data-name="Должность"] input', faker.lorem.words(2));
         // проверяем, что кнопка стала активной 
         browser.waitUntil(
             () => browser.isExisting('.btn_cta.is_disabled') === false,
-            5000, "Кнопка отправить заявку на лизинга не стала активной");
+            5000, "Кнопка отправить заявку на кредит не стала активной");
+        browser.scroll('.btn_with_loader', 0, 10);
         // нажимает кнопку
-        browser.click('form > div:nth-child(5) .btn_cta')
+        browser.click('.btn_with_loader');
+        // магическая дичь, ожидаем пока пропадёт оверлей 
+        browser.pause(4000);
 
         // ожидаем пока появится поле Заявка отправлена
         browser.waitUntil(
