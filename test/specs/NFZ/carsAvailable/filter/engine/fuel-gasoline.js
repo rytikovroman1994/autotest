@@ -32,7 +32,7 @@ describe('test fuel-gasoline', () => {
         // ожидаем, пока перерендерится список карточек
         browser.pause(2000);
         // проверяем, что в карточке есть условие АКП
-        const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) .gridcontainer > div:nth-child(4) > div > div > div:nth-child(1) > div > div > div:nth-child(1) > div.avn001-2_specs-item_text');
+        const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) [title="Бензиновый двигатель"]');
         // проверяем совпадение массивов
         const result = [getView.split(' ')[0]].diff(listPetrol);
         // считаем количество несовпадений между массивами
