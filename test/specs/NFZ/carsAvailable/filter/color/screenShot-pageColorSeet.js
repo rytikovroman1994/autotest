@@ -11,6 +11,10 @@ describe('test screenShot page color seet', () => {
         browser.click('.grid_s_12:nth-child(1) .rc-slider-dot:nth-child(1)');
         // ждём пока перерендерится картинка
         browser.pause(3000);
+        // изменение програчности фильтра
+        browser.execute(
+            () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
+        );
     });
 
     it('take screenshot page body color', () => {

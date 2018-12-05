@@ -9,6 +9,9 @@ describe('test screenShot page interier', () => {
         browser.click('.avn008_filter__tab[data-name="Интерьер"]');
         // ждём пока загрузится последняя картинка 
         browser.waitForVisible('div:nth-child(4) img');
+        browser.execute(
+            () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
+        );
     });
 
     it('take screenshot', () => {

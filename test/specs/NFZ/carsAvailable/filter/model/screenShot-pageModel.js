@@ -7,6 +7,9 @@ describe('test screenShot page model', () => {
         browser.helpers.openFilter();
         // ожидаем пока загрузится последняя картинка модели
         browser.waitForVisible('div:nth-child(8) .image-container img');
+        browser.execute(
+            () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
+        );
     });
 
     it('take screenshot page body color', () => {

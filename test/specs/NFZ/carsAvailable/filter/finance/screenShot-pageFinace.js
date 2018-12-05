@@ -7,6 +7,9 @@ describe('test screenShot page finance', () => {
         browser.helpers.openFilter(); 
         // переходим на страницу финансы 
         browser.click('.avn008_filter__tab[data-name="Финансы"]');
+        browser.execute(
+            () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
+        );
     });
 
     it('take screenshot', () => {

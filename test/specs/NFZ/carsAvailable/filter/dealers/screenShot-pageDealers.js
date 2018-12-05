@@ -7,6 +7,10 @@ describe('test screenShot page dealers', () => {
         browser.helpers.openFilter(); 
         // переходим на страницу Дилеры 
         browser.click('.avn008_filter__tab[data-name="Дилеры"]');
+        // изменение програчности фильтра
+        browser.execute(
+            () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
+        );
     });
 
     it('take screenshot', () => {

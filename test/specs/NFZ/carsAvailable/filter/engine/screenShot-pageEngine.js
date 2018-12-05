@@ -9,6 +9,9 @@ describe('test screenShot page engine', () => {
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаем пока загрузится последняя картинка
         browser.waitForVisible('.avn008_engine__card-image[data-name="Трансмиссия"]');
+        browser.execute(
+            () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
+        );
     });
 
     it('take screenshot page body color', () => {
