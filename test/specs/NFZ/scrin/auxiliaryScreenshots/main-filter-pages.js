@@ -1,4 +1,4 @@
-describe('test nfz main filter pages', () => {
+describe.skip('test nfz main filter pages', () => {
     function diagonal(namePage) {
         // делаем мобильный размер экрана
         browser.windowHandleSize ({width: 400, height: 1200});

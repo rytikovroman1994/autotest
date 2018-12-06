@@ -1,17 +1,16 @@
-describe('test screenShot page color door', () => {
+describe('test screenShot page leasing', () => {
     const ctx = {
         originalScreenshot: null,
         newScreenshot: null,
       };
-      // имя тестируемой страницы
-      let namePage = 'color-door';
+    // имя тестируемой страницы
+    let namePage = 'leasing';
     before(() => {
-        browser.helpers.openFilter();
-        // переходим на страницу двигатель 
-        browser.click('.avn008_filter__tab[data-name="Цвет"]');
-        // ждём пока загрузится последняя страница 
-        browser.waitForVisible('.avn008_image-switcher_image');
-        // изменение програчности фильтра
+        browser.helpers.openFilter(); 
+        // переходим на страницу финансы 
+        browser.click('.avn008_filter__tab[data-name="Финансы"]');
+        // переходим на вкладку Лизинг
+        browser.click('.rc-slider-step > span:nth-child(1)');
         browser.execute(
             () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
         );

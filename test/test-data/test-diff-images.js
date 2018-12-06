@@ -22,7 +22,7 @@ describe('test diff imeges', () => {
         browser.waitForVisible('.avn008_image-switcher_image');
     });
     // проверяем работу diff
-    it('Test images', () => {
+    it('Test images', () => {z
         browser.saveScreenshot('./snapshot/diff/test4.png');
         browser.saveElementScreenshot('./snapshot/diff/test3.png', '.avn008_display-item_content');
     }); 
