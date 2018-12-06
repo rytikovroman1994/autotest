@@ -206,7 +206,7 @@ exports.config = {
     // e.g. using promises you can set the sync option to false.
     // path: '/wd/hub',
     // maxSession: 1,
-    host: '192.168.99.100',
+    // host: '192.168.99.100',
     port: 4444,
     sync: true,
     reporters: ['spec'],
@@ -235,7 +235,7 @@ exports.config = {
       // browsererevent : {}
     },
     
-    // services: ['selenium-standalone'],
+    services: ['selenium-standalone'],
     // services: ['selenium-standalone', 'phantomjs'],
     // services: ['docker'],  
 
