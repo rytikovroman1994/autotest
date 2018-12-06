@@ -1,6 +1,25 @@
 /* Вспомогательный тест для генерации актуальных скриншотов в разделе фильтр-эстерьер.*/
 
 describe.skip('screenshots-exterior', () => {
+    function diagonal(namePage) {
+        // делаем мобильный размер экрана
+        browser.windowHandleSize ({width: 400, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotExterior/400-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+
+        // делаем планшетный размер экрана
+        browser.windowHandleSize ({width: 800, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotExterior/800-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+
+        // делаем пк размер экрана
+        browser.windowHandleSize ({width: 1366, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotExterior/1366-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+    }
     before(() => {
         browser.helpers.openSite();
     });
@@ -14,9 +33,7 @@ describe.skip('screenshots-exterior', () => {
         // ожидаем загрузки картинки дисков
         browser.waitForVisible('div:nth-child(2) > div > div.disc-item_image');
         browser.pause(3000);
-        // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotExterior/disks.png');
-        expect(screen).to.not.equal(null);
+        diagonal('disks');
     });
 
     // скришот фильтр-свет
@@ -26,12 +43,13 @@ describe.skip('screenshots-exterior', () => {
         // ожидаем загрузки картинки фары
         browser.waitForVisible('.avn008_image-switcher_image');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotExterior/shine.png');
-        expect(screen).to.not.equal(null);
+        diagonal('shine');
+        browser.windowHandleSize ({width: 1366, height: 768});
     });
 
     // скриншот фильтр-динамический поворотый свет
     it('Filter-dynamic', () => {
+        browser.windowHandleSize ({width: 1366, height: 768});
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Динамический поворотный свет');
         // делаем скриншот
@@ -51,12 +69,13 @@ describe.skip('screenshots-exterior', () => {
         browser.waitForVisible('.avn008_option-check_image[data-name="Тонировка"]');
         browser.pause(3000);
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotExterior/option.png');
-        expect(screen).to.not.equal(null);
+        diagonal('option');
+        browser.windowHandleSize ({width: 1366, height: 768});
     });
 
     // скриншот фильтр-фаркоп
     it('Filter-hitch', () => {
+        browser.windowHandleSize ({width: 1366, height: 768});
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Складной фаркоп');
         // делаем скриншот

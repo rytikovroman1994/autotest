@@ -2,22 +2,38 @@
 */
 
 describe.skip('smoke screenshot test save', () => {
+    function diagonal(namePage) {
+        // делаем мобильный размер экрана
+        browser.windowHandleSize ({width: 400, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/mainFilterPages/400-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+
+        // делаем планшетный размер экрана
+        browser.windowHandleSize ({width: 800, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/mainFilterPages/800-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+
+        // делаем пк размер экрана
+        browser.windowHandleSize ({width: 1366, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/mainFilterPages/1366-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+    }
     before(() => {
         browser.helpers.openSite();
     });
     // скриншот фильтр-модель
     it('filter-model', () => {
         browser.waitForVisible('.avn008_car__image');
-        var screen = browser.saveScreenshot('./snapshot/mainFilterPages/model.png');
-        expect(screen).to.not.equal(null);
+        diagonal('model');
     });
     // скришот фильтр-бюджет
     it('filter-budget', () => {
         // переходим на страницу бюджет
         browser.click('.avn008_filter__tab[data-name="Бюджет"]');
-        // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/mainFilterPages/budget.png');
-        expect(screen).to.not.equal(null);
+        diagonal('budget');
     });
 
     // скришот фильтр-двигатель
@@ -26,9 +42,7 @@ describe.skip('smoke screenshot test save', () => {
         browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожидаем загрузки елементов
         browser.waitForVisible('.grid_m_2 img');
-        // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/mainFilterPages/enhine.png');
-        expect(screen).to.not.equal(null);
+        diagonal('engine');
     });
 
     // скришот фильтр-экстерьер
@@ -37,9 +51,7 @@ describe.skip('smoke screenshot test save', () => {
         browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // ожидаем загрузки елементов
         browser.waitForVisible('.avn008_image-switcher_image');
-        // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/mainFilterPages/exterior.png');
-        expect(screen).to.not.equal(null);
+        diagonal('exterior');
     });
 
     // скришот фильтр-интерьер
@@ -48,10 +60,7 @@ describe.skip('smoke screenshot test save', () => {
         browser.click('.avn008_filter__tab[data-name="Интерьер"]');
         // ожидаем загрузки елементов
         browser.waitForVisible('.avn008_image-switcher_image');
-        browser.pause(1000);
-        // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/mainFilterPages/interior.png');
-        expect(screen).to.not.equal(null);
+        diagonal('interior');
     });
 
     // скришот фильтр-опции
@@ -61,8 +70,6 @@ describe.skip('smoke screenshot test save', () => {
         // ожидаем загрузки елементов
         browser.waitForVisible('.avn008_option-check_image img');
         browser.waitForVisible('div:nth-child(7) > div > div > .avn008_option-check_image img');
-        // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/mainFilterPages/option.png');
-        expect(screen).to.not.equal(null);
+        diagonal('option');
     });
 });

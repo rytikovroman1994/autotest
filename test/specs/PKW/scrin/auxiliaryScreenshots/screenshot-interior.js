@@ -1,6 +1,25 @@
 /* Вспомогательный тест для генерации актуальных скриншотов в разделе фильтр-эстерьер.*/
 
 describe.skip('screenshots-exterior', () => {
+    function diagonal(namePage) {
+        // делаем мобильный размер экрана
+        browser.windowHandleSize ({width: 400, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/400-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+
+        // делаем планшетный размер экрана
+        browser.windowHandleSize ({width: 800, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/800-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+
+        // делаем пк размер экрана
+        browser.windowHandleSize ({width: 1366, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/1366-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+    }
     before(() => {
         browser.helpers.openSite();
     });
@@ -31,8 +50,7 @@ describe.skip('screenshots-exterior', () => {
         browser.waitForVisible('.avn008_image-switcher_image');
         browser.pause(5000);
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/helm.png');
-        expect(screen).to.not.equal(null);
+        diagonal('helm');
     });
 
     // скришот фильтр-климат
@@ -41,13 +59,11 @@ describe.skip('screenshots-exterior', () => {
         browser.click('.avn008_filter__second-tab[data-name="Климат"]');
         // ожидаем загрузки картинки фары
         browser.waitForVisible('.grid_6.push_3 > div > div > div:nth-child(1)  img');
-        // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/climate.png');
-        expect(screen).to.not.equal(null);
+        diagonal('climate');
     });
 
     // скриншот фильтр-мультимедия
-    it('Filter-dynamic', () => {
+    it('Filter-multimedia', () => {
         // открываем страницу мультимедиа 
         browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
         // ожидаем загрузки картинки 
@@ -55,9 +71,8 @@ describe.skip('screenshots-exterior', () => {
         browser.pause(3000);
         // ожидаем загрузки картинки диагональ экрана
         browser.waitForVisible('.avn008_option__slider-card__image');
-        // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/dynamic.png');
-        expect(screen).to.not.equal(null);
+        diagonal('multimedia');
+        browser.windowHandleSize ({width: 1366, height: 768});
     });
 
     // скриншот фильтр-active info display

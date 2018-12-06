@@ -1,6 +1,25 @@
 /* Вспомогательный тест для генерации актуальных скриншотов в разделе фильтр-опции-зимний пакет.*/
 
 describe.skip('screenshots-options', () => {
+    function diagonal(namePage) {
+        // делаем мобильный размер экрана
+        browser.windowHandleSize ({width: 400, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/400-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+
+        // делаем планшетный размер экрана
+        browser.windowHandleSize ({width: 800, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/800-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+
+        // делаем пк размер экрана
+        browser.windowHandleSize ({width: 1366, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/1366-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+    }
     before(() => {
         browser.helpers.openSite();
     });
@@ -15,9 +34,8 @@ describe.skip('screenshots-options', () => {
         // ожидаем загрузки последней картинки
         browser.waitForVisible('.avn008_option-check_image[data-name="Стояночный отопитель"]');
         browser.pause(3000);
-        // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/winterPackage.png');
-        expect(screen).to.not.equal(null);
+        diagonal('winterPackage');
+        browser.windowHandleSize ({width: 1366, height: 768});
     });
 
     // скришот фильтр-подогрев зеркал

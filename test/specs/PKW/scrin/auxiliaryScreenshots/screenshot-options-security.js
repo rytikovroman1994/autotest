@@ -1,6 +1,25 @@
 /* Вспомогательный тест для генерации актуальных скриншотов в разделе фильтр-опции.*/
 
 describe.skip('screenshots-exterior', () => {
+    function diagonal(namePage) {
+        // делаем мобильный размер экрана
+        browser.windowHandleSize ({width: 400, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/400-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+
+        // делаем планшетный размер экрана
+        browser.windowHandleSize ({width: 800, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/800-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+
+        // делаем пк размер экрана
+        browser.windowHandleSize ({width: 1366, height: 1200});
+        browser.pause(3000);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/1366-${namePage}.png`);
+        expect(screen).to.not.equal(null);
+    }
     before(() => {
         browser.helpers.openSite();
     });
@@ -109,8 +128,6 @@ describe.skip('screenshots-exterior', () => {
         // переходим на вкладку безопасность 
         browser.click('.avn008_filter__second-tab[data-name="Безопасность"]');
         browser.waitForVisible('.avn008_safety-images_main div:nth-child(1) img');
-        // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/security.png');
-        expect(screen).to.not.equal(null);
+        diagonal('security');
     });
 });
