@@ -58,13 +58,13 @@ describe('test button book in the menu', () => {
     it('Checking phone input', () => {
         // вводим телефонный номер
         browser.waitForExist('.op005_form-item[data-name="Телефон"] input');
-        browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber());
+        browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber(0));
         // клик для переноса фокуса 
         browser.click('.op005_form-item[data-name="Отчество"] input');
 
         while(browser.isVisible('.op005_register div:nth-child(5) > div > span') === true) {
             browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-            browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber());
+            browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber(0));
         }
     });
     it('Verification of email input', () => {

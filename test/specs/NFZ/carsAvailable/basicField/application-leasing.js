@@ -125,13 +125,13 @@ describe('test application leasing', () => {
         // вводим имя 
         browser.setValue('.op005_form-item[data-name="Имя"] input', faker.name.firstName(1));
         // вводим телефон 
-        browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber());
+        browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber(0));
         // клик для применения номера
         browser.click('.op005_form-item[data-name="Email"] input');
         // проверка на некоректный номер
         while(browser.isVisible('.op005_form-item[data-name="Телефон"] .error-container') === true) {
             browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-            browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber());
+            browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber(0));
         }
         browser.scroll('.op005_form-item[data-name="Email"] input', 0, 10);
         // вводим электронную почту
