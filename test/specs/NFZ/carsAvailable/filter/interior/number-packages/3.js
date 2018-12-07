@@ -1,4 +1,4 @@
-describe('test number-packages 3', () => {
+describe.skip('test number-packages 3', () => {
     // выносим часто используемое название условия комплектации
     let conditions = '3';
     before('open page filter', () => {
