@@ -6,7 +6,6 @@ describe('test application leasing', () => {
     // получаем срок лизинга 
     let initialMoth;
     // получаем остаточный платёж
-    // получаем остаточный платёж
     let residualPayment;
     // получаем ежемесячный платёж
     let monthlyPayment;

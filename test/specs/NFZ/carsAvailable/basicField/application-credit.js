@@ -97,11 +97,10 @@ describe('test application credit', () => {
             () => currentPriseCar === detalPriseCar,
             5000, "Цена автомобиля отличается");
         // проверяем Выкупную стоимость автомобиля
-        // ПОЛЕ ОТСУТСВУЕТ В ДАННЫЙ МОМЕНТ
-        // const applicationPriseCar = browser.getText('.nfz0033_table > div:nth-child(6) .price-text');
-        // browser.waitUntil(
-        //     () => applicationPriseCar !== detalPriseCar,
-        //     5000, "Цена автомобиля в заявке отличается от цена в деталке");
+        const applicationPriseCar = browser.getText('.nfz0033_table > div:nth-child(6) .price-text');
+        browser.waitUntil(
+            () => applicationPriseCar !== detalPriseCar,
+            5000, "Цена автомобиля в заявке отличается от цена в деталке");
     });
 
     // заполняем данные и отправляем заявку
