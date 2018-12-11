@@ -32,6 +32,7 @@
 		"assert": "^1.4.1",
 		"async": "^2.6.1",
 		"babel-preset-env": "^1.6.0",
+		"babel-preset-expo": "^5.0.0",
 		"babel-register": "^6.26.0",
 		"base64-img": "^1.0.4",
 		"chai": "^4.1.2",
@@ -62,6 +63,8 @@
 		"xmlhttprequest": "^1.8.0"
 	},
 	"devDependencies": {
+		"@babel/plugin-syntax-dynamic-import": "^7.2.0",
+		"babel-plugin-module-resolver": "^3.1.1",
 		"grunt": "^0.4.5",
 		"grunt-cli": "^0.1.13",
 		"grunt-mocha": "^1.0.4",
@@ -80,17 +83,5 @@
 		"wdio-selenium-standalone-service": "0.0.10",
 		"wdio-spec-reporter": "^0.1.5",
 		"webdriverio": "^4.14.0"
-	},
-	"babel": {
-		"presets": [
-			[
-				"env",
-				{
-					"targets": {
-						"node": "current"
-					}
-				}
-			]
-		]
 	}
 }
