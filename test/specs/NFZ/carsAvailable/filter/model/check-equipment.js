@@ -1,3 +1,6 @@
+import NfzModel from 'Pageobjects/nfz-model.page.js'
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test check equipment', () => {
     let nameCar;
     let nameCarFilter;
@@ -31,11 +34,11 @@ describe('test check equipment', () => {
             browser.click(`.avn008_model__wrap > div.gridcontainer > div:nth-child(${i})`);
             // ожидаем появления поля с комплектациями
             browser.waitUntil(
-                () => browser.isVisible('.avn008_kits__inner') === true,
+                () => browser.isVisible(NfzModel.pickingField) === true,
                 5000, `У автомобиля ${nameCar} не открывается окно комплектаций`);
 
             // считаем количетсво комплектаций 
-            const numberEquipment = $$('.avn008_kits__btn');
+            const numberEquipment = $$(NfzModel.Equipment);
             for( let y = 1; y <= numberEquipment.length - 1; y++ ) {
                 const disable = browser.getCssProperty(`.grid_s_11.grid_m_8.grid_l_9 > div > div:nth-child(${y})`, 'opacity');
                 console.log(disable.value);
@@ -46,7 +49,7 @@ describe('test check equipment', () => {
                     browser.click(`.grid_s_11.grid_m_8.grid_l_9 > div > div:nth-child(${y})`);
                     // проверяем что в фильтре появилось условие 
                     browser.waitUntil(
-                        () => browser.isVisible('.avn008_filter-value-item__inner ') === true,
+                        () => browser.isVisible(NfzFilter.conditionFilter) === true,
                         5000, `Не удалось выбрать комплектацию ${nameEquipment}`);
 
                     // проверяем что имя можели в фильтре совпадает с проверяемой
