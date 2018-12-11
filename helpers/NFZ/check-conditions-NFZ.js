@@ -6,6 +6,9 @@
  * @example
  *      browser.helpers.checkConditions('App Connect', 'App Connect');
  */
+import NfzFilter from 'Pageobjects/nfzfilter.js'
+import NfzListPage from 'Pageobjects/nfz-list.page.js'
+import NfzListPage from 'Pageobjects/nfz-detail.page.js'
 
 export default function checkConditionsNfz(filterCondition, conditionDetail) {
     // проверяем, что всплывающее окно подробнее скрыто
@@ -19,7 +22,7 @@ export default function checkConditionsNfz(filterCondition, conditionDetail) {
     // включаем чекбокс 
     browser.click(`.checkbox[data-name="${filterCondition}"]`);
     // проверяем, что появилось условие
-    browser.waitForVisible('.avn008_filter-value-item_image');
+    browser.waitForVisible(NfzFilter.conditionFilter);
 
     // проверяем что кнопка "Показать" активна
     browser.waitUntil(
@@ -31,10 +34,10 @@ export default function checkConditionsNfz(filterCondition, conditionDetail) {
     // ожидаем пока перерендерица список карточек
     browser.pause(2000);
     // кликаем на карточку
-    browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
+    NfzListPage.card();
 
     // ожидаем появления картинки на странице деталки
-    browser.waitForVisible('.preview_img img');
+    browser.waitForVisible(NfzDetail.selectorCarImage);
 
     // скролим вниз 
     browser.scroll(0, 600);
@@ -42,7 +45,7 @@ export default function checkConditionsNfz(filterCondition, conditionDetail) {
     // проеряем, на сущестовавание кнопки показать ещё
     if( browser.isVisible('.avn013_usp_item__show-more .avn013_usp_item_text') === true ) {
         // кликаем по данной кнопке
-        browser.click('.avn013_usp_item__show-more .avn013_usp_item_text');
+        NfzDetail.showMore();
     }
 
     // получаем массив имён доступных комплектаций
