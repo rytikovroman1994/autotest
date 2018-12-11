@@ -6,9 +6,9 @@
  * @example
  *      browser.helpers.checkConditions('App Connect', 'App Connect');
  */
-import NfzFilter from 'Pageobjects/nfzfilter.js'
+import NfzFilter from 'Pageobjects/nfz-filter.js'
 import NfzListPage from 'Pageobjects/nfz-list.page.js'
-import NfzListPage from 'Pageobjects/nfz-detail.page.js'
+import NfzDetail from 'Pageobjects/nfz-detail.page.js'
 
 export default function checkConditionsNfz(filterCondition, conditionDetail) {
     // проверяем, что всплывающее окно подробнее скрыто
