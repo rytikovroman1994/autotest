@@ -28,7 +28,7 @@ describe('test trade in detail', () => {
             // получаем цену автомобиля до акции
             const priseBefore = browser.getText('.mainStageinfo_price-discount > span');
             // выбираем покупку по дрейд ин
-            browser.click('.mainStageinfo_section-buy .checkbox ');
+            browser.click('.mainStageinfo_section-buy .checkbox');
             const currentPriseCarSale = browser.getText('.mainStageinfo_price-normal > div:nth-child(1) > h3 >span');
             expect(currentPriseCarSale).to.not.equal(priseCarSale);
             // проверяем, что цена до акции не изменилась
