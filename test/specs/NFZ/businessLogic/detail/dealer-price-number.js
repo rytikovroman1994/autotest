@@ -1,3 +1,6 @@
+import NfzListPage from 'Pageobjects/nfz-list.page.js'
+import NfzDetail from 'Pageobjects/nfz-detail.page.js'
+
 describe('test booking car', () => {
     // получаем цену
     let getPrise;
@@ -19,22 +22,26 @@ describe('test booking car', () => {
         let getDiler = browser.getText('.avn001_display > div:nth-child(1) > div > div > div:nth-child(1) .avn001-2_dealer-link__text');
         // избавляемся от города
         getDilerName = getDiler.split(', ')[0];
+    });
+
+    // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
+    it('Check detail images', () => {
         // кликаем по карточке
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
+        NfzListPage.card();
         // проверм что появилась картинка в деталке
-        browser.waitForVisible('.preview_img img');
+        browser.waitForVisible(fzDetail.selectorImage);
     });
 
     // проверем что в деталке цена и диллер не поменялся
     it('Compare price and dealer', () => {
         // получаем цену автомобиля в деталке
-        let getPriseDetal = browser.getText('.mainStageinfo_price-normal .price-text');
+        let getPriseDetal = browser.getText(selectorCarPrice);
         // проверяем что цена в деталка равна цене в выборке
         expect(getPriseDetal).to.be.equal(getPrise);
         // получаем диллера в деталке
         let getDilerDetal = browser.getText('.mainStageAction_link');
         // проверяем что диллер такой же как в выборе
-        expect(getDilerDetal).to.be.equal(getDilerName);
+        expect(getDilerDetal).to.be.equal(NfzDetail.selectorPrice);
         // запоминаем номер телефона
         getPhone = browser.getText('.mainStageAction-phone a');
     }); 
