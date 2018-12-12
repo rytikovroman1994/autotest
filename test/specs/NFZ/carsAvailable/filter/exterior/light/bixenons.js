@@ -1,10 +1,12 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test light bixenon', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Биксенон / Светодиоды';
     before('open page filter', () => {
         browser.helpers.openFilter();
         // проверяем переход на страницу Интерьер
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
+        NfzFilter.exterior();
     }); 
 
     // проверяем работу чекбоскса
