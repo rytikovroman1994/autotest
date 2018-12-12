@@ -1,3 +1,5 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test screenShot page engine', () => {
     const ctx = {
         originalScreenshot: null,
@@ -8,9 +10,10 @@ describe('test screenShot page engine', () => {
     before(() => {
         browser.helpers.openFilter();
         // переходим на страницу двигатель 
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        NfzFilter.engine();
         // ожидаем пока загрузится последняя картинка
         browser.waitForVisible('.avn008_engine__card-image[data-name="Трансмиссия"]');
+        // убираем прозрачность фона
         browser.execute(
             () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
         );
