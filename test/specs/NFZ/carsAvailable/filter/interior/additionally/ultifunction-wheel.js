@@ -1,10 +1,12 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test additionally ultifunction wheel', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Мультируль';
     before('open page filter', () => {
         browser.helpers.openFilter();
         // проверяем переход на страницу Интерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
+        NfzFilter.interior();
     }); 
 
     // проверяем работу чекбоскса
