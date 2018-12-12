@@ -5,7 +5,7 @@ describe('test light bixenon', () => {
     let conditions = 'Биксенон / Светодиоды';
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // проверяем переход на страницу Интерьер
+        // проверяем переход на страницу Экстерьер
         NfzFilter.exterior();
     }); 
 

@@ -1,10 +1,12 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test additionally trailer coupling', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Фаркоп';
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // проверяем переход на страницу Интерьер
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
+        // проверяем переход на страницу Экстерьер
+        NfzFilter.exterior();
     }); 
 
     // проверяем работу чекбоскса

@@ -1,10 +1,12 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test totalMass to-2.5-ton', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'До 2.5т';
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // проверяем переход на страницу Интерьер
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
+        // проверяем переход на страницу Экстерьер
+        NfzFilter.exterior();
     }); 
 
     // проверяем работу чекбоскса
@@ -15,8 +17,8 @@ describe('test totalMass to-2.5-ton', () => {
 
     // проверяем, что условие появилось в деталке машины
     it('Check the equipment in detail', () => {
-        const newArray = browser.helpers.checkConditionsNfz(conditions, conditions);
+        const newArray = browser.helpers.checkConditionsNfz(conditions, 'Полная масса до 2.5т');
         // проверяем
-        expect(newArray).to.be.equal(conditions);
+        expect(newArray).to.be.equal('Полная масса до 2.5т');
     });
 });
