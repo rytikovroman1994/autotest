@@ -15,7 +15,7 @@ class NfzFilter extends Page {
 
 
     // селектор, при нажатии на который, открывается фильтр
-    get buttonFilter () { return $('.avn003_content .avn003_column-left') }
+    get buttonFilter () { return $('body #prompt-toggler_filter') }
     // селектор, при нажатии на который, открывается страница Сравнения
     get buttonCompare () { return $('.avn003_column-right li:nth-child(1)') }
     // селектор, при нажатии на который, открывается всплывашка выбора местоположения
@@ -46,60 +46,74 @@ class NfzFilter extends Page {
     }
     // действия в нижнем фильтре
     clear () {
+        browser.pause(1000);
         this.buttomClear.click();
     }
 
     show () {
+        browser.pause(1000);
         this.buttomShow.click();
     }
 
     // дейтсвия в верхнем фильтре 
     filter () {
+        browser.pause(1000);
         this.buttonFilter.click();
     }
 
     compare () {
+        browser.pause(1000);
         this.buttonCompare.click();
     }
 
     position () {
+        browser.pause(1000);
         this.buttonPosition.click();
     }
 
     yes () {
+        browser.pause(1000);
         this.buttonPositionYes.click();
     }
 
     anotherCity () {
+        browser.pause(1000);
         this.buttonAnotherCity.click();
     }
 
-    // дейтсвия в верхнем меню 
+    // дейтсвия в меню 
     model () {
+        browser.pause(1000);
         this.buttonModel.click();
     }
 
     engine () {
+        browser.pause(1000);
         this.buttonEngine.click();
     }
 
     color () {
+        browser.pause(1000);
         this.buttonColor.click();
     }
 
-    engine () {
+    exterior () {
+        browser.pause(1000);
         this.buttonExterior.click();
     }
 
     interior () {
+        browser.pause(1000);
         this.buttonInterior.click();
     }
 
     finance () {
+        browser.pause(1000);
         this.buttonFinance.click();
     }
 
     dilers () {
+        browser.pause(1000);
         this.buttonDilers.click();
     }
 }
