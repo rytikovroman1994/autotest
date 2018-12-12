@@ -1,3 +1,5 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test screenShot page leasing', () => {
     const ctx = {
         originalScreenshot: null,
@@ -8,7 +10,7 @@ describe('test screenShot page leasing', () => {
     before(() => {
         browser.helpers.openFilter(); 
         // переходим на страницу финансы 
-        browser.click('.avn008_filter__tab[data-name="Финансы"]');
+        NfzFilter.finance();
         // переходим на вкладку Лизинг
         browser.click('.rc-slider-step > span:nth-child(1)');
         browser.execute(

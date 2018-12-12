@@ -1,3 +1,5 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test budget slider car prise', () => {
     // начальное положение левого слайера
     let leftSlider;
@@ -6,7 +8,7 @@ describe('test budget slider car prise', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу финансы
-        browser.click('.avn008_filter__tab[data-name="Финансы"]');
+        NfzFilter.finance();
     });
 
     // проверяем работу слайдера Стоимость автомобиля 

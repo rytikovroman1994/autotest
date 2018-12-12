@@ -1,10 +1,12 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test leasing initial payment', () => {
     // выносим часто используемый класс
     let selector = '.avn008_credit__firstPaySlider[data-name="Авансовый лизинговый платеж"]';
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу финансы
-        browser.click('.avn008_filter__tab[data-name="Финансы"]');
+        NfzFilter.finance();
     });
 
     // проверяем переход на вкладку Лизинг и работу слайдера Первоначальный платёж

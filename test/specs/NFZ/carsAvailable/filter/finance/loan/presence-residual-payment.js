@@ -1,10 +1,12 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test loan - presence residual payment', () => {
     // получаем процентную ставку по креиту
     const rate = () => browser.getText('.avn008_credit__rate p');
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу финансы
-        browser.click('.avn008_filter__tab[data-name="Финансы"]');
+        NfzFilter.finance();
         // переходим в раздел Кредит
         browser.click('.rc-slider-step > span:nth-child(2)');
     });

@@ -1,3 +1,5 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test screenShot page finance', () => {
     const ctx = {
         originalScreenshot: null,
@@ -8,7 +10,7 @@ describe('test screenShot page finance', () => {
     before(() => {
         browser.helpers.openFilter(); 
         // переходим на страницу финансы 
-        browser.click('.avn008_filter__tab[data-name="Финансы"]');
+        NfzFilter.finance();
         browser.execute(
             () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
         );

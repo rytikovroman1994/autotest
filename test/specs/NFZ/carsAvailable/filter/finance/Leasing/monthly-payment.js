@@ -1,3 +1,5 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test loan monthly payment', () => {
     // выносим часто используемый класс
     let selector = '.avn008_credit__monthlyPaySlider[data-name="Ежемесячный платёж"]';
@@ -8,7 +10,7 @@ describe('test loan monthly payment', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу финансы
-        browser.click('.avn008_filter__tab[data-name="Финансы"]');
+        NfzFilter.finance();
     });
 
     // проверяем переход на вкладку Кредит и работу слайдера Ежемесячный платёж

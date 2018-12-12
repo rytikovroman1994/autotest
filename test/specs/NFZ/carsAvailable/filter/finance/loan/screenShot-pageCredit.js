@@ -1,3 +1,5 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test screenShot page credit', () => {
     const ctx = {
         originalScreenshot: null,
@@ -8,7 +10,7 @@ describe('test screenShot page credit', () => {
     before(() => {
         browser.helpers.openFilter(); 
         // переходим на страницу финансы 
-        browser.click('.avn008_filter__tab[data-name="Финансы"]');
+        NfzFilter.finance();
         // переходим на вкладку Кредит
         browser.click('.rc-slider-step > span:nth-child(2)');
         browser.execute(

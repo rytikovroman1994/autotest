@@ -1,3 +1,5 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test leasing residual payment', () => {
     // выносим часто используемый класс
     let selector = '.avn008_credit__firstPaySlider[data-name="Остаточный платёж"]';
@@ -8,7 +10,7 @@ describe('test leasing residual payment', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу финансы
-        browser.click('.avn008_filter__tab[data-name="Финансы"]');
+        NfzFilter.finance();
     });
 
     // проверяем переход на вкладку Лизинг и работу слайдера остаточный платёж
