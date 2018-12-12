@@ -1,3 +1,5 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test page diler', () => {
     let nameDilerFilter;
 
@@ -19,7 +21,7 @@ describe('test page diler', () => {
 
     it('Chose page diler', () => {
         // переходим на страницу дилеры
-        browser.click('.avn008_filter__tab[data-name="Дилеры"]');
+        NfzFilter.dilers();
         // выбираем первого дилера
         browser.click('div:nth-child(1) > div > div.grid_l_3 label');
         // получаем имя диллера 
@@ -29,10 +31,12 @@ describe('test page diler', () => {
             () => browser.isExisting('avn008_overlay_bar--progress') === false,
             10000, "Кнопка Показать не активна в течении 10 секунд");
         // переходим к списку 
-        browser.click('.avn008_overlay_submit-block .btn__text');
+        NfzFilter.show();
     });
 
     it('Check model and diler', () => {
+        // ожидаем пока перерендерятся карточки
+        browser.pause(2000);
         // проверяем что в списке только выбранные автомобили
         const nameCar = browser.getText('div:nth-child(1) > div > div > div.gridcontainer .avn001-2_model-name');
         console.log(nameCar);
