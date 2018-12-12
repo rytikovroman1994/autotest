@@ -10,8 +10,11 @@
 import NfzFilter from 'Pageobjects/nfz-filter.js'
 
 export default function checkCheckboxNfz(atribut, condition, picture) {
+    // находим елемент на странице 
+    const checkbox = $(`.checkbox[data-name="${atribut}"]`);
+    browser.pause(1000);
     // выбираем чекбокс
-    browser.click(`.checkbox[data-name="${atribut}"]`);
+    checkbox.click();
     // проверяем, что появилось условие в фильтре
     browser.waitUntil(
         () => browser.isExisting(NfzFilter.conditionFilter) === true,

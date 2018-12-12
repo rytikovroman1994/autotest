@@ -19,8 +19,11 @@ export default function checkConditionsNfz(filterCondition, conditionDetail) {
         browser.waitForVisible(`.checkbox[data-name="${filterCondition}"]`);
     }
 
-    // включаем чекбокс 
-    browser.click(`.checkbox[data-name="${filterCondition}"]`);
+    // находим елемент на странице 
+    const checkbox = $(`.checkbox[data-name="${filterCondition}"]`);
+    browser.pause(1000);
+    // выбираем чекбокс
+    checkbox.click();
     // проверяем, что появилось условие
     browser.waitForVisible(NfzFilter.conditionFilter);
 
