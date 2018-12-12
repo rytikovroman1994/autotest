@@ -1,3 +1,5 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test slider power', () => {
 
     // допустимая мощность двигателей
@@ -10,12 +12,12 @@ describe('test slider power', () => {
 
     before('open page filter', () => {
         browser.helpers.openFilter();
+        // открываем страницу двигатель
+        NfzFilter.engine();
     });
 
     // переходим на страницу "Двигатель"
     it('Check open page engine', () => {
-        // открываем страницу двигатель
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
         // ожтдаем закрузки послденей картинки
         browser.waitForVisible('.grid_m_2 img');
         // провеярем, что появился слайдер

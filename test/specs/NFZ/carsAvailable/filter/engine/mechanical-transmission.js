@@ -1,9 +1,10 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test mechanical transmission', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу "Двигатель"
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
-        // ожидаем загрузки последней картинки 
+        NfzFilter.engine();
     });
 
     // выбираем механическую коробку передач

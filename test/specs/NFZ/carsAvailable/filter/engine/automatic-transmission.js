@@ -1,8 +1,10 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test automatic transmission', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // переходим на страницу "Двигатель"
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        NfzFilter.engine();
     });
 
     // выбираем автоматическую коробку передач

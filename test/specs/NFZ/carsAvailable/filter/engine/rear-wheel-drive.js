@@ -1,8 +1,10 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test rear-wheel-drive', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // открываем страницу "Двигатель"
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        NfzFilter.engine();
     });
 
     // выбираем задний привод

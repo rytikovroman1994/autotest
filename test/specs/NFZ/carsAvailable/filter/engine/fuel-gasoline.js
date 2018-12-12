@@ -1,17 +1,14 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe('test fuel-gasoline', () => {
     const listPetrol = [
         'TSI',
         'MPI'
     ]
-
-    Array.prototype.diff = function(a) {
-        return this.filter(function(i){
-            return a.indexOf(i) < 0;});
-    };
     before('open page filter', () => {
         browser.helpers.openFilter();
         // открываем страницу "Двигатель"
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        NfzFilter.engine();
     });
 
     // выбираем топливо бензин
@@ -34,7 +31,7 @@ describe('test fuel-gasoline', () => {
         // проверяем, что в карточке есть условие АКП
         const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) [title="Бензиновый двигатель"]');
         // проверяем совпадение массивов
-        const result = [getView.split(' ')[0]].diff(listPetrol);
+        const result = browser.helpers.compareArray([getView.split(' ')[0]], listPetrol);
         // считаем количество несовпадений между массивами
         const emptyArray = result.length;
         // количество элементов в массиве не должно быть больше 0
