@@ -27,6 +27,14 @@ class NfzDetail extends Page {
         super.open()
     }
 
+    selectorImage () {
+        this.selectorCarImage();
+    }
+
+    selectorPrice () {
+        this.selectorCarPrice();
+    }
+
     showMore () {
         this.buttonShowMore.click();
     }
