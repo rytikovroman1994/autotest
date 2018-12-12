@@ -1,10 +1,12 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
+
 describe.skip('test number-packages 6', () => {
     // выносим часто используемое название условия комплектации
     let conditions = '6';
     before('open page filter', () => {
         browser.helpers.openFilter();
         // проверяем переход на страницу Интерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
+        bNfzFilter.interior();
     }); 
 
     // проверяем работу чекбоскса
