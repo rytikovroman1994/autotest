@@ -3,9 +3,9 @@ import Page from './page'
 class NfzFilter extends Page {
 
     // селектор отвечающий за кнопку Очистить
-    get buttomClear () { return '.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item'}
+    get buttomClear () { return $('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item') }
     // селектор отвечающий за кнопку Показать
-    get buttomShow () { return '.avn008_overlay_bar_content .avn008_overlay_submit-block_btn'}
+    get buttomShow () { return $('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn') }
     // селектор отвечающий за первое условие в фильтре
     get conditionFilter () { return '.avn008_filter-value-item' }
     // селектор отвечающий за количетсво автомобилей
