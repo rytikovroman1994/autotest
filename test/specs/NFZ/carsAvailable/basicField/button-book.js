@@ -1,13 +1,22 @@
 import faker from "faker"
+import NfzListPage from 'Pageobjects/nfz-list.page.js'
+import NfzDetail from 'Pageobjects/nfz-detail.page.js'
+import NfzForm from 'Pageobjects/nfz-form.page.js'
 
 describe('test button book in the menu', () => {
     const buttonClass = '.mainStageinfo .btn_cta';
     before('open page', () => {
         browser.helpers.openListNfz();
-        // переходим в деталку
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
-        // ждём появления картинки
-        browser.waitForVisible('.preview_img img');
+    });
+
+    // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
+    it('Check detail images', () => {
+        // ждём появления картинки в карточках 
+        browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
+        // кликаем по карточке
+        NfzListPage.card();
+        // проверм что появилась картинка в деталке
+        browser.waitForVisible(NfzDetail.selectorCarImage, 40000);
     });
 
     // проверяем что кнопка забронировать есть на странице
@@ -36,55 +45,52 @@ describe('test button book in the menu', () => {
             5000, "Кнопку Отправить заказ активна без входных данных");
     });
     
-    it('Choose the sex of the person', () => {
-        // выбираем гендер
-        browser.click('div:nth-child(1) > label .radiobtn__title.undefined');
-    });
+   // заполняем данные и отправляем заявку
+   it('Fill in the application', () => {
+    // проверяем, что кнопка Отправить не активна
+    browser.waitUntil(
+        () => browser.isExisting('.btn_cta.is_disabled') === true,
+        5000, "Кнопка отправить активна без валидных данных");
+    browser.scroll('form .radio-group__horizontal div:nth-child(1) label', 0, 10);
+    // выбираем гендер
+    browser.click('form .radio-group__horizontal div:nth-child(1) label');
+    // вводим имя 
+    NfzForm.fieldName.setValue( faker.name.firstName(1));
+    NfzForm.fieldSurname.scroll(0, 10);
+    // вводим фамилию
+    NfzForm.fieldSurname.setValue(faker.name.firstName(1));
+    // вводим Отчество 
+    NfzForm.fieldPatronymic.setValue(faker.name.firstName(1));
+    NfzForm.fieldPhone.scroll(0, 10);
+    // вводим телефон 
+    NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
+    // клик для применения номера
+    browser.click('.op005_form-item[data-name="Email"] input');
+    // проверка на некоректный номер
+    while(browser.isVisible('.op005_form-item[data-name="Телефон"] .error-container') === true) {
+        browser.clearElement('.op005_form-item[data-name="Телефон"] input');
+        browser.clearElement('.op005_form-item[data-name="Телефон"] input');
+        NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
+    }
+    NfzForm.fieldEmail.scroll(0, 10);
+    // вводим электронную почту
+    NfzForm.fieldEmail.setValue(faker.internet.email(1));
+    // проверяем, что кнопка стала активной 
+    browser.waitUntil(
+        () => browser.isExisting('.btn_cta.is_disabled') === false,
+        5000, "Кнопка отправить заявку на кредит не стала активной");
+    // нажимает кнопку
+    NfzForm.send();
+    // магическая дичь, ожидаем пока пропадёт оверлей 
+    browser.pause(4000);
 
-    it('Input check name', () => {
-        // вводим имя
-        browser.setValue('.op005_form-item[data-name="Имя"] input', faker.name.firstName(1));
-    });
-    it('Checking the last name', () => {
-        browser.waitForExist('.op005_form-item[data-name="Фамилия"] input');
-        // вводим фамилию
-        browser.setValue('.op005_form-item[data-name="Фамилия"] input', faker.name.firstName(1));
-    });
-    it('Entry check patronymic', () => {
-        browser.waitForExist('.op005_form-item[data-name="Отчество"] input');
-        // вводим отчество
-        browser.setValue('.op005_form-item[data-name="Отчество"] input', faker.name.firstName(1));
-    });
-    it('Checking phone input', () => {
-        // вводим телефонный номер
-        browser.waitForExist('.op005_form-item[data-name="Телефон"] input');
-        browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber(0));
-        // клик для переноса фокуса 
-        browser.click('.op005_form-item[data-name="Отчество"] input');
-
-        while(browser.isVisible('.op005_register div:nth-child(5) > div > span') === true) {
-            browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-            browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber(0));
-        }
-    });
-    it('Verification of email input', () => {
-        browser.waitForExist('.op005_form-item[data-name="Email"] input');
-        // вводидим эмеил
-        browser.setValue('.op005_form-item[data-name="Email"] input', faker.internet.email(1));
-    });
-    it('Check that we are back', () => {
-        // проверям, что кнопка стала активной
-        browser.waitUntil(
-            () => browser.isExisting('.btn_cta.is_disabled') === false,
-            5000, "Кнопка Отправить заказ не стала активной");
-        // кликаем по кнопке "Отправить заказ"
-        browser.click('.op005_form-btn .btn_cta');
-        // ожидаем загрузку карточки
-        browser.waitUntil(
-            () => browser.isExisting('.op005_form-item[data-name="Имя"] input') === false,
-            10000, "Заявка на запрос автомобиля не отравляется");
-        // Получаем текст, что нужно подтвердить емаил
-        const getText = browser.getText('.op005_form_title');
-        expect(getText).to.be.equal('Заявка отправлена');
-    });
+    
+    // ожидаем загрузку карточки
+    browser.waitUntil(
+        () => browser.isExisting('.op005_form-item[data-name="Имя"] input') === false,
+        10000, "Заявка на запрос автомобиля не отравляется");
+    // Получаем текст, что нужно подтвердить емаил
+    const getText = browser.getText('.op005_form_title');
+    expect(getText).to.be.equal('Заявка отправлена');
+});
 });

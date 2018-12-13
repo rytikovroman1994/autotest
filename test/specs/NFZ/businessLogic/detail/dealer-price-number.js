@@ -28,20 +28,21 @@ describe('test booking car', () => {
     it('Check detail images', () => {
         // кликаем по карточке
         NfzListPage.card();
+        console.log(NfzDetail.selectorCarImage);
         // проверм что появилась картинка в деталке
-        browser.waitForVisible(fzDetail.selectorImage);
+        browser.waitForVisible(NfzDetail.selectorCarImage, 40000);
     });
 
     // проверем что в деталке цена и диллер не поменялся
     it('Compare price and dealer', () => {
         // получаем цену автомобиля в деталке
-        let getPriseDetal = browser.getText(selectorCarPrice);
+        let getPriseDetal = browser.getText(NfzDetail.selectorCarPrice);
         // проверяем что цена в деталка равна цене в выборке
         expect(getPriseDetal).to.be.equal(getPrise);
         // получаем диллера в деталке
         let getDilerDetal = browser.getText('.mainStageAction_link');
         // проверяем что диллер такой же как в выборе
-        expect(getDilerDetal).to.be.equal(NfzDetail.selectorPrice);
+        expect(getDilerDetal).to.be.equal(getDilerName);
         // запоминаем номер телефона
         getPhone = browser.getText('.mainStageAction-phone a');
     }); 

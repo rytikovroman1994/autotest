@@ -1,4 +1,7 @@
 import faker from "faker"
+import NfzListPage from 'Pageobjects/nfz-list.page.js'
+import NfzDetail from 'Pageobjects/nfz-detail.page.js'
+import NfzForm from 'Pageobjects/nfz-form.page.js'
 
 describe('test application credit', () => {
     // получаем первоначальный платёж 
@@ -15,10 +18,16 @@ describe('test application credit', () => {
     let detalPriseCar;
     before('open page list', () => {
         browser.helpers.openListNfz();
-        // переходим в деталку 
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
-        // ждём появления картинки
-        browser.waitForVisible('.preview_img img', 60000);
+    });
+
+    // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
+    it('Check detail images', () => {
+        // ждём появления картинки в карточках 
+        browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
+        // кликаем по карточке
+        NfzListPage.card();
+        // проверм что появилась картинка в деталке
+        browser.waitForVisible(NfzDetail.selectorCarImage, 40000);
     });
 
     // проверяем работу Крединого калькулятора
@@ -33,12 +42,13 @@ describe('test application credit', () => {
             () => browser.isVisible('.mainStageinfo_section-credit .mainStageinfo_button-credit .btn__text') === true,
             5000, "Кнопка Расчитать кредит не отображается в деталке автомобиля");
         // кликаем по кнопке Рассчитать
-        browser.click('.mainStageinfo_section-credit .mainStageinfo_button-credit');
+        NfzDetail.calculate();
         // ожидаем появления слайдеров 
         browser.waitUntil(
             () => browser.isVisible('.nfz002_input__wrap') === true,
             10000, "Поле расчёта кредита в деталке не загрузилось за 10 сукунд");
         // запоминаем ключевые цифры
+
         // запоминаем первоначальный платёж
         initialPayment = browser.getAttribute('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_input', 'value');
         // получаем срок кредита 
@@ -53,7 +63,7 @@ describe('test application credit', () => {
         detalPriseCar = browser.getText('.mainStageinfo_section-buy h3 .price-text');
 
         // нажимаем Заполнить заявку 
-        browser.click('.nfz002_foot__wrap .btn__text');
+        NfzDetail.fill();
         // жёдм пока загрузится картинка
         browser.waitUntil(
             () => browser.isVisible('.uac001_image-status img') === true,
@@ -113,28 +123,29 @@ describe('test application credit', () => {
         // выбираем гендер
         browser.click('form .radio-group__horizontal div:nth-child(1) label');
         // вводим фамилию
-        browser.setValue('.op005_form-item[data-name="Фамилия"] input', faker.name.firstName(1));
-        browser.scroll('.op005_form-item[data-name="Имя"] input', 0, 10);
+        NfzForm.fieldSurname.setValue(faker.name.firstName(1));
+        NfzForm.fieldName.scroll(0, 10);
         // вводим имя 
-        browser.setValue('.op005_form-item[data-name="Имя"] input', faker.name.firstName(1));
+        NfzForm.fieldName.setValue( faker.name.firstName(1));
         // вводим телефон 
-        browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber(0));
+        NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
         // клик для применения номера
         browser.click('.op005_form-item[data-name="Email"] input');
         // проверка на некоректный номер
         while(browser.isVisible('.op005_form-item[data-name="Телефон"] .error-container') === true) {
             browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-            browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber(0));
+            browser.clearElement('.op005_form-item[data-name="Телефон"] input');
+            NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
         }
-        browser.scroll('.op005_form-item[data-name="Email"] input', 0, 10);
+        NfzForm.fieldEmail.scroll(0, 10);
         // вводим электронную почту
-        browser.setValue('.op005_form-item[data-name="Email"] input', faker.internet.email(1));
+        NfzForm.fieldEmail.setValue(faker.internet.email(1));
         // проверяем, что кнопка стала активной 
         browser.waitUntil(
             () => browser.isExisting('.btn_cta.is_disabled') === false,
             5000, "Кнопка отправить заявку на кредит не стала активной");
         // нажимает кнопку
-        browser.click('.btn_with_loader');
+        NfzForm.send();
         // магическая дичь, ожидаем пока пропадёт оверлей 
         browser.pause(4000);
 

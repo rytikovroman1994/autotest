@@ -1,4 +1,7 @@
 import faker from "faker"
+import NfzListPage from 'Pageobjects/nfz-list.page.js'
+import NfzDetail from 'Pageobjects/nfz-detail.page.js'
+import NfzForm from 'Pageobjects/nfz-form.page.js'
 
 describe('test application leasing', () => {
     // получаем первоначальный платёж 
@@ -17,10 +20,16 @@ describe('test application leasing', () => {
     let leasingContract;
     before('open page list', () => {
         browser.helpers.openListNfz();
-        // переходим в деталку 
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
-        // ждём появления картинки
-        browser.waitForVisible('.preview_img img', 60000);
+    });
+
+    // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
+    it('Check detail images', () => {
+        // ждём появления картинки в карточках 
+        browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
+        // кликаем по карточке
+        NfzListPage.card();
+        // проверм что появилась картинка в деталке
+        browser.waitForVisible(NfzDetail.selectorCarImage, 40000);
     });
 
     // проверяем работу Крединого калькулятора
@@ -119,36 +128,37 @@ describe('test application leasing', () => {
         // выбираем гендер
         browser.click('form .radio-group__horizontal div:nth-child(1) label');
         // вводим фамилию
-        browser.setValue('.op005_form-item[data-name="Фамилия"] input', faker.name.firstName(1));
-        browser.scroll('.op005_form-item[data-name="Имя"] input', 0, 10);
+        NfzForm.fieldSurname.setValue(faker.name.firstName(1));
+        NfzForm.fieldName.scroll(0, 10);
         // вводим имя 
-        browser.setValue('.op005_form-item[data-name="Имя"] input', faker.name.firstName(1));
+        NfzForm.fieldName.setValue( faker.name.firstName(1));
         // вводим телефон 
-        browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber(0));
+        NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
         // клик для применения номера
         browser.click('.op005_form-item[data-name="Email"] input');
         // проверка на некоректный номер
         while(browser.isVisible('.op005_form-item[data-name="Телефон"] .error-container') === true) {
             browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-            browser.setValue('.op005_form-item[data-name="Телефон"] input', faker.phone.phoneNumber(0));
+            browser.clearElement('.op005_form-item[data-name="Телефон"] input');
+            NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
         }
-        browser.scroll('.op005_form-item[data-name="Email"] input', 0, 10);
+        NfzForm.fieldEmail.scroll(0, 10);
         // вводим электронную почту
-        browser.setValue('.op005_form-item[data-name="Email"] input', faker.internet.email(1));
+        NfzForm.fieldEmail.setValue(faker.internet.email(1));
         // вводим Наименование компании
-        browser.setValue('.op005_form-item[data-name="Наименование организации"] input', faker.company.companyName(1));
-        browser.scroll('.op005_form-item[data-name="Адрес"] input', 0, 10);
+        NfzForm.fieldCompany.setValue(faker.company.companyName(1));
+        NfzForm.fieldAddress.scroll(0, 10);
         // вводим адресс 
-        browser.setValue('.op005_form-item[data-name="Адрес"] input', faker.address.streetAddress(1));
-        // вводим адресс 
-        browser.setValue('.op005_form-item[data-name="Должность"] input', faker.lorem.words(2));
+        NfzForm.fieldAddress.setValue(faker.address.streetAddress(1));
+        // вводим должность 
+        NfzForm.fielAppointment.setValue(faker.lorem.words(2));
         // проверяем, что кнопка стала активной 
         browser.waitUntil(
             () => browser.isExisting('.btn_cta.is_disabled') === false,
             5000, "Кнопка отправить заявку на кредит не стала активной");
         browser.scroll('.btn_with_loader', 0, 10);
         // нажимает кнопку
-        browser.click('.btn_with_loader');
+        NfzForm.send();
         // магическая дичь, ожидаем пока пропадёт оверлей 
         browser.pause(4000);
 
