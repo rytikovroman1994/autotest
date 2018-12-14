@@ -31,7 +31,7 @@ describe('test diesel-fuel', () => {
         browser.pause(2000);
         // проверяем, что в карточке есть условие АКП
         const getView = browser.getText('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) [title="Дизельный двигатель"]');
-        // // проверяем совпадение массивов
+        // проверяем совпадение массивов
         const result = browser.helpers.compareArray([getView.split(' ')[0]], listPetrol);
         // считаем количество несовпадений между массивами
         const emptyArray = result.length;

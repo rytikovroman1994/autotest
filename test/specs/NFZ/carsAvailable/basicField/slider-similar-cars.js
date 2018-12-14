@@ -1,3 +1,6 @@
+import NfzListPage from 'Pageobjects/nfz-list.page.js'
+import NfzDetail from 'Pageobjects/nfz-detail.page.js'
+
 describe('test slider similar cars', () => {
     const ctx = {
         originalScreenshot: null,
@@ -7,14 +10,20 @@ describe('test slider similar cars', () => {
     const numberSwitching = () => $$('.mk002__dots li').length;
     before('open page list', () => {
         browser.helpers.openListNfz();
-        // переходим в деталку
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
-        // ожидаем загрузки картинки
-        browser.waitForVisible('.image-container');
+    });
+
+    // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
+    it('Check detail images', () => {
+        // ждём появления картинки в карточках 
+        browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
+        // кликаем по карточке
+        NfzListPage.card();
+        // проверм что появилась картинка в деталке
+        browser.waitForVisible(NfzDetail.selectorCarImage, 40000);
         // скролим страницу до слайдера 
-        browser.scroll('.avn022_Footer', 10, -700);
-        // ожидаем пока прогрузится блок
-        browser.waitForVisible('.avn009_similar-offers div:nth-child(1) > div > a img');
+        browser.scroll('.avn022_Footer', 10, -400);
+        // ждём пока отредерится карточки
+        browser.pause(5000);
     });
 
     // проверяем работу нижних кнопок

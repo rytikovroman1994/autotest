@@ -1,3 +1,6 @@
+import NfzListPage from 'Pageobjects/nfz-list.page.js'
+import NfzDetail from 'Pageobjects/nfz-detail.page.js'
+
 describe('test detail leasing', () => {
     // получаем первоначальный платёж 
     let initialPayment;
@@ -13,10 +16,16 @@ describe('test detail leasing', () => {
     let percentageResidualPayment;
     before('open page list', () => {
         browser.helpers.openListNfz();
-        // переходим в деталку 
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
-        // ждём появления картинки
-        browser.waitForVisible('.preview_img img', 60000);
+    });
+
+    // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
+    it('Check detail images', () => {
+        // ждём появления картинки в карточках 
+        browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
+        // кликаем по карточке
+        NfzListPage.card();
+        // проверм что появилась картинка в деталке
+        browser.waitForVisible(NfzDetail.selectorCarImage, 40000);
     });
 
     // проверяем работу Лизингово калькулятора
@@ -33,7 +42,7 @@ describe('test detail leasing', () => {
             () => browser.isVisible('.mainStageinfo_section-credit .mainStageinfo_button-credit .btn__text') === true,
             5000, "Кнопка Расчитать лизинг не отображается в деталке автомобиля");
         // кликаем по кнопке Рассчитать
-        browser.click('.mainStageinfo_section-credit .mainStageinfo_button-credit .btn__text');
+        NfzDetail.calculate();
         // ожидаем появления слайдеров 
         browser.waitUntil(
             () => browser.isVisible('.nfz002_input__wrap') === true,
@@ -58,8 +67,8 @@ describe('test detail leasing', () => {
         // запоминаем начальное положение слайдера 
         const initialPosition = browser.getLocation('.nfz002_input[data-name="Авансовый лизинговый платеж"] .range-slider-handle-2');
         // меняем первоначальный платёж 
-        browser.setValue('.nfz002_input[data-name="Авансовый лизинговый платеж"] .ci001-1_input', '1500000');
-        browser.click('.nfz002_input[data-name="Авансовый лизинговый платеж"] .ci001-1_focus-icon');
+        browser.clearElement('.nfz002_input[data-name="Авансовый лизинговый платеж"] .ci001-1_input')
+        browser.setValue('.nfz002_input[data-name="Авансовый лизинговый платеж"] .ci001-1_input', '500000');
         // проверяем, что изменился первоначальный платёж
         const currentInitialPayment = browser.getAttribute('.nfz002_input[data-name="Авансовый лизинговый платеж"] .ci001-1_input', 'value');
         browser.waitUntil(
@@ -87,8 +96,9 @@ describe('test detail leasing', () => {
         // запоминаем начальное положение слайдера 
         const initialPosition = browser.getLocation('.nfz002_input[data-name="Платеж в счет выкупа"] .range-slider-handle-2');
         // меняем первоначальный платёж 
-        browser.setValue('.nfz002_input[data-name="Платеж в счет выкупа"] .ci001-1_input', '600000');
-        browser.click('.nfz002_input[data-name="Платеж в счет выкупа"] .ci001-1_focus-icon');
+        browser.clearElement('.nfz002_input[data-name="Платеж в счет выкупа"] .ci001-1_input')
+        browser.setValue('.nfz002_input[data-name="Платеж в счет выкупа"] .ci001-1_input', '200000');
+        browser.setValue('.nfz002_input[data-name="Авансовый лизинговый платеж"] .ci001-1_input', '500000');
         // проверяем, что изменился остаточный платёж
         const currentResidualPayment = browser.getAttribute('.nfz002_input[data-name="Платеж в счет выкупа"] .ci001-1_input', 'value');
         browser.waitUntil(

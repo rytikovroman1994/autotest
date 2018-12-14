@@ -8,11 +8,6 @@ describe('test histories in comparison', () => {
     // текущие количетсво машин в сравнении
     let currentNumber;
 
-    Array.prototype.diff = function(a) {
-        return this.filter(function(i){
-            return a.indexOf(i) < 0;});
-    };
-
     before('open page list', () => {
         browser.helpers.openListNfz();
     });
@@ -72,7 +67,8 @@ describe('test histories in comparison', () => {
 
         // сравниваем имена машин 
         console.log(listNameComparison);
-        const result = listNameComparison.diff(listNameCar);
+        // проверяем совпадение массивов
+        const result = browser.helpers.compareArray(listNameComparison, listNameCar);
         // считаем количество несовпадений между массивами
         const emptyArray = result.length;
         // количество элементов в массиве не должно быть больше 0

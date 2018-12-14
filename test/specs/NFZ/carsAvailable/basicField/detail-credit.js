@@ -1,3 +1,6 @@
+import NfzListPage from 'Pageobjects/nfz-list.page.js'
+import NfzDetail from 'Pageobjects/nfz-detail.page.js'
+
 describe('test detail credit', () => {
     // получаем первоначальный платёж 
     let initialPayment;
@@ -13,10 +16,16 @@ describe('test detail credit', () => {
     let percentageResidualPayment;
     before('open page list', () => {
         browser.helpers.openListNfz();
-        // переходим в деталку 
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
-        // ждём появления картинки
-        browser.waitForVisible('.preview_img img', 60000);
+    });
+
+    // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
+    it('Check detail images', () => {
+        // ждём появления картинки в карточках 
+        browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
+        // кликаем по карточке
+        NfzListPage.card();
+        // проверм что появилась картинка в деталке
+        browser.waitForVisible(NfzDetail.selectorCarImage, 40000);
     });
 
     // проверяем работу Крединого калькулятора
@@ -31,7 +40,7 @@ describe('test detail credit', () => {
             () => browser.isVisible('.mainStageinfo_section-credit .mainStageinfo_button-credit .btn__text') === true,
             5000, "Кнопка Расчитать кредит не отображается в деталке автомобиля");
         // кликаем по кнопке Рассчитать
-        browser.click('.mainStageinfo_section-credit .mainStageinfo_button-credit');
+        NfzDetail.calculate();
         // ожидаем появления слайдеров 
         browser.waitUntil(
             () => browser.isVisible('.nfz002_input__wrap') === true,
@@ -58,8 +67,8 @@ describe('test detail credit', () => {
         // очищаем вводимое поле
         browser.clearElement('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_input');
         // меняем первоначальный платёж 
-        browser.addValue('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_input', '1500000');
-        browser.click('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_focus-icon');
+        browser.addValue('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_input', '500000');
+        browser.keys("Enter");
         // проверяем, что изменился первоначальный платёж
         const currentInitialPayment = browser.getAttribute('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_input', 'value');
         browser.waitUntil(
@@ -92,7 +101,7 @@ describe('test detail credit', () => {
         browser.clearElement('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input');
         // меняем первоначальный платёж 
         browser.addValue('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input', '1000000');
-        browser.click('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_focus-icon');
+        browser.keys("Enter");
         // проверяем, что изменился остаточный платёж
         const currentResidualPayment = browser.getAttribute('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input', 'value');
         browser.waitUntil(
