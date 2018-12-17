@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test easy-open', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Система Easy Open';
@@ -7,9 +9,13 @@ describe('test easy-open', () => {
       };
     before('open page options', () => {
         browser.helpers.openSite();
-        // открываем страницу опции
-        browser.click('.avn008_filter__tab[data-name="Опции"]');
-        // ожидаем загрузки послденей картинки
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу 
+        PkwFilter.options();
+        // ожидаем загрузки картинки руль
         browser.waitForVisible('.avn008_option-check_image[data-name="Камера заднего вида"] img');
     });
 

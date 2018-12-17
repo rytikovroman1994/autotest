@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы мультимедиа
 describe('screenshot page comfort', () => {
     const ctx = {
@@ -9,7 +10,7 @@ describe('screenshot page comfort', () => {
     before(() => {
         browser.helpers.openSite();
         // открываем страницу опции
-        browser.click('.avn008_filter__tab[data-name="Опции"]');
+        PkwFilter.options();
         // ожидаем появление последней картинки
         browser.waitForVisible('.avn008_comfort div:nth-child(7) img');
     });

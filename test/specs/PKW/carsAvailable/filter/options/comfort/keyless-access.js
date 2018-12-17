@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test keyless-access', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Система Keyless Access';
@@ -7,11 +9,15 @@ describe('test keyless-access', () => {
       };
     before('open page options', () => {
         browser.helpers.openSite();
-        // открываем страницу опции
-        browser.click('.avn008_filter__tab[data-name="Опции"]');
-        // ожидаем загрузки послденей картинки
-        browser.waitForVisible('.avn008_option-check_image[data-name="Камера заднего вида"] img');
     });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+      // переходим на страницу 
+      PkwFilter.options();
+      // ожидаем загрузки картинки руль
+      browser.waitForVisible('.avn008_option-check_image[data-name="Камера заднего вида"] img');
+  });
 
      it(`Check checkbox ${conditions}`, () => {
        // проверяем работу чекбокса
