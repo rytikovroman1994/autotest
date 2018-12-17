@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы сиденья
 describe('screenshot page seating', () => {
     const ctx = {
@@ -8,8 +9,12 @@ describe('screenshot page seating', () => {
     let namePage = 'interior';
     before(() => {
         browser.helpers.openSite();
+    });
+    
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
         // переходим на страницу интерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
+        PkwFilter.exterior();
         // ожидаем загрузки картинки сиденья
         browser.waitForVisible('.avn008_image-switcher_image');
     });

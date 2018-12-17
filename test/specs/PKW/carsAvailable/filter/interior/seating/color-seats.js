@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test color seats', () => {
     // считает количество объектов с таким классом 
     const numberColors = () => $$('.avn_color-picker_checks  .checkbox__control');
@@ -8,8 +10,12 @@ describe('test color seats', () => {
     let currentQuantity;
     before('open page seats', () => {
         browser.helpers.openSite();
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
         // переходим на страницу интерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
+        PkwFilter.exterior();
         // ожидаем загрузки картинки сиденья
         browser.waitForVisible('.avn008_image-switcher_image');
     });

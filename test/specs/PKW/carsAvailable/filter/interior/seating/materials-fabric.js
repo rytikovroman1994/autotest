@@ -1,10 +1,12 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test materials fabric', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Ткань';
     before('open page materials', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьера
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
+        PkwFilter.exterior();
     });
 
     // проверяем работу чекбокса 

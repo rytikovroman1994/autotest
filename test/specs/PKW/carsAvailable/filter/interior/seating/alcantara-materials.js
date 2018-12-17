@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test alcantara materials', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Алькантара';
@@ -8,7 +10,7 @@ describe('test alcantara materials', () => {
     before('open page materials', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьера
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
+        PkwFilter.interior();
     });
 
     // проверяем работу чекбокса
