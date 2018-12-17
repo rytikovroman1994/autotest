@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test slider in page parking assistant', () => {
     // список допустимых видов асистента парковки
     const list = [
@@ -12,10 +14,16 @@ describe('test slider in page parking assistant', () => {
 
     before('open page filter', () => {
         browser.helpers.openSite();
-        // переходим на страницу опции
-        browser.click('.avn008_filter__tab[data-name="Опции"]');
-        // переходим на страницу асистенты
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу 
+        PkwFilter.options();
+        // открываем страницу асистенты
         browser.click('.avn008_filter__second-tab[data-name="Ассистенты"]');
+        // ожидаем загрузки послденей картинки
+        browser.waitForVisible('.avn008_option-check_image[data-name="Система Side Assist"] img');
         // ожидаем прогрузки картинки
         browser.waitForVisible('.avn008_option__cards > div > div > div:nth-child(6) img');
     });

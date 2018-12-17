@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 // тест скриншотом страницы безопасность
 describe('screenshot page security', () => {
     const ctx = {
@@ -8,11 +10,15 @@ describe('screenshot page security', () => {
     let namePage = 'security';
     before(() => {
         browser.helpers.openSite();
-        // открываем страницу опции
-        browser.click('.avn008_filter__tab[data-name="Опции"]');
-        // переходим на страницу безопасность
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу 
+        PkwFilter.options();
+        // переходим в вкладку безопастность 
         browser.click('.avn008_filter__second-tab[data-name="Безопасность"]');
-        // ожидаем появление картинки 
+        // ожидаем загрузку картинки
         browser.waitForVisible('.avn008_safety-images_main img');
     });
 

@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы асистенты
 describe('screenshot page assistanse', () => {
     const ctx = {
@@ -8,11 +9,16 @@ describe('screenshot page assistanse', () => {
     let namePage = 'assistants';
     before(() => {
         browser.helpers.openSite();
-        // переходим на страницу опции
-        browser.click('.avn008_filter__tab[data-name="Опции"]');
-        // переходим на страницу асисистенты 
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу 
+        PkwFilter.options();
+        // открываем страницу асистенты
         browser.click('.avn008_filter__second-tab[data-name="Ассистенты"]');
-        // ожидаем загрузки картинки асистенты парковки
+        // ожидаем загрузки послденей картинки
+        browser.waitForVisible('.avn008_option-check_image[data-name="Система Side Assist"] img');
         browser.waitForVisible('.avn008_option__slider-card-icon');
     });
 

@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test auto hold', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Функция Auto-hold';
@@ -7,8 +9,12 @@ describe('test auto hold', () => {
       };
     before('open page options', () => {
         browser.helpers.openSite();
-        // открываем страницу опции
-        browser.click('.avn008_filter__tab[data-name="Опции"]');
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу 
+        PkwFilter.options();
         // открываем страницу асистенты
         browser.click('.avn008_filter__second-tab[data-name="Ассистенты"]');
         // ожидаем загрузки послденей картинки

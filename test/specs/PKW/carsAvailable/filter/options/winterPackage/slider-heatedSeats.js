@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test slider in page winter package', () => {
     // список допустимых видов подогрева сидений
     const list = [
@@ -17,11 +19,16 @@ describe('test slider in page winter package', () => {
 
     before('open page filter', () => {
         browser.helpers.openSite();
-        // переходим на страницу опции
-        browser.click('.avn008_filter__tab[data-name="Опции"]');
-        // переходим на страницу зимний пакет
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу 
+        PkwFilter.options();
+        // открываем страницу зимний пакет
         browser.click('.avn008_filter__second-tab[data-name="Зимний пакет"]');
-        // ожидаем прогрузки картинки
+        // ожидаем загрузки послденей картинки
+        browser.waitForVisible('.avn008_option__slider-card-icon');
         browser.waitForVisible('.avn008_option__cards > div > div > div:nth-child(4)');
     });
 

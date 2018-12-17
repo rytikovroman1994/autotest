@@ -1,9 +1,15 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test blinds', () => {
     let conditions = 'Шторки';
     before('Open page secutity', () => {
         browser.helpers.openSite();
-        // переходим на страницу опции
-        browser.click('.avn008_filter__tab[data-name="Опции"]');
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу 
+        PkwFilter.options();
         // переходим в вкладку безопастность 
         browser.click('.avn008_filter__second-tab[data-name="Безопасность"]');
         // ожидаем загрузку картинки

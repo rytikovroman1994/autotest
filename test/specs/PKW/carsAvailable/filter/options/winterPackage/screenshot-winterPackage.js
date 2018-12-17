@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы мультимедиа
 describe('screenshot page winter package', () => {
     const ctx = {
@@ -8,11 +9,15 @@ describe('screenshot page winter package', () => {
     let namePage = 'winterPackage';
     before(() => {
         browser.helpers.openSite();
-        // переходим на страницу опции
-        browser.click('.avn008_filter__tab[data-name="Опции"]');
-        // переходим на страницу асисистенты 
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу 
+        PkwFilter.options();
+        // открываем страницу зимний пакет
         browser.click('.avn008_filter__second-tab[data-name="Зимний пакет"]');
-        // ожидаем загрузки картинки асистенты парковки
+        // ожидаем загрузки послденей картинки
         browser.waitForVisible('.avn008_option__slider-card-icon');
     });
 
