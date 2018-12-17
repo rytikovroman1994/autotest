@@ -7,7 +7,7 @@ export default function openFilter() {
     browser.url('https://nfz.kodix.ru');
     var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
         var xhr = new XMLHttpRequest();
-        xhr.open("GET", 'https://vw.kodix.ru/', false);
+        xhr.open("GET", 'https://nfz.kodix.ru/', false);
         xhr.send("result_cat=true");
 
         if (xhr.status != 200) {
