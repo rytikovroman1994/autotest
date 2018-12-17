@@ -1,7 +1,6 @@
 // тест проверяющий работу слайдера диаметра дисков и добавления условий в фильтр
-/*
-    @todo тест готов, но пока не работает в силу того, что нет дисков размера больше 19(не консистенты данные)
-*/
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test slider disks', () => {
     // вызов начального размера дисков
     const getMinDiametr = () => browser.getText('.avn008_filter-value-item_range__min span');
@@ -18,7 +17,7 @@ describe('test slider disks', () => {
     before('open page disks', () => {
         browser.helpers.openSite();
         // переходим на страницу экстерьер
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
+        PkwFilter.exterior();
         // переходим на вкладку диски
         browser.click('.avn008_filter__second-tab[data-name="Диски"]');
         // ожидаем загрузки картинки дисков

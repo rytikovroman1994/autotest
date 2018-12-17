@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test body-color', () => {
     // считаем количетсво чекбоксов цвета
     const numberOfCheckbox = () => $$('.grid_12 .checkbox__control').map(i => i.getAttribute('type'));
@@ -18,7 +20,7 @@ describe('test body-color', () => {
 
     // пеходим в раздел экстерьер-цвет кузова
     it('Open page filter body color', () =>{
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
+        PkwFilter.exterior();
         // ожидаем загрузки карртинки цвета капота
         browser.waitForVisible('.avn008_image-switcher_container');
         // получаем цвет капота на картинке

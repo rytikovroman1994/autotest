@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы диски
 describe('screenshot page body disks', () => {
     const ctx = {
@@ -9,7 +10,7 @@ describe('screenshot page body disks', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу диски
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
+        PkwFilter.exterior();
         // переходим на вкладку диски
         browser.click('.avn008_filter__second-tab[data-name="Диски"]');
         // ожидаем загрузки картинки дисков

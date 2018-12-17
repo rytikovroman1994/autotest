@@ -1,8 +1,10 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test cast stamped disks', () => {
     before('open page disks', () => {
         browser.helpers.openSite();
         // переходим на страницу экстерьер
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
+        PkwFilter.exterior();
         // переходим на вкладку диски
         browser.click('.avn008_filter__second-tab[data-name="Диски"]');
         // ожидаем загрузки картинки дисков

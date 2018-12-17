@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы цвет кузова
 describe('screenshot page body colors', () => {
     const ctx = {
@@ -9,7 +10,7 @@ describe('screenshot page body colors', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу цвет кузова
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
+        PkwFilter.exterior();
         // ожидаём загрузки картинки
         browser.waitForVisible('.avn008_image-switcher_image');
     });
