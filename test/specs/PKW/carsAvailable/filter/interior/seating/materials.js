@@ -10,7 +10,7 @@ describe.skip('test materials', () => {
     before('open page materials', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьера
-        PkwFilter.exterior();
+        PkwFilter.interior();
     });
 
     // проверяем чекбокс кожа

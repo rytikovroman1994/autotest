@@ -6,7 +6,7 @@ describe('test materials leather', () => {
     before('open page materials', () => {
         browser.helpers.openSite();
         // переходим на страницу интерьера
-        PkwFilter.exterior();
+        PkwFilter.interior();
     });
 
     // проверяем работу чекбокса

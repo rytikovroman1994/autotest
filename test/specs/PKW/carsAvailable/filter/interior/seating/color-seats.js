@@ -15,7 +15,7 @@ describe('test color seats', () => {
     // выносим проверку в отдельный тест
     it('Check images', () => {
         // переходим на страницу интерьер
-        PkwFilter.exterior();
+        PkwFilter.interior();
         // ожидаем загрузки картинки сиденья
         browser.waitForVisible('.avn008_image-switcher_image');
     });
