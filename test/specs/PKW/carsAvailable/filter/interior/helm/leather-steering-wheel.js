@@ -1,10 +1,16 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test material and options', () => {
     let conditions = 'Кожа';
     before('open page helm', () => {
         browser.helpers.openSite();
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
         // переходим на страницу интерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
-        // переходим на страницу руль 
+        PkwFilter.interior();
+        // ожидаем загрузки картинки сиденья
         browser.click('.avn008_filter__second-tab[data-name="Руль"]');
     });
 

@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы руль
 describe('screenshot page seating', () => {
     const ctx = {
@@ -8,9 +9,13 @@ describe('screenshot page seating', () => {
     let namePage = 'helm';
     before(() => {
         browser.helpers.openSite();
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
         // переходим на страницу интерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
-        // переходим на страницу руль 
+        PkwFilter.interior();
+        // ожидаем загрузки картинки сиденья
         browser.click('.avn008_filter__second-tab[data-name="Руль"]');
         // ожидаем загрузки картинки руль
         browser.waitForVisible('.avn008_image-switcher_image');

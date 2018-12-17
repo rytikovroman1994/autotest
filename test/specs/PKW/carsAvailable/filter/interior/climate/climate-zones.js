@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test climate zones', () => {
     
     const ctx = {
@@ -24,11 +26,15 @@ describe('test climate zones', () => {
     ];
     before('open page climate', () => {
         browser.helpers.openSite();
-        // переходим в интерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
-        // переходим в раздел климат
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу интерьер
+        PkwFilter.interior();
+        // ожидаем загрузки картинки сиденья
         browser.click('.avn008_filter__second-tab[data-name="Климат"]');
-        // ожидаем загрузки картинки
+        // ожидаем загрузки картинки руль
         browser.waitForVisible('.push_3 > div > div > div:nth-child(1) img');
     });
 

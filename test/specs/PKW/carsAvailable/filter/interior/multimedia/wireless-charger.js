@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test wireless charger', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Беспроводная зарядка';
@@ -7,13 +9,15 @@ describe('test wireless charger', () => {
       };
     before(' open page multimedia', () => {
         browser.helpers.openSite();
-        // открываем страницу экстерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
-        // ожидаем появление картинки кресла
-        browser.waitForVisible('.avn008_image-switcher_image');
-        // открываем страницу мульдимедиа
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу интерьер
+        PkwFilter.interior();
+        // ожидаем загрузки картинки сиденья
         browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
-        // ожидаем загрузки послденей картинки
+        // ожидаем загрузки картинки руль
         browser.waitForVisible('.avn008_option-check_image[data-name="Беспроводная зарядка"] img');
     });
 

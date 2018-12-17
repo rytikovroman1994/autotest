@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test display diagonal', () => {
     // получаем количество чекбоксов 
     const numberCheckbox = () => $$('.avn008_option__slider-card .icon-nextstep-checkmark');
@@ -6,13 +8,17 @@ describe('test display diagonal', () => {
 
     before('open page multimedia', () => {
         browser.helpers.openSite();
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
         // переходим на страницу интерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
+        PkwFilter.interior();
         // ожидаем появление картинки кресла
         browser.waitForVisible('.avn008_image-switcher_image');
-        // переходим на страницу мультимедиа 
+        // ожидаем загрузки картинки сиденья
         browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
-        // ожидаем загрузки картинки диагональ экрана
+        // ожидаем загрузки картинки руль
         browser.waitForVisible('.multimedia img');
     });
 

@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test bluetooth', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Bluetooth';
@@ -7,15 +9,17 @@ describe('test bluetooth', () => {
       };
       before(' open page multimedia', () => {
         browser.helpers.openSite();
-        // открываем страницу экстерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
-        // ожидаем появление картинки кресла
-        browser.waitForVisible('.avn008_image-switcher_image');
-        // открываем страницу мульдимедиа
-        browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
-        // ожидаем загрузки послденей картинки
-        browser.waitForVisible('.avn008_option-check_image[data-name="Беспроводная зарядка"] img');
     });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+      // переходим на страницу интерьер
+      PkwFilter.interior();
+      // ожидаем загрузки картинки сиденья
+      browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
+      // ожидаем загрузки картинки руль
+      browser.waitForVisible('.avn008_option-check_image[data-name="Беспроводная зарядка"] img');
+  });
 
      it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса

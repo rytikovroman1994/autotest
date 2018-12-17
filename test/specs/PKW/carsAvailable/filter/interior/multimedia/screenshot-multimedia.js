@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы мультимедиа
 describe('screenshot page multimedia', () => {
     const ctx = {
@@ -9,7 +10,7 @@ describe('screenshot page multimedia', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу интерьер
-        browser.click('.avn008_filter__tab[data-name="Интерьер"]');
+        PkwFilter.interior();
         // переходим на страницу мультимедиа 
         browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
         // ожидаем загрузки картинки диагональ экрана
