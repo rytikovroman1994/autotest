@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test dynamic r-line trim package', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Пакет отделки R-line';
@@ -7,11 +9,15 @@ describe('test dynamic r-line trim package', () => {
       };
     before('open page r-line trim package', () => {
         browser.helpers.openSite();
-        // открываем страницу экстерьер
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
-        // открываем страницу свет
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу экстерьер
+        PkwFilter.exterior();
+        // переходим на вкладку свет
         browser.click('.avn008_filter__second-tab[data-name="Опции"]');
-        // ожидаем загрузки послденей картинки
+        // ожидаем загрузки картинки лампы
         browser.waitForVisible('.avn008_option-check_image[data-name="Тонировка"] img');
     });
 

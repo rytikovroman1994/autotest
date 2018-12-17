@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы свет
 describe('screenshot page light', () => {
     const ctx = {
@@ -8,13 +9,17 @@ describe('screenshot page light', () => {
     let namePage = 'shine';
     before(() => {
         browser.helpers.openSite();
+    });
+    
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
         // переходим на страницу экстерьер
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
+        PkwFilter.exterior();
         // переходим на вкладку свет
         browser.click('.avn008_filter__second-tab[data-name="Свет"]');
         // ожидаем загрузки картинки лампы
         browser.waitForVisible('.push_m_3 img');
-    });
+    })
 
     it('Сompare screenshots 400', async () => {
         // делаем мобильный размер экрана

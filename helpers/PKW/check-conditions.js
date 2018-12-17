@@ -6,6 +6,9 @@
  * @example
  *      browser.helpers.checkConditions('App Connect', 'App Connect');
  */
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+import PkwListPage from 'Pageobjects/pkw-list.page.js'
+import PkwDetail from 'Pageobjects/pkw-detail.page.js'
 
 export default function checkConditions(filterCondition, conditionDetail) {
     // проверяем, что всплывающее окно подробнее скрыто
@@ -26,15 +29,15 @@ export default function checkConditions(filterCondition, conditionDetail) {
             () => browser.isExisting('avn008_overlay_bar--progress') === false,
             10000, "Кнопка Показать не активна в течении 10 секунд");
     // кликаем по данной кнопке 
-    browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+    PkwFilter.show();
 
     // ожидаем пока перерендерица список карточек
     browser.pause(2000);
     // кликаем на карточку
-    browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
+    PkwListPage.card();
 
     // ожидаем появления картинки на странице деталки
-    browser.waitForVisible('.avn007-1_car-image img', 40000);
+    browser.waitForVisible(PkwDetail.selectorCarImage, 40000);
 
     // скролим вниз 
     browser.scroll(0, 600);

@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 // тест скриншотом страницы опции
 describe('screenshot page options', () => {
     const ctx = {
@@ -8,13 +10,18 @@ describe('screenshot page options', () => {
     let namePage = 'option';
     before(() => {
         browser.helpers.openSite();
-        // переходим на страницу экстерьер
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
-        // переходим на вкладку опции
-        browser.click('.avn008_filter__second-tab[data-name="Опции');
-        // ожидаем загрузки картинки тонировки
-        browser.waitForVisible('div:nth-child(5) > div > div > div.avn008_option-check_image img');
     });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу экстерьер
+        PkwFilter.exterior();
+        // переходим на вкладку свет
+        browser.click('.avn008_filter__second-tab[data-name="Опции"]');
+        // ожидаем загрузки картинки лампы
+        browser.waitForVisible('.avn008_option-check_image[data-name="Тонировка"] img');
+    });
+
 
     it('Сompare screenshots 400', async () => {
         // делаем мобильный размер экрана

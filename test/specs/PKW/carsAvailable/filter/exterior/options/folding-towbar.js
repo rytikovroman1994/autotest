@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test dynamic light', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Складной фаркоп';
@@ -7,11 +9,15 @@ describe('test dynamic light', () => {
       };
     before('open page light', () => {
         browser.helpers.openSite();
-        // открываем страницу экстерьер
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
-        // открываем страницу опции
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу экстерьер
+        PkwFilter.exterior();
+        // переходим на вкладку свет
         browser.click('.avn008_filter__second-tab[data-name="Опции"]');
-        // ожидаем загрузки послденей картинки
+        // ожидаем загрузки картинки лампы
         browser.waitForVisible('.avn008_option-check_image[data-name="Тонировка"] img');
     });
 

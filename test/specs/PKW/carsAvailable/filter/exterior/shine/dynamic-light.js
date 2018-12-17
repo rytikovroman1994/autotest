@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test dynamic light', () => {
     let conditions = 'Динамический поворотный свет';
     const ctx = {
@@ -7,7 +9,7 @@ describe('test dynamic light', () => {
     before(' open page light', () => {
         browser.helpers.openSite();
         // открываем страницу экстерьер
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
+        PkwFilter.exterior();
         // открываем страницу свет
         browser.click('.avn008_filter__second-tab[data-name="Свет"]');
     });

@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test slider in page shine', () => {
     // список допустимых вижов фар
     const list = [
@@ -13,11 +15,15 @@ describe('test slider in page shine', () => {
 
     before('open page filter', () => {
         browser.helpers.openSite();
-        // переходим на страницу экстрерьера
-        browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
-        // переходим на страницу свет
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // переходим на страницу экстерьер
+        PkwFilter.exterior();
+        // переходим на вкладку свет
         browser.click('.avn008_filter__second-tab[data-name="Свет"]');
-        // ожидаем прогрузки картинки
+        // ожидаем загрузки картинки лампы
         browser.waitForVisible('.avn008_image-switcher_image');
     });
 
@@ -28,7 +34,7 @@ describe('test slider in page shine', () => {
         // в цикле проверяем работу слайдера
         for(let i = 3; i >= 1; i-- ) {
             // двигаем слайдер
-            browser.helpers.slider(`.rc-slider-step > span:nth-child(${i})`);
+            browser.click(`.rc-slider-step > span:nth-child(${i})`);
             // провеярем, что появилось условие в фильтре 
             browser.waitUntil(
                 () => browser.isVisible('.avn008_filter-value-item') === true,
@@ -57,8 +63,6 @@ describe('test slider in page shine', () => {
         // получаем кординаты слайдера
         const newPositionSlider = statePosition();
         // проверяем, что они равны изначальным
-        console.log(newPositionSlider);
-        console.log(statePositionSlider);
         browser.waitUntil(
             () => (newPositionSlider.y === statePositionSlider.y) === true,
             5000, "ERROR - слайдер не изменил свою поцию на изначальную при очистке фильтра");
