@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test rear wheel drive', () => {
     before(() => {
         browser.helpers.openSite();
@@ -6,7 +8,7 @@ describe('test rear wheel drive', () => {
     // переходим на страницу двигателя
     it('Page engine', () => {
         // кликаем по кнопке Двигатель
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        PkwFilter.engine();
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
     });

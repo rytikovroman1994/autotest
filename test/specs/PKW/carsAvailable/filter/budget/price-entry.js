@@ -1,4 +1,5 @@
 import faker from 'faker'
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 
 describe('online-payments', () => {
 
@@ -20,7 +21,7 @@ describe('online-payments', () => {
      // переходим на страницу бюджета
      it('page budget', () => {
         // кликаем по кнопке Бюджет
-        browser.click('.avn008_filter__tab[data-name="Бюджет"]');
+        PkwFilter.budget();
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
         // получаем позиции кнопок ползунка
@@ -65,6 +66,11 @@ describe('online-payments', () => {
 
         // проверяем, что условие фильтра сбрасывается
         it('Check that the filter is cleared', () => {
+            PkwFilter.clear();
+            // ждём пока подвал станет активным
+            browser.waitUntil(
+                () => browser.isExisting('.avn008_overlay_bar.avn008_overlay_bar--progress') === false,
+                10000, "Подвал не стал активным после 10 секунд ожидания");
             // сбрасываем условие фильтра
             browser.click('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item');
             // ждём пока подвал станет активным

@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('engine-power', () => {
     const Buttun = () => browser.getLocation('.rc-slider-handle');
     const GetPower = () => browser.getText ('.avn008_filter-value-item_text-self');
@@ -18,7 +20,7 @@ describe('engine-power', () => {
     // переходим на страницу бюджета
     it('Page engine', () => {
         // кликаем по кнопке Бюджет
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        PkwFilter.engine();
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
 

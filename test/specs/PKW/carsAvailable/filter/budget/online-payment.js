@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('online-payments', () => {
     before(() => {
         browser.helpers.openSite();
@@ -6,7 +8,7 @@ describe('online-payments', () => {
     // переходим на страницу бюджета
     it('page budget', () => {
         // кликаем по кнопке Бюджет
-        browser.click('.avn008_filter__tab[data-name="Бюджет"]');
+        PkwFilter.budget();
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
     });

@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы бюджет
 describe('screenshot page budget', () => {
     const ctx = {
@@ -9,7 +10,7 @@ describe('screenshot page budget', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу бюджет
-        browser.click('.avn008_filter__tab[data-name="Бюджет"]');
+        PkwFilter.budget();
         // ожидаём загрузки бегунка
         browser.waitForExist('.rc-slider-step');
     });

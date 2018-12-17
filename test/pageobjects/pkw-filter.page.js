@@ -1,7 +1,9 @@
 import Page from './page'
 
 class PkwFilter extends Page {
-
+    constructor(){
+        super();
+    }
     // селектор отвечающий за кнопку Очистить
     get buttomClear () { return $('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item') }
     // селектор отвечающий за кнопку Показать
@@ -132,5 +134,4 @@ class PkwFilter extends Page {
         this.buttonOptions.click();
     }
 }
-
 export default new PkwFilter()

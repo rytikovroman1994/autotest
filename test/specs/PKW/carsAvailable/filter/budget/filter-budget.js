@@ -1,8 +1,6 @@
-/**
- * @todo В данном тесте дичь с координатами, хром чситает в пиксилях, фокс в %.
- */
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 
-describe.skip('test of the price slider', () => {
+describe('test of the price slider', () => {
     // вызов начальной цены
     const getMinPrise = () => browser.getText('.avn008_overlay_submit-block_price-display span.price-text');
     const getMaxPrise = () => browser.getText('div:nth-child(2) > .avn008_filter-value-item__inner > .avn008_filter-value-item_price-self');
@@ -22,7 +20,7 @@ describe.skip('test of the price slider', () => {
     // переходим на страницу бюджета
     it('page budget', () => {
         // кликаем по кнопке Бюджет
-        browser.click('.avn008_filter__tab[data-name="Бюджет"]');
+        PkwFilter.budget();
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
     });

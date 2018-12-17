@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test transmission in pictures', () => {
     before('open page filter', () => {
         browser.helpers.openSite();
@@ -6,7 +8,7 @@ describe('test transmission in pictures', () => {
     // проверяем наличие условия и появления его в фильтре
     it('Check checkbox AT transmissiion', () => {
         // переходим на страницу двигатель 
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        PkwFilter.engine();
         // нажимает на чекбокс 
         browser.click('.checkbox[data-name="Автоматическая"]');
         // проверяем что появился пункт в фильтре
@@ -19,7 +21,7 @@ describe('test transmission in pictures', () => {
             () => browser.isExisting('avn008_overlay_bar--progress') === false,
             10000, "Кнопка Показать не активна в течении 10 секунд");
         // переходим к списку 
-        browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+        PkwFilter.show();
         // ожидаем, когд перерендерится карточки
         browser.pause(2000);
         // проверяем, что в карточке есть условие АКП
@@ -29,23 +31,23 @@ describe('test transmission in pictures', () => {
 
     // переъодим обратно в фильтр
     it('open filter', () => {
-        browser.click('body #prompt-toggler_filter');
+        PkwFilter.filter();
         // переходим на страницу двигатель 
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        PkwFilter.engine();
         // отключаем условие автоматической трансмисии
         browser.click('.checkbox[data-name="Автоматическая"]');
         browser.waitUntil(
             () => browser.isExisting('avn008_overlay_bar--progress') === false,
             10000, "Кнопка Показать не активна в течении 10 секунд");
         // переходим к списку 
-        browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
-        browser.click('body #prompt-toggler_filter');
+        PkwFilter.show();
+        PkwFilter.filter();
     });
 
     // проверяем наличие условия и появления его в фильтре
     it('Check checkbox MT transmissiion', () => {
         // переходим на страницу двигатель 
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        PkwFilter.engine();
         // нажимает на чекбокс 
         browser.click('.checkbox[data-name="Механическая"]');
         // проверяем что появился пункт в фильтре
@@ -58,7 +60,7 @@ describe('test transmission in pictures', () => {
             () => browser.isExisting('avn008_overlay_bar--progress') === false,
             10000, "Кнопка Показать не активна в течении 10 секунд");
         // переходим к списку 
-        browser.click('.avn008_overlay_bar_content .avn008_overlay_submit-block_btn');
+        PkwFilter.show();
         // ожидаем пока карточки перерендерятся
         browser.pause(2000);
         // проверяем, что в карточке есть условие АКП

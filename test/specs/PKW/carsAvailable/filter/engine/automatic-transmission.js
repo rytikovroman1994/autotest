@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test automatic transmission', () => {
     before(() => {
         browser.helpers.openSite();
@@ -6,7 +8,7 @@ describe('test automatic transmission', () => {
     // переходим на страницу двигателя
     it('Page engine', () => {
         // кликаем по кнопке Бюджет
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        PkwFilter.engine();
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
     });

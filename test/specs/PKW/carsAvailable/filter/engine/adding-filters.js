@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('transmission', () => {
     // количетсво объектов в блоке фильтра
     const filter = () => $$('.avn008_filter-value-item').length;
@@ -13,7 +15,7 @@ describe('transmission', () => {
     // переходим на страницу двигателя
     it('page engine', () => {
         // кликаем по кнопке Двигатель
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        PkwFilter.engine();
         // ожидаем перехода на страницу 
         browser.waitForExist('.gridcontainer.avn008_filter__grid-align');
     });

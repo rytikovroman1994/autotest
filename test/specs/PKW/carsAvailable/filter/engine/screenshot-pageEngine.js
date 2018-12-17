@@ -1,3 +1,4 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 // тест скриншотом страницы двигатель
 describe('screenshot page engine', () => {
     const ctx = {
@@ -9,7 +10,7 @@ describe('screenshot page engine', () => {
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу двигатель
-        browser.click('.avn008_filter__tab[data-name="Двигатель"]');
+        PkwFilter.engine();
         // ожидаём загрузки последней картинки
         browser.waitForExist('.grid_12.grid_s_4.grid_m_2 img');
     });
