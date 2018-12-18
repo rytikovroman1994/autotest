@@ -1,3 +1,5 @@
+import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+
 describe('test histories in comparison', () => {
     // список названий автомобилей в списке
     const listNameCar = [];
@@ -7,11 +9,6 @@ describe('test histories in comparison', () => {
     let initialNumber = 0;
     // текущие количетсво машин в сравнении
     let currentNumber;
-
-    Array.prototype.diff = function(a) {
-        return this.filter(function(i){
-            return a.indexOf(i) < 0;});
-    };
 
     before('open page list', () => {
         browser.helpers.openList();
@@ -42,7 +39,7 @@ describe('test histories in comparison', () => {
         // проверяем что кнопка видна
         browser.waitForVisible('.avn003_column-right .avn003__action-item.with-text');
         // кликаем на данную кнопку
-        browser.click('.avn003_column-right .avn003__action-item.with-text');
+        PkwFilter.compare();
         // проверяем, что перешли именно на страницу сравнения
         const URL = browser.getUrl();
         expect(URL).to.be.equal('https://vw.kodix.ru/comparison');
@@ -64,12 +61,14 @@ describe('test histories in comparison', () => {
 
         // ожидаем загрузки последней картинки автомобиля
         browser.waitForVisible('div:nth-child(4) .avn006-1_head-cell__image img');
+        // ожидаем пока прорекдерится картинка
+        browser.pause(3000);
         // получаем имена автомобилей на странице сравления 
         const listNameComparison = browser.getText('.avn006-1_head-cell__text a');
 
         // сравниваем имена машин 
         console.log(listNameComparison);
-        const result = listNameComparison.diff(listNameCar);
+        const result = browser.helpers.compareArray(listNameComparison,listNameCar);
         // считаем количество несовпадений между массивами
         const emptyArray = result.length;
         // количество элементов в массиве не должно быть больше 0
