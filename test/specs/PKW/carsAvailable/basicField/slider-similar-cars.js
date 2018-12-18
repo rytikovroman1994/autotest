@@ -1,3 +1,6 @@
+import PkwListPage from 'Pageobjects/pkw-list.page.js'
+import PkwDetail from 'Pageobjects/pkw-detail.page.js'
+
 describe('test slider similar cars', () => {
     const ctx = {
         originalScreenshot: null,
@@ -7,14 +10,19 @@ describe('test slider similar cars', () => {
     const numberSwitching = () => $$('.mk002__dots li').length;
     before('open page list', () => {
         browser.helpers.openList();
-        // переходим в деталку
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
-        // ожидаем загрузки картинки
-        browser.waitForVisible('.image-container');
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // кликаем на карточку
+        PkwListPage.card();
+        // ожидаем появления картинки на странице деталки
+        browser.waitForVisible(PkwDetail.selectorCarImage, 40000);
         // скролим страницу до слайдера 
-        browser.scroll(0, 2200);
-        // ожидаем загрузку слайдера
-        browser.waitForVisible('.slick-next');
+        browser.scroll('.avn014_content', 0, -800);
+        // ожидаем рендеринг поля
+        browser.pause(3000);
+        
     });
 
     // проверяем работу нижних кнопок
