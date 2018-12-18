@@ -1,13 +1,19 @@
 import faker from "faker"
+import PkwListPage from 'Pageobjects/pkw-list.page.js'
+import PkwDetail from 'Pageobjects/pkw-detail.page.js'
 
 describe('button book in the menu', () => {
     const buttonClass = '.avn012_content .btn__text';
     before('open page', () => {
         browser.helpers.openList();
-        // переходим в деталку
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
-        // ждём появления картинки
-        browser.waitForVisible('.avn007-1_car-image img');
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // кликаем на карточку
+        PkwListPage.card();
+        // ожидаем появления картинки на странице деталки
+        browser.waitForVisible(PkwDetail.selectorCarImage, 40000);
     });
 
     // проверяем что кнопка забронировать есть на странице
@@ -27,7 +33,7 @@ describe('button book in the menu', () => {
     // проверяем, что кнопка кликабельна
     it('Check the clickability of the booking button', () => {
         // кликаем на кнопку
-        browser.click(buttonClass);
+        PkwDetail.bookMenu();
         // ждём пока прогрузится картинка
         browser.waitForVisible('.uac001_image-status img');
         // проверяем что есть кнпока отправить заказ
@@ -107,10 +113,10 @@ describe('button book in the menu', () => {
         }
         // ожидаем появления сообщения
         browser.waitUntil(
-            () => browser.isExisting('.mk004__inner .gridcontainer') === true,
+            () => browser.isExisting('.mk004__inner.gridcontainer') === true,
             30000, "Сообение Ваш заказ оформлен! не появилось после 30 секунд");
         // Получаем текст, что заказ оформлен
-        const getText = browser.getText('.pb30');
+        const getText = browser.getText('.mk004__inner.gridcontainer h1');
         expect(getText).to.be.equal('Ваш заказ оформлен!');
 
         // проверяем что кнопка Перейти в каталог отображается
