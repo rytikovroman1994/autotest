@@ -1,3 +1,6 @@
+import PkwListPage from 'Pageobjects/pkw-list.page.js'
+import PkwDetail from 'Pageobjects/pkw-detail.page.js'
+
 describe('test gallery in detail', () => {
 
     // пусть к кнопке
@@ -5,9 +8,16 @@ describe('test gallery in detail', () => {
 
     before('open page detail', () => {
         browser.helpers.openList();
-        // отркываем деталку
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
     });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // кликаем на карточку
+        PkwListPage.card();
+        // ожидаем появления картинки на странице деталки
+        browser.waitForVisible(PkwDetail.selectorCarImage, 40000);
+    });
+
 
     // проверяем кнопку галерея
     it('check button gallery', () => {
