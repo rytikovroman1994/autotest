@@ -11,7 +11,7 @@ class PkwListPage extends Page {
     // селектор, отвечающий за нажатие на кнопку Цена
     get buttonPrice () { return $('.avn001-1_inner .avn001-1_sort div:nth-child(2)') }
     // селектор, отвечающий за нажатие на кнопку Удалёность 
-    get buttonRemoteness () { return $('.avn001-1_inner .avn001-1_sort div:nth-child(2)') }
+    get buttonRemoteness () { return $('.avn001-1_inner .avn001-1_sort div:nth-child(3)') }
 
     online () {
         this.buttonOnline.click();
