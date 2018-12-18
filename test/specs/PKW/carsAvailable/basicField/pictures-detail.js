@@ -1,11 +1,18 @@
+import PkwListPage from 'Pageobjects/pkw-list.page.js'
+import PkwDetail from 'Pageobjects/pkw-detail.page.js'
+
 describe('test pictures-detail', () => {
     const list = [];
     before('open page', () => {
         browser.helpers.openList();
-        // переходим в деталку
-        browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
-        // ждём появления картинки
-        browser.waitForVisible('.avn007-1_car-image img');
+    });
+
+    // выносим проверку в отдельный тест
+    it('Check images', () => {
+        // кликаем на карточку
+        PkwListPage.card();
+        // ожидаем появления картинки на странице деталки
+        browser.waitForVisible(PkwDetail.selectorCarImage, 40000);
         // скролим до нужного блока
         browser.scroll('.avn012-1_item.is_active', 0, 100);
     });
@@ -14,7 +21,7 @@ describe('test pictures-detail', () => {
     it('Check pictures detail', () => {
         // если есть "Показать ещё", кликаем на неё
         if( browser.isExisting('.avn013_usp_item__show-more') === true) {
-            browser.click('.avn013_usp_item__show-more');
+            PkwDetail.showMore();
         }
         // получаем количество коплектаций
         const number = $$('.avn013_usp_item_title').length;
