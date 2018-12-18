@@ -25,10 +25,6 @@ describe('test model categories cars', () => {
         'Golf'
     ];
 
-    Array.prototype.diff = function(a) {
-        return this.filter(function(i){
-            return a.indexOf(i) < 0;});
-    };
     before('open page filter', () => {
         browser.helpers.openSite();
     });
@@ -55,7 +51,7 @@ describe('test model categories cars', () => {
         }
         
         // проверяем совпадение массивов
-        const result = sedan.diff(listSedan);
+        const result = browser.helpers.compareArray(sedan,listSedan);
         // считаем количество несовпадений между массивами
         const emptyArray = result.length;
         // количество элементов в массиве не должно быть больше 0
@@ -86,7 +82,7 @@ describe('test model categories cars', () => {
         }
         
         // проверяем совпадение массивов
-        const result = MPV.diff(listSedan);
+        const result = browser.helpers.compareArray(MPV, listSedan);
         // считаем количество несовпадений между массивами
         const emptyArray = result.length;
         // количество элементов в массиве не должно быть больше 0
@@ -117,7 +113,7 @@ describe('test model categories cars', () => {
         }
         
         // проверяем совпадение массивов
-        const result = SUV.diff(listSedan);
+        const result = browser.helpers.compareArray(SUV, listSedan);
         // считаем количество несовпадений между массивами
         const emptyArray = result.length;
         // количество элементов в массиве не должно быть больше 0
@@ -151,7 +147,7 @@ describe('test model categories cars', () => {
         }
         
         // проверяем совпадение массивов
-        const result = hatchback.diff(listSedan);
+        const result = browser.helpers.compareArray(hatchback, listSedan);
         // считаем количество несовпадений между массивами
         const emptyArray = result.length;
         // количество элементов в массиве не должно быть больше 0
