@@ -32,6 +32,10 @@ class NfzFilter extends Page {
     get buttonEngine () { return $('.avn008_filter__tab[data-name="Двигатель"]') }
     // селектор, при нажатии на который, открывается страница Цвет
     get buttonColor () { return $('.avn008_filter__tab[data-name="Цвет"]') }
+        // селектор, при нажатии на который выбирается Экстерьер/Интрерьер
+        get buttonView () { return $(`.grid_s_12:nth-child(1) .rc-slider-dot:nth-child(1)`) }
+        // селектор, при нажатии на который выбыирается Матерьал Сидений
+        get ButtonMaterial () { return $(`.grid_s_12:nth-child(3) .rc-slider-dot:nth-child(2)`) }
     // селектор, при нажатии на который, открывается страница Экстерьер
     get buttonExterior () { return $('.avn008_filter__tab[data-name="Экстерьер"]') }
     // селектор, при нажатии на который, открывается страница Интерьер
@@ -95,6 +99,16 @@ class NfzFilter extends Page {
     color () {
         browser.pause(1000);
         this.buttonColor.click();
+    }
+
+    view () {
+        browser.pause(1000);
+        this.buttonView.click();
+    }
+
+    material () {
+        browser.pause(1000);
+        this.ButtonMaterial.click();
     }
 
     exterior () {
