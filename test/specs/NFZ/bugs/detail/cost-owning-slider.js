@@ -33,7 +33,7 @@ describe('test cost of owning a slider', () => {
                 // проверяеем, что слайдер отображется 
                 browser.waitUntil(
                     () => browser.isVisible('.rc-slider-with-marks .rc-slider-handle') === true,
-                    5000, "Слайдер не отображается в Срок Эксплотации");
+                    5000, "Слайдер не отображается в блоке Срок Эксплотации");
             }
         }
     });
