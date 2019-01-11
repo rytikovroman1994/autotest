@@ -1,7 +1,7 @@
 version: "3"
 services:
   hub:
-    image: selenium/hub:3.141.59-bismuth
+    image: selenium/hub:3.141.59-dubnium
     ports:
       - "4444:4444"
     environment:
@@ -11,8 +11,8 @@ services:
       - GRID_CLEAN_UP_CYCLE=5000
       - GRID_BROWSER_TIMEOUT=240
       
-  chrome-v.70:
-    image: selenium/node-chrome:3.141.59-bismuth
+  chrome-v.71:
+    image: selenium/node-chrome:3.141.59-dubnium
     shm_size: 2G
     depends_on:
       - hub
@@ -29,8 +29,8 @@ services:
       - HUB_HOST=hub
       - HUB_PORT=4444
 
-  firefox-v.63:
-    image: selenium/node-firefox:3.141.59-bismuth
+  firefox-v.64:
+    image: selenium/node-firefox:3.141.59-dubnium
     shm_size: 2G
     depends_on:
       - hub
@@ -52,10 +52,10 @@ services:
       context: ./
     shm_size: 2G
     depends_on:
-      - chrome-v.70
+      - chrome-v.71
       - chrome-v.69
       - firefox-v.62
-      - firefox-v.63
+      - firefox-v.64
       - hub
     environment:
       - HUB_HOST=hub
