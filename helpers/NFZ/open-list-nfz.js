@@ -14,9 +14,10 @@ export default function openListNfz() {
             console.log( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
           } 
     // ждём пока откроется фильтр 
-    browser.waitForVisible('.avn008_filter');
-    // открываем фильтр
-    while(browser.isVisible('.avn008_filter') === true) {
-        browser.click('body #prompt-toggler_filter');
-    }
+    if(browser.isVisible('.avn008_filter')) {
+        // закрываем фильтр
+        while(browser.isVisible('.avn008_filter') === true) {
+            browser.click('body #prompt-toggler_filter');
+        }
+    };
 }

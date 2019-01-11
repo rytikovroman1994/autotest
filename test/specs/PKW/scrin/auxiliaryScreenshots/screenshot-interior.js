@@ -34,6 +34,8 @@ describe.skip('screenshots-exterior', () => {
         browser.click('.avn008_option-check_more[data-name="Алькантара"]');
         // ждём загрузки картинки 
         browser.waitForVisible('.avn015_content .image-container');
+        // пауза на случай долгого появления картинки
+        browser.pause(3000);
         // делаем скриншот
         var screen = browser.saveScreenshot('./snapshot/screenshotInterior/seats.png');
         expect(screen).to.not.equal(null);

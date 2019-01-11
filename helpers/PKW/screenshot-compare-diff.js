@@ -2,7 +2,7 @@ import Jimp from 'jimp';
 
 /**
  * @memberOf Helpers
- * @function compareScreenshots
+ * @function compareScreenshotsDiff
  * @param {string} screenshotOne - First Base64 encoded screenshot in PNG format.
  * @param {string} screenshotTwo - Second Base64 encoded screenshot in PNG format.
  * @example
