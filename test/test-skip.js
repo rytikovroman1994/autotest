@@ -14,7 +14,7 @@ describe('test skip', () => {
 
         } catch(e) {
             console.log('Ошибка did not match a known command из-за того, что браузер ФФ не умеет двигать курсор');
-            //  проба комента!
+            //  проба комента!!
         }
     });
 });
