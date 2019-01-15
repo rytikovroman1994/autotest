@@ -98,7 +98,7 @@ exports.config = {
 
           {
               browserName: 'chrome',
-              version: '70.0.3538.110',
+              version: '71.0.3578.98',
               maxInstances: '1',
               seleniumProtocol: "WebDriver",
               // specs: [
@@ -108,7 +108,7 @@ exports.config = {
 
           // {
           //     browserName: 'firefox',
-          //     version: '63.0.3',
+          //     version: '64.0',
           //     maxInstances: '1',
           //     marionette: true,
           //     //build: process.env.TRAVIS_BUILD_NUMBER,
@@ -206,8 +206,8 @@ exports.config = {
     // e.g. using promises you can set the sync option to false.
     // path: '/wd/hub',
     // maxSession: 1,
-    // host: '192.168.99.100',
-    port: 4444,
+    // host: '0.0.0.0',
+    // port: 4444,
     sync: true,
     reporters: ['spec'],
     logLevel: 'verbose',               // Level of logging verbosity: silent | verbose | command | data | result | error 'dot', 'junit'
@@ -357,7 +357,7 @@ exports.config = {
     beforeSuite() {
       // эта дичь позволяет в repl'е перезагружать все хелперы без перезапуска wdio
       browser.reloadHelpers = function reloadHelpers(bustCache = true) {
-        const helpersOriginal = requireGlob.sync(['C:/autotest/helpers/**/*.js', 'C:/autotest/!./helpers/utils/*'], { bustCache });
+        const helpersOriginal = requireGlob.sync(['./../../helpers/**/*.js', '!./../../helpers/utils/*'], { bustCache });
         browser.helpers = {};
   
         (function fn(helpers) {
