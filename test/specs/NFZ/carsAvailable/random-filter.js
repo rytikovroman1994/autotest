@@ -35,6 +35,7 @@ describe('test random-filter', () => {
             5000, "Автомиобиль не появился в фильтре");
         // закрываем окно выбора комплектации
         browser.click('.avn008_kits__close');
+        browser.pause(1000);
     });
 
     // выбираем доступную комплектацию на странице Двигатель
@@ -62,7 +63,7 @@ describe('test random-filter', () => {
         // ждём появления иконок цвет
         browser.waitForVisible('.avn_color-container--enabled');
         // скролим до появления чекбоксов 
-        browser.scroll('.avn_color-container--enabled', 50);
+        browser.scroll(0, 100);
         // получаем количетсво доступных цветов 
         const numberColors = $$('.avn008_color-colors > div > div:not(.avn_color-container--disabled)');
         const rundColor = randomNumber(numberColors);
