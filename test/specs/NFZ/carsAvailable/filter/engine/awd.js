@@ -3,12 +3,17 @@ import NfzFilter from 'Pageobjects/nfz-filter.js'
 describe('test awd', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // открываем страницу "Двигатель"
+    });
+
+    it('Open page engine', function() {
+        this.retries(3);
+        // проверяем переход на страницу Интерьер
         NfzFilter.engine();
     });
 
     // выбираем полный привод
-    it('Check awd', () => {
+    it('Check awd', function() {
+        this.retries(3);
         browser.helpers.checkCheckboxNfz('Полный привод', 'ПОЛНЫЙ', 'chassis');
 
         // переходим к списку
@@ -21,7 +26,8 @@ describe('test awd', () => {
     });
 
     // ожидаем, пока загрузится первая карточка и проверяем наличие комплектации
-    it('Check condition in the card', () => {
+    it('Check condition in the card', function() {
+        this.retries(3);
         // ожидаем, пока перерендерится список карточек
         browser.pause(2000);
         // проверяем, что в карточке есть условие 4WD

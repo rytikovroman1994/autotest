@@ -9,12 +9,17 @@ describe('test loan monthly payment', () => {
     let startPosition;
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // переходим на страницу финансы
+    });
+
+    it('Open page finance', function() {
+        this.retries(3);
+        // проверяем переход на страницу Интерьер
         NfzFilter.finance();
     });
 
     // проверяем переход на вкладку Кредит и работу слайдера Ежемесячный платёж
-    it('Check slider initial paymen', () => {
+    it('Check slider initial paymen', function() {
+        this.retries(3);
         // переходим на вкладку Кредит
         browser.click('.rc-slider-step > span:nth-child(1)');
         // запоминаем положение слайдера
@@ -33,7 +38,8 @@ describe('test loan monthly payment', () => {
     });
 
     // проверяем, что условие фильтра сбрасывается
-    it('Check that the filter is cleared', () => {
+    it('Check that the filter is cleared', function() {
+        this.retries(3);
         // ждём пока подвал станет активным
         browser.pause(3000);
         // сбрасываем условие фильтра

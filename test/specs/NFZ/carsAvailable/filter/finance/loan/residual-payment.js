@@ -10,12 +10,17 @@ describe('test loan residual payment', () => {
 
     before('open page filter', () => {
         browser.helpers.openFilter();
+    });
+
+    it('Open page finance', function() {
+        this.retries(3);
         // переходим на страницу финансы
         NfzFilter.finance();
     });
 
     // проверяем переход на вкладку Кредит и работу слайдера Остатоный платёж платёж
-    it('Check slider initial paymen', () => {
+    it('Check slider initial paymen', function() {
+        this.retries(3);
         // переходим на вкладку Кредит
         browser.click('.rc-slider-step > span:nth-child(2)');
         // запоминаем положение слайдера
@@ -34,7 +39,8 @@ describe('test loan residual payment', () => {
     });
 
     // проверяем, что условие фильтра сбрасывается
-    it('Check that the filter is cleared', () => {
+    it('Check that the filter is cleared', function() {
+        this.retries(3);
         // ждём пока подвал станет активным
         browser.pause(3000);
         // сбрасываем условие фильтра

@@ -5,12 +5,17 @@ describe('test leasing initial payment', () => {
     let selector = '.avn008_credit__firstPaySlider[data-name="Авансовый лизинговый платеж"]';
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // переходим на страницу финансы
+    });
+
+    it('Open page finance', function() {
+        this.retries(3);
+        // проверяем переход на страницу Интерьер
         NfzFilter.finance();
     });
 
     // проверяем переход на вкладку Лизинг и работу слайдера Первоначальный платёж
-    it('Check slider initial paymen', () => {
+    it('Check slider initial paymen', function() {
+        this.retries(3);
         // переходим на вкладку Кредит
         browser.click('.rc-slider-step > span:nth-child(1)');
         // запоминаем положение слайдера

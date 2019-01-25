@@ -15,10 +15,9 @@ export default function openFilter() {
             console.log( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
           } 
     // ждём пока откроется фильтр 
-    if(browser.isVisible('.avn008_filter')) {
-        // открываем фильтр
-        while(browser.isVisible('.avn008_filter') === false) {
-            browser.click('body #prompt-toggler_filter');
+    browser.waitForVisible('.avn008_filter');
+    // открываем фильтр
+    while(browser.isVisible('.avn008_filter') === false) {
+        NfzFilter.filter();
         }
-    };
 }

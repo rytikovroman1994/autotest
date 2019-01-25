@@ -5,6 +5,10 @@ describe('test loan - presence residual payment', () => {
     const rate = () => browser.getText('.avn008_credit__rate p');
     before('open page filter', () => {
         browser.helpers.openFilter();
+    });
+
+    it('Open page finance', function() {
+        this.retries(3);
         // переходим на страницу финансы
         NfzFilter.finance();
         // переходим в раздел Кредит
@@ -12,7 +16,8 @@ describe('test loan - presence residual payment', () => {
     });
 
     // провеярем, что Остаточный платёж включён и пропадает при отключении
-    it('Check slider residual payment', () => {
+    it('Check slider residual payment', function() {
+        this.retries(3);
         // ддя страховки скролим до чекбокса 
         browser.scroll('.checkbox[data-name="Остаточный платеж"]', 5, 5);
         // проверяем, что видно чебокс 
@@ -39,7 +44,8 @@ describe('test loan - presence residual payment', () => {
     });
 
     // проверяем, что при включении чекбокса появляется слайдер Остаточный платёж
-    it('Check the slider when the checkbox is enabled', () => {
+    it('Check the slider when the checkbox is enabled', function() {
+        this.retries(3);
         // выключаем чекбокс 
         browser.click('.checkbox[data-name="Остаточный платеж"]');
         // проверяем, что слайдер Остаточный платёж появился

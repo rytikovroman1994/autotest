@@ -7,12 +7,17 @@ describe('test fuel-gasoline', () => {
     ]
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // открываем страницу "Двигатель"
+    });
+
+    it('Open page engine', function() {
+        this.retries(3);
+        // проверяем переход на страницу Интерьер
         NfzFilter.engine();
     });
 
     // выбираем топливо бензин
-    it('Check fuel-gasoline', () => {
+    it('Check fuel-gasoline', function() {
+        this.retries(3);
         browser.helpers.checkCheckboxNfz('Бензин', 'БЕНЗИН', 'gas-type');
 
         // переходим к списку
@@ -25,7 +30,8 @@ describe('test fuel-gasoline', () => {
     });
 
     // ожидаем, пока загрузится первая карточка и проверяем наличие комплектации
-    it('Check condition in the card', () => {
+    it('Check condition in the card', function() {
+        this.retries(3);
         // ожидаем, пока перерендерится список карточек
         browser.pause(2000);
         // проверяем, что в карточке есть условие АКП

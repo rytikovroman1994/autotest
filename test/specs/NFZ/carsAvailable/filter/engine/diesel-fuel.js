@@ -8,12 +8,17 @@ describe('test diesel-fuel', () => {
     ]
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // открываем страницу "Двигатель"
+    });
+
+    t('Open page engine', function() {
+        this.retries(3);
+        // проверяем переход на страницу Интерьер
         NfzFilter.engine();
     });
 
     // выбираем топливо дизель
-    it('Check diesel-fuel', () => {
+    it('Check diesel-fuel', function() {
+        this.retries(3);
         browser.helpers.checkCheckboxNfz('Дизель', 'ДИЗЕЛЬ', 'gas-type');
 
         // переходим к списку
@@ -26,7 +31,8 @@ describe('test diesel-fuel', () => {
     });
 
     // ожидаем, пока загрузится первая карточка и проверяем наличие комплектации
-    it('Check condition in the card', () => {
+    it('Check condition in the card', function() {
+        this.retries(3);
         // ожидаем, пока перерендерится список карточек
         browser.pause(2000);
         // проверяем, что в карточке есть условие АКП

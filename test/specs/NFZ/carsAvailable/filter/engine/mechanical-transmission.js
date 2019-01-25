@@ -3,12 +3,17 @@ import NfzFilter from 'Pageobjects/nfz-filter.js'
 describe('test mechanical transmission', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // переходим на страницу "Двигатель"
+    });
+
+    it('Open page engine', function() {
+        this.retries(3);
+        // проверяем переход на страницу Интерьер
         NfzFilter.engine();
     });
 
     // выбираем механическую коробку передач
-    it('Check the manual transmission', () => {
+    it('Check the manual transmission', function() {
+        this.retries(3);
         browser.helpers.checkCheckboxNfz('Механическая', 'MT', 'transmission');
 
         // переходим к списку
@@ -21,7 +26,8 @@ describe('test mechanical transmission', () => {
     });
 
     // ожидаем, пока загрузится первая карточка и проверяем наличие комплектации
-    it('Check condition in the card', () => {
+    it('Check condition in the card', function() {
+        this.retries(3);
         // ожидаем, пока перерендерится список карточек
         browser.pause(2000);
         // проверяем, что в карточке есть условие МКП

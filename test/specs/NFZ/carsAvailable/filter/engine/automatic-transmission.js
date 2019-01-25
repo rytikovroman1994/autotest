@@ -3,12 +3,17 @@ import NfzFilter from 'Pageobjects/nfz-filter.js'
 describe('test automatic transmission', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // переходим на страницу "Двигатель"
+    });
+
+    t('Open page engine', function() {
+        this.retries(3);
+        // проверяем переход на страницу Интерьер
         NfzFilter.engine();
     });
 
     // выбираем автоматическую коробку передач
-    it('Check the automatic transmission', () => {
+    it('Check the automatic transmission', function() {
+        this.retries(3);
         // проверяем работу чекбокса
         browser.helpers.checkCheckboxNfz('Автоматическая', 'AT', 'transmission');
         
@@ -22,7 +27,8 @@ describe('test automatic transmission', () => {
     });
 
     // ожидаем, пока загрузится первая карточка и проверяем наличие комплектации
-    it('Check condition in the card', () => {
+    it('Check condition in the card', function() {
+        this.retries(3);
         // ожидаем, пока перерендерится список карточек
         browser.pause(2000);
         // проверяем, что в карточке есть условие АКП

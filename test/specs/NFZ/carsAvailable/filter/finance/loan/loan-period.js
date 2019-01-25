@@ -9,6 +9,10 @@ describe('test loan loan period', () => {
     let startPosition;
     before('open page filter', () => {
         browser.helpers.openFilter();
+    });
+
+    it('Open page finance', function() {
+        this.retries(3);
         // переходим на страницу финансы
         NfzFilter.finance();
     });
