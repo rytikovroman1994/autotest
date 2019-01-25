@@ -8,7 +8,8 @@ describe('test page diler', () => {
     });
 
     // выбираем автомобиль
-    it('Choose car', () => {
+    it('Choose car', function() {
+        this.retries(6);
         // выбираем модель
         browser.click('.avn008_car__wrap[data-name="Caddy (коммерческий)"]');
         // ожидаем появления кнопки нужной комплектации
@@ -19,7 +20,8 @@ describe('test page diler', () => {
         browser.click('.avn008_kits__close');
     });
 
-    it('Chose page diler', () => {
+    it('Chose page diler', function() {
+        this.retries(3);
         // переходим на страницу дилеры
         NfzFilter.dilers();
         // выбираем первого дилера
@@ -34,7 +36,8 @@ describe('test page diler', () => {
         NfzFilter.show();
     });
 
-    it('Check model and diler', () => {
+    it('Check model and diler', function() {
+        this.retries(3);
         // ожидаем пока перерендерятся карточки
         browser.pause(2000);
         // проверяем что в списке только выбранные автомобили
