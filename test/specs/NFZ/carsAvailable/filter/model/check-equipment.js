@@ -22,7 +22,8 @@ describe('test check equipment', () => {
 
     // проверяем доступность коплектаций в каточках
     for( let i = 1; i <= 8; i++ ) {
-        it(`Check the complete set in ${list[i-1]}`, () => {
+        it(`Check the complete set in ${list[i-1]}`, function() {
+            this.retries(2);
             // проверяем, что карточку видно
             if(browser.isVisible(`.avn008_model__wrap > div.gridcontainer > div:nth-child(${i})`) === false) {
                 browser.scroll(`.avn008_model__wrap > div.gridcontainer > div:nth-child(${i})`, 5, 5);
