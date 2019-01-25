@@ -19,9 +19,16 @@ describe('test button select all', () => {
     });
 
     // провеярем работу кнопки "Выбрать все"
-    it('Check button select all', () => {
+    it('Open window Equipment', function() { 
+        this.retries(3);
         // отрываем меню выбора комплектаций в рандомной карточке
         browser.click(`.avn008_car__wrap[data-name="${list[Math.floor(Math.random()*list.length)]}"]`);
+        // ожидаем появления поля с комплектациями
+        browser.waitForVisible(NfzModel.pickingField);
+    });
+
+    it('Check button select all', function(){
+        this.retries(3);
         // считаем количество комплектаций
         nubber = $$(NfzModel.Equipment).length;
         // проверяем что нет не одной активной кнопки комплектации
@@ -33,10 +40,11 @@ describe('test button select all', () => {
         browser.waitForVisible(`${NfzModel.pickingField} div:nth-child(${nubber})`);
         // кликаем по кнопке "Выбрать всё"
         browser.click(`${NfzModel.pickingField} div:nth-child(${nubber})`);
-    });
+    })
 
     // проверяем работу кнопки "Отменить всё"
-    it('Check buttun cancel all', () => {
+    it('Check buttun cancel all', function() {
+        this.retries(3);
         // нажимаеи на кнопку 
         browser.click(`${NfzModel.pickingField} div:nth-child(${nubber})`);
         // проверяем, что все активные кнопки комплектации пропали
