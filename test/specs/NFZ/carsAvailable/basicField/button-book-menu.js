@@ -10,7 +10,8 @@ describe('button book in the menu', () => {
     });
 
     // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
-    it('Check detail images', () => {
+    it('Check detail images', function() {
+        this.retries(3);
         // ждём появления картинки в карточках 
         browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // кликаем по карточке
@@ -20,7 +21,8 @@ describe('button book in the menu', () => {
     });
 
     // проверяем что кнопка забронировать есть на странице
-    it('Check button book it', () => { 
+    it('Check button book it', function() {
+        this.retries(3); 
         // скролим вниз страницы, чтобы появилось меню
         browser.scroll(0, 800);
         // проверяем, что картинка есть в доме и она отображется
@@ -32,7 +34,8 @@ describe('button book in the menu', () => {
     });
 
     // проверяем, что кнопка кликабельна
-    it('Check the clickability of the booking button', () => {
+    it('Check the clickability of the booking button', function() {
+        this.retries(3);
         // кликаем на кнопку
         browser.click(buttonClass);
         // ждём пока прогрузится картинка
@@ -65,14 +68,14 @@ describe('button book in the menu', () => {
         NfzForm.fieldPatronymic.setValue(faker.name.firstName(1));
         NfzForm.fieldPhone.scroll(0, 10);
         // вводим телефон 
-        NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
+        NfzForm.fieldPhone.setValue(`960${faker.random.number(9999999)}`);
         // клик для применения номера
         browser.click('.op005_form-item[data-name="Email"] input');
         // проверка на некоректный номер
         while(browser.isVisible('.op005_form-item[data-name="Телефон"] .error-container') === true) {
-            browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-            browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-            NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
+            $('.op005_form-item[data-name="Телефон"] .input__field').value='';
+            browser.clearElement('.op005_form-item[data-name="Телефон"] .input__field');
+            NfzForm.fieldPhone.setValue(`960${faker.random.number(9999999)}`);
         }
         NfzForm.fieldEmail.scroll(0, 10);
         // вводим электронную почту

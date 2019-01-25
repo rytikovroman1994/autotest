@@ -63,14 +63,14 @@ describe('test button book in the menu', () => {
     NfzForm.fieldPatronymic.setValue(faker.name.firstName(1));
     NfzForm.fieldPhone.scroll(0, 10);
     // вводим телефон 
-    NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
+    NfzForm.fieldPhone.setValue(`960${faker.random.number(9999999)}`);
     // клик для применения номера
     browser.click('.op005_form-item[data-name="Email"] input');
     // проверка на некоректный номер
     while(browser.isVisible('.op005_form-item[data-name="Телефон"] .error-container') === true) {
-        browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-        browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-        NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
+        $('.op005_form-item[data-name="Телефон"] .input__field').value='';
+        browser.clearElement('.op005_form-item[data-name="Телефон"] .input__field');
+        NfzForm.fieldPhone.setValue(`960${faker.random.number(9999999)}`);
     }
     NfzForm.fieldEmail.scroll(0, 10);
     // вводим электронную почту
