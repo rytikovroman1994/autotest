@@ -4,7 +4,8 @@ describe('checking-cards', () => {
     });
 
     // стандартный режим
-    it('consider the number of cards', () => {
+    it('consider the number of cards', function() {
+        this.retries(2);
         // считае кол-во карточек на странице
         const { length: numberOfCards } = $$('.avn001-2_catalogue-item');
         for( let i = 1; i <= 4; i++) {
@@ -21,7 +22,8 @@ describe('checking-cards', () => {
     });
 
     // списком
-    it('consider the number of cards list', () => {
+    it('consider the number of cards list', function() {
+        this.retries();
         browser.waitForVisible('.is_visible .toggle_switch__states  span');
         browser.scroll('.is_visible .toggle_switch__states  span', 0, -100);
         browser.click('.is_visible .toggle_switch__states  span');
