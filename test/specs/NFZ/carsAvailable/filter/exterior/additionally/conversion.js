@@ -3,7 +3,8 @@ import NfzFilter from 'Pageobjects/nfz-filter.js'
 describe('test additionally conversion', () => {
     // выносим часто используемое название условия комплектации
     let conditions = 'Переоборудование';
-    before('open page filter', () => {
+    before('open page filter', function() {
+        this.retries(3);
         browser.helpers.openFilter();
         // проверяем переход на страницу Экстерьер
         NfzFilter.exterior();
