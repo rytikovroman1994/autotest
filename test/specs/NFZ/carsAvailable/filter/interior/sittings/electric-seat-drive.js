@@ -6,7 +6,7 @@ describe('test sittings electric seat drive', () => {
     before('open page filter', () => {
         browser.helpers.openFilter();
         // проверяем переход на страницу Интерьер
-        bNfzFilter.interior();
+        NfzFilter.interior();
     }); 
 
     // проверяем работу чекбоскса
