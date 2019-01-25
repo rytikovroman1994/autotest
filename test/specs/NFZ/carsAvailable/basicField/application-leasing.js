@@ -23,19 +23,20 @@ describe('test application leasing', () => {
     });
 
     // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
-    it('Check detail images', () => {
+    it('Check detail images', function() {
+        this.retries(3);
         // ждём появления картинки в карточках 
         browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // кликаем по карточке
         NfzListPage.card();
         // проверм что появилась картинка в деталке
         browser.waitForVisible(NfzDetail.selectorCarImage, 40000);
+        // Переходим на страницу расчёта Лизинга 
+        browser.click('.mainStageinfo_creditTabs > div:nth-child(2)');
     });
 
     // проверяем работу Крединого калькулятора
-    it('Choose work KK', () => {
-        // Переходим на страницу расчёта Лизинга 
-        browser.click('.mainStageinfo_creditTabs > div:nth-child(2)');
+    it('Choose work KK', function() {
         // проверяем что поле Лизинг актинво 
         const textCredit = browser.getText('.mainStageinfo_creditTab.is_active');
         browser.waitUntil(
@@ -57,7 +58,7 @@ describe('test application leasing', () => {
         // получаем срок лизинга 
         initialMoth = browser.getAttribute('.nfz002_input[data-name="Срок лизинга"] .ci001-1_input', 'value');
         // получаем остаточный платёж
-        residualPayment = browser.getAttribute('.nfz002_input[data-name="Платеж в счет выкупа"] .ci001-1_input', 'value');
+        residualPayment = browser.getAttribute('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input', 'value');
         // получаем ежемесячный платёж
         monthlyPayment = browser.getText('.nfz002_param-display_text .h3 .price-text');
         // НДС к позмещению
@@ -80,7 +81,8 @@ describe('test application leasing', () => {
     });
 
     // проверяем что данные в форме совпадают с даными в деталке
-    it('Check data match', () => {
+    it('Check data match', function() {
+        this.retries(3);
         // проверяем совпадение ежемесячного платежа 
         const currentMonthlyPayment = browser.getText('.nfz0033_table > div:nth-child(1) .price-text');
         browser.waitUntil(
@@ -119,7 +121,7 @@ describe('test application leasing', () => {
     });
 
     // заполняем данные и отправляем заявку
-    it('Fill in the application', () => {
+    it('Fill in the application', function() {
         // проверяем, что кнопка Отправить не активна
         browser.waitUntil(
             () => browser.isExisting('.btn_cta.is_disabled') === true,
@@ -133,14 +135,14 @@ describe('test application leasing', () => {
         // вводим имя 
         NfzForm.fieldName.setValue( faker.name.firstName(1));
         // вводим телефон 
-        NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
+        NfzForm.fieldPhone.setValue(`960${faker.random.number(9999999)}`);
         // клик для применения номера
         browser.click('.op005_form-item[data-name="Email"] input');
         // проверка на некоректный номер
         while(browser.isVisible('.op005_form-item[data-name="Телефон"] .error-container') === true) {
-            browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-            browser.clearElement('.op005_form-item[data-name="Телефон"] input');
-            NfzForm.fieldPhone.setValue(faker.phone.phoneNumber(0));
+            $('.op005_form-item[data-name="Телефон"] .input__field').value='';
+            browser.clearElement('.op005_form-item[data-name="Телефон"] .input__field');
+            NfzForm.fieldPhone.setValue(`960${faker.random.number(9999999)}`);
         }
         NfzForm.fieldEmail.scroll(0, 10);
         // вводим электронную почту
