@@ -76,8 +76,6 @@ describe('test detail credit', () => {
             5000, "Сумма Первоначального платежа не изменилась");
         // проверяем, что процент ПП изменился
         const currentPercentageInitialPayment = browser.getText('.nfz002_input[data-name="Первоначальный платеж"] .ci001-1_suffix');
-        console.log(currentPercentageInitialPayment);
-        console.log(percentageInitialPayment);
         browser.waitUntil(
             () => currentPercentageInitialPayment !== percentageInitialPayment,
             5000, "Процент ПП не изменился после изменения суммы");
@@ -94,23 +92,23 @@ describe('test detail credit', () => {
     }); 
 
     // проверяем работу сладйера Остаточный платёж 
-    it('Check the work of the slider residual payment', () => {
+    it.skip('Check the work of the slider residual payment', () => {
         // запоминаем начальное положение слайдера 
         const initialPosition = browser.getLocation('.nfz002_input[data-name="Остаточный платеж"] .range-slider-handle-2');
         // очищаем вводимое поле
         browser.clearElement('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input');
         // меняем первоначальный платёж 
-        browser.addValue('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input', '1000000');
-        browser.keys("Enter");
+        browser.addValue('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input', '500000');
+        browser.click('.nfz002_input__wrap');
         // проверяем, что изменился остаточный платёж
         const currentResidualPayment = browser.getAttribute('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_input', 'value');
+        console.log(currentResidualPayment);
+        console.log(residualPayment);
         browser.waitUntil(
             () => currentResidualPayment !== residualPayment,
-            5000, "Сумма Первоначального платежа не изменилась");
+            5000, "Сумма Остаточного платежа не изменилась");
         // проверяем, что процент ОП изменился
         const currentPercentageResidualPayment = browser.getText('.nfz002_input[data-name="Остаточный платеж"] .ci001-1_suffix');
-        console.log(currentPercentageResidualPayment);
-        console.log(percentageResidualPayment);
         browser.waitUntil(
             () => currentPercentageResidualPayment !== percentageResidualPayment,
             5000, "Процент ПП не изменился после изменения суммы");

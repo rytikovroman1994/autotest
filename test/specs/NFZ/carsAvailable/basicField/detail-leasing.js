@@ -1,7 +1,7 @@
 import NfzListPage from 'Pageobjects/nfz-list.page.js'
 import NfzDetail from 'Pageobjects/nfz-detail.page.js'
 
-describe('test detail leasing', () => {
+describe.skip('test detail leasing', () => {
     // получаем первоначальный платёж 
     let initialPayment;
     // получаем срок лизинга 
