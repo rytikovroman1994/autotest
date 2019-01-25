@@ -1,3 +1,4 @@
+import NfzFilter from 'Pageobjects/nfz-filter.js'
 
 export default function openListNfz() {
     // делаем размер окна браузера одинакового размера
@@ -14,10 +15,9 @@ export default function openListNfz() {
             console.log( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
           } 
     // ждём пока откроется фильтр 
-    if(browser.isVisible('.avn008_filter')) {
-        // закрываем фильтр
-        while(browser.isVisible('.avn008_filter') === true) {
-            browser.click('body #prompt-toggler_filter');
-        }
+    browser.waitForVisible('.avn008_filter');
+    // закрываем фильтр
+    while(browser.isVisible('.avn008_filter') === true) {
+        NfzFilter.filter();
     };
 }

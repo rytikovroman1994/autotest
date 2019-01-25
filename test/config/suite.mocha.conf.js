@@ -106,16 +106,16 @@ exports.config = {
               // ],
         },
 
-          // {
-          //     browserName: 'firefox',
-          //     version: '64.0',
-          //     maxInstances: '1',
-          //     marionette: true,
-          //     //build: process.env.TRAVIS_BUILD_NUMBER,
-          //     // specs: [
-          //     //     './test/specs/sampe*.js'
-          //     // ],
-          // },
+          {
+              browserName: 'firefox',
+              version: '64.0',
+              maxInstances: '1',
+              marionette: true,
+              //build: process.env.TRAVIS_BUILD_NUMBER,
+              // specs: [
+              //     './test/specs/sampe*.js'
+              // ],
+          },
 
         //   {
         //       browserName: 'firefox',
@@ -242,7 +242,7 @@ exports.config = {
     framework: 'mocha',
     mochaOpts: {
       ui: 'bdd',
-      timeout: 200000,
+      timeout: 60000,
       compilers: ['js:babel-register'],
     },
 
