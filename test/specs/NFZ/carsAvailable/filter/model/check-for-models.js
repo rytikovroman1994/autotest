@@ -28,22 +28,29 @@ describe('tesr check model card', () => {
         browser.helpers.openFilter();
     });
 
-    it('Check availability of cards', () => {
+    it('Check availability of cards', function() {
+        this.retries(3);
         // считаем количество карточек с машинами 
         numberCars = cars().length;
         // проверяем, что их количество равно 8 
-        expect(numberCars).to.be.equal(8);
+        browser.waitUntil(
+            () => numberCars === 8,
+            5000, "Количество моделей не равно ожидаемому");
     });
 
     // проверяем что все карточки имеют картинки
-    it('Check the presence of pictures in the cards', () => {
+    it('Check the presence of pictures in the cards', function() {
+        this.retries(3)
         numberImage = image().length;
         // проверяем, что их количество равно количесту карточек 
-        expect(numberImage).to.be.equal(numberCars);
+        browser.waitUntil(
+            () => numberImage === numberCars,
+            5000, "Количество карточек с картинками не равно ожидаемому");
     });
 
     // проверяем, что видны все названия моделей
-    it('Check the availability of the names of the models', () => {
+    it('Check the availability of the names of the models', function() {
+        this.retries(3);
         // получаем список имён поделей автомобилей
         const listName = browser.getText('.avn008_car__title');
         // сравниваем два массива на наличие оличий 
