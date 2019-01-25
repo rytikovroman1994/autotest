@@ -13,7 +13,8 @@ describe('test slider similar cars', () => {
     });
 
     // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
-    it('Check detail images', () => {
+    it('Check detail images', function() {
+        this.retries(3);
         // ждём появления картинки в карточках 
         browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // кликаем по карточке
@@ -21,13 +22,14 @@ describe('test slider similar cars', () => {
         // проверм что появилась картинка в деталке
         browser.waitForVisible(NfzDetail.selectorCarImage, 40000);
         // скролим страницу до слайдера 
-        browser.scroll('.avn022_Footer', 10, -400);
+        browser.scroll('.avn022_Footer', 10, -800);
         // ждём пока отредерится карточки
         browser.pause(5000);
     });
 
     // проверяем работу нижних кнопок
-    it('Check side buttons slider', () => {
+    it('Check side buttons slider', function() {
+        this.retries(4);
         // получаем количество переключений
         const switching = numberSwitching();
         console.log(switching);
@@ -54,7 +56,8 @@ describe('test slider similar cars', () => {
     });   
 
     // проверяем работу правой кнопки слайдера
-    it('Check side right buttons slider', async () => {
+    it('Check side right buttons slider', async function() {
+        this.retries(3);
         // получаем количество переключений
         const switching = numberSwitching();
         // двигаем слайдер вправо
@@ -80,7 +83,8 @@ describe('test slider similar cars', () => {
     });
 
     // проверяем работу левой кнопки слайдера 
-    it('Check side left buttons slider', async () => {
+    it('Check side left buttons slider', async function() {
+        this.retries(3);
         // получаем количество переключений
         const switching = numberSwitching();
         // двигаем слайдер вправо
