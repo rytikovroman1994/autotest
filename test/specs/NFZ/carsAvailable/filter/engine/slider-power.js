@@ -4,7 +4,7 @@ describe('test slider power', () => {
 
     // допустимая мощность двигателей
     const list = [
-        '204 - 224',
+        '203 - 224',
         '150 - 180',
         '100 - 140',
         '100 - 224'
@@ -12,12 +12,13 @@ describe('test slider power', () => {
 
     before('open page filter', () => {
         browser.helpers.openFilter();
-        // открываем страницу двигатель
-        NfzFilter.engine();
     });
 
     // переходим на страницу "Двигатель"
-    it('Check open page engine', () => {
+    it('Check open page engine', function() {
+        this.retries(3);
+        // открываем страницу двигатель
+        NfzFilter.engine();
         // ожтдаем закрузки послденей картинки
         browser.waitForVisible('.grid_m_2 img');
         // провеярем, что появился слайдер
