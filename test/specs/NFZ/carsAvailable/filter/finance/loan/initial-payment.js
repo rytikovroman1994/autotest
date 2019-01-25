@@ -9,12 +9,17 @@ describe('test loan initial payment', () => {
     let startPosition;
     before('open page filter', () => {
         browser.helpers.openFilter();
+    });
+
+    it('Open page finance', function() {
+        this.retries(3);
         // переходим на страницу финансы
         NfzFilter.finance();
     });
 
     // проверяем переход на вкладку Кредит и работу слайдера Первоначальный платёж
-    it('Check slider initial paymen', () => {
+    it('Check slider initial paymen', function() {
+        this.retries(3)
         // переходим на вкладку Кредит
         browser.click('.rc-slider-step > span:nth-child(2)');
         // запоминаем положение слайдера
@@ -33,7 +38,8 @@ describe('test loan initial payment', () => {
     });
 
     // проверяем, что условие фильтра сбрасывается
-    it('Check that the filter is cleared', () => {
+    it('Check that the filter is cleared', function() {
+        this.retries(3);
         // ждём пока подвал станет активным
         browser.pause(3000);
         // сбрасываем условие фильтра
@@ -44,6 +50,8 @@ describe('test loan initial payment', () => {
             10000, "Подвал не стал активным после 10 секунд ожидания");
         // получаем кординаты слайдера
         const newPositionSlider = statePosition();
+        console.log(newPositionSlider.x);
+        console.log(startPosition.x);
         // проверяем, что они равны изначальным
         browser.waitUntil(
             () => newPositionSlider.x === startPosition.x,
