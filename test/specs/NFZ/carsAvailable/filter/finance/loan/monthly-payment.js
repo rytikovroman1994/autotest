@@ -9,20 +9,28 @@ describe('test loan monthly payment', () => {
     let startPosition;
     before('open page filter', () => {
         browser.helpers.openFilter();
+    });
+
+    it('Open page finance', function() {
+        this.retries(3);
         // переходим на страницу финансы
         NfzFilter.finance();
     });
 
     // проверяем переход на вкладку Кредит и работу слайдера Ежемесячный платёж
-    it('Check slider initial paymen', () => {
+    it('Check slider initial paymen', function() {
+        this.retries(3);
         // переходим на вкладку Кредит
         browser.click('.rc-slider-step > span:nth-child(2)');
         // запоминаем положение слайдера
         startPosition = browser.getLocation(`${selector} .range-slider-handle.range-slider-handle-2`);
         // очищаем поле ввода суммы Первоначального платежа
-        browser.clearElement(`${selector} .ci001-1_input`);
+        browser.click(`${selector} .ci001-1_input`);
+        for(let i = 1; i <= 4; i++) {
+        browser.keys('\uE003');
+        };
         // вводим свою сумму 
-        browser.addValue(`${selector} .ci001-1_input`, '5000000');
+        browser.addValue(`${selector} .ci001-1_input`, '130000');
         // убираем фокус, чтобы сумма применилась
         browser.keys('/uE007');
         // проверяем, что слайдер поменял позицию 
@@ -33,7 +41,8 @@ describe('test loan monthly payment', () => {
     });
 
     // проверяем, что условие фильтра сбрасывается
-    it('Check that the filter is cleared', () => {
+    it('Check that the filter is cleared', function() {
+        this.retries(3);
         // ждём пока подвал станет активным
         browser.pause(3000);
         // сбрасываем условие фильтра
