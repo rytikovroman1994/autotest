@@ -15,7 +15,7 @@ class NfzForm extends Page {
     // поле ввода наименования кампании
     get fieldCompany () { return $('.op005_form-item[data-name="Наименование организации"] input') }
     // поле ввода адресса 
-    get fieldAddress () { return $('.op005_form-item[data-name="Адрес"] input') }
+    get fieldAddress () { return $('.op005_form-item[data-name="Город"] input') }
     // поле ввода должности
     get fielAppointment () { return $('.op005_form-item[data-name="Должность"] input') }
     // кнопка Отправить заявку 
