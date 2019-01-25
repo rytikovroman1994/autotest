@@ -39,7 +39,8 @@ describe('test gallery in detail', () => {
     });
 
     // проверяем, что в галереии отображаются все картинки
-    it('check image in gallery', () => {
+    it('check image in gallery', function() {
+        this.retries(3)
         // ждём загрузки страницы и появлениния кнопок галереии
         browser.waitForVisible('.mk002__dots button');
         // считаем количество картинок
