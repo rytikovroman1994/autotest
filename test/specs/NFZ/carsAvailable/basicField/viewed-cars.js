@@ -15,7 +15,8 @@ describe('test viewed cars', () => {
     });
 
     // получаем id первых 4 карточек
-    it('Get list id cars', () => {
+    it('Get list id cars', function() {
+        this.retries(3);
         for( let i = 1; i <= 4; i++ ) {
             // получаем ид автомобиля
             const idCar = browser.getAttribute(`.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(${i}) .avn001-2_catalogue-item`, 'data-carid');
@@ -30,7 +31,8 @@ describe('test viewed cars', () => {
         }
     });
     // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
-    it('Check detail images', () => {
+    it('Check detail images', function() {
+        this.retries(3);
         // ждём появления картинки в карточках 
         browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // кликаем по карточке
@@ -44,7 +46,8 @@ describe('test viewed cars', () => {
     });
 
     // проверяем карточки в разделе "Вы уже просматривали"
-    it('Check cards in viewed cars', () => {
+    it('Check cards in viewed cars', function() {
+        this.retries(3);
         // получаем массив ид машин 
         const idCarViewes = browser.getAttribute(`.avn001-2_catalogue-item.avn001-2_catalogue-item__tiles`, 'data-carid');
 
