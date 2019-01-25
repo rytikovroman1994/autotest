@@ -21,7 +21,8 @@ describe('test types machines', () => {
     });
 
     // порвеярем что в каегории "Для бизнесса" два скрытых автобибиля
-    it('Check for family', () => {
+    it('Check for family', function() {
+        this.retries(3);
         // переходим на вкладку для семьи
         browser.click('.avn008_model__filter-item[data-name="Для семьи"]');
         // считаем количество заблокированных карточек 
@@ -42,7 +43,8 @@ describe('test types machines', () => {
     });
 
     // порвеярем что в каегории "Для семьи" два скрытых автобибиля
-    it('Check for business', () => {
+    it('Check for business', function() {
+        this.retries(3);
         // переходим на вкладку для бизнесса
         browser.click('.avn008_model__filter-item[data-name="Для бизнеса"]');
         // считаем количество заблокированных карточек 
