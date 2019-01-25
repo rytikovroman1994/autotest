@@ -13,7 +13,8 @@ describe('test histories in comparison', () => {
     });
 
     // добавляем машины в сравнение
-    it('Add to comparison', () => {
+    it('Add to comparison', function() {
+        this.retries(3);
         // добавляем машины в сравнение
         for( let i = 1; i <= 4; i++ ) {
             // путь к конкретной карточке
@@ -21,7 +22,9 @@ describe('test histories in comparison', () => {
             browser.click(`${path} .avn001-2_action-item_icon`);
             // проверяем, что количество машин в сравнении изменилось
             currentNumber = +numberCar();
-            expect(currentNumber).to.be.equal(initialNumber + 1);
+            browser.waitUntil(
+                () => currentNumber === (initialNumber + 1),
+                5000, "Количество автомобилей в поле сравнения не изменилось");
 
             // приравниваем текущие число машин к начальному 
             initialNumber = currentNumber;
@@ -36,30 +39,37 @@ describe('test histories in comparison', () => {
     });
 
     // переходим в раздел сравнить 
-    it('Go to page comparison', () => {
+    it('Go to page comparison', function() {
+        this.retries(3);
         // проверяем что кнопка видна
         browser.waitForVisible('.avn003_column-right .avn003__action-item.with-text');
         // кликаем на данную кнопку
         browser.click('.avn003_column-right .avn003__action-item.with-text');
         // проверяем, что перешли именно на страницу сравнения
         const URL = browser.getUrl();
-        expect(URL).to.be.equal('https://nfz.kodix.ru/comparison');
+        browser.waitUntil(
+            () => URL === 'https://nfz.kodix.ru/comparison',
+            5000, `Ожидался переход на страницу сравненения, а перешли на ${URL}`);
 
         // проверяем что в тайтле нужное количество автомобилей
         const title = browser.getText('.avn003_title h3');
         // получаем число из всей строки
         const lot = +title.replace( /\D+/ig , '');
         // сраниваем
-        expect(lot).to.be.equal(initialNumber);
+        browser.waitUntil(
+            () => lot === initialNumber,
+            5000, "Начальное число автобобмлей не равно текущему");
     }); 
 
     // проверяем количество автомобилей
-    it(' Check number car in comparison', () => {
+    it(' Check number car in comparison', function() {
+        this.retries(3);
         // получаем количество автомобилей
         const numberCarComparison = $$('.avn006_cell-inner.is_visible').length;
         // сравниваем с количеством в списке
-        expect(numberCarComparison).to.be.equal(initialNumber);
-
+        browser.waitUntil(
+            () => numberCarComparison === initialNumber,
+            5000, "Количество автомобилей в списке отличается от начального");
         // ожидаем загрузки текста
         browser.waitForVisible('.avn006-1_head-cell__text a');
         // получаем имена автомобилей на странице сравления 
@@ -78,7 +88,8 @@ describe('test histories in comparison', () => {
     });
 
     // проверяем работу хистори
-    it('Check histori in comparison', () => {
+    it('Check histori in comparison', function() {
+        this.retries(3)
         // кликаем на кнопку вернуться
         browser.click('.link-back .icon-link');
         // проверяем, что вернулись к списку
