@@ -7,10 +7,10 @@ describe('test wheels 18', () => {
         browser.helpers.openFilter();
     }); 
 
-    it('Open page interior', function() {
+    it('Open page exterior', function() {
         this.retries(3);
         // проверяем переход на страницу Интерьер
-        NfzFilter.interior();
+        NfzFilter.exterior();
     });
 
     // проверяем работу чекбоскса

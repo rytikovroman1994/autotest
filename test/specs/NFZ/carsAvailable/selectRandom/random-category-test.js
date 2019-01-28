@@ -1,7 +1,7 @@
 import NfzFilter from 'Pageobjects/nfz-filter.js'
 const fs = require('fs');
 
-describe('test random-filter', () => {
+describe.skip('test random-filter', () => {
     // вынес функцию генерации рандомного допустимого числа
     function randomNumber(number) {
         const randomCar = Math.random() * number.length;

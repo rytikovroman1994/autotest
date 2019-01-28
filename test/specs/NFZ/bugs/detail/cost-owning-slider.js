@@ -7,7 +7,8 @@ describe('test cost of owning a slider', () => {
     }); 
 
     // выносим ожидание картинки в отдельный тест
-    it('Check image previes', () => {
+    it('Check image previes', function() {
+        this.retries(3);
         // ждём появления картинки в карточках 
         browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // кликаем по карточке
@@ -17,7 +18,8 @@ describe('test cost of owning a slider', () => {
     });
 
     // проверяем, что сущуествует блок Стоимость владения автомобилем и в нём есть слайдер 
-    it('Check block cost owning and slider', () => {
+    it('Check block cost owning and slider', function() {
+        this.retries(3);
         if(browser.isExisting('.bg-white') === true) {
             // скролим до данного блока
             browser.scroll('.bg-white', 0, 50);
