@@ -25,7 +25,8 @@ describe('test Polo busines logic', () => {
     });
 
     // выбираем модель Polo
-    it('Select the model Polo', () => {
+    it('Select the model Polo', function() {
+        this.retries(3);
         // очень не хороший костыль, который необзодим, ибо в докере в фф не работает команда moveToObject
         browser.execute(() => {
             document.querySelector('.slick-initialized > div > div > div:nth-child(2) div:nth-child(3) > div.avn008_car__kit > label:nth-child(2) > div').click();
@@ -40,7 +41,8 @@ describe('test Polo busines logic', () => {
     });
 
     // выбираем условие онлайн-олата
-    it('Choose online payment', () => {
+    it('Choose online payment', function() {
+        this.retries(3);
         // пеерходим на страницу бюджет
         browser.click('.avn008_filter__tab[data-name="Бюджет"]');
         // нажимаем на чекбокс 
@@ -56,7 +58,8 @@ describe('test Polo busines logic', () => {
     });
 
     // выбираем цвет кузова
-    it('Choose body color', () => {
+    it('Choose body color', function() {
+        this.retries(3);
         // переходим на страницу экстерьер
         browser.click('.avn008_filter__tab[data-name="Экстерьер"]');
         // ожидаем загрузку картинки 
@@ -71,7 +74,8 @@ describe('test Polo busines logic', () => {
     });
 
     // считаем количество найденых автомобилей и переходим к списку
-    it('Get the number of cars', () => {
+    it('Get the number of cars', function() {
+        this.retries(3);
         // получаем число количества автомобилей
         filterMachines = +getCars();
         // получаем минимальною цену автомобиля
@@ -91,7 +95,8 @@ describe('test Polo busines logic', () => {
     });
 
     // проверяем количество карточек и условия фильтра в каждой из них 
-    it('Check the available list of cars', () => {
+    it('Check the available list of cars', function() {
+        this.retries(3);
         let number = listMachines().length;
         for( let i = 1; i <= 1; i++ ) {
             let card = `.avn001_display__enable-hover > div:nth-child(1) .grid_l_3:nth-child(${i})`

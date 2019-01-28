@@ -4,7 +4,8 @@ describe('test card features', () => {
     });
 
     // проверяем, что существуют особенности в карточках
-    it('check card features', () => {
+    it('check card features', function() {
+        this.retries(2);
         // проверем, что в карточке есть параграф "Особенности"
         browser.waitUntil(
             () => browser.isVisible('div:nth-child(1) > div > div > div:nth-child(2) > div > div > div > div:nth-child(3) div:nth-child(2) > div > div > div') === true,

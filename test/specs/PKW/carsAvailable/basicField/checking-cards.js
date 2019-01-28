@@ -23,7 +23,7 @@ describe('checking-cards', () => {
 
     // списком
     it('consider the number of cards list', function() {
-        this.retries();
+        this.retries(2);
         browser.waitForVisible('.is_visible .toggle_switch__states  span');
         browser.scroll('.is_visible .toggle_switch__states  span', 0, -100);
         browser.click('.is_visible .toggle_switch__states  span');

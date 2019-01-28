@@ -30,7 +30,8 @@ describe('test model categories cars', () => {
     });
 
     // проверяем что в категории седан, только седаны
-    it('check categories sedan', () => {
+    it('check categories sedan', function() {
+        this.retries(3);
         // создаём массив
         const listSedan =[];
         // перехоим на вкладку седан
@@ -61,7 +62,8 @@ describe('test model categories cars', () => {
     });
 
     // проверяем что в категории универсал, только универсалы
-    it('check categories MPV', () => {
+    it('check categories MPV', function() {
+        this.retries(3);
         // создаём массив
         const listSedan =[];
         // перехоим на вкладку седан
@@ -92,7 +94,8 @@ describe('test model categories cars', () => {
     });
 
     // проверяем что в категории внедорожники, только внедорожники
-    it('check categories SUV', () => {
+    it('check categories SUV', function() {
+        this.retries(3);
         // создаём массив
         const listSedan =[];
         // перехоим на вкладку седан
@@ -123,7 +126,8 @@ describe('test model categories cars', () => {
     });
 
     // проверяем что в категории внедорожники, только внедорожники
-    it('check categories hatchback', () => {
+    it('check categories hatchback', function() {
+        this.retries(3);
         let numberModelArray;
         // создаём массив
         const listSedan =[];

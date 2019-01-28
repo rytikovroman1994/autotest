@@ -7,7 +7,8 @@ describe('test history detail', () => {
     }); 
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(2);
         // кликаем на карточку
         PkwListPage.card();
         // ожидаем появления картинки на странице деталки
@@ -15,7 +16,8 @@ describe('test history detail', () => {
     });
 
     // проверяем переход по хистори
-    it('Check button histiry', () => {
+    it('Check button histiry', function() {
+        this.retries(3);
         // нажимаем на кнопку 
         browser.click('.avn003_content .avn003_column-left');
         // ожидаем появления карточки

@@ -6,7 +6,8 @@ describe('test businessLogic booking car', () => {
     }); 
 
     // добавляем сортировку по онлайн оплате
-    it('Click checkbox online payments', () => {
+    it('Click checkbox online payments',  function() {
+        this.retries(3);
         // проверяем что что на странице есть чекбокс онлайн оплаты
         browser.waitForExist('.avn001-1_filter-item .toggle_switch__state');
         // кликаем по нему
@@ -24,7 +25,8 @@ describe('test businessLogic booking car', () => {
     });
 
     // проверяем наличие кнопки купить на странице
-    it('Check the buy button', () => {
+    it('Check the buy button', function() {
+        this.retries(3);
         // проверяем наличие кнопки в дом
         browser.waitForExist('.avn007-2_price .btn.btn_cta.show-op');
         // проверяем что кнопка отображется
@@ -43,7 +45,8 @@ describe('test businessLogic booking car', () => {
     });
 
     // проверяем работу подсказки и слайдера онлайн оплаты
-    it('Check the tooltip and slider', () => {
+    it('Check the tooltip and slider', function() {
+        this.retries(3);
         // проверяем что в доме есть тултип
         browser.waitForExist('.op005_form_text .footnote-toggler');
         // кликаем не него
@@ -67,7 +70,8 @@ describe('test businessLogic booking car', () => {
     });
 
     // проверяем что что загружаются реквизиты
-    it('Check for details', () => {
+    it('Check for details', function() {
+        this.retries(3);
         // т.к. убрали в некоторы карточках реквизиты, ставим проверку
         if(browser.isExisting('.is_filled.is_valid.is_disabled') === false) {
             //расскрываем список вариантов оплаты
@@ -89,7 +93,8 @@ describe('test businessLogic booking car', () => {
     });
 
     // проверяем кнопку отправить заказ и переход в личный кабинет
-    it('Check the submit order button', () => {
+    it('Check the submit order button', function() {
+        this.retries(3);
         // проверяем что кнопка существует в дом
         browser.waitForExist('.op005_form-btn .btn_cta');
         // проверяем что кнопка отображается

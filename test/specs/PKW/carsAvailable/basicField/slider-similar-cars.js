@@ -13,7 +13,8 @@ describe('test slider similar cars', () => {
     });
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(3);
         // кликаем на карточку
         PkwListPage.card();
         // ожидаем появления картинки на странице деталки
@@ -26,7 +27,8 @@ describe('test slider similar cars', () => {
     });
 
     // проверяем работу нижних кнопок
-    it('Check side buttons slider', () => {
+    it('Check side buttons slider', function() {
+        this.retries(3);
         // получаем количество переключений
         const switching = numberSwitching();
         // двигаем слайдер вправо
@@ -52,7 +54,8 @@ describe('test slider similar cars', () => {
     });   
 
     // проверяем работу правой кнопки слайдера
-    it('Check side right buttons slider', async () => {
+    it('Check side right buttons slider', async function() {
+        this.retries(3);
         // получаем количество переключений
         const switching = numberSwitching();
         // двигаем слайдер вправо
@@ -78,7 +81,8 @@ describe('test slider similar cars', () => {
     });
 
     // проверяем работу левой кнопки слайдера 
-    it('Check side left buttons slider', async () => {
+    it('Check side left buttons slider', async function() {
+        this.retries(3);
         // получаем количество переключений
         const switching = numberSwitching();
         // двигаем слайдер вправо

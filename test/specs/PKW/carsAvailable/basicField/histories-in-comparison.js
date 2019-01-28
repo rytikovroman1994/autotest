@@ -15,7 +15,8 @@ describe('test histories in comparison', () => {
     });
 
     // добавляем машины в сравнение
-    it('Add to comparison', () => {
+    it('Add to comparison', function() {
+        this.retries(3);
         // добавляем машины в сравнение
         for( let i = 1; i <= 4; i++ ) {
             browser.click(`div:nth-child(1) > div > div > div:nth-child(${i}) > div > div > div > div:nth-child(5) > div > div:nth-child(1) .avn001-2_action-item_icon`);
@@ -35,7 +36,8 @@ describe('test histories in comparison', () => {
     });
 
     // переходим в раздел сравнить 
-    it('Go to page comparison', () => {
+    it('Go to page comparison', function() {
+        this.retries(3);
         // проверяем что кнопка видна
         browser.waitForVisible('.avn003_column-right .avn003__action-item.with-text');
         // кликаем на данную кнопку
@@ -53,7 +55,8 @@ describe('test histories in comparison', () => {
     }); 
 
     // проверяем количество автомобилей
-    it(' Check number car in comparison', () => {
+    it(' Check number car in comparison', function() {
+        this.retries(3);
         // получаем количество автомобилей
         const numberCarComparison = $$('.avn006_cell-inner.is_visible').length;
         // сравниваем с количеством в списке
@@ -78,7 +81,8 @@ describe('test histories in comparison', () => {
     });
 
     // проверяем работу хистори
-    it('Check histori in comparison', () => {
+    it('Check histori in comparison', function() {
+        this.retries(3);
         // кликаем на кнопку вернуться
         browser.click('.link-back .icon-link');
         // проверяем, что вернулись к списку

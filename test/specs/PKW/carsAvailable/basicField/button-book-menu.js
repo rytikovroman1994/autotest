@@ -9,7 +9,8 @@ describe('button book in the menu', () => {
     });
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(3);
         // кликаем на карточку
         PkwListPage.card();
         // ожидаем появления картинки на странице деталки
@@ -17,7 +18,8 @@ describe('button book in the menu', () => {
     });
 
     // проверяем что кнопка забронировать есть на странице
-    it('Check button book it', () => { 
+    it('Check button book it', function() {
+        this.retries(3); 
         // скролим вниз страницы, чтобы появилось меню
         browser.scroll(0, 900);
         // проверяем, что картинка есть в доме и она отображется
@@ -31,7 +33,8 @@ describe('button book in the menu', () => {
     });
 
     // проверяем, что кнопка кликабельна
-    it('Check the clickability of the booking button', () => {
+    it('Check the clickability of the booking button', function() {
+        this.retries(3);
         // кликаем на кнопку
         PkwDetail.bookMenu();
         // ждём пока прогрузится картинка
@@ -46,13 +49,15 @@ describe('button book in the menu', () => {
             10000, "Форма Регистрании не появилась");
     });
 
-    it('Verification of email input', () => {
+    it('Verification of email input', function() {
+        this.retries(3);
         browser.waitForExist('.form__input[name="email"]');
         // вводидим эмеил
         browser.setValue('.form__input[name="email"]', faker.internet.email(1));
     });
 
-    it('Checking phone input', () => {
+    it('Checking phone input', function() {
+        this.retries(3);
         // вводим телефонный номер
         browser.waitForExist('.form__input[name="mobile"]');
         browser.setValue('.form__input[name="mobile"]', faker.phone.phoneNumber()); 
@@ -65,30 +70,35 @@ describe('button book in the menu', () => {
         }
     });
 
-    it('Choose the sex of the person', () => {
+    it('Choose the sex of the person', function() {
+        this.retries(3);
         // выбираем гендер
         browser.click('.form__row_checks label:nth-child(1)');
     });
 
-    it('Checking the last name', () => {
+    it('Checking the last name', function() {
+        this.retries(3)
         browser.waitForExist('.form__input[name="lastName"]');
         // вводим фамилию
         browser.setValue('.form__input[name="lastName"]', faker.name.firstName(1));
     });
 
-    it('Input check name', () => {
+    it('Input check name', function() {
+        this.retries(3);
         browser.waitForExist('.form__input[name="firstName"]');
         // вводим имя
         browser.setValue('.form__input[name="firstName"]', faker.name.firstName(1));
     });
 
-    it('Entry check patronymic', () => {
+    it('Entry check patronymic', function() {
+        this.retries(3);
         browser.waitForExist('.form__input[name="user.attributes.patronomic"]');
         // вводим отчество
         browser.setValue('.form__input[name="user.attributes.patronomic"]', faker.name.firstName(1));
     });
 
-    it('Entry check password', () => {
+    it('Entry check password', function() {
+        this.retries(3);
         // вводим пароль 
         browser.setValue('.form__input[name="password"]', "12345678");
         browser.waitForVisible('.form__input[name="password-confirm"]');
@@ -96,7 +106,8 @@ describe('button book in the menu', () => {
         browser.setValue('.form__input[name="password-confirm"]', "12345678");
     });
 
-    it('Check that we are back', () => {
+    it('Check that we are back', function() {
+        this.retries(3);
         // проверям, что кнопка Зарегестрироваться работает
         browser.click('.form__row .btn_cta');
         // ожидаем загрузку карточки

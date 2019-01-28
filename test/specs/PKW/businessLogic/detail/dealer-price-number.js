@@ -12,7 +12,8 @@ describe('test booking car', () => {
     }); 
 
     // выбираем первую картинку и переходим в деталку
-    it('go to details', () => {
+    it('go to details', function() {
+        this.retries(3);
         // выбираем первую машину и получаем её цену
         getPrise = browser.getText('.avn001_display > div:nth-child(1) > div > div > div:nth-child(1) .price-text');
         // получаем диллера
@@ -26,7 +27,8 @@ describe('test booking car', () => {
     });
 
     // проверем что в деталке цена и диллер не поменялся
-    it('compare price and dealer', () => {
+    it('compare price and dealer', function() {
+        this.retries(3);
         // получаем цену автомобиля в деталке
         let getPriseDetal = browser.getText('.avn007-2_price-item__purchase .price-text');
         // проверяем что цена в деталка равна цене в выборке
@@ -40,7 +42,8 @@ describe('test booking car', () => {
     }); 
 
     // проверяем что в разделе карты тот же дилер и тот же номер телефона
-    it('compare dealer and phone number', () => {
+    it('compare dealer and phone number', function() {
+        this.retries(3);
         // получаем диллера в разделе геолокации
         let getDilerDetal = browser.getText('.avn008_info_title h2');
         // проверяем что диллер такой же как в выборе

@@ -24,7 +24,8 @@ describe('test get all name city', () => {
     });
 
     // получаем список городов
-    it('get list city', () => {
+    it('get list city', function() {
+        this.retries(3);
         const getNumberCity = getListCity().length;
         console.log(getNumberCity);
         for(let i = 2; i <= getNumberCity; i++ ) {
@@ -35,7 +36,8 @@ describe('test get all name city', () => {
     });
 
     // проверяем выборку каждого города, на наличие карточек с другим городом
-    it('Check the city in the card', () => {
+    it('Check the city in the card', function() {
+        this.retries();
         const getNumberCity = getListCity().length;
         for(let i = 2; i <= getNumberCity; i++ ) {
             // получаем имя города

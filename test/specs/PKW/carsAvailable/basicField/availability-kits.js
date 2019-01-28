@@ -4,7 +4,8 @@ describe(' test availability of kits', () => {
     });
 
     // проверяем наличие комплектаций и их активность
-    it('check availability kits', () => {
+    it('check availability kits', function() {
+        this.retries(3);
         // получаем количетсво карточек
         const cards = $$('.slick-track .avn008_car').length;
         for(let i = 1; i <= cards; i++) {

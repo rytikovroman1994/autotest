@@ -8,7 +8,8 @@ describe('test pictures-detail', () => {
     });
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(3);
         // кликаем на карточку
         PkwListPage.card();
         // ожидаем появления картинки на странице деталки
@@ -18,7 +19,8 @@ describe('test pictures-detail', () => {
     });
 
     // проверяем, что у каждой комплектации есть картинка 
-    it('Check pictures detail', () => {
+    it('Check pictures detail', function() {
+        this.retries(3);
         // если есть "Показать ещё", кликаем на неё
         if( browser.isExisting('.avn013_usp_item__show-more') === true) {
             PkwDetail.showMore();

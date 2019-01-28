@@ -11,7 +11,8 @@ describe('test gallery in detail', () => {
     });
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(3);
         // кликаем на карточку
         PkwListPage.card();
         // ожидаем появления картинки на странице деталки
@@ -20,7 +21,8 @@ describe('test gallery in detail', () => {
 
 
     // проверяем кнопку галерея
-    it('check button gallery', () => {
+    it('check button gallery', function() {
+        this.retries(3);
         // проверяем, что кнопка есть в дом и отображается
         browser.waitForExist(wayButton);
         browser.waitForVisible(wayButton);
@@ -30,7 +32,8 @@ describe('test gallery in detail', () => {
     });
 
     // переходим в галерею
-    it('click button gallery', () => {
+    it('click button gallery', function() {
+        this.retries(3);
         // кликаем по кнопке 
         browser.click(wayButton);
         // проверяем, что открылост окно с картинками
@@ -38,7 +41,8 @@ describe('test gallery in detail', () => {
     });
 
     // проверяем, что в галереии отображаются все картинки
-    it('check image in gallery', () => {
+    it('check image in gallery', function() {
+        this.retries(3);
         // ждём загрузки страницы и появлениния кнопок галереии
         browser.waitForVisible('.mk002__dots button');
         // считаем количество картинок
