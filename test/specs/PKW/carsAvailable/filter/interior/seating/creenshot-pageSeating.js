@@ -7,8 +7,12 @@ describe('screenshot page seating', () => {
       };
     // имя тестируемой страницы
     let namePage = 'interior';
+    // запоминаем имя браузера
+    let nameBrowser;
     before(() => {
         browser.helpers.openSite();
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
     
     // выносим проверку в отдельный тест
@@ -19,12 +23,13 @@ describe('screenshot page seating', () => {
         browser.waitForVisible('.avn008_image-switcher_image');
     });
 
-    it('Сompare screenshots 400', async () => {
+    it('Сompare screenshots 400', async function() {
+        this.retries(2);
         // делаем мобильный размер экрана
         browser.windowHandleSize ({width: 400, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/mainFilterPages/400-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/mainFilterPages/${nameBrowser}/400-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -47,12 +52,13 @@ describe('screenshot page seating', () => {
         }
     });
 
-    it('Сompare screenshots 800', async () => {
+    it('Сompare screenshots 800', async function() {
+        this.retries(2);
         // делаем планшетный размер экрана
         browser.windowHandleSize ({width: 800, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/mainFilterPages/800-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/mainFilterPages/${nameBrowser}/800-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -75,12 +81,13 @@ describe('screenshot page seating', () => {
         }
     });
 
-    it('Сompare screenshots 1366', async () => {
+    it('Сompare screenshots 1366', async function() {
+        this.retries(2);
         // делаем планшетный размер экрана
         browser.windowHandleSize ({width: 1366, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/mainFilterPages/1366-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/mainFilterPages/${nameBrowser}/1366-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 

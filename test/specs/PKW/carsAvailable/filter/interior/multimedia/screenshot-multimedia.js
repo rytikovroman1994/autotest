@@ -7,6 +7,8 @@ describe('screenshot page multimedia', () => {
       };
     // имя тестируемой страницы
     let namePage = 'multimedia';
+    // запоминаем имя браузера
+    let nameBrowser;
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу интерьер
@@ -18,14 +20,17 @@ describe('screenshot page multimedia', () => {
         browser.waitForVisible('.avn008_option-check_image[data-name="Беспроводная зарядка"]');
         // страховочная пауза
         browser.pause(2000);
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
 
-    it('Сompare screenshots 400', async () => {
+    it('Сompare screenshots 400', async function() {
+        this.retries(2);
         // делаем мобильный размер экрана
         browser.windowHandleSize ({width: 400, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/screenshotInterior/400-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/screenshotInterior/${nameBrowser}/400-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -48,12 +53,13 @@ describe('screenshot page multimedia', () => {
         }
     });
 
-    it('Сompare screenshots 800', async () => {
+    it('Сompare screenshots 800', async function() {
+        this.retries(2);
         // делаем планшетный размер экрана
         browser.windowHandleSize ({width: 800, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/screenshotInterior/800-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/screenshotInterior/${nameBrowser}/800-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -76,12 +82,13 @@ describe('screenshot page multimedia', () => {
         }
     });
 
-    it('Сompare screenshots 1366', async () => {
+    it('Сompare screenshots 1366', async function() {
+        this.retries(3);
         // делаем планшетный размер экрана
         browser.windowHandleSize ({width: 1366, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/screenshotInterior/1366-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/screenshotInterior/${nameBrowser}/1366-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
