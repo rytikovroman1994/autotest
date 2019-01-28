@@ -1,27 +1,32 @@
 /* Вспомогательный тест для генерации актуальных скриншотов в разделе фильтр-опции-асистенты.*/
 
 describe.skip('screenshots-options', () => {
-    function diagonal(namePage) {
+    function diagonal(nameBrowser, namePage) {
         // делаем мобильный размер экрана
         browser.windowHandleSize ({width: 400, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/400-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/400-${namePage}.png`);
         expect(screen).to.not.equal(null);
 
         // делаем планшетный размер экрана
         browser.windowHandleSize ({width: 800, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/800-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/800-${namePage}.png`);
         expect(screen).to.not.equal(null);
 
         // делаем пк размер экрана
         browser.windowHandleSize ({width: 1366, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/1366-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/1366-${namePage}.png`);
         expect(screen).to.not.equal(null);
-    }
+    };
+
+    // запоминаем имя браузера
+    let nameBrowser;
     before(() => {
         browser.helpers.openSite();
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
     // скришот фильтр-опции-асистенты
     it('Filter-options-assistants', () => {
@@ -34,7 +39,7 @@ describe.skip('screenshots-options', () => {
         // ожидаем загрузки последей картинки
         browser.waitForVisible('.avn008_option-check_image[data-name="Система Side Assist"]');
         browser.pause(3000);
-        diagonal('assistants');
+        diagonal(nameBrowser, 'assistants');
         browser.windowHandleSize ({width: 1366, height: 768});
     });
 
@@ -43,7 +48,7 @@ describe.skip('screenshots-options', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Адаптивный круиз-контроль');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/cruiseControl.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/cruiseControl.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -55,7 +60,7 @@ describe.skip('screenshots-options', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Функция Auto-hold');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/autoHold.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/autoHold.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -67,7 +72,7 @@ describe.skip('screenshots-options', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Система Front Assist');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/frontAssist.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/frontAssist.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -79,7 +84,7 @@ describe.skip('screenshots-options', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Система Light Assist');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/lightAssist.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/lightAssist.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
@@ -91,7 +96,7 @@ describe.skip('screenshots-options', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Датчик дождя');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/rainSensor.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/rainSensor.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
@@ -103,7 +108,7 @@ describe.skip('screenshots-options', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Система Side Assist');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/sideAssist.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/sideAssist.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно

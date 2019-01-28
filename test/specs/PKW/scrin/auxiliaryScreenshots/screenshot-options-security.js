@@ -1,27 +1,32 @@
 /* Вспомогательный тест для генерации актуальных скриншотов в разделе фильтр-опции.*/
 
 describe.skip('screenshots-exterior', () => {
-    function diagonal(namePage) {
+    function diagonal(nameBrowser, namePage) {
         // делаем мобильный размер экрана
         browser.windowHandleSize ({width: 400, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/400-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/400-${namePage}.png`);
         expect(screen).to.not.equal(null);
 
         // делаем планшетный размер экрана
         browser.windowHandleSize ({width: 800, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/800-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/800-${namePage}.png`);
         expect(screen).to.not.equal(null);
 
         // делаем пк размер экрана
         browser.windowHandleSize ({width: 1366, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/1366-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/1366-${namePage}.png`);
         expect(screen).to.not.equal(null);
-    }
+    };
+
+    // запоминаем имя браузера
+    let nameBrowser;
     before(() => {
         browser.helpers.openSite();
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
     // скришот фильтр-опции
     it('filter-options', () => {
@@ -30,7 +35,7 @@ describe.skip('screenshots-exterior', () => {
         // ожидаем загрузки картинки
         browser.waitForVisible('div:nth-child(7) > div > div > .avn008_option-check_image img');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/helm.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/helm.png`);
         expect(screen).to.not.equal(null);
     });
 
@@ -39,7 +44,7 @@ describe.skip('screenshots-exterior', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Система Area View');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/areaView.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/areaView.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -51,7 +56,7 @@ describe.skip('screenshots-exterior', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Система Easy Open');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/easyOpen.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/easyOpen.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -63,7 +68,7 @@ describe.skip('screenshots-exterior', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Электропривод двери багажного отделения');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/electricTrunk.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/electricTrunk.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -75,7 +80,7 @@ describe.skip('screenshots-exterior', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Электропривод зеркал заднего вида');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/mirrorDrive.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/mirrorDrive.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
@@ -87,7 +92,7 @@ describe.skip('screenshots-exterior', () => {
          // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Система Keyless Access');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/keylessAccess.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/keylessAccess.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
@@ -99,7 +104,7 @@ describe.skip('screenshots-exterior', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Камера заднего вида');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/rearViewCamera.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/rearViewCamera.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
@@ -114,7 +119,7 @@ describe.skip('screenshots-exterior', () => {
         // ожидаем загрузки картинки 
         browser.waitForVisible('.avn008_image-switcher_image');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/pressureMeter.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/pressureMeter.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
@@ -128,6 +133,6 @@ describe.skip('screenshots-exterior', () => {
         // переходим на вкладку безопасность 
         browser.click('.avn008_filter__second-tab[data-name="Безопасность"]');
         browser.waitForVisible('.avn008_safety-images_main div:nth-child(1) img');
-        diagonal('security');
+        diagonal(nameBrowser, 'security');
     });
 });

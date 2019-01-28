@@ -1,27 +1,32 @@
 /* Вспомогательный тест для генерации актуальных скриншотов в разделе фильтр-опции-зимний пакет.*/
 
 describe.skip('screenshots-options', () => {
-    function diagonal(namePage) {
+    function diagonal(nameBrowser, namePage) {
         // делаем мобильный размер экрана
         browser.windowHandleSize ({width: 400, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/400-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/400-${namePage}.png`);
         expect(screen).to.not.equal(null);
 
         // делаем планшетный размер экрана
         browser.windowHandleSize ({width: 800, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/800-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/800-${namePage}.png`);
         expect(screen).to.not.equal(null);
 
         // делаем пк размер экрана
         browser.windowHandleSize ({width: 1366, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/1366-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/1366-${namePage}.png`);
         expect(screen).to.not.equal(null);
-    }
+    };
+
+    // запоминаем имя браузера
+    let nameBrowser;
     before(() => {
         browser.helpers.openSite();
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
     // скришот фильтр-опции-зимний пакет
     it('Filter-options-winter package', () => {
@@ -34,7 +39,7 @@ describe.skip('screenshots-options', () => {
         // ожидаем загрузки последней картинки
         browser.waitForVisible('.avn008_option-check_image[data-name="Стояночный отопитель"]');
         browser.pause(3000);
-        diagonal('winterPackage');
+        diagonal(nameBrowser, 'winterPackage');
         browser.windowHandleSize ({width: 1366, height: 768});
     });
 
@@ -43,7 +48,7 @@ describe.skip('screenshots-options', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Подогрев зеркал');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/heatedMirrors.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/heatedMirrors.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -55,7 +60,7 @@ describe.skip('screenshots-options', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Подогрев руля');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/heatedWheel.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/heatedWheel.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -67,7 +72,7 @@ describe.skip('screenshots-options', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Подогрев лобового стекла');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/heatedWindshield.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/heatedWindshield.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -79,7 +84,7 @@ describe.skip('screenshots-options', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Стояночный отопитель');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotOption/parkingHeater.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/parkingHeater.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно

@@ -1,27 +1,32 @@
 /* Вспомогательный тест для генерации актуальных скриншотов в разделе фильтр-эстерьер.*/
 
 describe.skip('screenshots-exterior', () => {
-    function diagonal(namePage) {
+    function diagonal(nameBrowser, namePage) {
         // делаем мобильный размер экрана
         browser.windowHandleSize ({width: 400, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/400-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/${nameBrowser}/400-${namePage}.png`);
         expect(screen).to.not.equal(null);
 
         // делаем планшетный размер экрана
         browser.windowHandleSize ({width: 800, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/800-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/${nameBrowser}/800-${namePage}.png`);
         expect(screen).to.not.equal(null);
 
         // делаем пк размер экрана
         browser.windowHandleSize ({width: 1366, height: 1200});
         browser.pause(3000);
-        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/1366-${namePage}.png`);
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/${nameBrowser}/1366-${namePage}.png`);
         expect(screen).to.not.equal(null);
-    }
+    };
+
+    // запоминаем имя браузера
+    let nameBrowser;
     before(() => {
         browser.helpers.openSite();
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
 
     // скриншот фильтр - сиденья
@@ -37,7 +42,7 @@ describe.skip('screenshots-exterior', () => {
         // пауза на случай долгого появления картинки
         browser.pause(3000);
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/seats.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/${nameBrowser}/seats.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -52,7 +57,7 @@ describe.skip('screenshots-exterior', () => {
         browser.waitForVisible('.avn008_image-switcher_image');
         browser.pause(5000);
         // делаем скриншот
-        diagonal('helm');
+        diagonal(nameBrowser, 'helm');
     });
 
     // скришот фильтр-климат
@@ -61,7 +66,7 @@ describe.skip('screenshots-exterior', () => {
         browser.click('.avn008_filter__second-tab[data-name="Климат"]');
         // ожидаем загрузки картинки фары
         browser.waitForVisible('.grid_6.push_3 > div > div > div:nth-child(1)  img');
-        diagonal('climate');
+        diagonal(nameBrowser, 'climate');
     });
 
     // скриншот фильтр-мультимедия
@@ -73,7 +78,7 @@ describe.skip('screenshots-exterior', () => {
         browser.pause(3000);
         // ожидаем загрузки картинки диагональ экрана
         browser.waitForVisible('.avn008_option__slider-card__image');
-        diagonal('multimedia');
+        diagonal(nameBrowser, 'multimedia');
         browser.windowHandleSize ({width: 1366, height: 768});
     });
 
@@ -82,7 +87,7 @@ describe.skip('screenshots-exterior', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Active Info Display');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/activeInfoDisplay.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/${nameBrowser}/activeInfoDisplay.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем динамическое окно
@@ -94,7 +99,7 @@ describe.skip('screenshots-exterior', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('App Connect');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/appConnect.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/${nameBrowser}/appConnect.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
@@ -106,7 +111,7 @@ describe.skip('screenshots-exterior', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Bluetooth');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/bluetooth.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/${nameBrowser}/bluetooth.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
@@ -118,7 +123,7 @@ describe.skip('screenshots-exterior', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail('Навигация');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/navigation.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/${nameBrowser}/navigation.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
@@ -131,7 +136,7 @@ describe.skip('screenshots-exterior', () => {
         browser.helpers.moreDetail('Премиум Аудио');
         browser.waitForVisible('.avn008_option-check_more[data-name="Премиум Аудио"]');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/premiumAudio.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/${nameBrowser}/premiumAudio.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
@@ -142,7 +147,7 @@ describe.skip('screenshots-exterior', () => {
     it('Filter-wireless charger', () => {
         browser.helpers.moreDetail('Беспроводная зарядка');
         // делаем скриншот
-        var screen = browser.saveScreenshot('./snapshot/screenshotInterior/wirelessСharger.png');
+        var screen = browser.saveScreenshot(`./snapshot/screenshotInterior/${nameBrowser}/wirelessСharger.png`);
         expect(screen).to.not.equal(null);
 
         // закрываем закрываем динамическое окно
