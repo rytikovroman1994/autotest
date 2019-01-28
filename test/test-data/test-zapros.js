@@ -11,7 +11,14 @@ describe('test test', () => {
         xhr.open("GET", `https://nfz.kodix.ru/api/offers/filter`, false);
         xhr.send();
         const text = JSON.parse(xhr.responseText);
-        // console.log(text.models.amarok.kits);
+        // console.log(text);
+
+        var user = browser.desiredCapabilities.browserName;
+
+        // Выводим нужные значения в консоли браузера
+        console.log(
+            user
+        );
 
         // fetch("https://nfz.kodix.ru/api/offers/filter")
         //     .then(r =>  r.json().then(Blob => ({status: r.status, body: Blob})))
