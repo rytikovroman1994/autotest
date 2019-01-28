@@ -5,6 +5,8 @@ describe('test screenShot page model', () => {
       };
     // имя тестируемой страницы
     let namePage = 'model';
+    // запоминаем имя браузера
+    let nameBrowser;
     before(() => {
         browser.helpers.openFilter();
         // ожидаем пока загрузится последняя картинка модели
@@ -12,6 +14,8 @@ describe('test screenShot page model', () => {
         browser.execute(
             () => document.getElementsByClassName('avn008_filter')[0].style.background = 'rgba(29,31,32,1)'
         );
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
 
     it('Сompare screenshots 400', async () => {
@@ -19,7 +23,7 @@ describe('test screenShot page model', () => {
         browser.windowHandleSize ({width: 400, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/nfzMainFilterPages/400-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/nfzMainFilterPages/${nameBrowser}/400-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -47,7 +51,7 @@ describe('test screenShot page model', () => {
         browser.windowHandleSize ({width: 800, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/nfzMainFilterPages/800-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/nfzMainFilterPages/${nameBrowser}/800-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -75,7 +79,7 @@ describe('test screenShot page model', () => {
         browser.windowHandleSize ({width: 1366, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/nfzMainFilterPages/1366-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/nfzMainFilterPages/${nameBrowser}/1366-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
