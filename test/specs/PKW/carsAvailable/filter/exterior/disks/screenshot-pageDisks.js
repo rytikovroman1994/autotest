@@ -7,6 +7,8 @@ describe('screenshot page body disks', () => {
       };
     // имя тестируемой страницы
     let namePage = 'disks';
+    // запоминаем имя браузера
+    let nameBrowser;
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу диски
@@ -15,6 +17,8 @@ describe('screenshot page body disks', () => {
         browser.click('.avn008_filter__second-tab[data-name="Диски"]');
         // ожидаем загрузки картинки дисков
         browser.waitForVisible('div:nth-child(2) > div > div.disc-item_image > img');
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
 
     it('Сompare screenshots 400', async () => {
@@ -22,7 +26,7 @@ describe('screenshot page body disks', () => {
         browser.windowHandleSize ({width: 400, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/screenshotExterior/400-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/screenshotExterior/${nameBrowser}/400-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -50,7 +54,7 @@ describe('screenshot page body disks', () => {
         browser.windowHandleSize ({width: 800, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/screenshotExterior/800-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/screenshotExterior/${nameBrowser}/800-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -78,7 +82,7 @@ describe('screenshot page body disks', () => {
         browser.windowHandleSize ({width: 1366, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/screenshotExterior/1366-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/screenshotExterior/${nameBrowser}/1366-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 

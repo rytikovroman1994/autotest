@@ -7,12 +7,16 @@ describe('screenshot page body colors', () => {
       };
     // имя тестируемой страницы
     let namePage = 'exterior';
+    // запоминаем имя браузера
+    let nameBrowser;
     before(() => {
         browser.helpers.openSite();
         // переходим на страницу цвет кузова
         PkwFilter.exterior();
         // ожидаём загрузки картинки
         browser.waitForVisible('.avn008_image-switcher_image');
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
 
     it('Сompare screenshots 400', async () => {
@@ -20,7 +24,7 @@ describe('screenshot page body colors', () => {
         browser.windowHandleSize ({width: 400, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/mainFilterPages/400-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/mainFilterPages/${nameBrowser}/400-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -48,7 +52,7 @@ describe('screenshot page body colors', () => {
         browser.windowHandleSize ({width: 800, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/mainFilterPages/800-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/mainFilterPages/${nameBrowser}/800-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -76,7 +80,7 @@ describe('screenshot page body colors', () => {
         browser.windowHandleSize ({width: 1366, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/mainFilterPages/1366-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/mainFilterPages/${nameBrowser}/1366-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 

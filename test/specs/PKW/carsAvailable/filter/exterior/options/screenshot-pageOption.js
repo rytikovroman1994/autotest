@@ -8,8 +8,12 @@ describe('screenshot page options', () => {
       };
     // имя тестируемой страницы
     let namePage = 'option';
+    // запоминаем имя браузера
+    let nameBrowser;
     before(() => {
         browser.helpers.openSite();
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
 
     // выносим проверку в отдельный тест
@@ -28,7 +32,7 @@ describe('screenshot page options', () => {
         browser.windowHandleSize ({width: 400, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/screenshotExterior/400-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/screenshotExterior/${nameBrowser}/400-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
@@ -43,7 +47,7 @@ describe('screenshot page options', () => {
         // expect(distance).to.be.above(0);
         if(diff.percent > 0.04 || distance > 0.07) {
             // если большое различие, то сохраняем изображение с отличием
-            diff.image.write(`./test/reports/allure-results/400-${namePage}.png`);
+            diff.image.write(`./test/reports/allure-results/${nameBrowser}/400-${namePage}.png`);
             // проверяем допустипость отличия в пикселях
             expect(diff.percent).to.be.below(0.04);
             // проверем допустимость отличия в растоянии
@@ -84,7 +88,7 @@ describe('screenshot page options', () => {
         browser.windowHandleSize ({width: 1366, height: 1200});
         browser.pause(3000);
         // берём скриншот с локала
-        ctx.originalScreenshot = `./snapshot/screenshotExterior/1366-${namePage}.png`;
+        ctx.originalScreenshot = `./snapshot/screenshotExterior/${nameBrowser}/1366-${namePage}.png`;
         // делаем текущий скриншот
         ctx.newScreenshot = browser.screenshot().value;
 
