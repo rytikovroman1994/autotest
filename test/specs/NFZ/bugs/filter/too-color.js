@@ -6,7 +6,8 @@ describe('test bags too colors', () => {
     });
 
     // переходим на страницу Цвет
-    it('Go to page Color and wait images door', () => {
+    it('Go to page Color and wait images door', function() {
+        this.retries(3);
         // переходим на страницу цвет
         NfzFilter.color();
         // ожидаем появления картинки
