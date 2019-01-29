@@ -8,7 +8,7 @@ describe('test wheels 16', () => {
     }); 
 
     it('Open page exterior', function() {
-        this.exterior(3);
+        this.retries(3);
         // проверяем переход на страницу Интерьер
         NfzFilter.exterior();
     });
