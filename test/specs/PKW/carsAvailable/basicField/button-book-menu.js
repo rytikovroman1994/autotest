@@ -2,7 +2,7 @@ import faker from "faker"
 import PkwListPage from 'Pageobjects/pkw-list.page.js'
 import PkwDetail from 'Pageobjects/pkw-detail.page.js'
 
-describe('button book in the menu', () => {
+describe.skip('button book in the menu', () => {
     const buttonClass = '.avn012_content .btn__text';
     before('open page', () => {
         browser.helpers.openList();

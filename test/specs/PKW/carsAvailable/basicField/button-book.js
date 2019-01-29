@@ -2,7 +2,7 @@ import faker from "faker"
 import PkwListPage from 'Pageobjects/pkw-list.page.js'
 import PkwDetail from 'Pageobjects/pkw-detail.page.js'
 
-describe('test button to book', () => {
+describe.skip('test button to book', () => {
     const buttonClass = '.avn007-2_price .btn__text';
     before('open page', () => {
         browser.helpers.openList();
@@ -10,7 +10,7 @@ describe('test button to book', () => {
 
     // выносим проверку в отдельный тест
     it('Check images', function() {
-        this.retries(3);
+        this.retries(1);
         // кликаем на карточку
         PkwListPage.card();
         // ожидаем появления картинки на странице деталки
@@ -45,6 +45,21 @@ describe('test button to book', () => {
             10000, "Форма Регистрании не появилась");
     });
 
+    // принимаем рекапцу
+    it('Enter button recapcha', function() {
+        this.timeout(20000);
+            browser.leftClick('#kc-register-form > div:nth-child(9) div .g-recaptcha', 15, 15);
+            if(browser.isVisible('#rc-imageselect')){
+            $.ajax({
+                url: "",
+                context: document.body,
+                success: function(s,x){
+                    $(this).html(s);
+                }
+            });
+            }
+    });
+
     it('Verification of email input', function() {
         this.retries(3);
         browser.waitForExist('.form__input[name="email"]');
@@ -55,14 +70,14 @@ describe('test button to book', () => {
     it('Checking phone input', function() {
         this.retries(3);
         // вводим телефонный номер
-        browser.waitForExist('.form__input[name="mobile"]');
-        browser.setValue('.form__input[name="mobile"]', faker.phone.phoneNumber()); 
+        browser.waitForExist('.form__input.phone-mask');
+        browser.setValue('.form__input.phone-mask', `960${faker.random.number(9999999)}`); 
         // убираем фокус
         browser.keys('/uE007');
 
         while(browser.isVisible('.op005_register div:nth-child(5) > div > span') === true) {
-            browser.clearElement('.form__input[name="mobile"]');
-            browser.setValue('.form__input[name="mobile"]', faker.phone.phoneNumber());
+            browser.clearElement('.form__input.phone-mask');
+            browser.setValue('.form__input.phone-mask', `960${faker.random.number(9999999)}`);
         }
     });
 
@@ -88,9 +103,9 @@ describe('test button to book', () => {
 
     it('Entry check patronymic', function() {
         this.retries(3);
-        browser.waitForExist('.form__input[name="user.attributes.patronomic"]');
+        browser.waitForExist('.form__input[name="middleName"]');
         // вводим отчество
-        browser.setValue('.form__input[name="user.attributes.patronomic"]', faker.name.firstName(1));
+        browser.setValue('.form__input[name="middleName"]', faker.name.firstName(1));
     });
 
     it('Entry check password', function() {
@@ -102,8 +117,19 @@ describe('test button to book', () => {
         browser.setValue('.form__input[name="password-confirm"]', "12345678");
     });
 
+    // принимаем согласие на обработку
+    it('Agree to the processing', () => {
+        browser.click('#kc-register-form > div:nth-child(10) > label > div');
+        browser.pause(3000);
+    });
+    // принимаем согласие на комуникацию 
+    it('Accept consent to communication', () => {
+        browser.click('#kc-register-form > div:nth-child(11) > label > div');
+        browser.pause(3000);
+    });
+
     it('Check that we are back', function() {
-        this.retries(3);
+        this.retries(1);
         // проверям, что кнопка Зарегестрироваться работает
         browser.click('.form__row .btn_cta');
         // ожидаем загрузку карточки
