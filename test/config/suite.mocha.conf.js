@@ -106,16 +106,16 @@ exports.config = {
               // ],
         },
 
-          {
-              browserName: 'firefox',
-              version: '64.0',
-              maxInstances: '1',
-              marionette: true,
-              //build: process.env.TRAVIS_BUILD_NUMBER,
-              // specs: [
-              //     './test/specs/sampe*.js'
-              // ],
-          },
+          // {
+          //     browserName: 'firefox',
+          //     version: '64.0.2',
+          //     maxInstances: '1',
+          //     marionette: true,
+          //     //build: process.env.TRAVIS_BUILD_NUMBER,
+          //     // specs: [
+          //     //     './test/specs/sampe*.js'
+          //     // ],
+          // },
 
         //   {
         //       browserName: 'firefox',
@@ -206,8 +206,8 @@ exports.config = {
     // e.g. using promises you can set the sync option to false.
     // path: '/wd/hub',
     // maxSession: 1,
-    // host: '0.0.0.0',
-    // port: 4444,
+    // host: 'hub',
+    // port: '4444',
     sync: true,
     reporters: ['spec'],
     logLevel: 'verbose',               // Level of logging verbosity: silent | verbose | command | data | result | error 'dot', 'junit'
