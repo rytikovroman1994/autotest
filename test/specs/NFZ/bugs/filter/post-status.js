@@ -1,6 +1,7 @@
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
-describe('test post request status', () => {
+describe('test post request status', function() {
+    this.timeout(200000);
     // запоминаем результат начального сокращёного фильтра
     let text;
     // проверка на ответ пустого запроса
