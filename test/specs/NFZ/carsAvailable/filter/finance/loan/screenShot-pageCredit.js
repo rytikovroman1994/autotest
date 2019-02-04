@@ -1,4 +1,6 @@
-import NfzFilter from 'Pageobjects/nfz-filter.js'
+import NfzFilter from 'Pageobjects/nfz-filter.js';
+import reporter from 'wdio-allure-reporter';
+import Jimp from 'jimp';
 
 describe('test screenShot page credit', () => {
     const ctx = {
@@ -9,6 +11,10 @@ describe('test screenShot page credit', () => {
     let namePage = 'credit';
     // запоминаем имя браузера
     let nameBrowser;
+    // выносим distance
+    let distance;
+    // выносим diff
+    let diff;
     before(() => {
         browser.helpers.openFilter(); 
         // переходим на страницу финансы 
@@ -34,20 +40,8 @@ describe('test screenShot page credit', () => {
         expect(ctx.originalScreenshot).not.equal(null);
         expect(ctx.newScreenshot).not.equal(null);
     
-        const distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
-        const diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
-        console.log(distance);
-        console.log(diff.percent);
-    
-        // expect(distance).to.be.above(0);
-        if(diff.percent > 0.04 || distance > 0.07) {
-            // если большое различие, то сохраняем изображение с отличием
-            diff.image.write(`./test/reports/allure-results/400-${namePage}.png`);
-            // проверяем допустипость отличия в пикселях
-            expect(diff.percent).to.be.below(0.04);
-            // проверем допустимость отличия в растоянии
-            expect(distance).to.be.below(0.1);
-        }
+        distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
+        diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
     });
 
     it('Сompare screenshots 800', async () => {
@@ -62,20 +56,8 @@ describe('test screenShot page credit', () => {
         expect(ctx.originalScreenshot).not.equal(null);
         expect(ctx.newScreenshot).not.equal(null);
     
-        const distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
-        const diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
-        console.log(distance);
-        console.log(diff.percent);
-    
-        // expect(distance).to.be.above(0);
-        if(diff.percent > 0.04 || distance > 0.07) {
-            // если большое различие, то сохраняем изображение с отличием
-            diff.image.write(`./test/reports/allure-results/800-${namePage}.png`);
-            // проверяем допустипость отличия в пикселях
-            expect(diff.percent).to.be.below(0.04);
-            // проверем допустимость отличия в растоянии
-            expect(distance).to.be.below(0.1);
-        }
+        distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
+        diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
     });
 
     it('Сompare screenshots 1366', async () => {
@@ -90,15 +72,20 @@ describe('test screenShot page credit', () => {
         expect(ctx.originalScreenshot).not.equal(null);
         expect(ctx.newScreenshot).not.equal(null);
     
-        const distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
-        const diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
-        console.log(distance);
-        console.log(diff.percent);
-    
-        // expect(distance).to.be.above(0);
+        distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
+        diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
+    });
+
+    afterEach(function() {
         if(diff.percent > 0.04 || distance > 0.07) {
-            // если большое различие, то сохраняем изображение с отличием
-            diff.image.write(`./test/reports/allure-results/1366-${namePage}.png`);
+            browser.call(()=> {
+                return new Promise((resolve)=>{
+                    diff.image.getBuffer(Jimp.AUTO, (err, res) => {
+                    resolve(res);
+                    });
+                })
+                .then((res)=>reporter.createAttachment("difference", Buffer.from(res, "base64"), 'image/png'));
+            });
             // проверяем допустипость отличия в пикселях
             expect(diff.percent).to.be.below(0.04);
             // проверем допустимость отличия в растоянии
