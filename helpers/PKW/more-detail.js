@@ -13,7 +13,7 @@ export default function moreDetail(conditions) {
     // ждём появления картинки
     browser.waitUntil(
         () => browser.isExisting('.image-lazyload_overlay.is_visible .content-loader__self') === false,
-        20000, `Картинка ${conditions} не отображается в Подробнее`);
+        40000, `Картинка ${conditions} не отображается в Подробнее`);
     browser.waitForVisible('.avn015_content .image-container img');
     // страховочная пауза
     browser.pause(2000);

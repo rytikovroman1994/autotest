@@ -1,4 +1,6 @@
-import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+import PkwFilter from 'Pageobjects/pkw-filter.page.js';
+import reporter from 'wdio-allure-reporter';
+import Jimp from 'jimp';
 
 describe('test premium audio', () => {
     // выносим часто используемое название условия комплектации
@@ -7,6 +9,12 @@ describe('test premium audio', () => {
         originalScreenshot: null,
         newScreenshot: null,
       };
+    // запоминаем имя браузера
+    let nameBrowser;
+    // выносим distance
+    let distance;
+    // выносим diff
+    let diff;
     before(' open page multimedia', () => {
         browser.helpers.openSite();
     });

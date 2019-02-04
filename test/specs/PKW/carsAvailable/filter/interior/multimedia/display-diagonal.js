@@ -6,12 +6,14 @@ describe('test display diagonal', () => {
     // количество чекбоксов диагонали экрана
     let numbeSizes;
 
-    before('open page multimedia', () => {
+    before('open page multimedia', function() {
+        this.retries(3);
         browser.helpers.openSite();
     });
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(3);
         // переходим на страницу интерьер
         PkwFilter.interior();
         // ожидаем появление картинки кресла

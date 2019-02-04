@@ -1,4 +1,6 @@
-import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+import PkwFilter from 'Pageobjects/pkw-filter.page.js';
+import reporter from 'wdio-allure-reporter';
+import Jimp from 'jimp';
 
 describe('test alcantara materials', () => {
     // выносим часто используемое название условия комплектации
@@ -7,14 +9,25 @@ describe('test alcantara materials', () => {
         originalScreenshot: null,
         newScreenshot: null,
       };
-    before('open page materials', () => {
+
+    // запоминаем имя браузера
+    let nameBrowser;
+    // выносим distance
+    let distance;
+    // выносим diff
+    let diff;
+    before('open page materials', function() {
+        this.retries(3);
         browser.helpers.openSite();
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
         // переходим на страницу интерьера
         PkwFilter.interior();
     });
 
     // проверяем работу чекбокса
-    it(`Check checkboxes ${conditions}`, () => {
+    it(`Check checkboxes ${conditions}`, function() {
+        this.retries(3);
         browser.helpers.checkCheckboxNfz(conditions, 'САЛОН АЛЬКАНТАРА', 'seats-cloth');
     });
 
@@ -23,28 +36,37 @@ describe('test alcantara materials', () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
-        ctx.originalScreenshot = 'snapshot/screenshotInterior/seats-alcantara.png';
+        ctx.originalScreenshot = `snapshot/screenshotInterior/${nameBrowser}/seats-alcantara.png`;
         // делаем актуальный скриншот
         ctx.newScreenshot = browser.screenshot().value;
      });
 
-     it('compare screenshots', async () => {
+    it('compare screenshots', async () => {
         expect(ctx.originalScreenshot).not.equal(null);
         expect(ctx.newScreenshot).not.equal(null);
     
-        const distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
-        const diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
-    
-        // expect(distance).to.be.above(0);
-        if(diff.percent > 0.01 || distance > 0.1) {
-            // если большое различие, то сохраняем изображение с отличием
-            diff.image.write('./test/reports/allure-results/alcantara.png');
+        distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
+        diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
+    });
+
+    afterEach(function() {
+        if(this.currentTest.title === 'Compare screenshots'){
+            if(diff.percent > 0.04 || distance > 0.07) {
+                browser.call(()=> {
+                    return new Promise((resolve)=>{
+                        diff.image.getBuffer(Jimp.AUTO, (err, res) => {
+                        resolve(res);
+                        });
+                    })
+                    .then((res)=>reporter.createAttachment("difference", Buffer.from(res, "base64"), 'image/png'));
+                });
             // проверяем допустипость отличия в пикселях
-            expect(diff.percent).to.be.below(0.01);
+            expect(diff.percent).to.be.below(0.04);
             // проверем допустимость отличия в растоянии
-            expect(distance).to.be.below(0.1);
+            expect(distance).to.be.below(0.07);
+            }
         }
-      });
+    });
 
     // проверяем, что условие появилось в деталке машины
     it('Check the equipment in detail', () => {

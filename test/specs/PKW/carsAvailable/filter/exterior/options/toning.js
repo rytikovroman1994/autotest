@@ -1,4 +1,6 @@
-import PkwFilter from 'Pageobjects/pkw-filter.page.js'
+import PkwFilter from 'Pageobjects/pkw-filter.page.js';
+import reporter from 'wdio-allure-reporter';
+import Jimp from 'jimp';
 
 describe('test dynamic light', () => {
     // выносим часто используемое название условия комплектации
@@ -7,12 +9,23 @@ describe('test dynamic light', () => {
         originalScreenshot: null,
         newScreenshot: null,
       };
-    before('open page light', () => {
+
+    // запоминаем имя браузера
+    let nameBrowser;
+    // выносим distance
+    let distance;
+    // выносим diff
+    let diff;
+    before('open page light', function() {
+        this.retries(3);
         browser.helpers.openSite();
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(3);
         // переходим на страницу экстерьер
         PkwFilter.exterior();
         // переходим на вкладку свет
@@ -21,42 +34,51 @@ describe('test dynamic light', () => {
         browser.waitForVisible('.avn008_option-check_image[data-name="Тонировка"] img');
     });
 
-     it(`Check checkbox ${conditions}`, () => {
+    it(`Check checkbox ${conditions}`, () => {
         // проверяем работу чекбокса
         browser.helpers.checkCheckbox(conditions, 'ТОНИРОВКА', 'toning');
      });
 
-     it(`Check more in detail about ${conditions}`, () => {
+    it(`Check more in detail about ${conditions}`, () => {
         // открываем всплывающее окно подробнее и делаем скриншот
         browser.helpers.moreDetail(conditions);
         // берём скриншот с локала
-        ctx.originalScreenshot = 'snapshot/screenshotExterior/toning.png';
+        ctx.originalScreenshot = `snapshot/screenshotExterior/${nameBrowser}/toning.png`;
         // делаем актуальный скриншот
         ctx.newScreenshot = browser.screenshot().value;
-     });
+    });
 
-     it('Compare screenshots', async () => {
+    it('Compare screenshots', async () => {
         expect(ctx.originalScreenshot).not.equal(null);
         expect(ctx.newScreenshot).not.equal(null);
     
-        const distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
-        const diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
-    
-        // expect(distance).to.be.above(0);
-        if(diff.percent > 0.01 || distance > 0.1) {
-            // если большое различие, то сохраняем изображение с отличием
-            diff.image.write(`./test/reports/allure-results/${conditions}.png`);
-            // проверяем допустипость отличия в пикселях
-            expect(diff.percent).to.be.below(0.01);
-            // проверем допустимость отличия в растоянии
-            expect(distance).to.be.below(0.1);
-        }
-      });
+        distance = await browser.helpers.compareScreenshots(ctx.originalScreenshot, ctx.newScreenshot);
+        diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
+    });
 
-      // проверяем, что условие появилось в деталке машины
-      it('Check the equipment in detail', () => {
+    afterEach(function() {
+        if(this.currentTest.title === 'Compare screenshots'){
+            if(diff.percent > 0.04 || distance > 0.07) {
+                browser.call(()=> {
+                    return new Promise((resolve)=>{
+                        diff.image.getBuffer(Jimp.AUTO, (err, res) => {
+                        resolve(res);
+                        });
+                    })
+                    .then((res)=>reporter.createAttachment("difference", Buffer.from(res, "base64"), 'image/png'));
+                });
+            // проверяем допустипость отличия в пикселях
+            expect(diff.percent).to.be.below(0.04);
+            // проверем допустимость отличия в растоянии
+            expect(distance).to.be.below(0.07);
+            }
+        }
+    });
+
+    // проверяем, что условие появилось в деталке машины
+    it('Check the equipment in detail', () => {
         const newArray = browser.helpers.checkConditions(conditions, conditions);
         // проверяем
         expect(newArray).to.be.equal(conditions);
-      });
+    });
 });
