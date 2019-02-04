@@ -17,5 +17,5 @@ export default async function compareScreenshotsDiff(screenshotOne, screenshotTw
     // сравниваем по пиксилям картинки
     const diff = await Jimp.diff(imageOne, imageTwo);
     // выводим разницу в процентном соотношении
-    return diff;
+    return diff
 }
