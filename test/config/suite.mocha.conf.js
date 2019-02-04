@@ -106,16 +106,16 @@ exports.config = {
               // ],
         },
 
-          // {
-          //     browserName: 'firefox',
-          //     version: '64.0.2',
-          //     maxInstances: '1',
-          //     marionette: true,
-          //     //build: process.env.TRAVIS_BUILD_NUMBER,
-          //     // specs: [
-          //     //     './test/specs/sampe*.js'
-          //     // ],
-          // },
+          {
+              browserName: 'firefox',
+              version: '64.0.2',
+              maxInstances: '1',
+              marionette: true,
+              //build: process.env.TRAVIS_BUILD_NUMBER,
+              // specs: [
+              //     './test/specs/sampe*.js'
+              // ],
+          },
 
         //   {
         //       browserName: 'firefox',
@@ -253,6 +253,7 @@ exports.config = {
         allure: {
           outputDir:   './test/reports/allure-results/',
           disableWebdriverStepsReporting: true,
+          disableWebdriverScreenshotsReporting: false,
           useCucumberStepReporter: false,
         },
         mochawesome:  {outputDir:   './test/reports/mocha-results/'},
