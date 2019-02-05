@@ -16,12 +16,13 @@ const optionName = [
     'QI ЗАРЯДКА'
 ];
 
-describe('check of multimedia checkboxes', () => {
+describe.skip('check of multimedia checkboxes', () => {
     const ctx = {
         originalScreenshot: null,
         newScreenshot: null,
       };
-    before('open page multimedia', () => {
+    before('open page multimedia', function() {
+        this.retries(2);
         browser.helpers.openSite();
         // переходим на страницу интерьер
         browser.click('.avn008_filter__tab[data-name="Интерьер"]');
@@ -30,7 +31,7 @@ describe('check of multimedia checkboxes', () => {
         // переходим на страницу мультимедиа 
         browser.click('.avn008_filter__second-tab[data-name="Мультимедиа"]');
         // ожидаем загрузки картинки диагональ экрана
-        browser.waitForVisible('.multimedia img');
+        browser.waitForVisible('.multimedia img', 30000);
     });
 
     // проверяем каждый чекбокс по отдельности
