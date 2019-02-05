@@ -1,6 +1,6 @@
 import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 
-describe('test checkboxs page security', () => {
+describe.skip('test checkboxs page security', () => {
     const textList = [
             'ЗАДНИЕ БОКОВЫЕ П. Б.',
             'ШТОРКИ Б/П',
