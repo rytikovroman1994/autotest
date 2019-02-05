@@ -2,7 +2,8 @@ import PkwFilter from 'Pageobjects/pkw-filter.page.js';
 import reporter from 'wdio-allure-reporter';
 import Jimp from 'jimp';
 
-describe('test heated heated windscreen', () => {
+describe('test heated heated windscreen', function() {
+    this.retries(2);
     // выносим часто используемое название условия комплектации
     let conditions = 'Подогрев лобового стекла';
     const ctx = {

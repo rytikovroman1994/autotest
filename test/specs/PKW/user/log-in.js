@@ -1,4 +1,5 @@
-describe('test login up', () => {
+describe('test login up', function() {
+    this.retries(2);
     before('open page list', () => {
         browser.helpers.openList();
     });
@@ -25,19 +26,19 @@ describe('test login up', () => {
 
     it('Enter user data', () => {
         // вводим логин номером телефона
-        browser.setValue('.form__row [name="username"]', "88905457133");
+        browser.setValue('.form__row [name="username"]', "rytikovroman1994@gmail.com");
         // вводим пароль
-        browser.setValue('.form__row [name="password"]', "12345678");
+        browser.setValue('.form__row [name="password"]', "12345678q");
         // нажимаем кнопку войти
         browser.click('.form__row_btn .btn_cta');
-        // проверяем, что появилось поле ввода смс подтверждения
-        browser.waitUntil(
-            () => browser.isVisible('.sms_row .sms_input') === true,
-            10000, "Страница с подтверждением СМС не загрузилась");
-        // вводим смс 
-        browser.setValue('.sms_row .sms_input', "Dfw9NgY ");
-        // нажимаем кнопку Подтвердить
-        browser.click('.sms_row .sms_submit');
+        // // проверяем, что появилось поле ввода смс подтверждения
+        // browser.waitUntil(
+        //     () => browser.isVisible('.sms_row .sms_input') === true,
+        //     10000, "Страница с подтверждением СМС не загрузилась");
+        // // вводим смс 
+        // browser.setValue('.sms_row .sms_input', "Dfw9NgY ");
+        // // нажимаем кнопку Подтвердить
+        // browser.click('.sms_row .sms_submit');
         // проверяем, что перешли на страницу ЛК
         browser.waitUntil(
             () => browser.isVisible('.uac008_show-more-tile_inner') === true,

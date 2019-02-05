@@ -2,7 +2,8 @@ import PkwFilter from 'Pageobjects/pkw-filter.page.js';
 import reporter from 'wdio-allure-reporter';
 import Jimp from 'jimp';
 
-describe('test side assist', () => {
+describe('test side assist', function() {
+    this.retries();
     // выносим часто используемое название условия комплектации
     let conditions = 'Система Side Assist';
     const ctx = {

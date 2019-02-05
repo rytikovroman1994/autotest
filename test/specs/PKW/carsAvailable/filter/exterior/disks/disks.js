@@ -24,7 +24,8 @@ describe('test slider disks', () => {
         browser.waitForVisible('div:nth-child(2) > div > div.disc-item_image > img');
     });
 
-    it('moov slider', () => {
+    it('moov slider', function() {
+        this.retries(3);
         // проверяем что условие диаметра дисков отсутсвует 
         browser.waitUntil(
             ()=> browser.isVisible('.avn008_filter-value-item_image') === false,
@@ -37,8 +38,9 @@ describe('test slider disks', () => {
         startingMinDiameter = getMinDiametr();
     });
 
-    it('checking the operation of the left slider', () => {
-        for( let i = 1; i <= 3; i ++) {
+    it('checking the operation of the left slider', function() {
+        this.retries(3);
+        for( let i = 1; i <= 3; i++ ) {
             // двигаем ползунок, для того, чтобы появилось условие в фильтре
             browser.click(`.rc-slider-step span:nth-child(${i})`);
             browser.pause(2000);
@@ -54,10 +56,11 @@ describe('test slider disks', () => {
         }
     });
 
-    it('checking the operation of the right slider', () => {
+    it('checking the operation of the right slider', function() {
+        this.retries(3);
         startingMaxDiameter = getMaxDiametr();
         console.log(startingMaxDiameter);
-        for( let i = 8; i > 6; i--) {
+        for( let i = 7; i > 5; i--) {
             // инициализируем правый слайдер
             browser.click('.rc-slider-handle-2');
             // двигаем ползунок, для того, чтобы появилось условие в фильтре

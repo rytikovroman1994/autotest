@@ -1,7 +1,8 @@
 import NfzListPage from 'Pageobjects/nfz-list.page.js'
 import NfzDetail from 'Pageobjects/nfz-detail.page.js'
 
-describe('test gallery in detail', () => {
+describe('test gallery in detail', function() {
+    this.retries(2);
 
     // пусть к кнопке
     let wayButton = '.preview_action';
@@ -11,7 +12,8 @@ describe('test gallery in detail', () => {
     });
 
     // выносим проверку по картинке, для того, что бы проверка теста от неё не зависила
-    it('Check detail images', () => {
+    it('Check detail images', function() {
+        this.retries(3);
         // ждём появления картинки в карточках 
         browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // кликаем по карточке
@@ -21,7 +23,8 @@ describe('test gallery in detail', () => {
     });
 
     // проверяем кнопку галерея
-    it('check button gallery', () => {
+    it('check button gallery', function() {
+        this.retries(3);
         // проверяем, что кнопка есть в дом и отображается
         browser.waitForExist(wayButton);
         browser.waitForVisible(wayButton);
@@ -31,7 +34,8 @@ describe('test gallery in detail', () => {
     });
 
     // переходим в галерею
-    it('click button gallery', () => {
+    it('click button gallery', function() {
+        this.retries(3);
         // кликаем по кнопке 
         browser.click(wayButton);
         // проверяем, что открылост окно с картинками

@@ -1,13 +1,15 @@
 import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 
-describe('test lap', () => {
+describe('test lap', function() {
+    this.retries(2);
     let conditions = 'Колени';
     before('Open page secutity', () => {
         browser.helpers.openSite();
     });
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(3);
         // переходим на страницу 
         PkwFilter.options();
         // переходим в вкладку безопастность 
@@ -16,13 +18,13 @@ describe('test lap', () => {
         browser.waitForVisible('.avn008_safety-images_main img');
     });
 
-    it(`Check checkbox ${conditions}`, () => {
+    it(`Check checkbox ${conditions}`, function() {
         // проверяем работу чекбокса
         browser.helpers.checkCheckbox(conditions, 'Б/П КОЛЕНЕЙ', 'airbag');
     });
 
     // проверяем, что условие появилось в деталке машины
-    it('Check the equipment in detail', () => {
+    it('Check the equipment in detail', function() {
         const newArray = browser.helpers.checkConditions(conditions, 'Фронтальные подушки безопасности');
         // проверяем
         expect(newArray).to.be.equal('Фронтальные подушки безопасности');

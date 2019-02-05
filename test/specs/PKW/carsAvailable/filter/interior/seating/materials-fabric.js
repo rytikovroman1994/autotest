@@ -1,6 +1,7 @@
 import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 
-describe('test materials fabric', () => {
+describe('test materials fabric', function() {
+    this.retries(2);
     // выносим часто используемое название условия комплектации
     let conditions = 'Ткань';
     before('open page materials', () => {

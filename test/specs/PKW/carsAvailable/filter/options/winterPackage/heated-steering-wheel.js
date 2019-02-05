@@ -55,6 +55,25 @@ describe('test heated steering wheel', () => {
         diff = await browser.helpers.compareScreenshotsDiff(ctx.originalScreenshot, ctx.newScreenshot, '0');
       });
 
+      afterEach(function() {
+        if(this.currentTest.title === 'Compare screenshots'){
+            if(diff.percent > 0.04 || distance > 0.07) {
+                browser.call(()=> {
+                    return new Promise((resolve)=>{
+                        diff.image.getBuffer(Jimp.AUTO, (err, res) => {
+                        resolve(res);
+                        });
+                    })
+                    .then((res)=>reporter.createAttachment("difference", Buffer.from(res, "base64"), 'image/png'));
+                });
+            // проверяем допустипость отличия в пикселях
+            expect(diff.percent).to.be.below(0.04);
+            // проверем допустимость отличия в растоянии
+            expect(distance).to.be.below(0.07);
+            }
+        }
+    });
+
       // проверяем, что условие появилось в деталке машины
       it('Check the equipment in detail', () => {
         const newArray = browser.helpers.checkConditions(conditions, conditions);

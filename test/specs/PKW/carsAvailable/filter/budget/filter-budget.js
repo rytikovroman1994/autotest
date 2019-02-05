@@ -12,13 +12,18 @@ describe('test of the price slider', () => {
     let maximumpPrice;
     // // новая максимальная цена
     let newstartingMaxPrice;
+    // запоминаем имя браузера
+    let nameBrowser;
 
     before(() => {
         browser.helpers.openSite();
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
     });
     
     // переходим на страницу бюджета
-    it('page budget', () => {
+    it('page budget', function() {
+        this.retries(3);
         // кликаем по кнопке Бюджет
         PkwFilter.budget();
         // ожидаем перехода на страницу 
@@ -26,7 +31,9 @@ describe('test of the price slider', () => {
     });
 
     // Проверяем работу левого ползунка
-    it('move the left slider', () => {
+    it('move the left slider', function() {
+        this.retries(3);
+        if(nameBrowser === 'chrome') {
         // получаем минимальную цену автомобиля
         startingMinPrice = getMinPrise();
         // двигаем ползунок 
@@ -37,15 +44,20 @@ describe('test of the price slider', () => {
         newstartingMinPrice = getMinPrise();
         expect(startingMinPrice).not.equal(null);
         expect(newstartingMinPrice).to.not.equal(startingMinPrice);
+        }
     });
 
     // проверяем, что в низжей плашке появился пункт минмальной цены
-    it('minimum budget', () => {
+    it('minimum budget', function() {
+        this.retries(3);
+        if(nameBrowser === 'chrome') {
         browser.waitForExist(' div:nth-child(1) > div.avn008_filter-value-item__inner.avn008_filter-value-item__with-price');
+        }
     });
 
     // Проверяем работу правого ползунка
     it('right slider motion', () => {
+        if(nameBrowser === 'chrome') {
         // проверяем наличие кнопки 
         browser.waitForVisible('.rc-slider-handle-2');
         // двигаем ползунок 
@@ -62,10 +74,13 @@ describe('test of the price slider', () => {
         expect(maximumpPrice).not.equal(null);
         expect(newstartingMaxPrice).to.not.equal(maximumpPrice);
         browser.pause(5000);
+        }
     });
 
     // проверяем, что в низжей плашке появился пункт максимальной цены
     it('minimum budget', () => {
+        if(nameBrowser === 'chrome') {
         browser.waitForExist('div:nth-child(2) > div.avn008_filter-value-item__inner.avn008_filter-value-item__with-price');
+        }
     });
 });

@@ -1,7 +1,8 @@
 import PkwListPage from 'Pageobjects/pkw-list.page.js'
 import PkwDetail from 'Pageobjects/pkw-detail.page.js'
 
-describe('test gallery in detail', () => {
+describe('test gallery in detail', function() {
+    this.retries(2);
 
     // пусть к кнопке
     let wayButton = '.avn007-3_display-options div:nth-child(1) >.avn007-3_item-text';

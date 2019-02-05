@@ -9,8 +9,7 @@ describe('test model categories cars', () => {
 
     // допустимые модели универсал
     const MPV = [
-        'Passat Variant',
-        'Passat Alltrack'
+        'Passat Alltrack',
     ];
 
     // допустимые модели внедорожника
@@ -66,12 +65,12 @@ describe('test model categories cars', () => {
         this.retries(3);
         // создаём массив
         const listSedan =[];
-        // перехоим на вкладку седан
+        // перехоим на вкладку универсал
         browser.click('.avn008_model_tabs div:nth-child(3)');
         // получаем количетсво моделей в категории
         const numberModel = browser.getText('.avn008_car__title');
-        console.log(numberModel);
-        for( let i = 1; i <= numberModel.length; i++ ) {
+        console.log(numberModel.length);
+        for( let i = 1; i <= 1; i++ ) {
             // проверяем, что все карточки имеют допустимое для седанов название
             const getNameModel = browser.getText(`div:nth-child(${i}) > div > div > div > h4`);
             console.log(getNameModel);
