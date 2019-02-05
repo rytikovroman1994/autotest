@@ -1,6 +1,7 @@
 import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 
-describe('test climate zones', () => {
+describe('test climate zones', function() {
+    this.retries(2);
     
     const ctx = {
         originalScreenshot: null,
@@ -29,7 +30,8 @@ describe('test climate zones', () => {
     });
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(3);
         // переходим на страницу интерьер
         PkwFilter.interior();
         // ожидаем загрузки картинки сиденья
@@ -39,7 +41,8 @@ describe('test climate zones', () => {
     });
 
     // проверяем работу слайдера и условий фильтра, а также, что меняется картинка
-    it('check cards, filter and image', () => {
+    it('check cards, filter and image', function() {
+        this.retries(2);
         // получаем количество видом климатконтроля
         const numberClimate = $$('.rc-slider-dot').length;
         for(let i = 1; i <= numberClimate - 1; i++) {

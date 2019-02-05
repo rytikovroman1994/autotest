@@ -22,7 +22,7 @@ describe('screenshot page winter package', () => {
         // открываем страницу зимний пакет
         browser.click('.avn008_filter__second-tab[data-name="Зимний пакет"]');
         // ожидаем загрузки послденей картинки
-        browser.waitForVisible('.avn008_option__slider-card-icon', 3000);
+        browser.waitForVisible('.avn008_option__slider-card-icon', 40000);
         // получаем имя браузера 
         nameBrowser = browser.desiredCapabilities.browserName;
     });

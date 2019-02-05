@@ -2,7 +2,8 @@ import PkwFilter from 'Pageobjects/pkw-filter.page.js';
 import reporter from 'wdio-allure-reporter';
 import Jimp from 'jimp';
 
-describe('test adaptive cruise control', () => {
+describe('test adaptive cruise control', function() {
+    this.retries(2);
     // выносим часто используемое название условия комплектации
     let conditions = 'Адаптивный круиз-контроль';
     const ctx = {

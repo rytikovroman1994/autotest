@@ -2,7 +2,8 @@ import PkwFilter from 'Pageobjects/pkw-filter.page.js';
 import reporter from 'wdio-allure-reporter';
 import Jimp from 'jimp';
 
-describe('test area view', () => {
+describe('test area view', function() {
+    this.retries(2);
     // выносим часто используемое название условия комплектации
     let conditions = 'Система Area View';
     const ctx = {

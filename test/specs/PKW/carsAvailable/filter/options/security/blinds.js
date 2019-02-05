@@ -1,13 +1,15 @@
 import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 
-describe('test blinds', () => {
+describe('test blinds', function() {
+    this.retries(2);
     let conditions = 'Шторки';
     before('Open page secutity', () => {
         browser.helpers.openSite();
     });
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(3);
         // переходим на страницу 
         PkwFilter.options();
         // переходим в вкладку безопастность 

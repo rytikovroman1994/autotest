@@ -2,7 +2,7 @@ import PkwFilter from 'Pageobjects/pkw-filter.page.js';
 import reporter from 'wdio-allure-reporter';
 import Jimp from 'jimp';
 
-describe('screenshot page seating', () => {
+describe('screenshot page helm', () => {
     const ctx = {
         originalScreenshot: null,
         newScreenshot: null,
