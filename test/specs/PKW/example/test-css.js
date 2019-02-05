@@ -1,4 +1,4 @@
-describe('my website should always look the same',function() {
+describe.skip('my website should always look the same',function() {
     it('header should look the same', (done) => {
         browser.url('http://webdriver.io');
         browser.waitForVisible('.header');
