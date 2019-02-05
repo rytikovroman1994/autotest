@@ -1,4 +1,5 @@
-describe('test get all name city', () => {
+describe('test get all name city', function() {
+    this.timeout(300000);
     // получаем количетсво городов в списке
     const getListCity = () => $$('.avn005-2_citylist_item');
     const list = [];
