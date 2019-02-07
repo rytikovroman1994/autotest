@@ -3,6 +3,7 @@ const defaultTimeoutInterval  = process.env.DEBUG ? (60 * 60 * 500) : 90000;
 require('dotenv').config();
 const path = require('path');
 const requireGlob = require('require-glob');
+var glob = require('glob');
 
 const config = {
   isDevelopment: process.env.NODE_ENV !== 'production',
