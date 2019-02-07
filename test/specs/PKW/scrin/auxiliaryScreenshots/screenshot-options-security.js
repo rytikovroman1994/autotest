@@ -34,6 +34,7 @@ describe.skip('screenshots-exterior', () => {
         browser.click('.avn008_filter__tab[data-name="Опции"]');
         // ожидаем загрузки картинки
         browser.waitForVisible('div:nth-child(7) > div > div > .avn008_option-check_image img');
+        browser.pause(5000);
         // делаем скриншот
         var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/helm.png`);
         expect(screen).to.not.equal(null);
@@ -118,6 +119,7 @@ describe.skip('screenshots-exterior', () => {
         browser.click('div:nth-child(7) > div > div > div.avn008_option-check_more');
         // ожидаем загрузки картинки 
         browser.waitForVisible('.avn008_image-switcher_image');
+        browser.pause(5000);
         // делаем скриншот
         var screen = browser.saveScreenshot(`./snapshot/screenshotOption/${nameBrowser}/pressureMeter.png`);
         expect(screen).to.not.equal(null);
