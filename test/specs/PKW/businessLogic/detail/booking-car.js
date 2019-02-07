@@ -1,6 +1,10 @@
 describe('test businessLogic booking car', () => {
+    // запоминаем имя браузера
+    let nameBrowser;
     before('open site', () => {
         browser.helpers.openList();
+        // получаем имя браузера 
+        nameBrowser = browser.desiredCapabilities.browserName;
         // ждём пока карточки станут видны
         browser.waitForVisible('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1)');
     }); 
@@ -60,37 +64,56 @@ describe('test businessLogic booking car', () => {
         // скролим до слайдера в том случаи если он не виден
         browser.scroll(0, 450);
         if(browser.isExisting('.op005_amount-range.is_disabled_temp') === false) {
+            if(nameBrowser === 'chrome') {
             // двигаем слайдер
             browser.helpers.slider('.rc-slider-handle', '.rc-slider-rail', 100, 0);
             // получаем новый размер предоплаты
             let currentPrise = browser.getAttribute('.flex-container .text-input input','value');
             // проверяем что цена изменилась
             expect(currentPrise).to.not.equal(statePrise);
-        }
-    });
-
-    // проверяем что что загружаются реквизиты
-    it('Check for details', function() {
-        this.retries(3);
-        // т.к. убрали в некоторы карточках реквизиты, ставим проверку
-        if(browser.isExisting('.is_filled.is_valid.is_disabled') === false) {
-            //расскрываем список вариантов оплаты
-            browser.click('.rw-i-caret-down');
-            // выбираем оплату по реквизитам
-            browser.click('body #rw_1_listbox > li:nth-child(3)');
-            // расскрываем данные по реквизитам
-            browser.click('.op005_pay-by-req__links .vwd5-textlink_inner');
-            // проверяем, что появилась таблица с реквизитами
-            browser.waitUntil(
-                () => browser.isExisting('.op005_table') === true,
-                5000, "Таблица реквизитов не отображается");
-            // проверяем что в каждом поле есть данные не равные "нет данных"
-            for( let i = 1; i <= 7 ; i++) {
-                const getRequisites = browser.getText(`.op005_form_text > div > div > div:nth-child(${i}) > div:nth-child(2)`)
-                expect(getRequisites).to.not.equal('Нет данных');
             }
         }
     });
+
+    // проверяем работу ссылок на соглашения
+    it('Check links on agreement', function() {
+        this.retries(3);
+        // проверяем работу ссылки на обработку запроса
+        const oneLink = browser.getAttribute('.avn017_agreement-disclaimer a:nth-child(1)', 'href');
+        browser.waitUntil(
+            () => oneLink === 'https://www.volkswagen.ru/ru/legal/processing.html',
+            5000, `Вместо ожидаемой страницы, ссылка ведёт на ${oneLink}`);
+
+        // проверяем работу ссылки на дальнейшую комуникацию 
+        const tooLink = browser.getAttribute('.avn017_agreement-disclaimer a:nth-child(2)', 'href');
+        browser.waitUntil(
+            () => tooLink === 'https://www.volkswagen.ru/ru/legal/communication.html',
+            5000, `Вместо ожидаемой страницы, ссылка ведёт на ${oneLink}`);
+    });
+
+    // проверяем что что загружаются реквизиты
+    // убрали данный пунк из проекта(на случай если решат вернуть)
+    // it('Check for details', function() {
+    //     this.retries(3);
+    //     // т.к. убрали в некоторы карточках реквизиты, ставим проверку
+    //     if(browser.isExisting('.is_filled.is_valid.is_disabled') === false) {
+    //         //расскрываем список вариантов оплаты
+    //         browser.click('.rw-i-caret-down');
+    //         // выбираем оплату по реквизитам
+    //         browser.click('body #rw_1_listbox > li:nth-child(3)');
+    //         // расскрываем данные по реквизитам
+    //         browser.click('.op005_pay-by-req__links .vwd5-textlink_inner');
+    //         // проверяем, что появилась таблица с реквизитами
+    //         browser.waitUntil(
+    //             () => browser.isExisting('.op005_table') === true,
+    //             5000, "Таблица реквизитов не отображается");
+    //         // проверяем что в каждом поле есть данные не равные "нет данных"
+    //         for( let i = 1; i <= 7 ; i++) {
+    //             const getRequisites = browser.getText(`.op005_form_text > div > div > div:nth-child(${i}) > div:nth-child(2)`)
+    //             expect(getRequisites).to.not.equal('Нет данных');
+    //         }
+    //     }
+    // });
 
     // проверяем кнопку отправить заказ и переход в личный кабинет
     it('Check the submit order button', function() {
@@ -106,7 +129,7 @@ describe('test businessLogic booking car', () => {
         browser.click('.op005_form-btn .btn_cta');
         // проверяем что перешли на страницу авторизации в личном кабинете
         browser.waitUntil(
-            () => browser.waitForExist('body #usernameWithOutMask') === true,
+            () => browser.waitForExist('body #username') === true,
             5000, "Страница авторизации не появилась");
     });
 });
