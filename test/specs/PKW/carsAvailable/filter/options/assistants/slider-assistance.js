@@ -12,12 +12,14 @@ describe('test slider in page parking assistant', () => {
     // начальная позиция слайдера 
     let statePositionSlider;
 
-    before('open page filter', () => {
+    before('open page filter', function() {
+        this.retries(3);
         browser.helpers.openSite();
     });
 
     // выносим проверку в отдельный тест
-    it('Check images', () => {
+    it('Check images', function() {
+        this.retries(3);
         // переходим на страницу 
         PkwFilter.options();
         // открываем страницу асистенты
@@ -29,7 +31,8 @@ describe('test slider in page parking assistant', () => {
     });
 
     // проверяем работу Слайдера
-    it('check slider in page parking assistant', () => {
+    it('Check slider in page parking assistant', function() {
+        this.retries(3)
         // получаем началью позицию слайдера 
         statePositionSlider = statePosition();
         // в цикле проверяем работу слайдера
@@ -53,7 +56,8 @@ describe('test slider in page parking assistant', () => {
     });
 
     // проверяем, что условие фильтра сбрасывается
-    it('Check that the filter is cleared', () => {
+    it('Check that the filter is cleared', function() {
+        this.retries(3);
         // сбрасываем условие фильтра
         browser.click('.avn008_overlay_bar_column-left .avn008_overlay_bar_action-item');
         // ждём пока подвал станет активным
