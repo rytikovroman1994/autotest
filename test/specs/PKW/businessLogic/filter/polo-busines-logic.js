@@ -65,7 +65,7 @@ describe('test Polo busines logic', () => {
         // ожидаем загрузку картинки 
         browser.waitForVisible('.avn008_image-switcher_image');
         // выбираем чёрный цвет кузова
-        browser.click('div:nth-child(9) label');
+        $('.checkbox:not(.is_disabled) .checkbox__control').click();
         // проверяем, что добавилось условие цвет кузова
         currentNumber = numberConditions().length;
         expect(currentNumber).to.be.equal(startingNumber + 3);
