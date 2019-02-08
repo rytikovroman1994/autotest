@@ -1,6 +1,7 @@
 import PkwFilter from 'Pageobjects/pkw-filter.page.js'
 
-describe('test drive unit in pictures', () => {
+describe('test drive unit in pictures', function() {
+    this.retries(3);
     before('open page filter', () => {
         browser.helpers.openSite();
     });
