@@ -46,12 +46,14 @@ describe('test slider in page parking assistant', () => {
                 5000, `Функция ${list[i - 1]} не доступна`);
             // получаем название вида фар
             const nameSHine = browser.getText('.avn008_filter-value-item_text__bottom');   
-            expect(nameSHine).to.be.equal(list[i - 1].toUpperCase());
-        // проверяе, что позиция ползунка изменилась 
-        const newPositionSlider = statePosition();
-        browser.waitUntil(
-            () => (newPositionSlider !== statePositionSlider) === true,
-            5000, `Позиция сайдера не изменилась`);
+            browser.waitUntil(
+                () => nameSHine === list[i - 1].toUpperCase(),
+                5000, `Слайдер не переместился на позицию ${list[i - 1]}`);
+            // проверяе, что позиция ползунка изменилась 
+            const newPositionSlider = statePosition();
+            browser.waitUntil(
+                () => (newPositionSlider !== statePositionSlider) === true,
+                5000, `Позиция сайдера не изменилась`);
         }
     });
 
