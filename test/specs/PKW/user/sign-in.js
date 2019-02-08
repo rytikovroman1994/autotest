@@ -28,19 +28,19 @@ describe('test sign in new user', () => {
     it('Verification of email input', () => {
         browser.waitForExist('.form__input[name="email"]');
         // вводидим эмеил
-        browser.setValue('.form__input[name="email"]', faker.internet.email(1));
+        const setEmail = browser.setValue('.form__input[name="email"]', faker.internet.email(1));
     });
 
     it('Checking phone input', () => {
         // вводим телефонный номер
-        browser.waitForExist('.form__input[name="mobile"]');
-        browser.setValue('.form__input[name="mobile"]', faker.phone.phoneNumber()); 
+        browser.waitForExist('.form__input.phone-mask');
+        browser.setValue('.form__input.phone-mask', `7960${faker.random.number(9999999)}`); 
         // убираем фокус
         browser.keys('/uE007');
 
         while(browser.isVisible('.op005_register div:nth-child(5) > div > span') === true) {
-            browser.clearElement('.form__input[name="mobile"]');
-            browser.setValue('.form__input[name="mobile"]', faker.phone.phoneNumber());
+            browser.clearElement('.form__input.phone-mask');
+            browser.setValue('.form__input.phone-mask', `7960${faker.random.number(9999999)}`);
         }
     });
 
@@ -62,9 +62,9 @@ describe('test sign in new user', () => {
     });
 
     it('Entry check patronymic', () => {
-        browser.waitForExist('.form__input[name="user.attributes.patronomic"]');
+        browser.waitForExist('.form__input[name="middleName"]');
         // вводим отчество
-        browser.setValue('.form__input[name="user.attributes.patronomic"]', faker.name.firstName(1));
+        browser.setValue('.form__input[name="middleName"]', faker.name.firstName(1));
     });
 
     it('Entry check password', () => {
@@ -75,16 +75,22 @@ describe('test sign in new user', () => {
         browser.setValue('.form__input[name="password-confirm"]', "12345678");
     });
 
-    it('Check that we are back', () => {
-        // проверям, что кнопка Зарегестрироваться работает
-        browser.click('.form__row .btn_cta');
-        // ожидаем загрузку карточки
-        browser.waitUntil(
-            () => browser.isExisting('.form__input[name="firstName"]') === false,
-            10000, "Заявка на регестрацию не отравляется");
-        // проверем, что перешли к списку автомобилей
-        browser.waitUntil(
-            () => browser.isExisting('.avn001_catalogue') === true,
-            5000, "При регестрации редеректит не на список автомобилей");
+    //  пока есть рекапча данный пункт не проверить 
+    // it('Check that we are back', () => {
+    //     // проверям, что кнопка Зарегестрироваться работает
+    //     browser.click('.form__row .btn_cta');
+    //     // ожидаем загрузку карточки
+    //     browser.waitUntil(
+    //         () => browser.isExisting('.form__input[name="firstName"]') === false,
+    //         10000, "Заявка на регестрацию не отравляется");
+    //     // проверем, что перешли к списку автомобилей
+    //     browser.waitUntil(
+    //         () => browser.isExisting('.avn001_catalogue') === true,
+    //         5000, "При регестрации редеректит не на список автомобилей");
+    // });
+
+    it('Check button log in', function() {
+        const linkLogIn = browser.getAttribute('.cblock__overhang_short a', 'href');
+        expect(linkLogIn).to.be.include('/auth/realms/vw/login-actions/authenticate');
     });
 });

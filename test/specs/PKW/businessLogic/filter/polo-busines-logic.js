@@ -1,6 +1,6 @@
 const helper = require('protractor-firefox-support');
 
-describe('test Polo busines logic', () => {
+describe.skip('test Polo busines logic', () => {
     // получаем количетсво условий для фильтра
     const numberConditions = () => $$('.avn008_filter-value-list .avn008_filter-value-item');
     // получаем число количества автомобилей
@@ -65,7 +65,8 @@ describe('test Polo busines logic', () => {
         // ожидаем загрузку картинки 
         browser.waitForVisible('.avn008_image-switcher_image');
         // выбираем чёрный цвет кузова
-        $('.checkbox:not(.is_disabled) .checkbox__control').click();
+        const color = $$('.checkbox:not(.is_disabled) .checkbox__control');
+        color[0].click();
         // проверяем, что добавилось условие цвет кузова
         currentNumber = numberConditions().length;
         expect(currentNumber).to.be.equal(startingNumber + 3);
@@ -98,7 +99,8 @@ describe('test Polo busines logic', () => {
     it('Check the available list of cars', function() {
         this.retries(3);
         let number = listMachines().length;
-        for( let i = 1; i <= 1; i++ ) {
+        const firstLineCar = number - (number - 4);
+        for( let i = 1; i <= firstLineCar; i++ ) {
             let card = `.avn001_display__enable-hover > div:nth-child(1) .grid_l_3:nth-child(${i})`
             // получаем модель и комплектацию машины
             const carName = browser.getText(`${card} .avn001-2_model-name`);
@@ -111,6 +113,16 @@ describe('test Polo busines logic', () => {
             // получаем цену каждого автобобиля
             const carPrice = browser.getText(`${card} .price-text`);
             console.log(carPrice);
+            if(typeof carPrice == 'string') {
+                // убираем пробел 
+            const carPriceDelete = carPrice.replace(/\s/g, "");
+            console.log(carPriceDelete);
+            // преобразуем в число
+            const numberCarPrice = +carPriceDelete;
+            console.log(numberCarPrice);
+            // проверяем что у всех машим цена не менее указанной в фильтре
+            expect(numberCarPrice).to.be.least(numberPriseCarS);
+            } if(typeof carPrice == 'array') {
             // убираем пробел 
             const carPriceDelete = carPrice[0].replace(/\s/g, "");
             console.log(carPriceDelete);
@@ -119,11 +131,12 @@ describe('test Polo busines logic', () => {
             console.log(numberCarPrice);
             // проверяем что у всех машим цена не менее указанной в фильтре
             expect(numberCarPrice).to.be.least(numberPriseCarS);
+            }
         }
 
         if(number > 4) {
             for( let i = 1; i <= number - 4; i++ ) {
-                let card = `.avn001_display__enable-hover > div:nth-child(3) .grid_l_3:nth-child(${i})`
+                let card = `.avn001_display__enable-hover > div:nth-child(2) .grid_l_3:nth-child(${i})`
                 // получаем модель и комплектацию машины
                 const carName = browser.getText(`${card} .avn001-2_model-name`);
                 // так как могут быть разные комплектации вычленяем только модель
