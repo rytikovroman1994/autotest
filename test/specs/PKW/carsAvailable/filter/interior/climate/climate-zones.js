@@ -42,7 +42,7 @@ describe('test climate zones', function() {
 
     // проверяем работу слайдера и условий фильтра, а также, что меняется картинка
     it('check cards, filter and image', function() {
-        this.retries(2);
+        this.retries(1);
         // получаем количество видом климатконтроля
         const numberClimate = $$('.rc-slider-dot').length;
         for(let i = 1; i <= numberClimate - 1; i++) {
@@ -60,8 +60,9 @@ describe('test climate zones', function() {
             // получаем название климат контроля из фильтра
             const getNameClimatFIlter = browser.getText('.avn008_filter-value-item .avn008_filter-value-item_text__bottom');
             // проверяем текст
-            expect(getNameClimatFIlter).to.be.equal(nameListFilter[i-1]);
-
+            browser.waitUntil(
+                () => getNameClimatFIlter === nameListFilter[i-1],
+                5000, `Слайдер не переместился на позицию ${nameListFilter[i-1]}`);
             // делаем новый скриншот 
             ctx.newScreenshot = browser.screenshot().value;
             // проверяем, что картинки измениись 
