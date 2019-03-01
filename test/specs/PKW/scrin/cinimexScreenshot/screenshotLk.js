@@ -1,6 +1,6 @@
 import PkwListLk from 'Pageobjects/pkw-lk.page.js'
 
-describe('test screenShot page LK', function() {
+describe.skip('test screenShot page LK', function() {
     this.retries(2);
     function diagonal(nameBrowser, namePage) {
         // делаем мобильный размер экрана
