@@ -33,7 +33,7 @@ describe('test footer links all page', function() {
         "http://www.volkswagen-media-services.ru/"
     ];
     before('open page list', function() {
-        browser.helpers.openList();
+        browser.helpers.openListNfz();
         // go to page detail
         browser.click('.avn001_display__enable-hover > div:nth-child(1) > div > div > div:nth-child(1) img');
         // wait existing footer
